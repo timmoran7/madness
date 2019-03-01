@@ -33,152 +33,44 @@
 
 		<script> 
 			
-			function getDays()
+			function displayMsg()
 			{
-			var d = new Date(); 
-
-    		var offset = -6.0
-
-    		var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-
-    		var serverDate = new Date(utc + (3600000*offset));
-
-			var n = serverDate.getDate(); 
-
-			var x; 
-
-
-			if(n==31){ 
-				x=29
-			}
-			if(n==30){ 
-				x=30
+				document.getElementById('thediv').innerHTML += 'Congrats';
 			}
 			
-			if(n==1){ 
-				x=0
-			}  
-
-			if(n==2){ 
-				x=27
-			}  
-			if(n==3){ 
-				x=26
-			} 
-
-			if(n==4){ 
-				x=25
-			}  
-
-			if(n==5){ 
-				x=24
-			}  
-			if(n==6){ 
-				x=23
+			function displayFailMsg()
+			{
+				document.getElementById('thediv').innerHTML += 'Sorry, try again idiot';
 			}
-			if(n==7){ 
-				x=22
-			}  
-
-			if(n==8){ 
-				x=21
-			}  
-
-			if(n==9){ 
-				x=20
-			} 
 			
-			if(n==10){ 
-				x=19
-			}  
-
-			if(n==11){ 
-				x=18
-			}  
-			if(n==12){ 
-				x=17
-			}
-			if(n==13){ 
-				x=16
-			}  
-
-			if(n==14){ 
-				x=15
-			}  
-			if(n==15){ 
-				x=14
-			} 
-			
-			if(n==16){ 
-				x=13
-			}  
-
-			if(n==17){ 
-				x=12
-			}  
-			if(n==18){ 
-				x=11
-			} 
-			if(n==19){ 
-				x=10
-			}  
-
-			if(n==20){ 
-				x=9
-			} 
-			
-			if(n==21){ 
-				x=8
-			}  
-
-			if(n==22){ 
-				x=7
-			}  
-			if(n==23){ 
-				x=6
-			}
-			if(n==24){ 
-				x=5
-			}  
-
-			if(n==25){ 
-				x=4
-			}  
-			if(n==26){ 
-				x=3
-			} 
-			
-			if(n==27){ 
-				x=2
-			}  
-
-			if(n==28){ 
-				x=1
-			}  
-			
-
-
-
-
-
-			document.getElementById("sp").innerHTML= "What is the date and time currently? " + serverDate + " (Actually in Central Standard Time)" ;
-
-			if( n > 28 && n <32){
-			document.getElementById("lit").innerHTML= "What day of January is it? " + n;  
-			}
-			else{
-				document.getElementById("lit").innerHTML= "What day of February is it? " + n;
-			}
-
-			document.getElementById("pp").innerHTML= "How many days left until Matt Grabianski's birthday? " + "<br><br>" + x + "! HAPPY BIRTHDAY MATT!";
+			function check()
+			{
+				val1 = document.getElementById("tex").value;
+				if(val1=="oggavelson")
+				{
+					displayMsg();
+				}
+				else
+				{
+					displayFailMsg();	
+				}
 			}
 
 		</script>
 	</head> 
-	<body onload="getDays()">  
-
-		<div id="lit"></div> 
-		<span id="sp"></span>
-		<p id="pp"></p>
+	<body >  
+		<div>
+			<p>Enter your key letters below</p>
+		</div>
+		<div>
+		<form>
+		<input type="text" id="tex">
+		<input type="submit" value="Submit" onclick=check()>
+		</form>
+		</div>
+		<div id="thediv">
+			<br><br>
+		</div>	
+		
 	</body> 
 </html>
