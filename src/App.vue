@@ -109,7 +109,7 @@ const loadMatchups = () => {
 const loadMatchupContent = async () => {
   if (!selectedMatchup.value) return;
   try {
-    const response = await fetch(`/matchups/${selectedMatchup.value}.html`);
+    const response = await fetch(`/madness/matchups/${selectedMatchup.value}.html`);
     matchupContent.value = await response.text();
     favLogo.value = `/logos/${nameMappings[selectedMatchup.value.split("_")[0]]}`;
     dawgLogo.value = `/logos/${nameMappings[selectedMatchup.value.split("_")[1]]}`;
@@ -122,7 +122,7 @@ const loadMatchupContent = async () => {
     return;
   } 
   try {
-    const response = await fetch(`/upsets/${selectedMatchup.value}.html`);
+    const response = await fetch(`/madness/upsets/${selectedMatchup.value}.html`);
     upsetContent.value = await response.text();
   } catch (error) {
     upsetContent.value = "<p class='text-danger'>Error loading matchup.</p>";
