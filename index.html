@@ -1,91 +1,14 @@
-<!DOCTYPE html> 
-<html> 
-	<head>
-		<style>
-
-
-			body {  
-				text-align: center;
-				background-color: rgb(255,184,106); 
-				color: rgb(204,115,9);
-			 } 
-
-			 div { 
-				color: rgb(127,68,4); 
-				font-size: 40px;
-			  } 
-
-			span { 
-				color: rgb(200,75,120); 
-				font-weight: bold; 
-				font-style: italic;
-
-				font-size: 40px;
-			 }
-
-			 p { 
-					color: rgb(202,100,190); 
-				font-weight: bold; 
-				font-style: italic; 
-				font-size: 80px;
-			  }
-		</style>
-
-		<script> 
-			
-			function displayMsg()
-			{
-				document.getElementById('thediv').innerHTML = 'Good job skippy. For your final task, go to' +
-				' my twitter header and interpret the message. Go through the order of the pictures like' + 
-				' how you would read a book (top to bottom, left to right). Once you have it, go back to' + 
-				' the magical textbox and type in your answer. Glory awaits you there. Best of luck';
-			}
-			
-			function displayFailMsg()
-			{
-				document.getElementById('thediv').innerHTML = 'Sorry, try again idiot';
-			}
-			
-			function displayCongratsMsg()
-			{
-				document.getElementById('thediv').innerHTML = 'CONGRATULATIONS! I hope this took you a ' +
-				'reasonable amount of time, yet was still challenging. Truth be told this is the gist ' + 
-				'of your gift, but that is kinda dumb so your first food item at Guaranteed Rate Field ' +
-				'this summer is on me. Hope your birthday is great. See you soon. Much love.';
-			}
-			
-			function check()
-			{
-				val1 = document.getElementById("tex").value;
-				if(val1=="oggavelson")
-				{
-					displayMsg();
-				}
-				else if(val1=="backyard baseball")
-				{
-					displayCongratsMsg();
-				}
-				else
-				{
-					displayFailMsg();	
-				}
-			}
-
-		</script>
-	</head> 
-	<body >  
-		<div>
-			<p>Enter your key letters below, **making sure everything is lower case**</p>
-		</div>
-		<div>
-		<form>
-		<input type="text" id="tex">
-		<input type="button" value="Submit" onclick=check()>
-		</form>
-		</div>
-		<div id="thediv">
-			<br><br>
-		</div>	
-		
-	</body> 
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="/bball.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/bball.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madness.io</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>
