@@ -14,7 +14,7 @@ const nameMappings: { [key: string]: string } = {
   "Wisconsin": "wisconsin.svg",
   "Utah St.": "utah-st.svg",
   "Arkansas": "arkansas.svg",
-  "Texas": "texas-am.svg",
+  "Texas": "texas.svg",
   "Kansas": "kansas.svg",
   "High Point": "high-point.svg",
   "McNeese": "mcneese.svg",
