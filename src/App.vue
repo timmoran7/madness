@@ -111,8 +111,8 @@ const loadMatchupContent = async () => {
   try {
     const response = await fetch(`/madness/matchups/${selectedMatchup.value}.html`);
     matchupContent.value = await response.text();
-    favLogo.value = `/logos/${nameMappings[selectedMatchup.value.split("_")[0]]}`;
-    dawgLogo.value = `/logos/${nameMappings[selectedMatchup.value.split("_")[1]]}`;
+    favLogo.value = `/madness/logos/${nameMappings[selectedMatchup.value.split("_")[0]]}`;
+    dawgLogo.value = `/madness/logos/${nameMappings[selectedMatchup.value.split("_")[1]]}`;
   } catch (error) {
     matchupContent.value = "<p class='text-danger'>Error loading matchup.</p>";
   }
