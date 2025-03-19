@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import pictureMappings from '@/data/picMappings.json'
+import upsetData from '@/data/upsetData.json'
 
 const regions = ["South", "East", "Midwest", "West"];
 const selectedRegion = ref<string>("");
@@ -10,81 +12,25 @@ const upsetContent = ref<string>("");
 const favLogo = ref<string>("");
 const dawgLogo = ref<string>("");
 
-const nameMappings: { [key: string]: string } = {
-  "Wisconsin": "wisconsin.svg",
-  "Utah St.": "utah-st.svg",
-  "Arkansas": "arkansas.svg",
-  "Texas": "texas.svg",
-  "Kansas": "kansas.svg",
-  "High Point": "high-point.svg",
-  "McNeese": "mcneese.svg",
-  "Texas A&M": "texas-am.svg",
-  "Purdue": "purdue.svg",
-  "SIUE": "siu-edwardsville.svg",
-  "Nebraska Omaha": "neb-omaha.svg",
-  "Georgia": "georgia.svg",
-  "UCLA": "ucla.svg",
-  "Baylor": "baylor.svg",
-  "New Mexico": "new-mexico.svg",
-  "Michigan St.": "michigan-st.svg",
-  "UNC Wilmington": "unc-wilmington.svg",
-  "Oregon": "oregon.svg",
-  "Kentucky": "kentucky.svg",
-  "Colorado St.": "colorado-st.svg",
-  "Louisville": "louisville.svg",
-  "Bryant": "bryant.svg",
-  "Lipscomb": "lipscomb.svg",
-  "Clemson": "clemson.svg",
-  "Akron": "akron.svg",
-  "Oklahoma": "oklahoma.svg",
-  "Auburn": "auburn.svg",
-  "Florida": "florida.svg",
-  "Tennessee": "tennessee.svg",
-  "Montana": "montana.svg",
-  "Yale": "yale.svg",
-  "Xavier": "xavier.svg",
-  "Marquette": "marquette.svg",
-  "Norfolk St.": "norfolk-st.svg",
-  "Creighton": "creighton.svg",
-  "Mississippi": "mississippi-st.svg",
-  "Maryland": "maryland.svg",
-  "VCU": "vcu.svg",
-  "Troy": "troy.svg",
-  "Arizona": "arizona.svg",
-  "Illinois": "illinois.svg",
-  "Liberty": "liberty.svg",
-  "Houston": "houston.svg",
-  "BYU": "byu.svg",
-  "Saint Mary's": "st-marys-ca.svg",
-  "Vanderbilt": "vanderbilt.svg",
-  "Memphis": "memphis.svg",
-  "Robert Morris": "robert-morris.svg",
-  "Alabama": "alabama.svg",
-  "Missouri": "missouri.svg",
-  "St. John's": "st-johns-ny.svg",
-  "Texas Tech": "texas-tech.svg",
-  "Mississippi St.": "mississippi-st.svg",
-  "Duke": "duke.svg",
-  "Michigan": "michigan.svg",
-  "Connecticut": "uconn.svg",
-  "Drake": "drake.svg",
-  "North Carolina": "north-carolina.svg",
-  "Grand Canyon": "grand-canyon.svg",
-  "Saint Francis": "st-francis-pa.svg",
-  "UC San Diego": "uc-san-diego.svg",
-  "San Diego St.": "san-diego-st.svg",
-  "Iowa St.": "iowa-st.svg",
-  "American": "american.svg",
-  "Gonzaga": "gonzaga.svg",
-  "Wofford": "wofford.svg",
-  "Alabama St.": "alabama-st.svg",
-  "Mount St. Mary's": "mt-st-marys.svg"
-};
+const showFactors = ref<boolean>(false);
+const miFactor = ref<number>(0);
+const upsetChance = ref<number>(0);
+const showMethodology = ref<boolean>(true);
+
+const picMappings: { [key: string]: string } = pictureMappings;
+const upsetFactors: { [key: string]: { index: number, upset: number } } = upsetData;
+
+const methodologyExplanation: string = "The <strong>Madness Index (MI)</strong> is a metric that \
+measures the <strong>strength of common upset indicators</strong> present in a March Madness matchup. The MI is calculated based on research from KenPom and the New York Times \
+boiling down to rebounding, turnovers, three point profile, and pacing. Use it with a grain of salt as it has <strong>not (yet) been perfected by testing on previous years' outcomes</strong>. \
+The MI is out of 10, but realistically an underdog will never approach this strength. The MI upset profile can be considered <strong>fair above 6, strong above 6.5, and extremely strong above 7</strong>. \
+The upset chance is a rough formula based on the MI and the seeding of each team. It too has not (yet) been tested, consider it inspiration (and a reality check on the MI). \
+Come back next year for a refined and tested version of Madness.IO!";
 
 // Replace this with actual matchup filenames
 const matchupFiles: { [key: string]: string[] } = {
-  South: ["Auburn_Alabama St.", "Louisville_Creighton", "Auburn_Saint Francis", "Michigan_UC San Diego", "Texas A&M_Yale", "Mississippi_North Carolina", 
-    "Mississippi_San Diego St.", "Iowa St._Lipscomb", "Marquette_New Mexico", "Michigan St._Bryant"],
+  South: ["Auburn_Alabama St.", "Louisville_Creighton", "Michigan_UC San Diego", "Texas A&M_Yale", 
+    "Mississippi_North Carolina", "Iowa St._Lipscomb", "Marquette_New Mexico", "Michigan St._Bryant"],
   East: ["Duke_American", "Duke_Mount St. Mary's", "Mississippi St._Baylor", "Oregon_Liberty", "Arizona_Akron", "BYU_VCU", 
     "Wisconsin_Montana", "Saint Mary's_Vanderbilt", "Alabama_Robert Morris"],
   Midwest: ["Houston_SIUE", "Gonzaga_Georgia", "Clemson_McNeese", "Purdue_High Point", "Illinois_Texas", "Illinois_Xavier", 
@@ -99,10 +45,6 @@ const nonUpsetsToIgnore: string [] = ["Louisville_Creighton", "Marquette_New Mex
 
 const loadMatchups = () => {
   matchups.value = matchupFiles[selectedRegion.value] || [];
-  selectedMatchup.value = ""; // Reset selected matchup
-  matchupContent.value = ""; // Clear displayed content
-
-  upsetContent.value = ""; // Clear displayed content
 };
 
 // Fetch and load selected matchup content
@@ -111,8 +53,16 @@ const loadMatchupContent = async () => {
   try {
     const response = await fetch(`/madness/matchups/${selectedMatchup.value}.html`);
     matchupContent.value = await response.text();
-    favLogo.value = `/madness/logos/${nameMappings[selectedMatchup.value.split("_")[0]]}`;
-    dawgLogo.value = `/madness/logos/${nameMappings[selectedMatchup.value.split("_")[1]]}`;
+
+    const team1 = selectedMatchup.value.split("_")[0];
+    const team2 = selectedMatchup.value.split("_")[1];
+    favLogo.value = `/madness/logos/${picMappings[team1]}`;
+    dawgLogo.value = `/madness/logos/${picMappings[team2]}`;
+
+    miFactor.value = upsetFactors[selectedMatchup.value].index;
+    upsetChance.value = upsetFactors[selectedMatchup.value].upset;
+    showFactors.value = true;
+    showMethodology.value = false;
   } catch (error) {
     matchupContent.value = "<p class='text-danger'>Error loading matchup.</p>";
   }
@@ -129,12 +79,26 @@ const loadMatchupContent = async () => {
   }
 };
 
+const closeMatchupContent = () => {
+  showMethodology.value = true;
+  matchupContent.value = "";
+  upsetContent.value = "";
+  showFactors.value = false;
+
+  favLogo.value = "";
+  dawgLogo.value = "";
+};
+
 </script>
 
 
 <template>
   <div class="container mt-5">
-    <h1 class="text-center mb-4">MADNESS.IO</h1>
+    <div class="text-center mb-4">
+      <img src="/public/bball.png" alt="Basketball" class="header-icon" />
+      <h1 class="d-inline mx-3">MADNESS.IO</h1>
+      <img src="/public/bball.png" alt="Basketball" class="header-icon" />
+    </div>
 
     <!-- Region Selection -->
     <div class="d-flex justify-content-center mb-4">
@@ -158,11 +122,27 @@ const loadMatchupContent = async () => {
       <img class="banner-pic" :src="dawgLogo" alt="" />
     </div>
 
+    <div v-if="showFactors" class="d-flex justify-content-center mb-4 upset-factors">
+      <h5 class="mi text-center"><strong>MADNESS INDEX: {{ miFactor }} / 10</strong></h5>
+      <h5 class="factor text-center"><strong>Upset Chance: {{ upsetChance }}%</strong></h5>
+    </div>
+
+    <!-- Display Methodology Text -->
+    <div v-if="showMethodology" class="mt-4 p-3 border border-secondary rounded bg-light">
+      <p v-html="methodologyExplanation"></p>
+    </div>
+
     <!-- Display Matchup Table -->
-    <div v-if="matchupContent" class="mt-4 p-3 border border-secondary rounded bg-light">
+    <div v-if="matchupContent" class="mt-4 p-3 border border-secondary rounded bg-light position-relative">
+      <button @click="closeMatchupContent" class="btn-close"></button>
       <div v-html="upsetContent"></div>
       <div v-html="matchupContent"></div>
     </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 text-muted">
+      Contact: timthemoran@gmail.com
+    </footer>
   </div>
 </template>
 
@@ -182,5 +162,50 @@ const loadMatchupContent = async () => {
     margin-top: -20px;
   }
   .form-select { height: 50px; }
-  .banner-pic { height: 100px; }
+  .banner-pic { 
+    height: 90px; 
+  }
+
+  .upset-factors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mi {
+    color: crimson;/* #DCA1A1;*/
+  }
+
+  .header-icon {
+    height: 50px;
+    width: 50px;
+    margin-top: -22px;
+  }
+
+  .position-relative {
+    position: relative;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .banner-pic { 
+      height: 40px; 
+    }
+
+    .ovr-banner {
+      gap: 9px;
+    }
+  }
+
+  @media only screen and (max-width: 100px) {
+    .banner-pic { 
+      height: 75px; 
+    }
+  }
 </style>

@@ -1,0 +1,146 @@
+{
+    "Louisville_Creighton": {
+        "index": 4.7,
+        "upset": 0.47
+    },
+    "Purdue_High Point": {
+        "index": 5.76,
+        "upset": 0.26
+    },
+    "Wisconsin_Montana": {
+        "index": 5.41,
+        "upset": 0.17
+    },
+    "Houston_SIUE": {
+        "index": 4.2,
+        "upset": 0.01
+    },
+    "Auburn_Saint Francis": {
+        "index": 4.01,
+        "upset": 0.01
+    },
+    "Auburn_Alabama St.": {
+        "index": 5.37,
+        "upset": 0.02
+    },
+    "Clemson_McNeese": {
+        "index": 5.68,
+        "upset": 0.41
+    },
+    "BYU_VCU": {
+        "index": 6.43,
+        "upset": 0.52
+    },
+    "Gonzaga_Georgia": {
+        "index": 3.49,
+        "upset": 0.26
+    },
+    "Tennessee_Wofford": {
+        "index": 5.03,
+        "upset": 0.08
+    },
+    "Kansas_Arkansas": {
+        "index": 4.76,
+        "upset": 0.33
+    },
+    "Texas A&M_Yale": {
+        "index": 5.04,
+        "upset": 0.21
+    },
+    "Missouri_Drake": {
+        "index": 5.39,
+        "upset": 0.42
+    },
+    "UCLA_Utah St.": {
+        "index": 6.16,
+        "upset": 0.51
+    },
+    "St. John's_Nebraska Omaha": {
+        "index": 4.34,
+        "upset": 0.06
+    },
+    "Michigan_UC San Diego": {
+        "index": 7.24,
+        "upset": 0.52
+    },
+    "Texas Tech_UNC Wilmington": {
+        "index": 4.72,
+        "upset": 0.14
+    },
+    "Mississippi St._Baylor": {
+        "index": 5.21,
+        "upset": 0.55
+    },
+    "Alabama_Robert Morris": {
+        "index": 5.24,
+        "upset": 0.08
+    },
+    "Iowa St._Lipscomb": {
+        "index": 5.44,
+        "upset": 0.17
+    },
+    "Memphis_Colorado St.": {
+        "index": 5.81,
+        "upset": 0.42
+    },
+    "Duke_Mount St. Mary's": {
+        "index": 4.68,
+        "upset": 0.01
+    },
+    "Duke_American": {
+        "index": 4.72,
+        "upset": 0.02
+    },
+    "Saint Mary's_Vanderbilt": {
+        "index": 4.79,
+        "upset": 0.34
+    },
+    "Mississippi_North Carolina": {
+        "index": 5.74,
+        "upset": 0.46
+    },
+    "Mississippi_San Diego St.": {
+        "index": 5.05,
+        "upset": 0.38
+    },
+    "Maryland_Grand Canyon": {
+        "index": 3.85,
+        "upset": 0.14
+    },
+    "Florida_Norfolk St.": {
+        "index": 3.61,
+        "upset": 0.0
+    },
+    "Kentucky_Troy": {
+        "index": 4.45,
+        "upset": 0.13
+    },
+    "Marquette_New Mexico": {
+        "index": 6.06,
+        "upset": 0.5
+    },
+    "Arizona_Akron": {
+        "index": 5.49,
+        "upset": 0.24
+    },
+    "Connecticut_Oklahoma": {
+        "index": 5.6,
+        "upset": 0.6
+    },
+    "Illinois_Xavier": {
+        "index": 6.33,
+        "upset": 0.51
+    },
+    "Illinois_Texas": {
+        "index": 5.67,
+        "upset": 0.45
+    },
+    "Michigan St._Bryant": {
+        "index": 4.24,
+        "upset": 0.06
+    },
+    "Oregon_Liberty": {
+        "index": 5.28,
+        "upset": 0.37
+    }
+}
