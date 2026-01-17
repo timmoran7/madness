@@ -1,14 +1,16 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref, computed } from "vue";
+import MatchupTable from '@/components/MatchupTable.vue';
+import UpsetTable from '@/components/UpsetTable.vue';
 import pictureMappings from '@/data/picMappings.json'
 import upsetData from '@/data/upsetData.json'
+import matchupData from '@/data/matchupData.json'
+import upsetTableData from '@/data/upsetTableData.json'
 
 const regions = ["South", "East", "Midwest", "West"];
 const selectedRegion = ref<string>("");
 const matchups = ref<string[]>([]);
 const selectedMatchup = ref<string>("");
-const matchupContent = ref<string>("");
-const upsetContent = ref<string>("");
 const favLogo = ref<string>("");
 const dawgLogo = ref<string>("");
 
@@ -19,6 +21,38 @@ const showMethodology = ref<boolean>(true);
 
 const picMappings: { [key: string]: string } = pictureMappings;
 const upsetFactors: { [key: string]: { index: number, upset: number } } = upsetData;
+
+interface MatchupDataType {
+  [key: string]: {
+    columns: string[];
+    teams: {
+      name: string;
+      stats: { value: string; color: string }[];
+    }[];
+  };
+}
+
+interface UpsetTableDataType {
+  [key: string]: {
+    columns: string[];
+    values: { value: string; color: string }[];
+  };
+}
+
+const typedMatchupData = matchupData as MatchupDataType;
+const typedUpsetTableData = upsetTableData as UpsetTableDataType;
+
+const currentMatchupData = computed(() => {
+  return selectedMatchup.value && typedMatchupData[selectedMatchup.value] 
+    ? typedMatchupData[selectedMatchup.value] 
+    : null;
+});
+
+const currentUpsetData = computed(() => {
+  return selectedMatchup.value && typedUpsetTableData[selectedMatchup.value] 
+    ? typedUpsetTableData[selectedMatchup.value] 
+    : null;
+});
 
 const methodologyExplanation: string = "The <strong>Madness Index (MI)</strong> is a metric that \
 measures the <strong>strength of common upset indicators</strong> present in a March Madness matchup. The MI is calculated based on research from KenPom and the New York Times \
@@ -48,43 +82,24 @@ const loadMatchups = () => {
 };
 
 // Fetch and load selected matchup content
-const loadMatchupContent = async () => {
+const loadMatchupContent = () => {
   if (!selectedMatchup.value) return;
-  try {
-    const response = await fetch(`/madness/matchups/${selectedMatchup.value}.html`);
-    matchupContent.value = await response.text();
 
-    const team1 = selectedMatchup.value.split("_")[0];
-    const team2 = selectedMatchup.value.split("_")[1];
-    favLogo.value = `/madness/logos/${picMappings[team1]}`;
-    dawgLogo.value = `/madness/logos/${picMappings[team2]}`;
+  const team1 = selectedMatchup.value.split("_")[0];
+  const team2 = selectedMatchup.value.split("_")[1];
+  favLogo.value = `/madness/logos/${picMappings[team1]}`;
+  dawgLogo.value = `/madness/logos/${picMappings[team2]}`;
 
-    miFactor.value = upsetFactors[selectedMatchup.value].index;
-    upsetChance.value = upsetFactors[selectedMatchup.value].upset;
-    showFactors.value = true;
-    showMethodology.value = false;
-  } catch (error) {
-    matchupContent.value = "<p class='text-danger'>Error loading matchup.</p>";
-  }
-
-  if(nonUpsetsToIgnore.includes(selectedMatchup.value)){
-    upsetContent.value = "";
-    return;
-  } 
-  try {
-    const response = await fetch(`/madness/upsets/${selectedMatchup.value}.html`);
-    upsetContent.value = await response.text();
-  } catch (error) {
-    upsetContent.value = "<p class='text-danger'>Error loading matchup.</p>";
-  }
+  miFactor.value = upsetFactors[selectedMatchup.value].index;
+  upsetChance.value = upsetFactors[selectedMatchup.value].upset;
+  showFactors.value = true;
+  showMethodology.value = false;
 };
 
 const closeMatchupContent = () => {
   showMethodology.value = true;
-  matchupContent.value = "";
-  upsetContent.value = "";
   showFactors.value = false;
-
+  selectedMatchup.value = "";
   favLogo.value = "";
   dawgLogo.value = "";
 };
@@ -124,7 +139,7 @@ const closeMatchupContent = () => {
 
     <div v-if="showFactors" class="d-flex justify-content-center mb-4 upset-factors">
       <h5 class="mi text-center"><strong>MADNESS INDEX: {{ miFactor }} / 10</strong></h5>
-      <h5 class="factor text-center"><strong>Upset Chance: {{ upsetChance }}%</strong></h5>
+      <h5 class="factor text-center"><strong>Upset Chance: {{ upsetChance * 100 }}%</strong></h5>
     </div>
 
     <!-- Display Methodology Text -->
@@ -133,10 +148,10 @@ const closeMatchupContent = () => {
     </div>
 
     <!-- Display Matchup Table -->
-    <div v-if="matchupContent" class="mt-4 p-3 border border-secondary rounded bg-light position-relative">
+    <div v-if="currentMatchupData" class="mt-4 p-3 border border-secondary rounded bg-light position-relative">
       <button @click="closeMatchupContent" class="btn-close"></button>
-      <div v-html="upsetContent"></div>
-      <div v-html="matchupContent"></div>
+      <UpsetTable v-if="currentUpsetData" :data="currentUpsetData" />
+      <MatchupTable :data="currentMatchupData" />
     </div>
 
     <!-- Footer -->

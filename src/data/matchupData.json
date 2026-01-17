@@ -1,0 +1,4466 @@
+{
+  "Duke_American": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Duke",
+        "stats": [
+          {
+            "value": "1",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "3",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "4",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "19",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "136",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "35",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "39",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "202",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "51",
+            "color": "rgb(102,162,216)"
+          },
+          {
+            "value": "20",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "0",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "266",
+            "color": "rgb(204,224,242)"
+          }
+        ]
+      },
+      {
+        "name": "American",
+        "stats": [
+          {
+            "value": "237",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "252",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "205",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "156",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "144",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "335",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "63",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "291",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "58",
+            "color": "rgb(119,172,220)"
+          },
+          {
+            "value": "103",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "79",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "349",
+            "color": "rgb(255,255,255)"
+          }
+        ]
+      }
+    ]
+  },
+  "Michigan_UC San Diego": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Michigan",
+        "stats": [
+          {
+            "value": "26",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "47",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "14",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "333",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "249",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "66",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "183",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "112",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "91",
+            "color": "rgb(119,172,220)"
+          },
+          {
+            "value": "195",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "64",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "65",
+            "color": "rgb(119,172,220)"
+          }
+        ]
+      },
+      {
+        "name": "UC San Diego",
+        "stats": [
+          {
+            "value": "36",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "57",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "30",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "7",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "2",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "308",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "102",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "157",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "8",
+            "color": "rgb(86,152,212)"
+          },
+          {
+            "value": "57",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "24",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "271",
+            "color": "rgb(204,224,242)"
+          }
+        ]
+      }
+    ]
+  },
+  "Louisville_Creighton": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Louisville",
+        "stats": [
+          {
+            "value": "23",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "29",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "21",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "135",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "93",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "108",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "56",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "135",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "19",
+            "color": "rgb(102,162,216)"
+          },
+          {
+            "value": "216",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "150",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "90",
+            "color": "rgb(119,172,220)"
+          }
+        ]
+      },
+      {
+        "name": "Creighton",
+        "stats": [
+          {
+            "value": "37",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "34",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "42",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "246",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "361",
+            "color": "rgb(196,79,57)"
+          },
+          {
+            "value": "266",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "57",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "313",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "10",
+            "color": "rgb(86,152,212)"
+          },
+          {
+            "value": "177",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "171",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "192",
+            "color": "rgb(170,203,233)"
+          }
+        ]
+      }
+    ]
+  },
+  "BYU_VCU": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "BYU",
+        "stats": [
+          {
+            "value": "24",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "11",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "68",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "207",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "174",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "79",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "28",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "270",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "15",
+            "color": "rgb(86,152,212)"
+          },
+          {
+            "value": "33",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "62",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "180",
+            "color": "rgb(170,203,233)"
+          }
+        ]
+      },
+      {
+        "name": "VCU",
+        "stats": [
+          {
+            "value": "30",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "41",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "23",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "137",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "26",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "12",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "185",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "213",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "27",
+            "color": "rgb(102,162,216)"
+          },
+          {
+            "value": "189",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "9",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "241",
+            "color": "rgb(204,224,242)"
+          }
+        ]
+      }
+    ]
+  },
+  "Connecticut_Oklahoma": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Connecticut",
+        "stats": [
+          {
+            "value": "35",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "14",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "94",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "178",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "292",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "25",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "64",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "256",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "90",
+            "color": "rgb(119,172,220)"
+          },
+          {
+            "value": "88",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "92",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "344",
+            "color": "rgb(238,244,250)"
+          }
+        ]
+      },
+      {
+        "name": "Oklahoma",
+        "stats": [
+          {
+            "value": "38",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "21",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "70",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "186",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "112",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "277",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "277",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "30",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "109",
+            "color": "rgb(136,182,224)"
+          },
+          {
+            "value": "35",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "192",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "106",
+            "color": "rgb(136,182,224)"
+          }
+        ]
+      }
+    ]
+  },
+  "Missouri_Drake": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Missouri",
+        "stats": [
+          {
+            "value": "15",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "5",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "73",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "47",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "44",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "67",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "301",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "2",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "119",
+            "color": "rgb(136,182,224)"
+          },
+          {
+            "value": "36",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "190",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "121",
+            "color": "rgb(136,182,224)"
+          }
+        ]
+      },
+      {
+        "name": "Drake",
+        "stats": [
+          {
+            "value": "58",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "76",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "46",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "279",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "10",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "17",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "23",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "11",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "237",
+            "color": "rgb(204,224,242)"
+          },
+          {
+            "value": "110",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "55",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "364",
+            "color": "rgb(255,255,255)"
+          }
+        ]
+      }
+    ]
+  },
+  "Wisconsin_Montana": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Wisconsin",
+        "stats": [
+          {
+            "value": "11",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "13",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "27",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "17",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "330",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "240",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "46",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "151",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "18",
+            "color": "rgb(86,152,212)"
+          },
+          {
+            "value": "121",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "231",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "152",
+            "color": "rgb(153,193,229)"
+          }
+        ]
+      },
+      {
+        "name": "Montana",
+        "stats": [
+          {
+            "value": "157",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "98",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "250",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "118",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "291",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "347",
+            "color": "rgb(201,96,76)"
+          },
+          {
+            "value": "134",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "86",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "238",
+            "color": "rgb(204,224,242)"
+          },
+          {
+            "value": "55",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "107",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "193",
+            "color": "rgb(170,203,233)"
+          }
+        ]
+      }
+    ]
+  },
+  "Illinois_Texas": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Illinois",
+        "stats": [
+          {
+            "value": "20",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "15",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "41",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "87",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "360",
+            "color": "rgb(196,79,57)"
+          },
+          {
+            "value": "18",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "33",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "132",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "30",
+            "color": "rgb(102,162,216)"
+          },
+          {
+            "value": "316",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "356",
+            "color": "rgb(196,79,57)"
+          },
+          {
+            "value": "18",
+            "color": "rgb(86,152,212)"
+          }
+        ]
+      },
+      {
+        "name": "Texas",
+        "stats": [
+          {
+            "value": "44",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "37",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "57",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "18",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "220",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "190",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "180",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "71",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "272",
+            "color": "rgb(204,224,242)"
+          },
+          {
+            "value": "66",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "119",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "172",
+            "color": "rgb(170,203,233)"
+          }
+        ]
+      }
+    ]
+  },
+  "Michigan St._Bryant": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Michigan St.",
+        "stats": [
+          {
+            "value": "8",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "27",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "5",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "146",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "228",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "31",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "8",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "47",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "330",
+            "color": "rgb(238,244,250)"
+          },
+          {
+            "value": "327",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "215",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "144",
+            "color": "rgb(153,193,229)"
+          }
+        ]
+      },
+      {
+        "name": "Bryant",
+        "stats": [
+          {
+            "value": "149",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "178",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "148",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "134",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "234",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "54",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "128",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "260",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "285",
+            "color": "rgb(221,234,246)"
+          },
+          {
+            "value": "198",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "335",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "7",
+            "color": "rgb(86,152,212)"
+          }
+        ]
+      }
+    ]
+  },
+  "Purdue_High Point": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Purdue",
+        "stats": [
+          {
+            "value": "19",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "7",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "63",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "68",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "131",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "150",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "188",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "130",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "192",
+            "color": "rgb(170,203,233)"
+          },
+          {
+            "value": "10",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "196",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "297",
+            "color": "rgb(221,234,246)"
+          }
+        ]
+      },
+      {
+        "name": "High Point",
+        "stats": [
+          {
+            "value": "84",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "25",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "227",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "51",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "225",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "60",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "190",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "53",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "173",
+            "color": "rgb(170,203,233)"
+          },
+          {
+            "value": "51",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "95",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "222",
+            "color": "rgb(187,213,237)"
+          }
+        ]
+      }
+    ]
+  },
+  "Texas A&M_Yale": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Texas A&M",
+        "stats": [
+          {
+            "value": "17",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "44",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "7",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "249",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "54",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "1",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "76",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "17",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "208",
+            "color": "rgb(187,213,237)"
+          },
+          {
+            "value": "317",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "43",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "237",
+            "color": "rgb(204,224,242)"
+          }
+        ]
+      },
+      {
+        "name": "Yale",
+        "stats": [
+          {
+            "value": "74",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "59",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "117",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "29",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "254",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "72",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "27",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "204",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "336",
+            "color": "rgb(238,244,250)"
+          },
+          {
+            "value": "9",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "296",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "184",
+            "color": "rgb(170,203,233)"
+          }
+        ]
+      }
+    ]
+  },
+  "Illinois_Xavier": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Illinois",
+        "stats": [
+          {
+            "value": "20",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "15",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "41",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "87",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "360",
+            "color": "rgb(196,79,57)"
+          },
+          {
+            "value": "18",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "33",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "132",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "30",
+            "color": "rgb(102,162,216)"
+          },
+          {
+            "value": "316",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "356",
+            "color": "rgb(196,79,57)"
+          },
+          {
+            "value": "18",
+            "color": "rgb(86,152,212)"
+          }
+        ]
+      },
+      {
+        "name": "Xavier",
+        "stats": [
+          {
+            "value": "43",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "52",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "44",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "99",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "148",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "317",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "14",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "60",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "214",
+            "color": "rgb(187,213,237)"
+          },
+          {
+            "value": "6",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "90",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "74",
+            "color": "rgb(119,172,220)"
+          }
+        ]
+      }
+    ]
+  },
+  "Auburn_Alabama St.": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Auburn",
+        "stats": [
+          {
+            "value": "4",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "2",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "12",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "6",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "161",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "51",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "214",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "168",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "139",
+            "color": "rgb(153,193,229)"
+          },
+          {
+            "value": "40",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "153",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "153",
+            "color": "rgb(153,193,229)"
+          }
+        ]
+      },
+      {
+        "name": "Alabama St.",
+        "stats": [
+          {
+            "value": "273",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "270",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "256",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "5",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "91",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "229",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "246",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "274",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "85",
+            "color": "rgb(119,172,220)"
+          },
+          {
+            "value": "222",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "104",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "142",
+            "color": "rgb(153,193,229)"
+          }
+        ]
+      }
+    ]
+  },
+  "Texas Tech_UNC Wilmington": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Texas Tech",
+        "stats": [
+          {
+            "value": "7",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "6",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "37",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "32",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "165",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "53",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "111",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "280",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "60",
+            "color": "rgb(119,172,220)"
+          },
+          {
+            "value": "19",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "102",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "281",
+            "color": "rgb(221,234,246)"
+          }
+        ]
+      },
+      {
+        "name": "UNC Wilmington",
+        "stats": [
+          {
+            "value": "105",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "84",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "184",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "97",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "156",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "29",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "91",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "48",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "253",
+            "color": "rgb(204,224,242)"
+          },
+          {
+            "value": "212",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "182",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "285",
+            "color": "rgb(221,234,246)"
+          }
+        ]
+      }
+    ]
+  },
+  "Mississippi St._Baylor": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Mississippi St.",
+        "stats": [
+          {
+            "value": "32",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "23",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "47",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "38",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "74",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "57",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "167",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "211",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "99",
+            "color": "rgb(136,182,224)"
+          },
+          {
+            "value": "298",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "154",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "124",
+            "color": "rgb(136,182,224)"
+          }
+        ]
+      },
+      {
+        "name": "Baylor",
+        "stats": [
+          {
+            "value": "29",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "16",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "58",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "106",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "83",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "26",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "254",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "242",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "147",
+            "color": "rgb(153,193,229)"
+          },
+          {
+            "value": "131",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "66",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "319",
+            "color": "rgb(238,244,250)"
+          }
+        ]
+      }
+    ]
+  },
+  "Arizona_Akron": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Arizona",
+        "stats": [
+          {
+            "value": "14",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "12",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "33",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "116",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "212",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "20",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "108",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "72",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "292",
+            "color": "rgb(221,234,246)"
+          },
+          {
+            "value": "247",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "140",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "54",
+            "color": "rgb(102,162,216)"
+          }
+        ]
+      },
+      {
+        "name": "Akron",
+        "stats": [
+          {
+            "value": "99",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "66",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "183",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "140",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "179",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "86",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "138",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "333",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "52",
+            "color": "rgb(102,162,216)"
+          },
+          {
+            "value": "49",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "299",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "16",
+            "color": "rgb(86,152,212)"
+          }
+        ]
+      }
+    ]
+  },
+  "Alabama_Robert Morris": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Alabama",
+        "stats": [
+          {
+            "value": "6",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "4",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "32",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "150",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "348",
+            "color": "rgb(201,96,76)"
+          },
+          {
+            "value": "40",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "153",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "25",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "41",
+            "color": "rgb(102,162,216)"
+          },
+          {
+            "value": "114",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "352",
+            "color": "rgb(201,96,76)"
+          },
+          {
+            "value": "1",
+            "color": "rgb(86,152,212)"
+          }
+        ]
+      },
+      {
+        "name": "Robert Morris",
+        "stats": [
+          {
+            "value": "139",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "171",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "134",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "272",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "82",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "33",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "101",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "41",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "235",
+            "color": "rgb(187,213,237)"
+          },
+          {
+            "value": "120",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "325",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "141",
+            "color": "rgb(153,193,229)"
+          }
+        ]
+      }
+    ]
+  },
+  "Kansas_Arkansas": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Kansas",
+        "stats": [
+          {
+            "value": "21",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "48",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "11",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "154",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "285",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "166",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "68",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "355",
+            "color": "rgb(196,79,57)"
+          },
+          {
+            "value": "297",
+            "color": "rgb(221,234,246)"
+          },
+          {
+            "value": "102",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "91",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "113",
+            "color": "rgb(136,182,224)"
+          }
+        ]
+      },
+      {
+        "name": "Arkansas",
+        "stats": [
+          {
+            "value": "40",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "73",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "20",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "132",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "150",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "249",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "100",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "107",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "241",
+            "color": "rgb(204,224,242)"
+          },
+          {
+            "value": "201",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "259",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "68",
+            "color": "rgb(119,172,220)"
+          }
+        ]
+      }
+    ]
+  },
+  "Iowa St._Lipscomb": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Iowa St.",
+        "stats": [
+          {
+            "value": "10",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "20",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "9",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "162",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "14",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "110",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "105",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "40",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "234",
+            "color": "rgb(187,213,237)"
+          },
+          {
+            "value": "68",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "76",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "102",
+            "color": "rgb(136,182,224)"
+          }
+        ]
+      },
+      {
+        "name": "Lipscomb",
+        "stats": [
+          {
+            "value": "83",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "75",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "100",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "21",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "270",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "329",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "40",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "227",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "26",
+            "color": "rgb(102,162,216)"
+          },
+          {
+            "value": "46",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "114",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "257",
+            "color": "rgb(204,224,242)"
+          }
+        ]
+      }
+    ]
+  },
+  "Saint Mary's_Vanderbilt": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Saint Mary's",
+        "stats": [
+          {
+            "value": "22",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "56",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "8",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "43",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "214",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "2",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "11",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "225",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "316",
+            "color": "rgb(238,244,250)"
+          },
+          {
+            "value": "232",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "243",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "359",
+            "color": "rgb(255,255,255)"
+          }
+        ]
+      },
+      {
+        "name": "Vanderbilt",
+        "stats": [
+          {
+            "value": "49",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "30",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "83",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "28",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "47",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "111",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "179",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "150",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "149",
+            "color": "rgb(153,193,229)"
+          },
+          {
+            "value": "239",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "168",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "64",
+            "color": "rgb(119,172,220)"
+          }
+        ]
+      }
+    ]
+  },
+  "Auburn_Saint Francis": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Auburn",
+        "stats": [
+          {
+            "value": "4",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "2",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "12",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "6",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "161",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "51",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "214",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "168",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "139",
+            "color": "rgb(153,193,229)"
+          },
+          {
+            "value": "40",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "153",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "153",
+            "color": "rgb(153,193,229)"
+          }
+        ]
+      },
+      {
+        "name": "Saint Francis",
+        "stats": [
+          {
+            "value": "311",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "299",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "293",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "321",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "232",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "314",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "197",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "357",
+            "color": "rgb(196,79,57)"
+          },
+          {
+            "value": "111",
+            "color": "rgb(136,182,224)"
+          },
+          {
+            "value": "194",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "112",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "201",
+            "color": "rgb(187,213,237)"
+          }
+        ]
+      }
+    ]
+  },
+  "Clemson_McNeese": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Clemson",
+        "stats": [
+          {
+            "value": "18",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "24",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "16",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "79",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "42",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "68",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "193",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "316",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "182",
+            "color": "rgb(170,203,233)"
+          },
+          {
+            "value": "31",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "1",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "327",
+            "color": "rgb(238,244,250)"
+          }
+        ]
+      },
+      {
+        "name": "McNeese",
+        "stats": [
+          {
+            "value": "59",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "63",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "66",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "115",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "18",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "42",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "259",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "103",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "240",
+            "color": "rgb(204,224,242)"
+          },
+          {
+            "value": "77",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "18",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "283",
+            "color": "rgb(221,234,246)"
+          }
+        ]
+      }
+    ]
+  },
+  "Memphis_Colorado St.": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Memphis",
+        "stats": [
+          {
+            "value": "52",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "72",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "40",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "308",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "73",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "38",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "283",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "29",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "323",
+            "color": "rgb(238,244,250)"
+          },
+          {
+            "value": "18",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "169",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "27",
+            "color": "rgb(102,162,216)"
+          }
+        ]
+      },
+      {
+        "name": "Colorado St.",
+        "stats": [
+          {
+            "value": "42",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "43",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "49",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "194",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "202",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "279",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "16",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "207",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "86",
+            "color": "rgb(119,172,220)"
+          },
+          {
+            "value": "52",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "35",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "252",
+            "color": "rgb(204,224,242)"
+          }
+        ]
+      }
+    ]
+  },
+  "Houston_SIUE": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Houston",
+        "stats": [
+          {
+            "value": "3",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "10",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "2",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "26",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "17",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "15",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "158",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "317",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "296",
+            "color": "rgb(221,234,246)"
+          },
+          {
+            "value": "4",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "10",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "360",
+            "color": "rgb(255,255,255)"
+          }
+        ]
+      },
+      {
+        "name": "SIUE",
+        "stats": [
+          {
+            "value": "217",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "255",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "160",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "180",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "171",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "124",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "145",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "177",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "251",
+            "color": "rgb(204,224,242)"
+          },
+          {
+            "value": "167",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "109",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "261",
+            "color": "rgb(204,224,242)"
+          }
+        ]
+      }
+    ]
+  },
+  "Tennessee_Wofford": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Tennessee",
+        "stats": [
+          {
+            "value": "5",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "18",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "3",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "104",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "117",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "19",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "177",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "129",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "82",
+            "color": "rgb(119,172,220)"
+          },
+          {
+            "value": "166",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "13",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "346",
+            "color": "rgb(255,255,255)"
+          }
+        ]
+      },
+      {
+        "name": "Wofford",
+        "stats": [
+          {
+            "value": "120",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "67",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "231",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "164",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "322",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "28",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "32",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "239",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "23",
+            "color": "rgb(102,162,216)"
+          },
+          {
+            "value": "138",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "176",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "333",
+            "color": "rgb(238,244,250)"
+          }
+        ]
+      }
+    ]
+  },
+  "Florida_Norfolk St.": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Florida",
+        "stats": [
+          {
+            "value": "2",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "1",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "10",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "41",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "180",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "8",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "137",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "198",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "75",
+            "color": "rgb(119,172,220)"
+          },
+          {
+            "value": "84",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "219",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "59",
+            "color": "rgb(119,172,220)"
+          }
+        ]
+      },
+      {
+        "name": "Norfolk St.",
+        "stats": [
+          {
+            "value": "180",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "168",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "217",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "258",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "90",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "93",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "336",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "34",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "360",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "306",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "143",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "226",
+            "color": "rgb(187,213,237)"
+          }
+        ]
+      }
+    ]
+  },
+  "Gonzaga_Georgia": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Gonzaga",
+        "stats": [
+          {
+            "value": "9",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "9",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "29",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "4",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "103",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "95",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "34",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "250",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "313",
+            "color": "rgb(238,244,250)"
+          },
+          {
+            "value": "146",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "27",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "46",
+            "color": "rgb(102,162,216)"
+          }
+        ]
+      },
+      {
+        "name": "Georgia",
+        "stats": [
+          {
+            "value": "34",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "54",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "26",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "291",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "118",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "16",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "280",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "27",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "239",
+            "color": "rgb(204,224,242)"
+          },
+          {
+            "value": "193",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "254",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "221",
+            "color": "rgb(187,213,237)"
+          }
+        ]
+      }
+    ]
+  },
+  "Maryland_Grand Canyon": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Maryland",
+        "stats": [
+          {
+            "value": "13",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "28",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "6",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "22",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "39",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "151",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "58",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "180",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "271",
+            "color": "rgb(204,224,242)"
+          },
+          {
+            "value": "28",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "103",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "56",
+            "color": "rgb(119,172,220)"
+          }
+        ]
+      },
+      {
+        "name": "Grand Canyon",
+        "stats": [
+          {
+            "value": "93",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "149",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "67",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "271",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "31",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "99",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "118",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "7",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "311",
+            "color": "rgb(238,244,250)"
+          },
+          {
+            "value": "285",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "298",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "14",
+            "color": "rgb(86,152,212)"
+          }
+        ]
+      }
+    ]
+  },
+  "Oregon_Liberty": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Oregon",
+        "stats": [
+          {
+            "value": "31",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "39",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "31",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "120",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "141",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "162",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "154",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "170",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "177",
+            "color": "rgb(170,203,233)"
+          },
+          {
+            "value": "171",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "106",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "151",
+            "color": "rgb(153,193,229)"
+          }
+        ]
+      },
+      {
+        "name": "Liberty",
+        "stats": [
+          {
+            "value": "62",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "80",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "48",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "50",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "191",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "361",
+            "color": "rgb(196,79,57)"
+          },
+          {
+            "value": "84",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "244",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "22",
+            "color": "rgb(102,162,216)"
+          },
+          {
+            "value": "5",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "260",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "284",
+            "color": "rgb(221,234,246)"
+          }
+        ]
+      }
+    ]
+  },
+  "St. John's_Nebraska Omaha": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "St. John's",
+        "stats": [
+          {
+            "value": "12",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "65",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "1",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "67",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "13",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "9",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "131",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "269",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "346",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "338",
+            "color": "rgb(201,96,76)"
+          },
+          {
+            "value": "49",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "49",
+            "color": "rgb(102,162,216)"
+          }
+        ]
+      },
+      {
+        "name": "Nebraska Omaha",
+        "stats": [
+          {
+            "value": "156",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "96",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "252",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "82",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "321",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "205",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "19",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "78",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "176",
+            "color": "rgb(170,203,233)"
+          },
+          {
+            "value": "44",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "272",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "145",
+            "color": "rgb(153,193,229)"
+          }
+        ]
+      }
+    ]
+  },
+  "Mississippi_North Carolina": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Mississippi",
+        "stats": [
+          {
+            "value": "25",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "31",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "25",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "3",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "34",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "313",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "233",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "105",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "151",
+            "color": "rgb(153,193,229)"
+          },
+          {
+            "value": "156",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "155",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "130",
+            "color": "rgb(153,193,229)"
+          }
+        ]
+      },
+      {
+        "name": "North Carolina",
+        "stats": [
+          {
+            "value": "33",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "22",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "53",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "40",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "310",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "204",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "54",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "124",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "228",
+            "color": "rgb(187,213,237)"
+          },
+          {
+            "value": "91",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "145",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "34",
+            "color": "rgb(102,162,216)"
+          }
+        ]
+      }
+    ]
+  },
+  "Kentucky_Troy": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Kentucky",
+        "stats": [
+          {
+            "value": "16",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "8",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "56",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "44",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "341",
+            "color": "rgb(201,96,76)"
+          },
+          {
+            "value": "221",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "24",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "96",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "115",
+            "color": "rgb(136,182,224)"
+          },
+          {
+            "value": "26",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "339",
+            "color": "rgb(201,96,76)"
+          },
+          {
+            "value": "23",
+            "color": "rgb(102,162,216)"
+          }
+        ]
+      },
+      {
+        "name": "Troy",
+        "stats": [
+          {
+            "value": "98",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "153",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "71",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "332",
+            "color": "rgb(207,114,96)"
+          },
+          {
+            "value": "53",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "5",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "293",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "49",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "57",
+            "color": "rgb(119,172,220)"
+          },
+          {
+            "value": "339",
+            "color": "rgb(201,96,76)"
+          },
+          {
+            "value": "197",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "229",
+            "color": "rgb(187,213,237)"
+          }
+        ]
+      }
+    ]
+  },
+  "Mississippi_San Diego St.": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Mississippi",
+        "stats": [
+          {
+            "value": "25",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "31",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "25",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "3",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "34",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "313",
+            "color": "rgb(213,131,116)"
+          },
+          {
+            "value": "233",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "105",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "151",
+            "color": "rgb(153,193,229)"
+          },
+          {
+            "value": "156",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "155",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "130",
+            "color": "rgb(153,193,229)"
+          }
+        ]
+      },
+      {
+        "name": "San Diego St.",
+        "stats": [
+          {
+            "value": "46",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "111",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "13",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "159",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "58",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "201",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "237",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "203",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "169",
+            "color": "rgb(170,203,233)"
+          },
+          {
+            "value": "228",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "22",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "245",
+            "color": "rgb(204,224,242)"
+          }
+        ]
+      }
+    ]
+  },
+  "Duke_Mount St. Mary's": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Duke",
+        "stats": [
+          {
+            "value": "1",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "3",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "4",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "19",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "136",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "35",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "39",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "202",
+            "color": "rgb(249,237,235)"
+          },
+          {
+            "value": "51",
+            "color": "rgb(102,162,216)"
+          },
+          {
+            "value": "20",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "0",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "266",
+            "color": "rgb(204,224,242)"
+          }
+        ]
+      },
+      {
+        "name": "Mount St. Mary's",
+        "stats": [
+          {
+            "value": "250",
+            "color": "rgb(231,184,175)"
+          },
+          {
+            "value": "292",
+            "color": "rgb(219,149,136)"
+          },
+          {
+            "value": "176",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "359",
+            "color": "rgb(196,79,57)"
+          },
+          {
+            "value": "269",
+            "color": "rgb(225,167,156)"
+          },
+          {
+            "value": "142",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "99",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "240",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "132",
+            "color": "rgb(153,193,229)"
+          },
+          {
+            "value": "122",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "81",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "170",
+            "color": "rgb(170,203,233)"
+          }
+        ]
+      }
+    ]
+  },
+  "UCLA_Utah St.": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "UCLA",
+        "stats": [
+          {
+            "value": "27",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "35",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "17",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "91",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "7",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "91",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "152",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "181",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "257",
+            "color": "rgb(204,224,242)"
+          },
+          {
+            "value": "100",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "53",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "301",
+            "color": "rgb(221,234,246)"
+          }
+        ]
+      },
+      {
+        "name": "Utah St.",
+        "stats": [
+          {
+            "value": "51",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "17",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "149",
+            "color": "rgb(232,251,222)"
+          },
+          {
+            "value": "96",
+            "color": "rgb(199,245,174)"
+          },
+          {
+            "value": "38",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "43",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "212",
+            "color": "rgb(243,219,215)"
+          },
+          {
+            "value": "52",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "97",
+            "color": "rgb(136,182,224)"
+          },
+          {
+            "value": "69",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "2",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "159",
+            "color": "rgb(153,193,229)"
+          }
+        ]
+      }
+    ]
+  },
+  "Marquette_New Mexico": {
+    "columns": [
+      "KenPom Ovr.",
+      "Off Efficiency",
+      "Def Efficiency",
+      "Off TO%",
+      "Def TO%",
+      "Off OR%",
+      "Def OR%",
+      "Off FT Rate",
+      "Off 3PA",
+      "Off 3P%",
+      "Def Avg. Poss. Length",
+      "Tempo"
+    ],
+    "teams": [
+      {
+        "name": "Marquette",
+        "stats": [
+          {
+            "value": "28",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "32",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "28",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "8",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "20",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "176",
+            "color": "rgb(255,255,255)"
+          },
+          {
+            "value": "244",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "341",
+            "color": "rgb(201,96,76)"
+          },
+          {
+            "value": "40",
+            "color": "rgb(102,162,216)"
+          },
+          {
+            "value": "245",
+            "color": "rgb(237,202,195)"
+          },
+          {
+            "value": "5",
+            "color": "rgb(144,235,94)"
+          },
+          {
+            "value": "156",
+            "color": "rgb(153,193,229)"
+          }
+        ]
+      },
+      {
+        "name": "New Mexico",
+        "stats": [
+          {
+            "value": "41",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "79",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "19",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "69",
+            "color": "rgb(188,243,158)"
+          },
+          {
+            "value": "35",
+            "color": "rgb(166,239,126)"
+          },
+          {
+            "value": "127",
+            "color": "rgb(221,249,206)"
+          },
+          {
+            "value": "21",
+            "color": "rgb(155,237,110)"
+          },
+          {
+            "value": "50",
+            "color": "rgb(177,241,142)"
+          },
+          {
+            "value": "334",
+            "color": "rgb(238,244,250)"
+          },
+          {
+            "value": "162",
+            "color": "rgb(243,253,238)"
+          },
+          {
+            "value": "116",
+            "color": "rgb(210,247,190)"
+          },
+          {
+            "value": "4",
+            "color": "rgb(86,152,212)"
+          }
+        ]
+      }
+    ]
+  }
+}

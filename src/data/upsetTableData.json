@@ -1,0 +1,1118 @@
+{
+  "Duke_American": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "2.77",
+        "color": "rgb(231,184,175)"
+      },
+      {
+        "value": "4.00",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "8.53",
+        "color": "rgb(177,241,142)"
+      },
+      {
+        "value": "7.19",
+        "color": "rgb(210,247,190)"
+      },
+      {
+        "value": "4.04",
+        "color": "rgb(243,219,215)"
+      }
+    ]
+  },
+  "Michigan_UC San Diego": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "3.89",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "8.95",
+        "color": "rgb(166,239,126)"
+      },
+      {
+        "value": "8.66",
+        "color": "rgb(177,241,142)"
+      },
+      {
+        "value": "8.46",
+        "color": "rgb(177,241,142)"
+      },
+      {
+        "value": "7.67",
+        "color": "rgb(199,245,174)"
+      }
+    ]
+  },
+  "Louisville_Creighton": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "3.90",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "2.39",
+        "color": "rgb(225,167,156)"
+      },
+      {
+        "value": "9.63",
+        "color": "rgb(155,237,110)"
+      },
+      {
+        "value": "5.15",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "5.28",
+        "color": "rgb(243,253,238)"
+      }
+    ]
+  },
+  "BYU_VCU": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.38",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "6.50",
+        "color": "rgb(221,249,206)"
+      },
+      {
+        "value": "9.45",
+        "color": "rgb(155,237,110)"
+      },
+      {
+        "value": "4.82",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "8.25",
+        "color": "rgb(177,241,142)"
+      }
+    ]
+  },
+  "Connecticut_Oklahoma": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "1.80",
+        "color": "rgb(219,149,136)"
+      },
+      {
+        "value": "6.18",
+        "color": "rgb(232,251,222)"
+      },
+      {
+        "value": "7.29",
+        "color": "rgb(199,245,174)"
+      },
+      {
+        "value": "9.06",
+        "color": "rgb(166,239,126)"
+      },
+      {
+        "value": "6.49",
+        "color": "rgb(221,249,206)"
+      }
+    ]
+  },
+  "Missouri_Drake": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "7.26",
+        "color": "rgb(199,245,174)"
+      },
+      {
+        "value": "3.64",
+        "color": "rgb(237,202,195)"
+      },
+      {
+        "value": "5.12",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "7.00",
+        "color": "rgb(210,247,190)"
+      },
+      {
+        "value": "4.26",
+        "color": "rgb(249,237,235)"
+      }
+    ]
+  },
+  "Wisconsin_Montana": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "3.66",
+        "color": "rgb(237,202,195)"
+      },
+      {
+        "value": "4.57",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "6.50",
+        "color": "rgb(221,249,206)"
+      },
+      {
+        "value": "8.51",
+        "color": "rgb(177,241,142)"
+      },
+      {
+        "value": "6.12",
+        "color": "rgb(232,251,222)"
+      }
+    ]
+  },
+  "Illinois_Texas": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "2.80",
+        "color": "rgb(231,184,175)"
+      },
+      {
+        "value": "6.44",
+        "color": "rgb(221,249,206)"
+      },
+      {
+        "value": "5.87",
+        "color": "rgb(232,251,222)"
+      },
+      {
+        "value": "8.21",
+        "color": "rgb(188,243,158)"
+      },
+      {
+        "value": "6.71",
+        "color": "rgb(221,249,206)"
+      }
+    ]
+  },
+  "Michigan St._Bryant": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.02",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "5.04",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "1.56",
+        "color": "rgb(213,131,116)"
+      },
+      {
+        "value": "4.57",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "5.07",
+        "color": "rgb(255,255,255)"
+      }
+    ]
+  },
+  "Purdue_High Point": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "5.61",
+        "color": "rgb(243,253,238)"
+      },
+      {
+        "value": "4.47",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "5.00",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "8.62",
+        "color": "rgb(177,241,142)"
+      },
+      {
+        "value": "6.34",
+        "color": "rgb(221,249,206)"
+      }
+    ]
+  },
+  "Texas A&M_Yale": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.85",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "5.14",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "2.53",
+        "color": "rgb(225,167,156)"
+      },
+      {
+        "value": "9.78",
+        "color": "rgb(144,235,94)"
+      },
+      {
+        "value": "3.58",
+        "color": "rgb(237,202,195)"
+      }
+    ]
+  },
+  "Illinois_Xavier": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "3.07",
+        "color": "rgb(231,184,175)"
+      },
+      {
+        "value": "6.38",
+        "color": "rgb(221,249,206)"
+      },
+      {
+        "value": "6.67",
+        "color": "rgb(221,249,206)"
+      },
+      {
+        "value": "9.86",
+        "color": "rgb(144,235,94)"
+      },
+      {
+        "value": "8.15",
+        "color": "rgb(188,243,158)"
+      }
+    ]
+  },
+  "Auburn_Alabama St.": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "3.55",
+        "color": "rgb(237,202,195)"
+      },
+      {
+        "value": "5.49",
+        "color": "rgb(243,253,238)"
+      },
+      {
+        "value": "6.94",
+        "color": "rgb(210,247,190)"
+      },
+      {
+        "value": "3.91",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "7.69",
+        "color": "rgb(199,245,174)"
+      }
+    ]
+  },
+  "Texas Tech_UNC Wilmington": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "5.30",
+        "color": "rgb(243,253,238)"
+      },
+      {
+        "value": "4.61",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "5.72",
+        "color": "rgb(243,253,238)"
+      },
+      {
+        "value": "4.19",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "3.71",
+        "color": "rgb(237,202,195)"
+      }
+    ]
+  },
+  "Mississippi St._Baylor": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.61",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "4.47",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "6.64",
+        "color": "rgb(221,249,206)"
+      },
+      {
+        "value": "6.42",
+        "color": "rgb(221,249,206)"
+      },
+      {
+        "value": "5.25",
+        "color": "rgb(255,255,255)"
+      }
+    ]
+  },
+  "Arizona_Akron": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.34",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "5.06",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "5.29",
+        "color": "rgb(243,253,238)"
+      },
+      {
+        "value": "8.68",
+        "color": "rgb(177,241,142)"
+      },
+      {
+        "value": "5.62",
+        "color": "rgb(243,253,238)"
+      }
+    ]
+  },
+  "Alabama_Robert Morris": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "5.41",
+        "color": "rgb(243,253,238)"
+      },
+      {
+        "value": "5.99",
+        "color": "rgb(232,251,222)"
+      },
+      {
+        "value": "6.23",
+        "color": "rgb(232,251,222)"
+      },
+      {
+        "value": "6.72",
+        "color": "rgb(221,249,206)"
+      },
+      {
+        "value": "2.16",
+        "color": "rgb(219,149,136)"
+      }
+    ]
+  },
+  "Kansas_Arkansas": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.21",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "6.08",
+        "color": "rgb(232,251,222)"
+      },
+      {
+        "value": "2.62",
+        "color": "rgb(225,167,156)"
+      },
+      {
+        "value": "4.49",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "5.37",
+        "color": "rgb(243,253,238)"
+      }
+    ]
+  },
+  "Iowa St._Lipscomb": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "3.94",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "4.21",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "6.45",
+        "color": "rgb(221,249,206)"
+      },
+      {
+        "value": "8.76",
+        "color": "rgb(166,239,126)"
+      },
+      {
+        "value": "6.23",
+        "color": "rgb(232,251,222)"
+      }
+    ]
+  },
+  "Saint Mary's_Vanderbilt": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "3.09",
+        "color": "rgb(231,184,175)"
+      },
+      {
+        "value": "6.25",
+        "color": "rgb(221,249,206)"
+      },
+      {
+        "value": "3.62",
+        "color": "rgb(237,202,195)"
+      },
+      {
+        "value": "3.44",
+        "color": "rgb(237,202,195)"
+      },
+      {
+        "value": "6.91",
+        "color": "rgb(210,247,190)"
+      }
+    ]
+  },
+  "Auburn_Saint Francis": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "3.31",
+        "color": "rgb(237,202,195)"
+      },
+      {
+        "value": "2.34",
+        "color": "rgb(225,167,156)"
+      },
+      {
+        "value": "6.58",
+        "color": "rgb(221,249,206)"
+      },
+      {
+        "value": "4.68",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "5.08",
+        "color": "rgb(255,255,255)"
+      }
+    ]
+  },
+  "Clemson_McNeese": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.72",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "4.92",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "4.21",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "7.91",
+        "color": "rgb(188,243,158)"
+      },
+      {
+        "value": "7.56",
+        "color": "rgb(199,245,174)"
+      }
+    ]
+  },
+  "Memphis_Colorado St.": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "5.18",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "4.90",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "4.39",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "8.60",
+        "color": "rgb(177,241,142)"
+      },
+      {
+        "value": "7.02",
+        "color": "rgb(210,247,190)"
+      }
+    ]
+  },
+  "Houston_SIUE": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.34",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "2.88",
+        "color": "rgb(231,184,175)"
+      },
+      {
+        "value": "2.49",
+        "color": "rgb(225,167,156)"
+      },
+      {
+        "value": "5.43",
+        "color": "rgb(243,253,238)"
+      },
+      {
+        "value": "6.20",
+        "color": "rgb(232,251,222)"
+      }
+    ]
+  },
+  "Tennessee_Wofford": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "5.94",
+        "color": "rgb(232,251,222)"
+      },
+      {
+        "value": "3.17",
+        "color": "rgb(231,184,175)"
+      },
+      {
+        "value": "8.58",
+        "color": "rgb(177,241,142)"
+      },
+      {
+        "value": "6.23",
+        "color": "rgb(232,251,222)"
+      },
+      {
+        "value": "2.99",
+        "color": "rgb(231,184,175)"
+      }
+    ]
+  },
+  "Florida_Norfolk St.": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "3.04",
+        "color": "rgb(231,184,175)"
+      },
+      {
+        "value": "4.13",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "4.04",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "1.60",
+        "color": "rgb(213,131,116)"
+      },
+      {
+        "value": "4.81",
+        "color": "rgb(255,255,255)"
+      }
+    ]
+  },
+  "Gonzaga_Georgia": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "3.85",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "2.92",
+        "color": "rgb(231,184,175)"
+      },
+      {
+        "value": "2.42",
+        "color": "rgb(225,167,156)"
+      },
+      {
+        "value": "4.71",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "3.66",
+        "color": "rgb(237,202,195)"
+      }
+    ]
+  },
+  "Maryland_Grand Canyon": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.94",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "3.34",
+        "color": "rgb(237,202,195)"
+      },
+      {
+        "value": "2.01",
+        "color": "rgb(219,149,136)"
+      },
+      {
+        "value": "2.18",
+        "color": "rgb(219,149,136)"
+      },
+      {
+        "value": "5.50",
+        "color": "rgb(243,253,238)"
+      }
+    ]
+  },
+  "Oregon_Liberty": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.11",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "5.14",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "7.29",
+        "color": "rgb(199,245,174)"
+      },
+      {
+        "value": "9.89",
+        "color": "rgb(144,235,94)"
+      },
+      {
+        "value": "2.45",
+        "color": "rgb(225,167,156)"
+      }
+    ]
+  },
+  "St. John's_Nebraska Omaha": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.42",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "2.78",
+        "color": "rgb(231,184,175)"
+      },
+      {
+        "value": "2.84",
+        "color": "rgb(231,184,175)"
+      },
+      {
+        "value": "8.82",
+        "color": "rgb(166,239,126)"
+      },
+      {
+        "value": "4.34",
+        "color": "rgb(249,237,235)"
+      }
+    ]
+  },
+  "Mississippi_North Carolina": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "6.98",
+        "color": "rgb(210,247,190)"
+      },
+      {
+        "value": "2.84",
+        "color": "rgb(231,184,175)"
+      },
+      {
+        "value": "4.81",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "7.52",
+        "color": "rgb(199,245,174)"
+      },
+      {
+        "value": "7.48",
+        "color": "rgb(199,245,174)"
+      }
+    ]
+  },
+  "Kentucky_Troy": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.63",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "5.00",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "7.66",
+        "color": "rgb(199,245,174)"
+      },
+      {
+        "value": "0.69",
+        "color": "rgb(201,96,76)"
+      },
+      {
+        "value": "3.79",
+        "color": "rgb(243,219,215)"
+      }
+    ]
+  },
+  "Mississippi_San Diego St.": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "5.74",
+        "color": "rgb(243,253,238)"
+      },
+      {
+        "value": "3.76",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "5.62",
+        "color": "rgb(243,253,238)"
+      },
+      {
+        "value": "3.75",
+        "color": "rgb(237,202,195)"
+      },
+      {
+        "value": "6.40",
+        "color": "rgb(221,249,206)"
+      }
+    ]
+  },
+  "Duke_Mount St. Mary's": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "3.85",
+        "color": "rgb(243,219,215)"
+      },
+      {
+        "value": "1.74",
+        "color": "rgb(213,131,116)"
+      },
+      {
+        "value": "7.51",
+        "color": "rgb(199,245,174)"
+      },
+      {
+        "value": "6.67",
+        "color": "rgb(221,249,206)"
+      },
+      {
+        "value": "6.61",
+        "color": "rgb(221,249,206)"
+      }
+    ]
+  },
+  "UCLA_Utah St.": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "4.92",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "4.75",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "5.15",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "8.13",
+        "color": "rgb(188,243,158)"
+      },
+      {
+        "value": "9.23",
+        "color": "rgb(166,239,126)"
+      }
+    ]
+  },
+  "Marquette_New Mexico": {
+    "columns": [
+      "Rebounding",
+      "Turnovers",
+      "3Pt Volume",
+      "Dawg 3P%",
+      "Dawg Pace"
+    ],
+    "values": [
+      {
+        "value": "6.87",
+        "color": "rgb(210,247,190)"
+      },
+      {
+        "value": "4.48",
+        "color": "rgb(249,237,235)"
+      },
+      {
+        "value": "4.88",
+        "color": "rgb(255,255,255)"
+      },
+      {
+        "value": "5.56",
+        "color": "rgb(243,253,238)"
+      },
+      {
+        "value": "8.36",
+        "color": "rgb(177,241,142)"
+      }
+    ]
+  }
+}
