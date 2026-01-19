@@ -1,0 +1,128 @@
+[
+  {
+    "winningTeam": "Ohio",
+    "winningSeed": 13,
+    "losingTeam": "Virginia",
+    "losingSeed": 4,
+    "winningScore": 62,
+    "losingScore": 58,
+    "round": 64
+  },
+  {
+    "winningTeam": "UCLA",
+    "winningSeed": 11,
+    "losingTeam": "BYU",
+    "losingSeed": 6,
+    "winningScore": 73,
+    "losingScore": 62,
+    "round": 64
+  },
+  {
+    "winningTeam": "Abilene Christian",
+    "winningSeed": 14,
+    "losingTeam": "Texas",
+    "losingSeed": 3,
+    "winningScore": 53,
+    "losingScore": 52,
+    "round": 64
+  },
+  {
+    "winningTeam": "North Texas",
+    "winningSeed": 13,
+    "losingTeam": "Purdue",
+    "losingSeed": 4,
+    "winningScore": 78,
+    "losingScore": 69,
+    "round": 64
+  },
+  {
+    "winningTeam": "Oral Roberts",
+    "winningSeed": 15,
+    "losingTeam": "Ohio St.",
+    "losingSeed": 2,
+    "winningScore": 75,
+    "losingScore": 72,
+    "round": 64
+  },
+  {
+    "winningTeam": "Oregon St.",
+    "winningSeed": 12,
+    "losingTeam": "Tennessee",
+    "losingSeed": 5,
+    "winningScore": 70,
+    "losingScore": 56,
+    "round": 64
+  },
+  {
+    "winningTeam": "Syracuse",
+    "winningSeed": 11,
+    "losingTeam": "San Diego St.",
+    "losingSeed": 6,
+    "winningScore": 78,
+    "losingScore": 62,
+    "round": 64
+  },
+  {
+    "winningTeam": "Oregon",
+    "winningSeed": 7,
+    "losingTeam": "Iowa",
+    "losingSeed": 2,
+    "winningScore": 95,
+    "losingScore": 80,
+    "round": 32
+  },
+  {
+    "winningTeam": "Oral Roberts",
+    "winningSeed": 15,
+    "losingTeam": "Florida",
+    "losingSeed": 7,
+    "winningScore": 81,
+    "losingScore": 78,
+    "round": 32
+  },
+  {
+    "winningTeam": "Loyola Chicago",
+    "winningSeed": 8,
+    "losingTeam": "Illinois",
+    "losingSeed": 1,
+    "winningScore": 71,
+    "losingScore": 58,
+    "round": 32
+  },
+  {
+    "winningTeam": "Oregon St.",
+    "winningSeed": 12,
+    "losingTeam": "Oklahoma St.",
+    "losingSeed": 4,
+    "winningScore": 80,
+    "losingScore": 70,
+    "round": 32
+  },
+  {
+    "winningTeam": "Syracuse",
+    "winningSeed": 11,
+    "losingTeam": "West Virginia",
+    "losingSeed": 3,
+    "winningScore": 75,
+    "losingScore": 72,
+    "round": 32
+  },
+  {
+    "winningTeam": "UCLA",
+    "winningSeed": 11,
+    "losingTeam": "Alabama",
+    "losingSeed": 2,
+    "winningScore": 88,
+    "losingScore": 78,
+    "round": 16
+  },
+  {
+    "winningTeam": "UCLA",
+    "winningSeed": 11,
+    "losingTeam": "Michigan",
+    "losingSeed": 1,
+    "winningScore": 51,
+    "losingScore": 49,
+    "round": 8
+  }
+]

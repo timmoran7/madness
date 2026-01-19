@@ -1,0 +1,3272 @@
+[
+  {
+    "team": "Marshall",
+    "3P_pct": "42.5",
+    "2P_pct": "48.2",
+    "FT_pct": "69.3",
+    "Blk_pct": "7.8",
+    "Stl_pct": "10.8",
+    "A_pct": "55.0",
+    "3PA_pct": "34.7"
+  },
+  {
+    "team": "Oregon",
+    "3P_pct": "42.2",
+    "2P_pct": "52.4",
+    "FT_pct": "77.1",
+    "Blk_pct": "6.6",
+    "Stl_pct": "9.3",
+    "A_pct": "57.1",
+    "3PA_pct": "34.9"
+  },
+  {
+    "team": "Kansas",
+    "3P_pct": "41.1",
+    "2P_pct": "52.6",
+    "FT_pct": "71.9",
+    "Blk_pct": "9.1",
+    "Stl_pct": "10.9",
+    "A_pct": "61.3",
+    "3PA_pct": "21.8"
+  },
+  {
+    "team": "Portland St.",
+    "3P_pct": "40.9",
+    "2P_pct": "51.5",
+    "FT_pct": "74.3",
+    "Blk_pct": "6.3",
+    "Stl_pct": "10.8",
+    "A_pct": "64.7",
+    "3PA_pct": "38.0"
+  },
+  {
+    "team": "UC Santa Barbara",
+    "3P_pct": "40.8",
+    "2P_pct": "47.0",
+    "FT_pct": "75.8",
+    "Blk_pct": "6.7",
+    "Stl_pct": "7.8",
+    "A_pct": "65.8",
+    "3PA_pct": "32.4"
+  },
+  {
+    "team": "UCF",
+    "3P_pct": "40.7",
+    "2P_pct": "49.7",
+    "FT_pct": "70.8",
+    "Blk_pct": "6.3",
+    "Stl_pct": "8.7",
+    "A_pct": "52.8",
+    "3PA_pct": "28.6"
+  },
+  {
+    "team": "Wright St.",
+    "3P_pct": "40.5",
+    "2P_pct": "52.5",
+    "FT_pct": "67.9",
+    "Blk_pct": "7.9",
+    "Stl_pct": "8.9",
+    "A_pct": "57.9",
+    "3PA_pct": "37.7"
+  },
+  {
+    "team": "Utah",
+    "3P_pct": "40.5",
+    "2P_pct": "50.3",
+    "FT_pct": "67.9",
+    "Blk_pct": "7.3",
+    "Stl_pct": "9.3",
+    "A_pct": "63.7",
+    "3PA_pct": "40.3"
+  },
+  {
+    "team": "Southwest Missouri St.",
+    "3P_pct": "40.4",
+    "2P_pct": "46.6",
+    "FT_pct": "75.4",
+    "Blk_pct": "7.6",
+    "Stl_pct": "9.3",
+    "A_pct": "46.7",
+    "3PA_pct": "28.3"
+  },
+  {
+    "team": "Tulsa",
+    "3P_pct": "40.2",
+    "2P_pct": "51.1",
+    "FT_pct": "75.4",
+    "Blk_pct": "9.0",
+    "Stl_pct": "9.5",
+    "A_pct": "60.6",
+    "3PA_pct": "31.8"
+  },
+  {
+    "team": "Illinois Chicago",
+    "3P_pct": "40.2",
+    "2P_pct": "44.7",
+    "FT_pct": "65.8",
+    "Blk_pct": "11.2",
+    "Stl_pct": "8.6",
+    "A_pct": "52.0",
+    "3PA_pct": "32.5"
+  },
+  {
+    "team": "Indiana",
+    "3P_pct": "40.0",
+    "2P_pct": "48.4",
+    "FT_pct": "69.5",
+    "Blk_pct": "10.0",
+    "Stl_pct": "10.7",
+    "A_pct": "58.5",
+    "3PA_pct": "33.0"
+  },
+  {
+    "team": "Southwest Texas St.",
+    "3P_pct": "39.9",
+    "2P_pct": "46.2",
+    "FT_pct": "67.3",
+    "Blk_pct": "8.6",
+    "Stl_pct": "10.8",
+    "A_pct": "60.2",
+    "3PA_pct": "34.6"
+  },
+  {
+    "team": "Penn",
+    "3P_pct": "39.9",
+    "2P_pct": "53.1",
+    "FT_pct": "73.2",
+    "Blk_pct": "7.9",
+    "Stl_pct": "10.4",
+    "A_pct": "68.8",
+    "3PA_pct": "39.2"
+  },
+  {
+    "team": "BYU",
+    "3P_pct": "39.9",
+    "2P_pct": "48.6",
+    "FT_pct": "76.1",
+    "Blk_pct": "7.6",
+    "Stl_pct": "9.6",
+    "A_pct": "58.6",
+    "3PA_pct": "28.4"
+  },
+  {
+    "team": "Green Bay",
+    "3P_pct": "39.6",
+    "2P_pct": "51.7",
+    "FT_pct": "71.0",
+    "Blk_pct": "9.9",
+    "Stl_pct": "12.2",
+    "A_pct": "59.4",
+    "3PA_pct": "33.3"
+  },
+  {
+    "team": "Weber St.",
+    "3P_pct": "39.6",
+    "2P_pct": "47.2",
+    "FT_pct": "70.9",
+    "Blk_pct": "9.2",
+    "Stl_pct": "9.0",
+    "A_pct": "55.1",
+    "3PA_pct": "30.0"
+  },
+  {
+    "team": "Connecticut",
+    "3P_pct": "39.4",
+    "2P_pct": "50.5",
+    "FT_pct": "69.6",
+    "Blk_pct": "8.6",
+    "Stl_pct": "9.1",
+    "A_pct": "50.8",
+    "3PA_pct": "19.4"
+  },
+  {
+    "team": "Michigan St.",
+    "3P_pct": "39.3",
+    "2P_pct": "48.8",
+    "FT_pct": "77.0",
+    "Blk_pct": "8.8",
+    "Stl_pct": "11.1",
+    "A_pct": "57.3",
+    "3PA_pct": "27.7"
+  },
+  {
+    "team": "Oral Roberts",
+    "3P_pct": "39.2",
+    "2P_pct": "47.8",
+    "FT_pct": "71.5",
+    "Blk_pct": "7.0",
+    "Stl_pct": "9.8",
+    "A_pct": "63.2",
+    "3PA_pct": "31.9"
+  },
+  {
+    "team": "Dartmouth",
+    "3P_pct": "39.2",
+    "2P_pct": "46.7",
+    "FT_pct": "70.0",
+    "Blk_pct": "9.0",
+    "Stl_pct": "10.3",
+    "A_pct": "62.0",
+    "3PA_pct": "49.2"
+  },
+  {
+    "team": "Villanova",
+    "3P_pct": "39.2",
+    "2P_pct": "48.9",
+    "FT_pct": "74.2",
+    "Blk_pct": "9.2",
+    "Stl_pct": "13.6",
+    "A_pct": "58.5",
+    "3PA_pct": "28.1"
+  },
+  {
+    "team": "Missouri",
+    "3P_pct": "39.1",
+    "2P_pct": "49.7",
+    "FT_pct": "69.0",
+    "Blk_pct": "7.8",
+    "Stl_pct": "10.1",
+    "A_pct": "52.3",
+    "3PA_pct": "37.0"
+  },
+  {
+    "team": "Gonzaga",
+    "3P_pct": "39.1",
+    "2P_pct": "50.1",
+    "FT_pct": "73.2",
+    "Blk_pct": "7.7",
+    "Stl_pct": "8.1",
+    "A_pct": "57.8",
+    "3PA_pct": "31.2"
+  },
+  {
+    "team": "Drake",
+    "3P_pct": "39.0",
+    "2P_pct": "48.3",
+    "FT_pct": "72.2",
+    "Blk_pct": "9.0",
+    "Stl_pct": "9.1",
+    "A_pct": "59.6",
+    "3PA_pct": "39.7"
+  },
+  {
+    "team": "UCLA",
+    "3P_pct": "39.0",
+    "2P_pct": "50.7",
+    "FT_pct": "69.2",
+    "Blk_pct": "6.1",
+    "Stl_pct": "8.1",
+    "A_pct": "53.0",
+    "3PA_pct": "29.9"
+  },
+  {
+    "team": "Centenary",
+    "3P_pct": "39.0",
+    "2P_pct": "45.2",
+    "FT_pct": "69.6",
+    "Blk_pct": "8.7",
+    "Stl_pct": "9.3",
+    "A_pct": "51.4",
+    "3PA_pct": "29.4"
+  },
+  {
+    "team": "Southern Utah",
+    "3P_pct": "38.8",
+    "2P_pct": "47.6",
+    "FT_pct": "69.7",
+    "Blk_pct": "9.2",
+    "Stl_pct": "10.7",
+    "A_pct": "59.4",
+    "3PA_pct": "37.1"
+  },
+  {
+    "team": "Western Kentucky",
+    "3P_pct": "38.6",
+    "2P_pct": "50.8",
+    "FT_pct": "69.2",
+    "Blk_pct": "8.2",
+    "Stl_pct": "9.1",
+    "A_pct": "56.5",
+    "3PA_pct": "39.2"
+  },
+  {
+    "team": "Hawaii",
+    "3P_pct": "38.4",
+    "2P_pct": "49.0",
+    "FT_pct": "68.7",
+    "Blk_pct": "8.2",
+    "Stl_pct": "7.7",
+    "A_pct": "66.6",
+    "3PA_pct": "34.9"
+  },
+  {
+    "team": "Butler",
+    "3P_pct": "38.3",
+    "2P_pct": "50.3",
+    "FT_pct": "68.3",
+    "Blk_pct": "7.9",
+    "Stl_pct": "6.7",
+    "A_pct": "59.4",
+    "3PA_pct": "42.0"
+  },
+  {
+    "team": "Eastern Washington",
+    "3P_pct": "38.1",
+    "2P_pct": "50.4",
+    "FT_pct": "70.3",
+    "Blk_pct": "8.6",
+    "Stl_pct": "11.2",
+    "A_pct": "61.7",
+    "3PA_pct": "31.4"
+  },
+  {
+    "team": "Houston",
+    "3P_pct": "38.1",
+    "2P_pct": "49.8",
+    "FT_pct": "67.9",
+    "Blk_pct": "9.6",
+    "Stl_pct": "10.5",
+    "A_pct": "53.4",
+    "3PA_pct": "22.3"
+  },
+  {
+    "team": "Arkansas Little Rock",
+    "3P_pct": "38.1",
+    "2P_pct": "50.1",
+    "FT_pct": "70.5",
+    "Blk_pct": "10.4",
+    "Stl_pct": "9.0",
+    "A_pct": "51.5",
+    "3PA_pct": "34.6"
+  },
+  {
+    "team": "Iowa St.",
+    "3P_pct": "38.1",
+    "2P_pct": "47.7",
+    "FT_pct": "74.8",
+    "Blk_pct": "9.0",
+    "Stl_pct": "10.3",
+    "A_pct": "46.4",
+    "3PA_pct": "16.6"
+  },
+  {
+    "team": "Wichita St.",
+    "3P_pct": "38.0",
+    "2P_pct": "49.1",
+    "FT_pct": "72.9",
+    "Blk_pct": "8.1",
+    "Stl_pct": "10.2",
+    "A_pct": "59.3",
+    "3PA_pct": "32.8"
+  },
+  {
+    "team": "Ball St.",
+    "3P_pct": "38.0",
+    "2P_pct": "49.5",
+    "FT_pct": "75.4",
+    "Blk_pct": "5.9",
+    "Stl_pct": "8.1",
+    "A_pct": "45.5",
+    "3PA_pct": "39.5"
+  },
+  {
+    "team": "Marquette",
+    "3P_pct": "37.9",
+    "2P_pct": "50.4",
+    "FT_pct": "69.2",
+    "Blk_pct": "7.4",
+    "Stl_pct": "9.2",
+    "A_pct": "52.8",
+    "3PA_pct": "24.8"
+  },
+  {
+    "team": "Bowling Green",
+    "3P_pct": "37.9",
+    "2P_pct": "52.9",
+    "FT_pct": "75.5",
+    "Blk_pct": "7.6",
+    "Stl_pct": "9.7",
+    "A_pct": "54.8",
+    "3PA_pct": "30.6"
+  },
+  {
+    "team": "Montana St.",
+    "3P_pct": "37.9",
+    "2P_pct": "53.0",
+    "FT_pct": "71.3",
+    "Blk_pct": "9.8",
+    "Stl_pct": "9.4",
+    "A_pct": "54.4",
+    "3PA_pct": "39.4"
+  },
+  {
+    "team": "Mississippi",
+    "3P_pct": "37.9",
+    "2P_pct": "50.7",
+    "FT_pct": "73.6",
+    "Blk_pct": "11.6",
+    "Stl_pct": "10.8",
+    "A_pct": "57.7",
+    "3PA_pct": "38.8"
+  },
+  {
+    "team": "Notre Dame",
+    "3P_pct": "37.9",
+    "2P_pct": "49.0",
+    "FT_pct": "71.2",
+    "Blk_pct": "8.7",
+    "Stl_pct": "10.2",
+    "A_pct": "67.1",
+    "3PA_pct": "31.4"
+  },
+  {
+    "team": "Denver",
+    "3P_pct": "37.7",
+    "2P_pct": "45.4",
+    "FT_pct": "70.3",
+    "Blk_pct": "6.6",
+    "Stl_pct": "9.1",
+    "A_pct": "55.2",
+    "3PA_pct": "27.8"
+  },
+  {
+    "team": "New Mexico",
+    "3P_pct": "37.7",
+    "2P_pct": "48.0",
+    "FT_pct": "66.6",
+    "Blk_pct": "8.1",
+    "Stl_pct": "8.8",
+    "A_pct": "49.4",
+    "3PA_pct": "27.8"
+  },
+  {
+    "team": "Iowa",
+    "3P_pct": "37.7",
+    "2P_pct": "48.9",
+    "FT_pct": "69.4",
+    "Blk_pct": "8.4",
+    "Stl_pct": "10.4",
+    "A_pct": "58.3",
+    "3PA_pct": "28.9"
+  },
+  {
+    "team": "Texas Tech",
+    "3P_pct": "37.6",
+    "2P_pct": "48.7",
+    "FT_pct": "68.2",
+    "Blk_pct": "7.1",
+    "Stl_pct": "8.2",
+    "A_pct": "63.2",
+    "3PA_pct": "19.4"
+  },
+  {
+    "team": "South Alabama",
+    "3P_pct": "37.6",
+    "2P_pct": "46.1",
+    "FT_pct": "64.0",
+    "Blk_pct": "11.5",
+    "Stl_pct": "13.4",
+    "A_pct": "53.1",
+    "3PA_pct": "32.4"
+  },
+  {
+    "team": "Arizona",
+    "3P_pct": "37.6",
+    "2P_pct": "50.0",
+    "FT_pct": "73.1",
+    "Blk_pct": "8.5",
+    "Stl_pct": "8.4",
+    "A_pct": "56.5",
+    "3PA_pct": "33.6"
+  },
+  {
+    "team": "Alcorn St.",
+    "3P_pct": "37.6",
+    "2P_pct": "48.9",
+    "FT_pct": "64.2",
+    "Blk_pct": "6.4",
+    "Stl_pct": "10.5",
+    "A_pct": "54.3",
+    "3PA_pct": "24.0"
+  },
+  {
+    "team": "Georgia Tech",
+    "3P_pct": "37.6",
+    "2P_pct": "46.1",
+    "FT_pct": "69.2",
+    "Blk_pct": "7.8",
+    "Stl_pct": "10.4",
+    "A_pct": "57.7",
+    "3PA_pct": "35.9"
+  },
+  {
+    "team": "Ohio St.",
+    "3P_pct": "37.6",
+    "2P_pct": "52.6",
+    "FT_pct": "67.5",
+    "Blk_pct": "8.9",
+    "Stl_pct": "7.4",
+    "A_pct": "58.5",
+    "3PA_pct": "27.4"
+  },
+  {
+    "team": "Northern Illinois",
+    "3P_pct": "37.5",
+    "2P_pct": "49.3",
+    "FT_pct": "67.8",
+    "Blk_pct": "7.2",
+    "Stl_pct": "11.2",
+    "A_pct": "55.3",
+    "3PA_pct": "28.4"
+  },
+  {
+    "team": "Colorado St.",
+    "3P_pct": "37.4",
+    "2P_pct": "50.4",
+    "FT_pct": "67.8",
+    "Blk_pct": "8.5",
+    "Stl_pct": "13.0",
+    "A_pct": "61.9",
+    "3PA_pct": "24.3"
+  },
+  {
+    "team": "Maryland",
+    "3P_pct": "37.4",
+    "2P_pct": "51.9",
+    "FT_pct": "72.6",
+    "Blk_pct": "7.7",
+    "Stl_pct": "9.4",
+    "A_pct": "65.9",
+    "3PA_pct": "25.8"
+  },
+  {
+    "team": "Tennessee Tech",
+    "3P_pct": "37.4",
+    "2P_pct": "52.9",
+    "FT_pct": "72.7",
+    "Blk_pct": "7.6",
+    "Stl_pct": "10.3",
+    "A_pct": "60.5",
+    "3PA_pct": "37.4"
+  },
+  {
+    "team": "UNC Wilmington",
+    "3P_pct": "37.3",
+    "2P_pct": "46.5",
+    "FT_pct": "68.9",
+    "Blk_pct": "8.7",
+    "Stl_pct": "9.3",
+    "A_pct": "57.8",
+    "3PA_pct": "32.8"
+  },
+  {
+    "team": "South Florida",
+    "3P_pct": "37.3",
+    "2P_pct": "49.1",
+    "FT_pct": "60.8",
+    "Blk_pct": "6.8",
+    "Stl_pct": "10.6",
+    "A_pct": "61.4",
+    "3PA_pct": "28.7"
+  },
+  {
+    "team": "Air Force",
+    "3P_pct": "37.3",
+    "2P_pct": "54.8",
+    "FT_pct": "71.2",
+    "Blk_pct": "12.3",
+    "Stl_pct": "10.8",
+    "A_pct": "61.4",
+    "3PA_pct": "48.5"
+  },
+  {
+    "team": "Ohio",
+    "3P_pct": "37.3",
+    "2P_pct": "53.2",
+    "FT_pct": "68.2",
+    "Blk_pct": "7.4",
+    "Stl_pct": "9.9",
+    "A_pct": "53.7",
+    "3PA_pct": "29.5"
+  },
+  {
+    "team": "Creighton",
+    "3P_pct": "37.2",
+    "2P_pct": "51.2",
+    "FT_pct": "73.0",
+    "Blk_pct": "6.0",
+    "Stl_pct": "10.3",
+    "A_pct": "57.5",
+    "3PA_pct": "33.8"
+  },
+  {
+    "team": "Belmont",
+    "3P_pct": "37.1",
+    "2P_pct": "56.1",
+    "FT_pct": "75.5",
+    "Blk_pct": "8.7",
+    "Stl_pct": "12.6",
+    "A_pct": "72.5",
+    "3PA_pct": "47.9"
+  },
+  {
+    "team": "Akron",
+    "3P_pct": "37.1",
+    "2P_pct": "48.4",
+    "FT_pct": "75.8",
+    "Blk_pct": "10.8",
+    "Stl_pct": "11.4",
+    "A_pct": "57.4",
+    "3PA_pct": "31.5"
+  },
+  {
+    "team": "Illinois St.",
+    "3P_pct": "37.0",
+    "2P_pct": "46.7",
+    "FT_pct": "77.4",
+    "Blk_pct": "9.4",
+    "Stl_pct": "10.2",
+    "A_pct": "58.5",
+    "3PA_pct": "26.3"
+  },
+  {
+    "team": "UC Irvine",
+    "3P_pct": "37.0",
+    "2P_pct": "51.5",
+    "FT_pct": "68.6",
+    "Blk_pct": "4.5",
+    "Stl_pct": "9.3",
+    "A_pct": "51.5",
+    "3PA_pct": "28.9"
+  },
+  {
+    "team": "Brown",
+    "3P_pct": "37.0",
+    "2P_pct": "48.9",
+    "FT_pct": "75.0",
+    "Blk_pct": "8.5",
+    "Stl_pct": "10.6",
+    "A_pct": "61.2",
+    "3PA_pct": "28.0"
+  },
+  {
+    "team": "Vanderbilt",
+    "3P_pct": "37.0",
+    "2P_pct": "50.0",
+    "FT_pct": "73.2",
+    "Blk_pct": "11.8",
+    "Stl_pct": "12.0",
+    "A_pct": "61.9",
+    "3PA_pct": "42.8"
+  },
+  {
+    "team": "Quinnipiac",
+    "3P_pct": "36.9",
+    "2P_pct": "49.9",
+    "FT_pct": "63.7",
+    "Blk_pct": "7.9",
+    "Stl_pct": "9.4",
+    "A_pct": "61.1",
+    "3PA_pct": "28.2"
+  },
+  {
+    "team": "College of Charleston",
+    "3P_pct": "36.9",
+    "2P_pct": "45.1",
+    "FT_pct": "71.7",
+    "Blk_pct": "7.6",
+    "Stl_pct": "9.2",
+    "A_pct": "51.6",
+    "3PA_pct": "27.3"
+  },
+  {
+    "team": "Texas",
+    "3P_pct": "36.8",
+    "2P_pct": "48.3",
+    "FT_pct": "68.7",
+    "Blk_pct": "8.3",
+    "Stl_pct": "9.1",
+    "A_pct": "54.4",
+    "3PA_pct": "26.0"
+  },
+  {
+    "team": "Illinois",
+    "3P_pct": "36.7",
+    "2P_pct": "52.7",
+    "FT_pct": "74.0",
+    "Blk_pct": "8.1",
+    "Stl_pct": "7.9",
+    "A_pct": "65.0",
+    "3PA_pct": "35.8"
+  },
+  {
+    "team": "McNeese St.",
+    "3P_pct": "36.7",
+    "2P_pct": "46.8",
+    "FT_pct": "65.4",
+    "Blk_pct": "7.8",
+    "Stl_pct": "11.2",
+    "A_pct": "52.2",
+    "3PA_pct": "28.1"
+  },
+  {
+    "team": "Wagner",
+    "3P_pct": "36.7",
+    "2P_pct": "51.0",
+    "FT_pct": "70.9",
+    "Blk_pct": "5.7",
+    "Stl_pct": "10.9",
+    "A_pct": "57.4",
+    "3PA_pct": "30.6"
+  },
+  {
+    "team": "Wake Forest",
+    "3P_pct": "36.6",
+    "2P_pct": "52.9",
+    "FT_pct": "73.8",
+    "Blk_pct": "6.5",
+    "Stl_pct": "10.4",
+    "A_pct": "55.2",
+    "3PA_pct": "31.3"
+  },
+  {
+    "team": "Oregon St.",
+    "3P_pct": "36.6",
+    "2P_pct": "49.3",
+    "FT_pct": "73.4",
+    "Blk_pct": "9.2",
+    "Stl_pct": "10.7",
+    "A_pct": "63.0",
+    "3PA_pct": "37.1"
+  },
+  {
+    "team": "Nebraska",
+    "3P_pct": "36.6",
+    "2P_pct": "41.4",
+    "FT_pct": "67.6",
+    "Blk_pct": "14.1",
+    "Stl_pct": "8.5",
+    "A_pct": "60.4",
+    "3PA_pct": "43.7"
+  },
+  {
+    "team": "Samford",
+    "3P_pct": "36.6",
+    "2P_pct": "60.3",
+    "FT_pct": "70.2",
+    "Blk_pct": "11.7",
+    "Stl_pct": "13.0",
+    "A_pct": "71.8",
+    "3PA_pct": "52.9"
+  },
+  {
+    "team": "Southern Illinois",
+    "3P_pct": "36.6",
+    "2P_pct": "49.9",
+    "FT_pct": "61.9",
+    "Blk_pct": "6.7",
+    "Stl_pct": "9.4",
+    "A_pct": "56.0",
+    "3PA_pct": "28.4"
+  },
+  {
+    "team": "Kent St.",
+    "3P_pct": "36.6",
+    "2P_pct": "50.8",
+    "FT_pct": "73.1",
+    "Blk_pct": "5.6",
+    "Stl_pct": "7.2",
+    "A_pct": "48.5",
+    "3PA_pct": "28.8"
+  },
+  {
+    "team": "Charlotte",
+    "3P_pct": "36.5",
+    "2P_pct": "48.8",
+    "FT_pct": "70.8",
+    "Blk_pct": "7.4",
+    "Stl_pct": "8.5",
+    "A_pct": "54.7",
+    "3PA_pct": "39.1"
+  },
+  {
+    "team": "Pepperdine",
+    "3P_pct": "36.5",
+    "2P_pct": "49.6",
+    "FT_pct": "71.5",
+    "Blk_pct": "5.7",
+    "Stl_pct": "7.5",
+    "A_pct": "48.4",
+    "3PA_pct": "32.4"
+  },
+  {
+    "team": "Toledo",
+    "3P_pct": "36.4",
+    "2P_pct": "47.5",
+    "FT_pct": "66.6",
+    "Blk_pct": "8.6",
+    "Stl_pct": "11.2",
+    "A_pct": "50.6",
+    "3PA_pct": "32.0"
+  },
+  {
+    "team": "LSU",
+    "3P_pct": "36.4",
+    "2P_pct": "50.0",
+    "FT_pct": "66.8",
+    "Blk_pct": "7.2",
+    "Stl_pct": "11.5",
+    "A_pct": "54.7",
+    "3PA_pct": "30.2"
+  },
+  {
+    "team": "Washington",
+    "3P_pct": "36.4",
+    "2P_pct": "46.5",
+    "FT_pct": "67.0",
+    "Blk_pct": "8.2",
+    "Stl_pct": "10.6",
+    "A_pct": "53.2",
+    "3PA_pct": "29.1"
+  },
+  {
+    "team": "Western Michigan",
+    "3P_pct": "36.4",
+    "2P_pct": "46.5",
+    "FT_pct": "71.6",
+    "Blk_pct": "9.3",
+    "Stl_pct": "8.2",
+    "A_pct": "49.6",
+    "3PA_pct": "36.8"
+  },
+  {
+    "team": "New Mexico St.",
+    "3P_pct": "36.3",
+    "2P_pct": "49.1",
+    "FT_pct": "70.9",
+    "Blk_pct": "6.0",
+    "Stl_pct": "8.9",
+    "A_pct": "47.3",
+    "3PA_pct": "28.0"
+  },
+  {
+    "team": "Duke",
+    "3P_pct": "36.3",
+    "2P_pct": "57.4",
+    "FT_pct": "69.0",
+    "Blk_pct": "7.5",
+    "Stl_pct": "9.2",
+    "A_pct": "57.2",
+    "3PA_pct": "37.6"
+  },
+  {
+    "team": "UNC Greensboro",
+    "3P_pct": "36.2",
+    "2P_pct": "48.5",
+    "FT_pct": "74.6",
+    "Blk_pct": "10.5",
+    "Stl_pct": "11.2",
+    "A_pct": "58.7",
+    "3PA_pct": "30.4"
+  },
+  {
+    "team": "Cincinnati",
+    "3P_pct": "36.2",
+    "2P_pct": "50.7",
+    "FT_pct": "70.9",
+    "Blk_pct": "6.2",
+    "Stl_pct": "6.6",
+    "A_pct": "48.7",
+    "3PA_pct": "27.9"
+  },
+  {
+    "team": "Northern Iowa",
+    "3P_pct": "36.1",
+    "2P_pct": "49.6",
+    "FT_pct": "73.3",
+    "Blk_pct": "11.5",
+    "Stl_pct": "9.2",
+    "A_pct": "54.8",
+    "3PA_pct": "38.2"
+  },
+  {
+    "team": "Colorado",
+    "3P_pct": "36.1",
+    "2P_pct": "48.9",
+    "FT_pct": "67.3",
+    "Blk_pct": "8.1",
+    "Stl_pct": "10.4",
+    "A_pct": "60.3",
+    "3PA_pct": "29.0"
+  },
+  {
+    "team": "Radford",
+    "3P_pct": "36.1",
+    "2P_pct": "46.0",
+    "FT_pct": "64.4",
+    "Blk_pct": "7.7",
+    "Stl_pct": "12.0",
+    "A_pct": "53.0",
+    "3PA_pct": "31.6"
+  },
+  {
+    "team": "Pacific",
+    "3P_pct": "36.1",
+    "2P_pct": "50.9",
+    "FT_pct": "75.3",
+    "Blk_pct": "9.7",
+    "Stl_pct": "9.0",
+    "A_pct": "59.5",
+    "3PA_pct": "40.6"
+  },
+  {
+    "team": "Robert Morris",
+    "3P_pct": "36.1",
+    "2P_pct": "47.9",
+    "FT_pct": "70.4",
+    "Blk_pct": "7.3",
+    "Stl_pct": "9.4",
+    "A_pct": "62.2",
+    "3PA_pct": "34.8"
+  },
+  {
+    "team": "Purdue",
+    "3P_pct": "36.1",
+    "2P_pct": "49.3",
+    "FT_pct": "70.5",
+    "Blk_pct": "10.0",
+    "Stl_pct": "9.1",
+    "A_pct": "57.9",
+    "3PA_pct": "37.7"
+  },
+  {
+    "team": "Georgia St.",
+    "3P_pct": "36.1",
+    "2P_pct": "51.1",
+    "FT_pct": "72.2",
+    "Blk_pct": "5.9",
+    "Stl_pct": "12.0",
+    "A_pct": "50.9",
+    "3PA_pct": "33.1"
+  },
+  {
+    "team": "Baylor",
+    "3P_pct": "36.0",
+    "2P_pct": "48.4",
+    "FT_pct": "72.4",
+    "Blk_pct": "10.6",
+    "Stl_pct": "8.1",
+    "A_pct": "65.2",
+    "3PA_pct": "41.2"
+  },
+  {
+    "team": "N.C. State",
+    "3P_pct": "36.0",
+    "2P_pct": "51.5",
+    "FT_pct": "75.5",
+    "Blk_pct": "9.8",
+    "Stl_pct": "9.8",
+    "A_pct": "63.3",
+    "3PA_pct": "40.5"
+  },
+  {
+    "team": "IUPUI",
+    "3P_pct": "36.0",
+    "2P_pct": "47.6",
+    "FT_pct": "66.5",
+    "Blk_pct": "11.1",
+    "Stl_pct": "10.4",
+    "A_pct": "57.9",
+    "3PA_pct": "31.6"
+  },
+  {
+    "team": "Memphis",
+    "3P_pct": "36.0",
+    "2P_pct": "48.6",
+    "FT_pct": "66.6",
+    "Blk_pct": "7.9",
+    "Stl_pct": "9.0",
+    "A_pct": "53.3",
+    "3PA_pct": "22.5"
+  },
+  {
+    "team": "Texas Pan American",
+    "3P_pct": "35.9",
+    "2P_pct": "51.8",
+    "FT_pct": "68.3",
+    "Blk_pct": "6.0",
+    "Stl_pct": "11.2",
+    "A_pct": "55.7",
+    "3PA_pct": "33.1"
+  },
+  {
+    "team": "Santa Clara",
+    "3P_pct": "35.9",
+    "2P_pct": "42.7",
+    "FT_pct": "68.7",
+    "Blk_pct": "10.8",
+    "Stl_pct": "9.0",
+    "A_pct": "52.3",
+    "3PA_pct": "37.2"
+  },
+  {
+    "team": "Boston University",
+    "3P_pct": "35.8",
+    "2P_pct": "45.4",
+    "FT_pct": "68.8",
+    "Blk_pct": "10.3",
+    "Stl_pct": "10.4",
+    "A_pct": "53.3",
+    "3PA_pct": "32.1"
+  },
+  {
+    "team": "Lafayette",
+    "3P_pct": "35.8",
+    "2P_pct": "52.9",
+    "FT_pct": "74.6",
+    "Blk_pct": "8.1",
+    "Stl_pct": "11.4",
+    "A_pct": "59.3",
+    "3PA_pct": "40.5"
+  },
+  {
+    "team": "Wisconsin",
+    "3P_pct": "35.8",
+    "2P_pct": "47.6",
+    "FT_pct": "71.8",
+    "Blk_pct": "9.2",
+    "Stl_pct": "10.0",
+    "A_pct": "55.6",
+    "3PA_pct": "35.6"
+  },
+  {
+    "team": "San Diego St.",
+    "3P_pct": "35.8",
+    "2P_pct": "50.1",
+    "FT_pct": "65.7",
+    "Blk_pct": "7.8",
+    "Stl_pct": "11.1",
+    "A_pct": "51.5",
+    "3PA_pct": "21.7"
+  },
+  {
+    "team": "Gardner Webb",
+    "3P_pct": "35.7",
+    "2P_pct": "47.6",
+    "FT_pct": "67.3",
+    "Blk_pct": "8.8",
+    "Stl_pct": "10.5",
+    "A_pct": "57.1",
+    "3PA_pct": "37.8"
+  },
+  {
+    "team": "Saint Louis",
+    "3P_pct": "35.7",
+    "2P_pct": "45.2",
+    "FT_pct": "67.7",
+    "Blk_pct": "7.6",
+    "Stl_pct": "11.4",
+    "A_pct": "54.8",
+    "3PA_pct": "28.6"
+  },
+  {
+    "team": "Milwaukee",
+    "3P_pct": "35.7",
+    "2P_pct": "50.1",
+    "FT_pct": "65.7",
+    "Blk_pct": "9.6",
+    "Stl_pct": "9.9",
+    "A_pct": "60.9",
+    "3PA_pct": "41.7"
+  },
+  {
+    "team": "American",
+    "3P_pct": "35.7",
+    "2P_pct": "51.4",
+    "FT_pct": "72.6",
+    "Blk_pct": "9.7",
+    "Stl_pct": "10.7",
+    "A_pct": "61.0",
+    "3PA_pct": "40.0"
+  },
+  {
+    "team": "Xavier",
+    "3P_pct": "35.6",
+    "2P_pct": "49.2",
+    "FT_pct": "72.1",
+    "Blk_pct": "8.7",
+    "Stl_pct": "9.0",
+    "A_pct": "51.5",
+    "3PA_pct": "31.9"
+  },
+  {
+    "team": "Dayton",
+    "3P_pct": "35.6",
+    "2P_pct": "49.7",
+    "FT_pct": "68.1",
+    "Blk_pct": "9.0",
+    "Stl_pct": "8.4",
+    "A_pct": "67.1",
+    "3PA_pct": "34.6"
+  },
+  {
+    "team": "Campbell",
+    "3P_pct": "35.6",
+    "2P_pct": "46.9",
+    "FT_pct": "70.0",
+    "Blk_pct": "7.2",
+    "Stl_pct": "12.8",
+    "A_pct": "55.0",
+    "3PA_pct": "29.7"
+  },
+  {
+    "team": "Marist",
+    "3P_pct": "35.6",
+    "2P_pct": "48.0",
+    "FT_pct": "74.6",
+    "Blk_pct": "8.7",
+    "Stl_pct": "8.5",
+    "A_pct": "60.8",
+    "3PA_pct": "36.1"
+  },
+  {
+    "team": "Southeast Missouri St.",
+    "3P_pct": "35.5",
+    "2P_pct": "50.4",
+    "FT_pct": "75.8",
+    "Blk_pct": "6.5",
+    "Stl_pct": "10.7",
+    "A_pct": "54.0",
+    "3PA_pct": "33.8"
+  },
+  {
+    "team": "Hampton",
+    "3P_pct": "35.5",
+    "2P_pct": "53.5",
+    "FT_pct": "66.9",
+    "Blk_pct": "6.7",
+    "Stl_pct": "9.5",
+    "A_pct": "50.4",
+    "3PA_pct": "31.9"
+  },
+  {
+    "team": "Saint Joseph's",
+    "3P_pct": "35.4",
+    "2P_pct": "52.2",
+    "FT_pct": "68.9",
+    "Blk_pct": "8.7",
+    "Stl_pct": "8.9",
+    "A_pct": "56.2",
+    "3PA_pct": "37.5"
+  },
+  {
+    "team": "Troy St.",
+    "3P_pct": "35.4",
+    "2P_pct": "51.7",
+    "FT_pct": "68.2",
+    "Blk_pct": "6.2",
+    "Stl_pct": "8.7",
+    "A_pct": "53.7",
+    "3PA_pct": "43.2"
+  },
+  {
+    "team": "Arkansas St.",
+    "3P_pct": "35.4",
+    "2P_pct": "49.1",
+    "FT_pct": "72.6",
+    "Blk_pct": "6.8",
+    "Stl_pct": "12.1",
+    "A_pct": "49.4",
+    "3PA_pct": "30.2"
+  },
+  {
+    "team": "Portland",
+    "3P_pct": "35.4",
+    "2P_pct": "43.0",
+    "FT_pct": "68.8",
+    "Blk_pct": "10.9",
+    "Stl_pct": "10.1",
+    "A_pct": "62.0",
+    "3PA_pct": "38.5"
+  },
+  {
+    "team": "UNC Asheville",
+    "3P_pct": "35.3",
+    "2P_pct": "48.1",
+    "FT_pct": "67.5",
+    "Blk_pct": "9.1",
+    "Stl_pct": "12.9",
+    "A_pct": "51.4",
+    "3PA_pct": "25.0"
+  },
+  {
+    "team": "Howard",
+    "3P_pct": "35.3",
+    "2P_pct": "45.6",
+    "FT_pct": "69.9",
+    "Blk_pct": "6.9",
+    "Stl_pct": "7.2",
+    "A_pct": "47.0",
+    "3PA_pct": "33.2"
+  },
+  {
+    "team": "Florida",
+    "3P_pct": "35.3",
+    "2P_pct": "53.2",
+    "FT_pct": "69.7",
+    "Blk_pct": "7.2",
+    "Stl_pct": "9.9",
+    "A_pct": "58.2",
+    "3PA_pct": "34.6"
+  },
+  {
+    "team": "Appalachian St.",
+    "3P_pct": "35.2",
+    "2P_pct": "45.9",
+    "FT_pct": "68.6",
+    "Blk_pct": "10.3",
+    "Stl_pct": "11.5",
+    "A_pct": "56.2",
+    "3PA_pct": "28.1"
+  },
+  {
+    "team": "Princeton",
+    "3P_pct": "35.2",
+    "2P_pct": "54.1",
+    "FT_pct": "73.7",
+    "Blk_pct": "8.8",
+    "Stl_pct": "11.1",
+    "A_pct": "67.3",
+    "3PA_pct": "49.8"
+  },
+  {
+    "team": "IPFW",
+    "3P_pct": "35.1",
+    "2P_pct": "45.3",
+    "FT_pct": "67.6",
+    "Blk_pct": "9.4",
+    "Stl_pct": "9.7",
+    "A_pct": "55.7",
+    "3PA_pct": "38.5"
+  },
+  {
+    "team": "St. Francis NY",
+    "3P_pct": "35.0",
+    "2P_pct": "52.5",
+    "FT_pct": "67.3",
+    "Blk_pct": "6.9",
+    "Stl_pct": "9.3",
+    "A_pct": "51.7",
+    "3PA_pct": "32.4"
+  },
+  {
+    "team": "Western Illinois",
+    "3P_pct": "35.0",
+    "2P_pct": "46.7",
+    "FT_pct": "73.1",
+    "Blk_pct": "9.2",
+    "Stl_pct": "10.1",
+    "A_pct": "62.9",
+    "3PA_pct": "35.6"
+  },
+  {
+    "team": "Oklahoma",
+    "3P_pct": "35.0",
+    "2P_pct": "48.2",
+    "FT_pct": "76.7",
+    "Blk_pct": "8.2",
+    "Stl_pct": "8.2",
+    "A_pct": "51.1",
+    "3PA_pct": "29.5"
+  },
+  {
+    "team": "Valparaiso",
+    "3P_pct": "35.0",
+    "2P_pct": "51.1",
+    "FT_pct": "67.4",
+    "Blk_pct": "6.3",
+    "Stl_pct": "9.6",
+    "A_pct": "64.0",
+    "3PA_pct": "39.5"
+  },
+  {
+    "team": "Central Connecticut",
+    "3P_pct": "35.0",
+    "2P_pct": "48.9",
+    "FT_pct": "73.6",
+    "Blk_pct": "7.3",
+    "Stl_pct": "10.6",
+    "A_pct": "51.6",
+    "3PA_pct": "22.3"
+  },
+  {
+    "team": "North Carolina",
+    "3P_pct": "35.0",
+    "2P_pct": "49.3",
+    "FT_pct": "69.0",
+    "Blk_pct": "9.9",
+    "Stl_pct": "12.7",
+    "A_pct": "67.3",
+    "3PA_pct": "37.6"
+  },
+  {
+    "team": "St. Bonaventure",
+    "3P_pct": "35.0",
+    "2P_pct": "50.3",
+    "FT_pct": "76.0",
+    "Blk_pct": "8.8",
+    "Stl_pct": "7.0",
+    "A_pct": "49.4",
+    "3PA_pct": "48.5"
+  },
+  {
+    "team": "UAB",
+    "3P_pct": "34.9",
+    "2P_pct": "45.4",
+    "FT_pct": "68.7",
+    "Blk_pct": "10.5",
+    "Stl_pct": "11.1",
+    "A_pct": "58.6",
+    "3PA_pct": "33.1"
+  },
+  {
+    "team": "Manhattan",
+    "3P_pct": "34.9",
+    "2P_pct": "48.0",
+    "FT_pct": "73.8",
+    "Blk_pct": "11.5",
+    "Stl_pct": "9.7",
+    "A_pct": "50.1",
+    "3PA_pct": "24.2"
+  },
+  {
+    "team": "Furman",
+    "3P_pct": "34.9",
+    "2P_pct": "45.2",
+    "FT_pct": "68.1",
+    "Blk_pct": "6.8",
+    "Stl_pct": "8.9",
+    "A_pct": "60.0",
+    "3PA_pct": "31.7"
+  },
+  {
+    "team": "New Hampshire",
+    "3P_pct": "34.9",
+    "2P_pct": "42.1",
+    "FT_pct": "71.8",
+    "Blk_pct": "11.7",
+    "Stl_pct": "11.9",
+    "A_pct": "60.1",
+    "3PA_pct": "40.7"
+  },
+  {
+    "team": "Montana",
+    "3P_pct": "34.9",
+    "2P_pct": "50.9",
+    "FT_pct": "67.6",
+    "Blk_pct": "8.9",
+    "Stl_pct": "9.2",
+    "A_pct": "59.4",
+    "3PA_pct": "36.0"
+  },
+  {
+    "team": "Indiana St.",
+    "3P_pct": "34.9",
+    "2P_pct": "44.7",
+    "FT_pct": "63.7",
+    "Blk_pct": "8.5",
+    "Stl_pct": "9.8",
+    "A_pct": "56.8",
+    "3PA_pct": "32.7"
+  },
+  {
+    "team": "Duquesne",
+    "3P_pct": "34.9",
+    "2P_pct": "45.1",
+    "FT_pct": "72.5",
+    "Blk_pct": "10.8",
+    "Stl_pct": "8.7",
+    "A_pct": "51.9",
+    "3PA_pct": "29.4"
+  },
+  {
+    "team": "Vermont",
+    "3P_pct": "34.9",
+    "2P_pct": "48.8",
+    "FT_pct": "73.1",
+    "Blk_pct": "8.7",
+    "Stl_pct": "10.2",
+    "A_pct": "51.5",
+    "3PA_pct": "29.7"
+  },
+  {
+    "team": "Mississippi St.",
+    "3P_pct": "34.8",
+    "2P_pct": "53.1",
+    "FT_pct": "65.3",
+    "Blk_pct": "6.7",
+    "Stl_pct": "11.1",
+    "A_pct": "60.0",
+    "3PA_pct": "28.0"
+  },
+  {
+    "team": "Sam Houston St.",
+    "3P_pct": "34.8",
+    "2P_pct": "47.2",
+    "FT_pct": "67.3",
+    "Blk_pct": "8.6",
+    "Stl_pct": "11.5",
+    "A_pct": "63.6",
+    "3PA_pct": "32.9"
+  },
+  {
+    "team": "George Mason",
+    "3P_pct": "34.8",
+    "2P_pct": "46.5",
+    "FT_pct": "70.4",
+    "Blk_pct": "8.2",
+    "Stl_pct": "9.5",
+    "A_pct": "58.0",
+    "3PA_pct": "28.9"
+  },
+  {
+    "team": "UNLV",
+    "3P_pct": "34.8",
+    "2P_pct": "50.3",
+    "FT_pct": "71.4",
+    "Blk_pct": "6.5",
+    "Stl_pct": "8.2",
+    "A_pct": "54.3",
+    "3PA_pct": "26.6"
+  },
+  {
+    "team": "Kansas St.",
+    "3P_pct": "34.8",
+    "2P_pct": "47.5",
+    "FT_pct": "66.4",
+    "Blk_pct": "10.3",
+    "Stl_pct": "9.4",
+    "A_pct": "57.2",
+    "3PA_pct": "26.9"
+  },
+  {
+    "team": "Massachusetts",
+    "3P_pct": "34.8",
+    "2P_pct": "45.6",
+    "FT_pct": "66.9",
+    "Blk_pct": "9.0",
+    "Stl_pct": "10.6",
+    "A_pct": "62.3",
+    "3PA_pct": "36.1"
+  },
+  {
+    "team": "Tennessee St.",
+    "3P_pct": "34.7",
+    "2P_pct": "52.6",
+    "FT_pct": "69.7",
+    "Blk_pct": "7.1",
+    "Stl_pct": "10.1",
+    "A_pct": "54.6",
+    "3PA_pct": "35.6"
+  },
+  {
+    "team": "Minnesota",
+    "3P_pct": "34.7",
+    "2P_pct": "52.7",
+    "FT_pct": "70.6",
+    "Blk_pct": "9.3",
+    "Stl_pct": "10.3",
+    "A_pct": "58.2",
+    "3PA_pct": "32.9"
+  },
+  {
+    "team": "Evansville",
+    "3P_pct": "34.7",
+    "2P_pct": "49.8",
+    "FT_pct": "72.1",
+    "Blk_pct": "8.8",
+    "Stl_pct": "11.2",
+    "A_pct": "62.4",
+    "3PA_pct": "32.1"
+  },
+  {
+    "team": "Grambling St.",
+    "3P_pct": "34.7",
+    "2P_pct": "47.1",
+    "FT_pct": "67.2",
+    "Blk_pct": "6.6",
+    "Stl_pct": "10.8",
+    "A_pct": "52.5",
+    "3PA_pct": "25.3"
+  },
+  {
+    "team": "USC",
+    "3P_pct": "34.7",
+    "2P_pct": "47.7",
+    "FT_pct": "69.2",
+    "Blk_pct": "6.8",
+    "Stl_pct": "6.9",
+    "A_pct": "55.4",
+    "3PA_pct": "28.1"
+  },
+  {
+    "team": "Miami OH",
+    "3P_pct": "34.7",
+    "2P_pct": "44.8",
+    "FT_pct": "74.2",
+    "Blk_pct": "7.9",
+    "Stl_pct": "10.0",
+    "A_pct": "46.0",
+    "3PA_pct": "25.7"
+  },
+  {
+    "team": "Davidson",
+    "3P_pct": "34.6",
+    "2P_pct": "46.8",
+    "FT_pct": "69.0",
+    "Blk_pct": "8.1",
+    "Stl_pct": "11.1",
+    "A_pct": "61.6",
+    "3PA_pct": "39.4"
+  },
+  {
+    "team": "Siena",
+    "3P_pct": "34.6",
+    "2P_pct": "45.6",
+    "FT_pct": "74.4",
+    "Blk_pct": "10.5",
+    "Stl_pct": "10.2",
+    "A_pct": "54.5",
+    "3PA_pct": "35.3"
+  },
+  {
+    "team": "Bethune Cookman",
+    "3P_pct": "34.6",
+    "2P_pct": "46.0",
+    "FT_pct": "68.9",
+    "Blk_pct": "8.4",
+    "Stl_pct": "11.2",
+    "A_pct": "38.8",
+    "3PA_pct": "27.5"
+  },
+  {
+    "team": "Navy",
+    "3P_pct": "34.6",
+    "2P_pct": "43.4",
+    "FT_pct": "71.9",
+    "Blk_pct": "9.8",
+    "Stl_pct": "12.7",
+    "A_pct": "54.8",
+    "3PA_pct": "29.8"
+  },
+  {
+    "team": "Tennessee",
+    "3P_pct": "34.5",
+    "2P_pct": "50.0",
+    "FT_pct": "68.7",
+    "Blk_pct": "8.0",
+    "Stl_pct": "11.9",
+    "A_pct": "57.6",
+    "3PA_pct": "33.0"
+  },
+  {
+    "team": "Miami FL",
+    "3P_pct": "34.5",
+    "2P_pct": "47.7",
+    "FT_pct": "77.1",
+    "Blk_pct": "9.9",
+    "Stl_pct": "10.3",
+    "A_pct": "64.2",
+    "3PA_pct": "35.9"
+  },
+  {
+    "team": "Penn St.",
+    "3P_pct": "34.4",
+    "2P_pct": "42.7",
+    "FT_pct": "69.6",
+    "Blk_pct": "11.3",
+    "Stl_pct": "11.4",
+    "A_pct": "59.0",
+    "3PA_pct": "39.7"
+  },
+  {
+    "team": "Virginia Tech",
+    "3P_pct": "34.4",
+    "2P_pct": "47.0",
+    "FT_pct": "68.5",
+    "Blk_pct": "10.6",
+    "Stl_pct": "12.0",
+    "A_pct": "52.1",
+    "3PA_pct": "35.3"
+  },
+  {
+    "team": "North Texas",
+    "3P_pct": "34.4",
+    "2P_pct": "48.8",
+    "FT_pct": "70.6",
+    "Blk_pct": "9.0",
+    "Stl_pct": "10.7",
+    "A_pct": "44.2",
+    "3PA_pct": "31.0"
+  },
+  {
+    "team": "Bucknell",
+    "3P_pct": "34.4",
+    "2P_pct": "46.7",
+    "FT_pct": "62.2",
+    "Blk_pct": "7.3",
+    "Stl_pct": "12.4",
+    "A_pct": "57.5",
+    "3PA_pct": "31.3"
+  },
+  {
+    "team": "Utah St.",
+    "3P_pct": "34.3",
+    "2P_pct": "50.7",
+    "FT_pct": "71.9",
+    "Blk_pct": "5.2",
+    "Stl_pct": "10.6",
+    "A_pct": "59.0",
+    "3PA_pct": "25.9"
+  },
+  {
+    "team": "Cal Poly",
+    "3P_pct": "34.3",
+    "2P_pct": "46.8",
+    "FT_pct": "68.3",
+    "Blk_pct": "8.3",
+    "Stl_pct": "10.1",
+    "A_pct": "53.2",
+    "3PA_pct": "35.8"
+  },
+  {
+    "team": "Rice",
+    "3P_pct": "34.3",
+    "2P_pct": "44.9",
+    "FT_pct": "70.4",
+    "Blk_pct": "11.7",
+    "Stl_pct": "11.4",
+    "A_pct": "51.9",
+    "3PA_pct": "28.2"
+  },
+  {
+    "team": "Lipscomb",
+    "3P_pct": "34.3",
+    "2P_pct": "45.2",
+    "FT_pct": "70.9",
+    "Blk_pct": "9.3",
+    "Stl_pct": "11.7",
+    "A_pct": "47.2",
+    "3PA_pct": "37.9"
+  },
+  {
+    "team": "Temple",
+    "3P_pct": "34.3",
+    "2P_pct": "47.7",
+    "FT_pct": "68.9",
+    "Blk_pct": "5.9",
+    "Stl_pct": "7.3",
+    "A_pct": "44.5",
+    "3PA_pct": "43.2"
+  },
+  {
+    "team": "Buffalo",
+    "3P_pct": "34.3",
+    "2P_pct": "45.7",
+    "FT_pct": "65.2",
+    "Blk_pct": "9.0",
+    "Stl_pct": "11.0",
+    "A_pct": "56.5",
+    "3PA_pct": "34.6"
+  },
+  {
+    "team": "Georgia Southern",
+    "3P_pct": "34.3",
+    "2P_pct": "49.7",
+    "FT_pct": "63.7",
+    "Blk_pct": "7.5",
+    "Stl_pct": "8.8",
+    "A_pct": "51.4",
+    "3PA_pct": "28.0"
+  },
+  {
+    "team": "Seton Hall",
+    "3P_pct": "34.2",
+    "2P_pct": "42.9",
+    "FT_pct": "69.1",
+    "Blk_pct": "9.1",
+    "Stl_pct": "11.4",
+    "A_pct": "52.9",
+    "3PA_pct": "38.4"
+  },
+  {
+    "team": "Morehead St.",
+    "3P_pct": "34.2",
+    "2P_pct": "53.6",
+    "FT_pct": "77.7",
+    "Blk_pct": "9.6",
+    "Stl_pct": "9.5",
+    "A_pct": "59.9",
+    "3PA_pct": "28.4"
+  },
+  {
+    "team": "Yale",
+    "3P_pct": "34.2",
+    "2P_pct": "47.6",
+    "FT_pct": "70.0",
+    "Blk_pct": "9.7",
+    "Stl_pct": "10.0",
+    "A_pct": "57.2",
+    "3PA_pct": "35.7"
+  },
+  {
+    "team": "South Carolina",
+    "3P_pct": "34.1",
+    "2P_pct": "48.0",
+    "FT_pct": "66.1",
+    "Blk_pct": "6.1",
+    "Stl_pct": "10.0",
+    "A_pct": "62.0",
+    "3PA_pct": "36.1"
+  },
+  {
+    "team": "Niagara",
+    "3P_pct": "34.1",
+    "2P_pct": "48.0",
+    "FT_pct": "71.0",
+    "Blk_pct": "10.2",
+    "Stl_pct": "10.9",
+    "A_pct": "49.9",
+    "3PA_pct": "33.6"
+  },
+  {
+    "team": "TCU",
+    "3P_pct": "34.1",
+    "2P_pct": "46.4",
+    "FT_pct": "71.0",
+    "Blk_pct": "9.6",
+    "Stl_pct": "8.8",
+    "A_pct": "55.4",
+    "3PA_pct": "31.0"
+  },
+  {
+    "team": "Georgetown",
+    "3P_pct": "34.1",
+    "2P_pct": "48.3",
+    "FT_pct": "72.6",
+    "Blk_pct": "8.5",
+    "Stl_pct": "11.7",
+    "A_pct": "57.5",
+    "3PA_pct": "25.8"
+  },
+  {
+    "team": "Morgan St.",
+    "3P_pct": "34.1",
+    "2P_pct": "44.7",
+    "FT_pct": "68.0",
+    "Blk_pct": "6.8",
+    "Stl_pct": "11.9",
+    "A_pct": "43.4",
+    "3PA_pct": "23.8"
+  },
+  {
+    "team": "Binghamton",
+    "3P_pct": "34.1",
+    "2P_pct": "44.2",
+    "FT_pct": "70.9",
+    "Blk_pct": "8.5",
+    "Stl_pct": "8.2",
+    "A_pct": "51.5",
+    "3PA_pct": "37.1"
+  },
+  {
+    "team": "Michigan",
+    "3P_pct": "34.1",
+    "2P_pct": "48.1",
+    "FT_pct": "75.4",
+    "Blk_pct": "8.6",
+    "Stl_pct": "8.5",
+    "A_pct": "53.5",
+    "3PA_pct": "34.0"
+  },
+  {
+    "team": "Stanford",
+    "3P_pct": "34.0",
+    "2P_pct": "50.6",
+    "FT_pct": "70.0",
+    "Blk_pct": "6.6",
+    "Stl_pct": "9.9",
+    "A_pct": "58.4",
+    "3PA_pct": "33.4"
+  },
+  {
+    "team": "UMBC",
+    "3P_pct": "34.0",
+    "2P_pct": "46.7",
+    "FT_pct": "67.4",
+    "Blk_pct": "6.5",
+    "Stl_pct": "9.9",
+    "A_pct": "56.3",
+    "3PA_pct": "21.8"
+  },
+  {
+    "team": "Texas Southern",
+    "3P_pct": "34.0",
+    "2P_pct": "44.5",
+    "FT_pct": "68.7",
+    "Blk_pct": "8.1",
+    "Stl_pct": "13.7",
+    "A_pct": "51.5",
+    "3PA_pct": "34.0"
+  },
+  {
+    "team": "Chattanooga",
+    "3P_pct": "34.0",
+    "2P_pct": "46.9",
+    "FT_pct": "72.4",
+    "Blk_pct": "8.7",
+    "Stl_pct": "10.2",
+    "A_pct": "45.9",
+    "3PA_pct": "27.7"
+  },
+  {
+    "team": "James Madison",
+    "3P_pct": "33.9",
+    "2P_pct": "45.9",
+    "FT_pct": "69.2",
+    "Blk_pct": "6.4",
+    "Stl_pct": "8.6",
+    "A_pct": "43.6",
+    "3PA_pct": "30.6"
+  },
+  {
+    "team": "Oakland",
+    "3P_pct": "33.9",
+    "2P_pct": "50.1",
+    "FT_pct": "66.3",
+    "Blk_pct": "9.1",
+    "Stl_pct": "8.8",
+    "A_pct": "58.6",
+    "3PA_pct": "37.3"
+  },
+  {
+    "team": "Florida Atlantic",
+    "3P_pct": "33.9",
+    "2P_pct": "45.0",
+    "FT_pct": "66.8",
+    "Blk_pct": "9.9",
+    "Stl_pct": "10.8",
+    "A_pct": "56.6",
+    "3PA_pct": "26.9"
+  },
+  {
+    "team": "Fairfield",
+    "3P_pct": "33.9",
+    "2P_pct": "46.9",
+    "FT_pct": "73.0",
+    "Blk_pct": "9.1",
+    "Stl_pct": "12.3",
+    "A_pct": "56.4",
+    "3PA_pct": "28.7"
+  },
+  {
+    "team": "Eastern Illinois",
+    "3P_pct": "33.8",
+    "2P_pct": "46.0",
+    "FT_pct": "70.5",
+    "Blk_pct": "9.6",
+    "Stl_pct": "11.0",
+    "A_pct": "54.9",
+    "3PA_pct": "32.5"
+  },
+  {
+    "team": "VCU",
+    "3P_pct": "33.8",
+    "2P_pct": "47.4",
+    "FT_pct": "67.2",
+    "Blk_pct": "6.6",
+    "Stl_pct": "10.9",
+    "A_pct": "48.5",
+    "3PA_pct": "33.0"
+  },
+  {
+    "team": "Holy Cross",
+    "3P_pct": "33.8",
+    "2P_pct": "43.0",
+    "FT_pct": "69.2",
+    "Blk_pct": "9.7",
+    "Stl_pct": "10.5",
+    "A_pct": "63.1",
+    "3PA_pct": "25.6"
+  },
+  {
+    "team": "The Citadel",
+    "3P_pct": "33.8",
+    "2P_pct": "45.4",
+    "FT_pct": "71.9",
+    "Blk_pct": "10.7",
+    "Stl_pct": "11.4",
+    "A_pct": "51.5",
+    "3PA_pct": "35.8"
+  },
+  {
+    "team": "UMKC",
+    "3P_pct": "33.8",
+    "2P_pct": "44.0",
+    "FT_pct": "75.4",
+    "Blk_pct": "6.1",
+    "Stl_pct": "9.6",
+    "A_pct": "50.3",
+    "3PA_pct": "34.1"
+  },
+  {
+    "team": "Columbia",
+    "3P_pct": "33.7",
+    "2P_pct": "48.1",
+    "FT_pct": "69.7",
+    "Blk_pct": "9.7",
+    "Stl_pct": "13.4",
+    "A_pct": "63.5",
+    "3PA_pct": "43.9"
+  },
+  {
+    "team": "Northeastern",
+    "3P_pct": "33.7",
+    "2P_pct": "45.7",
+    "FT_pct": "63.0",
+    "Blk_pct": "10.4",
+    "Stl_pct": "9.6",
+    "A_pct": "53.2",
+    "3PA_pct": "35.0"
+  },
+  {
+    "team": "Boston College",
+    "3P_pct": "33.7",
+    "2P_pct": "45.9",
+    "FT_pct": "69.6",
+    "Blk_pct": "9.3",
+    "Stl_pct": "10.5",
+    "A_pct": "53.6",
+    "3PA_pct": "32.9"
+  },
+  {
+    "team": "George Washington",
+    "3P_pct": "33.7",
+    "2P_pct": "44.2",
+    "FT_pct": "71.6",
+    "Blk_pct": "10.1",
+    "Stl_pct": "10.0",
+    "A_pct": "57.3",
+    "3PA_pct": "34.4"
+  },
+  {
+    "team": "Delaware",
+    "3P_pct": "33.7",
+    "2P_pct": "45.5",
+    "FT_pct": "72.6",
+    "Blk_pct": "10.0",
+    "Stl_pct": "8.6",
+    "A_pct": "57.2",
+    "3PA_pct": "37.0"
+  },
+  {
+    "team": "New Orleans",
+    "3P_pct": "33.7",
+    "2P_pct": "47.3",
+    "FT_pct": "64.9",
+    "Blk_pct": "9.2",
+    "Stl_pct": "11.2",
+    "A_pct": "51.7",
+    "3PA_pct": "25.8"
+  },
+  {
+    "team": "Eastern Michigan",
+    "3P_pct": "33.6",
+    "2P_pct": "45.0",
+    "FT_pct": "69.0",
+    "Blk_pct": "8.5",
+    "Stl_pct": "11.8",
+    "A_pct": "52.3",
+    "3PA_pct": "27.7"
+  },
+  {
+    "team": "Louisville",
+    "3P_pct": "33.6",
+    "2P_pct": "47.5",
+    "FT_pct": "63.2",
+    "Blk_pct": "7.3",
+    "Stl_pct": "8.2",
+    "A_pct": "55.7",
+    "3PA_pct": "38.4"
+  },
+  {
+    "team": "San Francisco",
+    "3P_pct": "33.6",
+    "2P_pct": "47.0",
+    "FT_pct": "71.9",
+    "Blk_pct": "7.1",
+    "Stl_pct": "7.3",
+    "A_pct": "55.2",
+    "3PA_pct": "30.2"
+  },
+  {
+    "team": "Maryland Eastern Shore",
+    "3P_pct": "33.6",
+    "2P_pct": "41.6",
+    "FT_pct": "65.2",
+    "Blk_pct": "8.1",
+    "Stl_pct": "8.8",
+    "A_pct": "49.2",
+    "3PA_pct": "36.1"
+  },
+  {
+    "team": "Northwestern",
+    "3P_pct": "33.6",
+    "2P_pct": "48.2",
+    "FT_pct": "60.5",
+    "Blk_pct": "12.8",
+    "Stl_pct": "11.0",
+    "A_pct": "70.5",
+    "3PA_pct": "43.6"
+  },
+  {
+    "team": "Florida St.",
+    "3P_pct": "33.6",
+    "2P_pct": "46.8",
+    "FT_pct": "65.6",
+    "Blk_pct": "9.0",
+    "Stl_pct": "11.5",
+    "A_pct": "50.3",
+    "3PA_pct": "28.5"
+  },
+  {
+    "team": "Iona",
+    "3P_pct": "33.6",
+    "2P_pct": "47.1",
+    "FT_pct": "69.4",
+    "Blk_pct": "8.4",
+    "Stl_pct": "12.1",
+    "A_pct": "57.3",
+    "3PA_pct": "26.4"
+  },
+  {
+    "team": "Maine",
+    "3P_pct": "33.5",
+    "2P_pct": "49.4",
+    "FT_pct": "67.2",
+    "Blk_pct": "8.1",
+    "Stl_pct": "12.6",
+    "A_pct": "57.6",
+    "3PA_pct": "32.8"
+  },
+  {
+    "team": "Jacksonville St.",
+    "3P_pct": "33.5",
+    "2P_pct": "48.4",
+    "FT_pct": "68.1",
+    "Blk_pct": "7.7",
+    "Stl_pct": "11.8",
+    "A_pct": "51.7",
+    "3PA_pct": "32.1"
+  },
+  {
+    "team": "Lehigh",
+    "3P_pct": "33.5",
+    "2P_pct": "46.6",
+    "FT_pct": "69.7",
+    "Blk_pct": "8.6",
+    "Stl_pct": "11.5",
+    "A_pct": "63.0",
+    "3PA_pct": "32.1"
+  },
+  {
+    "team": "Alabama St.",
+    "3P_pct": "33.5",
+    "2P_pct": "45.9",
+    "FT_pct": "64.4",
+    "Blk_pct": "9.6",
+    "Stl_pct": "13.6",
+    "A_pct": "44.2",
+    "3PA_pct": "32.2"
+  },
+  {
+    "team": "Old Dominion",
+    "3P_pct": "33.5",
+    "2P_pct": "43.9",
+    "FT_pct": "72.3",
+    "Blk_pct": "11.6",
+    "Stl_pct": "10.0",
+    "A_pct": "62.0",
+    "3PA_pct": "32.2"
+  },
+  {
+    "team": "Arkansas",
+    "3P_pct": "33.4",
+    "2P_pct": "50.1",
+    "FT_pct": "65.0",
+    "Blk_pct": "8.4",
+    "Stl_pct": "7.8",
+    "A_pct": "57.4",
+    "3PA_pct": "39.1"
+  },
+  {
+    "team": "Army",
+    "3P_pct": "33.4",
+    "2P_pct": "45.9",
+    "FT_pct": "71.5",
+    "Blk_pct": "7.7",
+    "Stl_pct": "10.0",
+    "A_pct": "48.2",
+    "3PA_pct": "27.7"
+  },
+  {
+    "team": "Arizona St.",
+    "3P_pct": "33.4",
+    "2P_pct": "49.4",
+    "FT_pct": "65.6",
+    "Blk_pct": "7.9",
+    "Stl_pct": "7.9",
+    "A_pct": "58.5",
+    "3PA_pct": "24.2"
+  },
+  {
+    "team": "Coastal Carolina",
+    "3P_pct": "33.3",
+    "2P_pct": "43.4",
+    "FT_pct": "69.2",
+    "Blk_pct": "11.5",
+    "Stl_pct": "13.1",
+    "A_pct": "55.0",
+    "3PA_pct": "35.5"
+  },
+  {
+    "team": "Long Beach St.",
+    "3P_pct": "33.3",
+    "2P_pct": "52.0",
+    "FT_pct": "64.1",
+    "Blk_pct": "6.5",
+    "Stl_pct": "10.4",
+    "A_pct": "54.7",
+    "3PA_pct": "33.5"
+  },
+  {
+    "team": "Syracuse",
+    "3P_pct": "33.3",
+    "2P_pct": "49.3",
+    "FT_pct": "65.0",
+    "Blk_pct": "6.0",
+    "Stl_pct": "11.4",
+    "A_pct": "56.2",
+    "3PA_pct": "29.6"
+  },
+  {
+    "team": "Virginia",
+    "3P_pct": "33.3",
+    "2P_pct": "51.2",
+    "FT_pct": "71.9",
+    "Blk_pct": "8.3",
+    "Stl_pct": "9.6",
+    "A_pct": "50.8",
+    "3PA_pct": "27.5"
+  },
+  {
+    "team": "Delaware St.",
+    "3P_pct": "33.2",
+    "2P_pct": "46.3",
+    "FT_pct": "73.8",
+    "Blk_pct": "11.5",
+    "Stl_pct": "8.7",
+    "A_pct": "60.5",
+    "3PA_pct": "42.0"
+  },
+  {
+    "team": "Southern",
+    "3P_pct": "33.2",
+    "2P_pct": "46.6",
+    "FT_pct": "61.8",
+    "Blk_pct": "11.2",
+    "Stl_pct": "9.9",
+    "A_pct": "53.2",
+    "3PA_pct": "39.2"
+  },
+  {
+    "team": "Rider",
+    "3P_pct": "33.1",
+    "2P_pct": "47.6",
+    "FT_pct": "70.0",
+    "Blk_pct": "7.6",
+    "Stl_pct": "11.1",
+    "A_pct": "58.9",
+    "3PA_pct": "36.7"
+  },
+  {
+    "team": "Middle Tennessee",
+    "3P_pct": "33.1",
+    "2P_pct": "50.6",
+    "FT_pct": "69.0",
+    "Blk_pct": "7.3",
+    "Stl_pct": "12.3",
+    "A_pct": "52.2",
+    "3PA_pct": "38.1"
+  },
+  {
+    "team": "Louisiana Monroe",
+    "3P_pct": "33.1",
+    "2P_pct": "47.2",
+    "FT_pct": "65.3",
+    "Blk_pct": "6.8",
+    "Stl_pct": "11.1",
+    "A_pct": "53.3",
+    "3PA_pct": "28.7"
+  },
+  {
+    "team": "Sacramento St.",
+    "3P_pct": "33.0",
+    "2P_pct": "45.9",
+    "FT_pct": "65.1",
+    "Blk_pct": "7.6",
+    "Stl_pct": "8.8",
+    "A_pct": "54.1",
+    "3PA_pct": "31.2"
+  },
+  {
+    "team": "Stephen F. Austin",
+    "3P_pct": "33.0",
+    "2P_pct": "46.0",
+    "FT_pct": "63.4",
+    "Blk_pct": "9.2",
+    "Stl_pct": "13.1",
+    "A_pct": "52.6",
+    "3PA_pct": "25.4"
+  },
+  {
+    "team": "Stony Brook",
+    "3P_pct": "32.9",
+    "2P_pct": "43.6",
+    "FT_pct": "70.8",
+    "Blk_pct": "8.1",
+    "Stl_pct": "12.9",
+    "A_pct": "55.6",
+    "3PA_pct": "23.8"
+  },
+  {
+    "team": "Cal St. Northridge",
+    "3P_pct": "32.8",
+    "2P_pct": "44.8",
+    "FT_pct": "65.9",
+    "Blk_pct": "7.7",
+    "Stl_pct": "10.2",
+    "A_pct": "58.5",
+    "3PA_pct": "30.4"
+  },
+  {
+    "team": "Cleveland St.",
+    "3P_pct": "32.8",
+    "2P_pct": "49.5",
+    "FT_pct": "64.0",
+    "Blk_pct": "6.0",
+    "Stl_pct": "10.4",
+    "A_pct": "48.3",
+    "3PA_pct": "30.2"
+  },
+  {
+    "team": "VMI",
+    "3P_pct": "32.8",
+    "2P_pct": "46.1",
+    "FT_pct": "70.3",
+    "Blk_pct": "9.4",
+    "Stl_pct": "11.5",
+    "A_pct": "55.5",
+    "3PA_pct": "35.0"
+  },
+  {
+    "team": "Albany",
+    "3P_pct": "32.8",
+    "2P_pct": "41.5",
+    "FT_pct": "67.0",
+    "Blk_pct": "9.8",
+    "Stl_pct": "9.5",
+    "A_pct": "47.9",
+    "3PA_pct": "32.3"
+  },
+  {
+    "team": "Lamar",
+    "3P_pct": "32.8",
+    "2P_pct": "47.7",
+    "FT_pct": "68.6",
+    "Blk_pct": "10.0",
+    "Stl_pct": "10.6",
+    "A_pct": "45.7",
+    "3PA_pct": "36.4"
+  },
+  {
+    "team": "Oklahoma St.",
+    "3P_pct": "32.7",
+    "2P_pct": "49.4",
+    "FT_pct": "64.4",
+    "Blk_pct": "8.9",
+    "Stl_pct": "10.0",
+    "A_pct": "55.1",
+    "3PA_pct": "27.4"
+  },
+  {
+    "team": "Texas A&M",
+    "3P_pct": "32.7",
+    "2P_pct": "44.1",
+    "FT_pct": "66.0",
+    "Blk_pct": "7.3",
+    "Stl_pct": "11.2",
+    "A_pct": "62.2",
+    "3PA_pct": "30.9"
+  },
+  {
+    "team": "Louisiana Tech",
+    "3P_pct": "32.7",
+    "2P_pct": "48.3",
+    "FT_pct": "70.3",
+    "Blk_pct": "7.6",
+    "Stl_pct": "9.0",
+    "A_pct": "49.5",
+    "3PA_pct": "27.5"
+  },
+  {
+    "team": "Fresno St.",
+    "3P_pct": "32.7",
+    "2P_pct": "50.3",
+    "FT_pct": "66.7",
+    "Blk_pct": "7.3",
+    "Stl_pct": "10.4",
+    "A_pct": "62.6",
+    "3PA_pct": "35.1"
+  },
+  {
+    "team": "Mississippi Valley St.",
+    "3P_pct": "32.6",
+    "2P_pct": "48.7",
+    "FT_pct": "70.3",
+    "Blk_pct": "6.3",
+    "Stl_pct": "8.7",
+    "A_pct": "48.6",
+    "3PA_pct": "40.5"
+  },
+  {
+    "team": "Detroit",
+    "3P_pct": "32.6",
+    "2P_pct": "47.0",
+    "FT_pct": "62.8",
+    "Blk_pct": "6.1",
+    "Stl_pct": "9.0",
+    "A_pct": "50.9",
+    "3PA_pct": "29.1"
+  },
+  {
+    "team": "UTSA",
+    "3P_pct": "32.5",
+    "2P_pct": "46.7",
+    "FT_pct": "64.3",
+    "Blk_pct": "11.1",
+    "Stl_pct": "10.0",
+    "A_pct": "57.2",
+    "3PA_pct": "33.5"
+  },
+  {
+    "team": "Northwestern St.",
+    "3P_pct": "32.5",
+    "2P_pct": "46.0",
+    "FT_pct": "69.0",
+    "Blk_pct": "9.4",
+    "Stl_pct": "10.5",
+    "A_pct": "52.6",
+    "3PA_pct": "32.7"
+  },
+  {
+    "team": "La Salle",
+    "3P_pct": "32.5",
+    "2P_pct": "44.8",
+    "FT_pct": "73.5",
+    "Blk_pct": "9.1",
+    "Stl_pct": "11.6",
+    "A_pct": "52.3",
+    "3PA_pct": "29.6"
+  },
+  {
+    "team": "Prairie View A&M",
+    "3P_pct": "32.4",
+    "2P_pct": "46.8",
+    "FT_pct": "64.5",
+    "Blk_pct": "8.9",
+    "Stl_pct": "11.9",
+    "A_pct": "43.7",
+    "3PA_pct": "30.8"
+  },
+  {
+    "team": "UT Arlington",
+    "3P_pct": "32.4",
+    "2P_pct": "48.4",
+    "FT_pct": "66.4",
+    "Blk_pct": "10.0",
+    "Stl_pct": "9.2",
+    "A_pct": "41.9",
+    "3PA_pct": "25.6"
+  },
+  {
+    "team": "Birmingham Southern",
+    "3P_pct": "32.3",
+    "2P_pct": "47.5",
+    "FT_pct": "66.0",
+    "Blk_pct": "7.8",
+    "Stl_pct": "12.9",
+    "A_pct": "54.8",
+    "3PA_pct": "42.6"
+  },
+  {
+    "team": "Georgia",
+    "3P_pct": "32.3",
+    "2P_pct": "50.8",
+    "FT_pct": "74.3",
+    "Blk_pct": "9.0",
+    "Stl_pct": "10.5",
+    "A_pct": "56.9",
+    "3PA_pct": "30.2"
+  },
+  {
+    "team": "Harvard",
+    "3P_pct": "32.3",
+    "2P_pct": "46.4",
+    "FT_pct": "63.2",
+    "Blk_pct": "7.7",
+    "Stl_pct": "12.7",
+    "A_pct": "57.2",
+    "3PA_pct": "31.4"
+  },
+  {
+    "team": "Pittsburgh",
+    "3P_pct": "32.3",
+    "2P_pct": "54.8",
+    "FT_pct": "60.5",
+    "Blk_pct": "9.4",
+    "Stl_pct": "7.9",
+    "A_pct": "63.6",
+    "3PA_pct": "34.5"
+  },
+  {
+    "team": "Drexel",
+    "3P_pct": "32.2",
+    "2P_pct": "45.5",
+    "FT_pct": "67.9",
+    "Blk_pct": "10.1",
+    "Stl_pct": "9.5",
+    "A_pct": "62.3",
+    "3PA_pct": "33.9"
+  },
+  {
+    "team": "Jackson St.",
+    "3P_pct": "32.2",
+    "2P_pct": "48.1",
+    "FT_pct": "61.2",
+    "Blk_pct": "8.3",
+    "Stl_pct": "9.8",
+    "A_pct": "63.8",
+    "3PA_pct": "28.7"
+  },
+  {
+    "team": "East Tennessee St.",
+    "3P_pct": "32.2",
+    "2P_pct": "48.9",
+    "FT_pct": "70.2",
+    "Blk_pct": "9.2",
+    "Stl_pct": "8.2",
+    "A_pct": "46.5",
+    "3PA_pct": "24.0"
+  },
+  {
+    "team": "Florida A&M",
+    "3P_pct": "32.2",
+    "2P_pct": "44.5",
+    "FT_pct": "65.6",
+    "Blk_pct": "10.8",
+    "Stl_pct": "10.8",
+    "A_pct": "46.7",
+    "3PA_pct": "34.0"
+  },
+  {
+    "team": "Monmouth",
+    "3P_pct": "32.1",
+    "2P_pct": "54.2",
+    "FT_pct": "64.9",
+    "Blk_pct": "7.1",
+    "Stl_pct": "10.9",
+    "A_pct": "59.9",
+    "3PA_pct": "35.1"
+  },
+  {
+    "team": "Sacred Heart",
+    "3P_pct": "32.1",
+    "2P_pct": "47.0",
+    "FT_pct": "64.1",
+    "Blk_pct": "7.3",
+    "Stl_pct": "10.8",
+    "A_pct": "51.6",
+    "3PA_pct": "24.7"
+  },
+  {
+    "team": "Washington St.",
+    "3P_pct": "32.1",
+    "2P_pct": "46.5",
+    "FT_pct": "70.6",
+    "Blk_pct": "8.5",
+    "Stl_pct": "8.2",
+    "A_pct": "45.3",
+    "3PA_pct": "34.8"
+  },
+  {
+    "team": "San Jose St.",
+    "3P_pct": "32.1",
+    "2P_pct": "45.0",
+    "FT_pct": "65.7",
+    "Blk_pct": "7.5",
+    "Stl_pct": "9.1",
+    "A_pct": "52.7",
+    "3PA_pct": "33.7"
+  },
+  {
+    "team": "Colgate",
+    "3P_pct": "32.1",
+    "2P_pct": "49.2",
+    "FT_pct": "70.6",
+    "Blk_pct": "10.4",
+    "Stl_pct": "9.3",
+    "A_pct": "54.7",
+    "3PA_pct": "27.6"
+  },
+  {
+    "team": "Canisius",
+    "3P_pct": "32.1",
+    "2P_pct": "41.6",
+    "FT_pct": "68.7",
+    "Blk_pct": "11.7",
+    "Stl_pct": "9.6",
+    "A_pct": "56.2",
+    "3PA_pct": "35.2"
+  },
+  {
+    "team": "Southeastern Louisiana",
+    "3P_pct": "32.1",
+    "2P_pct": "43.9",
+    "FT_pct": "66.8",
+    "Blk_pct": "10.4",
+    "Stl_pct": "11.1",
+    "A_pct": "50.8",
+    "3PA_pct": "33.0"
+  },
+  {
+    "team": "West Virginia",
+    "3P_pct": "32.0",
+    "2P_pct": "46.6",
+    "FT_pct": "69.2",
+    "Blk_pct": "9.3",
+    "Stl_pct": "14.1",
+    "A_pct": "52.9",
+    "3PA_pct": "29.0"
+  },
+  {
+    "team": "Western Carolina",
+    "3P_pct": "32.0",
+    "2P_pct": "47.9",
+    "FT_pct": "75.4",
+    "Blk_pct": "8.9",
+    "Stl_pct": "11.0",
+    "A_pct": "55.1",
+    "3PA_pct": "32.6"
+  },
+  {
+    "team": "Murray St.",
+    "3P_pct": "32.0",
+    "2P_pct": "49.5",
+    "FT_pct": "71.9",
+    "Blk_pct": "7.0",
+    "Stl_pct": "10.7",
+    "A_pct": "49.3",
+    "3PA_pct": "31.1"
+  },
+  {
+    "team": "Fairleigh Dickinson",
+    "3P_pct": "32.0",
+    "2P_pct": "49.8",
+    "FT_pct": "68.5",
+    "Blk_pct": "9.4",
+    "Stl_pct": "13.0",
+    "A_pct": "54.7",
+    "3PA_pct": "37.0"
+  },
+  {
+    "team": "High Point",
+    "3P_pct": "32.0",
+    "2P_pct": "44.7",
+    "FT_pct": "71.2",
+    "Blk_pct": "10.6",
+    "Stl_pct": "12.9",
+    "A_pct": "50.8",
+    "3PA_pct": "31.3"
+  },
+  {
+    "team": "UC Riverside",
+    "3P_pct": "31.9",
+    "2P_pct": "48.4",
+    "FT_pct": "63.7",
+    "Blk_pct": "6.3",
+    "Stl_pct": "10.8",
+    "A_pct": "54.8",
+    "3PA_pct": "34.5"
+  },
+  {
+    "team": "Nevada",
+    "3P_pct": "31.9",
+    "2P_pct": "44.8",
+    "FT_pct": "67.4",
+    "Blk_pct": "7.9",
+    "Stl_pct": "8.9",
+    "A_pct": "43.8",
+    "3PA_pct": "23.2"
+  },
+  {
+    "team": "Jacksonville",
+    "3P_pct": "31.8",
+    "2P_pct": "49.4",
+    "FT_pct": "66.9",
+    "Blk_pct": "7.8",
+    "Stl_pct": "9.8",
+    "A_pct": "45.2",
+    "3PA_pct": "36.5"
+  },
+  {
+    "team": "Clemson",
+    "3P_pct": "31.8",
+    "2P_pct": "49.2",
+    "FT_pct": "62.6",
+    "Blk_pct": "7.2",
+    "Stl_pct": "10.5",
+    "A_pct": "52.9",
+    "3PA_pct": "30.5"
+  },
+  {
+    "team": "Texas A&M Corpus Chris",
+    "3P_pct": "31.8",
+    "2P_pct": "47.0",
+    "FT_pct": "70.2",
+    "Blk_pct": "9.1",
+    "Stl_pct": "10.3",
+    "A_pct": "54.4",
+    "3PA_pct": "27.1"
+  },
+  {
+    "team": "William & Mary",
+    "3P_pct": "31.8",
+    "2P_pct": "42.8",
+    "FT_pct": "63.8",
+    "Blk_pct": "12.6",
+    "Stl_pct": "9.5",
+    "A_pct": "56.1",
+    "3PA_pct": "35.8"
+  },
+  {
+    "team": "Norfolk St.",
+    "3P_pct": "31.7",
+    "2P_pct": "46.0",
+    "FT_pct": "62.3",
+    "Blk_pct": "8.4",
+    "Stl_pct": "10.7",
+    "A_pct": "52.0",
+    "3PA_pct": "30.2"
+  },
+  {
+    "team": "Rutgers",
+    "3P_pct": "31.7",
+    "2P_pct": "44.3",
+    "FT_pct": "58.3",
+    "Blk_pct": "11.7",
+    "Stl_pct": "12.6",
+    "A_pct": "55.9",
+    "3PA_pct": "30.3"
+  },
+  {
+    "team": "SMU",
+    "3P_pct": "31.7",
+    "2P_pct": "49.4",
+    "FT_pct": "66.1",
+    "Blk_pct": "8.5",
+    "Stl_pct": "9.9",
+    "A_pct": "41.9",
+    "3PA_pct": "31.5"
+  },
+  {
+    "team": "Idaho St.",
+    "3P_pct": "31.6",
+    "2P_pct": "47.2",
+    "FT_pct": "67.8",
+    "Blk_pct": "6.7",
+    "Stl_pct": "8.5",
+    "A_pct": "54.6",
+    "3PA_pct": "37.3"
+  },
+  {
+    "team": "Alabama A&M",
+    "3P_pct": "31.6",
+    "2P_pct": "44.3",
+    "FT_pct": "66.4",
+    "Blk_pct": "8.3",
+    "Stl_pct": "10.4",
+    "A_pct": "52.7",
+    "3PA_pct": "34.6"
+  },
+  {
+    "team": "Auburn",
+    "3P_pct": "31.5",
+    "2P_pct": "46.9",
+    "FT_pct": "59.3",
+    "Blk_pct": "7.0",
+    "Stl_pct": "12.0",
+    "A_pct": "56.3",
+    "3PA_pct": "32.8"
+  },
+  {
+    "team": "Kentucky",
+    "3P_pct": "31.5",
+    "2P_pct": "50.9",
+    "FT_pct": "67.7",
+    "Blk_pct": "7.8",
+    "Stl_pct": "9.9",
+    "A_pct": "51.2",
+    "3PA_pct": "34.9"
+  },
+  {
+    "team": "Cal St. Fullerton",
+    "3P_pct": "31.5",
+    "2P_pct": "44.2",
+    "FT_pct": "65.9",
+    "Blk_pct": "6.9",
+    "Stl_pct": "9.7",
+    "A_pct": "56.4",
+    "3PA_pct": "35.4"
+  },
+  {
+    "team": "Providence",
+    "3P_pct": "31.5",
+    "2P_pct": "46.0",
+    "FT_pct": "67.7",
+    "Blk_pct": "10.3",
+    "Stl_pct": "10.9",
+    "A_pct": "61.5",
+    "3PA_pct": "37.4"
+  },
+  {
+    "team": "North Carolina A&T",
+    "3P_pct": "31.4",
+    "2P_pct": "43.9",
+    "FT_pct": "63.9",
+    "Blk_pct": "7.9",
+    "Stl_pct": "10.6",
+    "A_pct": "48.0",
+    "3PA_pct": "30.6"
+  },
+  {
+    "team": "California",
+    "3P_pct": "31.4",
+    "2P_pct": "51.7",
+    "FT_pct": "67.7",
+    "Blk_pct": "7.1",
+    "Stl_pct": "7.3",
+    "A_pct": "58.3",
+    "3PA_pct": "32.2"
+  },
+  {
+    "team": "Youngstown St.",
+    "3P_pct": "31.3",
+    "2P_pct": "42.6",
+    "FT_pct": "74.0",
+    "Blk_pct": "8.9",
+    "Stl_pct": "11.2",
+    "A_pct": "58.7",
+    "3PA_pct": "29.0"
+  },
+  {
+    "team": "Boise St.",
+    "3P_pct": "31.3",
+    "2P_pct": "46.3",
+    "FT_pct": "69.2",
+    "Blk_pct": "8.3",
+    "Stl_pct": "9.1",
+    "A_pct": "54.5",
+    "3PA_pct": "32.4"
+  },
+  {
+    "team": "Richmond",
+    "3P_pct": "31.2",
+    "2P_pct": "47.5",
+    "FT_pct": "70.5",
+    "Blk_pct": "8.4",
+    "Stl_pct": "6.8",
+    "A_pct": "65.5",
+    "3PA_pct": "46.2"
+  },
+  {
+    "team": "Austin Peay",
+    "3P_pct": "31.2",
+    "2P_pct": "50.6",
+    "FT_pct": "64.9",
+    "Blk_pct": "7.6",
+    "Stl_pct": "10.1",
+    "A_pct": "45.2",
+    "3PA_pct": "33.1"
+  },
+  {
+    "team": "DePaul",
+    "3P_pct": "31.2",
+    "2P_pct": "45.7",
+    "FT_pct": "65.6",
+    "Blk_pct": "9.6",
+    "Stl_pct": "11.5",
+    "A_pct": "65.4",
+    "3PA_pct": "30.8"
+  },
+  {
+    "team": "Bradley",
+    "3P_pct": "31.1",
+    "2P_pct": "42.1",
+    "FT_pct": "71.6",
+    "Blk_pct": "8.9",
+    "Stl_pct": "9.0",
+    "A_pct": "53.0",
+    "3PA_pct": "28.6"
+  },
+  {
+    "team": "Mercer",
+    "3P_pct": "31.1",
+    "2P_pct": "47.0",
+    "FT_pct": "66.5",
+    "Blk_pct": "9.2",
+    "Stl_pct": "12.4",
+    "A_pct": "51.5",
+    "3PA_pct": "29.4"
+  },
+  {
+    "team": "Saint Peter's",
+    "3P_pct": "31.0",
+    "2P_pct": "45.4",
+    "FT_pct": "62.3",
+    "Blk_pct": "11.1",
+    "Stl_pct": "13.3",
+    "A_pct": "54.4",
+    "3PA_pct": "24.0"
+  },
+  {
+    "team": "FIU",
+    "3P_pct": "31.0",
+    "2P_pct": "46.8",
+    "FT_pct": "61.2",
+    "Blk_pct": "9.1",
+    "Stl_pct": "9.7",
+    "A_pct": "41.8",
+    "3PA_pct": "21.7"
+  },
+  {
+    "team": "Rhode Island",
+    "3P_pct": "31.0",
+    "2P_pct": "41.5",
+    "FT_pct": "68.8",
+    "Blk_pct": "10.5",
+    "Stl_pct": "10.0",
+    "A_pct": "55.6",
+    "3PA_pct": "31.9"
+  },
+  {
+    "team": "Wyoming",
+    "3P_pct": "30.9",
+    "2P_pct": "50.6",
+    "FT_pct": "69.7",
+    "Blk_pct": "8.8",
+    "Stl_pct": "10.7",
+    "A_pct": "51.9",
+    "3PA_pct": "25.2"
+  },
+  {
+    "team": "Alabama",
+    "3P_pct": "30.9",
+    "2P_pct": "50.7",
+    "FT_pct": "73.6",
+    "Blk_pct": "7.2",
+    "Stl_pct": "8.8",
+    "A_pct": "50.5",
+    "3PA_pct": "33.9"
+  },
+  {
+    "team": "UTEP",
+    "3P_pct": "30.8",
+    "2P_pct": "49.6",
+    "FT_pct": "72.0",
+    "Blk_pct": "8.3",
+    "Stl_pct": "10.0",
+    "A_pct": "61.0",
+    "3PA_pct": "28.0"
+  },
+  {
+    "team": "San Diego",
+    "3P_pct": "30.8",
+    "2P_pct": "50.1",
+    "FT_pct": "68.3",
+    "Blk_pct": "9.3",
+    "Stl_pct": "7.3",
+    "A_pct": "52.6",
+    "3PA_pct": "29.5"
+  },
+  {
+    "team": "Tennessee Martin",
+    "3P_pct": "30.7",
+    "2P_pct": "47.1",
+    "FT_pct": "66.5",
+    "Blk_pct": "8.2",
+    "Stl_pct": "10.8",
+    "A_pct": "58.0",
+    "3PA_pct": "25.5"
+  },
+  {
+    "team": "Southern Miss",
+    "3P_pct": "30.7",
+    "2P_pct": "44.0",
+    "FT_pct": "66.5",
+    "Blk_pct": "12.8",
+    "Stl_pct": "11.0",
+    "A_pct": "54.5",
+    "3PA_pct": "27.2"
+  },
+  {
+    "team": "Winthrop",
+    "3P_pct": "30.6",
+    "2P_pct": "47.6",
+    "FT_pct": "65.6",
+    "Blk_pct": "9.8",
+    "Stl_pct": "9.9",
+    "A_pct": "49.0",
+    "3PA_pct": "36.2"
+  },
+  {
+    "team": "East Carolina",
+    "3P_pct": "30.6",
+    "2P_pct": "44.2",
+    "FT_pct": "70.0",
+    "Blk_pct": "9.0",
+    "Stl_pct": "8.4",
+    "A_pct": "52.5",
+    "3PA_pct": "40.3"
+  },
+  {
+    "team": "Cornell",
+    "3P_pct": "30.5",
+    "2P_pct": "43.4",
+    "FT_pct": "68.4",
+    "Blk_pct": "11.8",
+    "Stl_pct": "10.5",
+    "A_pct": "61.1",
+    "3PA_pct": "43.9"
+  },
+  {
+    "team": "LIU Brooklyn",
+    "3P_pct": "30.4",
+    "2P_pct": "49.2",
+    "FT_pct": "68.4",
+    "Blk_pct": "5.5",
+    "Stl_pct": "10.3",
+    "A_pct": "50.9",
+    "3PA_pct": "31.4"
+  },
+  {
+    "team": "Charleston Southern",
+    "3P_pct": "30.3",
+    "2P_pct": "47.6",
+    "FT_pct": "67.1",
+    "Blk_pct": "10.8",
+    "Stl_pct": "12.7",
+    "A_pct": "51.2",
+    "3PA_pct": "28.5"
+  },
+  {
+    "team": "Tulane",
+    "3P_pct": "30.1",
+    "2P_pct": "50.4",
+    "FT_pct": "67.2",
+    "Blk_pct": "9.3",
+    "Stl_pct": "12.6",
+    "A_pct": "55.3",
+    "3PA_pct": "25.7"
+  },
+  {
+    "team": "Elon",
+    "3P_pct": "30.0",
+    "2P_pct": "42.9",
+    "FT_pct": "67.2",
+    "Blk_pct": "7.8",
+    "Stl_pct": "12.5",
+    "A_pct": "47.1",
+    "3PA_pct": "21.8"
+  },
+  {
+    "team": "Louisiana Lafayette",
+    "3P_pct": "29.9",
+    "2P_pct": "47.9",
+    "FT_pct": "64.3",
+    "Blk_pct": "7.4",
+    "Stl_pct": "11.4",
+    "A_pct": "59.5",
+    "3PA_pct": "26.2"
+  },
+  {
+    "team": "Hartford",
+    "3P_pct": "29.7",
+    "2P_pct": "44.5",
+    "FT_pct": "62.5",
+    "Blk_pct": "10.7",
+    "Stl_pct": "10.1",
+    "A_pct": "45.9",
+    "3PA_pct": "29.4"
+  },
+  {
+    "team": "Savannah St.",
+    "3P_pct": "29.7",
+    "2P_pct": "38.8",
+    "FT_pct": "57.9",
+    "Blk_pct": "11.4",
+    "Stl_pct": "14.0",
+    "A_pct": "46.3",
+    "3PA_pct": "32.9"
+  },
+  {
+    "team": "Stetson",
+    "3P_pct": "29.6",
+    "2P_pct": "47.2",
+    "FT_pct": "70.0",
+    "Blk_pct": "11.1",
+    "Stl_pct": "10.2",
+    "A_pct": "46.9",
+    "3PA_pct": "28.6"
+  },
+  {
+    "team": "Central Michigan",
+    "3P_pct": "29.5",
+    "2P_pct": "51.6",
+    "FT_pct": "69.3",
+    "Blk_pct": "5.9",
+    "Stl_pct": "9.9",
+    "A_pct": "49.1",
+    "3PA_pct": "27.8"
+  },
+  {
+    "team": "Loyola Marymount",
+    "3P_pct": "29.5",
+    "2P_pct": "46.0",
+    "FT_pct": "77.9",
+    "Blk_pct": "10.6",
+    "Stl_pct": "10.3",
+    "A_pct": "58.5",
+    "3PA_pct": "29.1"
+  },
+  {
+    "team": "Mount St. Mary's",
+    "3P_pct": "29.5",
+    "2P_pct": "39.4",
+    "FT_pct": "65.2",
+    "Blk_pct": "7.9",
+    "Stl_pct": "10.8",
+    "A_pct": "59.2",
+    "3PA_pct": "31.1"
+  },
+  {
+    "team": "Hofstra",
+    "3P_pct": "29.4",
+    "2P_pct": "43.0",
+    "FT_pct": "67.3",
+    "Blk_pct": "9.0",
+    "Stl_pct": "12.7",
+    "A_pct": "56.6",
+    "3PA_pct": "28.4"
+  },
+  {
+    "team": "Idaho",
+    "3P_pct": "29.3",
+    "2P_pct": "41.0",
+    "FT_pct": "67.5",
+    "Blk_pct": "9.2",
+    "Stl_pct": "9.4",
+    "A_pct": "50.7",
+    "3PA_pct": "33.4"
+  },
+  {
+    "team": "Loyola Chicago",
+    "3P_pct": "28.9",
+    "2P_pct": "46.8",
+    "FT_pct": "69.7",
+    "Blk_pct": "5.6",
+    "Stl_pct": "10.3",
+    "A_pct": "54.6",
+    "3PA_pct": "27.8"
+  },
+  {
+    "team": "Eastern Kentucky",
+    "3P_pct": "28.8",
+    "2P_pct": "45.3",
+    "FT_pct": "73.2",
+    "Blk_pct": "9.1",
+    "Stl_pct": "10.8",
+    "A_pct": "57.1",
+    "3PA_pct": "34.0"
+  },
+  {
+    "team": "Nicholls St.",
+    "3P_pct": "28.8",
+    "2P_pct": "39.7",
+    "FT_pct": "61.3",
+    "Blk_pct": "12.9",
+    "Stl_pct": "11.6",
+    "A_pct": "48.0",
+    "3PA_pct": "34.0"
+  },
+  {
+    "team": "Morris Brown",
+    "3P_pct": "28.8",
+    "2P_pct": "40.7",
+    "FT_pct": "59.9",
+    "Blk_pct": "11.6",
+    "Stl_pct": "12.2",
+    "A_pct": "39.4",
+    "3PA_pct": "29.8"
+  },
+  {
+    "team": "Towson",
+    "3P_pct": "28.7",
+    "2P_pct": "46.5",
+    "FT_pct": "62.0",
+    "Blk_pct": "9.4",
+    "Stl_pct": "16.0",
+    "A_pct": "59.9",
+    "3PA_pct": "21.8"
+  },
+  {
+    "team": "St. John's",
+    "3P_pct": "28.7",
+    "2P_pct": "43.9",
+    "FT_pct": "67.0",
+    "Blk_pct": "9.2",
+    "Stl_pct": "9.9",
+    "A_pct": "46.9",
+    "3PA_pct": "24.8"
+  },
+  {
+    "team": "Fordham",
+    "3P_pct": "28.7",
+    "2P_pct": "50.1",
+    "FT_pct": "57.2",
+    "Blk_pct": "7.1",
+    "Stl_pct": "13.5",
+    "A_pct": "53.7",
+    "3PA_pct": "24.1"
+  },
+  {
+    "team": "St. Francis PA",
+    "3P_pct": "28.4",
+    "2P_pct": "46.8",
+    "FT_pct": "68.5",
+    "Blk_pct": "10.9",
+    "Stl_pct": "11.0",
+    "A_pct": "56.7",
+    "3PA_pct": "32.8"
+  },
+  {
+    "team": "Liberty",
+    "3P_pct": "28.4",
+    "2P_pct": "45.8",
+    "FT_pct": "62.0",
+    "Blk_pct": "9.9",
+    "Stl_pct": "13.7",
+    "A_pct": "46.2",
+    "3PA_pct": "26.9"
+  },
+  {
+    "team": "Northern Arizona",
+    "3P_pct": "28.3",
+    "2P_pct": "51.5",
+    "FT_pct": "69.4",
+    "Blk_pct": "6.6",
+    "Stl_pct": "11.5",
+    "A_pct": "52.9",
+    "3PA_pct": "29.2"
+  },
+  {
+    "team": "South Carolina St.",
+    "3P_pct": "27.6",
+    "2P_pct": "46.8",
+    "FT_pct": "66.3",
+    "Blk_pct": "8.8",
+    "Stl_pct": "11.4",
+    "A_pct": "41.2",
+    "3PA_pct": "23.2"
+  },
+  {
+    "team": "Arkansas Pine Bluff",
+    "3P_pct": "27.6",
+    "2P_pct": "40.1",
+    "FT_pct": "65.9",
+    "Blk_pct": "9.0",
+    "Stl_pct": "13.0",
+    "A_pct": "47.0",
+    "3PA_pct": "29.8"
+  },
+  {
+    "team": "Wofford",
+    "3P_pct": "27.6",
+    "2P_pct": "42.2",
+    "FT_pct": "67.1",
+    "Blk_pct": "8.9",
+    "Stl_pct": "9.3",
+    "A_pct": "54.6",
+    "3PA_pct": "34.0"
+  },
+  {
+    "team": "Coppin St.",
+    "3P_pct": "27.5",
+    "2P_pct": "41.7",
+    "FT_pct": "71.8",
+    "Blk_pct": "7.9",
+    "Stl_pct": "11.8",
+    "A_pct": "42.8",
+    "3PA_pct": "27.4"
+  },
+  {
+    "team": "Chicago St.",
+    "3P_pct": "27.3",
+    "2P_pct": "44.1",
+    "FT_pct": "61.4",
+    "Blk_pct": "8.6",
+    "Stl_pct": "12.7",
+    "A_pct": "62.9",
+    "3PA_pct": "26.4"
+  },
+  {
+    "team": "Loyola MD",
+    "3P_pct": "27.0",
+    "2P_pct": "42.0",
+    "FT_pct": "65.4",
+    "Blk_pct": "13.0",
+    "Stl_pct": "12.4",
+    "A_pct": "47.4",
+    "3PA_pct": "32.7"
+  },
+  {
+    "team": "Saint Mary's",
+    "3P_pct": "27.0",
+    "2P_pct": "44.2",
+    "FT_pct": "67.1",
+    "Blk_pct": "9.3",
+    "Stl_pct": "9.5",
+    "A_pct": "51.6",
+    "3PA_pct": "28.5"
+  }
+]

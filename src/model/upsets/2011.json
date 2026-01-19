@@ -1,0 +1,101 @@
+[
+  {
+    "winningTeam": "Marquette",
+    "winningSeed": 11,
+    "losingTeam": "Xavier",
+    "losingSeed": 6,
+    "winningScore": 66,
+    "losingScore": 55,
+    "round": 64
+  },
+  {
+    "winningTeam": "Richmond",
+    "winningSeed": 12,
+    "losingTeam": "Vanderbilt",
+    "losingSeed": 5,
+    "winningScore": 69,
+    "losingScore": 66,
+    "round": 64
+  },
+  {
+    "winningTeam": "Morehead St.",
+    "winningSeed": 13,
+    "losingTeam": "Louisville",
+    "losingSeed": 4,
+    "winningScore": 62,
+    "losingScore": 61,
+    "round": 64
+  },
+  {
+    "winningTeam": "VCU",
+    "winningSeed": 11,
+    "losingTeam": "Georgetown",
+    "losingSeed": 6,
+    "winningScore": 74,
+    "losingScore": 56,
+    "round": 64
+  },
+  {
+    "winningTeam": "Gonzaga",
+    "winningSeed": 11,
+    "losingTeam": "St. John's",
+    "losingSeed": 6,
+    "winningScore": 86,
+    "losingScore": 71,
+    "round": 64
+  },
+  {
+    "winningTeam": "Marquette",
+    "winningSeed": 11,
+    "losingTeam": "Syracuse",
+    "losingSeed": 3,
+    "winningScore": 66,
+    "losingScore": 62,
+    "round": 32
+  },
+  {
+    "winningTeam": "VCU",
+    "winningSeed": 11,
+    "losingTeam": "Purdue",
+    "losingSeed": 3,
+    "winningScore": 94,
+    "losingScore": 76,
+    "round": 32
+  },
+  {
+    "winningTeam": "Florida St.",
+    "winningSeed": 10,
+    "losingTeam": "Notre Dame",
+    "losingSeed": 2,
+    "winningScore": 71,
+    "losingScore": 57,
+    "round": 32
+  },
+  {
+    "winningTeam": "Butler",
+    "winningSeed": 8,
+    "losingTeam": "Pittsburgh",
+    "losingSeed": 1,
+    "winningScore": 71,
+    "losingScore": 70,
+    "round": 32
+  },
+  {
+    "winningTeam": "VCU",
+    "winningSeed": 11,
+    "losingTeam": "Kansas",
+    "losingSeed": 1,
+    "winningScore": 71,
+    "losingScore": 61,
+    "round": 8
+  },
+  {
+    "winningTeam": "Butler",
+    "winningSeed": 8,
+    "losingTeam": "Florida",
+    "losingSeed": 2,
+    "winningScore": 74,
+    "losingScore": 71,
+    "round": 8
+  }
+]

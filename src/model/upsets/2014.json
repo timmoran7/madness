@@ -1,0 +1,119 @@
+[
+  {
+    "winningTeam": "Stephen F. Austin",
+    "winningSeed": 12,
+    "losingTeam": "VCU",
+    "losingSeed": 5,
+    "winningScore": 77,
+    "losingScore": 75,
+    "round": 64
+  },
+  {
+    "winningTeam": "Dayton",
+    "winningSeed": 11,
+    "losingTeam": "Ohio St.",
+    "losingSeed": 6,
+    "winningScore": 60,
+    "losingScore": 59,
+    "round": 64
+  },
+  {
+    "winningTeam": "Harvard",
+    "winningSeed": 12,
+    "losingTeam": "Cincinnati",
+    "losingSeed": 5,
+    "winningScore": 61,
+    "losingScore": 57,
+    "round": 64
+  },
+  {
+    "winningTeam": "North Dakota St.",
+    "winningSeed": 12,
+    "losingTeam": "Oklahoma",
+    "losingSeed": 5,
+    "winningScore": 80,
+    "losingScore": 75,
+    "round": 64
+  },
+  {
+    "winningTeam": "Tennessee",
+    "winningSeed": 11,
+    "losingTeam": "Massachusetts",
+    "losingSeed": 6,
+    "winningScore": 86,
+    "losingScore": 67,
+    "round": 64
+  },
+  {
+    "winningTeam": "Mercer",
+    "winningSeed": 14,
+    "losingTeam": "Duke",
+    "losingSeed": 3,
+    "winningScore": 78,
+    "losingScore": 71,
+    "round": 64
+  },
+  {
+    "winningTeam": "Dayton",
+    "winningSeed": 11,
+    "losingTeam": "Syracuse",
+    "losingSeed": 3,
+    "winningScore": 55,
+    "losingScore": 53,
+    "round": 32
+  },
+  {
+    "winningTeam": "Stanford",
+    "winningSeed": 10,
+    "losingTeam": "Kansas",
+    "losingSeed": 2,
+    "winningScore": 60,
+    "losingScore": 57,
+    "round": 32
+  },
+  {
+    "winningTeam": "Connecticut",
+    "winningSeed": 7,
+    "losingTeam": "Villanova",
+    "losingSeed": 2,
+    "winningScore": 77,
+    "losingScore": 65,
+    "round": 32
+  },
+  {
+    "winningTeam": "Kentucky",
+    "winningSeed": 8,
+    "losingTeam": "Wichita St.",
+    "losingSeed": 1,
+    "winningScore": 78,
+    "losingScore": 76,
+    "round": 32
+  },
+  {
+    "winningTeam": "Kentucky",
+    "winningSeed": 8,
+    "losingTeam": "Michigan",
+    "losingSeed": 2,
+    "winningScore": 75,
+    "losingScore": 72,
+    "round": 8
+  },
+  {
+    "winningTeam": "Connecticut",
+    "winningSeed": 7,
+    "losingTeam": "Florida",
+    "losingSeed": 1,
+    "winningScore": 63,
+    "losingScore": 53,
+    "round": 4
+  },
+  {
+    "winningTeam": "Kentucky",
+    "winningSeed": 8,
+    "losingTeam": "Wisconsin",
+    "losingSeed": 2,
+    "winningScore": 74,
+    "losingScore": 73,
+    "round": 4
+  }
+]

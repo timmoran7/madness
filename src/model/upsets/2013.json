@@ -1,0 +1,101 @@
+[
+  {
+    "winningTeam": "Oregon",
+    "winningSeed": 12,
+    "losingTeam": "Oklahoma St.",
+    "losingSeed": 5,
+    "winningScore": 68,
+    "losingScore": 55,
+    "round": 64
+  },
+  {
+    "winningTeam": "Mississippi",
+    "winningSeed": 12,
+    "losingTeam": "Wisconsin",
+    "losingSeed": 5,
+    "winningScore": 57,
+    "losingScore": 46,
+    "round": 64
+  },
+  {
+    "winningTeam": "La Salle",
+    "winningSeed": 13,
+    "losingTeam": "Kansas St.",
+    "losingSeed": 4,
+    "winningScore": 63,
+    "losingScore": 61,
+    "round": 64
+  },
+  {
+    "winningTeam": "Harvard",
+    "winningSeed": 14,
+    "losingTeam": "New Mexico",
+    "losingSeed": 3,
+    "winningScore": 68,
+    "losingScore": 62,
+    "round": 64
+  },
+  {
+    "winningTeam": "Minnesota",
+    "winningSeed": 11,
+    "losingTeam": "UCLA",
+    "losingSeed": 6,
+    "winningScore": 83,
+    "losingScore": 63,
+    "round": 64
+  },
+  {
+    "winningTeam": "Florida Gulf Coast",
+    "winningSeed": 15,
+    "losingTeam": "Georgetown",
+    "losingSeed": 2,
+    "winningScore": 78,
+    "losingScore": 68,
+    "round": 64
+  },
+  {
+    "winningTeam": "California",
+    "winningSeed": 12,
+    "losingTeam": "UNLV",
+    "losingSeed": 5,
+    "winningScore": 64,
+    "losingScore": 61,
+    "round": 64
+  },
+  {
+    "winningTeam": "Oregon",
+    "winningSeed": 12,
+    "losingTeam": "Saint Louis",
+    "losingSeed": 4,
+    "winningScore": 74,
+    "losingScore": 57,
+    "round": 32
+  },
+  {
+    "winningTeam": "Wichita St.",
+    "winningSeed": 9,
+    "losingTeam": "Gonzaga",
+    "losingSeed": 1,
+    "winningScore": 76,
+    "losingScore": 70,
+    "round": 32
+  },
+  {
+    "winningTeam": "Florida Gulf Coast",
+    "winningSeed": 15,
+    "losingTeam": "San Diego St.",
+    "losingSeed": 7,
+    "winningScore": 81,
+    "losingScore": 71,
+    "round": 32
+  },
+  {
+    "winningTeam": "Wichita St.",
+    "winningSeed": 9,
+    "losingTeam": "Ohio St.",
+    "losingSeed": 2,
+    "winningScore": 70,
+    "losingScore": 66,
+    "round": 8
+  }
+]

@@ -64,25 +64,30 @@ def parseFourFactors():
         
         teams_data.append(team_dict)
 
-def parseMiscStats():
+def parseMiscStats(year):
     rows = readKenPomHtml()
     for row in rows:
         cells = row.find_all('td')
-        if(len(cells) < 22):
+        if(len(cells) < 20):
             continue  # Skip rows that don't have enough data
         
         # Extract team name
         team_name = cells[0].find('a').text.strip()
         
         # Extract all the stats
+        assist_index = 16
+        three_pa_index = 18
+        if year < 2022:
+            assist_index = 14
+            three_pa_index = 16
+        
         three_p_pct = cells[2].text.strip()
         two_p_pct = cells[4].text.strip()
         ft_pct = cells[6].text.strip()
         blk_pct = cells[8].text.strip()
         stl_pct = cells[10].text.strip()
-        two_p_dist = cells[14].text.strip()
-        a_pct = cells[16].text.strip()
-        three_pa_pct = cells[18].text.strip()
+        a_pct = cells[assist_index].text.strip()
+        three_pa_pct = cells[three_pa_index].text.strip()
         
         team_dict = {
             "team": team_name,
@@ -91,13 +96,19 @@ def parseMiscStats():
             "FT_pct": ft_pct,
             "Blk_pct": blk_pct,
             "Stl_pct": stl_pct,
-            "2P_Dist": two_p_dist,
             "A_pct": a_pct,
             "3PA_pct": three_pa_pct,
         }
         
         teams_data.append(team_dict)
 
+    # Write teams_data to JSON file
+    output_file = f"/home/tmoran/personal/madness/src/model/miscStats/misc{year}.json"
+    with open(output_file, 'w') as f:
+        json.dump(teams_data, f, indent=2)
+
+    print(f"Successfully saved {len(teams_data)} teams to {output_file}")
+    
 def parseTeamNames():
     # Set to store unique team names
     team_names = set()
@@ -246,5 +257,55 @@ def parseTournamentMatchups():
         print(f"  - {name}")
     print(f"Saved to {mismatched_output}")
 
-# parseTeamNames()
-parseTournamentMatchups()
+def extractUpsets():
+    # Path to the matchups folder
+    matchups_dir = '/home/tmoran/personal/madness/src/model/matchups/'
+    
+    # Get all JSON files in the matchups folder
+    json_files = glob.glob(os.path.join(matchups_dir, '*.json'))
+    
+    # Process each JSON file
+    for json_file in sorted(json_files):
+        # Extract year from filename (e.g., matchups2024.json -> 2024)
+        year = os.path.basename(json_file).replace('matchups', '').replace('.json', '')
+        
+        with open(json_file, 'r') as f:
+            matchups = json.load(f)
+        
+        upsets = []
+        
+        for matchup in matchups:
+            higher_seed = matchup['higherSeed']
+            lower_seed = matchup['lowerSeed']
+            higher_seed_team = matchup['higherSeedTeam']
+            lower_seed_team = matchup['lowerSeedTeam']
+            higher_seed_score = matchup['higherSeedScore']
+            lower_seed_score = matchup['lowerSeedScore']
+            winning_team = matchup['winningTeam']
+            round_num = matchup['round']
+            
+            # Check if it's an upset (lower seed won and seed difference >= 5)
+            if winning_team == lower_seed_team and (lower_seed - higher_seed) >= 5:
+                upset_entry = {
+                    "winningTeam": lower_seed_team,
+                    "winningSeed": lower_seed,
+                    "losingTeam": higher_seed_team,
+                    "losingSeed": higher_seed,
+                    "winningScore": lower_seed_score,
+                    "losingScore": higher_seed_score,
+                    "round": round_num
+                }
+                upsets.append(upset_entry)
+        
+        # Save upsets to JSON file if there are any
+        if upsets:
+            output_dir = '/home/tmoran/personal/madness/src/model/upsets/'
+            os.makedirs(output_dir, exist_ok=True)
+            output_file = os.path.join(output_dir, f'upsets{year}.json')
+            with open(output_file, 'w') as f:
+                json.dump(upsets, f, indent=2)
+            print(f"Saved {len(upsets)} upsets for {year} to {output_file}")
+        else:
+            print(f"No upsets found for {year}")
+
+extractUpsets()

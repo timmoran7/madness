@@ -1,0 +1,101 @@
+[
+  {
+    "winningTeam": "UMBC",
+    "winningSeed": 16,
+    "losingTeam": "Virginia",
+    "losingSeed": 1,
+    "winningScore": 74,
+    "losingScore": 54,
+    "round": 64
+  },
+  {
+    "winningTeam": "Buffalo",
+    "winningSeed": 13,
+    "losingTeam": "Arizona",
+    "losingSeed": 4,
+    "winningScore": 89,
+    "losingScore": 68,
+    "round": 64
+  },
+  {
+    "winningTeam": "Loyola Chicago",
+    "winningSeed": 11,
+    "losingTeam": "Miami FL",
+    "losingSeed": 6,
+    "winningScore": 64,
+    "losingScore": 62,
+    "round": 64
+  },
+  {
+    "winningTeam": "Marshall",
+    "winningSeed": 13,
+    "losingTeam": "Wichita St.",
+    "losingSeed": 4,
+    "winningScore": 81,
+    "losingScore": 75,
+    "round": 64
+  },
+  {
+    "winningTeam": "Syracuse",
+    "winningSeed": 11,
+    "losingTeam": "TCU",
+    "losingSeed": 6,
+    "winningScore": 57,
+    "losingScore": 52,
+    "round": 64
+  },
+  {
+    "winningTeam": "Loyola Chicago",
+    "winningSeed": 11,
+    "losingTeam": "Tennessee",
+    "losingSeed": 3,
+    "winningScore": 63,
+    "losingScore": 62,
+    "round": 32
+  },
+  {
+    "winningTeam": "Nevada",
+    "winningSeed": 7,
+    "losingTeam": "Cincinnati",
+    "losingSeed": 2,
+    "winningScore": 75,
+    "losingScore": 73,
+    "round": 32
+  },
+  {
+    "winningTeam": "Florida St.",
+    "winningSeed": 9,
+    "losingTeam": "Xavier",
+    "losingSeed": 1,
+    "winningScore": 75,
+    "losingScore": 70,
+    "round": 32
+  },
+  {
+    "winningTeam": "Texas A&M",
+    "winningSeed": 7,
+    "losingTeam": "North Carolina",
+    "losingSeed": 2,
+    "winningScore": 86,
+    "losingScore": 65,
+    "round": 32
+  },
+  {
+    "winningTeam": "Syracuse",
+    "winningSeed": 11,
+    "losingTeam": "Michigan St.",
+    "losingSeed": 3,
+    "winningScore": 55,
+    "losingScore": 53,
+    "round": 32
+  },
+  {
+    "winningTeam": "Florida St.",
+    "winningSeed": 9,
+    "losingTeam": "Gonzaga",
+    "losingSeed": 4,
+    "winningScore": 75,
+    "losingScore": 60,
+    "round": 16
+  }
+]

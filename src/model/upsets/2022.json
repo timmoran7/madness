@@ -1,0 +1,119 @@
+[
+  {
+    "winningTeam": "New Mexico St.",
+    "winningSeed": 12,
+    "losingTeam": "Connecticut",
+    "losingSeed": 5,
+    "winningScore": 70,
+    "losingScore": 63,
+    "round": 64
+  },
+  {
+    "winningTeam": "Notre Dame",
+    "winningSeed": 11,
+    "losingTeam": "Alabama",
+    "losingSeed": 6,
+    "winningScore": 78,
+    "losingScore": 64,
+    "round": 64
+  },
+  {
+    "winningTeam": "Saint Peter's",
+    "winningSeed": 15,
+    "losingTeam": "Kentucky",
+    "losingSeed": 2,
+    "winningScore": 85,
+    "losingScore": 79,
+    "round": 64
+  },
+  {
+    "winningTeam": "Michigan",
+    "winningSeed": 11,
+    "losingTeam": "Colorado St.",
+    "losingSeed": 6,
+    "winningScore": 75,
+    "losingScore": 63,
+    "round": 64
+  },
+  {
+    "winningTeam": "Richmond",
+    "winningSeed": 12,
+    "losingTeam": "Iowa",
+    "losingSeed": 5,
+    "winningScore": 67,
+    "losingScore": 63,
+    "round": 64
+  },
+  {
+    "winningTeam": "Iowa St.",
+    "winningSeed": 11,
+    "losingTeam": "LSU",
+    "losingSeed": 6,
+    "winningScore": 59,
+    "losingScore": 54,
+    "round": 64
+  },
+  {
+    "winningTeam": "North Carolina",
+    "winningSeed": 8,
+    "losingTeam": "Baylor",
+    "losingSeed": 1,
+    "winningScore": 93,
+    "losingScore": 86,
+    "round": 32
+  },
+  {
+    "winningTeam": "Saint Peter's",
+    "winningSeed": 15,
+    "losingTeam": "Murray St.",
+    "losingSeed": 7,
+    "winningScore": 70,
+    "losingScore": 60,
+    "round": 32
+  },
+  {
+    "winningTeam": "Michigan",
+    "winningSeed": 11,
+    "losingTeam": "Tennessee",
+    "losingSeed": 3,
+    "winningScore": 76,
+    "losingScore": 68,
+    "round": 32
+  },
+  {
+    "winningTeam": "Iowa St.",
+    "winningSeed": 11,
+    "losingTeam": "Wisconsin",
+    "losingSeed": 3,
+    "winningScore": 54,
+    "losingScore": 49,
+    "round": 32
+  },
+  {
+    "winningTeam": "Miami FL",
+    "winningSeed": 10,
+    "losingTeam": "Auburn",
+    "losingSeed": 2,
+    "winningScore": 79,
+    "losingScore": 61,
+    "round": 32
+  },
+  {
+    "winningTeam": "Saint Peter's",
+    "winningSeed": 15,
+    "losingTeam": "Purdue",
+    "losingSeed": 3,
+    "winningScore": 67,
+    "losingScore": 64,
+    "round": 16
+  },
+  {
+    "winningTeam": "North Carolina",
+    "winningSeed": 8,
+    "losingTeam": "Duke",
+    "losingSeed": 2,
+    "winningScore": 81,
+    "losingScore": 77,
+    "round": 4
+  }
+]

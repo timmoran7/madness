@@ -1,5 +1,6 @@
-[
-  "North Carolina St.",
-  "Texas ",
-  "Virginia "
-]
+{
+  "North Carolina St.": "N.C. State",
+  "Texas ": "Texas",
+  "Virginia ": "Virginia",
+  "Charleston": "College of Charleston"
+}

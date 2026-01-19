@@ -256,12 +256,12 @@
     "year": 2023,
     "round": 64,
     "higherSeed": 2,
-    "higherSeedTeam": "Texas ",
+    "higherSeedTeam": "Texas",
     "lowerSeed": 15,
     "lowerSeedTeam": "Colgate",
     "higherSeedScore": 81,
     "lowerSeedScore": 61,
-    "winningTeam": "Texas "
+    "winningTeam": "Texas"
   },
   {
     "year": 2023,
@@ -476,12 +476,12 @@
     "year": 2023,
     "round": 32,
     "higherSeed": 2,
-    "higherSeedTeam": "Texas ",
+    "higherSeedTeam": "",
     "lowerSeed": 10,
     "lowerSeedTeam": "Penn St.",
     "higherSeedScore": 71,
     "lowerSeedScore": 66,
-    "winningTeam": "Texas "
+    "winningTeam": "Texas"
   },
   {
     "year": 2023,
@@ -586,12 +586,12 @@
     "year": 2023,
     "round": 16,
     "higherSeed": 2,
-    "higherSeedTeam": "Texas ",
+    "higherSeedTeam": "Texas",
     "lowerSeed": 3,
     "lowerSeedTeam": "Xavier",
     "higherSeedScore": 83,
     "lowerSeedScore": 71,
-    "winningTeam": "Texas "
+    "winningTeam": "Texas"
   },
   {
     "year": 2023,
@@ -641,7 +641,7 @@
     "year": 2023,
     "round": 8,
     "higherSeed": 2,
-    "higherSeedTeam": "Texas ",
+    "higherSeedTeam": "Texas",
     "lowerSeed": 5,
     "lowerSeedTeam": "Miami FL",
     "higherSeedScore": 81,

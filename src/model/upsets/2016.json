@@ -1,0 +1,101 @@
+[
+  {
+    "winningTeam": "Hawaii",
+    "winningSeed": 13,
+    "losingTeam": "California",
+    "losingSeed": 4,
+    "winningScore": 77,
+    "losingScore": 66,
+    "round": 64
+  },
+  {
+    "winningTeam": "Wichita St.",
+    "winningSeed": 11,
+    "losingTeam": "Arizona",
+    "losingSeed": 6,
+    "winningScore": 65,
+    "losingScore": 55,
+    "round": 64
+  },
+  {
+    "winningTeam": "Yale",
+    "winningSeed": 12,
+    "losingTeam": "Baylor",
+    "losingSeed": 5,
+    "winningScore": 79,
+    "losingScore": 75,
+    "round": 64
+  },
+  {
+    "winningTeam": "Northern Iowa",
+    "winningSeed": 11,
+    "losingTeam": "Texas",
+    "losingSeed": 6,
+    "winningScore": 75,
+    "losingScore": 72,
+    "round": 64
+  },
+  {
+    "winningTeam": "Stephen F. Austin",
+    "winningSeed": 14,
+    "losingTeam": "West Virginia",
+    "losingSeed": 3,
+    "winningScore": 70,
+    "losingScore": 56,
+    "round": 64
+  },
+  {
+    "winningTeam": "Little Rock",
+    "winningSeed": 12,
+    "losingTeam": "Purdue",
+    "losingSeed": 5,
+    "winningScore": 85,
+    "losingScore": 83,
+    "round": 64
+  },
+  {
+    "winningTeam": "Gonzaga",
+    "winningSeed": 11,
+    "losingTeam": "Seton Hall",
+    "losingSeed": 6,
+    "winningScore": 68,
+    "losingScore": 52,
+    "round": 64
+  },
+  {
+    "winningTeam": "Middle Tennessee",
+    "winningSeed": 15,
+    "losingTeam": "Michigan St.",
+    "losingSeed": 2,
+    "winningScore": 90,
+    "losingScore": 81,
+    "round": 64
+  },
+  {
+    "winningTeam": "Wisconsin",
+    "winningSeed": 7,
+    "losingTeam": "Xavier",
+    "losingSeed": 2,
+    "winningScore": 66,
+    "losingScore": 63,
+    "round": 32
+  },
+  {
+    "winningTeam": "Gonzaga",
+    "winningSeed": 11,
+    "losingTeam": "Utah",
+    "losingSeed": 3,
+    "winningScore": 82,
+    "losingScore": 59,
+    "round": 32
+  },
+  {
+    "winningTeam": "Syracuse",
+    "winningSeed": 10,
+    "losingTeam": "Virginia",
+    "losingSeed": 1,
+    "winningScore": 68,
+    "losingScore": 62,
+    "round": 8
+  }
+]

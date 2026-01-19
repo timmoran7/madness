@@ -1,0 +1,47 @@
+[
+  {
+    "winningTeam": "Arizona",
+    "winningSeed": 12,
+    "losingTeam": "Utah",
+    "losingSeed": 5,
+    "winningScore": 84,
+    "losingScore": 71,
+    "round": 64
+  },
+  {
+    "winningTeam": "Cleveland St.",
+    "winningSeed": 13,
+    "losingTeam": "Wake Forest",
+    "losingSeed": 4,
+    "winningScore": 84,
+    "losingScore": 69,
+    "round": 64
+  },
+  {
+    "winningTeam": "Dayton",
+    "winningSeed": 11,
+    "losingTeam": "West Virginia",
+    "losingSeed": 6,
+    "winningScore": 68,
+    "losingScore": 60,
+    "round": 64
+  },
+  {
+    "winningTeam": "Wisconsin",
+    "winningSeed": 12,
+    "losingTeam": "Florida St.",
+    "losingSeed": 5,
+    "winningScore": 61,
+    "losingScore": 59,
+    "round": 64
+  },
+  {
+    "winningTeam": "Western Kentucky",
+    "winningSeed": 12,
+    "losingTeam": "Illinois",
+    "losingSeed": 5,
+    "winningScore": 76,
+    "losingScore": 72,
+    "round": 64
+  }
+]

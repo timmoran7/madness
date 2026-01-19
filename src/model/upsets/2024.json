@@ -1,0 +1,83 @@
+[
+  {
+    "winningTeam": "Yale",
+    "winningSeed": 13,
+    "losingTeam": "Auburn",
+    "losingSeed": 4,
+    "winningScore": 78,
+    "losingScore": 76,
+    "round": 64
+  },
+  {
+    "winningTeam": "Duquesne",
+    "winningSeed": 11,
+    "losingTeam": "BYU",
+    "losingSeed": 6,
+    "winningScore": 71,
+    "losingScore": 67,
+    "round": 64
+  },
+  {
+    "winningTeam": "Grand Canyon",
+    "winningSeed": 12,
+    "losingTeam": "Saint Mary's",
+    "losingSeed": 5,
+    "winningScore": 75,
+    "losingScore": 66,
+    "round": 64
+  },
+  {
+    "winningTeam": "James Madison",
+    "winningSeed": 12,
+    "losingTeam": "Wisconsin",
+    "losingSeed": 5,
+    "winningScore": 72,
+    "losingScore": 61,
+    "round": 64
+  },
+  {
+    "winningTeam": "North Carolina St.",
+    "winningSeed": 11,
+    "losingTeam": "Texas Tech",
+    "losingSeed": 6,
+    "winningScore": 80,
+    "losingScore": 67,
+    "round": 64
+  },
+  {
+    "winningTeam": "Oakland",
+    "winningSeed": 14,
+    "losingTeam": "Kentucky",
+    "losingSeed": 3,
+    "winningScore": 80,
+    "losingScore": 76,
+    "round": 64
+  },
+  {
+    "winningTeam": "Oregon",
+    "winningSeed": 11,
+    "losingTeam": "South Carolina",
+    "losingSeed": 6,
+    "winningScore": 87,
+    "losingScore": 73,
+    "round": 64
+  },
+  {
+    "winningTeam": "North Carolina St.",
+    "winningSeed": 11,
+    "losingTeam": "Marquette",
+    "losingSeed": 2,
+    "winningScore": 67,
+    "losingScore": 58,
+    "round": 16
+  },
+  {
+    "winningTeam": "North Carolina St.",
+    "winningSeed": 11,
+    "losingTeam": "Duke",
+    "losingSeed": 4,
+    "winningScore": 76,
+    "losingScore": 64,
+    "round": 8
+  }
+]

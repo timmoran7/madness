@@ -443,12 +443,12 @@
     "year": 2019,
     "round": 32,
     "higherSeed": 1,
-    "higherSeedTeam": "Virginia ",
+    "higherSeedTeam": "Virginia",
     "lowerSeed": 9,
     "lowerSeedTeam": "Oklahoma",
     "higherSeedScore": 63,
     "lowerSeedScore": 51,
-    "winningTeam": "Virginia "
+    "winningTeam": "Virginia"
   },
   {
     "year": 2019,
@@ -575,12 +575,12 @@
     "year": 2019,
     "round": 16,
     "higherSeed": 1,
-    "higherSeedTeam": "Virginia ",
+    "higherSeedTeam": "Virginia",
     "lowerSeed": 12,
     "lowerSeedTeam": "Oregon",
     "higherSeedScore": 53,
     "lowerSeedScore": 49,
-    "winningTeam": "Virginia "
+    "winningTeam": "Virginia"
   },
   {
     "year": 2019,
@@ -641,12 +641,12 @@
     "year": 2019,
     "round": 8,
     "higherSeed": 1,
-    "higherSeedTeam": "Virginia ",
+    "higherSeedTeam": "Virginia",
     "lowerSeed": 3,
     "lowerSeedTeam": "Purdue",
     "higherSeedScore": 80,
     "lowerSeedScore": 75,
-    "winningTeam": "Virginia "
+    "winningTeam": "Virginia"
   },
   {
     "year": 2019,
@@ -674,22 +674,22 @@
     "year": 2019,
     "round": 4,
     "higherSeed": 1,
-    "higherSeedTeam": "Virginia ",
+    "higherSeedTeam": "Virginia",
     "lowerSeed": 5,
     "lowerSeedTeam": "Auburn",
     "higherSeedScore": 63,
     "lowerSeedScore": 62,
-    "winningTeam": "Virginia "
+    "winningTeam": "Virginia"
   },
   {
     "year": 2019,
     "round": 2,
     "higherSeed": 1,
-    "higherSeedTeam": "Virginia ",
+    "higherSeedTeam": "Virginia",
     "lowerSeed": 3,
     "lowerSeedTeam": "Texas Tech",
     "higherSeedScore": 85,
     "lowerSeedScore": 77,
-    "winningTeam": "Virginia "
+    "winningTeam": "Virginia"
   }
 ]

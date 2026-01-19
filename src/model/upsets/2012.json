@@ -1,0 +1,74 @@
+[
+  {
+    "winningTeam": "VCU",
+    "winningSeed": 12,
+    "losingTeam": "Wichita St.",
+    "losingSeed": 5,
+    "winningScore": 62,
+    "losingScore": 59,
+    "round": 64
+  },
+  {
+    "winningTeam": "Colorado",
+    "winningSeed": 11,
+    "losingTeam": "UNLV",
+    "losingSeed": 6,
+    "winningScore": 68,
+    "losingScore": 64,
+    "round": 64
+  },
+  {
+    "winningTeam": "Lehigh",
+    "winningSeed": 15,
+    "losingTeam": "Duke",
+    "losingSeed": 2,
+    "winningScore": 75,
+    "losingScore": 70,
+    "round": 64
+  },
+  {
+    "winningTeam": "Norfolk St.",
+    "winningSeed": 15,
+    "losingTeam": "Missouri",
+    "losingSeed": 2,
+    "winningScore": 86,
+    "losingScore": 84,
+    "round": 64
+  },
+  {
+    "winningTeam": "South Florida",
+    "winningSeed": 12,
+    "losingTeam": "Temple",
+    "losingSeed": 5,
+    "winningScore": 58,
+    "losingScore": 44,
+    "round": 64
+  },
+  {
+    "winningTeam": "Ohio",
+    "winningSeed": 13,
+    "losingTeam": "Michigan",
+    "losingSeed": 4,
+    "winningScore": 65,
+    "losingScore": 60,
+    "round": 64
+  },
+  {
+    "winningTeam": "North Carolina St.",
+    "winningSeed": 11,
+    "losingTeam": "San Diego St.",
+    "losingSeed": 6,
+    "winningScore": 79,
+    "losingScore": 65,
+    "round": 64
+  },
+  {
+    "winningTeam": "North Carolina St.",
+    "winningSeed": 11,
+    "losingTeam": "Georgetown",
+    "losingSeed": 3,
+    "winningScore": 66,
+    "losingScore": 63,
+    "round": 32
+  }
+]

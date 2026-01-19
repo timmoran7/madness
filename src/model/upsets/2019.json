@@ -1,0 +1,47 @@
+[
+  {
+    "winningTeam": "Liberty",
+    "winningSeed": 12,
+    "losingTeam": "Mississippi St.",
+    "losingSeed": 5,
+    "winningScore": 80,
+    "losingScore": 76,
+    "round": 64
+  },
+  {
+    "winningTeam": "Murray St.",
+    "winningSeed": 12,
+    "losingTeam": "Marquette",
+    "losingSeed": 5,
+    "winningScore": 83,
+    "losingScore": 64,
+    "round": 64
+  },
+  {
+    "winningTeam": "Oregon",
+    "winningSeed": 12,
+    "losingTeam": "Wisconsin",
+    "losingSeed": 5,
+    "winningScore": 72,
+    "losingScore": 54,
+    "round": 64
+  },
+  {
+    "winningTeam": "UC Irvine",
+    "winningSeed": 13,
+    "losingTeam": "Kansas St.",
+    "losingSeed": 4,
+    "winningScore": 70,
+    "losingScore": 64,
+    "round": 64
+  },
+  {
+    "winningTeam": "Ohio St.",
+    "winningSeed": 11,
+    "losingTeam": "Iowa St.",
+    "losingSeed": 6,
+    "winningScore": 62,
+    "losingScore": 59,
+    "round": 64
+  }
+]

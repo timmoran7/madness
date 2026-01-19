@@ -1,0 +1,83 @@
+[
+  {
+    "winningTeam": "Furman",
+    "winningSeed": 13,
+    "losingTeam": "Virginia",
+    "losingSeed": 4,
+    "winningScore": 68,
+    "losingScore": 67,
+    "round": 64
+  },
+  {
+    "winningTeam": "Princeton",
+    "winningSeed": 15,
+    "losingTeam": "Arizona",
+    "losingSeed": 2,
+    "winningScore": 59,
+    "losingScore": 55,
+    "round": 64
+  },
+  {
+    "winningTeam": "Fairleigh Dickinson",
+    "winningSeed": 16,
+    "losingTeam": "Purdue",
+    "losingSeed": 1,
+    "winningScore": 63,
+    "losingScore": 58,
+    "round": 64
+  },
+  {
+    "winningTeam": "Pittsburgh",
+    "winningSeed": 11,
+    "losingTeam": "Iowa St.",
+    "losingSeed": 6,
+    "winningScore": 59,
+    "losingScore": 41,
+    "round": 64
+  },
+  {
+    "winningTeam": "Princeton",
+    "winningSeed": 15,
+    "losingTeam": "Missouri",
+    "losingSeed": 7,
+    "winningScore": 78,
+    "losingScore": 63,
+    "round": 32
+  },
+  {
+    "winningTeam": "Michigan St.",
+    "winningSeed": 7,
+    "losingTeam": "Marquette",
+    "losingSeed": 2,
+    "winningScore": 69,
+    "losingScore": 60,
+    "round": 32
+  },
+  {
+    "winningTeam": "Arkansas",
+    "winningSeed": 8,
+    "losingTeam": "Kansas",
+    "losingSeed": 1,
+    "winningScore": 72,
+    "losingScore": 71,
+    "round": 32
+  },
+  {
+    "winningTeam": "Florida Atlantic",
+    "winningSeed": 9,
+    "losingTeam": "Tennessee",
+    "losingSeed": 4,
+    "winningScore": 62,
+    "losingScore": 55,
+    "round": 16
+  },
+  {
+    "winningTeam": "Florida Atlantic",
+    "winningSeed": 9,
+    "losingTeam": "Kansas St.",
+    "losingSeed": 3,
+    "winningScore": 79,
+    "losingScore": 76,
+    "round": 8
+  }
+]

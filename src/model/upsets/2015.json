@@ -1,0 +1,65 @@
+[
+  {
+    "winningTeam": "Georgia St.",
+    "winningSeed": 14,
+    "losingTeam": "Baylor",
+    "losingSeed": 3,
+    "winningScore": 57,
+    "losingScore": 56,
+    "round": 64
+  },
+  {
+    "winningTeam": "Dayton",
+    "winningSeed": 11,
+    "losingTeam": "Providence",
+    "losingSeed": 6,
+    "winningScore": 66,
+    "losingScore": 53,
+    "round": 64
+  },
+  {
+    "winningTeam": "UCLA",
+    "winningSeed": 11,
+    "losingTeam": "SMU",
+    "losingSeed": 6,
+    "winningScore": 60,
+    "losingScore": 59,
+    "round": 64
+  },
+  {
+    "winningTeam": "UAB",
+    "winningSeed": 14,
+    "losingTeam": "Iowa St.",
+    "losingSeed": 3,
+    "winningScore": 60,
+    "losingScore": 59,
+    "round": 64
+  },
+  {
+    "winningTeam": "Wichita St.",
+    "winningSeed": 7,
+    "losingTeam": "Kansas",
+    "losingSeed": 2,
+    "winningScore": 78,
+    "losingScore": 65,
+    "round": 32
+  },
+  {
+    "winningTeam": "North Carolina St.",
+    "winningSeed": 8,
+    "losingTeam": "Villanova",
+    "losingSeed": 1,
+    "winningScore": 71,
+    "losingScore": 68,
+    "round": 32
+  },
+  {
+    "winningTeam": "Michigan St.",
+    "winningSeed": 7,
+    "losingTeam": "Virginia",
+    "losingSeed": 2,
+    "winningScore": 60,
+    "losingScore": 54,
+    "round": 32
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "winningTeam": "Villanova",
+    "winningSeed": 12,
+    "losingTeam": "Clemson",
+    "losingSeed": 5,
+    "winningScore": 75,
+    "losingScore": 69,
+    "round": 64
+  },
+  {
+    "winningTeam": "Siena",
+    "winningSeed": 13,
+    "losingTeam": "Vanderbilt",
+    "losingSeed": 4,
+    "winningScore": 83,
+    "losingScore": 62,
+    "round": 64
+  },
+  {
+    "winningTeam": "Kansas St.",
+    "winningSeed": 11,
+    "losingTeam": "USC",
+    "losingSeed": 6,
+    "winningScore": 80,
+    "losingScore": 67,
+    "round": 64
+  },
+  {
+    "winningTeam": "Western Kentucky",
+    "winningSeed": 12,
+    "losingTeam": "Drake",
+    "losingSeed": 5,
+    "winningScore": 101,
+    "losingScore": 99,
+    "round": 64
+  },
+  {
+    "winningTeam": "San Diego",
+    "winningSeed": 13,
+    "losingTeam": "Connecticut",
+    "losingSeed": 4,
+    "winningScore": 70,
+    "losingScore": 69,
+    "round": 64
+  },
+  {
+    "winningTeam": "Davidson",
+    "winningSeed": 10,
+    "losingTeam": "Georgetown",
+    "losingSeed": 2,
+    "winningScore": 74,
+    "losingScore": 70,
+    "round": 32
+  },
+  {
+    "winningTeam": "West Virginia",
+    "winningSeed": 7,
+    "losingTeam": "Duke",
+    "losingSeed": 2,
+    "winningScore": 73,
+    "losingScore": 67,
+    "round": 32
+  },
+  {
+    "winningTeam": "Davidson",
+    "winningSeed": 10,
+    "losingTeam": "Wisconsin",
+    "losingSeed": 3,
+    "winningScore": 73,
+    "losingScore": 56,
+    "round": 16
+  }
+]

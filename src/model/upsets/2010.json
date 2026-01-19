@@ -1,0 +1,83 @@
+[
+  {
+    "winningTeam": "Ohio",
+    "winningSeed": 14,
+    "losingTeam": "Georgetown",
+    "losingSeed": 3,
+    "winningScore": 97,
+    "losingScore": 83,
+    "round": 64
+  },
+  {
+    "winningTeam": "Murray St.",
+    "winningSeed": 13,
+    "losingTeam": "Vanderbilt",
+    "losingSeed": 4,
+    "winningScore": 66,
+    "losingScore": 65,
+    "round": 64
+  },
+  {
+    "winningTeam": "Cornell",
+    "winningSeed": 12,
+    "losingTeam": "Temple",
+    "losingSeed": 5,
+    "winningScore": 78,
+    "losingScore": 65,
+    "round": 64
+  },
+  {
+    "winningTeam": "Washington",
+    "winningSeed": 11,
+    "losingTeam": "Marquette",
+    "losingSeed": 6,
+    "winningScore": 80,
+    "losingScore": 78,
+    "round": 64
+  },
+  {
+    "winningTeam": "Old Dominion",
+    "winningSeed": 11,
+    "losingTeam": "Notre Dame",
+    "losingSeed": 6,
+    "winningScore": 51,
+    "losingScore": 50,
+    "round": 64
+  },
+  {
+    "winningTeam": "Northern Iowa",
+    "winningSeed": 9,
+    "losingTeam": "Kansas",
+    "losingSeed": 1,
+    "winningScore": 69,
+    "losingScore": 67,
+    "round": 32
+  },
+  {
+    "winningTeam": "Cornell",
+    "winningSeed": 12,
+    "losingTeam": "Wisconsin",
+    "losingSeed": 4,
+    "winningScore": 87,
+    "losingScore": 69,
+    "round": 32
+  },
+  {
+    "winningTeam": "Washington",
+    "winningSeed": 11,
+    "losingTeam": "New Mexico",
+    "losingSeed": 3,
+    "winningScore": 82,
+    "losingScore": 64,
+    "round": 32
+  },
+  {
+    "winningTeam": "Saint Mary's",
+    "winningSeed": 10,
+    "losingTeam": "Villanova",
+    "losingSeed": 2,
+    "winningScore": 75,
+    "losingScore": 68,
+    "round": 32
+  }
+]

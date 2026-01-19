@@ -1,0 +1,83 @@
+[
+  {
+    "winningTeam": "USC",
+    "winningSeed": 11,
+    "losingTeam": "SMU",
+    "losingSeed": 6,
+    "winningScore": 66,
+    "losingScore": 65,
+    "round": 64
+  },
+  {
+    "winningTeam": "Xavier",
+    "winningSeed": 11,
+    "losingTeam": "Maryland",
+    "losingSeed": 6,
+    "winningScore": 76,
+    "losingScore": 65,
+    "round": 64
+  },
+  {
+    "winningTeam": "Rhode Island",
+    "winningSeed": 11,
+    "losingTeam": "Creighton",
+    "losingSeed": 6,
+    "winningScore": 84,
+    "losingScore": 72,
+    "round": 64
+  },
+  {
+    "winningTeam": "Middle Tennessee",
+    "winningSeed": 12,
+    "losingTeam": "Minnesota",
+    "losingSeed": 5,
+    "winningScore": 81,
+    "losingScore": 72,
+    "round": 64
+  },
+  {
+    "winningTeam": "Wisconsin",
+    "winningSeed": 8,
+    "losingTeam": "Villanova",
+    "losingSeed": 1,
+    "winningScore": 65,
+    "losingScore": 62,
+    "round": 32
+  },
+  {
+    "winningTeam": "South Carolina",
+    "winningSeed": 7,
+    "losingTeam": "Duke",
+    "losingSeed": 2,
+    "winningScore": 88,
+    "losingScore": 81,
+    "round": 32
+  },
+  {
+    "winningTeam": "Xavier",
+    "winningSeed": 11,
+    "losingTeam": "Florida St.",
+    "losingSeed": 3,
+    "winningScore": 91,
+    "losingScore": 66,
+    "round": 32
+  },
+  {
+    "winningTeam": "Michigan",
+    "winningSeed": 7,
+    "losingTeam": "Louisville",
+    "losingSeed": 2,
+    "winningScore": 73,
+    "losingScore": 69,
+    "round": 32
+  },
+  {
+    "winningTeam": "Xavier",
+    "winningSeed": 11,
+    "losingTeam": "Arizona",
+    "losingSeed": 2,
+    "winningScore": 73,
+    "losingScore": 71,
+    "round": 16
+  }
+]
