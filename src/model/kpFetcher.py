@@ -308,4 +308,91 @@ def extractUpsets():
         else:
             print(f"No upsets found for {year}")
 
-extractUpsets()
+def extractOlderMatchups():
+    """
+    Parse bracketData JSON files from 1997-2007 and convert them to matchups format
+    """
+    import glob
+    import os
+    import json
+    
+    # Path to bracketData folder
+    bracket_data_dir = '/home/tmoran/personal/madness/src/model/bracketData/'
+    
+    # Years to process (1997-2007)
+    years = range(1997, 2008)
+    
+    for year in years:
+        bracket_file = os.path.join(bracket_data_dir, f'{year}.json')
+        
+        if not os.path.exists(bracket_file):
+            print(f"Warning: {bracket_file} not found, skipping")
+            continue
+        
+        with open(bracket_file, 'r') as f:
+            bracket_data = json.load(f)
+        
+        matchups = []
+        
+        # Process regional rounds (4 regions)
+        for region in bracket_data['regions']:
+            # Each region has rounds: [round_of_64, round_of_32, round_of_16, round_of_8]
+            for round_idx, round_data in enumerate(region):
+                # Each round has matchups
+                for matchup in round_data:
+                    if len(matchup) == 2:  # Valid matchup pair
+                        team1 = matchup[0]
+                        team2 = matchup[1]
+                        
+                        # Determine higher/lower seed
+                        seed1 = team1['seed']
+                        seed2 = team2['seed']
+                        
+                        if seed1 < seed2:
+                            higher_seed = seed1
+                            lower_seed = seed2
+                            higher_seed_team = team1['team']
+                            lower_seed_team = team2['team']
+                            higher_seed_score = team1['score']
+                            lower_seed_score = team2['score']
+                        else:
+                            higher_seed = seed2
+                            lower_seed = seed1
+                            higher_seed_team = team2['team']
+                            lower_seed_team = team1['team']
+                            higher_seed_score = team2['score']
+                            lower_seed_score = team1['score']
+                        
+                        # Determine winner
+                        if team1['score'] > team2['score']:
+                            winning_team = team1['team']
+                        else:
+                            winning_team = team2['team']
+                        
+                        matchup_entry = {
+                            "year": year,
+                            "round": team1['round_of'],
+                            "higherSeed": higher_seed,
+                            "higherSeedTeam": higher_seed_team,
+                            "lowerSeed": lower_seed,
+                            "lowerSeedTeam": lower_seed_team,
+                            "higherSeedScore": higher_seed_score,
+                            "lowerSeedScore": lower_seed_score,
+                            "winningTeam": winning_team
+                        }
+                        
+                        matchups.append(matchup_entry)
+        
+        # Skip final four rounds because we don't care about those upsets
+        
+        # Save to matchups folder
+        matchups_dir = '/home/tmoran/personal/madness/src/model/matchups/'
+        os.makedirs(matchups_dir, exist_ok=True)
+        
+        output_file = os.path.join(matchups_dir, f'{year}.json')
+        with open(output_file, 'w') as f:
+            json.dump(matchups, f, indent=2)
+        
+        print(f"Saved {len(matchups)} matchups for {year} to {output_file}")
+
+extractOlderMatchups()

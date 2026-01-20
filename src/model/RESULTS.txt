@@ -1,0 +1,55 @@
+Orig ALL model: ('3P_pct_hi', '3P_pct_lo', 'delta_FT_pct', 'delta_A_pct', 
+    '3PA_pct_hi','3PA_pct_lo', 'delta_adjTempo', 'delta_adjOE',
+    'delta_TO_pct_off', 'delta_OR_pct_off', 'delta_adjDE', 'delta_TO_pct_def',
+    'delta_OR_pct_def', 'delta_FTRate_def', 'seed_diff')
+
+Average upset prob for actual upsets: 0.305
+Average upset prob for non-upsets: 0.178
+
+ABOVE: 30/73 (41.1%) GAMES W/ HIGHER PROB WERE UPSETS
+BELOW: 21/127 (16.5%) GAMES W/LOWER PROB WERE UPSETS
+Seed Diff 5 (baseline: 0.379)
+  Model > Baseline: 9/14 upsets (0.643)
+  Model < Baseline: 13/29 upsets (0.448)
+Seed Diff 7 (baseline: 0.314)
+  Model > Baseline: 11/20 upsets (0.550)
+  Model < Baseline: 2/20 upsets (0.100)
+Seed Diff 9 (baseline: 0.213)
+  Model > Baseline: 6/16 upsets (0.375)
+  Model < Baseline: 3/16 upsets (0.188)
+Seed Diff 11 (baseline: 0.109)
+  Model > Baseline: 2/17 upsets (0.118)
+  Model < Baseline: 0/12 upsets (0.000)
+Seed Diff 13 (baseline: 0.083)
+  Model > Baseline: 1/2 upsets (0.500)
+  Model < Baseline: 2/26 upsets (0.077)
+Seed Diff 15 (baseline: 0.019)
+  Model > Baseline: 1/4 upsets (0.250)
+  Model < Baseline: 1/24 upsets (0.042)
+
+-----------------------------------------
+NON-SEED model: same as ALL model but removes seed_diff
+
+Average upset probability for actual upsets: 0.315
+Average upset probability for non-upsets: 0.182
+
+ABOVE: 31/90 (34.4%) GAMES W/ HIGHER PROB WERE UPSETS
+BELOW: 20/110 (18.8%) GAMES W/ LOWER PROB WERE UPSETS
+Seed Diff 5 (baseline 0.379)
+  Model > Baseline: 9/15 upsets (0.600)
+  Model < Baseline: 13/28 upsets (0.464)
+Seed Diff 7 (baseline 0.314)
+  Model > Baseline: 10/17 upsets (0.588)
+  Model < Baseline: 3/23 upsets (0.130)
+Seed Diff 9 (baseline 0.213)
+  Model > Baseline: 7/20 upsets (0.350)
+  Model < Baseline: 2/12 upsets (0.167)
+Seed Diff 11 (baseline 0.109)
+  Model > Baseline: 1/20 upsets (0.050)
+  Model < Baseline: 1/9 upsets (0.111)
+Seed Diff 13 (baseline 0.083)
+  Model > Baseline: 3/8 upsets (0.375)
+  Model < Baseline: 0/20 upsets (0.000)
+Seed Diff 15 (baseline 0.019)
+  Model > Baseline: 1/10 upsets (0.100)
+  Model < Baseline: 1/18 upsets (0.056)

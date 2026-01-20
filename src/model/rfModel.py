@@ -8,42 +8,43 @@ from sklearn.model_selection import train_test_split
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.metrics import brier_score_loss
 
-# first round seed diffs straight from 08-24 data, less common diffs (even) 
-# just the average of above and below first-round diffs since small sample
+# seed diffs straight from 97-24 data, less common diffs (even) 
+# just the average of above and below diffs since small sample
 roughSeedUpsetProbs = {
-    5: 0.429,
-    6: 0.385,
-    7: 0.34,
-    8: 0.289,
-    9: 0.238,
+    5: 0.379,
+    6: 0.346,
+    7: 0.314,
+    8: 0.263,
+    9: 0.213,
     10: 0.195,
-    11: 0.113,
-    12: 0.111,
-    13: 0.109,
-    14: 0.07,
-    15: 0.031
+    11: 0.109,
+    12: 0.096,
+    13: 0.083,
+    14: 0.051,
+    15: 0.019
 }
 def calculate_avg_seed_upset_probs():  
     avgSeedUpsetProbs = {}  
     seed_diff_stats = {}  # {seed_diff: {"total": count, "upsets": count}}
     
-    fullRange = [year for year in range(2008, 2025) if year != 2020]
+    fullRange = [year for year in range(1997, 2025) if year != 2020]
     for year in fullRange:
         matchups = load_json(f"matchups/{year}.json")
         
         for matchup in matchups:
-            seed_diff = matchup["lowerSeed"] - matchup["higherSeed"]
-            
-            # Initialize if not seen before
-            if seed_diff not in seed_diff_stats:
-                seed_diff_stats[seed_diff] = {"total": 0, "upsets": 0}
-            
-            # Count total games
-            seed_diff_stats[seed_diff]["total"] += 1
-            
-            # Count upsets (when lower seed wins)
-            if matchup["winningTeam"] == matchup["lowerSeedTeam"]:
-                seed_diff_stats[seed_diff]["upsets"] += 1
+            if matchup["round"] >= 16:  # Only consider games before Sweet Sixteen
+                seed_diff = matchup["lowerSeed"] - matchup["higherSeed"]
+                
+                # Initialize if not seen before
+                if seed_diff not in seed_diff_stats:
+                    seed_diff_stats[seed_diff] = {"total": 0, "upsets": 0}
+                
+                # Count total games
+                seed_diff_stats[seed_diff]["total"] += 1
+                
+                # Count upsets (when lower seed wins)
+                if matchup["winningTeam"] == matchup["lowerSeedTeam"]:
+                    seed_diff_stats[seed_diff]["upsets"] += 1
     
     # Calculate probabilities
     for seed_diff, stats in seed_diff_stats.items():
@@ -113,9 +114,14 @@ def build_matchup_rows(matchups, team_stats):
 
 all_rows = []
 
-def buildAndRunModel():
-    # 2008-2024
-    fullRange = [year for year in range(2008, 2025) if year != 2020]
+def buildAndRunModel(
+    dropSeedDiff=False,
+    dropFreeThrowStats=False, 
+    dropAssistStat=False,
+    dropAllExceptRating=False
+):
+    # 1997-2024
+    fullRange = [year for year in range(1997, 2025) if year != 2020]
     for year in fullRange:
         misc = load_json(f"misc/{year}.json")
         ff = load_json(f"fourFactors/{year}.json")
@@ -129,12 +135,36 @@ def buildAndRunModel():
 
     # Keep team names separate before splitting
     team_info = df[["hiTeam", "loTeam", "year", "hiSeed", "loSeed"]].copy()
-    X = df.drop(columns=["upset", "hiTeam", "loTeam", "year", "hiSeed", "loSeed"])
+    info_cols_to_drop = list(team_info.columns) + ["upset"]
+    X = df.drop(columns=info_cols_to_drop)
     y = df["upset"]
+    
+    # Apply column dropping based on flags
+    if dropAllExceptRating:
+        # Keep only delta_adjOE and delta_adjDE
+        cols_to_keep = ["delta_adjOE", "delta_adjDE"]
+        X = X[[col for col in cols_to_keep if col in X.columns]]
+    else:
+        # Apply individual flags
+        cols_to_drop = []
+        
+        if dropFreeThrowStats:
+            cols_to_drop.extend(["delta_FT_pct", "delta_FTRate_def"])
+        
+        if dropAssistStat:
+            cols_to_drop.append("delta_A_pct")
+        
+        if dropSeedDiff:
+            cols_to_drop.append("seed_diff")
+        
+        # Drop the specified columns
+        X = X.drop(columns=[col for col in cols_to_drop if col in X.columns], errors="ignore")
+    
+    print(X.columns)
 
-    # Split by year: train on 2008-2021, test on 2022+
-    train_mask = df["year"] < 2020
-    test_mask = df["year"] > 2020
+    # Split by year: train on 1997-2016, test on 2017+
+    train_mask = df["year"] < 2017
+    test_mask = df["year"] >= 2017
 
     X_train = X[train_mask]
     X_test = X[test_mask]
@@ -175,6 +205,7 @@ def buildAndRunModel():
         "upset_prob": probs
     })
     
+    
     # Add baseline seed differential probability
     results["seed_diff"] = results["lo seed"] - results["hi seed"]
     results["seed_prob"] = results["seed_diff"].map(roughSeedUpsetProbs)
@@ -183,7 +214,7 @@ def buildAndRunModel():
 
 #'''
 # Sort by upset probability (descending) to see top upset picks
-results = buildAndRunModel()
+results = buildAndRunModel(False, False, False, True)
 results = results.sort_values("upset_prob", ascending=False)
 
 def print_results_summary(results):
@@ -221,7 +252,7 @@ def print_model_efficacy(results):
         lower_upsets = model_lower["actual_upset"].sum() if len(model_lower) > 0 else 0
         lower_total = len(model_lower)
         
-        print(f"Seed Diff {seed_diff} (baseline: {baseline_prob:.3f})")
+        print(f"Seed Diff {seed_diff} (baseline {baseline_prob:.3f})")
         if higher_total > 0:
             print(f"  Model > Baseline: {higher_upsets}/{higher_total} upsets ({higher_upsets/higher_total:.3f})")
         else:
@@ -233,5 +264,7 @@ def print_model_efficacy(results):
             print(f"  Model < Baseline: 0/0 upsets (N/A)")
         print()
 
-print_model_efficacy(results)
-#print_results_summary(results)
+#upsetProbs = calculate_avg_seed_upset_probs()
+#print(upsetProbs)
+#print_model_efficacy(results)
+print_results_summary(results)
