@@ -1,0 +1,11 @@
+GENERAL: Go with adjDE/adjOE only model for 15/16 seeds.
+
+Add neutral site into matchups 2010-2024
+All future models: Subtract/add (average HCA * possession/game ratio = 4 for each team) from each game ratings accordingly 
+Build models on only adjusted net rtg for each range that spit out/save probabilities for each game for later: 
+24-30, 18-24, 12-18, 6-12, 0-6
+Run, with the same train/test split models that include TOs, 3PA, 3P%, OR
+Compare results, note brier score + % of games correctly picked where Model 2 had higher estimate vs correctly picked where lower
+
+If not promising results--do heteroskedatic model with more narrow scope (3-14 -> 5-12) to see if volatility real and 
+what correlation

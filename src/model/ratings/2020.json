@@ -1,0 +1,1767 @@
+[
+  {
+    "team": "Kansas",
+    "netRating": 30.3,
+    "rank": 1
+  },
+  {
+    "team": "Gonzaga",
+    "netRating": 26.9,
+    "rank": 2
+  },
+  {
+    "team": "Baylor",
+    "netRating": 25.4,
+    "rank": 3
+  },
+  {
+    "team": "Dayton",
+    "netRating": 25.0,
+    "rank": 4
+  },
+  {
+    "team": "Duke",
+    "netRating": 24.6,
+    "rank": 5
+  },
+  {
+    "team": "San Diego St.",
+    "netRating": 24.5,
+    "rank": 6
+  },
+  {
+    "team": "Michigan St.",
+    "netRating": 24.0,
+    "rank": 7
+  },
+  {
+    "team": "Ohio St.",
+    "netRating": 22.3,
+    "rank": 8
+  },
+  {
+    "team": "Louisville",
+    "netRating": 21.4,
+    "rank": 9
+  },
+  {
+    "team": "West Virginia",
+    "netRating": 21.2,
+    "rank": 10
+  },
+  {
+    "team": "Maryland",
+    "netRating": 21.1,
+    "rank": 11
+  },
+  {
+    "team": "Creighton",
+    "netRating": 20.9,
+    "rank": 12
+  },
+  {
+    "team": "BYU",
+    "netRating": 20.7,
+    "rank": 13
+  },
+  {
+    "team": "Houston",
+    "netRating": 20.4,
+    "rank": 14
+  },
+  {
+    "team": "Michigan",
+    "netRating": 20.2,
+    "rank": 15
+  },
+  {
+    "team": "Florida St.",
+    "netRating": 20.2,
+    "rank": 16
+  },
+  {
+    "team": "Oregon",
+    "netRating": 20.0,
+    "rank": 17
+  },
+  {
+    "team": "Villanova",
+    "netRating": 19.9,
+    "rank": 18
+  },
+  {
+    "team": "Seton Hall",
+    "netRating": 19.6,
+    "rank": 19
+  },
+  {
+    "team": "Arizona",
+    "netRating": 19.6,
+    "rank": 20
+  },
+  {
+    "team": "Texas Tech",
+    "netRating": 19.3,
+    "rank": 21
+  },
+  {
+    "team": "Wisconsin",
+    "netRating": 18.9,
+    "rank": 22
+  },
+  {
+    "team": "Iowa",
+    "netRating": 18.7,
+    "rank": 23
+  },
+  {
+    "team": "Purdue",
+    "netRating": 18.5,
+    "rank": 24
+  },
+  {
+    "team": "Butler",
+    "netRating": 18.4,
+    "rank": 25
+  },
+  {
+    "team": "Minnesota",
+    "netRating": 17.9,
+    "rank": 26
+  },
+  {
+    "team": "Penn St.",
+    "netRating": 17.9,
+    "rank": 27
+  },
+  {
+    "team": "Rutgers",
+    "netRating": 17.7,
+    "rank": 28
+  },
+  {
+    "team": "Kentucky",
+    "netRating": 17.6,
+    "rank": 29
+  },
+  {
+    "team": "Illinois",
+    "netRating": 17.2,
+    "rank": 30
+  },
+  {
+    "team": "Marquette",
+    "netRating": 17.1,
+    "rank": 31
+  },
+  {
+    "team": "Florida",
+    "netRating": 16.8,
+    "rank": 32
+  },
+  {
+    "team": "Auburn",
+    "netRating": 15.9,
+    "rank": 33
+  },
+  {
+    "team": "Indiana",
+    "netRating": 15.8,
+    "rank": 34
+  },
+  {
+    "team": "LSU",
+    "netRating": 15.7,
+    "rank": 35
+  },
+  {
+    "team": "Colorado",
+    "netRating": 15.7,
+    "rank": 36
+  },
+  {
+    "team": "Oklahoma",
+    "netRating": 15.7,
+    "rank": 37
+  },
+  {
+    "team": "Saint Mary's",
+    "netRating": 15.2,
+    "rank": 38
+  },
+  {
+    "team": "Wichita St.",
+    "netRating": 15.2,
+    "rank": 39
+  },
+  {
+    "team": "Providence",
+    "netRating": 15.0,
+    "rank": 40
+  },
+  {
+    "team": "Utah St.",
+    "netRating": 14.9,
+    "rank": 41
+  },
+  {
+    "team": "Virginia",
+    "netRating": 14.2,
+    "rank": 42
+  },
+  {
+    "team": "Cincinnati",
+    "netRating": 14.1,
+    "rank": 43
+  },
+  {
+    "team": "Stanford",
+    "netRating": 14.1,
+    "rank": 44
+  },
+  {
+    "team": "Richmond",
+    "netRating": 13.9,
+    "rank": 45
+  },
+  {
+    "team": "Xavier",
+    "netRating": 13.9,
+    "rank": 46
+  },
+  {
+    "team": "Mississippi St.",
+    "netRating": 13.6,
+    "rank": 47
+  },
+  {
+    "team": "Arkansas",
+    "netRating": 13.6,
+    "rank": 48
+  },
+  {
+    "team": "Northern Iowa",
+    "netRating": 13.4,
+    "rank": 49
+  },
+  {
+    "team": "N.C. State",
+    "netRating": 13.4,
+    "rank": 50
+  },
+  {
+    "team": "Syracuse",
+    "netRating": 13.2,
+    "rank": 51
+  },
+  {
+    "team": "Connecticut",
+    "netRating": 13.0,
+    "rank": 52
+  },
+  {
+    "team": "Oklahoma St.",
+    "netRating": 12.7,
+    "rank": 53
+  },
+  {
+    "team": "Washington",
+    "netRating": 12.7,
+    "rank": 54
+  },
+  {
+    "team": "USC",
+    "netRating": 12.3,
+    "rank": 55
+  },
+  {
+    "team": "East Tennessee St.",
+    "netRating": 12.2,
+    "rank": 56
+  },
+  {
+    "team": "Notre Dame",
+    "netRating": 12.1,
+    "rank": 57
+  },
+  {
+    "team": "Alabama",
+    "netRating": 11.5,
+    "rank": 58
+  },
+  {
+    "team": "Yale",
+    "netRating": 11.5,
+    "rank": 59
+  },
+  {
+    "team": "Texas",
+    "netRating": 11.5,
+    "rank": 60
+  },
+  {
+    "team": "Memphis",
+    "netRating": 11.5,
+    "rank": 61
+  },
+  {
+    "team": "Saint Louis",
+    "netRating": 11.4,
+    "rank": 62
+  },
+  {
+    "team": "Arizona St.",
+    "netRating": 11.3,
+    "rank": 63
+  },
+  {
+    "team": "Georgia Tech",
+    "netRating": 11.3,
+    "rank": 64
+  },
+  {
+    "team": "Rhode Island",
+    "netRating": 11.0,
+    "rank": 65
+  },
+  {
+    "team": "St. John's",
+    "netRating": 10.9,
+    "rank": 66
+  },
+  {
+    "team": "Georgetown",
+    "netRating": 10.8,
+    "rank": 67
+  },
+  {
+    "team": "Tennessee",
+    "netRating": 10.8,
+    "rank": 68
+  },
+  {
+    "team": "South Carolina",
+    "netRating": 10.7,
+    "rank": 69
+  },
+  {
+    "team": "Davidson",
+    "netRating": 10.6,
+    "rank": 70
+  },
+  {
+    "team": "Louisiana Tech",
+    "netRating": 10.5,
+    "rank": 71
+  },
+  {
+    "team": "Clemson",
+    "netRating": 10.4,
+    "rank": 72
+  },
+  {
+    "team": "VCU",
+    "netRating": 10.3,
+    "rank": 73
+  },
+  {
+    "team": "Northern Colorado",
+    "netRating": 10.1,
+    "rank": 74
+  },
+  {
+    "team": "San Francisco",
+    "netRating": 10.1,
+    "rank": 75
+  },
+  {
+    "team": "Vermont",
+    "netRating": 10.1,
+    "rank": 76
+  },
+  {
+    "team": "North Texas",
+    "netRating": 10.0,
+    "rank": 77
+  },
+  {
+    "team": "UCLA",
+    "netRating": 9.9,
+    "rank": 78
+  },
+  {
+    "team": "Liberty",
+    "netRating": 9.7,
+    "rank": 79
+  },
+  {
+    "team": "Akron",
+    "netRating": 9.6,
+    "rank": 80
+  },
+  {
+    "team": "Furman",
+    "netRating": 9.6,
+    "rank": 81
+  },
+  {
+    "team": "Tulsa",
+    "netRating": 9.6,
+    "rank": 82
+  },
+  {
+    "team": "Boise St.",
+    "netRating": 9.4,
+    "rank": 83
+  },
+  {
+    "team": "TCU",
+    "netRating": 9.4,
+    "rank": 84
+  },
+  {
+    "team": "Nevada",
+    "netRating": 9.3,
+    "rank": 85
+  },
+  {
+    "team": "North Carolina",
+    "netRating": 9.3,
+    "rank": 86
+  },
+  {
+    "team": "Oregon St.",
+    "netRating": 8.9,
+    "rank": 87
+  },
+  {
+    "team": "SMU",
+    "netRating": 8.6,
+    "rank": 88
+  },
+  {
+    "team": "Iowa St.",
+    "netRating": 8.4,
+    "rank": 89
+  },
+  {
+    "team": "Kansas St.",
+    "netRating": 8.3,
+    "rank": 90
+  },
+  {
+    "team": "New Mexico St.",
+    "netRating": 8.2,
+    "rank": 91
+  },
+  {
+    "team": "UNC Greensboro",
+    "netRating": 8.2,
+    "rank": 92
+  },
+  {
+    "team": "Texas St.",
+    "netRating": 8.0,
+    "rank": 93
+  },
+  {
+    "team": "DePaul",
+    "netRating": 7.9,
+    "rank": 94
+  },
+  {
+    "team": "Duquesne",
+    "netRating": 7.6,
+    "rank": 95
+  },
+  {
+    "team": "Georgia",
+    "netRating": 7.4,
+    "rank": 96
+  },
+  {
+    "team": "Missouri",
+    "netRating": 7.4,
+    "rank": 97
+  },
+  {
+    "team": "UNLV",
+    "netRating": 7.3,
+    "rank": 98
+  },
+  {
+    "team": "Colorado St.",
+    "netRating": 7.2,
+    "rank": 99
+  },
+  {
+    "team": "Stephen F. Austin",
+    "netRating": 7.0,
+    "rank": 100
+  },
+  {
+    "team": "Loyola Chicago",
+    "netRating": 6.9,
+    "rank": 101
+  },
+  {
+    "team": "Wake Forest",
+    "netRating": 6.7,
+    "rank": 102
+  },
+  {
+    "team": "Mississippi",
+    "netRating": 6.7,
+    "rank": 103
+  },
+  {
+    "team": "Miami FL",
+    "netRating": 6.4,
+    "rank": 104
+  },
+  {
+    "team": "Virginia Tech",
+    "netRating": 6.3,
+    "rank": 105
+  },
+  {
+    "team": "Hofstra",
+    "netRating": 6.1,
+    "rank": 106
+  },
+  {
+    "team": "Bradley",
+    "netRating": 6.1,
+    "rank": 107
+  },
+  {
+    "team": "UC Irvine",
+    "netRating": 6.1,
+    "rank": 108
+  },
+  {
+    "team": "Belmont",
+    "netRating": 6.0,
+    "rank": 109
+  },
+  {
+    "team": "Harvard",
+    "netRating": 5.7,
+    "rank": 110
+  },
+  {
+    "team": "Pittsburgh",
+    "netRating": 5.7,
+    "rank": 111
+  },
+  {
+    "team": "Western Kentucky",
+    "netRating": 5.6,
+    "rank": 112
+  },
+  {
+    "team": "North Dakota St.",
+    "netRating": 5.6,
+    "rank": 113
+  },
+  {
+    "team": "Utah",
+    "netRating": 5.5,
+    "rank": 114
+  },
+  {
+    "team": "Temple",
+    "netRating": 5.5,
+    "rank": 115
+  },
+  {
+    "team": "Ball St.",
+    "netRating": 5.2,
+    "rank": 116
+  },
+  {
+    "team": "UCF",
+    "netRating": 4.9,
+    "rank": 117
+  },
+  {
+    "team": "South Dakota St.",
+    "netRating": 4.7,
+    "rank": 118
+  },
+  {
+    "team": "Colgate",
+    "netRating": 4.7,
+    "rank": 119
+  },
+  {
+    "team": "Pacific",
+    "netRating": 4.7,
+    "rank": 120
+  },
+  {
+    "team": "Indiana St.",
+    "netRating": 4.6,
+    "rank": 121
+  },
+  {
+    "team": "Missouri St.",
+    "netRating": 4.6,
+    "rank": 122
+  },
+  {
+    "team": "St. Bonaventure",
+    "netRating": 4.4,
+    "rank": 123
+  },
+  {
+    "team": "Eastern Washington",
+    "netRating": 4.3,
+    "rank": 124
+  },
+  {
+    "team": "South Florida",
+    "netRating": 4.3,
+    "rank": 125
+  },
+  {
+    "team": "Georgia St.",
+    "netRating": 4.2,
+    "rank": 126
+  },
+  {
+    "team": "Washington St.",
+    "netRating": 4.2,
+    "rank": 127
+  },
+  {
+    "team": "Kent St.",
+    "netRating": 4.0,
+    "rank": 128
+  },
+  {
+    "team": "Little Rock",
+    "netRating": 3.9,
+    "rank": 129
+  },
+  {
+    "team": "UT Arlington",
+    "netRating": 3.9,
+    "rank": 130
+  },
+  {
+    "team": "Texas A&M",
+    "netRating": 3.8,
+    "rank": 131
+  },
+  {
+    "team": "Northwestern",
+    "netRating": 3.6,
+    "rank": 132
+  },
+  {
+    "team": "Wright St.",
+    "netRating": 3.5,
+    "rank": 133
+  },
+  {
+    "team": "Georgia Southern",
+    "netRating": 3.4,
+    "rank": 134
+  },
+  {
+    "team": "Oral Roberts",
+    "netRating": 3.3,
+    "rank": 135
+  },
+  {
+    "team": "Montana",
+    "netRating": 3.1,
+    "rank": 136
+  },
+  {
+    "team": "Murray St.",
+    "netRating": 3.1,
+    "rank": 137
+  },
+  {
+    "team": "New Mexico",
+    "netRating": 2.9,
+    "rank": 138
+  },
+  {
+    "team": "Pepperdine",
+    "netRating": 2.8,
+    "rank": 139
+  },
+  {
+    "team": "Winthrop",
+    "netRating": 2.6,
+    "rank": 140
+  },
+  {
+    "team": "Penn",
+    "netRating": 2.6,
+    "rank": 141
+  },
+  {
+    "team": "Northeastern",
+    "netRating": 2.2,
+    "rank": 142
+  },
+  {
+    "team": "Northern Kentucky",
+    "netRating": 2.2,
+    "rank": 143
+  },
+  {
+    "team": "Siena",
+    "netRating": 2.1,
+    "rank": 144
+  },
+  {
+    "team": "Marshall",
+    "netRating": 2.1,
+    "rank": 145
+  },
+  {
+    "team": "Valparaiso",
+    "netRating": 2.0,
+    "rank": 146
+  },
+  {
+    "team": "Chattanooga",
+    "netRating": 1.8,
+    "rank": 147
+  },
+  {
+    "team": "Buffalo",
+    "netRating": 1.8,
+    "rank": 148
+  },
+  {
+    "team": "FIU",
+    "netRating": 1.6,
+    "rank": 149
+  },
+  {
+    "team": "Princeton",
+    "netRating": 1.5,
+    "rank": 150
+  },
+  {
+    "team": "Santa Clara",
+    "netRating": 1.3,
+    "rank": 151
+  },
+  {
+    "team": "Toledo",
+    "netRating": 1.2,
+    "rank": 152
+  },
+  {
+    "team": "Wofford",
+    "netRating": 1.1,
+    "rank": 153
+  },
+  {
+    "team": "California",
+    "netRating": 1.1,
+    "rank": 154
+  },
+  {
+    "team": "Western Carolina",
+    "netRating": 1.0,
+    "rank": 155
+  },
+  {
+    "team": "Fresno St.",
+    "netRating": 1.0,
+    "rank": 156
+  },
+  {
+    "team": "South Alabama",
+    "netRating": 1.0,
+    "rank": 157
+  },
+  {
+    "team": "Towson",
+    "netRating": 0.9,
+    "rank": 158
+  },
+  {
+    "team": "UC Santa Barbara",
+    "netRating": 0.8,
+    "rank": 159
+  },
+  {
+    "team": "Boston University",
+    "netRating": 0.7,
+    "rank": 160
+  },
+  {
+    "team": "Drake",
+    "netRating": 0.7,
+    "rank": 161
+  },
+  {
+    "team": "Nebraska",
+    "netRating": 0.7,
+    "rank": 162
+  },
+  {
+    "team": "Southern Utah",
+    "netRating": 0.7,
+    "rank": 163
+  },
+  {
+    "team": "Charlotte",
+    "netRating": 0.5,
+    "rank": 164
+  },
+  {
+    "team": "North Florida",
+    "netRating": 0.4,
+    "rank": 165
+  },
+  {
+    "team": "Massachusetts",
+    "netRating": 0.4,
+    "rank": 166
+  },
+  {
+    "team": "Bowling Green",
+    "netRating": 0.3,
+    "rank": 167
+  },
+  {
+    "team": "Ohio",
+    "netRating": 0.3,
+    "rank": 168
+  },
+  {
+    "team": "Vanderbilt",
+    "netRating": 0.2,
+    "rank": 169
+  },
+  {
+    "team": "College of Charleston",
+    "netRating": 0.1,
+    "rank": 170
+  },
+  {
+    "team": "Portland St.",
+    "netRating": 0.0,
+    "rank": 171
+  },
+  {
+    "team": "George Mason",
+    "netRating": 0.0,
+    "rank": 172
+  },
+  {
+    "team": "Old Dominion",
+    "netRating": 0.0,
+    "rank": 173
+  },
+  {
+    "team": "Austin Peay",
+    "netRating": -0.1,
+    "rank": 174
+  },
+  {
+    "team": "South Dakota",
+    "netRating": -0.3,
+    "rank": 175
+  },
+  {
+    "team": "St. Francis PA",
+    "netRating": -0.3,
+    "rank": 176
+  },
+  {
+    "team": "Appalachian St.",
+    "netRating": -0.3,
+    "rank": 177
+  },
+  {
+    "team": "Southern Illinois",
+    "netRating": -0.4,
+    "rank": 178
+  },
+  {
+    "team": "Boston College",
+    "netRating": -0.7,
+    "rank": 179
+  },
+  {
+    "team": "Delaware",
+    "netRating": -0.8,
+    "rank": 180
+  },
+  {
+    "team": "La Salle",
+    "netRating": -0.8,
+    "rank": 181
+  },
+  {
+    "team": "Northern Illinois",
+    "netRating": -1.0,
+    "rank": 182
+  },
+  {
+    "team": "Abilene Christian",
+    "netRating": -1.1,
+    "rank": 183
+  },
+  {
+    "team": "Sacramento St.",
+    "netRating": -1.1,
+    "rank": 184
+  },
+  {
+    "team": "Radford",
+    "netRating": -1.2,
+    "rank": 185
+  },
+  {
+    "team": "Tulane",
+    "netRating": -1.2,
+    "rank": 186
+  },
+  {
+    "team": "Rider",
+    "netRating": -1.2,
+    "rank": 187
+  },
+  {
+    "team": "UAB",
+    "netRating": -1.3,
+    "rank": 188
+  },
+  {
+    "team": "UTEP",
+    "netRating": -1.3,
+    "rank": 189
+  },
+  {
+    "team": "Coastal Carolina",
+    "netRating": -1.4,
+    "rank": 190
+  },
+  {
+    "team": "Florida Atlantic",
+    "netRating": -1.6,
+    "rank": 191
+  },
+  {
+    "team": "Stony Brook",
+    "netRating": -1.7,
+    "rank": 192
+  },
+  {
+    "team": "Nicholls St.",
+    "netRating": -1.8,
+    "rank": 193
+  },
+  {
+    "team": "Saint Peter's",
+    "netRating": -1.9,
+    "rank": 194
+  },
+  {
+    "team": "William & Mary",
+    "netRating": -2.2,
+    "rank": 195
+  },
+  {
+    "team": "Eastern Michigan",
+    "netRating": -2.4,
+    "rank": 196
+  },
+  {
+    "team": "Air Force",
+    "netRating": -2.5,
+    "rank": 197
+  },
+  {
+    "team": "Rice",
+    "netRating": -2.6,
+    "rank": 198
+  },
+  {
+    "team": "Sacred Heart",
+    "netRating": -2.6,
+    "rank": 199
+  },
+  {
+    "team": "Mercer",
+    "netRating": -2.6,
+    "rank": 200
+  },
+  {
+    "team": "Monmouth",
+    "netRating": -2.7,
+    "rank": 201
+  },
+  {
+    "team": "Cal Baptist",
+    "netRating": -2.8,
+    "rank": 202
+  },
+  {
+    "team": "American",
+    "netRating": -2.9,
+    "rank": 203
+  },
+  {
+    "team": "Illinois Chicago",
+    "netRating": -3.1,
+    "rank": 204
+  },
+  {
+    "team": "Dartmouth",
+    "netRating": -3.2,
+    "rank": 205
+  },
+  {
+    "team": "Arkansas St.",
+    "netRating": -3.3,
+    "rank": 206
+  },
+  {
+    "team": "Robert Morris",
+    "netRating": -3.3,
+    "rank": 207
+  },
+  {
+    "team": "Loyola Marymount",
+    "netRating": -3.4,
+    "rank": 208
+  },
+  {
+    "team": "Hawaii",
+    "netRating": -3.4,
+    "rank": 209
+  },
+  {
+    "team": "UTSA",
+    "netRating": -3.8,
+    "rank": 210
+  },
+  {
+    "team": "UC Riverside",
+    "netRating": -4.0,
+    "rank": 211
+  },
+  {
+    "team": "Sam Houston St.",
+    "netRating": -4.2,
+    "rank": 212
+  },
+  {
+    "team": "Prairie View A&M",
+    "netRating": -4.2,
+    "rank": 213
+  },
+  {
+    "team": "Seattle",
+    "netRating": -4.3,
+    "rank": 214
+  },
+  {
+    "team": "Northern Arizona",
+    "netRating": -4.4,
+    "rank": 215
+  },
+  {
+    "team": "Central Michigan",
+    "netRating": -4.4,
+    "rank": 216
+  },
+  {
+    "team": "East Carolina",
+    "netRating": -4.4,
+    "rank": 217
+  },
+  {
+    "team": "Nebraska Omaha",
+    "netRating": -4.5,
+    "rank": 218
+  },
+  {
+    "team": "Gardner Webb",
+    "netRating": -4.5,
+    "rank": 219
+  },
+  {
+    "team": "Iona",
+    "netRating": -4.5,
+    "rank": 220
+  },
+  {
+    "team": "Illinois St.",
+    "netRating": -4.5,
+    "rank": 221
+  },
+  {
+    "team": "Montana St.",
+    "netRating": -4.6,
+    "rank": 222
+  },
+  {
+    "team": "Green Bay",
+    "netRating": -4.7,
+    "rank": 223
+  },
+  {
+    "team": "UC Davis",
+    "netRating": -4.7,
+    "rank": 224
+  },
+  {
+    "team": "Brown",
+    "netRating": -4.7,
+    "rank": 225
+  },
+  {
+    "team": "Louisiana",
+    "netRating": -4.9,
+    "rank": 226
+  },
+  {
+    "team": "Lafayette",
+    "netRating": -4.9,
+    "rank": 227
+  },
+  {
+    "team": "Merrimack",
+    "netRating": -4.9,
+    "rank": 228
+  },
+  {
+    "team": "Miami OH",
+    "netRating": -5.0,
+    "rank": 229
+  },
+  {
+    "team": "San Diego",
+    "netRating": -5.4,
+    "rank": 230
+  },
+  {
+    "team": "Youngstown St.",
+    "netRating": -5.5,
+    "rank": 231
+  },
+  {
+    "team": "North Dakota",
+    "netRating": -5.5,
+    "rank": 232
+  },
+  {
+    "team": "Cal St. Northridge",
+    "netRating": -5.9,
+    "rank": 233
+  },
+  {
+    "team": "Bryant",
+    "netRating": -6.0,
+    "rank": 234
+  },
+  {
+    "team": "UMKC",
+    "netRating": -6.1,
+    "rank": 235
+  },
+  {
+    "team": "Lamar",
+    "netRating": -6.2,
+    "rank": 236
+  },
+  {
+    "team": "Western Michigan",
+    "netRating": -6.3,
+    "rank": 237
+  },
+  {
+    "team": "Eastern Illinois",
+    "netRating": -6.3,
+    "rank": 238
+  },
+  {
+    "team": "Oakland",
+    "netRating": -6.4,
+    "rank": 239
+  },
+  {
+    "team": "Jacksonville",
+    "netRating": -6.5,
+    "rank": 240
+  },
+  {
+    "team": "George Washington",
+    "netRating": -6.6,
+    "rank": 241
+  },
+  {
+    "team": "Drexel",
+    "netRating": -6.7,
+    "rank": 242
+  },
+  {
+    "team": "Bucknell",
+    "netRating": -6.7,
+    "rank": 243
+  },
+  {
+    "team": "Hartford",
+    "netRating": -6.7,
+    "rank": 244
+  },
+  {
+    "team": "Lipscomb",
+    "netRating": -6.8,
+    "rank": 245
+  },
+  {
+    "team": "Wyoming",
+    "netRating": -6.8,
+    "rank": 246
+  },
+  {
+    "team": "Fordham",
+    "netRating": -6.8,
+    "rank": 247
+  },
+  {
+    "team": "New Hampshire",
+    "netRating": -7.1,
+    "rank": 248
+  },
+  {
+    "team": "UT Rio Grande Valley",
+    "netRating": -7.3,
+    "rank": 249
+  },
+  {
+    "team": "Quinnipiac",
+    "netRating": -7.6,
+    "rank": 250
+  },
+  {
+    "team": "Southern",
+    "netRating": -7.6,
+    "rank": 251
+  },
+  {
+    "team": "Louisiana Monroe",
+    "netRating": -7.6,
+    "rank": 252
+  },
+  {
+    "team": "Utah Valley",
+    "netRating": -7.7,
+    "rank": 253
+  },
+  {
+    "team": "Norfolk St.",
+    "netRating": -7.7,
+    "rank": 254
+  },
+  {
+    "team": "VMI",
+    "netRating": -7.9,
+    "rank": 255
+  },
+  {
+    "team": "Navy",
+    "netRating": -7.9,
+    "rank": 256
+  },
+  {
+    "team": "UMBC",
+    "netRating": -7.9,
+    "rank": 257
+  },
+  {
+    "team": "Canisius",
+    "netRating": -8.0,
+    "rank": 258
+  },
+  {
+    "team": "Tennessee St.",
+    "netRating": -8.2,
+    "rank": 259
+  },
+  {
+    "team": "Saint Joseph's",
+    "netRating": -8.3,
+    "rank": 260
+  },
+  {
+    "team": "Purdue Fort Wayne",
+    "netRating": -8.4,
+    "rank": 261
+  },
+  {
+    "team": "Campbell",
+    "netRating": -8.5,
+    "rank": 262
+  },
+  {
+    "team": "Army",
+    "netRating": -8.6,
+    "rank": 263
+  },
+  {
+    "team": "Cal St. Fullerton",
+    "netRating": -8.6,
+    "rank": 264
+  },
+  {
+    "team": "Grand Canyon",
+    "netRating": -8.7,
+    "rank": 265
+  },
+  {
+    "team": "Loyola MD",
+    "netRating": -8.7,
+    "rank": 266
+  },
+  {
+    "team": "LIU",
+    "netRating": -8.7,
+    "rank": 267
+  },
+  {
+    "team": "Cal St. Bakersfield",
+    "netRating": -8.7,
+    "rank": 268
+  },
+  {
+    "team": "Northwestern St.",
+    "netRating": -8.8,
+    "rank": 269
+  },
+  {
+    "team": "Manhattan",
+    "netRating": -8.8,
+    "rank": 270
+  },
+  {
+    "team": "Milwaukee",
+    "netRating": -8.9,
+    "rank": 271
+  },
+  {
+    "team": "North Carolina Central",
+    "netRating": -9.0,
+    "rank": 272
+  },
+  {
+    "team": "Cornell",
+    "netRating": -9.1,
+    "rank": 273
+  },
+  {
+    "team": "Weber St.",
+    "netRating": -9.1,
+    "rank": 274
+  },
+  {
+    "team": "UMass Lowell",
+    "netRating": -9.2,
+    "rank": 275
+  },
+  {
+    "team": "McNeese St.",
+    "netRating": -9.3,
+    "rank": 276
+  },
+  {
+    "team": "Elon",
+    "netRating": -9.4,
+    "rank": 277
+  },
+  {
+    "team": "Southern Miss",
+    "netRating": -9.4,
+    "rank": 278
+  },
+  {
+    "team": "Texas Southern",
+    "netRating": -9.5,
+    "rank": 279
+  },
+  {
+    "team": "Eastern Kentucky",
+    "netRating": -9.5,
+    "rank": 280
+  },
+  {
+    "team": "Jackson St.",
+    "netRating": -9.5,
+    "rank": 281
+  },
+  {
+    "team": "Central Arkansas",
+    "netRating": -9.6,
+    "rank": 282
+  },
+  {
+    "team": "North Alabama",
+    "netRating": -9.6,
+    "rank": 283
+  },
+  {
+    "team": "Albany",
+    "netRating": -9.6,
+    "rank": 284
+  },
+  {
+    "team": "Jacksonville St.",
+    "netRating": -9.7,
+    "rank": 285
+  },
+  {
+    "team": "Portland",
+    "netRating": -9.9,
+    "rank": 286
+  },
+  {
+    "team": "North Carolina A&T",
+    "netRating": -10.1,
+    "rank": 287
+  },
+  {
+    "team": "Stetson",
+    "netRating": -10.2,
+    "rank": 288
+  },
+  {
+    "team": "Fairleigh Dickinson",
+    "netRating": -10.3,
+    "rank": 289
+  },
+  {
+    "team": "Idaho St.",
+    "netRating": -10.3,
+    "rank": 290
+  },
+  {
+    "team": "San Jose St.",
+    "netRating": -10.3,
+    "rank": 291
+  },
+  {
+    "team": "Troy",
+    "netRating": -10.4,
+    "rank": 292
+  },
+  {
+    "team": "Bethune Cookman",
+    "netRating": -10.4,
+    "rank": 293
+  },
+  {
+    "team": "Evansville",
+    "netRating": -10.5,
+    "rank": 294
+  },
+  {
+    "team": "Middle Tennessee",
+    "netRating": -10.7,
+    "rank": 295
+  },
+  {
+    "team": "Mount St. Mary's",
+    "netRating": -11.1,
+    "rank": 296
+  },
+  {
+    "team": "NJIT",
+    "netRating": -11.1,
+    "rank": 297
+  },
+  {
+    "team": "Long Beach St.",
+    "netRating": -11.1,
+    "rank": 298
+  },
+  {
+    "team": "Columbia",
+    "netRating": -11.3,
+    "rank": 299
+  },
+  {
+    "team": "Niagara",
+    "netRating": -11.5,
+    "rank": 300
+  },
+  {
+    "team": "Fairfield",
+    "netRating": -11.5,
+    "rank": 301
+  },
+  {
+    "team": "UNC Asheville",
+    "netRating": -11.6,
+    "rank": 302
+  },
+  {
+    "team": "Texas A&M Corpus Chris",
+    "netRating": -11.7,
+    "rank": 303
+  },
+  {
+    "team": "Detroit",
+    "netRating": -11.8,
+    "rank": 304
+  },
+  {
+    "team": "Lehigh",
+    "netRating": -11.8,
+    "rank": 305
+  },
+  {
+    "team": "Denver",
+    "netRating": -11.8,
+    "rank": 306
+  },
+  {
+    "team": "Hampton",
+    "netRating": -11.9,
+    "rank": 307
+  },
+  {
+    "team": "St. Francis NY",
+    "netRating": -11.9,
+    "rank": 308
+  },
+  {
+    "team": "Grambling St.",
+    "netRating": -12.0,
+    "rank": 309
+  },
+  {
+    "team": "James Madison",
+    "netRating": -12.1,
+    "rank": 310
+  },
+  {
+    "team": "Florida Gulf Coast",
+    "netRating": -12.1,
+    "rank": 311
+  },
+  {
+    "team": "UNC Wilmington",
+    "netRating": -12.4,
+    "rank": 312
+  },
+  {
+    "team": "Cleveland St.",
+    "netRating": -12.8,
+    "rank": 313
+  },
+  {
+    "team": "Florida A&M",
+    "netRating": -12.9,
+    "rank": 314
+  },
+  {
+    "team": "Cal Poly",
+    "netRating": -13.3,
+    "rank": 315
+  },
+  {
+    "team": "Morehead St.",
+    "netRating": -13.5,
+    "rank": 316
+  },
+  {
+    "team": "Marist",
+    "netRating": -13.6,
+    "rank": 317
+  },
+  {
+    "team": "Charleston Southern",
+    "netRating": -13.7,
+    "rank": 318
+  },
+  {
+    "team": "Longwood",
+    "netRating": -13.8,
+    "rank": 319
+  },
+  {
+    "team": "Maine",
+    "netRating": -13.9,
+    "rank": 320
+  },
+  {
+    "team": "Samford",
+    "netRating": -14.0,
+    "rank": 321
+  },
+  {
+    "team": "Morgan St.",
+    "netRating": -14.3,
+    "rank": 322
+  },
+  {
+    "team": "Idaho",
+    "netRating": -14.3,
+    "rank": 323
+  },
+  {
+    "team": "Alcorn St.",
+    "netRating": -14.4,
+    "rank": 324
+  },
+  {
+    "team": "USC Upstate",
+    "netRating": -15.3,
+    "rank": 325
+  },
+  {
+    "team": "New Orleans",
+    "netRating": -15.5,
+    "rank": 326
+  },
+  {
+    "team": "Coppin St.",
+    "netRating": -15.7,
+    "rank": 327
+  },
+  {
+    "team": "IUPUI",
+    "netRating": -16.2,
+    "rank": 328
+  },
+  {
+    "team": "Wagner",
+    "netRating": -16.6,
+    "rank": 329
+  },
+  {
+    "team": "Western Illinois",
+    "netRating": -16.7,
+    "rank": 330
+  },
+  {
+    "team": "Tennessee Tech",
+    "netRating": -16.8,
+    "rank": 331
+  },
+  {
+    "team": "Binghamton",
+    "netRating": -17.2,
+    "rank": 332
+  },
+  {
+    "team": "Alabama St.",
+    "netRating": -17.2,
+    "rank": 333
+  },
+  {
+    "team": "The Citadel",
+    "netRating": -17.3,
+    "rank": 334
+  },
+  {
+    "team": "Presbyterian",
+    "netRating": -17.5,
+    "rank": 335
+  },
+  {
+    "team": "Southeastern Louisiana",
+    "netRating": -17.6,
+    "rank": 336
+  },
+  {
+    "team": "SIU Edwardsville",
+    "netRating": -17.7,
+    "rank": 337
+  },
+  {
+    "team": "Tennessee Martin",
+    "netRating": -17.8,
+    "rank": 338
+  },
+  {
+    "team": "South Carolina St.",
+    "netRating": -18.3,
+    "rank": 339
+  },
+  {
+    "team": "Southeast Missouri St.",
+    "netRating": -19.0,
+    "rank": 340
+  },
+  {
+    "team": "High Point",
+    "netRating": -19.1,
+    "rank": 341
+  },
+  {
+    "team": "Houston Baptist",
+    "netRating": -19.4,
+    "rank": 342
+  },
+  {
+    "team": "Alabama A&M",
+    "netRating": -20.3,
+    "rank": 343
+  },
+  {
+    "team": "Holy Cross",
+    "netRating": -21.4,
+    "rank": 344
+  },
+  {
+    "team": "Incarnate Word",
+    "netRating": -22.5,
+    "rank": 345
+  },
+  {
+    "team": "Delaware St.",
+    "netRating": -23.1,
+    "rank": 346
+  },
+  {
+    "team": "Central Connecticut",
+    "netRating": -23.7,
+    "rank": 347
+  },
+  {
+    "team": "Arkansas Pine Bluff",
+    "netRating": -25.6,
+    "rank": 348
+  },
+  {
+    "team": "Howard",
+    "netRating": -26.1,
+    "rank": 349
+  },
+  {
+    "team": "Maryland Eastern Shore",
+    "netRating": -26.1,
+    "rank": 350
+  },
+  {
+    "team": "Mississippi Valley St.",
+    "netRating": -27.8,
+    "rank": 351
+  },
+  {
+    "team": "Kennesaw St.",
+    "netRating": -28.7,
+    "rank": 352
+  },
+  {
+    "team": "Chicago St.",
+    "netRating": -33.9,
+    "rank": 353
+  }
+]
