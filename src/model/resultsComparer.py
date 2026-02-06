@@ -1,100 +1,11 @@
 import json
 
-def compare_upset_predictions(enhancedFile='logisticThreeAndTo.json', baseFile='logisticBase.json', threshold=0.05):
+def print_detailed_stats(enhancedFile, baseFile, upper_threshold=0.05):
     """
-    Compare enhanced model upset predictions against base model.
+    Print detailed upset prediction statistics broken down by postseason status.
     
     Args:
-        threshold: Minimum difference in upset_prob (as decimal) to consider significant.
-                   E.g., 0.05 = 5% difference required
-    """
-    # Load both result files
-    with open(baseFile, 'r') as f:
-        base_results = json.load(f)
-    
-    with open(enhancedFile, 'r') as f:
-        enhanced_results = json.load(f)
-    
-    # Track statistics
-    higher_upset_prob = {
-        'total': 0,
-        'actual_upsets': 0,
-        'no_upsets': 0
-    }
-    
-    lower_upset_prob = {
-        'total': 0,
-        'actual_upsets': 0,
-        'no_upsets': 0
-    }
-    
-    # Compare each game (they're in the same order)
-    for base_game, enhanced_game in zip(base_results, enhanced_results):
-        base_prob = base_game['upset_prob']
-        enhanced_prob = enhanced_game['upset_prob']
-        actual_upset = enhanced_game['actual_upset']
-        
-        # not subtraction but division of probabilities
-        if(base_prob == 0):
-            continue
-        prob_diff = enhanced_prob / base_prob
-        
-        # Check if enhanced has significantly higher upset probability
-        if prob_diff >= 1 + threshold:
-            higher_upset_prob['total'] += 1
-            if actual_upset == 1:
-                higher_upset_prob['actual_upsets'] += 1
-            else:
-                higher_upset_prob['no_upsets'] += 1
-        
-        # Check if enhanced has significantly lower upset probability
-        elif prob_diff <= 1 - threshold:
-            lower_upset_prob['total'] += 1
-            if actual_upset == 1:
-                lower_upset_prob['actual_upsets'] += 1
-            else:
-                lower_upset_prob['no_upsets'] += 1
-    
-    # Print results
-    print(f"\n{'='*70}")
-    print(f"UPSET PROBABILITY COMPARISON (Threshold: {threshold*100:.1f}%)")
-    print(f"{'='*70}\n")
-    
-    print(f"WHEN enhanced MODEL HAS HIGHER UPSET PROBABILITY:")
-    print(f"  Total games: {higher_upset_prob['total']}")
-    if higher_upset_prob['total'] > 0:
-        print(f"  Actual upsets: {higher_upset_prob['actual_upsets']}")
-        print(f"  No upset: {higher_upset_prob['no_upsets']}")
-        upset_rate = (higher_upset_prob['actual_upsets'] / higher_upset_prob['total']) * 100
-        print(f"  Upset rate: {upset_rate:.2f}%")
-    print()
-    
-    print(f"WHEN enhanced MODEL HAS LOWER UPSET PROBABILITY:")
-    print(f"  Total games: {lower_upset_prob['total']}")
-    if lower_upset_prob['total'] > 0:
-        print(f"  Actual upsets: {lower_upset_prob['actual_upsets']}")
-        print(f"  No upset: {lower_upset_prob['no_upsets']}")
-        upset_rate = (lower_upset_prob['actual_upsets'] / lower_upset_prob['total']) * 100
-        print(f"  Upset rate: {upset_rate:.2f}%")
-    print()
-    
-    # Calculate overall upset rate for context
-    total_games = len(base_results)
-    total_upsets = sum(1 for game in enhanced_results if game['actual_upset'] == 1)
-    overall_upset_rate = (total_upsets / total_games) * 100
-    print(f"OVERALL DATASET:")
-    print(f"  Total games: {total_games}")
-    print(f"  Total upsets: {total_upsets}")
-    print(f"  Overall upset rate: {overall_upset_rate:.2f}%")
-    print(f"\n{'='*70}\n")
-
-
-def print_detailed_stats(enhancedFile='sixenhancedResults.json', baseFile='slimmerBaseResults.json', threshold=0.05):
-    """
-    Print detailed upset prediction statistics broken down by enhanced and postseason status.
-    
-    Args:
-        threshold: Minimum difference in upset_prob (as decimal) to consider significant.
+        upper_threshold: Minimum difference in upset_prob (as decimal) to consider significant.
     """
     # Load both result files
     with open(baseFile, 'r') as f:
@@ -124,12 +35,12 @@ def print_detailed_stats(enhancedFile='sixenhancedResults.json', baseFile='slimm
         prob_diff = enhanced_prob / base_prob
         
         # Classify as higher or lower upset probability
-        if prob_diff >= 1 + threshold:
+        if prob_diff >= 1 + upper_threshold:
             category = 'higher'
-        elif prob_diff <= 1 - threshold:
+        elif prob_diff <= 1 - upper_threshold:
             category = 'lower'
         else:
-            continue  # Skip games within threshold
+            continue  # Skip games within upper_threshold
         
         # Update postseason stats
         stats_by_postseason[is_postseason][category]['total'] += 1
@@ -140,7 +51,7 @@ def print_detailed_stats(enhancedFile='sixenhancedResults.json', baseFile='slimm
     
     # Print results
     print(f"\n{'='*70}")
-    print(f"DETAILED UPSET PROBABILITY STATISTICS (Threshold: {threshold*100:.1f}%)")
+    print(f"DETAILED UPSET PROBABILITY STATISTICS (upper_threshold: {upper_threshold*100:.1f}%)")
     print(f"{'='*70}\n")
     
     # Print by postseason status
@@ -171,7 +82,249 @@ def print_detailed_stats(enhancedFile='sixenhancedResults.json', baseFile='slimm
     
     print(f"\n{'='*70}\n")
 
+def test_enhanced_signal_symmetrically(enhancedFile, baseFile, bin_size=0.05, threshold=0.05):
+    """
+    Test whether the enhanced model provides real signal by binning games based on 
+    base model probabilities and checking if enhanced model correctly discriminates
+    within each bin. 
+    
+    It's important to note that the enhanced models are generally more upset-prone and so we have different thresholds for
+    when it feels like one model is stepping out and making a statistically significant different prediction.
+    
+    The key insight: Within games the base model rates similarly (e.g., all 15-20% 
+    upset chance), if enhanced > base by threshold, do those games upset more frequently?
+    If enhanced < base by threshold, do those games upset less frequently?
+    
+    Args:
+        bin_size: Size of probability bins (default 0.05 = 5%)
+        threshold: Percentage-based threshold for significant difference (e.g., 0.05 = 5%)
+    """
+    # Load both result files
+    with open(baseFile, 'r') as f:
+        base_results = json.load(f)
+    
+    with open(enhancedFile, 'r') as f:
+        enhanced_results = json.load(f)
+    
+    # Create bins from 0 to 0.5
+    bins = {}
+    max_prob = 0.35
+    
+    # Initialize bins
+    current = 0
+    while current < max_prob:
+        bin_key = f"{current:.2f}-{current+bin_size:.2f}"
+        bins[bin_key] = {
+            'range': (current, current + bin_size),
+            'enhanced_higher': {'total': 0, 'upsets': 0},  # enhanced > base
+            'enhanced_lower': {'total': 0, 'upsets': 0}    # enhanced < base
+        }
+        current += bin_size
+    
+    # Categorize games into bins based on base model probability
+    for base_game, enhanced_game in zip(base_results, enhanced_results):
+        base_prob = base_game['upset_prob']
+        enhanced_prob = enhanced_game['upset_prob']
+        actual_upset = enhanced_game['actual_upset']
+        
+        # Skip division by zero
+        if base_prob == 0:
+            continue
+        
+        prob_ratio = enhanced_prob / base_prob
+        
+        # Find the appropriate bin
+        for bin_key, bin_data in bins.items():
+            if bin_data['range'][0] <= base_prob < bin_data['range'][1]:
+                # Categorize by whether enhanced is significantly higher or lower than base
+                if prob_ratio >= 1 + threshold:
+                    bin_data['enhanced_higher']['total'] += 1
+                    if actual_upset == 1:
+                        bin_data['enhanced_higher']['upsets'] += 1
+                elif prob_ratio <= 1 - threshold:
+                    bin_data['enhanced_lower']['total'] += 1
+                    if actual_upset == 1:
+                        bin_data['enhanced_lower']['upsets'] += 1
+                break
+    
+    # Print results
+    print(f"\n{'='*90}")
+    print(f"ENHANCED MODEL SIGNAL TEST (Bin Size: {bin_size*100:.0f}%, threshold: {threshold*100:.1f}%)")
+    print(f"{'='*90}\n")
+    # print("Within each base probability bin, comparing upset rates when enhanced > base vs < base:")
+    # print("✓ = Enhanced model provides positive signal (higher upset rate when enh > base)\n")
+    
+    print(f"{'Base Bin':<12} {'Enh>Base':<10} {'Rate':<8} {'Enh<Base':<10} {'Rate':<8} {'Diff':<8} {'Signal'}")
+    print(f"{'-'*68}")
+    
+    total_positive_signal_bins = 0
+    total_bins_with_data = 0
+    
+    for bin_key, bin_data in sorted(bins.items()):
+        higher = bin_data['enhanced_higher']
+        lower = bin_data['enhanced_lower']
+        
+        if higher['total'] == 0 and lower['total'] == 0:
+            continue
+        
+        total_bins_with_data += 1
+        
+        # Calculate upset rates
+        higher_rate = (higher['upsets'] / higher['total']) if higher['total'] > 0 else 0
+        lower_rate = (lower['upsets'] / lower['total']) if lower['total'] > 0 else 0
+        diff = higher_rate - lower_rate
+        
+        # Check if enhanced provides positive signal
+        has_signal = '✓' if diff > 0 and higher['total'] > 0 and lower['total'] > 0 else '✗'
+        if diff > 0 and higher['total'] > 0 and lower['total'] > 0:
+            total_positive_signal_bins += 1
+        
+        higher_str = f"{higher['total']}" if higher['total'] > 0 else "-"
+        lower_str = f"{lower['total']}" if lower['total'] > 0 else "-"
+        higher_rate_str = f"{higher_rate*100:>6.1f}%" if higher['total'] > 0 else "   -"
+        lower_rate_str = f"{lower_rate*100:>6.1f}%" if lower['total'] > 0 else "   -"
+        diff_str = f"{diff*100:>+6.1f}%" if higher['total'] > 0 and lower['total'] > 0 else "   -"
+        
+        print(f"{bin_key:<12} {higher_str:<10} {higher_rate_str:<8} "
+              f"{lower_str:<10} {lower_rate_str:<8} {diff_str:<8} {has_signal}")
+    
+    # Summary statistics
+    print(f"{'-'*68}")
+    print(f"\nSUMMARY:")
+    print(f"  Bins with positive signal: {total_positive_signal_bins}/{total_bins_with_data}")
+    if total_bins_with_data > 0:
+        print(f"  Percentage: {total_positive_signal_bins/total_bins_with_data*100:.1f}%")
+    
+    # Overall weighted difference
+    total_higher_upsets = 0
+    total_higher_games = 0
+    total_lower_upsets = 0
+    total_lower_games = 0
+    
+    for bin_data in bins.values():
+        total_higher_upsets += bin_data['enhanced_higher']['upsets']
+        total_higher_games += bin_data['enhanced_higher']['total']
+        total_lower_upsets += bin_data['enhanced_lower']['upsets']
+        total_lower_games += bin_data['enhanced_lower']['total']
+    
+    if total_higher_games > 0 and total_lower_games > 0:
+        overall_higher_rate = total_higher_upsets / total_higher_games
+        overall_lower_rate = total_lower_upsets / total_lower_games
+        overall_diff = overall_higher_rate - overall_lower_rate
+        
+        print(f"\nOVERALL (across all bins):")
+        print(f"  When enhanced > base: {overall_higher_rate*100:.2f}% upset rate ({total_higher_upsets}/{total_higher_games})")
+        print(f"  When enhanced < base: {overall_lower_rate*100:.2f}% upset rate ({total_lower_upsets}/{total_lower_games})")
+        print(f"  Difference: {overall_diff*100:+.2f} percentage points")
+        print(f"\n  Interpretation: Enhanced model {'DOES' if overall_diff > 0 else 'DOES NOT'} "
+              f"provide real predictive signal")
+    
+    print(f"\n{'='*90}\n")
+
+def test_enhanced_signal_asymmetrically(enhancedFile, baseFile, bin_size=0.05, threshold=0.05):
+    # Load both result files
+    with open(baseFile, 'r') as f:
+        base_results = json.load(f)
+    
+    with open(enhancedFile, 'r') as f:
+        enhanced_results = json.load(f)
+    
+    # Create bins from 0 to 0.5
+    bins = {}
+    max_prob = 0.35
+    
+    # Initialize bins
+    current = 0
+    while current < max_prob:
+        bin_key = f"{current:.2f}-{current+bin_size:.2f}"
+        bins[bin_key] = {
+            'range': (current, current + bin_size),
+            'enhanced_higher': {'total': 0, 'upsets': 0},  # enhanced > base
+            'base_average_prob': {'total': 0, 'sum_probs': 0}
+        }
+        current += bin_size
+    
+    # Categorize games into bins based on base model probability
+    for base_game, enhanced_game in zip(base_results, enhanced_results):
+        base_prob = base_game['upset_prob']
+        enhanced_prob = enhanced_game['upset_prob']
+        actual_upset = enhanced_game['actual_upset']
+        
+        # Skip division by zero
+        if base_prob == 0:
+            continue
+        
+        prob_ratio = enhanced_prob / base_prob
+        
+        # Find the appropriate bin
+        for bin_key, bin_data in bins.items():
+            if bin_data['range'][0] <= base_prob < bin_data['range'][1]:
+                # Categorize by whether enhanced is significantly higher or lower than base
+                if prob_ratio >= 1 + threshold:
+                    bin_data['enhanced_higher']['total'] += 1
+                    bin_data['base_average_prob']['total'] += 1
+                    bin_data['base_average_prob']['sum_probs'] += base_prob
+                    if actual_upset == 1:
+                        bin_data['enhanced_higher']['upsets'] += 1
+    
+    # Print results
+    print(f"\n{'='*68}")
+    print(f"ENHANCED MODEL SIGNAL TEST (Bin Size: {bin_size*100:.0f}%, threshold: {threshold*100:.1f}%)")
+    print(f"{'='*68}\n")
+    print(f"{'Base Bin':<12} {'Enh>Base':<12} {'Rate':<10} {'Base Avg':<12} {'Diff':<8} {'Signal'}")
+    print(f"{'-'*68}")
+    
+    total_positive_signal_bins = 0
+    total_bins_with_data = 0
+    
+    for bin_key, bin_data in sorted(bins.items()):
+        higher = bin_data['enhanced_higher']
+        base_averages = bin_data['base_average_prob']
+        
+        if higher['total'] == 0:
+            continue
+        
+        total_bins_with_data += 1
+        
+        # Calculate upset rates
+        higher_rate = (higher['upsets'] / higher['total'])
+        base_average_rate = (base_averages['sum_probs'] / base_averages['total'])
+        diff = higher_rate - base_average_rate
+        
+        # Check if enhanced provides positive signal
+        has_signal = '✓' if diff > 0 else '✗'
+        if diff > 0:
+            total_positive_signal_bins += 1
+        
+        higher_str = f"{higher['total']}"
+        higher_rate_str = f"{higher_rate*100:>6.1f}%"
+        diff_str = f"{diff*100:>+6.1f}%"
+        
+        print(f"{bin_key:<12} {higher_str:<10} {higher_rate_str:<8} "
+              f"{base_average_rate*100:>12f}% {diff_str:<12} {has_signal}")
+    
+    print(f"{'-'*68}")
+    
+    # Overall weighted difference
+    total_higher_upsets = 0
+    total_higher_games = 0
+    total_base_probs = 0
+    
+    for bin_data in bins.values():
+        total_higher_upsets += bin_data['enhanced_higher']['upsets']
+        total_higher_games += bin_data['enhanced_higher']['total']
+        total_base_probs += bin_data['base_average_prob']['sum_probs']
+        
+    if total_higher_games > 0:
+        overall_higher_rate = total_higher_upsets / total_higher_games
+        overall_base_rate = total_base_probs / total_higher_games
+        overall_diff = overall_higher_rate - overall_base_rate
+        
+        print(f"\nOVERALL (across all bins):")
+        print(f"  When enhanced > base: {overall_higher_rate*100:.2f}% upset rate ({total_higher_upsets}/{total_higher_games})")
+        print(f"  Avg based guessed rate: {overall_base_rate*100:.2f}% upset rate ({round(total_base_probs)}/{total_higher_games})")
+        print(f"  Difference: {overall_diff*100:+.2f} percentage points")
 
 if __name__ == "__main__":
-    compare_upset_predictions(enhancedFile='logisticThreeAndTo.json', baseFile='logisticBase.json', threshold=0.14)
-    #print_detailed_stats('fourenhancedResults.json', threshold=0.3)
+    test_enhanced_signal_asymmetrically(enhancedFile='2010_logistic3PLoThreeTO.json', baseFile='2010_logisticBase.json', 
+        bin_size=0.05, threshold=0.22)

@@ -12,8 +12,8 @@ from sklearn.metrics import brier_score_loss
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import log_loss
 
-START_YEAR = 2015
-SPLIT_YEAR = 2021
+START_YEAR = 2010
+SPLIT_YEAR = 2020
 
 # seed diffs straight from 97-24 data, less common diffs (even) 
 # just the average of above and below diffs since small sample
@@ -283,8 +283,8 @@ def buildAndRunModel(
 
 #'''
 # Sort by upset probability (descending) to see top upset picks
-results = buildAndRunModel([8,24], ["higherRating", "lowerRating", "sum_3PA_pct"], 0)
-#results.to_json("logisticThreeAndTo.json", orient="records", indent=2)
+results = buildAndRunModel([8,24], ["higherRating", "lowerRating", "sum_3PA_pct", "TO_freq", "3P_pct_lo"], 0)
+results.to_json("2010_logistic3PLoThreeTO.json", orient="records", indent=2)
 
 #results = results.sort_values("upset_prob", ascending=False)
 

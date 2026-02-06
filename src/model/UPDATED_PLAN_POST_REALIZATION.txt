@@ -1,0 +1,6 @@
+2/5/2026:
+the enhanced models are useful--but asymmetrically. basically, after a lot of different runs with diferent params and evaluations,
+it's clear that when the enhanced model prob is statistically significantly greater than base, it's onto something.
+when it is lower or about even with base, then base is the better model. 
+
+thus, evaluations will build off this understanding and may look "uneven" or slanted.
