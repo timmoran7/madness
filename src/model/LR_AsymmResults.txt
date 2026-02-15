@@ -1,5 +1,6 @@
+*
 ------------------
-Tempo + Three + TO
+Tempo + 3PA + TO
 ------------------
 15% THRESHOLD:
 Base Bin     Enh>Base     Rate       Base Avg     Diff     Signal
@@ -31,8 +32,9 @@ OVERALL (across all bins):
   Avg based guessed rate: 14.56% upset rate (54/369)
   Difference: +3.60 percentage points
 
+*
 -------------------
-THREE + TO
+3PA + TO
 -------------------
 15% THRESHOLD:
 Base Bin     Enh>Base     Rate       Base Avg     Diff     Signal
@@ -64,8 +66,9 @@ OVERALL (across all bins):
   Avg based guessed rate: 13.40% upset rate (51/380)
   Difference: +2.65 percentage points
 
+*
 -------------------
-3P% Lo + THREE + TO
+3P% Lo + 3PA + TO
 -------------------
 14% THRESHOLD:
 Base Bin     Enh>Base     Rate       Base Avg     Diff     Signal
@@ -97,3 +100,159 @@ OVERALL (across all bins):
   When enhanced > base: 14.73% upset rate (57/387)
   Avg based guessed rate: 9.60% upset rate (37/387)
   Difference: +5.13 percentage points
+
+*
+---------------------------------
+AbsTempoLo + 3P% Lo + 3PA + TO
+---------------------------------
+14% THRESHOLD:
+Base Bin     Enh>Base     Rate       Base Avg     Diff     Signal
+--------------------------------------------------------------------
+0.00-0.05    60            8.3%      2.542518%   +5.8%      ✓
+0.05-0.10    411          11.2%      7.542395%   +3.6%      ✓
+0.10-0.15    256          15.6%     13.185040%   +2.4%      ✓
+0.15-0.20    147          17.7%     17.330324%   +0.4%      ✓
+0.20-0.25    35           20.0%     22.667548%   -2.7%      ✗
+0.25-0.30    124          33.9%     28.620341%   +5.3%      ✓
+0.30-0.35    18           16.7%     30.068184%  -13.4%      ✗
+--------------------------------------------------------------------
+
+OVERALL (across all bins):
+  When enhanced > base: 16.08% upset rate (169/1051)
+  Avg based guessed rate: 13.38% upset rate (141/1051)
+  Difference: +2.70 percentage points
+
+22% THRESHOLD:
+Base Bin     Enh>Base     Rate       Base Avg     Diff     Signal
+--------------------------------------------------------------------
+0.00-0.05    59            8.5%      2.510580%   +6.0%      ✓
+0.05-0.10    221          12.2%      7.742546%   +4.5%      ✓
+0.10-0.15    59           13.6%     12.862235%   +0.7%      ✓
+0.25-0.30    59           40.7%     28.676389%  +12.0%      ✓
+0.30-0.35    4            25.0%     30.068184%   -5.1%      ✗
+--------------------------------------------------------------------
+
+OVERALL (across all bins):
+  When enhanced > base: 16.17% upset rate (65/402)
+  Avg based guessed rate: 11.02% upset rate (44/402)
+  Difference: +5.15 percentage points
+
+*
+------------------------------
+3P% Lo + 3PA + TO (2013-2026)
+-------------------------------
+Brier score: 0.1499
+Log loss: 0.4737
+
+7% THRESHOLD
+Base Bin     Enh>Base     Rate       Base Avg     Enh Avg      Enh Diff     Diff     Signal
+--------------------------------------------------------------------
+0.00-0.05    103           5.8%      3.390147%     5.063791%   +0.8%        +2.4%      ✓
+0.05-0.10    1060          9.3%      7.560641%     9.074658%   +0.3%        +1.8%      ✓
+0.10-0.15    616          15.6%     12.827350%    14.649488%   +0.9%        +2.8%      ✓
+0.15-0.20    864          20.1%     18.141353%    20.226885%   -0.1%        +2.0%      ✓
+0.20-0.25    682          25.5%     22.679193%    25.077821%   +0.4%        +2.8%      ✓
+0.25-0.30    384          28.4%     27.427442%    31.483233%   -3.1%        +1.0%      ✓
+--------------------------------------------------------------------
+
+OVERALL (across all bins):
+  When enhanced > base: 17.74% upset rate (658/3709)
+  Avg based guessed rate: 15.62% upset rate (579/3709)
+  Avg enhanced guessed rate: 17.75% upset rate (658/3709)
+  Difference: +2.12 percentage points
+  Enhanced Difference: +0.01 percentage points
+
+25% THRESHOLD:
+Base Bin     Enh>Base     Rate       Base Avg     Enh Avg      Enh Diff     Diff     Signal
+--------------------------------------------------------------------
+0.00-0.05    60            6.7%      2.452871%     4.726388%   +1.9%        +4.2%      ✓
+0.05-0.10    274          13.1%      7.980641%    10.613034%   +2.5%        +5.2%      ✓
+0.10-0.15    44           15.9%     11.537504%    14.826636%   +1.1%        +4.4%      ✓
+0.20-0.25    1           100.0%     20.236657%    25.759145%  +74.2%       +79.8%      ✓
+0.25-0.30    55           30.9%     28.504282%    39.930778%   -9.0%        +2.4%      ✓
+--------------------------------------------------------------------
+
+OVERALL (across all bins):
+  When enhanced > base: 14.98% upset rate (65/434)
+  Avg based guessed rate: 10.21% upset rate (44/434)
+  Avg enhanced guessed rate: 13.98% upset rate (61/434)
+  Difference: +4.77 percentage points
+  Enhanced Difference: -1.00 percentage points
+
+
+10% THRESHOLD 2026 ONLY:
+Base Bin     Enh>Base     Rate       Base Avg     Enh Avg      Enh Diff     Diff     Signal
+--------------------------------------------------------------------
+0.00-0.05    23            0.0%      3.238291%     5.163919%   -5.2%        -3.2%      ✗
+0.05-0.10    224           8.0%      7.385171%     9.041814%   -1.0%        +0.7%      ✓
+0.10-0.15    124          16.9%     12.737944%    14.839963%   +2.1%        +4.2%      ✓
+0.15-0.20    149          25.5%     18.223366%    20.680824%   +4.8%        +7.3%      ✓
+0.20-0.25    77           31.2%     22.187690%    25.229341%   +5.9%        +9.0%      ✓
+0.25-0.30    37           27.0%     27.835870%    34.358117%   -7.3%        -0.8%      ✗
+--------------------------------------------------------------------
+
+OVERALL (across all bins):
+  When enhanced > base: 17.51% upset rate (111/634)
+  Avg based guessed rate: 13.82% upset rate (88/634)
+  Avg enhanced guessed rate: 16.21% upset rate (103/634)
+  Difference: +3.69 percentage points
+  Enhanced Difference: -1.29 percentage points
+
+*
+-----------------------------------------
+3P% Lo + 3PA + TO + adjOE_Lo (2013-2026)
+----------------------------------------
+Brier score: 0.1492
+Log loss: 0.4700
+
+8% THRESHOLD:
+Base Bin     Enh>Base     Rate       Base Avg     Diff     Signal
+--------------------------------------------------------------------
+0.00-0.05    118           5.1%      3.578667%   +1.5%      ✓
+0.05-0.10    1013         10.0%      7.036901%   +2.9%      ✓
+0.10-0.15    557          15.6%     13.262792%   +2.4%      ✓
+0.15-0.20    717          19.2%     17.897984%   +1.3%      ✓
+0.20-0.25    786          24.9%     22.883588%   +2.1%      ✓
+0.25-0.30    817          33.2%     27.254961%   +5.9%      ✓
+--------------------------------------------------------------------
+OVERALL (across all bins):
+  When enhanced > base: 19.94% upset rate (799/4008)
+  Avg based guessed rate: 16.97% upset rate (680/4008)
+  Difference: +2.96 percentage points
+
+35% THRESHOLD:
+Base Bin     Enh>Base     Rate       Base Avg     Diff     Signal
+--------------------------------------------------------------------
+0.00-0.05    93            4.3%      3.211790%   +1.1%      ✓
+0.05-0.10    183          11.5%      7.641292%   +3.8%      ✓
+0.10-0.15    119          19.3%     11.892991%   +7.4%      ✓
+0.15-0.20    51           25.5%     18.476999%   +7.0%      ✓
+0.20-0.25    17           29.4%     21.607581%   +7.8%      ✓
+0.25-0.30    46           32.6%     28.006515%   +4.6%      ✓
+--------------------------------------------------------------------
+OVERALL (across all bins):
+  When enhanced > base: 15.91% upset rate (81/509)
+  Avg based guessed rate: 11.22% upset rate (57/509)
+  Difference: +4.69 percentage points
+
+*
+---------------------------------------------------------------
+3P% Lo + 3PA + TO + OFF_LO (fav adjDE + dawg adjOE) (2013-2026)
+----------------------------------------------------------------
+Brier score: 0.1491
+Log loss: 0.4696
+
+14% THRESHOLD:
+Base Bin     Enh>Base     Rate       Base Avg     Diff     Signal
+--------------------------------------------------------------------
+0.00-0.05    120           5.0%      3.688738%   +1.3%      ✓
+0.05-0.10    1069         10.1%      7.256507%   +2.8%      ✓
+0.10-0.15    484          15.7%     13.004965%   +2.7%      ✓
+0.15-0.20    759          20.2%     18.146780%   +2.0%      ✓
+0.20-0.25    731          25.2%     22.921992%   +2.2%      ✓
+0.25-0.30    751          32.9%     27.191322%   +5.7%      ✓
+--------------------------------------------------------------------
+OVERALL (across all bins):
+  When enhanced > base: 19.78% upset rate (774/3914)
+  Avg based guessed rate: 16.72% upset rate (654/3914)
+  Difference: +3.05 percentage points

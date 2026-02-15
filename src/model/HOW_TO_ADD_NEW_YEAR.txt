@@ -1,0 +1,7 @@
+1. download stats php file for fourFactors into response.txt file
+2. run kpFetcher "parseFourFactors" method for that year
+3. repeat steps 1 and 2 for misc stats ("parseMiscStats" etc)
+4. run the rankingExtractor forced for said year
+5. run averageExtractor forced for said year
+5. visit https://kenpom.com/cbbga{year}.txt and download to regSeasonGames file
+6. run gameExtractor for said year

@@ -110,7 +110,7 @@ def parseMiscStats(year):
         teams_data.append(team_dict)
 
     # Write teams_data to JSON file
-    output_file = f"/home/tmoran/personal/madness/src/model/miscStats/misc{year}.json"
+    output_file = f"/home/tmoran/personal/madness/src/model/misc/{year}.json"
     with open(output_file, 'w') as f:
         json.dump(teams_data, f, indent=2)
 
@@ -459,4 +459,4 @@ def extractOlderMatchups():
         
         print(f"Saved {len(matchups)} matchups for {year} to {output_file}")
 
-parseTournamentMatchups([2008, 2009, 2025], appendMode=True)
+parseMiscStats(2026)

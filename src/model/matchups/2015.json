@@ -3573,7 +3573,7 @@
     "year": "2015",
     "date": "11/18/2014",
     "higherSeedTeam": "BYU",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 91,
     "lowerSeedScore": 62,
     "winningTeam": "BYU",
@@ -6287,17 +6287,17 @@
   {
     "year": "2015",
     "date": "11/22/2014",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "UMKC",
     "higherSeedScore": 73,
     "lowerSeedScore": 68,
-    "winningTeam": "Arkansas Little Rock",
+    "winningTeam": "Little Rock",
     "higherRating": -5.6,
     "lowerRating": -9.7,
     "higherRank": 233,
     "lowerRank": 286,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -8147,17 +8147,17 @@
   {
     "year": "2015",
     "date": "11/23/2014",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "Cal St. Northridge",
     "higherSeedScore": 94,
     "lowerSeedScore": 88,
-    "winningTeam": "Arkansas Little Rock",
+    "winningTeam": "Little Rock",
     "higherRating": -5.6,
     "lowerRating": -8.4,
     "higherRank": 233,
     "lowerRank": 267,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -12122,17 +12122,17 @@
   {
     "year": "2015",
     "date": "11/29/2014",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "Central Arkansas",
     "higherSeedScore": 85,
     "lowerSeedScore": 71,
-    "winningTeam": "Arkansas Little Rock",
+    "winningTeam": "Little Rock",
     "higherRating": -5.6,
     "lowerRating": -27.7,
     "higherRank": 233,
     "lowerRank": 349,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -15947,7 +15947,7 @@
   {
     "year": "2015",
     "date": "12/04/2014",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "Missouri St.",
     "higherSeedScore": 68,
     "lowerSeedScore": 73,
@@ -17868,7 +17868,7 @@
     "year": "2015",
     "date": "12/07/2014",
     "higherSeedTeam": "Tulsa",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 78,
     "lowerSeedScore": 73,
     "winningTeam": "Tulsa",
@@ -17876,8 +17876,8 @@
     "lowerRating": -5.6,
     "higherRank": 86,
     "lowerRank": 233,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -20883,7 +20883,7 @@
     "year": "2015",
     "date": "12/14/2014",
     "higherSeedTeam": "Kent St.",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 60,
     "lowerSeedScore": 55,
     "winningTeam": "Kent St.",
@@ -20891,8 +20891,8 @@
     "lowerRating": -5.6,
     "higherRank": 118,
     "lowerRank": 233,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -24993,7 +24993,7 @@
     "year": "2015",
     "date": "12/21/2014",
     "higherSeedTeam": "Green Bay",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 66,
     "lowerSeedScore": 46,
     "winningTeam": "Green Bay",
@@ -26612,11 +26612,11 @@
   {
     "year": "2015",
     "date": "12/22/2014",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "Bradley",
     "higherSeedScore": 64,
     "lowerSeedScore": 54,
-    "winningTeam": "Arkansas Little Rock",
+    "winningTeam": "Little Rock",
     "higherRating": -5.6,
     "lowerRating": -7.6,
     "higherRank": 233,
@@ -28743,7 +28743,7 @@
     "year": "2015",
     "date": "12/30/2014",
     "higherSeedTeam": "Louisiana Lafayette",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 83,
     "lowerSeedScore": 79,
     "winningTeam": "Louisiana Lafayette",
@@ -28751,8 +28751,8 @@
     "lowerRating": -5.6,
     "higherRank": 128,
     "lowerRank": 233,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -31473,7 +31473,7 @@
     "year": "2015",
     "date": "01/03/2015",
     "higherSeedTeam": "Georgia St.",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 82,
     "lowerSeedScore": 69,
     "winningTeam": "Georgia St.",
@@ -33167,7 +33167,7 @@
   {
     "year": "2015",
     "date": "01/05/2015",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "South Alabama",
     "higherSeedScore": 69,
     "lowerSeedScore": 72,
@@ -33176,8 +33176,8 @@
     "lowerRating": -11.2,
     "higherRank": 233,
     "lowerRank": 297,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -35478,7 +35478,7 @@
     "year": "2015",
     "date": "01/08/2015",
     "higherSeedTeam": "Texas St.",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 77,
     "lowerSeedScore": 74,
     "winningTeam": "Texas St.",
@@ -35867,17 +35867,17 @@
   {
     "year": "2015",
     "date": "01/10/2015",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "Appalachian St.",
     "higherSeedScore": 64,
     "lowerSeedScore": 46,
-    "winningTeam": "Arkansas Little Rock",
+    "winningTeam": "Little Rock",
     "higherRating": -5.6,
     "lowerRating": -9.6,
     "higherRank": 233,
     "lowerRank": 283,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -41748,7 +41748,7 @@
     "year": "2015",
     "date": "01/17/2015",
     "higherSeedTeam": "Louisiana Monroe",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 64,
     "lowerSeedScore": 52,
     "winningTeam": "Louisiana Monroe",
@@ -43487,7 +43487,7 @@
   {
     "year": "2015",
     "date": "01/19/2015",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "South Alabama",
     "higherSeedScore": 64,
     "lowerSeedScore": 66,
@@ -44522,17 +44522,17 @@
   {
     "year": "2015",
     "date": "01/22/2015",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "Troy",
     "higherSeedScore": 73,
     "lowerSeedScore": 65,
-    "winningTeam": "Arkansas Little Rock",
+    "winningTeam": "Little Rock",
     "higherRating": -5.6,
     "lowerRating": -9.7,
     "higherRank": 233,
     "lowerRank": 285,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -45873,7 +45873,7 @@
     "year": "2015",
     "date": "01/24/2015",
     "higherSeedTeam": "UT Arlington",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 75,
     "lowerSeedScore": 68,
     "winningTeam": "UT Arlington",
@@ -45881,8 +45881,8 @@
     "lowerRating": -5.6,
     "higherRank": 198,
     "lowerRank": 233,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -49607,11 +49607,11 @@
   {
     "year": "2015",
     "date": "01/29/2015",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "Arkansas St.",
     "higherSeedScore": 75,
     "lowerSeedScore": 65,
-    "winningTeam": "Arkansas Little Rock",
+    "winningTeam": "Little Rock",
     "higherRating": -5.6,
     "lowerRating": -10.8,
     "higherRank": 233,
@@ -51168,7 +51168,7 @@
     "year": "2015",
     "date": "01/31/2015",
     "higherSeedTeam": "Georgia Southern",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 76,
     "lowerSeedScore": 61,
     "winningTeam": "Georgia Southern",
@@ -54588,7 +54588,7 @@
     "year": "2015",
     "date": "02/05/2015",
     "higherSeedTeam": "Louisiana Monroe",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 77,
     "lowerSeedScore": 61,
     "winningTeam": "Louisiana Monroe",
@@ -54596,8 +54596,8 @@
     "lowerRating": -5.6,
     "higherRank": 171,
     "lowerRank": 233,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -55803,16 +55803,16 @@
     "year": "2015",
     "date": "02/07/2015",
     "higherSeedTeam": "Texas St.",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 61,
     "lowerSeedScore": 69,
-    "winningTeam": "Arkansas Little Rock",
+    "winningTeam": "Little Rock",
     "higherRating": -5.2,
     "lowerRating": -5.6,
     "higherRank": 231,
     "lowerRank": 233,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -59462,11 +59462,11 @@
   {
     "year": "2015",
     "date": "02/12/2015",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "Appalachian St.",
     "higherSeedScore": 79,
     "lowerSeedScore": 74,
-    "winningTeam": "Arkansas Little Rock",
+    "winningTeam": "Little Rock",
     "higherRating": -5.6,
     "lowerRating": -9.6,
     "higherRank": 233,
@@ -60678,7 +60678,7 @@
     "year": "2015",
     "date": "02/14/2015",
     "higherSeedTeam": "Georgia Southern",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 72,
     "lowerSeedScore": 70,
     "winningTeam": "Georgia Southern",
@@ -60686,8 +60686,8 @@
     "lowerRating": -5.6,
     "higherRank": 148,
     "lowerRank": 233,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -64442,17 +64442,17 @@
   {
     "year": "2015",
     "date": "02/19/2015",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "Arkansas St.",
     "higherSeedScore": 70,
     "lowerSeedScore": 57,
-    "winningTeam": "Arkansas Little Rock",
+    "winningTeam": "Little Rock",
     "higherRating": -5.6,
     "lowerRating": -10.8,
     "higherRank": 233,
     "lowerRank": 295,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -67232,11 +67232,11 @@
   {
     "year": "2015",
     "date": "02/21/2015",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "Troy",
     "higherSeedScore": 63,
     "lowerSeedScore": 58,
-    "winningTeam": "Arkansas Little Rock",
+    "winningTeam": "Little Rock",
     "higherRating": -5.6,
     "lowerRating": -9.7,
     "higherRank": 233,
@@ -69348,16 +69348,16 @@
     "year": "2015",
     "date": "02/26/2015",
     "higherSeedTeam": "Georgia St.",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 83,
     "lowerSeedScore": 92,
-    "winningTeam": "Arkansas Little Rock",
+    "winningTeam": "Little Rock",
     "higherRating": 10.3,
     "lowerRating": -5.6,
     "higherRank": 67,
     "lowerRank": 233,
-    "homeTeam": "Arkansas Little Rock",
-    "location": "Arkansas Little Rock"
+    "homeTeam": "Little Rock",
+    "location": "Little Rock"
   },
   {
     "year": "2015",
@@ -72408,7 +72408,7 @@
     "year": "2015",
     "date": "02/28/2015",
     "higherSeedTeam": "UT Arlington",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 82,
     "lowerSeedScore": 73,
     "winningTeam": "UT Arlington",
@@ -74463,7 +74463,7 @@
     "year": "2015",
     "date": "03/05/2015",
     "higherSeedTeam": "Louisiana Lafayette",
-    "lowerSeedTeam": "Arkansas Little Rock",
+    "lowerSeedTeam": "Little Rock",
     "higherSeedScore": 75,
     "lowerSeedScore": 69,
     "winningTeam": "Louisiana Lafayette",
@@ -78347,7 +78347,7 @@
   {
     "year": "2015",
     "date": "03/12/2015",
-    "higherSeedTeam": "Arkansas Little Rock",
+    "higherSeedTeam": "Little Rock",
     "lowerSeedTeam": "South Alabama",
     "higherSeedScore": 55,
     "lowerSeedScore": 57,

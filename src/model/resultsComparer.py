@@ -221,7 +221,7 @@ def test_enhanced_signal_symmetrically(enhancedFile, baseFile, bin_size=0.05, th
     
     print(f"\n{'='*90}\n")
 
-def test_enhanced_signal_asymmetrically(enhancedFile, baseFile, bin_size=0.05, threshold=0.05):
+def test_enhanced_signal_asymmetrically(enhancedFile, baseFile, bin_size=0.05, threshold=0.05, year=0):
     # Load both result files
     with open(baseFile, 'r') as f:
         base_results = json.load(f)
@@ -240,15 +240,21 @@ def test_enhanced_signal_asymmetrically(enhancedFile, baseFile, bin_size=0.05, t
         bins[bin_key] = {
             'range': (current, current + bin_size),
             'enhanced_higher': {'total': 0, 'upsets': 0},  # enhanced > base
-            'base_average_prob': {'total': 0, 'sum_probs': 0}
+            'base_average_prob': {'total': 0, 'sum_probs': 0},
+            'enh_average_prob': {'total': 0, 'sum_probs': 0}
         }
         current += bin_size
     
     # Categorize games into bins based on base model probability
     for base_game, enhanced_game in zip(base_results, enhanced_results):
+        if year > 0 and base_game["year"] != year:
+            continue
         base_prob = base_game['upset_prob']
         enhanced_prob = enhanced_game['upset_prob']
         actual_upset = enhanced_game['actual_upset']
+        
+        if(base_game["year"] == 2026 and base_prob > 0.1):
+            print(f"{base_game['year']} {base_game['higher_seed']}/{base_game['lower_seed']} enh prob: {round(enhanced_prob, 2)}, upset? {actual_upset}")
         
         # Skip division by zero
         if base_prob == 0:
@@ -264,14 +270,17 @@ def test_enhanced_signal_asymmetrically(enhancedFile, baseFile, bin_size=0.05, t
                     bin_data['enhanced_higher']['total'] += 1
                     bin_data['base_average_prob']['total'] += 1
                     bin_data['base_average_prob']['sum_probs'] += base_prob
+                    bin_data['enh_average_prob']['total'] += 1
+                    bin_data['enh_average_prob']['sum_probs'] += enhanced_prob
                     if actual_upset == 1:
                         bin_data['enhanced_higher']['upsets'] += 1
     
     # Print results
+    year_str = f" for {year}" if year > 0 else ""
     print(f"\n{'='*68}")
-    print(f"ENHANCED MODEL SIGNAL TEST (Bin Size: {bin_size*100:.0f}%, threshold: {threshold*100:.1f}%)")
+    print(f"ENHANCED MODEL SIGNAL TEST {year_str}  (Bin Size: {bin_size*100:.0f}%, threshold: {threshold*100:.1f}%)")
     print(f"{'='*68}\n")
-    print(f"{'Base Bin':<12} {'Enh>Base':<12} {'Rate':<10} {'Base Avg':<12} {'Diff':<8} {'Signal'}")
+    print(f"{'Base Bin':<12} {'Enh>Base':<12} {'Rate':<10} {'Base Avg':<12} {'Enh Avg':<12} {'Enh Diff':<12} {'Diff':<8} {'Signal'}")
     print(f"{'-'*68}")
     
     total_positive_signal_bins = 0
@@ -280,7 +289,7 @@ def test_enhanced_signal_asymmetrically(enhancedFile, baseFile, bin_size=0.05, t
     for bin_key, bin_data in sorted(bins.items()):
         higher = bin_data['enhanced_higher']
         base_averages = bin_data['base_average_prob']
-        
+        enh_averages = bin_data['enh_average_prob']
         if higher['total'] == 0:
             continue
         
@@ -289,7 +298,9 @@ def test_enhanced_signal_asymmetrically(enhancedFile, baseFile, bin_size=0.05, t
         # Calculate upset rates
         higher_rate = (higher['upsets'] / higher['total'])
         base_average_rate = (base_averages['sum_probs'] / base_averages['total'])
+        enh_average_rate = (enh_averages['sum_probs'] / enh_averages['total'])
         diff = higher_rate - base_average_rate
+        enh_diff = higher_rate - enh_average_rate
         
         # Check if enhanced provides positive signal
         has_signal = '✓' if diff > 0 else '✗'
@@ -299,9 +310,10 @@ def test_enhanced_signal_asymmetrically(enhancedFile, baseFile, bin_size=0.05, t
         higher_str = f"{higher['total']}"
         higher_rate_str = f"{higher_rate*100:>6.1f}%"
         diff_str = f"{diff*100:>+6.1f}%"
+        enh_diff_str = f"{enh_diff*100:>+6.1f}%"
         
         print(f"{bin_key:<12} {higher_str:<10} {higher_rate_str:<8} "
-              f"{base_average_rate*100:>12f}% {diff_str:<12} {has_signal}")
+              f"{base_average_rate*100:>12f}% {enh_average_rate*100:>12f}% {enh_diff_str:<12} {diff_str:<12} {has_signal}")
     
     print(f"{'-'*68}")
     
@@ -309,22 +321,29 @@ def test_enhanced_signal_asymmetrically(enhancedFile, baseFile, bin_size=0.05, t
     total_higher_upsets = 0
     total_higher_games = 0
     total_base_probs = 0
+    total_enh_probs = 0
     
     for bin_data in bins.values():
         total_higher_upsets += bin_data['enhanced_higher']['upsets']
         total_higher_games += bin_data['enhanced_higher']['total']
         total_base_probs += bin_data['base_average_prob']['sum_probs']
+        total_enh_probs += bin_data['enh_average_prob']['sum_probs']
         
     if total_higher_games > 0:
         overall_higher_rate = total_higher_upsets / total_higher_games
         overall_base_rate = total_base_probs / total_higher_games
+        overall_enh_rate = total_enh_probs / total_higher_games
         overall_diff = overall_higher_rate - overall_base_rate
+        overall_enh_diff = overall_enh_rate - overall_higher_rate
         
         print(f"\nOVERALL (across all bins):")
         print(f"  When enhanced > base: {overall_higher_rate*100:.2f}% upset rate ({total_higher_upsets}/{total_higher_games})")
         print(f"  Avg based guessed rate: {overall_base_rate*100:.2f}% upset rate ({round(total_base_probs)}/{total_higher_games})")
+        print(f"  Avg enhanced guessed rate: {overall_enh_rate*100:.2f}% upset rate ({round(total_enh_probs)}/{total_higher_games})")
         print(f"  Difference: {overall_diff*100:+.2f} percentage points")
+        print(f"  Enhanced Difference: {overall_enh_diff*100:+.2f} percentage points")
+        
 
 if __name__ == "__main__":
-    test_enhanced_signal_asymmetrically(enhancedFile='2010_logistic3PLoThreeTO.json', baseFile='2010_logisticBase.json', 
-        bin_size=0.05, threshold=0.22)
+    test_enhanced_signal_asymmetrically(enhancedFile='outputs/13to26lr_3PLoThreeTo.json', 
+        baseFile='outputs/13to26lr_base.json', bin_size=0.05, threshold=0.07)#, year=2026)

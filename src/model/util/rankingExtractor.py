@@ -8,16 +8,16 @@ def calculate_net_ratings(year):
     Net Rating = adjOE - adjDE
     """
     # Define paths
-    four_factors_path = f"../fourFactors/{year}.json"
-    ratings_path = f"../ratings/{year}.json"
+    four_factors_path = Path(__file__).parent.parent / "fourFactors" / f"{year}.json"
+    ratings_path = Path(__file__).parent.parent / "ratings" / f"{year}.json"
     
     # Check if source file exists
-    if not os.path.exists(four_factors_path):
+    if not four_factors_path.exists():
         print(f"Warning: Four factors file for {year} not found")
         return
     
     # Read four factors data
-    with open(four_factors_path, 'r') as f:
+    with open(str(four_factors_path), 'r') as f:
         four_factors = json.load(f)
     
     # Calculate net ratings
@@ -41,7 +41,7 @@ def calculate_net_ratings(year):
         team['rank'] = rank
     
     # Write to output file
-    with open(ratings_path, 'w') as f:
+    with open(str(ratings_path), 'w') as f:
         json.dump(teams_with_ratings, f, indent=2)
     
     print(f"Created ratings file for {year} with {len(teams_with_ratings)} teams")
@@ -127,7 +127,7 @@ def main():
     '''
     # Sort years
     #years.sort()
-    years = [2015]
+    years = [2026]
     
     print(f"Processing {len(years)} years: {min(years)} - {max(years)}")
     
@@ -136,8 +136,6 @@ def main():
         calculate_net_ratings(year)
     
     print(f"\nCompleted! All rating files saved to ratings/ directory")
-
-
 
 if __name__ == "__main__":
     main()

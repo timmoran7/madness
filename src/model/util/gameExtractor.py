@@ -234,9 +234,7 @@ def delete_regular_season_games():
     
     print("\nDone deleting regular season games from all matchups files!")
 
-def main():
-    delete_regular_season_games()
-    
+def main():    
     """Process all years with regular season game files."""
     reg_season_dir = '/home/tmoran/personal/madness/src/model/regSeasonGames'
     
@@ -245,13 +243,13 @@ def main():
         return
     
     # Get all years from the regSeasonGames directory
-    years = []
-    for filename in os.listdir(reg_season_dir):
-        if filename.endswith('.txt'):
-            year = filename.replace('.txt', '')
-            years.append(year)
+    # for filename in os.listdir(reg_season_dir):
+    #     if filename.endswith('.txt'):
+    #         year = filename.replace('.txt', '')
+    #         years.append(year)
     
-    years.sort()
+    # years.sort()
+    years = ['2026']
     
     for year in years:
         process_year(reg_season_dir, year)

@@ -12,8 +12,9 @@ from sklearn.metrics import brier_score_loss
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import log_loss
 
-START_YEAR = 2010
-SPLIT_YEAR = 2020
+START_YEAR = 2013
+SPLIT_YEAR = 2022
+END_YEAR = 2026
 
 # seed diffs straight from 97-24 data, less common diffs (even) 
 # just the average of above and below diffs since small sample
@@ -33,34 +34,6 @@ roughSeedUpsetProbs = {
 
 HOME_COURT_ADVANTAGE = 4.29 # 3-point HCA PPG / 70 possessions per game * 100 possessions
 
-def calculate_avg_seed_upset_probs():  
-    avgSeedUpsetProbs = {}  
-    seed_diff_stats = {}  # {seed_diff: {"total": count, "upsets": count}}
-    
-    fullRange = [year for year in range(START_YEAR, 2025) if year != 2020]
-    for year in fullRange:
-        matchups = load_json(f"matchups/{year}.json")
-        
-        for matchup in matchups:
-            if matchup["round"] >= 16:  # Only consider games before Sweet Sixteen
-                seed_diff = matchup["lowerSeed"] - matchup["higherSeed"]
-                
-                # Initialize if not seen before
-                if seed_diff not in seed_diff_stats:
-                    seed_diff_stats[seed_diff] = {"total": 0, "upsets": 0}
-                
-                # Count total games
-                seed_diff_stats[seed_diff]["total"] += 1
-                
-                # Count upsets (when lower seed wins)
-                if matchup["winningTeam"] == matchup["lowerSeedTeam"]:
-                    seed_diff_stats[seed_diff]["upsets"] += 1
-    
-    # Calculate probabilities
-    for seed_diff, stats in seed_diff_stats.items():
-        avgSeedUpsetProbs[seed_diff] = stats["upsets"] / stats["total"]
-    return dict(sorted(avgSeedUpsetProbs.items()))
-
 def load_json(path):
     with open(path, "r") as f:
         return json.load(f)
@@ -76,11 +49,11 @@ def build_team_stats(misc, four_factors):
         if col != "team" and col != "conf":
             df[col] = pd.to_numeric(df[col], errors="coerce")
 
-    colsToIgnore = ["conf", "Stl_pct", "Blk_pct", "2P_pct", "OR_pct_def",
+    colsToIgnore = ["conf", "Stl_pct", "Blk_pct", "2P_pct",
         "eFG_pct_off", "eFG_pct_def", "FTRate_off", "2P_Dist"]
     return df.set_index("team").drop(columns=colsToIgnore, errors="ignore")
 
-def build_matchup_rows(matchups, team_stats, ratingSegment, numBuckets):
+def build_matchup_rows(matchups, team_stats, averages, ratingSegment, numBuckets):
     rows = []
     
     # higherSeedTeam, higherRating
@@ -88,7 +61,8 @@ def build_matchup_rows(matchups, team_stats, ratingSegment, numBuckets):
 
     for m in matchups: 
         adjustedHigherRating, adjustedLowerRating = m["higherRating"], m["lowerRating"]
-        if "homeTeam" not in m or m["homeTeam"] == "null" or m["homeTeam"] == "" or m["homeTeam"] is None:
+        # account for no home crowds in covid
+        if m["year"] == "2021" or "homeTeam" not in m or m["homeTeam"] == "null" or m["homeTeam"] == "" or m["homeTeam"] is None:
             pass
         elif(m["higherSeedTeam"] == m["homeTeam"]):
             adjustedHigherRating += HOME_COURT_ADVANTAGE
@@ -116,14 +90,14 @@ def build_matchup_rows(matchups, team_stats, ratingSegment, numBuckets):
             m["adjustedLowerRating"] = adjustedLowerRating
         
         relevantMatchups.append(m)
-            
-    rowCtr = 0
+          
     for matchup in relevantMatchups:
         is_postseason = "round" in matchup
         hi = matchup["higherSeedTeam"]
         lo = matchup["lowerSeedTeam"]
 
         if hi not in team_stats.index or lo not in team_stats.index:
+            print(f"Missing stats for matchup: {hi} vs {lo} in {matchup['year']}")
             continue
 
         hi_stats = team_stats.loc[hi]
@@ -131,18 +105,22 @@ def build_matchup_rows(matchups, team_stats, ratingSegment, numBuckets):
 
         row = {}
 
-        noDeltaCols = ["3PA_pct", "3P_pct", "TO_pct_off", "TO_pct_def"]
+        noDeltaCols = ["3PA_pct", "3P_pct", "TO_pct_off", "TO_pct_def", "FT_pct"]
+        vsAverageCols = ["adjTempo"]
         addTogetherCols = ["3PA_pct"]
-        pairsWithName = [["TO_pct_off", "TO_pct_def", "TO_freq"]]
-        # Stat deltas (lower seed − higher seed)
+        pairsWithName = [["TO_pct_off", "TO_pct_def", "TO_freq"], ["adjDE", "adjOE", "OFF_LO"]]
+
         for col in team_stats.columns:
             if(col in addTogetherCols):
                 row[f"sum_{col}"] = lo_stats[col] + hi_stats[col]
+            elif(col in vsAverageCols):
+                row[f"vs_avg_{col}_hi"] = hi_stats[col] - averages[col]
+                row[f"vs_avg_{col}_lo"] = lo_stats[col] - averages[col]
             elif any(col in pair for pair in pairsWithName):
                 # find the pair
                 for pair in pairsWithName:
-                    if col in pair:
-                        other_col = pair[1] if pair[0] == col else pair[0]
+                    if col in pair and pair[0] == col:
+                        other_col = pair[1]
                         row[f"{pair[2]}"] = hi_stats[col] + lo_stats[other_col]
                         break
                 
@@ -158,7 +136,7 @@ def build_matchup_rows(matchups, team_stats, ratingSegment, numBuckets):
         # metadata for visibility
         row["hiTeam"] = hi
         row["loTeam"] = lo
-        row["year"] = matchup["year"]
+        row["year"] = int(matchup["year"])
         row["is_postseason"] = is_postseason
         if("lowerSeed" in matchup):
             row["seed_diff"] = matchup["lowerSeed"] - matchup["higherSeed"]
@@ -169,9 +147,9 @@ def build_matchup_rows(matchups, team_stats, ratingSegment, numBuckets):
             row["higherRating"] = matchup["adjustedHigherRating"]
             row["lowerRating"] = matchup["adjustedLowerRating"]
             row["rating_diff"] = matchup["adjustedHigherRating"] - matchup["adjustedLowerRating"]
+            #print('we here!!')
         rows.append(row)
-        rowCtr += 1
-
+        
     return rows
 
 all_rows = []
@@ -181,14 +159,15 @@ def buildAndRunModel(
     colsToKeep=[],
     numBuckets=0
 ):
-    fullRange = [year for year in range(START_YEAR, 2025) if year != 2020]
+    fullRange = [year for year in range(START_YEAR, END_YEAR + 1)]
     for year in fullRange:
         misc = load_json(f"misc/{year}.json")
         ff = load_json(f"fourFactors/{year}.json")
         matchups = load_json(f"matchups/{year}.json")
+        averages = load_json(f"averages/{year}.json")
 
         team_stats = build_team_stats(misc, ff)
-        rows = build_matchup_rows(matchups, team_stats, ratingSegment, numBuckets)
+        rows = build_matchup_rows(matchups, team_stats, averages, ratingSegment, numBuckets)
         all_rows.extend(rows)
 
     df = pd.DataFrame(all_rows)
@@ -216,11 +195,11 @@ def buildAndRunModel(
     
     print(X.columns)
     print(X.iloc[0])
-    # Train on all data before SPLIT_YEAR, test on SPLIT_YEAR and after
-    # This includes both regular season and postseason games in both sets
+    
+    # Split by year: train = START_YEAR through SPLIT_YEAR, test = after SPLIT_YEAR
     train_mask = team_info["year"] <= SPLIT_YEAR
     test_mask = team_info["year"] > SPLIT_YEAR
-
+    
     X_train = X[train_mask]
     X_test = X[test_mask]
     y_train = y[train_mask]
@@ -283,88 +262,5 @@ def buildAndRunModel(
 
 #'''
 # Sort by upset probability (descending) to see top upset picks
-results = buildAndRunModel([8,24], ["higherRating", "lowerRating", "sum_3PA_pct", "TO_freq", "3P_pct_lo"], 0)
-results.to_json("2010_logistic3PLoThreeTO.json", orient="records", indent=2)
-
-#results = results.sort_values("upset_prob", ascending=False)
-
-def print_results_summary(results):
-    print("\n=== Top 20 Upset Predictions ===")
-    print(results.head(20).to_string(index=False))
-
-    print("\n=== Actual Upsets (sorted by model confidence) ===")
-    actual_upsets = results[results["actual_upset"] == 1].copy()
-    print(actual_upsets.head(40).to_string(index=False))
-
-    print(f"\n=== Model captured {len(actual_upsets)} upsets in test set ===")
-    print(f"Average upset probability for actual upsets: {actual_upsets['upset_prob'].mean():.3f}")
-    print(f"Average upset probability for non-upsets: {results[results['actual_upset'] == 0]['upset_prob'].mean():.3f}")
-    #'''
-
-def print_model_efficacy(results):
-    print("\n=== Model Efficacy Analysis (Postseason Games Only) ===")
-    print("Comparing model predictions to baseline seed differential probabilities\n")
-    
-    # Filter to only postseason games (which have seed_diff)
-    postseason_results = results[results["is_postseason"] == True].copy()
-    
-    # Track overall statistics
-    total_higher_upsets = 0
-    total_higher_games = 0
-    total_lower_upsets = 0
-    total_lower_games = 0
-    
-    for seed_diff in sorted(postseason_results["seed_diff"].unique()):
-        seed_data = postseason_results[postseason_results["seed_diff"] == seed_diff]
-        baseline_prob = seed_data["seed_prob"].iloc[0] if len(seed_data) > 0 else None
-        
-        if baseline_prob is None:
-            continue
-            
-        # Games where model predicts higher upset probability than baseline
-        model_higher = seed_data[seed_data["upset_prob"] > seed_data["seed_prob"]]
-        # Games where model predicts lower upset probability than baseline
-        model_lower = seed_data[seed_data["upset_prob"] < seed_data["seed_prob"]]
-        
-        higher_upsets = model_higher["actual_upset"].sum() if len(model_higher) > 0 else 0
-        higher_total = len(model_higher)
-        
-        lower_upsets = model_lower["actual_upset"].sum() if len(model_lower) > 0 else 0
-        lower_total = len(model_lower)
-        
-        # Accumulate overall stats
-        total_higher_upsets += higher_upsets
-        total_higher_games += higher_total
-        total_lower_upsets += lower_upsets
-        total_lower_games += lower_total
-        
-        print(f"Seed Diff {seed_diff} (Baseline Upset Prob: {baseline_prob:.3f}):")
-        if higher_total > 0:
-            print(f"  Model > Baseline: {higher_upsets}/{higher_total} upsets ({higher_upsets/higher_total:.3f})")
-        else:
-            print(f"  Model > Baseline: 0/0 upsets (N/A)")
-        
-        if lower_total > 0:
-            print(f"  Model < Baseline: {lower_upsets}/{lower_total} upsets ({lower_upsets/lower_total:.3f})")
-        else:
-            print(f"  Model < Baseline: 0/0 upsets (N/A)")
-        print()
-    
-    # Print overall summary
-    print("=== OVERALL SUMMARY ===")
-    if total_higher_games > 0:
-        higher_pct = (total_higher_upsets / total_higher_games) * 100
-        print(f"ABOVE: {total_higher_upsets}/{total_higher_games} ({higher_pct:.1f}%) GAMES W/ HIGHER PROB WERE UPSETS")
-    else:
-        print("ABOVE: 0/0 (N/A) GAMES W/ HIGHER PROB WERE UPSETS")
-    
-    if total_lower_games > 0:
-        lower_pct = (total_lower_upsets / total_lower_games) * 100
-        print(f"BELOW: {total_lower_upsets}/{total_lower_games} ({lower_pct:.1f}%) GAMES W/ LOWER PROB WERE UPSETS")
-    else:
-        print("BELOW: 0/0 (N/A) GAMES W/ LOWER PROB WERE UPSETS")
-
-#upsetProbs = calculate_avg_seed_upset_probs()
-#print(upsetProbs)
-#print_model_efficacy(results)
-#print_results_summary(results)
+results = buildAndRunModel([8,24], ["higherRating", "lowerRating", "sum_3PA_pct", "3P_pct_lo", "TO_freq"], 0)
+#results.to_json("outputs/13to26lr_OFFLo3PLoThreeTo.json", orient="records", indent=2)
