@@ -43,11 +43,6 @@ const router = useRouter();
 const route = useRoute();
 
 const goBack = () => {
-  if (!route.query.region || !route.query.matchup) {
-    router.push({ name: "matchup" });
-    return;
-  }
-
   if (window.history.length > 1) {
     router.back();
     return;
@@ -122,7 +117,6 @@ const getOrdinalSuffix = (rank: string) => {
                 ><sup>{{ getOrdinalSuffix(stats.overallRank) }}</sup> in KenPom
               </p>
             </div>
-            <p class="mb-0 text-muted">Team overview and full quad results</p>
           </div>
         </div>
 
@@ -149,7 +143,7 @@ const getOrdinalSuffix = (rank: string) => {
             </p>
           </article>
           <article class="stat-card">
-            <p class="label">Continuity</p>
+            <p class="label">Roster Continuity</p>
             <p class="value">
               <span>{{ stats.continuity.rank }}</span>
               <span class="value-detail">{{ stats.continuity.value }}</span>
@@ -276,8 +270,8 @@ const getOrdinalSuffix = (rank: string) => {
 
 .team-hero {
   display: flex;
-  align-items: center;
-  gap: 16px;
+  align-items: flex-end;
+  gap: 12px;
   border-bottom: 1px solid #dee2e6;
   padding-bottom: 12px;
 }
@@ -286,7 +280,10 @@ const getOrdinalSuffix = (rank: string) => {
   display: flex;
   flex-direction: row;
   gap: 8px;
-  align-items: baseline;
+}
+
+h2 {
+  margin: 0;
 }
 
 .record-line {
@@ -294,6 +291,8 @@ const getOrdinalSuffix = (rank: string) => {
   font-style: italic;
   font-weight: 500;
   font-size: 20px;
+  margin: 0;
+  align-self: flex-end;
 }
 
 .extra-bold {
@@ -421,6 +420,12 @@ const getOrdinalSuffix = (rank: string) => {
 
   .quad-card ul {
     max-height: 180px;
+  }
+
+  .team-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
   }
 }
 </style>

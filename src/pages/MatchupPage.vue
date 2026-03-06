@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from "vue";
+import { ref, computed, onMounted, watch } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import MatchupTable from "@/components/MatchupTable.vue";
 import UpsetTable from "@/components/UpsetTable.vue";
 import TeamBox from "@/components/TeamBox.vue";
 import pictureMappings from "@/data/picMappings.json";
+import { normalizeTeamName } from "@/utils/teamName";
 import upsetData from "@/data/upsetData.json";
 import matchupData from "@/data/matchupData.json";
 import upsetTableData from "@/data/upsetTableData.json";
@@ -121,8 +122,8 @@ const loadMatchups = () => {
 const loadMatchupContent = () => {
   if (!selectedMatchup.value) return;
 
-  const team1 = selectedMatchup.value.split("_")[0];
-  const team2 = selectedMatchup.value.split("_")[1];
+  const team1 = normalizeTeamName(selectedMatchup.value.split("_")[0]);
+  const team2 = normalizeTeamName(selectedMatchup.value.split("_")[1]);
   favLogo.value = `/madness/logos/${picMappings[team1]}`;
   dawgLogo.value = `/madness/logos/${picMappings[team2]}`;
 
@@ -147,7 +148,7 @@ const openTeamPage = (teamName: string) => {
 
   router.push({
     name: "team",
-    params: { teamName },
+    params: { teamName: normalizeTeamName(teamName) },
     query: {
       region:
         typeof route.query.region === "string" ? route.query.region : undefined,
@@ -167,6 +168,16 @@ const closeMatchupContent = () => {
   dawgLogo.value = "";
 
   syncRouteQuery(selectedRegion.value, "");
+};
+
+const resetState = () => {
+  selectedRegion.value = "";
+  matchups.value = [];
+  selectedMatchup.value = "";
+  favLogo.value = "";
+  dawgLogo.value = "";
+  showFactors.value = false;
+  showMethodology.value = true;
 };
 
 onMounted(() => {
@@ -190,6 +201,15 @@ onMounted(() => {
   selectedMatchup.value = matchupQuery;
   loadMatchupContent();
 });
+
+watch(
+  () => route.query,
+  (query) => {
+    if (!query.region && !query.matchup) {
+      resetState();
+    }
+  },
+);
 </script>
 
 <template>
@@ -209,7 +229,7 @@ onMounted(() => {
 
     <div
       v-if="matchups.length > 0"
-      :class="['d-flex ovr-banner mb-2', { 'ovr-banner-selected': selectedMatchup }]"
+      :class="['d-flex ovr-banner', { 'ovr-banner-selected': selectedMatchup }]"
     >
       <TeamBox
         :logo="favLogo"
@@ -233,7 +253,8 @@ onMounted(() => {
         @logo-click="openTeamPage"
       />
     </div>
-    <div v-if="dawgLogo" class="d-flex justify-content-center mb-4">
+    <div v-if="dawgLogo" class="d-flex justify-content-center mb-4 match-subheader">
+      <p class="click-hint"><em>click on logos for team breakdown</em></p>
       <p><strong>Shmindianapolis, IN</strong></p>
     </div>
 
@@ -288,6 +309,21 @@ onMounted(() => {
   height: 50px;
 }
 
+.match-subheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.match-subheader p {
+  margin: 0;
+}
+
+.click-hint {
+  font-size: 14px;
+  color: #6c757d;
+}
+
 .upset-factors {
   display: flex;
   flex-direction: column;
@@ -313,6 +349,7 @@ onMounted(() => {
   .ovr-banner {
     gap: 9px;
     margin-top: 12px;
+    margin-bottom: 8px;
   }
 }
 </style>

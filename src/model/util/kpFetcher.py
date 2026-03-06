@@ -615,4 +615,4 @@ teams_2025 = [
     "Alabama St.",
     "Mount St. Mary's"
 ]
-fetchTopTeams(teams_2025, 2025, True)
+fetchTopTeams(teams_2025, 2025)

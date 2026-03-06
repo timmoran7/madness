@@ -24,7 +24,6 @@ const emit = defineEmits<{
       :disabled="!props.logo"
     >
         <img class="banner-pic" :src="props.logo" :alt="props.teamName" />
-      <p class="team-summary-hint text-muted mb-0">click for team breakdown</p>
     </button>
   </div>
 </template>
@@ -36,34 +35,23 @@ const emit = defineEmits<{
   justify-content: center;
 }
 
-.logo-stack {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 90px;
-}
-
-.team-summary-hint {
-  font-size: 0.85rem;
-  max-width: 90px;
-  text-align: center;
-  position: absolute;
-  top: calc(100% + 4px);
-  left: 50%;
-  transform: translateX(-50%);
-  width: max-content;
-}
-
 .banner-pic {
   height: 90px;
 }
 
 .logo-button {
+  position: relative;
   border: 0;
+  border-radius: 4px;
   background: transparent;
   padding: 0;
   cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.logo-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .logo-button:disabled {

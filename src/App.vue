@@ -15,7 +15,9 @@ const teamNames = computed<string[]>(() => {
 const filteredTeamNames = computed<string[]>(() => {
   const q = teamQuery.value.trim().toLowerCase();
   if (!q) return [];
-  const startsWith = teamNames.value.filter((n) => n.toLowerCase().startsWith(q));
+  const startsWith = teamNames.value.filter((n) =>
+    n.toLowerCase().startsWith(q),
+  );
   const contains = teamNames.value.filter(
     (n) => !n.toLowerCase().startsWith(q) && n.toLowerCase().includes(q),
   );
@@ -30,7 +32,9 @@ const resolveTeamName = (query: string): string | null => {
 
   const lowercaseQuery = trimmedQuery.toLowerCase();
 
-  const exactMatch = teamNames.value.find((name) => name.toLowerCase() === lowercaseQuery);
+  const exactMatch = teamNames.value.find(
+    (name) => name.toLowerCase() === lowercaseQuery,
+  );
   if (exactMatch) {
     return exactMatch;
   }
@@ -42,7 +46,9 @@ const resolveTeamName = (query: string): string | null => {
     return startsWithMatch;
   }
 
-  const containsMatch = teamNames.value.find((name) => name.toLowerCase().includes(lowercaseQuery));
+  const containsMatch = teamNames.value.find((name) =>
+    name.toLowerCase().includes(lowercaseQuery),
+  );
   return containsMatch ?? null;
 };
 
@@ -72,7 +78,8 @@ const goToTeamPage = async () => {
     return;
   }
 
-  const wasPartialMatch = teamQuery.value.trim().toLowerCase() !== resolvedTeamName.toLowerCase();
+  const wasPartialMatch =
+    teamQuery.value.trim().toLowerCase() !== resolvedTeamName.toLowerCase();
 
   teamQuery.value = resolvedTeamName;
 
@@ -111,7 +118,10 @@ const goHome = () => {
             aria-label="Search for a team"
             autocomplete="off"
           />
-          <ul v-if="isDropdownOpen && filteredTeamNames.length > 0" class="team-dropdown">
+          <ul
+            v-if="isDropdownOpen && filteredTeamNames.length > 0"
+            class="team-dropdown"
+          >
             <li
               v-for="teamName in filteredTeamNames"
               :key="teamName"
@@ -124,7 +134,7 @@ const goHome = () => {
         </form>
 
         <img src="/public/bball.png" alt="Basketball" class="header-icon" />
-          <h1 @click="goHome()" class="d-inline mx-3">MADNESS.IO</h1>
+        <h1 @click="goHome()" class="d-inline mx-3 site-hero">MADNESS.IO</h1>
         <img src="/public/bball.png" alt="Basketball" class="header-icon" />
       </div>
     </div>
@@ -132,7 +142,9 @@ const goHome = () => {
     <RouterView />
 
     <div class="container">
-      <footer class="text-center mt-5 text-muted">Contact: timthemoran@gmail.com</footer>
+      <footer class="text-center mt-5 text-muted">
+        Contact: timthemoran@gmail.com
+      </footer>
     </div>
   </div>
 </template>
@@ -142,6 +154,10 @@ const goHome = () => {
   height: 50px;
   width: 50px;
   margin-top: -22px;
+}
+
+.site-hero {
+  cursor: pointer;
 }
 
 .team-search {
