@@ -66,6 +66,12 @@ const goBack = () => {
   });
 };
 
+const isWin = (game: string): boolean => {
+  const match = game.match(/^(\d+)-(\d+)/);
+  if (!match) return false;
+  return parseInt(match[1], 10) > parseInt(match[2], 10);
+};
+
 const getOrdinalSuffix = (rank: string) => {
   const numericRank = Number.parseInt(rank.replace(/\D/g, ""), 10);
 
@@ -189,7 +195,7 @@ const getOrdinalSuffix = (rank: string) => {
               <strong>{{ quads.q1.record }}</strong>
             </div>
             <ul>
-              <li v-for="game in quads.q1.games" :key="`q1-${game}`">
+              <li v-for="game in quads.q1.games" :key="`q1-${game}`" :class="isWin(game) ? 'game-win' : 'game-loss'">
                 {{ game }}
               </li>
               <li v-if="quads.q1.games.length === 0" class="text-muted">
@@ -204,7 +210,7 @@ const getOrdinalSuffix = (rank: string) => {
               <strong>{{ quads.q2.record }}</strong>
             </div>
             <ul>
-              <li v-for="game in quads.q2.games" :key="`q2-${game}`">
+              <li v-for="game in quads.q2.games" :key="`q2-${game}`" :class="isWin(game) ? 'game-win' : 'game-loss'">
                 {{ game }}
               </li>
               <li v-if="quads.q2.games.length === 0" class="text-muted">
@@ -219,7 +225,7 @@ const getOrdinalSuffix = (rank: string) => {
               <strong>{{ quads.q3.record }}</strong>
             </div>
             <ul>
-              <li v-for="game in quads.q3.games" :key="`q3-${game}`">
+              <li v-for="game in quads.q3.games" :key="`q3-${game}`" :class="isWin(game) ? 'game-win' : 'game-loss'">
                 {{ game }}
               </li>
               <li v-if="quads.q3.games.length === 0" class="text-muted">
@@ -234,7 +240,7 @@ const getOrdinalSuffix = (rank: string) => {
               <strong>{{ quads.q4.record }}</strong>
             </div>
             <ul>
-              <li v-for="game in quads.q4.games" :key="`q4-${game}`">
+              <li v-for="game in quads.q4.games" :key="`q4-${game}`" :class="isWin(game) ? 'game-win' : 'game-loss'">
                 {{ game }}
               </li>
               <li v-if="quads.q4.games.length === 0" class="text-muted">
@@ -377,6 +383,14 @@ const getOrdinalSuffix = (rank: string) => {
 .quad-card li {
   margin-bottom: 4px;
   font-size: 0.9rem;
+}
+
+.game-win {
+  color: #2d7a4f;
+}
+
+.game-loss {
+  color: #b85555;
 }
 
 .back-button {
