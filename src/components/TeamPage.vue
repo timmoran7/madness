@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useRouter } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 
 interface TeamPageStats {
   offEfficiency: TeamStatDetail;
@@ -40,19 +40,65 @@ defineProps<{
 }>();
 
 const router = useRouter();
+const route = useRoute();
 
 const goBack = () => {
+  if (!route.query.region || !route.query.matchup) {
+    router.push({ name: "matchup" });
+    return;
+  }
+
   if (window.history.length > 1) {
     router.back();
     return;
   }
 
-  router.push({ name: "matchup" });
+  router.push({
+    name: "matchup",
+    query: {
+      region:
+        typeof route.query.region === "string" ? route.query.region : undefined,
+      matchup:
+        typeof route.query.matchup === "string"
+          ? route.query.matchup
+          : undefined,
+    },
+  });
+};
+
+const getOrdinalSuffix = (rank: string) => {
+  const numericRank = Number.parseInt(rank.replace(/\D/g, ""), 10);
+
+  if (Number.isNaN(numericRank)) {
+    return "";
+  }
+
+  const lastTwoDigits = numericRank % 100;
+  if (lastTwoDigits >= 11 && lastTwoDigits <= 13) {
+    return "th";
+  }
+
+  const lastDigit = numericRank % 10;
+  if (lastDigit === 1) {
+    return "st";
+  }
+
+  if (lastDigit === 2) {
+    return "nd";
+  }
+
+  if (lastDigit === 3) {
+    return "rd";
+  }
+
+  return "th";
 };
 </script>
 
 <template>
-  <section class="team-page border border-secondary rounded bg-light mt-4 p-3 position-relative">
+  <section
+    class="team-page border border-secondary rounded bg-light mt-4 p-3 position-relative"
+  >
     <button class="btn btn-outline-secondary back-button" @click="goBack">
       Back
     </button>
@@ -62,20 +108,19 @@ const goBack = () => {
         <div class="team-hero mb-3">
           <img :src="teamLogo" :alt="teamName" class="team-logo" />
           <div>
-            <h2 class="mb-1">{{ teamName }}</h2>
+            <div class="team-header">
+              <h2>{{ teamName }}</h2>
+              <p class="record-line">
+                <span class="extra-bold">{{ stats.record }}</span> |
+                <span class="extra-bold">{{ stats.overallRank }}</span
+                ><sup>{{ getOrdinalSuffix(stats.overallRank) }}</sup> in KenPom
+              </p>
+            </div>
             <p class="mb-0 text-muted">Team overview and full quad results</p>
           </div>
         </div>
 
         <div class="stats-grid mb-4">
-          <article class="stat-card">
-            <p class="label">Overall Rank</p>
-            <p class="value">{{ stats.overallRank }}</p>
-          </article>
-          <article class="stat-card">
-            <p class="label">Record</p>
-            <p class="value">{{ stats.record }}</p>
-          </article>
           <article class="stat-card">
             <p class="label">Off Efficiency Rank</p>
             <p class="value">
@@ -129,7 +174,9 @@ const goBack = () => {
             <p class="label">SOS Non-Conf</p>
             <p class="value">
               <span>{{ stats.sosNonConference.rank }}</span>
-              <span class="value-detail">{{ stats.sosNonConference.value }}</span>
+              <span class="value-detail">{{
+                stats.sosNonConference.value
+              }}</span>
             </p>
           </article>
         </div>
@@ -142,8 +189,12 @@ const goBack = () => {
               <strong>{{ quads.q1.record }}</strong>
             </div>
             <ul>
-              <li v-for="game in quads.q1.games" :key="`q1-${game}`">{{ game }}</li>
-              <li v-if="quads.q1.games.length === 0" class="text-muted">No games listed</li>
+              <li v-for="game in quads.q1.games" :key="`q1-${game}`">
+                {{ game }}
+              </li>
+              <li v-if="quads.q1.games.length === 0" class="text-muted">
+                No games listed
+              </li>
             </ul>
           </article>
 
@@ -153,8 +204,12 @@ const goBack = () => {
               <strong>{{ quads.q2.record }}</strong>
             </div>
             <ul>
-              <li v-for="game in quads.q2.games" :key="`q2-${game}`">{{ game }}</li>
-              <li v-if="quads.q2.games.length === 0" class="text-muted">No games listed</li>
+              <li v-for="game in quads.q2.games" :key="`q2-${game}`">
+                {{ game }}
+              </li>
+              <li v-if="quads.q2.games.length === 0" class="text-muted">
+                No games listed
+              </li>
             </ul>
           </article>
 
@@ -164,8 +219,12 @@ const goBack = () => {
               <strong>{{ quads.q3.record }}</strong>
             </div>
             <ul>
-              <li v-for="game in quads.q3.games" :key="`q3-${game}`">{{ game }}</li>
-              <li v-if="quads.q3.games.length === 0" class="text-muted">No games listed</li>
+              <li v-for="game in quads.q3.games" :key="`q3-${game}`">
+                {{ game }}
+              </li>
+              <li v-if="quads.q3.games.length === 0" class="text-muted">
+                No games listed
+              </li>
             </ul>
           </article>
 
@@ -175,8 +234,12 @@ const goBack = () => {
               <strong>{{ quads.q4.record }}</strong>
             </div>
             <ul>
-              <li v-for="game in quads.q4.games" :key="`q4-${game}`">{{ game }}</li>
-              <li v-if="quads.q4.games.length === 0" class="text-muted">No games listed</li>
+              <li v-for="game in quads.q4.games" :key="`q4-${game}`">
+                {{ game }}
+              </li>
+              <li v-if="quads.q4.games.length === 0" class="text-muted">
+                No games listed
+              </li>
             </ul>
           </article>
         </div>
@@ -211,6 +274,24 @@ const goBack = () => {
   gap: 16px;
   border-bottom: 1px solid #dee2e6;
   padding-bottom: 12px;
+}
+
+.team-header {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.record-line {
+  color: #4c454d;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.extra-bold {
+  font-weight: 900;
 }
 
 .team-logo {
@@ -312,15 +393,16 @@ const goBack = () => {
     height: 56px;
   }
 
-  .game-log-wrap {
-    order: -1;
-    min-height: 180px;
+  .team-right {
+    width: 100%;
   }
 
   .game-log-image {
+    display: block;
+    width: 100%;
     height: auto;
     min-height: 0;
-    max-height: 240px;
+    max-height: none;
   }
 
   .quad-card ul {

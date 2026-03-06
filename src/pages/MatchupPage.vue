@@ -8,9 +8,7 @@ import pictureMappings from "@/data/picMappings.json";
 import upsetData from "@/data/upsetData.json";
 import matchupData from "@/data/matchupData.json";
 import upsetTableData from "@/data/upsetTableData.json";
-import rawTeamBoxData from "@/data/teamBoxData.json";
 import type {
-  TeamBoxStats,
   MatchupTableDataType,
   CompactMatchupDataType,
   CompactUpsetTableDataType,
@@ -31,22 +29,10 @@ const favLogo = ref<string>("");
 const dawgLogo = ref<string>("");
 const miFactor = ref<number>(0);
 const upsetChance = ref<number>(0);
-const favTeamStats = ref<TeamBoxStats>({
-  Quads: "",
-  L10: "",
-  Experience: "",
-});
-const dawgTeamStats = ref<TeamBoxStats>({
-  Quads: "",
-  L10: "",
-  Experience: "",
-});
 
 const picMappings: { [key: string]: string } = pictureMappings;
 const upsetFactors: { [key: string]: { index: number; upset: number } } =
   upsetData;
-
-const teamBoxData = rawTeamBoxData as Record<string, TeamBoxStats>;
 
 const typedMatchupData = matchupData as CompactMatchupDataType;
 const typedUpsetTableData = upsetTableData as CompactUpsetTableDataType;
@@ -111,27 +97,25 @@ const matchupFiles: { [key: string]: string[] } = Object.keys(
   {} as { [key: string]: string[] },
 );
 
-const syncMatchupQuery = () => {
-  const query: Record<string, string> = {};
-
-  if (selectedRegion.value) {
-    query.region = selectedRegion.value;
-  }
-
-  if (selectedMatchup.value) {
-    query.matchup = selectedMatchup.value;
-  }
-
-  router.replace({ path: "/", query });
+const syncRouteQuery = (region: string, matchup: string) => {
+  router.replace({
+    name: "matchup",
+    query: {
+      region: region || undefined,
+      matchup: matchup || undefined,
+    },
+  });
 };
 
 const loadMatchups = () => {
   matchups.value = matchupFiles[selectedRegion.value] || [];
   showFactors.value = false;
+  showMethodology.value = true;
   selectedMatchup.value = "";
   favLogo.value = "";
   dawgLogo.value = "";
-  syncMatchupQuery();
+
+  syncRouteQuery(selectedRegion.value, "");
 };
 
 const loadMatchupContent = () => {
@@ -142,19 +126,18 @@ const loadMatchupContent = () => {
   favLogo.value = `/madness/logos/${picMappings[team1]}`;
   dawgLogo.value = `/madness/logos/${picMappings[team2]}`;
 
-  miFactor.value = upsetFactors[selectedMatchup.value].index;
-  upsetChance.value = upsetFactors[selectedMatchup.value].upset;
+  const matchupFactors = upsetFactors[selectedMatchup.value];
+  if (!matchupFactors) {
+    return;
+  }
 
-  if (team1 in teamBoxData) {
-    favTeamStats.value = teamBoxData[team1];
-  }
-  if (team2 in teamBoxData) {
-    dawgTeamStats.value = teamBoxData[team2];
-  }
+  miFactor.value = matchupFactors.index;
+  upsetChance.value = matchupFactors.upset;
 
   showFactors.value = true;
   showMethodology.value = false;
-  syncMatchupQuery();
+
+  syncRouteQuery(selectedRegion.value, selectedMatchup.value);
 };
 
 const openTeamPage = (teamName: string) => {
@@ -162,7 +145,18 @@ const openTeamPage = (teamName: string) => {
     return;
   }
 
-  router.push(`/${encodeURIComponent(teamName)}`);
+  router.push({
+    name: "team",
+    params: { teamName },
+    query: {
+      region:
+        typeof route.query.region === "string" ? route.query.region : undefined,
+      matchup:
+        typeof route.query.matchup === "string"
+          ? route.query.matchup
+          : undefined,
+    },
+  });
 };
 
 const closeMatchupContent = () => {
@@ -171,32 +165,36 @@ const closeMatchupContent = () => {
   selectedMatchup.value = "";
   favLogo.value = "";
   dawgLogo.value = "";
-  syncMatchupQuery();
+
+  syncRouteQuery(selectedRegion.value, "");
 };
 
 onMounted(() => {
-  const queryRegion =
+  const regionQuery =
     typeof route.query.region === "string" ? route.query.region : "";
-  const queryMatchup =
+  const matchupQuery =
     typeof route.query.matchup === "string" ? route.query.matchup : "";
 
-  if (!queryRegion || !(queryRegion in matchupFiles)) {
+  if (!regionQuery || !matchupFiles[regionQuery]) {
     return;
   }
 
-  selectedRegion.value = queryRegion;
-  matchups.value = matchupFiles[queryRegion] || [];
+  selectedRegion.value = regionQuery;
+  matchups.value = matchupFiles[regionQuery] || [];
 
-  if (queryMatchup && matchups.value.includes(queryMatchup)) {
-    selectedMatchup.value = queryMatchup;
-    loadMatchupContent();
+  if (!matchupQuery || !matchups.value.includes(matchupQuery)) {
+    syncRouteQuery(selectedRegion.value, "");
+    return;
   }
+
+  selectedMatchup.value = matchupQuery;
+  loadMatchupContent();
 });
 </script>
 
 <template>
-  <div class="container mt-5">
-    <div class="d-flex justify-content-center mb-4">
+  <div class="container mt-3">
+    <div class="d-flex justify-content-center mb-3">
       <select
         v-model="selectedRegion"
         @change="loadMatchups"
@@ -211,10 +209,9 @@ onMounted(() => {
 
     <div
       v-if="matchups.length > 0"
-      class="d-flex justify-content-center ovr-banner"
+      :class="['d-flex ovr-banner mb-2', { 'ovr-banner-selected': selectedMatchup }]"
     >
       <TeamBox
-        :stats="favTeamStats"
         :logo="favLogo"
         :team-name="selectedMatchup ? selectedMatchup.split('_')[0] : ''"
         @logo-click="openTeamPage"
@@ -230,7 +227,6 @@ onMounted(() => {
         </option>
       </select>
       <TeamBox
-        :stats="dawgTeamStats"
         :logo="dawgLogo"
         :team-name="selectedMatchup ? selectedMatchup.split('_')[1] : ''"
         :logo-first="true"
@@ -281,8 +277,11 @@ onMounted(() => {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  margin-top: -20px;
   margin-bottom: -8px;
+}
+
+.ovr-banner-selected {
+  margin-top: -20px;
 }
 
 .form-select {
@@ -313,6 +312,7 @@ onMounted(() => {
 @media only screen and (max-width: 600px) {
   .ovr-banner {
     gap: 9px;
+    margin-top: 12px;
   }
 }
 </style>
