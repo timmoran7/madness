@@ -253,9 +253,6 @@ def test_enhanced_signal_asymmetrically(enhancedFile, baseFile, bin_size=0.05, t
         enhanced_prob = enhanced_game['upset_prob']
         actual_upset = enhanced_game['actual_upset']
         
-        if(base_game["year"] == 2026 and base_prob > 0.1):
-            print(f"{base_game['year']} {base_game['higher_seed']}/{base_game['lower_seed']} enh prob: {round(enhanced_prob, 2)}, upset? {actual_upset}")
-        
         # Skip division by zero
         if base_prob == 0:
             continue
@@ -345,5 +342,5 @@ def test_enhanced_signal_asymmetrically(enhancedFile, baseFile, bin_size=0.05, t
         
 
 if __name__ == "__main__":
-    test_enhanced_signal_asymmetrically(enhancedFile='outputs/13to26lr_3PLoThreeTo.json', 
-        baseFile='outputs/13to26lr_base.json', bin_size=0.05, threshold=0.07)#, year=2026)
+    test_enhanced_signal_asymmetrically(enhancedFile='v2outputs/13to26lr_Rs3PLoThreeTo.json', 
+        baseFile='v2outputs/13to26lr_base.json', bin_size=0.05, threshold=0.06)#, year=2026)

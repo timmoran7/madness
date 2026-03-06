@@ -1,0 +1,13 @@
+pictures are links to static screenshots of kenpom pages (two pics)
+record below teams
+location below selection box
+conf name/conf record below that
+next to logo:
+"Quad 1: x-y, Q2: x-y, Q3: x-y
+L10: e-f
+Experience Rank: {colored number}"
+
+
+maybe:
+Best: x-y @ opp, c-d vs. opp (manual??)
+Worst: x-y @ opp, c-d vs. opp

@@ -3,6 +3,8 @@ import json
 import os
 import glob
 import csv
+import requests
+import time
 
 teams_data = []
 
@@ -459,4 +461,158 @@ def extractOlderMatchups():
         
         print(f"Saved {len(matchups)} matchups for {year} to {output_file}")
 
-parseMiscStats(2026)
+def fetchTeamPage(team, cookie_value, cookie_name='PHPSESSID'):
+    
+    # Create cookie dictionary
+    cookies = {cookie_name: cookie_value}
+    
+    # Make the GET request with the cookie
+    url = f"https://kenpom.com/team.php?team={team}&y=2025"
+    response = requests.get(url, verify=False, cookies=cookies)
+    
+    return response
+
+def fetchTeamQuadPage(team, cookie_value):
+    # Create headers with cookie string
+    headers = {
+        'Cookie': cookie_value
+    }
+    
+    # Make the GET request with the cookie header
+    url = f"https://bballnet.com/teams/{team}"
+    response = requests.get(url, headers=headers, verify=False)
+    
+    return response
+
+namesToReplace = { 
+    "SIUE": "southern-illinois-edwardsville",
+    "VCU": "virginia-commonwealth",
+    "McNeese": "mcneese-state",
+    "BYU": "brigham-young",
+    "UNC Wilmington": "north-carolina-wilmington",
+    "Saint-Francis": "saint-francis-pa",
+    "Mount St. Mary's": "mount-st-marys",
+    "Saint Mary's": "saint-marys-ca",
+    "St. John's": "st-johns-ny",
+    "UC San Diego": "california-san-diego",
+}
+def fetchTopTeams(given_top_teams, year, quads=False):
+    """Fetch team pages for certain teams + year"""
+    
+    # Load ratings data
+    ratings_file = f'/home/tmoran/personal/madness/src/model/ratings/{year}.json'
+    with open(ratings_file, 'r') as f:
+        ratings_data = json.load(f)
+    
+    # Filter teams with rank <= x
+    top_teams = given_top_teams or [team for team in ratings_data if team['rank'] <= 80]
+    
+    # Create output directory
+    pageType = 'TeamQuads' if quads else 'TeamPhps'
+    output_dir = f'/home/tmoran/personal/madness/src/model/util/temp{pageType}/{year}'
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Cookie value (same as in the example)
+    kp_cookie_value = "8c4ee60332aa59f9702ee907e4c13265; kenpomuser=timthemoran%40gmail.com; kenpomid=e737b70d840eb9550ec0af116336e51d; _ga_6DKK0E2CDM=GS2.1.s1771279291$o50$g1$t1771279291$j60$l0$h0; cf_clearance=779MHWii_xqDW8EmiH0_5zr5M.6Dl_YBlHecN.AwReU-1771279291-1.2.1.1-Et1_o4wjfV0Xp4aMSrqiC_PpZekkmrYLofp1cushTAMKmCMUA_Nlnb4hIaEsALg6d54XGAb26fqvH3rGel3rm2kRv4NbpcFhol4W4lLQq0xYhdhqPgMSoim8m8vqbLZJdmiFGMSN1AzK0DAGOAiFvAzkDDI0LvKE4EHSNbRjYkjvr_jIzzqLnM8HgIb5h5060nKtLYys20ayZyHELb2uJpkVC5DN_UJdNxp0fmXFKzc"
+    cookie_value = "_ga=GA1.1.1416474417.1771279390; _ga_Y86RJEMBDJ=GS2.1.s1771282213$o2$g1$t1771282213$j60$l0$h0; FCCDCF=%5Bnull%2Cnull%2Cnull%2Cnull%2Cnull%2Cnull%2C%5B%5B32%2C%22%5B%5C%22e0aa732c-d60b-4e82-a9a1-330abf1c839b%5C%22%2C%5B1771279391%2C201000000%5D%5D%22%5D%5D%5D; FCNEC=%5B%5B%22AKsRol85bHpwr-6Ifp9T2AaJuP7UKyaq5r2lm2j1T4rRrKAktSCzx5u2RRUwXB1_IRxyQ85eQeyhp25y3dqshVmqxFderK5FAA4Tqkd9HxSnSudv7eq6ZfBPzbGrXa89pgUZx-VVfVCqYTyvAcUwLtEdZhUnv5Mxzg%3D%3D%22%5D%5D; __gads=ID=3a4467c739d5d30f:T=1771279401:RT=1771282214:S=ALNI_MZ8xMLeS0OnZ1bKT7WfDVW5dBKWIw; __gpi=UID=000013392ee6b96b:T=1771279401:RT=1771282214:S=ALNI_MaF5mOiuoclzxWuaWFd0YnhNydRkw; __eoi=ID=2f7212625bab4b32:T=1771279401:RT=1771282214:S=AA-AfjY3LfwI27veAixkxlKTi7FJ"
+
+    print(f"Fetching team pages for {len(top_teams)} teams...")
+    
+    # Fetch each team's page
+    for name in top_teams:
+        phpName = name.replace('&', '%26')
+        if name in namesToReplace:
+            quadName = namesToReplace[name]
+        else:
+            quadName = name.replace(' ', '-').replace('&', '').replace('.', '').replace("'", '').replace("St", "state") 
+        
+        try:
+            response = fetchTeamQuadPage(quadName, cookie_value) if quads else fetchTeamPage(phpName, kp_cookie_value)
+            # Save response to file
+            # Replace spaces and special characters in filename
+            safe_filename = name.replace(' ', '_').replace('.', '').replace("'", '')
+            output_file = os.path.join(output_dir, f'{safe_filename}.txt')
+            
+            with open(output_file, 'w', encoding='utf-8') as f:
+                f.write(response.text)
+            
+            print(f"Saved to {output_file}")
+            
+        except Exception as e:
+            print(f"Error fetching page for {name}: {e}")
+        
+        time.sleep(1) # avoid constant requests
+    
+    print(f"\nCompleted fetching {len(top_teams)} team pages")
+
+teams_2025 = [
+    "Wisconsin",
+    "Utah St.",
+    "Arkansas",
+    "Texas",
+    "Kansas",
+    "High Point",
+    "McNeese",
+    "Texas A&M",
+    "Purdue",
+    "SIUE",
+    "Nebraska Omaha",
+    "Georgia",
+    "UCLA",
+    "Baylor",
+    "New Mexico",
+    "Michigan St.",
+    "UNC Wilmington",
+    "Oregon",
+    "Kentucky",
+    "Colorado St.",
+    "Louisville",
+    "Bryant",
+    "Lipscomb",
+    "Clemson",
+    "Akron",
+    "Oklahoma",
+    "Auburn",
+    "Florida",
+    "Tennessee",
+    "Montana",
+    "Yale",
+    "Xavier",
+    "Marquette",
+    "Norfolk St.",
+    "Creighton",
+    "Mississippi",
+    "Maryland",
+    "VCU",
+    "Troy",
+    "Arizona",
+    "Illinois",
+    "Liberty",
+    "Houston",
+    "BYU",
+    "Saint Mary's",
+    "Vanderbilt",
+    "Memphis",
+    "Robert Morris",
+    "Alabama",
+    "Missouri",
+    "St. John's",
+    "Texas Tech",
+    "Mississippi St.",
+    "Duke",
+    "Michigan",
+    "Connecticut",
+    "Drake",
+    "North Carolina",
+    "Grand Canyon",
+    "Saint Francis",
+    "UC San Diego",
+    "San Diego St.",
+    "Iowa St.",
+    "American",
+    "Gonzaga",
+    "Wofford",
+    "Alabama St.",
+    "Mount St. Mary's"
+]
+fetchTopTeams(teams_2025, 2025, True)
