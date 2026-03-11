@@ -3,6 +3,9 @@ interface TeamBoxProps {
   logo: string;
   teamName: string;
   logoFirst?: boolean;
+  seed?: number | null;
+  record?: string | null;
+  conference?: string | null;
 }
 
 const props = withDefaults(defineProps<TeamBoxProps>(), {
@@ -25,14 +28,34 @@ const emit = defineEmits<{
     >
         <img class="banner-pic" :src="props.logo" :alt="props.teamName" />
     </button>
+    <div v-if="props.seed != null || props.record" class="team-meta">
+      <span class="seed" v-if="props.seed != null">({{ props.seed }})</span>
+      <span class="record" v-if="props.record"><b>· </b>{{ props.record }}</span>
+      <span class="conference" v-if="props.conference"><b>· </b>{{ props.conference }}</span>
+    </div>
   </div>
 </template>
 
 <style scoped>
 .team-info {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.team-meta {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  gap: 4px;
+  font-size: 16px;
+  margin-top: 3px;
+  justify-content: center;
+}
+
+.seed {
+  font-weight: 700;
 }
 
 .banner-pic {

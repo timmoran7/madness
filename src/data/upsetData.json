@@ -1,146 +1,449 @@
 {
+  "columns": [
+    "Rebounding",
+    "Turnovers",
+    "3Pt Volume",
+    "Dawg 3P%",
+    "Dawg Pace"
+  ],
+  "matchups": {
     "Louisville_Creighton": {
-        "index": 4.7,
-        "upset": 0.47
+      "index": 4.7,
+      "upset": 0.47,
+      "factors": [
+        "3.90",
+        "2.39",
+        "9.63",
+        "5.15",
+        "5.28"
+      ]
     },
     "Purdue_High Point": {
-        "index": 5.76,
-        "upset": 0.26
+      "index": 5.76,
+      "upset": 0.26,
+      "factors": [
+        "5.61",
+        "4.47",
+        "5.00",
+        "8.62",
+        "6.34"
+      ]
     },
     "Wisconsin_Montana": {
-        "index": 5.41,
-        "upset": 0.17
+      "index": 5.41,
+      "upset": 0.17,
+      "factors": [
+        "3.66",
+        "4.57",
+        "6.50",
+        "8.51",
+        "6.12"
+      ]
     },
     "Houston_SIUE": {
-        "index": 4.2,
-        "upset": 0.01
+      "index": 4.2,
+      "upset": 0.01,
+      "factors": [
+        "4.34",
+        "2.88",
+        "2.49",
+        "5.43",
+        "6.20"
+      ]
     },
     "Auburn_Saint Francis": {
-        "index": 4.01,
-        "upset": 0.01
+      "index": 4.01,
+      "upset": 0.01,
+      "factors": [
+        "3.31",
+        "2.34",
+        "6.58",
+        "4.68",
+        "5.08"
+      ]
     },
     "Auburn_Alabama St.": {
-        "index": 5.37,
-        "upset": 0.02
+      "index": 5.37,
+      "upset": 0.02,
+      "factors": [
+        "3.55",
+        "5.49",
+        "6.94",
+        "3.91",
+        "7.69"
+      ]
     },
     "Clemson_McNeese": {
-        "index": 5.68,
-        "upset": 0.41
+      "index": 5.68,
+      "upset": 0.41,
+      "factors": [
+        "4.72",
+        "4.92",
+        "4.21",
+        "7.91",
+        "7.56"
+      ]
     },
     "BYU_VCU": {
-        "index": 6.43,
-        "upset": 0.52
+      "index": 6.43,
+      "upset": 0.52,
+      "factors": [
+        "4.38",
+        "6.50",
+        "9.45",
+        "4.82",
+        "8.25"
+      ]
     },
     "Gonzaga_Georgia": {
-        "index": 3.49,
-        "upset": 0.26
+      "index": 3.49,
+      "upset": 0.26,
+      "factors": [
+        "3.85",
+        "2.92",
+        "2.42",
+        "4.71",
+        "3.66"
+      ]
     },
     "Tennessee_Wofford": {
-        "index": 5.03,
-        "upset": 0.08
+      "index": 5.03,
+      "upset": 0.08,
+      "factors": [
+        "5.94",
+        "3.17",
+        "8.58",
+        "6.23",
+        "2.99"
+      ]
     },
     "Kansas_Arkansas": {
-        "index": 4.76,
-        "upset": 0.33
+      "index": 4.76,
+      "upset": 0.33,
+      "factors": [
+        "4.21",
+        "6.08",
+        "2.62",
+        "4.49",
+        "5.37"
+      ]
     },
     "Texas A&M_Yale": {
-        "index": 5.04,
-        "upset": 0.21
+      "index": 5.04,
+      "upset": 0.21,
+      "factors": [
+        "4.85",
+        "5.14",
+        "2.53",
+        "9.78",
+        "3.58"
+      ]
     },
     "Missouri_Drake": {
-        "index": 5.39,
-        "upset": 0.42
+      "index": 5.39,
+      "upset": 0.42,
+      "factors": [
+        "7.26",
+        "3.64",
+        "5.12",
+        "7.00",
+        "4.26"
+      ]
     },
     "UCLA_Utah St.": {
-        "index": 6.16,
-        "upset": 0.51
+      "index": 6.16,
+      "upset": 0.51,
+      "factors": [
+        "4.92",
+        "4.75",
+        "5.15",
+        "8.13",
+        "9.23"
+      ]
     },
     "St. John's_Nebraska Omaha": {
-        "index": 4.34,
-        "upset": 0.06
+      "index": 4.34,
+      "upset": 0.06,
+      "factors": [
+        "4.42",
+        "2.78",
+        "2.84",
+        "8.82",
+        "4.34"
+      ]
     },
     "Michigan_UC San Diego": {
-        "index": 7.24,
-        "upset": 0.52
+      "index": 7.24,
+      "upset": 0.52,
+      "factors": [
+        "3.89",
+        "8.95",
+        "8.66",
+        "8.46",
+        "7.67"
+      ]
     },
     "Texas Tech_UNC Wilmington": {
-        "index": 4.72,
-        "upset": 0.14
+      "index": 4.72,
+      "upset": 0.14,
+      "factors": [
+        "5.30",
+        "4.61",
+        "5.72",
+        "4.19",
+        "3.71"
+      ]
     },
     "Mississippi St._Baylor": {
-        "index": 5.21,
-        "upset": 0.55
+      "index": 5.21,
+      "upset": 0.55,
+      "factors": [
+        "4.61",
+        "4.47",
+        "6.64",
+        "6.42",
+        "5.25"
+      ]
     },
     "Alabama_Robert Morris": {
-        "index": 5.24,
-        "upset": 0.08
+      "index": 5.24,
+      "upset": 0.08,
+      "factors": [
+        "5.41",
+        "5.99",
+        "6.23",
+        "6.72",
+        "2.16"
+      ]
     },
     "Iowa St._Lipscomb": {
-        "index": 5.44,
-        "upset": 0.17
+      "index": 5.44,
+      "upset": 0.17,
+      "factors": [
+        "3.94",
+        "4.21",
+        "6.45",
+        "8.76",
+        "6.23"
+      ]
     },
     "Memphis_Colorado St.": {
-        "index": 5.81,
-        "upset": 0.42
+      "index": 5.81,
+      "upset": 0.42,
+      "factors": [
+        "5.18",
+        "4.90",
+        "4.39",
+        "8.60",
+        "7.02"
+      ]
     },
     "Duke_Mount St. Mary's": {
-        "index": 4.68,
-        "upset": 0.01
+      "index": 4.68,
+      "upset": 0.01,
+      "factors": [
+        "3.85",
+        "1.74",
+        "7.51",
+        "6.67",
+        "6.61"
+      ]
     },
     "Duke_American": {
-        "index": 4.72,
-        "upset": 0.02
+      "index": 4.72,
+      "upset": 0.02,
+      "factors": [
+        "2.77",
+        "4.00",
+        "8.53",
+        "7.19",
+        "4.04"
+      ]
     },
     "Saint Mary's_Vanderbilt": {
-        "index": 4.79,
-        "upset": 0.34
+      "index": 4.79,
+      "upset": 0.34,
+      "factors": [
+        "3.09",
+        "6.25",
+        "3.62",
+        "3.44",
+        "6.91"
+      ]
     },
     "Mississippi_North Carolina": {
-        "index": 5.74,
-        "upset": 0.46
+      "index": 5.74,
+      "upset": 0.46,
+      "factors": [
+        "6.98",
+        "2.84",
+        "4.81",
+        "7.52",
+        "7.48"
+      ]
     },
     "Mississippi_San Diego St.": {
-        "index": 5.05,
-        "upset": 0.38
+      "index": 5.05,
+      "upset": 0.38,
+      "factors": [
+        "5.74",
+        "3.76",
+        "5.62",
+        "3.75",
+        "6.40"
+      ]
     },
     "Maryland_Grand Canyon": {
-        "index": 3.85,
-        "upset": 0.14
+      "index": 3.85,
+      "upset": 0.14,
+      "factors": [
+        "4.94",
+        "3.34",
+        "2.01",
+        "2.18",
+        "5.50"
+      ]
     },
     "Florida_Norfolk St.": {
-        "index": 3.61,
-        "upset": 0.0
+      "index": 3.61,
+      "upset": 0.0,
+      "factors": [
+        "3.04",
+        "4.13",
+        "4.04",
+        "1.60",
+        "4.81"
+      ]
     },
     "Kentucky_Troy": {
-        "index": 4.45,
-        "upset": 0.13
+      "index": 4.45,
+      "upset": 0.13,
+      "factors": [
+        "4.63",
+        "5.00",
+        "7.66",
+        "0.69",
+        "3.79"
+      ]
     },
     "Marquette_New Mexico": {
-        "index": 6.06,
-        "upset": 0.5
+      "index": 6.06,
+      "upset": 0.5,
+      "factors": [
+        "6.87",
+        "4.48",
+        "4.88",
+        "5.56",
+        "8.36"
+      ]
     },
     "Arizona_Akron": {
-        "index": 5.49,
-        "upset": 0.24
+      "index": 5.49,
+      "upset": 0.24,
+      "factors": [
+        "4.34",
+        "5.06",
+        "5.29",
+        "8.68",
+        "5.62"
+      ]
     },
     "Connecticut_Oklahoma": {
-        "index": 5.6,
-        "upset": 0.6
+      "index": 5.6,
+      "upset": 0.6,
+      "factors": [
+        "1.80",
+        "6.18",
+        "7.29",
+        "9.06",
+        "6.49"
+      ]
     },
     "Illinois_Xavier": {
-        "index": 6.33,
-        "upset": 0.51
+      "index": 6.33,
+      "upset": 0.51,
+      "factors": [
+        "3.07",
+        "6.38",
+        "6.67",
+        "9.86",
+        "8.15"
+      ]
     },
     "Illinois_Texas": {
-        "index": 5.67,
-        "upset": 0.45
+      "index": 5.67,
+      "upset": 0.45,
+      "factors": [
+        "2.80",
+        "6.44",
+        "5.87",
+        "8.21",
+        "6.71"
+      ]
     },
     "Michigan St._Bryant": {
-        "index": 4.24,
-        "upset": 0.06
+      "index": 4.24,
+      "upset": 0.06,
+      "factors": [
+        "4.02",
+        "5.04",
+        "1.56",
+        "4.57",
+        "5.07"
+      ]
     },
     "Oregon_Liberty": {
-        "index": 5.28,
-        "upset": 0.37
+      "index": 5.28,
+      "upset": 0.37,
+      "factors": [
+        "4.11",
+        "5.14",
+        "7.29",
+        "9.89",
+        "2.45"
+      ]
     }
+  },
+  "regions": {
+    "East": [
+      "Duke_Mount St. Mary's",
+      "Alabama_Robert Morris",
+      "Wisconsin_Montana",
+      "Arizona_Akron",
+      "Oregon_Liberty",
+      "BYU_VCU",
+      "Saint Mary's_Vanderbilt",
+      "Mississippi St._Baylor"
+    ],
+    "West": [
+      "Florida_Norfolk St.",
+      "St. John's_Nebraska Omaha",
+      "Texas Tech_UNC Wilmington",
+      "Maryland_Grand Canyon",
+      "Memphis_Colorado St.",
+      "Missouri_Drake",
+      "Kansas_Arkansas",
+      "Connecticut_Oklahoma"
+    ],
+    "South": [
+      "Auburn_Alabama St.",
+      "Michigan St._Bryant",
+      "Iowa St._Lipscomb",
+      "Texas A&M_Yale",
+      "Michigan_UC San Diego",
+      "Mississippi_North Carolina",
+      "Marquette_New Mexico",
+      "Louisville_Creighton"
+    ],
+    "Midwest": [
+      "Houston_SIUE",
+      "Tennessee_Wofford",
+      "Kentucky_Troy",
+      "Purdue_High Point",
+      "Clemson_McNeese",
+      "Illinois_Xavier",
+      "UCLA_Utah St.",
+      "Gonzaga_Georgia"
+    ]
+  }
 }

@@ -6,7 +6,7 @@ from typing import Optional
 
 from bs4 import BeautifulSoup
 
-
+NUM_TEAMS = 365
 QUAD_KEYS = ("q1", "q2", "q3", "q4")
 KP_STAT_ID_MAP = {
 	"Off Efficiency": "OE",
@@ -255,6 +255,8 @@ def extractKpOvrStats(
 			rank, value = (None, None)
 			if table_start_block is not None:
 				rank, value = extract_rank_value_from_script(table_start_block, stat_id)
+			if output_key == "Def Avg. Poss. Length" and rank is not None:
+				rank = NUM_TEAMS - rank
 			stats[output_key] = [rank, value]
 
 		stats.update(extract_row_based_stats(soup))

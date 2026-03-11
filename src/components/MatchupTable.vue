@@ -20,6 +20,8 @@ defineProps<{
 const GREEN: [number, number, number] = [144, 235, 94];
 const GRAY: [number, number, number] = [255, 255, 255];
 const RED: [number, number, number] = [196, 79, 57];
+const LIGHT_BLUE: [number, number, number] = [220, 237, 245];
+const DARK_BLUE: [number, number, number] = [100, 160, 210];
 
 const MIN_RANK = 1;
 const MAX_RANK = 365;
@@ -57,12 +59,28 @@ function getRankColor(rankValue: string): string {
   const t = (clampedRank - MID_RANK) / (MAX_RANK - MID_RANK);
   return interpolateRgb(GRAY, RED, t);
 }
+
+function getTempoColor(rankValue: string): string {
+  const rank = Number.parseFloat(rankValue);
+  if (!Number.isFinite(rank)) {
+    return 'rgb(255,255,255)';
+  }
+  // rank 1 = fastest tempo → dark blue; rank MAX = slowest → light blue
+  const t = (clamp(rank, MIN_RANK, MAX_RANK) - MIN_RANK) / (MAX_RANK - MIN_RANK);
+  return interpolateRgb(DARK_BLUE, LIGHT_BLUE, t);
+}
+
+function getCellColor(column: string, value: string): string {
+  const blueColumns = new Set(['Tempo', 'Minutes Continuity', 'Bench Minutes', 'D-1 Experience']);
+  if (blueColumns.has(column)) return getTempoColor(value);
+  return getRankColor(value);
+}
 </script>
 
 <template>
   <div class="container">
     <h2 class="text-center">All Stats</h2> 
-    <h6 class="text-center"><em>Rank of all 364 NCAAB D1 teams</em></h6>
+    <h6 class="text-center"><em>Rank of all 365 NCAAB D1 teams</em></h6>
     <div class="table-responsive">
       <table class="table table-bordered table-striped">
         <thead class="text-center">
@@ -77,7 +95,7 @@ function getRankColor(rankValue: string): string {
             <td 
               v-for="(stat, statIndex) in team.stats" 
               :key="statIndex"
-              :style="{ backgroundColor: getRankColor(stat.value) }"
+              :style="{ backgroundColor: getCellColor(data.columns[statIndex], stat.value) }"
             >
               {{ stat.value }}
             </td>
@@ -90,11 +108,13 @@ function getRankColor(rankValue: string): string {
 
 <style scoped>
 .table { 
-  background-color: white; 
+  background-color: white;
+  min-width: 900px;
 }
 
 th, td { 
-  text-align: center; 
+  text-align: center;
+  white-space: nowrap;
 }
 
 th.team-name { 

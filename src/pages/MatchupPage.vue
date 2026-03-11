@@ -7,12 +7,11 @@ import TeamBox from "@/components/TeamBox.vue";
 import pictureMappings from "@/data/picMappings.json";
 import { normalizeTeamName } from "@/utils/teamName";
 import upsetData from "@/data/upsetData.json";
-import matchupData from "@/data/matchupData.json";
-import upsetTableData from "@/data/upsetTableData.json";
+import kpOvrStats from "@/data/kpOvrStats2025.json";
+import seedProbabilities from "@/data/seedProbabilities.json";
 import type {
   MatchupTableDataType,
-  CompactMatchupDataType,
-  CompactUpsetTableDataType,
+  UpsetDataType,
   UpsetTableDataType,
 } from "@/models";
 
@@ -32,51 +31,81 @@ const miFactor = ref<number>(0);
 const upsetChance = ref<number>(0);
 
 const picMappings: { [key: string]: string } = pictureMappings;
-const upsetFactors: { [key: string]: { index: number; upset: number } } =
-  upsetData;
+const typedUpsetData = upsetData as UpsetDataType;
 
-const typedMatchupData = matchupData as CompactMatchupDataType;
-const typedUpsetTableData = upsetTableData as CompactUpsetTableDataType;
+const NON_STAT_KEYS = new Set(["seed", "conference", "record"]);
+
+const kpStats = kpOvrStats as unknown as Record<string, Record<string, [number, string]> & { seed: number; conference: string }>;
+const seedProbs = seedProbabilities as Record<string, number>;
+
+const teamInfo = computed(() => {
+  if (!selectedMatchup.value) return { fav: null, dawg: null };
+  const [t1Raw, t2Raw] = selectedMatchup.value.split("_");
+  const t1 = kpStats[normalizeTeamName(t1Raw)];
+  const t2 = kpStats[normalizeTeamName(t2Raw)];
+  return {
+    fav: t1 ? { seed: t1.seed, record: t1["KenPom Ovr."]?.[1] ?? null, conference: t1.conference ?? null } : null,
+    dawg: t2 ? { seed: t2.seed, record: t2["KenPom Ovr."]?.[1] ?? null, conference: t2.conference ?? null } : null,
+  };
+});
+
+const seedAvgLabel = computed<string | null>(() => {
+  if (!selectedMatchup.value) return null;
+  const [t1Raw, t2Raw] = selectedMatchup.value.split("_");
+  const t1 = kpStats[normalizeTeamName(t1Raw)];
+  const t2 = kpStats[normalizeTeamName(t2Raw)];
+  if (!t1 || !t2) return null;
+  const s1 = t1.seed;
+  const s2 = t2.seed;
+  if (!s1 || !s2) return null;
+  const lowerSeed = Math.max(s1, s2); // higher number = lower seed (the underdog)
+  const prob = seedProbs[String(lowerSeed)];
+  if (prob == null) return null;
+  const higherSeed = Math.min(s1, s2);
+  return `${higherSeed}-${lowerSeed} avg: ${(prob * 100).toFixed(2)}%`;
+});
 
 const currentMatchupData = computed<MatchupTableDataType | null>(() => {
-  if (!selectedRegion.value || !selectedMatchup.value) {
-    return null;
-  }
+  if (!selectedMatchup.value) return null;
 
-  const matchupTeams =
-    typedMatchupData.regions[selectedRegion.value]?.[selectedMatchup.value];
+  const [team1Raw, team2Raw] = selectedMatchup.value.split("_");
+  const team1Key = normalizeTeamName(team1Raw);
+  const team2Key = normalizeTeamName(team2Raw);
+  const team1Stats = kpStats[team1Key];
+  const team2Stats = kpStats[team2Key];
 
-  if (!matchupTeams) {
-    return null;
-  }
+  if (!team1Stats || !team2Stats) return null;
+
+  const columns = Object.keys(team1Stats).filter((k) => !NON_STAT_KEYS.has(k));
 
   return {
-    columns: typedMatchupData.columns,
-    teams: matchupTeams.map((team) => {
-      const teamName = String(team[0] ?? "");
-      const teamStats = Array.isArray(team[1]) ? team[1].map(String) : [];
-
-      return {
-        name: teamName,
-        stats: teamStats.map((value) => ({ value })),
-      };
-    }),
+    columns,
+    teams: [
+      {
+        name: team1Raw,
+        stats: columns.map((col) => ({
+          value: String(team1Stats[col]?.[0] ?? ""),
+        })),
+      },
+      {
+        name: team2Raw,
+        stats: columns.map((col) => ({
+          value: String(team2Stats[col]?.[0] ?? ""),
+        })),
+      },
+    ],
   };
 });
 
 const currentUpsetData = computed<UpsetTableDataType | null>(() => {
-  if (!selectedMatchup.value) {
-    return null;
-  }
+  if (!selectedMatchup.value) return null;
 
-  const values = typedUpsetTableData.matchups[selectedMatchup.value];
-  if (!values) {
-    return null;
-  }
+  const entry = typedUpsetData.matchups[selectedMatchup.value];
+  if (!entry) return null;
 
   return {
-    columns: typedUpsetTableData.columns,
-    values,
+    columns: typedUpsetData.columns,
+    values: entry.factors,
   };
 });
 
@@ -88,15 +117,7 @@ The MI is out of 10: an upset profile can be considered <strong>fair above 6, st
 Upset chance is a less fun but more practical metric which spits out probabilities from a regression model trained on ten years' worth of data (regular + postseason). \
 Enjoy!";
 
-const matchupFiles: { [key: string]: string[] } = Object.keys(
-  typedMatchupData.regions,
-).reduce(
-  (acc, region) => {
-    acc[region] = Object.keys(typedMatchupData.regions[region]);
-    return acc;
-  },
-  {} as { [key: string]: string[] },
-);
+const matchupFiles: { [key: string]: string[] } = typedUpsetData.regions ?? {};
 
 const syncRouteQuery = (region: string, matchup: string) => {
   router.replace({
@@ -127,13 +148,13 @@ const loadMatchupContent = () => {
   favLogo.value = `/madness/logos/${picMappings[team1]}`;
   dawgLogo.value = `/madness/logos/${picMappings[team2]}`;
 
-  const matchupFactors = upsetFactors[selectedMatchup.value];
-  if (!matchupFactors) {
+  const matchupEntry = typedUpsetData.matchups[selectedMatchup.value];
+  if (!matchupEntry) {
     return;
   }
 
-  miFactor.value = matchupFactors.index;
-  upsetChance.value = matchupFactors.upset;
+  miFactor.value = matchupEntry.index;
+  upsetChance.value = matchupEntry.upset;
 
   showFactors.value = true;
   showMethodology.value = false;
@@ -214,7 +235,7 @@ watch(
 
 <template>
   <div class="container mt-3">
-    <div class="d-flex justify-content-center mb-3">
+    <div class="d-flex justify-content-center">
       <select
         v-model="selectedRegion"
         @change="loadMatchups"
@@ -229,29 +250,41 @@ watch(
 
     <div
       v-if="matchups.length > 0"
-      :class="['d-flex ovr-banner', { 'ovr-banner-selected': selectedMatchup }]"
+      :class="['ovr-banner', { 'ovr-banner-selected': selectedMatchup }]"
     >
-      <TeamBox
-        :logo="favLogo"
-        :team-name="selectedMatchup ? selectedMatchup.split('_')[0] : ''"
-        @logo-click="openTeamPage"
-      />
-      <select
-        v-model="selectedMatchup"
-        @change="loadMatchupContent"
-        class="form-select w-auto"
-      >
-        <option value="" disabled>Select a Matchup</option>
-        <option v-for="matchup in matchups" :key="matchup" :value="matchup">
-          {{ matchup.replace("_", " vs. ") }}
-        </option>
-      </select>
-      <TeamBox
-        :logo="dawgLogo"
-        :team-name="selectedMatchup ? selectedMatchup.split('_')[1] : ''"
-        :logo-first="true"
-        @logo-click="openTeamPage"
-      />
+      <div class="select-anchor">
+        <div class="team-box-abs team-box-left">
+          <TeamBox
+            :logo="favLogo"
+            :team-name="selectedMatchup ? selectedMatchup.split('_')[0] : ''"
+            :seed="teamInfo.fav?.seed ?? null"
+            :record="teamInfo.fav?.record ?? null"
+            :conference="teamInfo.fav?.conference ?? null"
+            @logo-click="openTeamPage"
+          />
+        </div>
+        <select
+          v-model="selectedMatchup"
+          @change="loadMatchupContent"
+          class="form-select w-auto"
+        >
+          <option value="" disabled>Select a Matchup</option>
+          <option v-for="matchup in matchups" :key="matchup" :value="matchup">
+            {{ matchup.replace("_", " vs. ") }}
+          </option>
+        </select>
+        <div class="team-box-abs team-box-right">
+          <TeamBox
+            :logo="dawgLogo"
+            :team-name="selectedMatchup ? selectedMatchup.split('_')[1] : ''"
+            :logo-first="true"
+            :seed="teamInfo.dawg?.seed ?? null"
+            :record="teamInfo.dawg?.record ?? null"
+            :conference="teamInfo.dawg?.conference ?? null"
+            @logo-click="openTeamPage"
+          />
+        </div>
+      </div>
     </div>
     <div v-if="dawgLogo" class="d-flex justify-content-center mb-4 match-subheader">
       <p class="click-hint"><em>click on logos for team breakdown</em></p>
@@ -267,6 +300,7 @@ watch(
       </h5>
       <h5 class="factor text-center">
         <strong>Upset Chance: {{ (upsetChance * 100).toFixed(2) }}%</strong>
+        <span v-if="seedAvgLabel" class="seed-avg-hint"> ({{ seedAvgLabel }})</span>
       </h5>
     </div>
 
@@ -297,16 +331,31 @@ watch(
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: -8px;
+  position: relative;
 }
 
-.ovr-banner-selected {
-  margin-top: -20px;
+.select-anchor {
+  position: relative;
+  display: inline-block;
+}
+
+.team-box-abs {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-45px); /* aligns logo center (half of 90px) with select center */
+}
+
+.team-box-left {
+  right: calc(100% + 20px);
+}
+
+.team-box-right {
+  left: calc(100% + 20px);
 }
 
 .form-select {
   height: 50px;
+  margin: 12px 0;
 }
 
 .match-subheader {
@@ -322,6 +371,12 @@ watch(
 .click-hint {
   font-size: 14px;
   color: #6c757d;
+}
+
+.seed-avg-hint {
+  font-size: 0.8em;
+  color: #6c757d;
+  font-weight: normal;
 }
 
 .upset-factors {

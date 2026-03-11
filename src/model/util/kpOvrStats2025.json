@@ -36,21 +36,9 @@
       54,
       "45.2"
     ],
-    "A/FGM": [
-      50,
-      "57.9"
-    ],
     "Off 3P%": [
       50,
       "36.4"
-    ],
-    "Off Avg. Poss. Length": [
-      21,
-      "15.9"
-    ],
-    "Def Avg. Poss. Length": [
-      62,
-      "17.1"
     ],
     "Tempo": [
       15,
@@ -60,13 +48,25 @@
       361,
       "75.1\""
     ],
-    "Minutes Continuity": [
-      250,
-      "23.9%"
+    "A/FGM": [
+      50,
+      "57.9"
+    ],
+    "Off Avg. Poss. Length": [
+      21,
+      "15.9"
+    ],
+    "Def Avg. Poss. Length": [
+      62,
+      "17.1"
     ],
     "D-1 Experience": [
       245,
       "1.40 yrs"
+    ],
+    "Minutes Continuity": [
+      250,
+      "23.9%"
     ],
     "Bench Minutes": [
       30,

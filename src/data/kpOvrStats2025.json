@@ -36,21 +36,9 @@
       54,
       "45.2"
     ],
-    "A/FGM": [
-      50,
-      "57.9"
-    ],
     "Off 3P%": [
       50,
       "36.4"
-    ],
-    "Off Avg. Poss. Length": [
-      21,
-      "15.9"
-    ],
-    "Def Avg. Poss. Length": [
-      62,
-      "17.1"
     ],
     "Tempo": [
       15,
@@ -60,17 +48,17 @@
       361,
       "75.1\""
     ],
-    "Minutes Continuity": [
-      250,
-      "23.9%"
+    "A/FGM": [
+      50,
+      "57.9"
     ],
-    "D-1 Experience": [
-      245,
-      "1.40 yrs"
+    "Off Avg. Poss. Length": [
+      21,
+      "15.9"
     ],
-    "Bench Minutes": [
-      30,
-      "38.9%"
+    "Def Avg. Poss. Length": [
+      62,
+      "17.1"
     ],
     "SOS Overall": [
       249,
@@ -79,7 +67,21 @@
     "SOS Non-conference": [
       121,
       "+1.79"
-    ]
+    ],
+    "D-1 Experience": [
+      245,
+      "1.40 yrs"
+    ],
+    "Minutes Continuity": [
+      250,
+      "23.9%"
+    ],
+    "Bench Minutes": [
+      30,
+      "38.9%"
+    ],
+    "seed": 13,
+    "conference": "MAC"
   },
   "Alabama": {
     "KenPom Ovr.": [
@@ -118,21 +120,9 @@
       35,
       "46.6"
     ],
-    "A/FGM": [
-      91,
-      "55.4"
-    ],
     "Off 3P%": [
       93,
       "35.3"
-    ],
-    "Off Avg. Poss. Length": [
-      4,
-      "14.9"
-    ],
-    "Def Avg. Poss. Length": [
-      15,
-      "16.7"
     ],
     "Tempo": [
       1,
@@ -142,17 +132,17 @@
       61,
       "78.1\""
     ],
-    "Minutes Continuity": [
-      112,
-      "43.3%"
+    "A/FGM": [
+      91,
+      "55.4"
     ],
-    "D-1 Experience": [
-      9,
-      "2.99 yrs"
+    "Off Avg. Poss. Length": [
+      4,
+      "14.9"
     ],
-    "Bench Minutes": [
-      33,
-      "38.6%"
+    "Def Avg. Poss. Length": [
+      15,
+      "16.7"
     ],
     "SOS Overall": [
       1,
@@ -161,7 +151,21 @@
     "SOS Non-conference": [
       9,
       "+12.62"
-    ]
+    ],
+    "D-1 Experience": [
+      9,
+      "2.99 yrs"
+    ],
+    "Minutes Continuity": [
+      112,
+      "43.3%"
+    ],
+    "Bench Minutes": [
+      33,
+      "38.6%"
+    ],
+    "seed": 2,
+    "conference": "SEC"
   },
   "Alabama St": {
     "KenPom Ovr.": [
@@ -200,21 +204,9 @@
       89,
       "42.7"
     ],
-    "A/FGM": [
-      330,
-      "44.7"
-    ],
     "Off 3P%": [
       236,
       "32.6"
-    ],
-    "Off Avg. Poss. Length": [
-      69,
-      "16.7"
-    ],
-    "Def Avg. Poss. Length": [
-      263,
-      "18.0"
     ],
     "Tempo": [
       139,
@@ -224,17 +216,17 @@
       275,
       "76.6\""
     ],
-    "Minutes Continuity": [
-      30,
-      "57.7%"
+    "A/FGM": [
+      330,
+      "44.7"
     ],
-    "D-1 Experience": [
-      209,
-      "1.63 yrs"
+    "Off Avg. Poss. Length": [
+      69,
+      "16.7"
     ],
-    "Bench Minutes": [
-      65,
-      "36.0%"
+    "Def Avg. Poss. Length": [
+      263,
+      "18.0"
     ],
     "SOS Overall": [
       343,
@@ -243,7 +235,21 @@
     "SOS Non-conference": [
       45,
       "+6.06"
-    ]
+    ],
+    "D-1 Experience": [
+      209,
+      "1.63 yrs"
+    ],
+    "Minutes Continuity": [
+      30,
+      "57.7%"
+    ],
+    "Bench Minutes": [
+      65,
+      "36.0%"
+    ],
+    "seed": 16,
+    "conference": "SWAC"
   },
   "American": {
     "KenPom Ovr.": [
@@ -282,21 +288,9 @@
       52,
       "45.3"
     ],
-    "A/FGM": [
-      158,
-      "52.2"
-    ],
     "Off 3P%": [
       102,
       "35.2"
-    ],
-    "Off Avg. Poss. Length": [
-      351,
-      "19.7"
-    ],
-    "Def Avg. Poss. Length": [
-      288,
-      "18.0"
     ],
     "Tempo": [
       348,
@@ -306,17 +300,17 @@
       302,
       "76.5\""
     ],
-    "Minutes Continuity": [
-      2,
-      "74.5%"
+    "A/FGM": [
+      158,
+      "52.2"
     ],
-    "D-1 Experience": [
-      50,
-      "2.53 yrs"
+    "Off Avg. Poss. Length": [
+      351,
+      "19.7"
     ],
-    "Bench Minutes": [
-      140,
-      "32.8%"
+    "Def Avg. Poss. Length": [
+      288,
+      "18.0"
     ],
     "SOS Overall": [
       321,
@@ -325,7 +319,21 @@
     "SOS Non-conference": [
       133,
       "+1.29"
-    ]
+    ],
+    "D-1 Experience": [
+      50,
+      "2.53 yrs"
+    ],
+    "Minutes Continuity": [
+      2,
+      "74.5%"
+    ],
+    "Bench Minutes": [
+      140,
+      "32.8%"
+    ],
+    "seed": 16,
+    "conference": "Patriot"
   },
   "Arizona": {
     "KenPom Ovr.": [
@@ -364,21 +372,9 @@
       289,
       "34.7"
     ],
-    "A/FGM": [
-      89,
-      "55.6"
-    ],
     "Off 3P%": [
       177,
       "33.8"
-    ],
-    "Off Avg. Poss. Length": [
-      46,
-      "16.3"
-    ],
-    "Def Avg. Poss. Length": [
-      211,
-      "17.7"
     ],
     "Tempo": [
       49,
@@ -388,17 +384,17 @@
       81,
       "77.9\""
     ],
-    "Minutes Continuity": [
-      150,
-      "37.9%"
+    "A/FGM": [
+      89,
+      "55.6"
     ],
-    "D-1 Experience": [
-      30,
-      "2.72 yrs"
+    "Off Avg. Poss. Length": [
+      46,
+      "16.3"
     ],
-    "Bench Minutes": [
-      224,
-      "29.8%"
+    "Def Avg. Poss. Length": [
+      211,
+      "17.7"
     ],
     "SOS Overall": [
       6,
@@ -407,7 +403,21 @@
     "SOS Non-conference": [
       50,
       "+5.19"
-    ]
+    ],
+    "D-1 Experience": [
+      30,
+      "2.72 yrs"
+    ],
+    "Minutes Continuity": [
+      150,
+      "37.9%"
+    ],
+    "Bench Minutes": [
+      224,
+      "29.8%"
+    ],
+    "seed": 4,
+    "conference": "B12"
   },
   "Arkansas": {
     "KenPom Ovr.": [
@@ -446,21 +456,9 @@
       242,
       "36.6"
     ],
-    "A/FGM": [
-      160,
-      "52.1"
-    ],
     "Off 3P%": [
       230,
       "32.7"
-    ],
-    "Off Avg. Poss. Length": [
-      86,
-      "16.9"
-    ],
-    "Def Avg. Poss. Length": [
-      96,
-      "17.3"
     ],
     "Tempo": [
       69,
@@ -470,17 +468,17 @@
       18,
       "78.7\""
     ],
-    "Minutes Continuity": [
-      321,
-      "9.8%"
+    "A/FGM": [
+      160,
+      "52.1"
     ],
-    "D-1 Experience": [
-      218,
-      "1.59 yrs"
+    "Off Avg. Poss. Length": [
+      86,
+      "16.9"
     ],
-    "Bench Minutes": [
-      68,
-      "35.8%"
+    "Def Avg. Poss. Length": [
+      96,
+      "17.3"
     ],
     "SOS Overall": [
       16,
@@ -489,7 +487,21 @@
     "SOS Non-conference": [
       250,
       "-2.61"
-    ]
+    ],
+    "D-1 Experience": [
+      218,
+      "1.59 yrs"
+    ],
+    "Minutes Continuity": [
+      321,
+      "9.8%"
+    ],
+    "Bench Minutes": [
+      68,
+      "35.8%"
+    ],
+    "seed": 10,
+    "conference": "SEC"
   },
   "Auburn": {
     "KenPom Ovr.": [
@@ -528,21 +540,9 @@
       136,
       "40.8"
     ],
-    "A/FGM": [
-      100,
-      "54.9"
-    ],
     "Off 3P%": [
       67,
       "35.9"
-    ],
-    "Off Avg. Poss. Length": [
-      139,
-      "17.4"
-    ],
-    "Def Avg. Poss. Length": [
-      163,
-      "17.5"
     ],
     "Tempo": [
       134,
@@ -552,17 +552,17 @@
       24,
       "78.5\""
     ],
-    "Minutes Continuity": [
-      40,
-      "54.3%"
+    "A/FGM": [
+      100,
+      "54.9"
     ],
-    "D-1 Experience": [
-      24,
-      "2.81 yrs"
+    "Off Avg. Poss. Length": [
+      139,
+      "17.4"
     ],
-    "Bench Minutes": [
-      164,
-      "31.8%"
+    "Def Avg. Poss. Length": [
+      163,
+      "17.5"
     ],
     "SOS Overall": [
       2,
@@ -571,7 +571,21 @@
     "SOS Non-conference": [
       19,
       "+10.51"
-    ]
+    ],
+    "D-1 Experience": [
+      24,
+      "2.81 yrs"
+    ],
+    "Minutes Continuity": [
+      40,
+      "54.3%"
+    ],
+    "Bench Minutes": [
+      164,
+      "31.8%"
+    ],
+    "seed": 1,
+    "conference": "SEC"
   },
   "BYU": {
     "KenPom Ovr.": [
@@ -610,21 +624,9 @@
       25,
       "47.6"
     ],
-    "A/FGM": [
-      32,
-      "59.6"
-    ],
     "Off 3P%": [
       37,
       "36.8"
-    ],
-    "Off Avg. Poss. Length": [
-      115,
-      "17.1"
-    ],
-    "Def Avg. Poss. Length": [
-      276,
-      "18.0"
     ],
     "Tempo": [
       170,
@@ -634,17 +636,17 @@
       35,
       "78.3\""
     ],
-    "Minutes Continuity": [
-      132,
-      "41.0%"
+    "A/FGM": [
+      32,
+      "59.6"
     ],
-    "D-1 Experience": [
-      130,
-      "1.93 yrs"
+    "Off Avg. Poss. Length": [
+      115,
+      "17.1"
     ],
-    "Bench Minutes": [
-      14,
-      "41.5%"
+    "Def Avg. Poss. Length": [
+      276,
+      "18.0"
     ],
     "SOS Overall": [
       43,
@@ -653,7 +655,21 @@
     "SOS Non-conference": [
       347,
       "-8.05"
-    ]
+    ],
+    "D-1 Experience": [
+      130,
+      "1.93 yrs"
+    ],
+    "Minutes Continuity": [
+      132,
+      "41.0%"
+    ],
+    "Bench Minutes": [
+      14,
+      "41.5%"
+    ],
+    "seed": 6,
+    "conference": "B12"
   },
   "Baylor": {
     "KenPom Ovr.": [
@@ -692,21 +708,9 @@
       153,
       "40.1"
     ],
-    "A/FGM": [
-      139,
-      "52.8"
-    ],
     "Off 3P%": [
       151,
       "34.3"
-    ],
-    "Off Avg. Poss. Length": [
-      292,
-      "18.6"
-    ],
-    "Def Avg. Poss. Length": [
-      286,
-      "18.0"
     ],
     "Tempo": [
       328,
@@ -716,17 +720,17 @@
       234,
       "76.9\""
     ],
-    "Minutes Continuity": [
-      220,
-      "28.5%"
+    "A/FGM": [
+      139,
+      "52.8"
     ],
-    "D-1 Experience": [
-      29,
-      "2.74 yrs"
+    "Off Avg. Poss. Length": [
+      292,
+      "18.6"
     ],
-    "Bench Minutes": [
-      284,
-      "27.1%"
+    "Def Avg. Poss. Length": [
+      286,
+      "18.0"
     ],
     "SOS Overall": [
       9,
@@ -735,7 +739,21 @@
     "SOS Non-conference": [
       33,
       "+7.93"
-    ]
+    ],
+    "D-1 Experience": [
+      29,
+      "2.74 yrs"
+    ],
+    "Minutes Continuity": [
+      220,
+      "28.5%"
+    ],
+    "Bench Minutes": [
+      284,
+      "27.1%"
+    ],
+    "seed": 9,
+    "conference": "B12"
   },
   "Bryant": {
     "KenPom Ovr.": [
@@ -774,21 +792,9 @@
       286,
       "34.7"
     ],
-    "A/FGM": [
-      262,
-      "48.7"
-    ],
     "Off 3P%": [
       216,
       "33.0"
-    ],
-    "Off Avg. Poss. Length": [
-      25,
-      "16.1"
-    ],
-    "Def Avg. Poss. Length": [
-      29,
-      "16.8"
     ],
     "Tempo": [
       6,
@@ -798,17 +804,17 @@
       6,
       "79.1\""
     ],
-    "Minutes Continuity": [
-      115,
-      "43.0%"
+    "A/FGM": [
+      262,
+      "48.7"
     ],
-    "D-1 Experience": [
-      43,
-      "2.62 yrs"
+    "Off Avg. Poss. Length": [
+      25,
+      "16.1"
     ],
-    "Bench Minutes": [
-      341,
-      "22.5%"
+    "Def Avg. Poss. Length": [
+      29,
+      "16.8"
     ],
     "SOS Overall": [
       309,
@@ -817,7 +823,21 @@
     "SOS Non-conference": [
       156,
       "+0.34"
-    ]
+    ],
+    "D-1 Experience": [
+      43,
+      "2.62 yrs"
+    ],
+    "Minutes Continuity": [
+      115,
+      "43.0%"
+    ],
+    "Bench Minutes": [
+      341,
+      "22.5%"
+    ],
+    "seed": 15,
+    "conference": "Am East"
   },
   "Clemson": {
     "KenPom Ovr.": [
@@ -856,21 +876,9 @@
       176,
       "38.8"
     ],
-    "A/FGM": [
-      164,
-      "52.0"
-    ],
     "Off 3P%": [
       33,
       "36.9"
-    ],
-    "Off Avg. Poss. Length": [
-      179,
-      "17.7"
-    ],
-    "Def Avg. Poss. Length": [
-      364,
-      "19.1"
     ],
     "Tempo": [
       327,
@@ -880,17 +888,17 @@
       78,
       "78.0\""
     ],
-    "Minutes Continuity": [
-      89,
-      "46.3%"
+    "A/FGM": [
+      164,
+      "52.0"
     ],
-    "D-1 Experience": [
-      8,
-      "3.03 yrs"
+    "Off Avg. Poss. Length": [
+      179,
+      "17.7"
     ],
-    "Bench Minutes": [
-      298,
-      "26.2%"
+    "Def Avg. Poss. Length": [
+      364,
+      "19.1"
     ],
     "SOS Overall": [
       68,
@@ -899,7 +907,21 @@
     "SOS Non-conference": [
       78,
       "+3.67"
-    ]
+    ],
+    "D-1 Experience": [
+      8,
+      "3.03 yrs"
+    ],
+    "Minutes Continuity": [
+      89,
+      "46.3%"
+    ],
+    "Bench Minutes": [
+      298,
+      "26.2%"
+    ],
+    "seed": 5,
+    "conference": "ACC"
   },
   "Colorado St": {
     "KenPom Ovr.": [
@@ -938,21 +960,9 @@
       86,
       "42.8"
     ],
-    "A/FGM": [
-      9,
-      "62.3"
-    ],
     "Off 3P%": [
       53,
       "36.3"
-    ],
-    "Off Avg. Poss. Length": [
-      200,
-      "17.8"
-    ],
-    "Def Avg. Poss. Length": [
-      325,
-      "18.3"
     ],
     "Tempo": [
       270,
@@ -962,17 +972,17 @@
       182,
       "77.2\""
     ],
-    "Minutes Continuity": [
-      181,
-      "34.1%"
+    "A/FGM": [
+      9,
+      "62.3"
     ],
-    "D-1 Experience": [
-      64,
-      "2.39 yrs"
+    "Off Avg. Poss. Length": [
+      200,
+      "17.8"
     ],
-    "Bench Minutes": [
-      183,
-      "30.9%"
+    "Def Avg. Poss. Length": [
+      325,
+      "18.3"
     ],
     "SOS Overall": [
       80,
@@ -981,7 +991,21 @@
     "SOS Non-conference": [
       131,
       "+1.39"
-    ]
+    ],
+    "D-1 Experience": [
+      64,
+      "2.39 yrs"
+    ],
+    "Minutes Continuity": [
+      181,
+      "34.1%"
+    ],
+    "Bench Minutes": [
+      183,
+      "30.9%"
+    ],
+    "seed": 12,
+    "conference": "MWC"
   },
   "Connecticut": {
     "KenPom Ovr.": [
@@ -1020,21 +1044,9 @@
       90,
       "42.7"
     ],
-    "A/FGM": [
-      4,
-      "63.5"
-    ],
     "Off 3P%": [
       120,
       "34.8"
-    ],
-    "Off Avg. Poss. Length": [
-      344,
-      "19.5"
-    ],
-    "Def Avg. Poss. Length": [
-      238,
-      "17.8"
     ],
     "Tempo": [
       343,
@@ -1044,17 +1056,17 @@
       47,
       "78.2\""
     ],
-    "Minutes Continuity": [
-      104,
-      "44.4%"
+    "A/FGM": [
+      4,
+      "63.5"
     ],
-    "D-1 Experience": [
-      175,
-      "1.76 yrs"
+    "Off Avg. Poss. Length": [
+      344,
+      "19.5"
     ],
-    "Bench Minutes": [
-      214,
-      "30.1%"
+    "Def Avg. Poss. Length": [
+      238,
+      "17.8"
     ],
     "SOS Overall": [
       54,
@@ -1063,7 +1075,21 @@
     "SOS Non-conference": [
       186,
       "-0.39"
-    ]
+    ],
+    "D-1 Experience": [
+      175,
+      "1.76 yrs"
+    ],
+    "Minutes Continuity": [
+      104,
+      "44.4%"
+    ],
+    "Bench Minutes": [
+      214,
+      "30.1%"
+    ],
+    "seed": 8,
+    "conference": "BE"
   },
   "Creighton": {
     "KenPom Ovr.": [
@@ -1102,21 +1128,9 @@
       11,
       "48.9"
     ],
-    "A/FGM": [
-      5,
-      "63.0"
-    ],
     "Off 3P%": [
       141,
       "34.5"
-    ],
-    "Off Avg. Poss. Length": [
-      175,
-      "17.6"
-    ],
-    "Def Avg. Poss. Length": [
-      171,
-      "17.6"
     ],
     "Tempo": [
       192,
@@ -1126,17 +1140,17 @@
       7,
       "79.0\""
     ],
-    "Minutes Continuity": [
-      90,
-      "46.2%"
+    "A/FGM": [
+      5,
+      "63.0"
     ],
-    "D-1 Experience": [
-      39,
-      "2.66 yrs"
+    "Off Avg. Poss. Length": [
+      175,
+      "17.6"
     ],
-    "Bench Minutes": [
-      295,
-      "26.3%"
+    "Def Avg. Poss. Length": [
+      171,
+      "17.6"
     ],
     "SOS Overall": [
       45,
@@ -1145,7 +1159,21 @@
     "SOS Non-conference": [
       46,
       "+5.73"
-    ]
+    ],
+    "D-1 Experience": [
+      39,
+      "2.66 yrs"
+    ],
+    "Minutes Continuity": [
+      90,
+      "46.2%"
+    ],
+    "Bench Minutes": [
+      295,
+      "26.3%"
+    ],
+    "seed": 9,
+    "conference": "BE"
   },
   "Drake": {
     "KenPom Ovr.": [
@@ -1184,21 +1212,9 @@
       255,
       "36.2"
     ],
-    "A/FGM": [
-      95,
-      "55.2"
-    ],
     "Off 3P%": [
       74,
       "35.6"
-    ],
-    "Off Avg. Poss. Length": [
-      364,
-      "21.9"
-    ],
-    "Def Avg. Poss. Length": [
-      301,
-      "18.1"
     ],
     "Tempo": [
       364,
@@ -1208,17 +1224,17 @@
       162,
       "77.3\""
     ],
-    "Minutes Continuity": [
-      339,
-      "4.1%"
+    "A/FGM": [
+      95,
+      "55.2"
     ],
-    "D-1 Experience": [
-      358,
-      "0.32 yrs"
+    "Off Avg. Poss. Length": [
+      364,
+      "21.9"
     ],
-    "Bench Minutes": [
-      315,
-      "24.5%"
+    "Def Avg. Poss. Length": [
+      301,
+      "18.1"
     ],
     "SOS Overall": [
       127,
@@ -1227,7 +1243,21 @@
     "SOS Non-conference": [
       252,
       "-2.74"
-    ]
+    ],
+    "D-1 Experience": [
+      358,
+      "0.32 yrs"
+    ],
+    "Minutes Continuity": [
+      339,
+      "4.1%"
+    ],
+    "Bench Minutes": [
+      315,
+      "24.5%"
+    ],
+    "seed": 11,
+    "conference": "MVC"
   },
   "Duke": {
     "KenPom Ovr.": [
@@ -1266,21 +1296,9 @@
       61,
       "44.6"
     ],
-    "A/FGM": [
-      44,
-      "58.5"
-    ],
     "Off 3P%": [
       7,
       "38.6"
-    ],
-    "Off Avg. Poss. Length": [
-      112,
-      "17.1"
-    ],
-    "Def Avg. Poss. Length": [
-      362,
-      "19.0"
     ],
     "Tempo": [
       269,
@@ -1290,17 +1308,17 @@
       1,
       "79.8\""
     ],
-    "Minutes Continuity": [
-      268,
-      "20.9%"
+    "A/FGM": [
+      44,
+      "58.5"
     ],
-    "D-1 Experience": [
-      128,
-      "1.96 yrs"
+    "Off Avg. Poss. Length": [
+      112,
+      "17.1"
     ],
-    "Bench Minutes": [
-      209,
-      "30.3%"
+    "Def Avg. Poss. Length": [
+      362,
+      "19.0"
     ],
     "SOS Overall": [
       51,
@@ -1309,7 +1327,21 @@
     "SOS Non-conference": [
       21,
       "+9.46"
-    ]
+    ],
+    "D-1 Experience": [
+      128,
+      "1.96 yrs"
+    ],
+    "Minutes Continuity": [
+      268,
+      "20.9%"
+    ],
+    "Bench Minutes": [
+      209,
+      "30.3%"
+    ],
+    "seed": 1,
+    "conference": "ACC"
   },
   "Florida": {
     "KenPom Ovr.": [
@@ -1348,21 +1380,9 @@
       74,
       "43.7"
     ],
-    "A/FGM": [
-      152,
-      "52.4"
-    ],
     "Off 3P%": [
       82,
       "35.6"
-    ],
-    "Off Avg. Poss. Length": [
-      41,
-      "16.3"
-    ],
-    "Def Avg. Poss. Length": [
-      194,
-      "17.7"
     ],
     "Tempo": [
       57,
@@ -1372,17 +1392,17 @@
       77,
       "78.0\""
     ],
-    "Minutes Continuity": [
-      42,
-      "54.1%"
+    "A/FGM": [
+      152,
+      "52.4"
     ],
-    "D-1 Experience": [
-      60,
-      "2.44 yrs"
+    "Off Avg. Poss. Length": [
+      41,
+      "16.3"
     ],
-    "Bench Minutes": [
-      251,
-      "29.0%"
+    "Def Avg. Poss. Length": [
+      194,
+      "17.7"
     ],
     "SOS Overall": [
       12,
@@ -1391,7 +1411,21 @@
     "SOS Non-conference": [
       237,
       "-2.20"
-    ]
+    ],
+    "D-1 Experience": [
+      60,
+      "2.44 yrs"
+    ],
+    "Minutes Continuity": [
+      42,
+      "54.1%"
+    ],
+    "Bench Minutes": [
+      251,
+      "29.0%"
+    ],
+    "seed": 1,
+    "conference": "SEC"
   },
   "Georgia": {
     "KenPom Ovr.": [
@@ -1430,21 +1464,9 @@
       227,
       "37.0"
     ],
-    "A/FGM": [
-      285,
-      "47.8"
-    ],
     "Off 3P%": [
       218,
       "32.9"
-    ],
-    "Off Avg. Poss. Length": [
-      196,
-      "17.8"
-    ],
-    "Def Avg. Poss. Length": [
-      121,
-      "17.4"
     ],
     "Tempo": [
       219,
@@ -1454,17 +1476,17 @@
       9,
       "78.9\""
     ],
-    "Minutes Continuity": [
-      218,
-      "28.7%"
+    "A/FGM": [
+      285,
+      "47.8"
     ],
-    "D-1 Experience": [
-      152,
-      "1.86 yrs"
+    "Off Avg. Poss. Length": [
+      196,
+      "17.8"
     ],
-    "Bench Minutes": [
-      167,
-      "31.7%"
+    "Def Avg. Poss. Length": [
+      121,
+      "17.4"
     ],
     "SOS Overall": [
       25,
@@ -1473,7 +1495,21 @@
     "SOS Non-conference": [
       328,
       "-5.76"
-    ]
+    ],
+    "D-1 Experience": [
+      152,
+      "1.86 yrs"
+    ],
+    "Minutes Continuity": [
+      218,
+      "28.7%"
+    ],
+    "Bench Minutes": [
+      167,
+      "31.7%"
+    ],
+    "seed": 9,
+    "conference": "SEC"
   },
   "Gonzaga": {
     "KenPom Ovr.": [
@@ -1512,21 +1548,9 @@
       312,
       "33.6"
     ],
-    "A/FGM": [
-      8,
-      "62.4"
-    ],
     "Off 3P%": [
       91,
       "35.4"
-    ],
-    "Off Avg. Poss. Length": [
-      17,
-      "15.7"
-    ],
-    "Def Avg. Poss. Length": [
-      335,
-      "18.4"
     ],
     "Tempo": [
       42,
@@ -1536,17 +1560,17 @@
       159,
       "77.3\""
     ],
-    "Minutes Continuity": [
-      4,
-      "69.6%"
+    "A/FGM": [
+      8,
+      "62.4"
     ],
-    "D-1 Experience": [
-      10,
-      "2.99 yrs"
+    "Off Avg. Poss. Length": [
+      17,
+      "15.7"
     ],
-    "Bench Minutes": [
-      165,
-      "31.8%"
+    "Def Avg. Poss. Length": [
+      335,
+      "18.4"
     ],
     "SOS Overall": [
       70,
@@ -1555,7 +1579,21 @@
     "SOS Non-conference": [
       23,
       "+8.99"
-    ]
+    ],
+    "D-1 Experience": [
+      10,
+      "2.99 yrs"
+    ],
+    "Minutes Continuity": [
+      4,
+      "69.6%"
+    ],
+    "Bench Minutes": [
+      165,
+      "31.8%"
+    ],
+    "seed": 8,
+    "conference": "WCC"
   },
   "Grand Canyon": {
     "KenPom Ovr.": [
@@ -1594,21 +1632,9 @@
       307,
       "33.8"
     ],
-    "A/FGM": [
-      175,
-      "51.6"
-    ],
     "Off 3P%": [
       307,
       "31.3"
-    ],
-    "Off Avg. Poss. Length": [
-      39,
-      "16.3"
-    ],
-    "Def Avg. Poss. Length": [
-      70,
-      "17.2"
     ],
     "Tempo": [
       19,
@@ -1618,17 +1644,17 @@
       50,
       "78.1\""
     ],
-    "Minutes Continuity": [
-      28,
-      "58.2%"
+    "A/FGM": [
+      175,
+      "51.6"
     ],
-    "D-1 Experience": [
-      44,
-      "2.62 yrs"
+    "Off Avg. Poss. Length": [
+      39,
+      "16.3"
     ],
-    "Bench Minutes": [
-      204,
-      "30.4%"
+    "Def Avg. Poss. Length": [
+      70,
+      "17.2"
     ],
     "SOS Overall": [
       232,
@@ -1637,7 +1663,21 @@
     "SOS Non-conference": [
       277,
       "-3.52"
-    ]
+    ],
+    "D-1 Experience": [
+      44,
+      "2.62 yrs"
+    ],
+    "Minutes Continuity": [
+      28,
+      "58.2%"
+    ],
+    "Bench Minutes": [
+      204,
+      "30.4%"
+    ],
+    "seed": 13,
+    "conference": "MWC"
   },
   "High Point": {
     "KenPom Ovr.": [
@@ -1676,21 +1716,9 @@
       168,
       "39.4"
     ],
-    "A/FGM": [
-      321,
-      "45.2"
-    ],
     "Off 3P%": [
       45,
       "36.6"
-    ],
-    "Off Avg. Poss. Length": [
-      168,
-      "17.6"
-    ],
-    "Def Avg. Poss. Length": [
-      300,
-      "18.1"
     ],
     "Tempo": [
       230,
@@ -1700,17 +1728,17 @@
       203,
       "77.0\""
     ],
-    "Minutes Continuity": [
-      49,
-      "52.9%"
+    "A/FGM": [
+      321,
+      "45.2"
     ],
-    "D-1 Experience": [
-      67,
-      "2.38 yrs"
+    "Off Avg. Poss. Length": [
+      168,
+      "17.6"
     ],
-    "Bench Minutes": [
-      52,
-      "37.5%"
+    "Def Avg. Poss. Length": [
+      300,
+      "18.1"
     ],
     "SOS Overall": [
       288,
@@ -1719,7 +1747,21 @@
     "SOS Non-conference": [
       326,
       "-5.75"
-    ]
+    ],
+    "D-1 Experience": [
+      67,
+      "2.38 yrs"
+    ],
+    "Minutes Continuity": [
+      49,
+      "52.9%"
+    ],
+    "Bench Minutes": [
+      52,
+      "37.5%"
+    ],
+    "seed": 13,
+    "conference": "Big South"
   },
   "Houston": {
     "KenPom Ovr.": [
@@ -1758,21 +1800,9 @@
       287,
       "34.7"
     ],
-    "A/FGM": [
-      325,
-      "45.1"
-    ],
     "Off 3P%": [
       3,
       "39.4"
-    ],
-    "Off Avg. Poss. Length": [
-      354,
-      "19.7"
-    ],
-    "Def Avg. Poss. Length": [
-      349,
-      "18.6"
     ],
     "Tempo": [
       359,
@@ -1782,17 +1812,17 @@
       243,
       "76.8\""
     ],
-    "Minutes Continuity": [
-      8,
-      "67.5%"
+    "A/FGM": [
+      325,
+      "45.1"
     ],
-    "D-1 Experience": [
-      36,
-      "2.67 yrs"
+    "Off Avg. Poss. Length": [
+      354,
+      "19.7"
     ],
-    "Bench Minutes": [
-      244,
-      "29.2%"
+    "Def Avg. Poss. Length": [
+      349,
+      "18.6"
     ],
     "SOS Overall": [
       15,
@@ -1801,7 +1831,21 @@
     "SOS Non-conference": [
       100,
       "+2.62"
-    ]
+    ],
+    "D-1 Experience": [
+      36,
+      "2.67 yrs"
+    ],
+    "Minutes Continuity": [
+      8,
+      "67.5%"
+    ],
+    "Bench Minutes": [
+      244,
+      "29.2%"
+    ],
+    "seed": 1,
+    "conference": "B12"
   },
   "Illinois": {
     "KenPom Ovr.": [
@@ -1840,21 +1884,9 @@
       29,
       "47.2"
     ],
-    "A/FGM": [
-      172,
-      "51.7"
-    ],
     "Off 3P%": [
       305,
       "31.3"
-    ],
-    "Off Avg. Poss. Length": [
-      92,
-      "17.0"
-    ],
-    "Def Avg. Poss. Length": [
-      7,
-      "16.4"
     ],
     "Tempo": [
       17,
@@ -1864,17 +1896,17 @@
       13,
       "78.9\""
     ],
-    "Minutes Continuity": [
-      345,
-      "2.8%"
+    "A/FGM": [
+      172,
+      "51.7"
     ],
-    "D-1 Experience": [
-      300,
-      "1.08 yrs"
+    "Off Avg. Poss. Length": [
+      92,
+      "17.0"
     ],
-    "Bench Minutes": [
-      195,
-      "30.6%"
+    "Def Avg. Poss. Length": [
+      7,
+      "16.4"
     ],
     "SOS Overall": [
       4,
@@ -1883,7 +1915,21 @@
     "SOS Non-conference": [
       82,
       "+3.60"
-    ]
+    ],
+    "D-1 Experience": [
+      300,
+      "1.08 yrs"
+    ],
+    "Minutes Continuity": [
+      345,
+      "2.8%"
+    ],
+    "Bench Minutes": [
+      195,
+      "30.6%"
+    ],
+    "seed": 6,
+    "conference": "B1G"
   },
   "Iowa St": {
     "KenPom Ovr.": [
@@ -1922,21 +1968,9 @@
       238,
       "36.8"
     ],
-    "A/FGM": [
-      124,
-      "53.4"
-    ],
     "Off 3P%": [
       68,
       "35.8"
-    ],
-    "Off Avg. Poss. Length": [
-      55,
-      "16.5"
-    ],
-    "Def Avg. Poss. Length": [
-      297,
-      "18.1"
     ],
     "Tempo": [
       109,
@@ -1946,17 +1980,17 @@
       65,
       "78.0\""
     ],
-    "Minutes Continuity": [
-      39,
-      "54.9%"
+    "A/FGM": [
+      124,
+      "53.4"
     ],
-    "D-1 Experience": [
-      25,
-      "2.80 yrs"
+    "Off Avg. Poss. Length": [
+      55,
+      "16.5"
     ],
-    "Bench Minutes": [
-      215,
-      "30.1%"
+    "Def Avg. Poss. Length": [
+      297,
+      "18.1"
     ],
     "SOS Overall": [
       38,
@@ -1965,7 +1999,21 @@
     "SOS Non-conference": [
       204,
       "-1.14"
-    ]
+    ],
+    "D-1 Experience": [
+      25,
+      "2.80 yrs"
+    ],
+    "Minutes Continuity": [
+      39,
+      "54.9%"
+    ],
+    "Bench Minutes": [
+      215,
+      "30.1%"
+    ],
+    "seed": 3,
+    "conference": "B12"
   },
   "Kansas": {
     "KenPom Ovr.": [
@@ -2004,21 +2052,9 @@
       299,
       "34.1"
     ],
-    "A/FGM": [
-      16,
-      "61.2"
-    ],
     "Off 3P%": [
       88,
       "35.4"
-    ],
-    "Off Avg. Poss. Length": [
-      59,
-      "16.6"
-    ],
-    "Def Avg. Poss. Length": [
-      272,
-      "18.0"
     ],
     "Tempo": [
       114,
@@ -2028,17 +2064,17 @@
       74,
       "78.0\""
     ],
-    "Minutes Continuity": [
-      102,
-      "44.6%"
+    "A/FGM": [
+      16,
+      "61.2"
     ],
-    "D-1 Experience": [
-      1,
-      "3.64 yrs"
+    "Off Avg. Poss. Length": [
+      59,
+      "16.6"
     ],
-    "Bench Minutes": [
-      267,
-      "28.4%"
+    "Def Avg. Poss. Length": [
+      272,
+      "18.0"
     ],
     "SOS Overall": [
       13,
@@ -2047,7 +2083,21 @@
     "SOS Non-conference": [
       24,
       "+8.86"
-    ]
+    ],
+    "D-1 Experience": [
+      1,
+      "3.64 yrs"
+    ],
+    "Minutes Continuity": [
+      102,
+      "44.6%"
+    ],
+    "Bench Minutes": [
+      267,
+      "28.4%"
+    ],
+    "seed": 7,
+    "conference": "B12"
   },
   "Kentucky": {
     "KenPom Ovr.": [
@@ -2086,21 +2136,9 @@
       128,
       "41.2"
     ],
-    "A/FGM": [
-      59,
-      "57.0"
-    ],
     "Off 3P%": [
       24,
       "37.5"
-    ],
-    "Off Avg. Poss. Length": [
-      42,
-      "16.3"
-    ],
-    "Def Avg. Poss. Length": [
-      44,
-      "17.0"
     ],
     "Tempo": [
       30,
@@ -2110,17 +2148,17 @@
       21,
       "78.6\""
     ],
-    "Minutes Continuity": [
-      355,
-      "0.0%"
+    "A/FGM": [
+      59,
+      "57.0"
     ],
-    "D-1 Experience": [
-      7,
-      "3.06 yrs"
+    "Off Avg. Poss. Length": [
+      42,
+      "16.3"
     ],
-    "Bench Minutes": [
-      27,
-      "39.1%"
+    "Def Avg. Poss. Length": [
+      44,
+      "17.0"
     ],
     "SOS Overall": [
       3,
@@ -2129,7 +2167,21 @@
     "SOS Non-conference": [
       80,
       "+3.64"
-    ]
+    ],
+    "D-1 Experience": [
+      7,
+      "3.06 yrs"
+    ],
+    "Minutes Continuity": [
+      355,
+      "0.0%"
+    ],
+    "Bench Minutes": [
+      27,
+      "39.1%"
+    ],
+    "seed": 3,
+    "conference": "SEC"
   },
   "Liberty": {
     "KenPom Ovr.": [
@@ -2168,21 +2220,9 @@
       18,
       "48.2"
     ],
-    "A/FGM": [
-      14,
-      "61.4"
-    ],
     "Off 3P%": [
       6,
       "38.7"
-    ],
-    "Off Avg. Poss. Length": [
-      294,
-      "18.6"
-    ],
-    "Def Avg. Poss. Length": [
-      99,
-      "17.3"
     ],
     "Tempo": [
       285,
@@ -2192,17 +2232,17 @@
       347,
       "75.7\""
     ],
-    "Minutes Continuity": [
-      51,
-      "52.2%"
+    "A/FGM": [
+      14,
+      "61.4"
     ],
-    "D-1 Experience": [
-      144,
-      "1.89 yrs"
+    "Off Avg. Poss. Length": [
+      294,
+      "18.6"
     ],
-    "Bench Minutes": [
-      349,
-      "21.4%"
+    "Def Avg. Poss. Length": [
+      99,
+      "17.3"
     ],
     "SOS Overall": [
       130,
@@ -2211,7 +2251,21 @@
     "SOS Non-conference": [
       254,
       "-2.87"
-    ]
+    ],
+    "D-1 Experience": [
+      144,
+      "1.89 yrs"
+    ],
+    "Minutes Continuity": [
+      51,
+      "52.2%"
+    ],
+    "Bench Minutes": [
+      349,
+      "21.4%"
+    ],
+    "seed": 12,
+    "conference": "CUSA"
   },
   "Lipscomb": {
     "KenPom Ovr.": [
@@ -2250,21 +2304,9 @@
       24,
       "47.6"
     ],
-    "A/FGM": [
-      97,
-      "55.1"
-    ],
     "Off 3P%": [
       49,
       "36.4"
-    ],
-    "Off Avg. Poss. Length": [
-      167,
-      "17.6"
-    ],
-    "Def Avg. Poss. Length": [
-      246,
-      "17.9"
     ],
     "Tempo": [
       253,
@@ -2274,17 +2316,17 @@
       264,
       "76.7\""
     ],
-    "Minutes Continuity": [
-      128,
-      "41.5%"
+    "A/FGM": [
+      97,
+      "55.1"
     ],
-    "D-1 Experience": [
-      31,
-      "2.68 yrs"
+    "Off Avg. Poss. Length": [
+      167,
+      "17.6"
     ],
-    "Bench Minutes": [
-      335,
-      "22.9%"
+    "Def Avg. Poss. Length": [
+      246,
+      "17.9"
     ],
     "SOS Overall": [
       276,
@@ -2293,7 +2335,21 @@
     "SOS Non-conference": [
       64,
       "+4.22"
-    ]
+    ],
+    "D-1 Experience": [
+      31,
+      "2.68 yrs"
+    ],
+    "Minutes Continuity": [
+      128,
+      "41.5%"
+    ],
+    "Bench Minutes": [
+      335,
+      "22.9%"
+    ],
+    "seed": 14,
+    "conference": "ASUN"
   },
   "Louisville": {
     "KenPom Ovr.": [
@@ -2332,21 +2388,9 @@
       20,
       "47.8"
     ],
-    "A/FGM": [
-      193,
-      "51.3"
-    ],
     "Off 3P%": [
       223,
       "32.8"
-    ],
-    "Off Avg. Poss. Length": [
-      89,
-      "17.0"
-    ],
-    "Def Avg. Poss. Length": [
-      225,
-      "17.8"
     ],
     "Tempo": [
       90,
@@ -2356,17 +2400,17 @@
       68,
       "78.0\""
     ],
-    "Minutes Continuity": [
-      352,
-      "0.1%"
+    "A/FGM": [
+      193,
+      "51.3"
     ],
-    "D-1 Experience": [
-      5,
-      "3.18 yrs"
+    "Off Avg. Poss. Length": [
+      89,
+      "17.0"
     ],
-    "Bench Minutes": [
-      331,
-      "23.4%"
+    "Def Avg. Poss. Length": [
+      225,
+      "17.8"
     ],
     "SOS Overall": [
       56,
@@ -2375,7 +2419,21 @@
     "SOS Non-conference": [
       38,
       "+7.18"
-    ]
+    ],
+    "D-1 Experience": [
+      5,
+      "3.18 yrs"
+    ],
+    "Minutes Continuity": [
+      352,
+      "0.1%"
+    ],
+    "Bench Minutes": [
+      331,
+      "23.4%"
+    ],
+    "seed": 8,
+    "conference": "ACC"
   },
   "Marquette": {
     "KenPom Ovr.": [
@@ -2414,21 +2472,9 @@
       39,
       "46.4"
     ],
-    "A/FGM": [
-      243,
-      "49.5"
-    ],
     "Off 3P%": [
       237,
       "32.6"
-    ],
-    "Off Avg. Poss. Length": [
-      24,
-      "16.0"
-    ],
-    "Def Avg. Poss. Length": [
-      359,
-      "19.0"
     ],
     "Tempo": [
       166,
@@ -2438,17 +2484,17 @@
       36,
       "78.3\""
     ],
-    "Minutes Continuity": [
-      12,
-      "65.8%"
+    "A/FGM": [
+      243,
+      "49.5"
     ],
-    "D-1 Experience": [
-      115,
-      "2.08 yrs"
+    "Off Avg. Poss. Length": [
+      24,
+      "16.0"
     ],
-    "Bench Minutes": [
-      300,
-      "25.9%"
+    "Def Avg. Poss. Length": [
+      359,
+      "19.0"
     ],
     "SOS Overall": [
       41,
@@ -2457,7 +2503,21 @@
     "SOS Non-conference": [
       27,
       "+8.64"
-    ]
+    ],
+    "D-1 Experience": [
+      115,
+      "2.08 yrs"
+    ],
+    "Minutes Continuity": [
+      12,
+      "65.8%"
+    ],
+    "Bench Minutes": [
+      300,
+      "25.9%"
+    ],
+    "seed": 7,
+    "conference": "BE"
   },
   "Maryland": {
     "KenPom Ovr.": [
@@ -2496,21 +2556,9 @@
       272,
       "35.3"
     ],
-    "A/FGM": [
-      253,
-      "49.1"
-    ],
     "Off 3P%": [
       26,
       "37.4"
-    ],
-    "Off Avg. Poss. Length": [
-      34,
-      "16.2"
-    ],
-    "Def Avg. Poss. Length": [
-      287,
-      "18.0"
     ],
     "Tempo": [
       66,
@@ -2520,17 +2568,17 @@
       129,
       "77.5\""
     ],
-    "Minutes Continuity": [
-      234,
-      "26.2%"
+    "A/FGM": [
+      253,
+      "49.1"
     ],
-    "D-1 Experience": [
-      96,
-      "2.16 yrs"
+    "Off Avg. Poss. Length": [
+      34,
+      "16.2"
     ],
-    "Bench Minutes": [
-      322,
-      "24.2%"
+    "Def Avg. Poss. Length": [
+      287,
+      "18.0"
     ],
     "SOS Overall": [
       46,
@@ -2539,7 +2587,21 @@
     "SOS Non-conference": [
       359,
       "-10.46"
-    ]
+    ],
+    "D-1 Experience": [
+      96,
+      "2.16 yrs"
+    ],
+    "Minutes Continuity": [
+      234,
+      "26.2%"
+    ],
+    "Bench Minutes": [
+      322,
+      "24.2%"
+    ],
+    "seed": 4,
+    "conference": "B1G"
   },
   "McNeese": {
     "KenPom Ovr.": [
@@ -2578,21 +2640,9 @@
       244,
       "36.6"
     ],
-    "A/FGM": [
-      230,
-      "49.9"
-    ],
     "Off 3P%": [
       103,
       "35.2"
-    ],
-    "Off Avg. Poss. Length": [
-      166,
-      "17.6"
-    ],
-    "Def Avg. Poss. Length": [
-      346,
-      "18.6"
     ],
     "Tempo": [
       275,
@@ -2602,17 +2652,17 @@
       201,
       "77.1\""
     ],
-    "Minutes Continuity": [
-      130,
-      "41.2%"
+    "A/FGM": [
+      230,
+      "49.9"
     ],
-    "D-1 Experience": [
-      27,
-      "2.77 yrs"
+    "Off Avg. Poss. Length": [
+      166,
+      "17.6"
     ],
-    "Bench Minutes": [
-      93,
-      "34.4%"
+    "Def Avg. Poss. Length": [
+      346,
+      "18.6"
     ],
     "SOS Overall": [
       162,
@@ -2621,7 +2671,21 @@
     "SOS Non-conference": [
       25,
       "+8.79"
-    ]
+    ],
+    "D-1 Experience": [
+      27,
+      "2.77 yrs"
+    ],
+    "Minutes Continuity": [
+      130,
+      "41.2%"
+    ],
+    "Bench Minutes": [
+      93,
+      "34.4%"
+    ],
+    "seed": 12,
+    "conference": "Southland"
   },
   "Memphis": {
     "KenPom Ovr.": [
@@ -2660,21 +2724,9 @@
       317,
       "33.3"
     ],
-    "A/FGM": [
-      182,
-      "51.5"
-    ],
     "Off 3P%": [
       22,
       "37.6"
-    ],
-    "Off Avg. Poss. Length": [
-      27,
-      "16.1"
-    ],
-    "Def Avg. Poss. Length": [
-      205,
-      "17.7"
     ],
     "Tempo": [
       27,
@@ -2684,17 +2736,17 @@
       295,
       "76.5\""
     ],
-    "Minutes Continuity": [
-      314,
-      "11.0%"
+    "A/FGM": [
+      182,
+      "51.5"
     ],
-    "D-1 Experience": [
-      6,
-      "3.11 yrs"
+    "Off Avg. Poss. Length": [
+      27,
+      "16.1"
     ],
-    "Bench Minutes": [
-      327,
-      "24.1%"
+    "Def Avg. Poss. Length": [
+      205,
+      "17.7"
     ],
     "SOS Overall": [
       81,
@@ -2703,7 +2755,21 @@
     "SOS Non-conference": [
       4,
       "+15.73"
-    ]
+    ],
+    "D-1 Experience": [
+      6,
+      "3.11 yrs"
+    ],
+    "Minutes Continuity": [
+      314,
+      "11.0%"
+    ],
+    "Bench Minutes": [
+      327,
+      "24.1%"
+    ],
+    "seed": 5,
+    "conference": "AAC"
   },
   "Michigan": {
     "KenPom Ovr.": [
@@ -2742,21 +2808,9 @@
       106,
       "42.0"
     ],
-    "A/FGM": [
-      49,
-      "58.0"
-    ],
     "Off 3P%": [
       205,
       "33.2"
-    ],
-    "Off Avg. Poss. Length": [
-      22,
-      "15.9"
-    ],
-    "Def Avg. Poss. Length": [
-      277,
-      "18.0"
     ],
     "Tempo": [
       54,
@@ -2766,17 +2820,17 @@
       5,
       "79.1\""
     ],
-    "Minutes Continuity": [
-      265,
-      "21.4%"
+    "A/FGM": [
+      49,
+      "58.0"
     ],
-    "D-1 Experience": [
-      78,
-      "2.27 yrs"
+    "Off Avg. Poss. Length": [
+      22,
+      "15.9"
     ],
-    "Bench Minutes": [
-      250,
-      "29.0%"
+    "Def Avg. Poss. Length": [
+      277,
+      "18.0"
     ],
     "SOS Overall": [
       10,
@@ -2785,7 +2839,21 @@
     "SOS Non-conference": [
       72,
       "+3.95"
-    ]
+    ],
+    "D-1 Experience": [
+      78,
+      "2.27 yrs"
+    ],
+    "Minutes Continuity": [
+      265,
+      "21.4%"
+    ],
+    "Bench Minutes": [
+      250,
+      "29.0%"
+    ],
+    "seed": 5,
+    "conference": "B1G"
   },
   "Michigan St": {
     "KenPom Ovr.": [
@@ -2824,21 +2892,9 @@
       327,
       "32.9"
     ],
-    "A/FGM": [
-      18,
-      "61.0"
-    ],
     "Off 3P%": [
       319,
       "31.1"
-    ],
-    "Off Avg. Poss. Length": [
-      151,
-      "17.4"
-    ],
-    "Def Avg. Poss. Length": [
-      152,
-      "17.5"
     ],
     "Tempo": [
       183,
@@ -2848,17 +2904,17 @@
       84,
       "77.8\""
     ],
-    "Minutes Continuity": [
-      81,
-      "46.8%"
+    "A/FGM": [
+      18,
+      "61.0"
     ],
-    "D-1 Experience": [
-      214,
-      "1.61 yrs"
+    "Off Avg. Poss. Length": [
+      151,
+      "17.4"
     ],
-    "Bench Minutes": [
-      20,
-      "40.0%"
+    "Def Avg. Poss. Length": [
+      152,
+      "17.5"
     ],
     "SOS Overall": [
       21,
@@ -2867,7 +2923,21 @@
     "SOS Non-conference": [
       159,
       "+0.27"
-    ]
+    ],
+    "D-1 Experience": [
+      214,
+      "1.61 yrs"
+    ],
+    "Minutes Continuity": [
+      81,
+      "46.8%"
+    ],
+    "Bench Minutes": [
+      20,
+      "40.0%"
+    ],
+    "seed": 2,
+    "conference": "B1G"
   },
   "Mississippi": {
     "KenPom Ovr.": [
@@ -2906,21 +2976,9 @@
       155,
       "40.0"
     ],
-    "A/FGM": [
-      132,
-      "53.1"
-    ],
     "Off 3P%": [
       125,
       "34.8"
-    ],
-    "Off Avg. Poss. Length": [
-      101,
-      "17.1"
-    ],
-    "Def Avg. Poss. Length": [
-      185,
-      "17.6"
     ],
     "Tempo": [
       143,
@@ -2930,17 +2988,17 @@
       326,
       "76.2\""
     ],
-    "Minutes Continuity": [
-      134,
-      "40.8%"
+    "A/FGM": [
+      132,
+      "53.1"
     ],
-    "D-1 Experience": [
-      3,
-      "3.48 yrs"
+    "Off Avg. Poss. Length": [
+      101,
+      "17.1"
     ],
-    "Bench Minutes": [
-      217,
-      "30.0%"
+    "Def Avg. Poss. Length": [
+      185,
+      "17.6"
     ],
     "SOS Overall": [
       5,
@@ -2949,7 +3007,21 @@
     "SOS Non-conference": [
       194,
       "-0.55"
-    ]
+    ],
+    "D-1 Experience": [
+      3,
+      "3.48 yrs"
+    ],
+    "Minutes Continuity": [
+      134,
+      "40.8%"
+    ],
+    "Bench Minutes": [
+      217,
+      "30.0%"
+    ],
+    "seed": 6,
+    "conference": "SEC"
   },
   "Mississippi St": {
     "KenPom Ovr.": [
@@ -2988,21 +3060,9 @@
       91,
       "42.7"
     ],
-    "A/FGM": [
-      131,
-      "53.2"
-    ],
     "Off 3P%": [
       295,
       "31.4"
-    ],
-    "Off Avg. Poss. Length": [
-      52,
-      "16.5"
-    ],
-    "Def Avg. Poss. Length": [
-      227,
-      "17.8"
     ],
     "Tempo": [
       127,
@@ -3012,17 +3072,17 @@
       154,
       "77.3\""
     ],
-    "Minutes Continuity": [
-      127,
-      "41.5%"
+    "A/FGM": [
+      131,
+      "53.2"
     ],
-    "D-1 Experience": [
-      75,
-      "2.28 yrs"
+    "Off Avg. Poss. Length": [
+      52,
+      "16.5"
     ],
-    "Bench Minutes": [
-      168,
-      "31.7%"
+    "Def Avg. Poss. Length": [
+      227,
+      "17.8"
     ],
     "SOS Overall": [
       19,
@@ -3031,7 +3091,21 @@
     "SOS Non-conference": [
       147,
       "+0.65"
-    ]
+    ],
+    "D-1 Experience": [
+      75,
+      "2.28 yrs"
+    ],
+    "Minutes Continuity": [
+      127,
+      "41.5%"
+    ],
+    "Bench Minutes": [
+      168,
+      "31.7%"
+    ],
+    "seed": 8,
+    "conference": "SEC"
   },
   "Missouri": {
     "KenPom Ovr.": [
@@ -3070,21 +3144,9 @@
       125,
       "41.4"
     ],
-    "A/FGM": [
-      250,
-      "49.3"
-    ],
     "Off 3P%": [
       40,
       "36.7"
-    ],
-    "Off Avg. Poss. Length": [
-      53,
-      "16.5"
-    ],
-    "Def Avg. Poss. Length": [
-      204,
-      "17.7"
     ],
     "Tempo": [
       113,
@@ -3094,17 +3156,17 @@
       42,
       "78.3\""
     ],
-    "Minutes Continuity": [
-      225,
-      "28.0%"
+    "A/FGM": [
+      250,
+      "49.3"
     ],
-    "D-1 Experience": [
-      33,
-      "2.68 yrs"
+    "Off Avg. Poss. Length": [
+      53,
+      "16.5"
     ],
-    "Bench Minutes": [
-      50,
-      "37.5%"
+    "Def Avg. Poss. Length": [
+      204,
+      "17.7"
     ],
     "SOS Overall": [
       33,
@@ -3113,7 +3175,21 @@
     "SOS Non-conference": [
       355,
       "-9.28"
-    ]
+    ],
+    "D-1 Experience": [
+      33,
+      "2.68 yrs"
+    ],
+    "Minutes Continuity": [
+      225,
+      "28.0%"
+    ],
+    "Bench Minutes": [
+      50,
+      "37.5%"
+    ],
+    "seed": 6,
+    "conference": "B1G"
   },
   "Montana": {
     "KenPom Ovr.": [
@@ -3152,21 +3228,9 @@
       235,
       "36.8"
     ],
-    "A/FGM": [
-      248,
-      "49.4"
-    ],
     "Off 3P%": [
       54,
       "36.3"
-    ],
-    "Off Avg. Poss. Length": [
-      182,
-      "17.7"
-    ],
-    "Def Avg. Poss. Length": [
-      250,
-      "17.9"
     ],
     "Tempo": [
       193,
@@ -3176,17 +3240,17 @@
       286,
       "76.5\""
     ],
-    "Minutes Continuity": [
-      238,
-      "25.7%"
+    "A/FGM": [
+      248,
+      "49.4"
     ],
-    "D-1 Experience": [
-      46,
-      "2.59 yrs"
+    "Off Avg. Poss. Length": [
+      182,
+      "17.7"
     ],
-    "Bench Minutes": [
-      227,
-      "29.7%"
+    "Def Avg. Poss. Length": [
+      250,
+      "17.9"
     ],
     "SOS Overall": [
       187,
@@ -3195,7 +3259,21 @@
     "SOS Non-conference": [
       28,
       "+8.50"
-    ]
+    ],
+    "D-1 Experience": [
+      46,
+      "2.59 yrs"
+    ],
+    "Minutes Continuity": [
+      238,
+      "25.7%"
+    ],
+    "Bench Minutes": [
+      227,
+      "29.7%"
+    ],
+    "seed": 14,
+    "conference": "B1G"
   },
   "Mount St Marys": {
     "KenPom Ovr.": [
@@ -3234,21 +3312,9 @@
       130,
       "41.1"
     ],
-    "A/FGM": [
-      26,
-      "60.3"
-    ],
     "Off 3P%": [
       139,
       "34.5"
-    ],
-    "Off Avg. Poss. Length": [
-      183,
-      "17.7"
-    ],
-    "Def Avg. Poss. Length": [
-      256,
-      "17.9"
     ],
     "Tempo": [
       160,
@@ -3258,17 +3324,17 @@
       233,
       "76.9\""
     ],
-    "Minutes Continuity": [
-      174,
-      "34.5%"
+    "A/FGM": [
+      26,
+      "60.3"
     ],
-    "D-1 Experience": [
-      240,
-      "1.41 yrs"
+    "Off Avg. Poss. Length": [
+      183,
+      "17.7"
     ],
-    "Bench Minutes": [
-      269,
-      "28.1%"
+    "Def Avg. Poss. Length": [
+      256,
+      "17.9"
     ],
     "SOS Overall": [
       313,
@@ -3277,7 +3343,21 @@
     "SOS Non-conference": [
       213,
       "-1.32"
-    ]
+    ],
+    "D-1 Experience": [
+      240,
+      "1.41 yrs"
+    ],
+    "Minutes Continuity": [
+      174,
+      "34.5%"
+    ],
+    "Bench Minutes": [
+      269,
+      "28.1%"
+    ],
+    "seed": 16,
+    "conference": "MAAC"
   },
   "Nebraska Omaha": {
     "KenPom Ovr.": [
@@ -3316,21 +3396,9 @@
       173,
       "39.1"
     ],
-    "A/FGM": [
-      238,
-      "49.7"
-    ],
     "Off 3P%": [
       75,
       "35.6"
-    ],
-    "Off Avg. Poss. Length": [
-      154,
-      "17.5"
-    ],
-    "Def Avg. Poss. Length": [
-      86,
-      "17.3"
     ],
     "Tempo": [
       163,
@@ -3340,17 +3408,17 @@
       144,
       "77.4\""
     ],
-    "Minutes Continuity": [
-      91,
-      "46.1%"
+    "A/FGM": [
+      238,
+      "49.7"
     ],
-    "D-1 Experience": [
-      168,
-      "1.79 yrs"
+    "Off Avg. Poss. Length": [
+      154,
+      "17.5"
     ],
-    "Bench Minutes": [
-      178,
-      "31.1%"
+    "Def Avg. Poss. Length": [
+      86,
+      "17.3"
     ],
     "SOS Overall": [
       194,
@@ -3359,7 +3427,21 @@
     "SOS Non-conference": [
       155,
       "+0.38"
-    ]
+    ],
+    "D-1 Experience": [
+      168,
+      "1.79 yrs"
+    ],
+    "Minutes Continuity": [
+      91,
+      "46.1%"
+    ],
+    "Bench Minutes": [
+      178,
+      "31.1%"
+    ],
+    "seed": 15,
+    "conference": "Summit"
   },
   "New Mexico": {
     "KenPom Ovr.": [
@@ -3398,21 +3480,9 @@
       336,
       "31.7"
     ],
-    "A/FGM": [
-      206,
-      "50.9"
-    ],
     "Off 3P%": [
       166,
       "34.0"
-    ],
-    "Off Avg. Poss. Length": [
-      7,
-      "15.3"
-    ],
-    "Def Avg. Poss. Length": [
-      245,
-      "17.9"
     ],
     "Tempo": [
       7,
@@ -3422,17 +3492,17 @@
       26,
       "78.5\""
     ],
-    "Minutes Continuity": [
-      71,
-      "48.6%"
+    "A/FGM": [
+      206,
+      "50.9"
     ],
-    "D-1 Experience": [
-      55,
-      "2.49 yrs"
+    "Off Avg. Poss. Length": [
+      7,
+      "15.3"
     ],
-    "Bench Minutes": [
-      287,
-      "26.8%"
+    "Def Avg. Poss. Length": [
+      245,
+      "17.9"
     ],
     "SOS Overall": [
       73,
@@ -3441,7 +3511,21 @@
     "SOS Non-conference": [
       48,
       "+5.42"
-    ]
+    ],
+    "D-1 Experience": [
+      55,
+      "2.49 yrs"
+    ],
+    "Minutes Continuity": [
+      71,
+      "48.6%"
+    ],
+    "Bench Minutes": [
+      287,
+      "26.8%"
+    ],
+    "seed": 10,
+    "conference": "MWC"
   },
   "Norfolk St": {
     "KenPom Ovr.": [
@@ -3480,21 +3564,9 @@
       360,
       "27.6"
     ],
-    "A/FGM": [
-      255,
-      "49.0"
-    ],
     "Off 3P%": [
       327,
       "30.8"
-    ],
-    "Off Avg. Poss. Length": [
-      245,
-      "18.1"
-    ],
-    "Def Avg. Poss. Length": [
-      220,
-      "17.7"
     ],
     "Tempo": [
       229,
@@ -3504,17 +3576,17 @@
       197,
       "77.1\""
     ],
-    "Minutes Continuity": [
-      101,
-      "44.6%"
+    "A/FGM": [
+      255,
+      "49.0"
     ],
-    "D-1 Experience": [
-      102,
-      "2.14 yrs"
+    "Off Avg. Poss. Length": [
+      245,
+      "18.1"
     ],
-    "Bench Minutes": [
-      84,
-      "34.8%"
+    "Def Avg. Poss. Length": [
+      220,
+      "17.7"
     ],
     "SOS Overall": [
       310,
@@ -3523,7 +3595,21 @@
     "SOS Non-conference": [
       93,
       "+2.92"
-    ]
+    ],
+    "D-1 Experience": [
+      102,
+      "2.14 yrs"
+    ],
+    "Minutes Continuity": [
+      101,
+      "44.6%"
+    ],
+    "Bench Minutes": [
+      84,
+      "34.8%"
+    ],
+    "seed": 16,
+    "conference": "MEAC"
   },
   "North Carolina": {
     "KenPom Ovr.": [
@@ -3562,21 +3648,9 @@
       218,
       "37.2"
     ],
-    "A/FGM": [
-      173,
-      "51.7"
-    ],
     "Off 3P%": [
       79,
       "35.6"
-    ],
-    "Off Avg. Poss. Length": [
-      36,
-      "16.2"
-    ],
-    "Def Avg. Poss. Length": [
-      224,
-      "17.8"
     ],
     "Tempo": [
       34,
@@ -3586,17 +3660,17 @@
       305,
       "76.4\""
     ],
-    "Minutes Continuity": [
-      77,
-      "47.4%"
+    "A/FGM": [
+      173,
+      "51.7"
     ],
-    "D-1 Experience": [
-      79,
-      "2.26 yrs"
+    "Off Avg. Poss. Length": [
+      36,
+      "16.2"
     ],
-    "Bench Minutes": [
-      213,
-      "30.1%"
+    "Def Avg. Poss. Length": [
+      224,
+      "17.8"
     ],
     "SOS Overall": [
       44,
@@ -3605,7 +3679,21 @@
     "SOS Non-conference": [
       7,
       "+13.40"
-    ]
+    ],
+    "D-1 Experience": [
+      79,
+      "2.26 yrs"
+    ],
+    "Minutes Continuity": [
+      77,
+      "47.4%"
+    ],
+    "Bench Minutes": [
+      213,
+      "30.1%"
+    ],
+    "seed": 11,
+    "conference": "ACC"
   },
   "Oklahoma": {
     "KenPom Ovr.": [
@@ -3644,21 +3732,9 @@
       116,
       "41.6"
     ],
-    "A/FGM": [
-      176,
-      "51.6"
-    ],
     "Off 3P%": [
       46,
       "36.5"
-    ],
-    "Off Avg. Poss. Length": [
-      63,
-      "16.6"
-    ],
-    "Def Avg. Poss. Length": [
-      209,
-      "17.7"
     ],
     "Tempo": [
       108,
@@ -3668,17 +3744,17 @@
       189,
       "77.1\""
     ],
-    "Minutes Continuity": [
-      245,
-      "24.2%"
+    "A/FGM": [
+      176,
+      "51.6"
     ],
-    "D-1 Experience": [
-      76,
-      "2.28 yrs"
+    "Off Avg. Poss. Length": [
+      63,
+      "16.6"
     ],
-    "Bench Minutes": [
-      90,
-      "34.5%"
+    "Def Avg. Poss. Length": [
+      209,
+      "17.7"
     ],
     "SOS Overall": [
       20,
@@ -3687,7 +3763,21 @@
     "SOS Non-conference": [
       317,
       "-5.33"
-    ]
+    ],
+    "D-1 Experience": [
+      76,
+      "2.28 yrs"
+    ],
+    "Minutes Continuity": [
+      245,
+      "24.2%"
+    ],
+    "Bench Minutes": [
+      90,
+      "34.5%"
+    ],
+    "seed": 9,
+    "conference": "SEC"
   },
   "Oregon": {
     "KenPom Ovr.": [
@@ -3726,21 +3816,9 @@
       189,
       "38.3"
     ],
-    "A/FGM": [
-      135,
-      "52.9"
-    ],
     "Off 3P%": [
       148,
       "34.4"
-    ],
-    "Off Avg. Poss. Length": [
-      96,
-      "17.0"
-    ],
-    "Def Avg. Poss. Length": [
-      255,
-      "17.9"
     ],
     "Tempo": [
       141,
@@ -3750,17 +3828,17 @@
       130,
       "77.5\""
     ],
-    "Minutes Continuity": [
+    "A/FGM": [
       135,
-      "40.6%"
+      "52.9"
     ],
-    "D-1 Experience": [
-      34,
-      "2.68 yrs"
+    "Off Avg. Poss. Length": [
+      96,
+      "17.0"
     ],
-    "Bench Minutes": [
-      254,
-      "28.9%"
+    "Def Avg. Poss. Length": [
+      255,
+      "17.9"
     ],
     "SOS Overall": [
       18,
@@ -3769,7 +3847,21 @@
     "SOS Non-conference": [
       71,
       "+3.98"
-    ]
+    ],
+    "D-1 Experience": [
+      34,
+      "2.68 yrs"
+    ],
+    "Minutes Continuity": [
+      135,
+      "40.6%"
+    ],
+    "Bench Minutes": [
+      254,
+      "28.9%"
+    ],
+    "seed": 5,
+    "conference": "B1G"
   },
   "Purdue": {
     "KenPom Ovr.": [
@@ -3808,21 +3900,9 @@
       185,
       "38.4"
     ],
-    "A/FGM": [
-      48,
-      "58.3"
-    ],
     "Off 3P%": [
       16,
       "38.2"
-    ],
-    "Off Avg. Poss. Length": [
-      307,
-      "18.8"
-    ],
-    "Def Avg. Poss. Length": [
-      180,
-      "17.6"
     ],
     "Tempo": [
       300,
@@ -3832,17 +3912,17 @@
       185,
       "77.2\""
     ],
-    "Minutes Continuity": [
-      41,
-      "54.1%"
+    "A/FGM": [
+      48,
+      "58.3"
     ],
-    "D-1 Experience": [
-      184,
-      "1.74 yrs"
+    "Off Avg. Poss. Length": [
+      307,
+      "18.8"
     ],
-    "Bench Minutes": [
-      243,
-      "29.3%"
+    "Def Avg. Poss. Length": [
+      180,
+      "17.6"
     ],
     "SOS Overall": [
       8,
@@ -3851,7 +3931,21 @@
     "SOS Non-conference": [
       18,
       "+10.52"
-    ]
+    ],
+    "D-1 Experience": [
+      184,
+      "1.74 yrs"
+    ],
+    "Minutes Continuity": [
+      41,
+      "54.1%"
+    ],
+    "Bench Minutes": [
+      243,
+      "29.3%"
+    ],
+    "seed": 4,
+    "conference": "B1G"
   },
   "Robert Morris": {
     "KenPom Ovr.": [
@@ -3890,21 +3984,9 @@
       239,
       "36.7"
     ],
-    "A/FGM": [
-      23,
-      "60.4"
-    ],
     "Off 3P%": [
       135,
       "34.6"
-    ],
-    "Off Avg. Poss. Length": [
-      246,
-      "18.1"
-    ],
-    "Def Avg. Poss. Length": [
-      25,
-      "16.8"
     ],
     "Tempo": [
       142,
@@ -3914,17 +3996,17 @@
       224,
       "76.9\""
     ],
-    "Minutes Continuity": [
-      309,
-      "11.6%"
+    "A/FGM": [
+      23,
+      "60.4"
     ],
-    "D-1 Experience": [
-      236,
-      "1.45 yrs"
+    "Off Avg. Poss. Length": [
+      246,
+      "18.1"
     ],
-    "Bench Minutes": [
-      291,
-      "26.4%"
+    "Def Avg. Poss. Length": [
+      25,
+      "16.8"
     ],
     "SOS Overall": [
       294,
@@ -3933,7 +4015,21 @@
     "SOS Non-conference": [
       352,
       "-8.52"
-    ]
+    ],
+    "D-1 Experience": [
+      236,
+      "1.45 yrs"
+    ],
+    "Minutes Continuity": [
+      309,
+      "11.6%"
+    ],
+    "Bench Minutes": [
+      291,
+      "26.4%"
+    ],
+    "seed": 15,
+    "conference": "Horizon"
   },
   "SIUE": {
     "KenPom Ovr.": [
@@ -3972,21 +4068,9 @@
       243,
       "36.6"
     ],
-    "A/FGM": [
-      168,
-      "51.8"
-    ],
     "Off 3P%": [
       210,
       "33.1"
-    ],
-    "Off Avg. Poss. Length": [
-      176,
-      "17.6"
-    ],
-    "Def Avg. Poss. Length": [
-      271,
-      "18.0"
     ],
     "Tempo": [
       254,
@@ -3996,17 +4080,17 @@
       178,
       "77.2\""
     ],
-    "Minutes Continuity": [
-      159,
-      "36.2%"
+    "A/FGM": [
+      168,
+      "51.8"
     ],
-    "D-1 Experience": [
-      226,
-      "1.53 yrs"
+    "Off Avg. Poss. Length": [
+      176,
+      "17.6"
     ],
-    "Bench Minutes": [
-      308,
-      "25.6%"
+    "Def Avg. Poss. Length": [
+      271,
+      "18.0"
     ],
     "SOS Overall": [
       348,
@@ -4015,7 +4099,21 @@
     "SOS Non-conference": [
       273,
       "-3.33"
-    ]
+    ],
+    "D-1 Experience": [
+      226,
+      "1.53 yrs"
+    ],
+    "Minutes Continuity": [
+      159,
+      "36.2%"
+    ],
+    "Bench Minutes": [
+      308,
+      "25.6%"
+    ],
+    "seed": 16,
+    "conference": "OVC"
   },
   "Saint Francis": {
     "KenPom Ovr.": [
@@ -4054,21 +4152,9 @@
       108,
       "42.0"
     ],
-    "A/FGM": [
-      214,
-      "50.7"
-    ],
     "Off 3P%": [
       178,
       "33.8"
-    ],
-    "Off Avg. Poss. Length": [
-      250,
-      "18.1"
-    ],
-    "Def Avg. Poss. Length": [
-      258,
-      "17.9"
     ],
     "Tempo": [
       203,
@@ -4078,17 +4164,17 @@
       316,
       "76.3\""
     ],
-    "Minutes Continuity": [
-      230,
-      "27.4%"
+    "A/FGM": [
+      214,
+      "50.7"
     ],
-    "D-1 Experience": [
-      349,
-      "0.64 yrs"
+    "Off Avg. Poss. Length": [
+      250,
+      "18.1"
     ],
-    "Bench Minutes": [
-      212,
-      "30.2%"
+    "Def Avg. Poss. Length": [
+      258,
+      "17.9"
     ],
     "SOS Overall": [
       317,
@@ -4097,7 +4183,21 @@
     "SOS Non-conference": [
       32,
       "+7.98"
-    ]
+    ],
+    "D-1 Experience": [
+      349,
+      "0.64 yrs"
+    ],
+    "Minutes Continuity": [
+      230,
+      "27.4%"
+    ],
+    "Bench Minutes": [
+      212,
+      "30.2%"
+    ],
+    "seed": 16,
+    "conference": "NE"
   },
   "Saint Marys": {
     "KenPom Ovr.": [
@@ -4136,21 +4236,9 @@
       320,
       "33.2"
     ],
-    "A/FGM": [
-      73,
-      "56.2"
-    ],
     "Off 3P%": [
       257,
       "32.2"
-    ],
-    "Off Avg. Poss. Length": [
-      360,
-      "20.3"
-    ],
-    "Def Avg. Poss. Length": [
-      102,
-      "17.3"
     ],
     "Tempo": [
       360,
@@ -4160,17 +4248,17 @@
       28,
       "78.4\""
     ],
-    "Minutes Continuity": [
-      82,
-      "46.7%"
+    "A/FGM": [
+      73,
+      "56.2"
     ],
-    "D-1 Experience": [
-      198,
-      "1.70 yrs"
-    ],
-    "Bench Minutes": [
+    "Off Avg. Poss. Length": [
       360,
-      "19.3%"
+      "20.3"
+    ],
+    "Def Avg. Poss. Length": [
+      102,
+      "17.3"
     ],
     "SOS Overall": [
       77,
@@ -4179,7 +4267,21 @@
     "SOS Non-conference": [
       47,
       "+5.47"
-    ]
+    ],
+    "D-1 Experience": [
+      198,
+      "1.70 yrs"
+    ],
+    "Minutes Continuity": [
+      82,
+      "46.7%"
+    ],
+    "Bench Minutes": [
+      360,
+      "19.3%"
+    ],
+    "seed": 7,
+    "conference": "WCC"
   },
   "San Diego St": {
     "KenPom Ovr.": [
@@ -4218,21 +4320,9 @@
       166,
       "39.6"
     ],
-    "A/FGM": [
-      210,
-      "50.7"
-    ],
     "Off 3P%": [
       234,
       "32.6"
-    ],
-    "Off Avg. Poss. Length": [
-      240,
-      "18.1"
-    ],
-    "Def Avg. Poss. Length": [
-      330,
-      "18.4"
     ],
     "Tempo": [
       245,
@@ -4242,17 +4332,17 @@
       51,
       "78.1\""
     ],
-    "Minutes Continuity": [
-      304,
-      "12.1%"
+    "A/FGM": [
+      210,
+      "50.7"
     ],
-    "D-1 Experience": [
-      227,
-      "1.53 yrs"
+    "Off Avg. Poss. Length": [
+      240,
+      "18.1"
     ],
-    "Bench Minutes": [
-      110,
-      "33.9%"
+    "Def Avg. Poss. Length": [
+      330,
+      "18.4"
     ],
     "SOS Overall": [
       61,
@@ -4261,7 +4351,21 @@
     "SOS Non-conference": [
       6,
       "+13.55"
-    ]
+    ],
+    "D-1 Experience": [
+      227,
+      "1.53 yrs"
+    ],
+    "Minutes Continuity": [
+      304,
+      "12.1%"
+    ],
+    "Bench Minutes": [
+      110,
+      "33.9%"
+    ],
+    "seed": 11,
+    "conference": "MWC"
   },
   "St Johns": {
     "KenPom Ovr.": [
@@ -4300,21 +4404,9 @@
       342,
       "31.0"
     ],
-    "A/FGM": [
-      119,
-      "53.6"
-    ],
     "Off 3P%": [
       340,
       "30.1"
-    ],
-    "Off Avg. Poss. Length": [
-      19,
-      "15.8"
-    ],
-    "Def Avg. Poss. Length": [
-      328,
-      "18.4"
     ],
     "Tempo": [
       58,
@@ -4324,17 +4416,17 @@
       43,
       "78.2\""
     ],
-    "Minutes Continuity": [
-      275,
-      "19.3%"
+    "A/FGM": [
+      119,
+      "53.6"
     ],
-    "D-1 Experience": [
-      69,
-      "2.34 yrs"
+    "Off Avg. Poss. Length": [
+      19,
+      "15.8"
     ],
-    "Bench Minutes": [
-      317,
-      "24.5%"
+    "Def Avg. Poss. Length": [
+      328,
+      "18.4"
     ],
     "SOS Overall": [
       62,
@@ -4343,7 +4435,21 @@
     "SOS Non-conference": [
       179,
       "-0.20"
-    ]
+    ],
+    "D-1 Experience": [
+      69,
+      "2.34 yrs"
+    ],
+    "Minutes Continuity": [
+      275,
+      "19.3%"
+    ],
+    "Bench Minutes": [
+      317,
+      "24.5%"
+    ],
+    "seed": 2,
+    "conference": "BE"
   },
   "Tennessee": {
     "KenPom Ovr.": [
@@ -4382,21 +4488,9 @@
       79,
       "43.4"
     ],
-    "A/FGM": [
-      22,
-      "60.6"
-    ],
     "Off 3P%": [
       182,
       "33.8"
-    ],
-    "Off Avg. Poss. Length": [
-      280,
-      "18.4"
-    ],
-    "Def Avg. Poss. Length": [
-      355,
-      "18.7"
     ],
     "Tempo": [
       349,
@@ -4406,17 +4500,17 @@
       190,
       "77.1\""
     ],
-    "Minutes Continuity": [
-      164,
-      "36.1%"
+    "A/FGM": [
+      22,
+      "60.6"
     ],
-    "D-1 Experience": [
-      14,
-      "2.94 yrs"
+    "Off Avg. Poss. Length": [
+      280,
+      "18.4"
     ],
-    "Bench Minutes": [
-      312,
-      "24.9%"
+    "Def Avg. Poss. Length": [
+      355,
+      "18.7"
     ],
     "SOS Overall": [
       7,
@@ -4425,7 +4519,21 @@
     "SOS Non-conference": [
       202,
       "-1.04"
-    ]
+    ],
+    "D-1 Experience": [
+      14,
+      "2.94 yrs"
+    ],
+    "Minutes Continuity": [
+      164,
+      "36.1%"
+    ],
+    "Bench Minutes": [
+      312,
+      "24.9%"
+    ],
+    "seed": 2,
+    "conference": "SEC"
   },
   "Texas": {
     "KenPom Ovr.": [
@@ -4464,21 +4572,9 @@
       271,
       "35.3"
     ],
-    "A/FGM": [
-      295,
-      "47.3"
-    ],
     "Off 3P%": [
       58,
       "36.2"
-    ],
-    "Off Avg. Poss. Length": [
-      128,
-      "17.3"
-    ],
-    "Def Avg. Poss. Length": [
-      242,
-      "17.8"
     ],
     "Tempo": [
       176,
@@ -4488,17 +4584,17 @@
       63,
       "78.0\""
     ],
-    "Minutes Continuity": [
-      287,
-      "17.4%"
+    "A/FGM": [
+      295,
+      "47.3"
     ],
-    "D-1 Experience": [
-      20,
-      "2.85 yrs"
+    "Off Avg. Poss. Length": [
+      128,
+      "17.3"
     ],
-    "Bench Minutes": [
-      161,
-      "31.9%"
+    "Def Avg. Poss. Length": [
+      242,
+      "17.8"
     ],
     "SOS Overall": [
       24,
@@ -4507,7 +4603,21 @@
     "SOS Non-conference": [
       348,
       "-8.10"
-    ]
+    ],
+    "D-1 Experience": [
+      20,
+      "2.85 yrs"
+    ],
+    "Minutes Continuity": [
+      287,
+      "17.4%"
+    ],
+    "Bench Minutes": [
+      161,
+      "31.9%"
+    ],
+    "seed": 11,
+    "conference": "SEC"
   },
   "Texas A&M": {
     "KenPom Ovr.": [
@@ -4546,21 +4656,9 @@
       201,
       "37.7"
     ],
-    "A/FGM": [
-      293,
-      "47.4"
-    ],
     "Off 3P%": [
       328,
       "30.7"
-    ],
-    "Off Avg. Poss. Length": [
-      102,
-      "17.1"
-    ],
-    "Def Avg. Poss. Length": [
-      317,
-      "18.2"
     ],
     "Tempo": [
       215,
@@ -4570,17 +4668,17 @@
       136,
       "77.5\""
     ],
-    "Minutes Continuity": [
-      6,
-      "68.7%"
+    "A/FGM": [
+      293,
+      "47.4"
     ],
-    "D-1 Experience": [
-      11,
-      "2.97 yrs"
+    "Off Avg. Poss. Length": [
+      102,
+      "17.1"
     ],
-    "Bench Minutes": [
-      25,
-      "39.2%"
+    "Def Avg. Poss. Length": [
+      317,
+      "18.2"
     ],
     "SOS Overall": [
       11,
@@ -4589,7 +4687,21 @@
     "SOS Non-conference": [
       34,
       "+7.67"
-    ]
+    ],
+    "D-1 Experience": [
+      11,
+      "2.97 yrs"
+    ],
+    "Minutes Continuity": [
+      6,
+      "68.7%"
+    ],
+    "Bench Minutes": [
+      25,
+      "39.2%"
+    ],
+    "seed": 4,
+    "conference": "SEC"
   },
   "Texas Tech": {
     "KenPom Ovr.": [
@@ -4628,21 +4740,9 @@
       63,
       "44.5"
     ],
-    "A/FGM": [
-      55,
-      "57.1"
-    ],
     "Off 3P%": [
       42,
       "36.7"
-    ],
-    "Off Avg. Poss. Length": [
-      228,
-      "18.0"
-    ],
-    "Def Avg. Poss. Length": [
-      270,
-      "18.0"
     ],
     "Tempo": [
       264,
@@ -4652,17 +4752,17 @@
       289,
       "76.5\""
     ],
-    "Minutes Continuity": [
-      145,
-      "38.9%"
+    "A/FGM": [
+      55,
+      "57.1"
     ],
-    "D-1 Experience": [
-      42,
-      "2.63 yrs"
+    "Off Avg. Poss. Length": [
+      228,
+      "18.0"
     ],
-    "Bench Minutes": [
-      231,
-      "29.5%"
+    "Def Avg. Poss. Length": [
+      270,
+      "18.0"
     ],
     "SOS Overall": [
       49,
@@ -4671,7 +4771,21 @@
     "SOS Non-conference": [
       305,
       "-4.68"
-    ]
+    ],
+    "D-1 Experience": [
+      42,
+      "2.63 yrs"
+    ],
+    "Minutes Continuity": [
+      145,
+      "38.9%"
+    ],
+    "Bench Minutes": [
+      231,
+      "29.5%"
+    ],
+    "seed": 3,
+    "conference": "B12"
   },
   "Troy": {
     "KenPom Ovr.": [
@@ -4710,21 +4824,9 @@
       56,
       "45.0"
     ],
-    "A/FGM": [
-      83,
-      "55.9"
-    ],
     "Off 3P%": [
       341,
       "30.1"
-    ],
-    "Off Avg. Poss. Length": [
-      262,
-      "18.2"
-    ],
-    "Def Avg. Poss. Length": [
-      155,
-      "17.5"
     ],
     "Tempo": [
       231,
@@ -4734,17 +4836,17 @@
       93,
       "77.8\""
     ],
-    "Minutes Continuity": [
-      11,
-      "66.0%"
+    "A/FGM": [
+      83,
+      "55.9"
     ],
-    "D-1 Experience": [
-      298,
-      "1.09 yrs"
+    "Off Avg. Poss. Length": [
+      262,
+      "18.2"
     ],
-    "Bench Minutes": [
-      79,
-      "35.1%"
+    "Def Avg. Poss. Length": [
+      155,
+      "17.5"
     ],
     "SOS Overall": [
       189,
@@ -4753,7 +4855,21 @@
     "SOS Non-conference": [
       130,
       "+1.44"
-    ]
+    ],
+    "D-1 Experience": [
+      298,
+      "1.09 yrs"
+    ],
+    "Minutes Continuity": [
+      11,
+      "66.0%"
+    ],
+    "Bench Minutes": [
+      79,
+      "35.1%"
+    ],
+    "seed": 14,
+    "conference": "Sun Belt"
   },
   "UCLA": {
     "KenPom Ovr.": [
@@ -4792,21 +4908,9 @@
       245,
       "36.5"
     ],
-    "A/FGM": [
-      19,
-      "61.0"
-    ],
     "Off 3P%": [
       100,
       "35.2"
-    ],
-    "Off Avg. Poss. Length": [
-      242,
-      "18.1"
-    ],
-    "Def Avg. Poss. Length": [
-      324,
-      "18.3"
     ],
     "Tempo": [
       312,
@@ -4816,17 +4920,17 @@
       52,
       "78.1\""
     ],
-    "Minutes Continuity": [
-      179,
-      "34.3%"
+    "A/FGM": [
+      19,
+      "61.0"
     ],
-    "D-1 Experience": [
-      83,
-      "2.23 yrs"
+    "Off Avg. Poss. Length": [
+      242,
+      "18.1"
     ],
-    "Bench Minutes": [
-      75,
-      "35.5%"
+    "Def Avg. Poss. Length": [
+      324,
+      "18.3"
     ],
     "SOS Overall": [
       27,
@@ -4835,7 +4939,21 @@
     "SOS Non-conference": [
       311,
       "-5.15"
-    ]
+    ],
+    "D-1 Experience": [
+      83,
+      "2.23 yrs"
+    ],
+    "Minutes Continuity": [
+      179,
+      "34.3%"
+    ],
+    "Bench Minutes": [
+      75,
+      "35.5%"
+    ],
+    "seed": 7,
+    "conference": "B1G"
   },
   "UC San Diego": {
     "KenPom Ovr.": [
@@ -4874,21 +4992,9 @@
       8,
       "49.6"
     ],
-    "A/FGM": [
-      65,
-      "56.6"
-    ],
     "Off 3P%": [
       62,
       "36.1"
-    ],
-    "Off Avg. Poss. Length": [
-      148,
-      "17.4"
-    ],
-    "Def Avg. Poss. Length": [
-      334,
-      "18.4"
     ],
     "Tempo": [
       278,
@@ -4898,17 +5004,17 @@
       118,
       "77.6\""
     ],
-    "Minutes Continuity": [
-      113,
-      "43.1%"
+    "A/FGM": [
+      65,
+      "56.6"
     ],
-    "D-1 Experience": [
-      295,
-      "1.12 yrs"
+    "Off Avg. Poss. Length": [
+      148,
+      "17.4"
     ],
-    "Bench Minutes": [
-      336,
-      "22.9%"
+    "Def Avg. Poss. Length": [
+      334,
+      "18.4"
     ],
     "SOS Overall": [
       181,
@@ -4917,7 +5023,21 @@
     "SOS Non-conference": [
       235,
       "-2.19"
-    ]
+    ],
+    "D-1 Experience": [
+      295,
+      "1.12 yrs"
+    ],
+    "Minutes Continuity": [
+      113,
+      "43.1%"
+    ],
+    "Bench Minutes": [
+      336,
+      "22.9%"
+    ],
+    "seed": 12,
+    "conference": "Big West"
   },
   "UNC Wilmington": {
     "KenPom Ovr.": [
@@ -4956,21 +5076,9 @@
       249,
       "36.3"
     ],
-    "A/FGM": [
-      98,
-      "55.1"
-    ],
     "Off 3P%": [
       226,
       "32.8"
-    ],
-    "Off Avg. Poss. Length": [
-      275,
-      "18.4"
-    ],
-    "Def Avg. Poss. Length": [
-      165,
-      "17.6"
     ],
     "Tempo": [
       276,
@@ -4980,17 +5088,17 @@
       69,
       "78.0\""
     ],
-    "Minutes Continuity": [
-      169,
-      "35.4%"
+    "A/FGM": [
+      98,
+      "55.1"
     ],
-    "D-1 Experience": [
-      41,
-      "2.64 yrs"
+    "Off Avg. Poss. Length": [
+      275,
+      "18.4"
     ],
-    "Bench Minutes": [
-      48,
-      "37.6%"
+    "Def Avg. Poss. Length": [
+      165,
+      "17.6"
     ],
     "SOS Overall": [
       273,
@@ -4999,7 +5107,21 @@
     "SOS Non-conference": [
       310,
       "-5.14"
-    ]
+    ],
+    "D-1 Experience": [
+      41,
+      "2.64 yrs"
+    ],
+    "Minutes Continuity": [
+      169,
+      "35.4%"
+    ],
+    "Bench Minutes": [
+      48,
+      "37.6%"
+    ],
+    "seed": 14,
+    "conference": "CAA"
   },
   "Utah St": {
     "KenPom Ovr.": [
@@ -5038,21 +5160,9 @@
       93,
       "42.6"
     ],
-    "A/FGM": [
-      20,
-      "60.9"
-    ],
     "Off 3P%": [
       119,
       "34.9"
-    ],
-    "Off Avg. Poss. Length": [
-      62,
-      "16.6"
-    ],
-    "Def Avg. Poss. Length": [
-      363,
-      "19.1"
     ],
     "Tempo": [
       172,
@@ -5062,17 +5172,17 @@
       169,
       "77.3\""
     ],
-    "Minutes Continuity": [
-      175,
-      "34.5%"
+    "A/FGM": [
+      20,
+      "60.9"
     ],
-    "D-1 Experience": [
-      94,
-      "2.16 yrs"
+    "Off Avg. Poss. Length": [
+      62,
+      "16.6"
     ],
-    "Bench Minutes": [
-      71,
-      "35.6%"
+    "Def Avg. Poss. Length": [
+      363,
+      "19.1"
     ],
     "SOS Overall": [
       83,
@@ -5081,7 +5191,21 @@
     "SOS Non-conference": [
       146,
       "+0.68"
-    ]
+    ],
+    "D-1 Experience": [
+      94,
+      "2.16 yrs"
+    ],
+    "Minutes Continuity": [
+      175,
+      "34.5%"
+    ],
+    "Bench Minutes": [
+      71,
+      "35.6%"
+    ],
+    "seed": 10,
+    "conference": "MWC"
   },
   "VCU": {
     "KenPom Ovr.": [
@@ -5120,21 +5244,9 @@
       21,
       "47.8"
     ],
-    "A/FGM": [
-      69,
-      "56.5"
-    ],
     "Off 3P%": [
       179,
       "33.8"
-    ],
-    "Off Avg. Poss. Length": [
-      121,
-      "17.2"
-    ],
-    "Def Avg. Poss. Length": [
-      356,
-      "18.8"
     ],
     "Tempo": [
       246,
@@ -5144,17 +5256,17 @@
       58,
       "78.1\""
     ],
-    "Minutes Continuity": [
-      53,
-      "51.7%"
+    "A/FGM": [
+      69,
+      "56.5"
     ],
-    "D-1 Experience": [
-      38,
-      "2.66 yrs"
+    "Off Avg. Poss. Length": [
+      121,
+      "17.2"
     ],
-    "Bench Minutes": [
-      130,
-      "33.2%"
+    "Def Avg. Poss. Length": [
+      356,
+      "18.8"
     ],
     "SOS Overall": [
       125,
@@ -5163,7 +5275,21 @@
     "SOS Non-conference": [
       293,
       "-4.12"
-    ]
+    ],
+    "D-1 Experience": [
+      38,
+      "2.66 yrs"
+    ],
+    "Minutes Continuity": [
+      53,
+      "51.7%"
+    ],
+    "Bench Minutes": [
+      130,
+      "33.2%"
+    ],
+    "seed": 11,
+    "conference": "Atlantic 10"
   },
   "Vanderbilt": {
     "KenPom Ovr.": [
@@ -5202,21 +5328,9 @@
       143,
       "40.4"
     ],
-    "A/FGM": [
-      225,
-      "50.2"
-    ],
     "Off 3P%": [
       246,
       "32.5"
-    ],
-    "Off Avg. Poss. Length": [
-      60,
-      "16.6"
-    ],
-    "Def Avg. Poss. Length": [
-      223,
-      "17.8"
     ],
     "Tempo": [
       68,
@@ -5226,17 +5340,17 @@
       298,
       "76.5\""
     ],
-    "Minutes Continuity": [
-      348,
-      "2.3%"
+    "A/FGM": [
+      225,
+      "50.2"
     ],
-    "D-1 Experience": [
-      66,
-      "2.38 yrs"
+    "Off Avg. Poss. Length": [
+      60,
+      "16.6"
     ],
-    "Bench Minutes": [
-      43,
-      "37.9%"
+    "Def Avg. Poss. Length": [
+      223,
+      "17.8"
     ],
     "SOS Overall": [
       32,
@@ -5245,7 +5359,21 @@
     "SOS Non-conference": [
       343,
       "-6.82"
-    ]
+    ],
+    "D-1 Experience": [
+      66,
+      "2.38 yrs"
+    ],
+    "Minutes Continuity": [
+      348,
+      "2.3%"
+    ],
+    "Bench Minutes": [
+      43,
+      "37.9%"
+    ],
+    "seed": 10,
+    "conference": "SEC"
   },
   "Wisconsin": {
     "KenPom Ovr.": [
@@ -5284,21 +5412,9 @@
       16,
       "48.2"
     ],
-    "A/FGM": [
-      111,
-      "54.2"
-    ],
     "Off 3P%": [
       123,
       "34.8"
-    ],
-    "Off Avg. Poss. Length": [
-      184,
-      "17.7"
-    ],
-    "Def Avg. Poss. Length": [
-      137,
-      "17.5"
     ],
     "Tempo": [
       149,
@@ -5308,17 +5424,17 @@
       67,
       "78.0\""
     ],
-    "Minutes Continuity": [
-      88,
-      "46.4%"
+    "A/FGM": [
+      111,
+      "54.2"
     ],
-    "D-1 Experience": [
-      45,
-      "2.61 yrs"
+    "Off Avg. Poss. Length": [
+      184,
+      "17.7"
     ],
-    "Bench Minutes": [
-      177,
-      "31.2%"
+    "Def Avg. Poss. Length": [
+      137,
+      "17.5"
     ],
     "SOS Overall": [
       23,
@@ -5327,7 +5443,21 @@
     "SOS Non-conference": [
       168,
       "+0.01"
-    ]
+    ],
+    "D-1 Experience": [
+      45,
+      "2.61 yrs"
+    ],
+    "Minutes Continuity": [
+      88,
+      "46.4%"
+    ],
+    "Bench Minutes": [
+      177,
+      "31.2%"
+    ],
+    "seed": 3,
+    "conference": "B1G"
   },
   "Wofford": {
     "KenPom Ovr.": [
@@ -5366,21 +5496,9 @@
       23,
       "47.7"
     ],
-    "A/FGM": [
-      99,
-      "55.0"
-    ],
     "Off 3P%": [
       124,
       "34.8"
-    ],
-    "Off Avg. Poss. Length": [
-      337,
-      "19.4"
-    ],
-    "Def Avg. Poss. Length": [
-      197,
-      "17.7"
     ],
     "Tempo": [
       333,
@@ -5390,17 +5508,17 @@
       303,
       "76.5\""
     ],
-    "Minutes Continuity": [
-      10,
-      "66.0%"
+    "A/FGM": [
+      99,
+      "55.0"
     ],
-    "D-1 Experience": [
-      107,
-      "2.12 yrs"
+    "Off Avg. Poss. Length": [
+      337,
+      "19.4"
     ],
-    "Bench Minutes": [
-      159,
-      "32.0%"
+    "Def Avg. Poss. Length": [
+      197,
+      "17.7"
     ],
     "SOS Overall": [
       154,
@@ -5409,7 +5527,21 @@
     "SOS Non-conference": [
       56,
       "+4.88"
-    ]
+    ],
+    "D-1 Experience": [
+      107,
+      "2.12 yrs"
+    ],
+    "Minutes Continuity": [
+      10,
+      "66.0%"
+    ],
+    "Bench Minutes": [
+      159,
+      "32.0%"
+    ],
+    "seed": 15,
+    "conference": "Southern"
   },
   "Xavier": {
     "KenPom Ovr.": [
@@ -5448,21 +5580,9 @@
       208,
       "37.6"
     ],
-    "A/FGM": [
-      7,
-      "62.8"
-    ],
     "Off 3P%": [
       4,
       "39.1"
-    ],
-    "Off Avg. Poss. Length": [
-      44,
-      "16.3"
-    ],
-    "Def Avg. Poss. Length": [
-      295,
-      "18.1"
     ],
     "Tempo": [
       84,
@@ -5472,17 +5592,17 @@
       165,
       "77.3\""
     ],
-    "Minutes Continuity": [
-      237,
-      "25.8%"
+    "A/FGM": [
+      7,
+      "62.8"
     ],
-    "D-1 Experience": [
-      2,
-      "3.54 yrs"
+    "Off Avg. Poss. Length": [
+      44,
+      "16.3"
     ],
-    "Bench Minutes": [
-      321,
-      "24.2%"
+    "Def Avg. Poss. Length": [
+      295,
+      "18.1"
     ],
     "SOS Overall": [
       57,
@@ -5491,7 +5611,21 @@
     "SOS Non-conference": [
       203,
       "-1.10"
-    ]
+    ],
+    "D-1 Experience": [
+      2,
+      "3.54 yrs"
+    ],
+    "Minutes Continuity": [
+      237,
+      "25.8%"
+    ],
+    "Bench Minutes": [
+      321,
+      "24.2%"
+    ],
+    "seed": 11,
+    "conference": "BE"
   },
   "Yale": {
     "KenPom Ovr.": [
@@ -5530,21 +5664,9 @@
       333,
       "32.2"
     ],
-    "A/FGM": [
-      118,
-      "53.8"
-    ],
     "Off 3P%": [
       10,
       "38.4"
-    ],
-    "Off Avg. Poss. Length": [
-      169,
-      "17.6"
-    ],
-    "Def Avg. Poss. Length": [
-      66,
-      "17.2"
     ],
     "Tempo": [
       169,
@@ -5554,17 +5676,17 @@
       94,
       "77.8\""
     ],
-    "Minutes Continuity": [
-      47,
-      "53.0%"
+    "A/FGM": [
+      118,
+      "53.8"
     ],
-    "D-1 Experience": [
-      191,
-      "1.72 yrs"
+    "Off Avg. Poss. Length": [
+      169,
+      "17.6"
     ],
-    "Bench Minutes": [
-      238,
-      "29.4%"
+    "Def Avg. Poss. Length": [
+      66,
+      "17.2"
     ],
     "SOS Overall": [
       190,
@@ -5573,6 +5695,20 @@
     "SOS Non-conference": [
       200,
       "-0.85"
-    ]
+    ],
+    "D-1 Experience": [
+      191,
+      "1.72 yrs"
+    ],
+    "Minutes Continuity": [
+      47,
+      "53.0%"
+    ],
+    "Bench Minutes": [
+      238,
+      "29.4%"
+    ],
+    "seed": 13,
+    "conference": "Ivy"
   }
 }
