@@ -15,6 +15,14 @@ const props = withDefaults(defineProps<TeamBoxProps>(), {
 const emit = defineEmits<{
   logoClick: [teamName: string];
 }>();
+
+const shortenConfName = (name: string) => {
+  if (name === "Atlantic 10") {
+    return "A10";
+  } else if (name === "Am East") {
+    return "A-East";
+  } else return name;
+};
 </script>
 
 <template>
@@ -26,12 +34,19 @@ const emit = defineEmits<{
       @click="emit('logoClick', props.teamName)"
       :disabled="!props.logo"
     >
-        <img class="banner-pic" :src="props.logo" :alt="props.teamName" />
+      <img class="banner-pic" :src="props.logo" :alt="props.teamName" />
     </button>
-    <div v-if="props.seed != null || props.record || props.conference" class="team-meta">
+    <div
+      v-if="props.seed != null || props.record || props.conference"
+      class="team-meta"
+    >
       <span class="seed" v-if="props.seed != null">({{ props.seed }})</span>
-      <span class="record" v-if="props.record"><b>· </b>{{ props.record }}</span>
-      <span class="conference" v-if="props.conference"><b>· </b>{{ props.conference }}</span>
+      <span class="record" v-if="props.record"
+        ><b>· </b>{{ props.record }}</span
+      >
+      <span class="conference" v-if="props.conference"
+        ><b>· </b>{{ shortenConfName(props.conference) }}</span
+      >
     </div>
   </div>
 </template>
@@ -69,12 +84,14 @@ const emit = defineEmits<{
   background: transparent;
   padding: 0;
   cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .logo-button:hover {
   transform: scale(1.03);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .logo-button:disabled {

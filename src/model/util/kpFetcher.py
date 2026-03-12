@@ -484,6 +484,19 @@ def fetchTeamQuadPage(team, cookie_value):
     
     return response
 
+def fetchWabRankingsPage(year):
+    """Fetch NCAA WAB rankings page HTML and save it to wabRankings{year}.txt."""
+    url = "https://www.ncaa.com/rankings/basketball-men/d1/wab-ranking"
+    response = requests.get(url, verify=False)
+    response.raise_for_status()
+
+    output_file = f"/home/tmoran/personal/madness/src/model/util/wabRankings{year}.txt"
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(response.text)
+
+    print(f"Saved WAB rankings HTML to {output_file}")
+    return response
+
 namesToReplace = { 
     "SIUE": "southern-illinois-edwardsville",
     "VCU": "virginia-commonwealth",
@@ -632,4 +645,5 @@ teams_2025 = [
 ]
 bids_2026 = ["North Dakota St.", "Tennessee St.", "LIU", "Northern Iowa", "Siena", "Wright St.", "Hofstra", "Queens"]
 all_extras = teams_2025 + bids_2026
-fetchTopTeams(teams_2025, 2026, False, False)
+#fetchTopTeams(teams_2025, 2026, False, False)
+fetchWabRankingsPage(2026)

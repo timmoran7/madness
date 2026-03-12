@@ -35,7 +35,10 @@ const typedUpsetData = upsetData as UpsetDataType;
 
 const NON_STAT_KEYS = new Set(["seed", "conference", "record"]);
 
-const kpStats = kpOvrStats as unknown as Record<string, Record<string, [number, string]> & { seed: number; conference: string }>;
+const kpStats = kpOvrStats as unknown as Record<
+  string,
+  Record<string, [number, string]> & { seed: number; conference: string }
+>;
 const seedProbs = seedProbabilities as Record<string, number>;
 
 const teamInfo = computed(() => {
@@ -44,8 +47,20 @@ const teamInfo = computed(() => {
   const t1 = kpStats[normalizeTeamName(t1Raw)];
   const t2 = kpStats[normalizeTeamName(t2Raw)];
   return {
-    fav: t1 ? { seed: t1.seed, record: t1["KenPom Ovr."]?.[1] ?? null, conference: t1.conference ?? null } : null,
-    dawg: t2 ? { seed: t2.seed, record: t2["KenPom Ovr."]?.[1] ?? null, conference: t2.conference ?? null } : null,
+    fav: t1
+      ? {
+          seed: t1.seed,
+          record: t1["KenPom Ovr."]?.[1] ?? null,
+          conference: t1.conference ?? null,
+        }
+      : null,
+    dawg: t2
+      ? {
+          seed: t2.seed,
+          record: t2["KenPom Ovr."]?.[1] ?? null,
+          conference: t2.conference ?? null,
+        }
+      : null,
   };
 });
 
@@ -63,6 +78,18 @@ const seedAvgLabel = computed<string | null>(() => {
   if (prob == null) return null;
   const higherSeed = Math.min(s1, s2);
   return `${higherSeed}-${lowerSeed} avg: ${(prob * 100).toFixed(2)}%`;
+});
+
+const mobileTeamBoxOffsetPx = computed<number>(() => {
+  const defaultLabelLength = "Select a Matchup".length;
+  const longestMatchupLabelLength = matchups.value.reduce((maxLen, matchup) => {
+    const labelLength = matchup.replace("_", " vs. ").length;
+    return Math.max(maxLen, labelLength);
+  }, defaultLabelLength);
+
+  // Longer matchup labels produce wider selects, so taper the extra offset down.
+  const offset = (1 / (longestMatchupLabelLength)) * 400;
+  return offset;
 });
 
 const currentMatchupData = computed<MatchupTableDataType | null>(() => {
@@ -252,7 +279,10 @@ watch(
       v-if="matchups.length > 0"
       :class="['ovr-banner', { 'ovr-banner-selected': selectedMatchup }]"
     >
-      <div class="select-anchor">
+      <div
+        class="select-anchor"
+        :style="{ '--mobile-team-box-offset': `${mobileTeamBoxOffsetPx}px` }"
+      >
         <div class="team-box-abs team-box-left">
           <TeamBox
             :logo="favLogo"
@@ -286,7 +316,10 @@ watch(
         </div>
       </div>
     </div>
-    <div v-if="dawgLogo" class="d-flex justify-content-center mb-4 match-subheader">
+    <div
+      v-if="dawgLogo"
+      class="d-flex justify-content-center mb-4 match-subheader"
+    >
       <p class="click-hint"><em>click on logos for team breakdown</em></p>
       <p><strong>Shmindianapolis, IN</strong></p>
     </div>
@@ -300,7 +333,9 @@ watch(
       </h5>
       <h5 class="factor text-center">
         <strong>Upset Chance: {{ (upsetChance * 100).toFixed(2) }}%</strong>
-        <span v-if="seedAvgLabel" class="seed-avg-hint"> ({{ seedAvgLabel }})</span>
+        <span v-if="seedAvgLabel" class="seed-avg-hint">
+          ({{ seedAvgLabel }})</span
+        >
       </h5>
     </div>
 
@@ -342,7 +377,9 @@ watch(
 .team-box-abs {
   position: absolute;
   top: 50%;
-  transform: translateY(-45px); /* aligns logo center (half of 90px) with select center */
+  transform: translateY(
+    -45px
+  ); /* aligns logo center (half of 90px) with select center */
 }
 
 .team-box-left {
@@ -402,9 +439,24 @@ watch(
 
 @media only screen and (max-width: 600px) {
   .ovr-banner {
-    gap: 9px;
-    margin-top: 12px;
+    margin-top: 4px;
     margin-bottom: 8px;
+  }
+
+  .form-select {
+    font-size: 14px;
+  }
+
+  .team-box-left {
+    right: calc(100% + var(--mobile-team-box-offset));
+  }
+
+  .team-box-right {
+    left: calc(100% + var(--mobile-team-box-offset));
+  }
+
+  .click-hint {
+    font-size: 12px;
   }
 }
 </style>
