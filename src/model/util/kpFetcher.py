@@ -461,13 +461,13 @@ def extractOlderMatchups():
         
         print(f"Saved {len(matchups)} matchups for {year} to {output_file}")
 
-def fetchTeamPage(team, cookie_value, cookie_name='PHPSESSID'):
+def fetchTeamPage(team, cookie_value, year, cookie_name='PHPSESSID'):
     
     # Create cookie dictionary
     cookies = {cookie_name: cookie_value}
     
     # Make the GET request with the cookie
-    url = f"https://kenpom.com/team.php?team={team}&y=2025"
+    url = f"https://kenpom.com/team.php?team={team}&y={year}"
     response = requests.get(url, verify=False, cookies=cookies)
     
     return response
@@ -490,13 +490,20 @@ namesToReplace = {
     "McNeese": "mcneese-state",
     "BYU": "brigham-young",
     "UNC Wilmington": "north-carolina-wilmington",
-    "Saint-Francis": "saint-francis-pa",
+    "Saint Francis": "saint-francis-pa",
     "Mount St. Mary's": "mount-st-marys",
     "Saint Mary's": "saint-marys-ca",
     "St. John's": "st-johns-ny",
     "UC San Diego": "california-san-diego",
+    "NC State": "north-carolina-state",
+    "SMU": "southern-methodist",
+    "TCU": "texas-christian",
+    "UCF": "central-florida",
+    "USC": "southern-california",
+    "LIU": "long-island-university",
+    "Queens": "queens-nc",
 }
-def fetchTopTeams(given_top_teams, year, quads=False):
+def fetchTopTeams(given_top_teams, year, andRank=False, quads=False):
     """Fetch team pages for certain teams + year"""
     
     # Load ratings data
@@ -505,7 +512,10 @@ def fetchTopTeams(given_top_teams, year, quads=False):
         ratings_data = json.load(f)
     
     # Filter teams with rank <= x
-    top_teams = given_top_teams or [team for team in ratings_data if team['rank'] <= 80]
+    if(andRank):
+        top_teams = list(dict.fromkeys(given_top_teams + [team['team'] for team in ratings_data if team['rank'] <= 55]))
+    else:
+        top_teams = given_top_teams
     
     # Create output directory
     pageType = 'TeamQuads' if quads else 'TeamPhps'
@@ -527,11 +537,16 @@ def fetchTopTeams(given_top_teams, year, quads=False):
             quadName = name.replace(' ', '-').replace('&', '').replace('.', '').replace("'", '').replace("St", "state") 
         
         try:
-            response = fetchTeamQuadPage(quadName, cookie_value) if quads else fetchTeamPage(phpName, kp_cookie_value)
-            # Save response to file
-            # Replace spaces and special characters in filename
             safe_filename = name.replace(' ', '_').replace('.', '').replace("'", '')
             output_file = os.path.join(output_dir, f'{safe_filename}.txt')
+
+            if os.path.exists(output_file):
+                print(f"Skipping {name}; file already exists")
+                continue
+            
+            response = fetchTeamQuadPage(quadName, cookie_value, year) if quads else fetchTeamPage(phpName, kp_cookie_value, year)
+            # Save response to file
+            # Replace spaces and special characters in filename
             
             with open(output_file, 'w', encoding='utf-8') as f:
                 f.write(response.text)
@@ -615,4 +630,6 @@ teams_2025 = [
     "Alabama St.",
     "Mount St. Mary's"
 ]
-fetchTopTeams(teams_2025, 2025)
+bids_2026 = ["North Dakota St.", "Tennessee St.", "LIU", "Northern Iowa", "Siena", "Wright St.", "Hofstra", "Queens"]
+all_extras = teams_2025 + bids_2026
+fetchTopTeams(teams_2025, 2026, False, False)

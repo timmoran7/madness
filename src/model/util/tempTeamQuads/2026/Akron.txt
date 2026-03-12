@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akron - 2026 NET Rankings and Quad Wins</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="description" property="og:description" content="2026 Akron Quad wins for NCAA College Basketball. NET rankings and Quadrants are used to help select teams for the NCAA Tournament during March Madness." />
+    <meta name="keywords" content="2026, Akron, MAC, net, rpi, net rankings, ncaa rankings, ncaa net quadrants, net quadrants, ncaa quadrants, ncaa basketball, net quad wins, ncaa quad wins, net quadrant wins, ncaa quadrant wins, college basketball net rankings, college basketball net, net college basketball, net rankings ncaa, ncaa team sheets, q1 wins, q4 losses, ncaa selection sunday, march madness, quad wins and losses, net quad breakdown, compare quad wins, compare net">
+	<meta property="og:image" content="https://bballnet.com/static/headerimg.jpg" />
+	<meta property="og:title" content="Akron - NET Rankings and Quad Wins" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<link rel="shortcut icon" href="/static/favicon.ico">
+	<style>
+	h1 {
+		padding: 0px;
+		margin: 0px;
+		display: inline-block;
+	}
+	</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y86RJEMBDJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Y86RJEMBDJ');
+    </script>
+	<script data-ad-client="ca-pub-8962919386001832" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="head"><a href="/" title="Home"><i class="fa fa-home" aria-hidden="true" style="border: 1px solid #6c757d;border-radius: 3px;padding: 2px 4px;"></i></a></div>
+		<div class="stats">
+			<img class="team_logo" src="//i.turner.ncaa.com/sites/default/files/images/logos/schools/bgl/akron.svg">
+			<div class="team-name">
+				<div class="team-name-title">
+					AKRON <span class="stats-conference"><a href="/conferences/MAC" title="MAC">(MAC)</a></span>
+				</div>
+				<div style="margin-top:4px;margin-left:32px;">
+					NET: 53
+					
+						<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;text-indent: 0;"></i>
+					
+					<br/>
+					Previous: 52
+					<br/>
+					Record: 26-5 (Conf: 17-1)
+				</div>
+			</div>
+		</div>
+		<div class="info">
+    NET Ranks through Mar 10 2026 and Game Results through Mar 10 2026
+    
+</div>
+		<div class="quads">
+			<div class="q1 q">
+				<div class="quad-header">
+					<div class="q-header">Quad 1 <div class="tooltipa"><i class="fa fa-info-circle" style="color:darkgray"></i><span class="tooltiptext">Home 1-30 | Neutral 1-50 | Away 1-75</span></div></div>
+					<div class="quad-record">
+						Record: 0-2
+					</div>
+				</div>
+				<div class="q-table-wrapper">
+					<table>
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">79-97 <span class="tooltiptext smalltooltip">11/16/2025</span></div></td>
+								<td>Away</td>
+								<td>(10)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/purdue" title="Purdue">
+										<span class="ap_rank_small">2 </span>
+										Purdue
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">73-76 <span class="tooltiptext smalltooltip">01/03/2026</span></div></td>
+								<td>Away</td>
+								<td>(54)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/miami-oh" title="Miami (OH)">
+										
+										Miami (OH)
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					</table>
+				</div>
+			</div>
+			<div class="q2 q">
+				<div class="quad-header">
+					<div class="q-header">Quad 2 <div class="tooltipa"><i class="fa fa-info-circle" style="color:darkgray"></i><span class="tooltiptext">Home 31-75 | Neutral 51-100 | Away 76-135</span></div></div>
+					<div class="quad-record">
+						Record: 0-2
+					</div>
+				</div>
+				<div class="q-table-wrapper">
+					<table>
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">94-97 <span class="tooltiptext smalltooltip">11/24/2025</span></div></td>
+								<td>Neutral</td>
+								<td>(65)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/yale" title="Yale">
+										
+										Yale
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">69-79 <span class="tooltiptext smalltooltip">02/07/2026</span></div></td>
+								<td>Away</td>
+								<td>(127)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/troy" title="Troy">
+										
+										Troy
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					</table>
+				</div>
+			</div>
+			<div class="q3 q">
+				<div class="quad-header">
+					<div class="q-header">Quad 3 <div class="tooltipa"><i class="fa fa-info-circle" style="color:darkgray"></i><span class="tooltiptext">Home 76-160 | Neutral 101-200 | Away 136-240</span></div></div>
+					<div class="quad-record">
+						Record: 8-1
+					</div>
+				</div>
+				<div class="q-table-wrapper">
+					<table>
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">88-71 <span class="tooltiptext smalltooltip">12/06/2025</span></div></td>
+								<td>Away</td>
+								<td>(206)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/tulane" title="Tulane">
+										
+										Tulane
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">100-115 <span class="tooltiptext smalltooltip">12/13/2025</span></div></td>
+								<td>Neutral</td>
+								<td>(108)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/murray-state" title="Murray St.">
+										
+										Murray St.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">77-67 <span class="tooltiptext smalltooltip">01/09/2026</span></div></td>
+								<td>Away</td>
+								<td>(156)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/bowling-green-state" title="Bowling Green">
+										
+										Bowling Green
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">82-63 <span class="tooltiptext smalltooltip">01/20/2026</span></div></td>
+								<td>Away</td>
+								<td>(198)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/buffalo" title="Buffalo">
+										
+										Buffalo
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">86-65 <span class="tooltiptext smalltooltip">01/23/2026</span></div></td>
+								<td>Away</td>
+								<td>(229)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/ohio" title="Ohio">
+										
+										Ohio
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">91-81 <span class="tooltiptext smalltooltip">01/27/2026</span></div></td>
+								<td>Home</td>
+								<td>(143)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/toledo" title="Toledo">
+										
+										Toledo
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">69-52 <span class="tooltiptext smalltooltip">01/30/2026</span></div></td>
+								<td>Home</td>
+								<td>(146)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/kent-state" title="Kent St.">
+										
+										Kent St.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">66-64 <span class="tooltiptext smalltooltip">02/03/2026</span></div></td>
+								<td>Away</td>
+								<td>(239)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/eastern-michigan" title="Eastern Mich.">
+										
+										Eastern Mich.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">92-70 <span class="tooltiptext smalltooltip">02/27/2026</span></div></td>
+								<td>Away</td>
+								<td>(146)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/kent-state" title="Kent St.">
+										
+										Kent St.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
+					</table>
+				</div>
+			</div>
+			<div class="q4 q">
+				<div class="quad-header">
+					<div class="q-header">Quad 4 <div class="tooltipa"><i class="fa fa-info-circle" style="color:darkgray"></i><span class="tooltiptext">Home 161+ | Neutral 201+ | Away 241+</span></div></div>
+					<div class="quad-record">
+						Record: 16-0
+					</div>
+				</div>
+				<div class="q-table-wrapper">
+					<table>
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">85-71 <span class="tooltiptext smalltooltip">11/03/2025</span></div></td>
+								<td>Home</td>
+								<td>(207)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/james-madison" title="James Madison">
+										
+										James Madison
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">104-69 <span class="tooltiptext smalltooltip">11/08/2025</span></div></td>
+								<td>Home</td>
+								<td>(248)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/princeton" title="Princeton">
+										
+										Princeton
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">96-75 <span class="tooltiptext smalltooltip">11/21/2025</span></div></td>
+								<td>Neutral</td>
+								<td>(240)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/iona" title="Iona">
+										
+										Iona
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">97-59 <span class="tooltiptext smalltooltip">11/23/2025</span></div></td>
+								<td>Neutral</td>
+								<td>(305)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/evansville" title="Evansville">
+										
+										Evansville
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">105-81 <span class="tooltiptext smalltooltip">11/29/2025</span></div></td>
+								<td>Home</td>
+								<td>(252)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/milwaukee" title="Milwaukee">
+										
+										Milwaukee
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">97-77 <span class="tooltiptext smalltooltip">12/03/2025</span></div></td>
+								<td>Home</td>
+								<td>(333)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/bucknell" title="Bucknell">
+										
+										Bucknell
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">93-72 <span class="tooltiptext smalltooltip">12/19/2025</span></div></td>
+								<td>Home</td>
+								<td>(239)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/eastern-michigan" title="Eastern Mich.">
+										
+										Eastern Mich.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">82-69 <span class="tooltiptext smalltooltip">01/06/2026</span></div></td>
+								<td>Home</td>
+								<td>(280)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/central-michigan" title="Central Mich.">
+										
+										Central Mich.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">87-77 <span class="tooltiptext smalltooltip">01/13/2026</span></div></td>
+								<td>Home</td>
+								<td>(299)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/ball-state" title="Ball St.">
+										
+										Ball St.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">104-89 <span class="tooltiptext smalltooltip">01/17/2026</span></div></td>
+								<td>Home</td>
+								<td>(281)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/western-michigan" title="Western Mich.">
+										
+										Western Mich.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">99-92 <span class="tooltiptext smalltooltip">02/13/2026</span></div></td>
+								<td>Home</td>
+								<td>(203)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/massachusetts" title="Massachusetts">
+										
+										Massachusetts
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">90-73 <span class="tooltiptext smalltooltip">02/17/2026</span></div></td>
+								<td>Away</td>
+								<td>(281)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/western-michigan" title="Western Mich.">
+										
+										Western Mich.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">78-65 <span class="tooltiptext smalltooltip">02/20/2026</span></div></td>
+								<td>Away</td>
+								<td>(299)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/ball-state" title="Ball St.">
+										
+										Ball St.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">99-85 <span class="tooltiptext smalltooltip">02/24/2026</span></div></td>
+								<td>Home</td>
+								<td>(198)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/buffalo" title="Buffalo">
+										
+										Buffalo
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">77-64 <span class="tooltiptext smalltooltip">03/03/2026</span></div></td>
+								<td>Away</td>
+								<td>(280)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/central-michigan" title="Central Mich.">
+										
+										Central Mich.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">94-55 <span class="tooltiptext smalltooltip">03/06/2026</span></div></td>
+								<td>Home</td>
+								<td>(336)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/northern-illinois" title="NIU">
+										
+										NIU
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+					</table>
+				</div>
+			</div>
+			<div class="upcoming q">
+				<div class="quad-header">
+					<div class="q-header">Upcoming</div>
+				</div>
+				<div class="q-table-wrapper">
+					<table>
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+								<tr class="">
+									<td><span style="color:#505050;">Q3</span></td>
+									<td>Neutral</td>
+									<td>(198)</td>
+									<td>
+										
+											<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+										
+									</td>
+									<td>
+										<a href="/teams/buffalo" title="Buffalo">
+											
+											Buffalo
+										</a>
+									</td>
+									<td>03/12/2026</td>
+								</tr>
+							
+						
+					</table>
+				</div>
+			</div>
+			<style type="text/css">
+				.bg-image {
+					background-image: url('//i.turner.ncaa.com/sites/default/files/images/logos/schools/bgl/akron.svg');
+					background-repeat: no-repeat;
+    				background-position: center;
+				}
+			</style>
+			<div class="q adspace-side">
+				<div class="bg-image" style="position:relative;margin:auto;width:300px;height:250px">
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8962919386001832" crossorigin="anonymous"></script>
+					<!-- Square -->
+					<ins class="adsbygoogle"
+						 style="display:block"
+						 data-ad-client="ca-pub-8962919386001832"
+						 data-ad-slot="5237591649"
+						 data-ad-format="auto"
+						 data-full-width-responsive="false"></ins>
+					<script>
+						 (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<a href="/" title="Back to Team List" style="margin-left:11px;" class="btn btn-primary"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back to Team List</a>
+		</div>
+
+		<div class="horiz-sp" style="margin-top:10px;margin-left:11px;margin-right:11px;">
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8962919386001832" crossorigin="anonymous"></script>
+			<!-- Horizontal Bar -->
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-8962919386001832"
+				 data-ad-slot="3882123850"
+				 data-ad-format="auto"
+				 data-full-width-responsive="false"></ins>
+			<script>
+				 (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+
+		<div style="border-radius:8px; background-color:#ffffff8a; margin:11px; padding:8px;">
+			<div id="post" style="">
+				<p>An asterisk (*) next to a score indicates overtime</p>
+				<p>This tool will display the breakdown of quad wins/losses for NCAA DI Men's Basketball Teams. This is
+					helpful to determine the chances of teams being selected for the NCAA Tournament during March Madness.
+					Some example use cases would be: to visualize how close a Q2 opponent is to becoming a higher quality
+					Q1 opponent; to determine whether one team has more quality wins than another team; to check how many
+					opportunities for quality wins remain on a team's schedule. This app is not associated with the NCAA or
+					any institutions represented on this website. All marks and logos are trademarks of their respective
+					owners.</p>
+				<p>A green up arrow means that the team's NET rank is trending upwards compared to the previous rank, while
+					a red down arrow means that the team's NET rank is trending downwards. A gray neutral icon means that
+					the ranking has not changed. The previous rank can be seen by opening the team's page. An opponent's
+					current NET ranking is displayed in parentheses next to the trending icon</p>
+				<p>Akron is in the MAC conference and has a 0-2
+					Quad I record, a 0-2 Quad II record, a 8-1 Quad III
+					record, and a 16-0 Quad IV record. The quadrant system is used to identify which
+					teams have more quality wins when it comes to Selection Sunday for the NCAA Tournament. Beating a
+					Top-30 Team at home is considered equally difficult as beating a Top-75 Team away:<br/>
+					Quadrant 1: Home 1-30, Neutral 1-50, Away 1-75.<br/>
+					Quadrant 2: Home 31-75, Neutral 51-100, Away 76-135.<br/>
+					Quadrant 3: Home 76-160, Neutral 101-200, Away 135-240.<br/>
+					Quadrant 4: Home 161-353, Neutral 201-353, Away 241-353.</p>
+			</div>
+		</div>
+
+	</div> <!-- wrapper -->
+<footer class="footer">
+    <p style="text-align: center;">
+        <a style="padding:7px" href="https://www.ncaa.com/news/basketball-men/2018-08-22/net-rankings-what-know-about-college-basketballs-new-tool-help" title="NET Rankings, Explained">NET Rankings, Explained</a>
+        <a style="padding:7px" href="https://www.ncaa.com/rankings/basketball-men/d1/ncaa-mens-basketball-net-rankings" title="NET Rankings from NCAA.com">NET Rankings from NCAA.com</a>
+    </p>
+    <p style="text-align: center;">
+        <a style="padding:7px" href="/privacypolicy" title="Privacy Policy">Privacy Policy</a>
+        <a style="padding:7px" href="/faq" title="About">About</a>
+        <a style="padding:7px" href="/contact" title="Contact">Contact</a>
+    </p>
+    <p style="text-align:center;">
+        <span style="padding:7px">Copyright &copy; 2026 bballnet.com. All rights reserved</span>
+    </p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

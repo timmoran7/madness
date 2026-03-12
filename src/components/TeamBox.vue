@@ -28,7 +28,7 @@ const emit = defineEmits<{
     >
         <img class="banner-pic" :src="props.logo" :alt="props.teamName" />
     </button>
-    <div v-if="props.seed != null || props.record" class="team-meta">
+    <div v-if="props.seed != null || props.record || props.conference" class="team-meta">
       <span class="seed" v-if="props.seed != null">({{ props.seed }})</span>
       <span class="record" v-if="props.record"><b>· </b>{{ props.record }}</span>
       <span class="conference" v-if="props.conference"><b>· </b>{{ props.conference }}</span>
@@ -88,6 +88,17 @@ const emit = defineEmits<{
 
   .banner-pic {
     height: 40px;
+  }
+
+  .team-meta {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    font-size: 14px;
+  }
+
+  .team-meta b {
+    display: none;
   }
 }
 

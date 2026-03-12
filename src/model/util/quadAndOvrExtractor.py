@@ -17,21 +17,64 @@ KP_STAT_ID_MAP = {
 	"Def OR%": "DORPct",
 	"Off FT%": "FTPct",
 	"Off 3PA": "3PARate",
-	"A/FGM": "ARate",
 	"Off 3P%": "3Pct",
+	"Tempo": "Tempo",
+	"A/FGM": "ARate",
 	"Off Avg. Poss. Length": "APLO",
 	"Def Avg. Poss. Length": "APLD",
-	"Tempo": "Tempo",
 }
 
 ROW_STAT_LABEL_MAP = {
 	"Average Height": "Average Height",
-	"Minutes Continuity": "Minutes Continuity",
-	"D-1 Experience": "D-1 Experience",
-	"Bench Minutes": "Bench Minutes",
 	"Overall": "SOS Overall",
 	"Non-conference": "SOS Non-conference",
+	"D-1 Experience": "D-1 Experience",
+	"Minutes Continuity": "Minutes Continuity",
+	"Bench Minutes": "Bench Minutes",
 }
+
+CONFERENCE_MAP = {
+	"A10": "Atlantic 10",
+	"AE": "Am East",
+	"B10": "B1G",
+	"BSth": "Big South",
+	"NEC": "NE",
+	"PL": "Patriot",
+	"SB": "Sun Belt",
+}
+
+KP_OVR_OUTPUT_ORDER = (
+	"KenPom Ovr.",
+	"Off Efficiency",
+	"Def Efficiency",
+	"Off TO%",
+	"Def TO%",
+	"Off OR%",
+	"Def OR%",
+	"Off FT%",
+	"Off 3PA",
+	"Off 3P%",
+	"Tempo",
+	"Average Height",
+	"A/FGM",
+	"Off Avg. Poss. Length",
+	"Def Avg. Poss. Length",
+	"SOS Overall",
+	"SOS Non-conference",
+	"D-1 Experience",
+	"Minutes Continuity",
+	"Bench Minutes",
+)
+
+KP_GAMES_COLUMNS = [
+	"date",
+	"opponentRank",
+	"opponent",
+	"result",
+	"location",
+	"record",
+	"conferenceRecord",
+]
 
 
 def clean_record(record_text: str) -> str:
@@ -90,6 +133,20 @@ def extract_quad_data(team_soup: BeautifulSoup, quad_key: str) -> dict:
 	}
 
 
+def extract_team_net_and_record(team_soup: BeautifulSoup) -> tuple[Optional[str], Optional[str]]:
+	info_container = team_soup.select_one("div.team-name div[style*='margin-top']")
+	if info_container is None:
+		return None, None
+
+	info_text = clean_cell_text(info_container)
+	net_match = re.search(r"NET:\s*(\d+)", info_text)
+	record_match = re.search(r"Record:\s*(\d+-\d+)", info_text)
+
+	net = net_match.group(1) if net_match else None
+	record = record_match.group(1) if record_match else None
+	return net, record
+
+
 def extractQuadStats(
 	year,
 ) -> dict:
@@ -105,11 +162,20 @@ def extractQuadStats(
 		team_name = txt_file.stem.replace("_", " ")
 		html = txt_file.read_text(encoding="utf-8", errors="ignore")
 		soup = BeautifulSoup(html, "html.parser")
+		net, team_record = extract_team_net_and_record(soup)
 
-		team_quad_stats[team_name] = {
-			quad_key: extract_quad_data(soup, quad_key)
-			for quad_key in QUAD_KEYS
+		team_entry = {
+			"net": net,
+			"record": team_record,
 		}
+		team_entry.update(
+			{
+				quad_key: extract_quad_data(soup, quad_key)
+				for quad_key in QUAD_KEYS
+			}
+		)
+
+		team_quad_stats[team_name] = team_entry
 
 	target_file.write_text(json.dumps(team_quad_stats, indent=2), encoding="utf-8")
 	print(f"Saved quad stats for {len(team_quad_stats)} teams to {target_file}")
@@ -209,6 +275,20 @@ def extract_row_based_stats(team_soup: BeautifulSoup) -> dict:
 	return row_stats
 
 
+def extract_conference(team_soup: BeautifulSoup) -> Optional[str]:
+	conf_link = team_soup.select_one('#title-container a[href*="conf.php?c="]')
+	if conf_link is None:
+		return None
+
+	href = conf_link.get("href", "")
+	match = re.search(r"[?&]c=([^&]+)", href)
+	if not match:
+		return None
+
+	conference = unescape(match.group(1)).strip()
+	return CONFERENCE_MAP.get(conference, conference)
+
+
 def extract_overall_rank_value(team_soup: BeautifulSoup) -> tuple[Optional[int], Optional[str]]:
 	title_node = team_soup.select_one("#title-container h5")
 	if title_node is None:
@@ -229,6 +309,54 @@ def extract_overall_rank_value(team_soup: BeautifulSoup) -> tuple[Optional[int],
 		value = record_text.strip("()") if record_text else None
 
 	return rank, value
+
+
+def clean_cell_text(cell) -> str:
+	text = cell.get_text(" ", strip=True)
+	text = unescape(text).replace("\xa0", " ")
+	return re.sub(r"\s+", " ", text).strip()
+
+
+def extract_schedule_opponent(opponent_cell) -> str:
+	opponent_link = opponent_cell.find("a")
+	if opponent_link is None:
+		return clean_cell_text(opponent_cell)
+
+	title = opponent_link.get("title")
+	if title:
+		return unescape(title).strip()
+
+	return clean_cell_text(opponent_link)
+
+
+def extract_games(team_soup: BeautifulSoup) -> list[dict]:
+	schedule_table = team_soup.select_one("#schedule-table")
+	if schedule_table is None:
+		return []
+
+	games = []
+	for row in schedule_table.select("tr"):
+		row_classes = row.get("class", [])
+		if "w" not in row_classes and "l" not in row_classes:
+			continue
+
+		cells = row.find_all("td")
+		if len(cells) < 10:
+			continue
+
+		games.append(
+			{
+				"date": clean_cell_text(cells[0]),
+				"opponentRank": clean_cell_text(cells[2]),
+				"opponent": extract_schedule_opponent(cells[3]),
+				"result": clean_cell_text(cells[4]),
+				"location": clean_cell_text(cells[7]),
+				"record": clean_cell_text(cells[8]),
+				"conferenceRecord": clean_cell_text(cells[9]),
+			}
+		)
+
+	return games
 
 
 def extractKpOvrStats(
@@ -259,15 +387,52 @@ def extractKpOvrStats(
 				rank = NUM_TEAMS - rank
 			stats[output_key] = [rank, value]
 
-		stats.update(extract_row_based_stats(soup))
+		row_stats = extract_row_based_stats(soup)
+		conference = extract_conference(soup)
 
-		team_stat_ranks[team_name] = stats
+		ordered_stats = {}
+		for key in KP_OVR_OUTPUT_ORDER:
+			if key in row_stats:
+				ordered_stats[key] = row_stats[key]
+			else:
+				ordered_stats[key] = stats.get(key, [None, None])
+		ordered_stats["conference"] = conference
+
+		team_stat_ranks[team_name] = ordered_stats
 
 	target_file.write_text(json.dumps(team_stat_ranks, indent=2), encoding="utf-8")
 	print(f"Saved KenPom ranks for {len(team_stat_ranks)} teams to {target_file}")
 
 	return team_stat_ranks
 
+
+def extractKpGames(
+	year,
+) -> dict:
+	source_dir = Path(__file__).parent / f"tempTeamPhps/{year}"
+	target_file = Path(__file__).parent / f"kpGames{year}.json"
+
+	if not source_dir.exists():
+		raise FileNotFoundError(f"Input directory not found: {source_dir}")
+
+	teams = {}
+	for txt_file in sorted(source_dir.glob("*.txt")):
+		html = txt_file.read_text(encoding="utf-8", errors="ignore")
+		soup = BeautifulSoup(html, "html.parser")
+		team_name = txt_file.stem.replace("_", " ")
+		teams[team_name] = extract_games(soup)
+
+	payload = {
+		"columns": KP_GAMES_COLUMNS,
+		"teams": teams,
+	}
+
+	target_file.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+	print(f"Saved KenPom games for {len(teams)} teams to {target_file}")
+
+	return payload
+
 if __name__ == "__main__":
-    #extractKpOvrStats(2026)
-	extractQuadStats(2025)
+	  extractKpOvrStats(2026)
+	# extractKpGames(2026)
+	# extractQuadStats(2026)

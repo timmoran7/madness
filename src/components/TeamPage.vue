@@ -1,22 +1,23 @@
 <script setup lang="ts">
+import { computed, toRefs } from "vue";
 import { useRoute, useRouter } from "vue-router";
+import QuadCard from "@/components/QuadCard.vue";
+import { getStatRankColor } from "@/utils/rankGradient";
 
 interface TeamPageStats {
-  offEfficiency: TeamStatDetail;
-  defEfficiency: TeamStatDetail;
-  height: TeamStatDetail;
-  continuity: TeamStatDetail;
-  experience: TeamStatDetail;
-  benchMinutes: TeamStatDetail;
-  sosOverall: TeamStatDetail;
-  sosNonConference: TeamStatDetail;
+  rankRatingStats: TeamPageStatRow[];
   overallRank: string;
   record: string;
+  netRank: string;
 }
 
 interface TeamStatDetail {
   rank: string;
   value: string;
+}
+
+interface TeamPageStatRow extends TeamStatDetail {
+  label: string;
 }
 
 interface QuadBucket {
@@ -31,13 +32,15 @@ interface TeamQuadResults {
   q4: QuadBucket;
 }
 
-defineProps<{
-  teamName: string;
-  teamLogo: string;
-  gameLogImage: string;
-  stats: TeamPageStats;
-  quads: TeamQuadResults;
-}>();
+interface TeamGameRow {
+  date: string;
+  opponentRank: string;
+  opponent: string;
+  result: string;
+  location: string;
+  record: string;
+  conferenceRecord: string;
+}
 
 const router = useRouter();
 const route = useRoute();
@@ -94,6 +97,101 @@ const getOrdinalSuffix = (rank: string) => {
 
   return "th";
 };
+
+const formatResult = (result: string): string => {
+  return result
+    .replace(/\s*,\s*/g, ", ")
+    .replace(/\s+/g, " ")
+    .trim();
+};
+
+const isResultWin = (result: string): boolean => {
+  return formatResult(result).toUpperCase().startsWith("W,");
+};
+
+const formatScoreOnly = (result: string): string => {
+  const cleaned = formatResult(result);
+  const scoreMatch = cleaned.match(/(\d+\s*-\s*\d+\*?)/);
+  if (!scoreMatch) {
+    return cleaned;
+  }
+
+  return scoreMatch[1].replace(/\s+/g, "");
+};
+
+const formatGameDate = (date: string): string => {
+  const match = date.match(/^[A-Za-z]{3}\s+([A-Za-z]{3})\s+(\d{1,2})$/);
+  if (!match) {
+    return date;
+  }
+
+  const monthMap: Record<string, number> = {
+    Jan: 1,
+    Feb: 2,
+    Mar: 3,
+    Apr: 4,
+    May: 5,
+    Jun: 6,
+    Jul: 7,
+    Aug: 8,
+    Sep: 9,
+    Oct: 10,
+    Nov: 11,
+    Dec: 12,
+  };
+
+  const month = monthMap[match[1]];
+  if (!month) {
+    return date;
+  }
+
+  return `${month}/${Number.parseInt(match[2], 10)}`;
+};
+
+const formatOpponentWithRank = (opponent: string, rank: string): string => {
+  const parsedRank = Number.parseInt(rank, 10);
+  if (Number.isNaN(parsedRank) || parsedRank <= 0) {
+    return opponent;
+  }
+
+  return `${opponent} <b>(${parsedRank})</b>`;
+};
+
+const props = defineProps<{
+  teamName: string;
+  teamLogo: string;
+  gameLog: TeamGameRow[];
+  stats: TeamPageStats;
+  quads: TeamQuadResults;
+}>();
+
+const { teamName, teamLogo, gameLog, stats, quads } = toRefs(props);
+
+const quadCards = computed(() => [
+  { label: "Q1", quad: quads.value.q1 },
+  { label: "Q2", quad: quads.value.q2 },
+  { label: "Q3", quad: quads.value.q3 },
+  { label: "Q4", quad: quads.value.q4 },
+]);
+
+const gameLogStats = ["SOS Overall", "SOS Non-conference"];
+const gridStats = computed(() =>
+  stats.value.rankRatingStats.filter(
+    (stat) => !gameLogStats.includes(stat.label),
+  ),
+);
+const sosOverallRank = computed(
+  () =>
+    stats.value.rankRatingStats.find(
+      (stat) => stat.label === gameLogStats[0],
+    )?.rank ?? "-",
+);
+const sosNonConferenceRank = computed(
+  () =>
+    stats.value.rankRatingStats.find(
+      (stat) => stat.label === gameLogStats[1],
+    )?.rank ?? "-",
+);
 </script>
 
 <template>
@@ -114,139 +212,99 @@ const getOrdinalSuffix = (rank: string) => {
               <p class="record-line">
                 <span class="extra-bold">{{ stats.record }}</span> |
                 <span class="extra-bold">{{ stats.overallRank }}</span
-                ><sup>{{ getOrdinalSuffix(stats.overallRank) }}</sup> in KenPom
+                ><sup>{{ getOrdinalSuffix(stats.overallRank) }}</sup> KenPom,
+                <span class="extra-bold">{{ stats.netRank }}</span>
+                <sup>{{ getOrdinalSuffix(stats.netRank) }}</sup> NET
               </p>
             </div>
           </div>
         </div>
 
+        <p style="font-size: 14px">
+          <em><b>Ranks of 365 D1 teams</b></em>
+        </p>
         <div class="stats-grid mb-4">
-          <article class="stat-card">
-            <p class="label">Off Efficiency Rank</p>
+          <article
+            v-for="stat in gridStats"
+            :key="stat.label"
+            class="stat-card"
+          >
+            <p class="label">{{ stat.label }}</p>
             <p class="value">
-              <span>{{ stats.offEfficiency.rank }}</span>
-              <span class="value-detail">{{ stats.offEfficiency.value }}</span>
-            </p>
-          </article>
-          <article class="stat-card">
-            <p class="label">Def Efficiency Rank</p>
-            <p class="value">
-              <span>{{ stats.defEfficiency.rank }}</span>
-              <span class="value-detail">{{ stats.defEfficiency.value }}</span>
-            </p>
-          </article>
-          <article class="stat-card">
-            <p class="label">Height</p>
-            <p class="value">
-              <span>{{ stats.height.rank }}</span>
-              <span class="value-detail">{{ stats.height.value }}</span>
-            </p>
-          </article>
-          <article class="stat-card">
-            <p class="label">Roster Continuity</p>
-            <p class="value">
-              <span>{{ stats.continuity.rank }}</span>
-              <span class="value-detail">{{ stats.continuity.value }}</span>
-            </p>
-          </article>
-          <article class="stat-card">
-            <p class="label">Experience</p>
-            <p class="value">
-              <span>{{ stats.experience.rank }}</span>
-              <span class="value-detail">{{ stats.experience.value }}</span>
-            </p>
-          </article>
-          <article class="stat-card">
-            <p class="label">Bench Minutes</p>
-            <p class="value">
-              <span>{{ stats.benchMinutes.rank }}</span>
-              <span class="value-detail">{{ stats.benchMinutes.value }}</span>
-            </p>
-          </article>
-          <article class="stat-card">
-            <p class="label">SOS Overall</p>
-            <p class="value">
-              <span>{{ stats.sosOverall.rank }}</span>
-              <span class="value-detail">{{ stats.sosOverall.value }}</span>
-            </p>
-          </article>
-          <article class="stat-card">
-            <p class="label">SOS Non-Conf</p>
-            <p class="value">
-              <span>{{ stats.sosNonConference.rank }}</span>
-              <span class="value-detail">{{
-                stats.sosNonConference.value
-              }}</span>
+              <span
+                class="rank-chip"
+                :style="{ backgroundColor: getStatRankColor(stat.label, stat.rank) }"
+                >{{ stat.rank }}</span
+              >
+              <span class="value-detail">{{ stat.value }}</span>
             </p>
           </article>
         </div>
 
         <h4 class="mb-3">Results by Quad</h4>
         <div class="quad-grid">
-          <article class="quad-card">
-            <div class="quad-head">
-              <h5 class="mb-0">Q1</h5>
-              <strong>{{ quads.q1.record }}</strong>
-            </div>
-            <ul>
-              <li v-for="game in quads.q1.games" :key="`q1-${game}`" :class="isWin(game) ? 'game-win' : 'game-loss'">
-                {{ game }}
-              </li>
-              <li v-if="quads.q1.games.length === 0" class="text-muted">
-                No games listed
-              </li>
-            </ul>
-          </article>
-
-          <article class="quad-card">
-            <div class="quad-head">
-              <h5 class="mb-0">Q2</h5>
-              <strong>{{ quads.q2.record }}</strong>
-            </div>
-            <ul>
-              <li v-for="game in quads.q2.games" :key="`q2-${game}`" :class="isWin(game) ? 'game-win' : 'game-loss'">
-                {{ game }}
-              </li>
-              <li v-if="quads.q2.games.length === 0" class="text-muted">
-                No games listed
-              </li>
-            </ul>
-          </article>
-
-          <article class="quad-card">
-            <div class="quad-head">
-              <h5 class="mb-0">Q3</h5>
-              <strong>{{ quads.q3.record }}</strong>
-            </div>
-            <ul>
-              <li v-for="game in quads.q3.games" :key="`q3-${game}`" :class="isWin(game) ? 'game-win' : 'game-loss'">
-                {{ game }}
-              </li>
-              <li v-if="quads.q3.games.length === 0" class="text-muted">
-                No games listed
-              </li>
-            </ul>
-          </article>
-
-          <article class="quad-card">
-            <div class="quad-head">
-              <h5 class="mb-0">Q4</h5>
-              <strong>{{ quads.q4.record }}</strong>
-            </div>
-            <ul>
-              <li v-for="game in quads.q4.games" :key="`q4-${game}`" :class="isWin(game) ? 'game-win' : 'game-loss'">
-                {{ game }}
-              </li>
-              <li v-if="quads.q4.games.length === 0" class="text-muted">
-                No games listed
-              </li>
-            </ul>
-          </article>
+          <QuadCard
+            v-for="quadCard in quadCards"
+            :key="quadCard.label"
+            :label="quadCard.label"
+            :quad="quadCard.quad"
+          />
         </div>
       </div>
 
       <div class="team-right">
-        <img :src="gameLogImage" alt="Game log" class="game-log-image" />
+        <section class="game-log-card">
+          <h4>Game Log</h4>
+          <p class="mb-4 sos-line">
+            SOS: {{ sosOverallRank }} | Non-conference SOS:
+            {{ sosNonConferenceRank }}
+          </p>
+          <div class="game-log-table-wrap">
+            <table class="game-log-table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Opponent</th>
+                  <th>Result</th>
+                  <th>Location</th>
+                  <th>Record</th>
+                  <th>Conf</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  v-for="(game, index) in gameLog"
+                  :key="`${game.date}-${game.opponent}-${index}`"
+                  :class="
+                    isResultWin(game.result) ? 'game-row-win' : 'game-row-loss'
+                  "
+                >
+                  <td>{{ formatGameDate(game.date) }}</td>
+                  <td
+                    v-html="
+                      formatOpponentWithRank(game.opponent, game.opponentRank)
+                    "
+                  ></td>
+                  <td
+                    :class="
+                      isResultWin(game.result) ? 'result-win' : 'result-loss'
+                    "
+                  >
+                    {{ formatScoreOnly(game.result) }}
+                  </td>
+                  <td>{{ game.location }}</td>
+                  <td>{{ game.record }}</td>
+                  <td>{{ game.conferenceRecord || "-" }}</td>
+                </tr>
+                <tr v-if="gameLog.length === 0">
+                  <td colspan="6" class="text-muted text-center py-3">
+                    No game log data available.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
       </div>
     </div>
   </section>
@@ -286,13 +344,17 @@ h2 {
   margin: 0;
 }
 
-.record-line {
+.record-line, .sos-line {
   color: #4c454d;
   font-style: italic;
   font-weight: 500;
   font-size: 20px;
   margin: 0;
   align-self: flex-end;
+}
+
+.sos-line {
+  font-size: 16px;
 }
 
 .extra-bold {
@@ -313,17 +375,62 @@ h2 {
 
 .team-right {
   min-width: 0;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
 }
 
-.game-log-image {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
-  object-fit: contain;
+.game-log-card {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+  height: 100%;
+  margin-top: 12px;
+}
+
+.game-log-table-wrap {
+  max-height: 860px;
+  overflow: auto;
+  border: 0;
   border-radius: 6px;
+}
+
+.game-log-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.86rem;
+}
+
+.game-log-table th,
+.game-log-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #e9ecef;
+  white-space: nowrap;
+  text-align: left;
+}
+
+.game-log-table thead th {
+  position: sticky;
+  top: 0;
+  background: #f5f6f8;
+  z-index: 1;
+  font-weight: 700;
+}
+
+.game-row-win {
+  background: #e1f0e5;
+}
+
+.game-row-loss {
+  background: #f7e2e2;
+}
+
+.result-win {
+  color: #2c7a4b;
+  font-weight: 700;
+}
+
+.result-loss {
+  color: #b24f4f;
+  font-weight: 700;
 }
 
 .stat-card {
@@ -345,9 +452,18 @@ h2 {
   font-weight: 600;
 }
 
+.rank-chip {
+  display: inline-block;
+  min-width: 2.25rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  text-align: center;
+}
+
 .value-detail {
   margin-left: 6px;
   color: #6c757d;
+  font-size: 14px;
   font-style: italic;
   font-weight: 500;
 }
@@ -356,40 +472,6 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 12px;
-}
-
-.quad-card {
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  padding: 12px;
-  background: #ffffff;
-}
-
-.quad-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.quad-card ul {
-  margin: 0;
-  padding-left: 16px;
-  max-height: 240px;
-  overflow: auto;
-}
-
-.quad-card li {
-  margin-bottom: 4px;
-  font-size: 0.9rem;
-}
-
-.game-win {
-  color: #2d7a4f;
-}
-
-.game-loss {
-  color: #b85555;
 }
 
 .back-button {
@@ -410,22 +492,23 @@ h2 {
     width: 100%;
   }
 
-  .game-log-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    min-height: 0;
-    max-height: none;
+  .game-log-table {
+    font-size: 0.8rem;
   }
 
-  .quad-card ul {
-    max-height: 180px;
+  .game-log-table th,
+  .game-log-table td {
+    padding: 5px 6px;
   }
 
   .team-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 0px;
+  }
+
+  .game-log-card {
+    margin-top: 0px;
   }
 }
 </style>

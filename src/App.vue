@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, nextTick, ref } from "vue";
 import { useRouter } from "vue-router";
-import pictureMappings from "@/data/picMappings.json";
+import teams from "@/data/teams2026.json";
 
 const router = useRouter();
 const teamQuery = ref("");
@@ -9,7 +9,7 @@ const teamSearchInput = ref<HTMLInputElement | null>(null);
 const isDropdownOpen = ref(false);
 
 const teamNames = computed<string[]>(() => {
-  return Object.keys(pictureMappings).sort((a, b) => a.localeCompare(b));
+  return teams.sort((a, b) => a.localeCompare(b));
 });
 
 const filteredTeamNames = computed<string[]>(() => {
@@ -143,7 +143,9 @@ const goHome = () => {
 
     <div class="container">
       <footer class="text-center mt-5 text-muted">
-        Contact: timthemoran@gmail.com
+        Credits: <a href="https://kenpom.com" target="_blank" rel="noopener noreferrer">KenPom.com</a>, <a href="https://bballnet.com" target="_blank" rel="noopener noreferrer">bballnet.com</a>
+        <br>
+        Contact: <a href="mailto:timthemoran@gmail.com">timthemoran@gmail.com</a>
       </footer>
     </div>
   </div>
@@ -195,6 +197,10 @@ const goHome = () => {
 
 .team-dropdown-item:hover {
   background-color: #e9ecef;
+}
+
+footer {
+  margin-bottom: 12px;
 }
 
 @media (max-width: 768px) {

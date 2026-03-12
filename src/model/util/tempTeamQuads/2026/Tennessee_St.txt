@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tennessee St. - 2026 NET Rankings and Quad Wins</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="description" property="og:description" content="2026 Tennessee St. Quad wins for NCAA College Basketball. NET rankings and Quadrants are used to help select teams for the NCAA Tournament during March Madness." />
+    <meta name="keywords" content="2026, Tennessee St., OVC, net, rpi, net rankings, ncaa rankings, ncaa net quadrants, net quadrants, ncaa quadrants, ncaa basketball, net quad wins, ncaa quad wins, net quadrant wins, ncaa quadrant wins, college basketball net rankings, college basketball net, net college basketball, net rankings ncaa, ncaa team sheets, q1 wins, q4 losses, ncaa selection sunday, march madness, quad wins and losses, net quad breakdown, compare quad wins, compare net">
+	<meta property="og:image" content="https://bballnet.com/static/headerimg.jpg" />
+	<meta property="og:title" content="Tennessee St. - NET Rankings and Quad Wins" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+	<link rel="shortcut icon" href="/static/favicon.ico">
+	<style>
+	h1 {
+		padding: 0px;
+		margin: 0px;
+		display: inline-block;
+	}
+	</style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y86RJEMBDJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Y86RJEMBDJ');
+    </script>
+	<script data-ad-client="ca-pub-8962919386001832" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="head"><a href="/" title="Home"><i class="fa fa-home" aria-hidden="true" style="border: 1px solid #6c757d;border-radius: 3px;padding: 2px 4px;"></i></a></div>
+		<div class="stats">
+			<img class="team_logo" src="//i.turner.ncaa.com/sites/default/files/images/logos/schools/bgl/tennessee-st.svg">
+			<div class="team-name">
+				<div class="team-name-title">
+					TENNESSEE ST. <span class="stats-conference"><a href="/conferences/OVC" title="OVC">(OVC)</a></span>
+				</div>
+				<div style="margin-top:4px;margin-left:32px;">
+					NET: 172
+					
+						<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;text-indent: 0;"></i>
+					
+					<br/>
+					Previous: 173
+					<br/>
+					Record: 23-9 (Conf: 15-5)
+				</div>
+			</div>
+		</div>
+		<div class="info">
+    NET Ranks through Mar 10 2026 and Game Results through Mar 10 2026
+    
+</div>
+		<div class="quads">
+			<div class="q1 q">
+				<div class="quad-header">
+					<div class="q-header">Quad 1 <div class="tooltipa"><i class="fa fa-info-circle" style="color:darkgray"></i><span class="tooltiptext">Home 1-30 | Neutral 1-50 | Away 1-75</span></div></div>
+					<div class="quad-record">
+						Record: 0-2
+					</div>
+				</div>
+				<div class="q-table-wrapper">
+					<table>
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">79-87 <span class="tooltiptext smalltooltip">11/08/2025</span></div></td>
+								<td>Away</td>
+								<td>(64)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/belmont" title="Belmont">
+										
+										Belmont
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">60-89 <span class="tooltiptext smalltooltip">11/20/2025</span></div></td>
+								<td>Away</td>
+								<td>(20)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/tennessee" title="Tennessee">
+										<span class="ap_rank_small">20 </span>
+										Tennessee
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					</table>
+				</div>
+			</div>
+			<div class="q2 q">
+				<div class="quad-header">
+					<div class="q-header">Quad 2 <div class="tooltipa"><i class="fa fa-info-circle" style="color:darkgray"></i><span class="tooltiptext">Home 31-75 | Neutral 51-100 | Away 76-135</span></div></div>
+					<div class="quad-record">
+						Record: 1-0
+					</div>
+				</div>
+				<div class="q-table-wrapper">
+					<table>
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">63-60 <span class="tooltiptext smalltooltip">12/13/2025</span></div></td>
+								<td>Away</td>
+								<td>(110)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/nevada-las-vegas" title="UNLV">
+										
+										UNLV
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					</table>
+				</div>
+			</div>
+			<div class="q3 q">
+				<div class="quad-header">
+					<div class="q-header">Quad 3 <div class="tooltipa"><i class="fa fa-info-circle" style="color:darkgray"></i><span class="tooltiptext">Home 76-160 | Neutral 101-200 | Away 136-240</span></div></div>
+					<div class="quad-record">
+						Record: 3-1
+					</div>
+				</div>
+				<div class="q-table-wrapper">
+					<table>
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">82-95 <span class="tooltiptext smalltooltip">11/16/2025</span></div></td>
+								<td>Away</td>
+								<td>(157)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/western-kentucky" title="Western Ky.">
+										
+										Western Ky.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">75-73 <span class="tooltiptext smalltooltip">11/25/2025</span></div></td>
+								<td>Away</td>
+								<td>(238)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/north-carolina-asheville" title="UNC Asheville">
+										
+										UNC Asheville
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">79-71 <span class="tooltiptext smalltooltip">02/26/2026</span></div></td>
+								<td>Away</td>
+								<td>(226)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/southeast-missouri-state" title="Southeast Mo. St.">
+										
+										Southeast Mo. St.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">67-42 <span class="tooltiptext smalltooltip">02/28/2026</span></div></td>
+								<td>Away</td>
+								<td>(205)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/tennessee-martin" title="UT Martin">
+										
+										UT Martin
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+					</table>
+				</div>
+			</div>
+			<div class="q4 q">
+				<div class="quad-header">
+					<div class="q-header">Quad 4 <div class="tooltipa"><i class="fa fa-info-circle" style="color:darkgray"></i><span class="tooltiptext">Home 161+ | Neutral 201+ | Away 241+</span></div></div>
+					<div class="quad-record">
+						Record: 16-6
+					</div>
+				</div>
+				<div class="q-table-wrapper">
+					<table>
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">70-64 <span class="tooltiptext smalltooltip">11/30/2025</span></div></td>
+								<td>Away</td>
+								<td>(287)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/chattanooga" title="Chattanooga">
+										
+										Chattanooga
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">53-80 <span class="tooltiptext smalltooltip">12/03/2025</span></div></td>
+								<td>Away</td>
+								<td>(308)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/alabama-am" title="Alabama A&amp;M">
+										
+										Alabama A&amp;M
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">78-71 <span class="tooltiptext smalltooltip">12/18/2025</span></div></td>
+								<td>Home</td>
+								<td>(205)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/tennessee-martin" title="UT Martin">
+										
+										UT Martin
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">82-91 <span class="tooltiptext smalltooltip">12/20/2025</span></div></td>
+								<td>Home</td>
+								<td>(226)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/southeast-missouri-state" title="Southeast Mo. St.">
+										
+										Southeast Mo. St.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">88-76 <span class="tooltiptext smalltooltip">12/30/2025</span></div></td>
+								<td>Away</td>
+								<td>(307)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/tennessee-tech" title="Tennessee Tech">
+										
+										Tennessee Tech
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">84-79 <span class="tooltiptext smalltooltip">01/03/2026</span></div></td>
+								<td>Away</td>
+								<td>(309)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/arkansas-little-rock" title="Little Rock">
+										
+										Little Rock
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">90-68 <span class="tooltiptext smalltooltip">01/08/2026</span></div></td>
+								<td>Away</td>
+								<td>(364)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/western-illinois" title="Western Ill.">
+										
+										Western Ill.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">70-74 <span class="tooltiptext smalltooltip">01/10/2026</span></div></td>
+								<td>Away</td>
+								<td>(321)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/eastern-illinois" title="Eastern Ill.">
+										
+										Eastern Ill.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">105-100* <span class="tooltiptext smalltooltip">01/15/2026</span></div></td>
+								<td>Home</td>
+								<td>(265)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/morehead-state" title="Morehead St.">
+										
+										Morehead St.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">73-67 <span class="tooltiptext smalltooltip">01/17/2026</span></div></td>
+								<td>Home</td>
+								<td>(344)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/southern-indiana" title="Southern Ind.">
+										
+										Southern Ind.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">66-74 <span class="tooltiptext smalltooltip">01/22/2026</span></div></td>
+								<td>Away</td>
+								<td>(261)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/southern-illinois-edwardsville" title="SIUE">
+										
+										SIUE
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">96-86 <span class="tooltiptext smalltooltip">01/24/2026</span></div></td>
+								<td>Away</td>
+								<td>(263)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/lindenwood" title="Lindenwood">
+										
+										Lindenwood
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">70-63 <span class="tooltiptext smalltooltip">01/29/2026</span></div></td>
+								<td>Home</td>
+								<td>(309)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/arkansas-little-rock" title="Little Rock">
+										
+										Little Rock
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">85-90 <span class="tooltiptext smalltooltip">02/02/2026</span></div></td>
+								<td>Home</td>
+								<td>(307)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/tennessee-tech" title="Tennessee Tech">
+										
+										Tennessee Tech
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">77-68 <span class="tooltiptext smalltooltip">02/05/2026</span></div></td>
+								<td>Home</td>
+								<td>(321)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/eastern-illinois" title="Eastern Ill.">
+										
+										Eastern Ill.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">83-56 <span class="tooltiptext smalltooltip">02/07/2026</span></div></td>
+								<td>Home</td>
+								<td>(364)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/western-illinois" title="Western Ill.">
+										
+										Western Ill.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">73-71 <span class="tooltiptext smalltooltip">02/12/2026</span></div></td>
+								<td>Away</td>
+								<td>(344)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/southern-indiana" title="Southern Ind.">
+										
+										Southern Ind.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:red;">L</span>
+									
+								</td>
+								<td><div class="tooltipa">86-94 <span class="tooltiptext smalltooltip">02/14/2026</span></div></td>
+								<td>Away</td>
+								<td>(265)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/morehead-state" title="Morehead St.">
+										
+										Morehead St.
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">89-80 <span class="tooltiptext smalltooltip">02/19/2026</span></div></td>
+								<td>Home</td>
+								<td>(263)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/lindenwood" title="Lindenwood">
+										
+										Lindenwood
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">80-53 <span class="tooltiptext smalltooltip">02/21/2026</span></div></td>
+								<td>Home</td>
+								<td>(261)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/southern-illinois-edwardsville" title="SIUE">
+										
+										SIUE
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">68-55 <span class="tooltiptext smalltooltip">03/06/2026</span></div></td>
+								<td>Neutral</td>
+								<td>(205)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/tennessee-martin" title="UT Martin">
+										
+										UT Martin
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">93-67 <span class="tooltiptext smalltooltip">03/07/2026</span></div></td>
+								<td>Neutral</td>
+								<td>(265)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/morehead-state" title="Morehead St.">
+										
+										Morehead St.
+									</a>
+								</td>
+							</tr>
+							
+						
+					</table>
+				</div>
+			</div>
+			<div class="upcoming q">
+				<div class="quad-header">
+					<div class="q-header">Upcoming</div>
+				</div>
+				<div class="q-table-wrapper">
+					<table>
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					</table>
+				</div>
+			</div>
+			<style type="text/css">
+				.bg-image {
+					background-image: url('//i.turner.ncaa.com/sites/default/files/images/logos/schools/bgl/tennessee-st.svg');
+					background-repeat: no-repeat;
+    				background-position: center;
+				}
+			</style>
+			<div class="q adspace-side">
+				<div class="bg-image" style="position:relative;margin:auto;width:300px;height:250px">
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8962919386001832" crossorigin="anonymous"></script>
+					<!-- Square -->
+					<ins class="adsbygoogle"
+						 style="display:block"
+						 data-ad-client="ca-pub-8962919386001832"
+						 data-ad-slot="5237591649"
+						 data-ad-format="auto"
+						 data-full-width-responsive="false"></ins>
+					<script>
+						 (adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<a href="/" title="Back to Team List" style="margin-left:11px;" class="btn btn-primary"><i class="fa fa-arrow-left" aria-hidden="true"></i> Back to Team List</a>
+		</div>
+
+		<div class="horiz-sp" style="margin-top:10px;margin-left:11px;margin-right:11px;">
+			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8962919386001832" crossorigin="anonymous"></script>
+			<!-- Horizontal Bar -->
+			<ins class="adsbygoogle"
+				 style="display:block"
+				 data-ad-client="ca-pub-8962919386001832"
+				 data-ad-slot="3882123850"
+				 data-ad-format="auto"
+				 data-full-width-responsive="false"></ins>
+			<script>
+				 (adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+
+		<div style="border-radius:8px; background-color:#ffffff8a; margin:11px; padding:8px;">
+			<div id="post" style="">
+				<p>An asterisk (*) next to a score indicates overtime</p>
+				<p>This tool will display the breakdown of quad wins/losses for NCAA DI Men's Basketball Teams. This is
+					helpful to determine the chances of teams being selected for the NCAA Tournament during March Madness.
+					Some example use cases would be: to visualize how close a Q2 opponent is to becoming a higher quality
+					Q1 opponent; to determine whether one team has more quality wins than another team; to check how many
+					opportunities for quality wins remain on a team's schedule. This app is not associated with the NCAA or
+					any institutions represented on this website. All marks and logos are trademarks of their respective
+					owners.</p>
+				<p>A green up arrow means that the team's NET rank is trending upwards compared to the previous rank, while
+					a red down arrow means that the team's NET rank is trending downwards. A gray neutral icon means that
+					the ranking has not changed. The previous rank can be seen by opening the team's page. An opponent's
+					current NET ranking is displayed in parentheses next to the trending icon</p>
+				<p>Tennessee St. is in the OVC conference and has a 0-2
+					Quad I record, a 1-0 Quad II record, a 3-1 Quad III
+					record, and a 16-6 Quad IV record. The quadrant system is used to identify which
+					teams have more quality wins when it comes to Selection Sunday for the NCAA Tournament. Beating a
+					Top-30 Team at home is considered equally difficult as beating a Top-75 Team away:<br/>
+					Quadrant 1: Home 1-30, Neutral 1-50, Away 1-75.<br/>
+					Quadrant 2: Home 31-75, Neutral 51-100, Away 76-135.<br/>
+					Quadrant 3: Home 76-160, Neutral 101-200, Away 135-240.<br/>
+					Quadrant 4: Home 161-353, Neutral 201-353, Away 241-353.</p>
+			</div>
+		</div>
+
+	</div> <!-- wrapper -->
+<footer class="footer">
+    <p style="text-align: center;">
+        <a style="padding:7px" href="https://www.ncaa.com/news/basketball-men/2018-08-22/net-rankings-what-know-about-college-basketballs-new-tool-help" title="NET Rankings, Explained">NET Rankings, Explained</a>
+        <a style="padding:7px" href="https://www.ncaa.com/rankings/basketball-men/d1/ncaa-mens-basketball-net-rankings" title="NET Rankings from NCAA.com">NET Rankings from NCAA.com</a>
+    </p>
+    <p style="text-align: center;">
+        <a style="padding:7px" href="/privacypolicy" title="Privacy Policy">Privacy Policy</a>
+        <a style="padding:7px" href="/faq" title="About">About</a>
+        <a style="padding:7px" href="/contact" title="Contact">Contact</a>
+    </p>
+    <p style="text-align:center;">
+        <span style="padding:7px">Copyright &copy; 2026 bballnet.com. All rights reserved</span>
+    </p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

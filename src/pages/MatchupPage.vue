@@ -4,10 +4,10 @@ import { useRouter, useRoute } from "vue-router";
 import MatchupTable from "@/components/MatchupTable.vue";
 import UpsetTable from "@/components/UpsetTable.vue";
 import TeamBox from "@/components/TeamBox.vue";
-import pictureMappings from "@/data/picMappings.json";
+import teamLogoUrlsData from "@/data/teamLogoUrls.json";
 import { normalizeTeamName } from "@/utils/teamName";
 import upsetData from "@/data/upsetData.json";
-import kpOvrStats from "@/data/kpOvrStats2025.json";
+import kpOvrStats from "@/data/kpOvrStats2026.json";
 import seedProbabilities from "@/data/seedProbabilities.json";
 import type {
   MatchupTableDataType,
@@ -30,7 +30,7 @@ const dawgLogo = ref<string>("");
 const miFactor = ref<number>(0);
 const upsetChance = ref<number>(0);
 
-const picMappings: { [key: string]: string } = pictureMappings;
+const teamLogoUrls: Record<string, string> = teamLogoUrlsData;
 const typedUpsetData = upsetData as UpsetDataType;
 
 const NON_STAT_KEYS = new Set(["seed", "conference", "record"]);
@@ -145,8 +145,8 @@ const loadMatchupContent = () => {
 
   const team1 = normalizeTeamName(selectedMatchup.value.split("_")[0]);
   const team2 = normalizeTeamName(selectedMatchup.value.split("_")[1]);
-  favLogo.value = `/madness/logos/${picMappings[team1]}`;
-  dawgLogo.value = `/madness/logos/${picMappings[team2]}`;
+  favLogo.value = teamLogoUrls[team1] ?? "";
+  dawgLogo.value = teamLogoUrls[team2] ?? "";
 
   const matchupEntry = typedUpsetData.matchups[selectedMatchup.value];
   if (!matchupEntry) {

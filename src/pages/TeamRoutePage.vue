@@ -2,14 +2,16 @@
 import { computed } from "vue";
 import { useRoute } from "vue-router";
 import TeamPage from "@/components/TeamPage.vue";
-import pictureMappings from "@/data/picMappings.json";
-import rawKpStats from "@/data/kpOvrStats2025.json";
-import rawQuadStats from "@/data/quadStats2025.json";
+import teamLogoUrlsData from "@/data/teamLogoUrls.json";
+import rawKpGames from "@/data/kpGames2026.json";
+import rawKpStats from "@/data/kpOvrStats2026.json";
+import rawQuadStats from "@/data/quadStats2026.json";
 
 const route = useRoute();
 
 type KpStatPair = Array<string | number | null>;
-type KpTeamStats = Record<string, KpStatPair>;
+type KpStatValue = KpStatPair | string | number | null;
+type KpTeamStats = Record<string, KpStatValue>;
 const kpStatsData = rawKpStats as Record<string, KpTeamStats>;
 
 interface QuadBucket {
@@ -18,6 +20,7 @@ interface QuadBucket {
 }
 
 interface TeamQuadResults {
+  net?: string;
   q1: QuadBucket;
   q2: QuadBucket;
   q3: QuadBucket;
@@ -29,13 +32,49 @@ interface TeamStatDetail {
   value: string;
 }
 
+interface TeamPageStatRow extends TeamStatDetail {
+  label: string;
+}
+
+interface TeamGameRow {
+  date: string;
+  opponentRank: string;
+  opponent: string;
+  result: string;
+  location: string;
+  record: string;
+  conferenceRecord: string;
+}
+
 const EMPTY_QUAD_BUCKET: QuadBucket = {
   record: "0-0",
   games: [],
 };
 
+const kpGamesData = rawKpGames as { teams: Record<string, TeamGameRow[]> };
 const quadStatsData = rawQuadStats as Record<string, TeamQuadResults>;
-const picMappings: { [key: string]: string } = pictureMappings;
+const teamLogoUrls: Record<string, string> = teamLogoUrlsData;
+
+const normalizeTeamName = (name: string): string =>
+  name
+    .toLowerCase()
+    .replace(/\./g, "")
+    .replace(/'/g, "")
+    .replace(/&/g, "and")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const kpGamesKeysByNormalizedName = new Map(
+  Object.keys(kpGamesData.teams).map((team) => [normalizeTeamName(team), team]),
+);
+
+const resolveKpGamesTeamName = (candidate: string): string | null => {
+  if (kpGamesData.teams[candidate]) {
+    return candidate;
+  }
+
+  return kpGamesKeysByNormalizedName.get(normalizeTeamName(candidate)) ?? null;
+};
 
 const teamName = computed<string>(() => {
   const rawName = route.params.teamName;
@@ -43,8 +82,7 @@ const teamName = computed<string>(() => {
 });
 
 const teamLogo = computed<string>(() => {
-  const fileName = picMappings[teamName.value];
-  return fileName ? `/madness/logos/${fileName}` : "";
+  return teamLogoUrls[teamName.value] ?? "";
 });
 
 const teamPageStats = computed(() => {
@@ -54,12 +92,14 @@ const teamPageStats = computed(() => {
   }
 
   const readStat = (label: string): string => {
-    const value = teamStats[label]?.[1];
+    const stat = teamStats[label];
+    const value = Array.isArray(stat) ? stat[1] : undefined;
     return value === undefined || value === null ? "N/A" : String(value);
   };
 
   const readRank = (label: string): string => {
-    const value = teamStats[label]?.[0];
+    const stat = teamStats[label];
+    const value = Array.isArray(stat) ? stat[0] : undefined;
     return value === undefined || value === null ? "N/A" : String(value);
   };
 
@@ -70,17 +110,25 @@ const teamPageStats = computed(() => {
     };
   };
 
+  const fieldsToNotDisplay = ["KenPom Ovr.", "seed", "conference", "Off Avg. Poss. Length"];
+  const rankRatingStats: TeamPageStatRow[] = Object.entries(teamStats)
+    .filter(([label, stat]) => {
+      if (fieldsToNotDisplay.includes(label)) {
+        return false;
+      }
+
+      return Array.isArray(stat);
+    })
+    .map(([label]) => ({
+      label,
+      ...readStatDetail(label),
+    }));
+
   return {
     overallRank: readRank("KenPom Ovr."),
     record: readStat("KenPom Ovr."),
-    offEfficiency: readStatDetail("Off Efficiency"),
-    defEfficiency: readStatDetail("Def Efficiency"),
-    height: readStatDetail("Average Height"),
-    continuity: readStatDetail("Minutes Continuity"),
-    experience: readStatDetail("D-1 Experience"),
-    benchMinutes: readStatDetail("Bench Minutes"),
-    sosOverall: readStatDetail("SOS Overall"),
-    sosNonConference: readStatDetail("SOS Non-conference"),
+    netRank: quadStatsData[teamName.value]?.net ?? "N/A",
+    rankRatingStats,
   };
 });
 
@@ -94,6 +142,15 @@ const teamQuadResults = computed<TeamQuadResults>(() => {
     }
   );
 });
+
+const teamGameLog = computed<TeamGameRow[]>(() => {
+  const resolvedTeamName = resolveKpGamesTeamName(teamName.value);
+  if (!resolvedTeamName) {
+    return [];
+  }
+
+  return kpGamesData.teams[resolvedTeamName] ?? [];
+});
 </script>
 
 <template>
@@ -102,7 +159,7 @@ const teamQuadResults = computed<TeamQuadResults>(() => {
       v-if="teamPageStats"
       :team-name="teamName"
       :team-logo="teamLogo"
-      game-log-image="/madness/gameLogs/image.png"
+      :game-log="teamGameLog"
       :stats="teamPageStats"
       :quads="teamQuadResults"
     />
