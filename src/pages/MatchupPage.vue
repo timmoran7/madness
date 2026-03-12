@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, watch } from "vue";
+import { ref, computed, onMounted, onUnmounted, watch } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import MatchupTable from "@/components/MatchupTable.vue";
 import UpsetTable from "@/components/UpsetTable.vue";
@@ -23,12 +23,15 @@ const selectedRegion = ref<string>("");
 const matchups = ref<string[]>([]);
 const showFactors = ref<boolean>(false);
 const showMethodology = ref<boolean>(true);
+const countdownLabel = ref<string>("");
 
 const selectedMatchup = ref<string>("");
 const favLogo = ref<string>("");
 const dawgLogo = ref<string>("");
 const miFactor = ref<number>(0);
 const upsetChance = ref<number>(0);
+const bracketReleaseAt = new Date("2026-03-15T17:30:00-05:00");
+let countdownIntervalId: ReturnType<typeof setInterval> | null = null;
 
 const teamLogoUrls: Record<string, string> = teamLogoUrlsData;
 const typedUpsetData = upsetData as UpsetDataType;
@@ -88,7 +91,7 @@ const mobileTeamBoxOffsetPx = computed<number>(() => {
   }, defaultLabelLength);
 
   // Longer matchup labels produce wider selects, so taper the extra offset down.
-  const offset = (1 / (longestMatchupLabelLength)) * 400;
+  const offset = (1 / longestMatchupLabelLength) * 400;
   return offset;
 });
 
@@ -136,15 +139,38 @@ const currentUpsetData = computed<UpsetTableDataType | null>(() => {
   };
 });
 
+const preTourneyMethodologyExplanation: string =
+  "Welcome to Madness Central! <b>Search</b> for current tournament, auto-bid, and bubble teams to view their advanced stats, NET results, and game logs. \
+Or, <b>explore last year's bracket</b> matchups with this year's stats. Come back when the bracket releases for updated matchups and statistics!";
 const methodologyExplanation: string =
-  "The <strong>Madness Index (MI)</strong> is a metric that \
-measures the <strong>strength of common upset indicators</strong> present in a March Madness matchup. The MI is calculated based on research from KenPom and the New York Times \
-boiling down to rebounding, turnovers, three point profile, and pacing. \
+  "Welcome to Madness Central. Search for tournament, auto-bid, and bubble teams to view their advanced stats, NET results, and game logs. \
+Or, explore last year's bracket matchups with 25-26 stats. The <strong>Madness Index (MI)</strong> is a metric that measures \
+the <strong>strength of common upset indicators</strong> present in a March Madness matchup. \
+The MI is calculated based on research from KenPom and the New York Times boiling down to rebounding, turnovers, three point profile, and pacing. \
 The MI is out of 10: an upset profile can be considered <strong>fair above 6, strong above 7, and extremely strong above 8</strong>. \
-Upset chance is a less fun but more practical metric which spits out probabilities from a regression model trained on ten years' worth of data (regular + postseason). \
-Enjoy!";
+Upset chance is a less fun but more practical metric which spits out probabilities \
+from a regression model trained on ten years' worth of data (regular + postseason). Enjoy!";
 
 const matchupFiles: { [key: string]: string[] } = typedUpsetData.regions ?? {};
+
+const updateCountdownLabel = () => {
+  const remainingMs = bracketReleaseAt.getTime() - Date.now();
+
+  if (remainingMs <= 0) {
+    countdownLabel.value = "Bracket release is live.";
+    return;
+  }
+
+  const totalSeconds = Math.floor(remainingMs / 1000);
+  const days = Math.floor(totalSeconds / 86400);
+  const hours = Math.floor((totalSeconds % 86400) / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  countdownLabel.value = `${days}d ${String(hours).padStart(2, "0")}h ${String(
+    minutes,
+  ).padStart(2, "0")}m ${String(seconds).padStart(2, "0")}s`;
+};
 
 const syncRouteQuery = (region: string, matchup: string) => {
   router.replace({
@@ -229,6 +255,9 @@ const resetState = () => {
 };
 
 onMounted(() => {
+  updateCountdownLabel();
+  countdownIntervalId = window.setInterval(updateCountdownLabel, 1000);
+
   const regionQuery =
     typeof route.query.region === "string" ? route.query.region : "";
   const matchupQuery =
@@ -248,6 +277,12 @@ onMounted(() => {
 
   selectedMatchup.value = matchupQuery;
   loadMatchupContent();
+});
+
+onUnmounted(() => {
+  if (countdownIntervalId !== null) {
+    clearInterval(countdownIntervalId);
+  }
 });
 
 watch(
@@ -343,7 +378,10 @@ watch(
       v-if="showMethodology"
       class="mt-4 p-3 border border-secondary rounded bg-light"
     >
-      <p v-html="methodologyExplanation"></p>
+      <p v-html="preTourneyMethodologyExplanation"></p>
+    </div>
+    <div v-if="showMethodology" class="countdown-wrapper">
+      <p>Bracket releases:<br><span class="countdown-label">{{ countdownLabel }}</span></p>
     </div>
 
     <div
@@ -437,6 +475,21 @@ watch(
   margin: 10px;
 }
 
+.countdown-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.countdown-label {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  font-style: italic;
+}
+
 @media only screen and (max-width: 600px) {
   .ovr-banner {
     margin-top: 4px;
@@ -457,6 +510,11 @@ watch(
 
   .click-hint {
     font-size: 12px;
+  }
+
+  .countdown-label {
+    font-size: 0.95rem;
+    text-align: center;
   }
 }
 </style>
