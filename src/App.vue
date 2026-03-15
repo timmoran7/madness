@@ -134,7 +134,7 @@ const goHome = () => {
         </form>
 
         <img src="/public/bball.png" alt="Basketball" class="header-icon" />
-        <h1 @click="goHome()" class="d-inline mx-3 site-hero">MADNESS.IO</h1>
+        <h1 @click="goHome()" class="d-inline mx-3 site-hero">IT'S MARCH</h1>
         <img src="/public/bball.png" alt="Basketball" class="header-icon" />
       </div>
     </div>

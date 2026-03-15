@@ -1,0 +1,42 @@
+{
+    "East": [
+      "Duke_Mount St. Mary's",
+      "Alabama_Robert Morris",
+      "Wisconsin_Montana",
+      "Arizona_Akron",
+      "Oregon_Liberty",
+      "BYU_VCU",
+      "Saint Mary's_Vanderbilt",
+      "Mississippi St._Baylor"
+    ],
+    "West": [
+      "Florida_Norfolk St.",
+      "St. John's_Nebraska Omaha",
+      "Texas Tech_UNC Wilmington",
+      "Maryland_Grand Canyon",
+      "Memphis_Colorado St.",
+      "Missouri_Drake",
+      "Kansas_Arkansas",
+      "Connecticut_Oklahoma"
+    ],
+    "South": [
+      "Auburn_Alabama St.",
+      "Michigan St._Bryant",
+      "Iowa St._Lipscomb",
+      "Texas A&M_Yale",
+      "Michigan_UC San Diego",
+      "Mississippi_North Carolina",
+      "Marquette_New Mexico",
+      "Louisville_Creighton"
+    ],
+    "Midwest": [
+      "Houston_SIUE",
+      "Tennessee_Wofford",
+      "Kentucky_Troy",
+      "Purdue_High Point",
+      "Clemson_McNeese",
+      "Illinois_Xavier",
+      "UCLA_Utah St.",
+      "Gonzaga_Georgia"
+    ]
+  }

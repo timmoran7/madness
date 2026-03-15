@@ -1,5 +1,6 @@
 import json
 import glob
+from pathlib import Path
 import pandas as pd
 import numpy as np
 import math
@@ -302,6 +303,26 @@ def predict_game_upset_prob(
     year = int(year)
 
     artifacts = train_model_artifacts(ratingSegment, colsToKeep, numBuckets=0)
+    return _predict_game_upset_prob_from_artifacts(
+        teamA,
+        teamB,
+        year,
+        artifacts,
+        colsToKeep,
+        ratingSegment,
+        homeTeam=homeTeam,
+    )
+
+
+def _predict_game_upset_prob_from_artifacts(
+    teamA,
+    teamB,
+    year,
+    artifacts,
+    colsToKeep,
+    ratingSegment,
+    homeTeam=None,
+):
     model = artifacts["model"]
     scaler = artifacts["scaler"]
 
@@ -356,6 +377,77 @@ def predict_game_upset_prob(
         f"Upset probability ({lowerSeedTeam} over {higherSeedTeam}) in {year}: {upset_prob:.4f}"
     )
     return upset_prob
+
+
+def write_upset_data_from_matchups(
+    year=2026,
+    ratingSegment=None,
+    matchups_path=None,
+    output_path=None,
+):
+    if ratingSegment is None:
+        ratingSegment = [RANK_DIFF_MIN, RANK_DIFF_MAX]
+
+    model_dir = Path(__file__).resolve().parent
+    if matchups_path is None:
+        matchups_path = model_dir / "util" / f"matchups{year}.json"
+    else:
+        matchups_path = Path(matchups_path)
+
+    if output_path is None:
+        output_path = model_dir.parent / "data" / "upsetData.json"
+    else:
+        output_path = Path(output_path)
+
+    with open(matchups_path, "r", encoding="utf-8") as f:
+        regions = json.load(f)
+
+    # Run both model variants for consistency with existing workflow.
+    buildAndRunModel(ratingSegment, BASE_COLS, 0)
+    buildAndRunModel(ratingSegment, ADVANCED_COLS, 0)
+
+    base_artifacts = train_model_artifacts(ratingSegment, BASE_COLS, numBuckets=0)
+    advanced_artifacts = train_model_artifacts(ratingSegment, ADVANCED_COLS, numBuckets=0)
+
+    matchup_map = {}
+    for region_matchups in regions.values():
+        for matchup in region_matchups:
+            teams = matchup.split("_", 1)
+            if len(teams) != 2:
+                raise ValueError(f"Invalid matchup format: {matchup}")
+
+            team_a, team_b = teams
+            base_prob = _predict_game_upset_prob_from_artifacts(
+                team_a,
+                team_b,
+                year,
+                base_artifacts,
+                BASE_COLS,
+                ratingSegment,
+            )
+            advanced_prob = _predict_game_upset_prob_from_artifacts(
+                team_a,
+                team_b,
+                year,
+                advanced_artifacts,
+                ADVANCED_COLS,
+                ratingSegment,
+            )
+
+            matchup_map[matchup] = {
+                "upset": round((base_prob + advanced_prob) / 2.0, 2)
+            }
+
+    upset_data = {
+        "columns": ["Rebounding", "Turnovers", "3Pt Volume", "Dawg 3P%", "Dawg Pace"],
+        "matchups": matchup_map,
+        "regions": regions,
+    }
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(upset_data, f, indent=2)
+
+    return upset_data
 
 BASE_COLS = ["rating_diff"]#, "sum_3PA_pct", "3P_pct_lo", "TO_freq"]
 ADVANCED_COLS = ["rating_diff", "rating_sum", "sum_3PA_pct", "3P_pct_lo", "TO_freq"]#, "vs_avg_adjTempo_hi", "vs_avg_adjTempo_lo"]

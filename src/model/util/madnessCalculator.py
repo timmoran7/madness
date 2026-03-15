@@ -5,6 +5,8 @@ from pathlib import Path
 RANK_MIN = 1
 RANK_MAX = 365
 RANK_SPAN = RANK_MAX - RANK_MIN
+FACTOR_COLUMNS = ["Rebounding", "Turnovers", "3Pt Volume", "Dawg 3P%", "Dawg Pace"]
+FACTOR_KEY_ORDER = ["rebounding", "turnovers", "3pt_volume", "dawg_3p_pct", "dawg_pace"]
 
 def advantage_delta_to_score(dawg_rank, fav_rank):
 	delta_norm = (fav_rank - dawg_rank) / RANK_SPAN
@@ -38,8 +40,19 @@ def load_kp_ovr_stats(stats_path=None, year=2026):
 	fileName = f"kpOvrStats{str(year)}.json"
 	if stats_path is None:
 		stats_path = Path(__file__).with_name(fileName)
-		with open(stats_path, "r", encoding="utf-8") as f:
-			return json.load(f)
+
+	with open(stats_path, "r", encoding="utf-8") as f:
+		return json.load(f)
+
+
+def load_matchups_by_region(matchups_path=None, year=2026):
+	if matchups_path is None:
+		matchups_path = Path(__file__).with_name(f"matchups{year}.json")
+	else:
+		matchups_path = Path(matchups_path)
+
+	with open(matchups_path, "r", encoding="utf-8") as f:
+		return json.load(f)
 
 
 def calculate_upset_correlations(team_a, team_b, stats=None):
@@ -112,10 +125,61 @@ def calculate_madness_index(scores):
  
 	return round(madness_index, 2)
 
+
+def add_madness_data_to_upset_file(
+	year=2026,
+	matchups_path=None,
+	upset_data_path=None,
+	stats_path=None,
+):
+	regions = load_matchups_by_region(matchups_path=matchups_path, year=year)
+	stats = load_kp_ovr_stats(stats_path=stats_path, year=year)
+
+	if upset_data_path is None:
+		upset_data_path = Path(__file__).resolve().parents[2] / "data" / "upsetData.json"
+	else:
+		upset_data_path = Path(upset_data_path)
+
+	if upset_data_path.exists():
+		with open(upset_data_path, "r", encoding="utf-8") as f:
+			upset_data = json.load(f)
+	else:
+		upset_data = {}
+
+	matchup_data = {}
+	current_matchups = upset_data.get("matchups", {})
+
+	for region_matchups in regions.values():
+		for matchup in region_matchups:
+			teams = matchup.split("_", 1)
+			if len(teams) != 2:
+				raise ValueError(f"Invalid matchup format: {matchup}")
+
+			team_a, team_b = teams
+			result = calculate_upset_correlations(team_a, team_b, stats=stats)
+			scores = result["scores"]
+
+			entry = current_matchups.get(matchup, {})
+			entry["index"] = calculate_madness_index(scores)
+			entry["factors"] = [f"{scores[key]:.2f}" for key in FACTOR_KEY_ORDER]
+			if "upset" not in entry:
+				entry["upset"] = 0.0
+
+			matchup_data[matchup] = entry
+
+	upset_data["columns"] = FACTOR_COLUMNS
+	upset_data["regions"] = regions
+	upset_data["matchups"] = matchup_data
+
+	with open(upset_data_path, "w", encoding="utf-8") as f:
+		json.dump(upset_data, f, indent=2)
+
+	return upset_data
+
 if __name__ == "__main__":
 	# Example usage
 	try:
-		result = calculate_upset_correlations("Michigan 2025", "UC San Diego 2025")
+		result = calculate_upset_correlations("Michigan", "UC San Diego")
 		madness_index = calculate_madness_index(result["scores"])
 		print(json.dumps(result, indent=2))
 		print(f"Madness Index: {madness_index}")

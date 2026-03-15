@@ -515,6 +515,9 @@ namesToReplace = {
     "USC": "southern-california",
     "LIU": "long-island-university",
     "Queens": "queens-nc",
+    "Prairie View A&M": "prairie-view",
+    "Cal Baptist": "california-baptist",
+    "UMBC": "maryland-baltimore-county",
 }
 def fetchTopTeams(given_top_teams, year, andRank=False, quads=False):
     """Fetch team pages for certain teams + year"""
@@ -643,7 +646,10 @@ teams_2025 = [
     "Alabama St.",
     "Mount St. Mary's"
 ]
-bids_2026 = ["North Dakota St.", "Tennessee St.", "LIU", "Northern Iowa", "Siena", "Wright St.", "Hofstra", "Queens"]
-all_extras = teams_2025 + bids_2026
-#fetchTopTeams(teams_2025, 2026, False, False)
+bids_2026 = ["North Dakota St.", "Tennessee St.", "LIU", "Northern Iowa", 
+"Siena", "Wright St.", "Hofstra", "Queens", "VCU", "Idaho", "High Point", "Hawaii", 
+"Howard", "Utah St.", "Lehigh", "Furman", "Prairie View A&M", "Troy", "Cal Baptist", "UMBC", "Miami OH"]
+
+fetchTopTeams(bids_2026, 2026, True, False)
+fetchTopTeams(bids_2026, 2026, True, True)
 fetchWabRankingsPage(2026)

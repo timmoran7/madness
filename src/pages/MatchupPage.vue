@@ -140,10 +140,10 @@ const currentUpsetData = computed<UpsetTableDataType | null>(() => {
 });
 
 const preTourneyMethodologyExplanation: string =
-  "Welcome to Madness Central! <b>Search</b> for current tournament, auto-bid, and bubble teams to view their advanced stats, NET results, and game logs. \
+  "Welcome to March! <b>Search</b> for current tournament, auto-bid, and bubble teams to view their advanced stats, NET results, and game logs. \
 Or, <b>explore last year's bracket</b> matchups with this year's stats. Come back when the bracket releases for updated matchups and statistics!";
 const methodologyExplanation: string =
-  "Welcome to Madness Central. Search for tournament, auto-bid, and bubble teams to view their advanced stats, NET results, and game logs. \
+  "Welcome to March! Search for tournament, auto-bid, and bubble teams to view their advanced stats, NET results, and game logs. \
 Or, explore last year's bracket matchups with 25-26 stats. The <strong>Madness Index (MI)</strong> is a metric that measures \
 the <strong>strength of common upset indicators</strong> present in a March Madness matchup. \
 The MI is calculated based on research from KenPom and the New York Times boiling down to rebounding, turnovers, three point profile, and pacing. \
