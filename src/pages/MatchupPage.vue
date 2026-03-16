@@ -180,8 +180,8 @@ const preTourneyMethodologyExplanation: string =
   "Welcome to March! <b>Search</b> for current tournament, auto-bid, and bubble teams to view their advanced stats, NET results, and game logs. \
 Or, <b>explore last year's bracket</b> matchups with this year's stats. Come back when the bracket releases for updated matchups and statistics!";
 const methodologyExplanation: string =
-  "Welcome to March! Search for tournament, auto-bid, and bubble teams to view their advanced stats, NET results, and game logs. \
-Or, explore last year's bracket matchups with 25-26 stats. The <strong>Madness Index (MI)</strong> is a metric that measures \
+  "Welcome to March! Search for tournament teams to view their advanced stats, NET results, and game logs. \
+The <strong>Madness Index (MI)</strong> is a metric that measures \
 the <strong>strength of common upset indicators</strong> present in a March Madness matchup. \
 The MI is calculated based on research from KenPom and the New York Times boiling down to rebounding, turnovers, three point profile, and pacing. \
 The MI is out of 10: an upset profile can be considered <strong>fair above 6, strong above 7, and extremely strong above 8</strong>. \
@@ -586,15 +586,15 @@ watch([customTeamOne, customTeamTwo], () => {
       v-if="showMethodology"
       class="mt-4 p-3 border border-secondary rounded bg-light"
     >
-      <p v-html="preTourneyMethodologyExplanation"></p>
+      <p v-html="methodologyExplanation"></p>
     </div>
-    <div v-if="showMethodology" class="countdown-wrapper">
+    <!-- <div v-if="showMethodology" class="countdown-wrapper">
       <p>
         Bracket releases:<br /><span class="countdown-label">{{
           countdownLabel
         }}</span>
       </p>
-    </div>
+    </div> -->
 
     <div
       v-if="currentMatchupData"

@@ -80,6 +80,7 @@
       245,
       "29.6%"
     ],
+    "seed": 12,
     "conference": "MAC"
   },
   "Alabama": {
@@ -163,6 +164,7 @@
       58,
       "36.7%"
     ],
+    "seed": 4,
     "conference": "SEC"
   },
   "Alabama St": {
@@ -412,6 +414,7 @@
       256,
       "29.1%"
     ],
+    "seed": 1,
     "conference": "B12"
   },
   "Arkansas": {
@@ -495,6 +498,7 @@
       287,
       "27.6%"
     ],
+    "seed": 4,
     "conference": "SEC"
   },
   "Auburn": {
@@ -661,6 +665,7 @@
       275,
       "28.1%"
     ],
+    "seed": 6,
     "conference": "B12"
   },
   "Baylor": {
@@ -910,6 +915,7 @@
       182,
       "31.8%"
     ],
+    "seed": 13,
     "conference": "WAC"
   },
   "Cincinnati": {
@@ -1076,6 +1082,7 @@
       47,
       "37.9%"
     ],
+    "seed": 8,
     "conference": "ACC"
   },
   "Colorado St": {
@@ -1242,6 +1249,7 @@
       193,
       "31.2%"
     ],
+    "seed": 2,
     "conference": "BE"
   },
   "Creighton": {
@@ -1491,6 +1499,7 @@
       105,
       "34.8%"
     ],
+    "seed": 1,
     "conference": "ACC"
   },
   "Florida": {
@@ -1574,6 +1583,7 @@
       329,
       "25.0%"
     ],
+    "seed": 1,
     "conference": "SEC"
   },
   "Furman": {
@@ -1657,6 +1667,7 @@
       149,
       "32.8%"
     ],
+    "seed": 15,
     "conference": "SC"
   },
   "Georgia": {
@@ -1740,6 +1751,7 @@
       26,
       "39.7%"
     ],
+    "seed": 8,
     "conference": "SEC"
   },
   "Gonzaga": {
@@ -1823,6 +1835,7 @@
       12,
       "42.2%"
     ],
+    "seed": 3,
     "conference": "WCC"
   },
   "Grand Canyon": {
@@ -1989,6 +2002,7 @@
       152,
       "32.8%"
     ],
+    "seed": 13,
     "conference": "BW"
   },
   "High Point": {
@@ -2072,6 +2086,7 @@
       93,
       "35.5%"
     ],
+    "seed": 12,
     "conference": "Big South"
   },
   "Hofstra": {
@@ -2155,6 +2170,7 @@
       310,
       "26.3%"
     ],
+    "seed": 13,
     "conference": "CAA"
   },
   "Houston": {
@@ -2238,6 +2254,7 @@
       274,
       "28.1%"
     ],
+    "seed": 2,
     "conference": "B12"
   },
   "Howard": {
@@ -2321,6 +2338,7 @@
       283,
       "27.6%"
     ],
+    "seed": 16,
     "conference": "MEAC"
   },
   "Idaho": {
@@ -2404,6 +2422,7 @@
       174,
       "32.0%"
     ],
+    "seed": 15,
     "conference": "BSky"
   },
   "Illinois": {
@@ -2487,6 +2506,7 @@
       192,
       "31.2%"
     ],
+    "seed": 3,
     "conference": "B1G"
   },
   "Indiana": {
@@ -2653,6 +2673,7 @@
       173,
       "32.1%"
     ],
+    "seed": 9,
     "conference": "B1G"
   },
   "Iowa St": {
@@ -2736,6 +2757,7 @@
       270,
       "28.3%"
     ],
+    "seed": 2,
     "conference": "B12"
   },
   "Kansas": {
@@ -2819,6 +2841,7 @@
       296,
       "26.9%"
     ],
+    "seed": 4,
     "conference": "B12"
   },
   "Kennesaw St": {
@@ -2902,6 +2925,7 @@
       47,
       "37.3%"
     ],
+    "seed": 14,
     "conference": "CUSA"
   },
   "Kentucky": {
@@ -2985,6 +3009,7 @@
       107,
       "34.7%"
     ],
+    "seed": 7,
     "conference": "SEC"
   },
   "LIU": {
@@ -3068,6 +3093,7 @@
       348,
       "22.0%"
     ],
+    "seed": 16,
     "conference": "NE"
   },
   "Lehigh": {
@@ -3151,6 +3177,7 @@
       231,
       "29.9%"
     ],
+    "seed": 16,
     "conference": "Patriot"
   },
   "Liberty": {
@@ -3400,6 +3427,7 @@
       98,
       "35.3%"
     ],
+    "seed": 6,
     "conference": "ACC"
   },
   "Marquette": {
@@ -3649,6 +3677,7 @@
       48,
       "37.6%"
     ],
+    "seed": 12,
     "conference": "Slnd"
   },
   "Memphis": {
@@ -3815,6 +3844,7 @@
       283,
       "27.8%"
     ],
+    "seed": 7,
     "conference": "ACC"
   },
   "Miami OH": {
@@ -3981,6 +4011,7 @@
       74,
       "36.1%"
     ],
+    "seed": 1,
     "conference": "B1G"
   },
   "Michigan St": {
@@ -4064,6 +4095,7 @@
       170,
       "32.2%"
     ],
+    "seed": 3,
     "conference": "B1G"
   },
   "Mississippi": {
@@ -4313,6 +4345,7 @@
       90,
       "35.6%"
     ],
+    "seed": 10,
     "conference": "SEC"
   },
   "Montana": {
@@ -4562,6 +4595,7 @@
       236,
       "29.8%"
     ],
+    "seed": 11,
     "conference": "ACC"
   },
   "Nebraska": {
@@ -4645,6 +4679,7 @@
       325,
       "25.5%"
     ],
+    "seed": 4,
     "conference": "B1G"
   },
   "Nebraska Omaha": {
@@ -4977,6 +5012,7 @@
       68,
       "36.4%"
     ],
+    "seed": 6,
     "conference": "ACC"
   },
   "North Dakota St": {
@@ -5060,6 +5096,7 @@
       233,
       "30.0%"
     ],
+    "seed": 14,
     "conference": "Sum"
   },
   "Northern Iowa": {
@@ -5143,6 +5180,7 @@
       294,
       "27.0%"
     ],
+    "seed": 12,
     "conference": "MVC"
   },
   "Ohio St": {
@@ -5226,6 +5264,7 @@
       316,
       "25.9%"
     ],
+    "seed": 8,
     "conference": "B1G"
   },
   "Oklahoma": {
@@ -5475,6 +5514,7 @@
       224,
       "30.1%"
     ],
+    "seed": 14,
     "conference": "Ivy"
   },
   "Prairie View A&M": {
@@ -5558,6 +5598,7 @@
       313,
       "25.8%"
     ],
+    "seed": 16,
     "conference": "SWAC"
   },
   "Purdue": {
@@ -5641,6 +5682,7 @@
       219,
       "30.4%"
     ],
+    "seed": 2,
     "conference": "B1G"
   },
   "Queens": {
@@ -5724,6 +5766,7 @@
       186,
       "31.7%"
     ],
+    "seed": 15,
     "conference": "ASun"
   },
   "Robert Morris": {
@@ -6139,6 +6182,7 @@
       57,
       "36.8%"
     ],
+    "seed": 9,
     "conference": "Atlantic 10"
   },
   "Saint Marys": {
@@ -6222,6 +6266,7 @@
       326,
       "25.3%"
     ],
+    "seed": 7,
     "conference": "WCC"
   },
   "San Diego St": {
@@ -6388,6 +6433,7 @@
       82,
       "35.8%"
     ],
+    "seed": 10,
     "conference": "WCC"
   },
   "Seton Hall": {
@@ -6554,6 +6600,7 @@
       333,
       "24.3%"
     ],
+    "seed": 16,
     "conference": "MAAC"
   },
   "South Florida": {
@@ -6637,6 +6684,7 @@
       279,
       "27.7%"
     ],
+    "seed": 11,
     "conference": "Amer"
   },
   "St Johns": {
@@ -6720,6 +6768,7 @@
       194,
       "31.2%"
     ],
+    "seed": 5,
     "conference": "BE"
   },
   "TCU": {
@@ -6803,6 +6852,7 @@
       288,
       "27.6%"
     ],
+    "seed": 9,
     "conference": "B12"
   },
   "Tennessee": {
@@ -6886,6 +6936,7 @@
       91,
       "35.5%"
     ],
+    "seed": 6,
     "conference": "SEC"
   },
   "Tennessee St": {
@@ -6969,6 +7020,7 @@
       295,
       "26.9%"
     ],
+    "seed": 15,
     "conference": "OVC"
   },
   "Texas": {
@@ -7052,6 +7104,7 @@
       199,
       "31.0%"
     ],
+    "seed": 11,
     "conference": "SEC"
   },
   "Texas A&M": {
@@ -7135,6 +7188,7 @@
       19,
       "41.1%"
     ],
+    "seed": 10,
     "conference": "SEC"
   },
   "Texas Tech": {
@@ -7218,6 +7272,7 @@
       358,
       "19.1%"
     ],
+    "seed": 5,
     "conference": "B12"
   },
   "Troy": {
@@ -7301,6 +7356,7 @@
       335,
       "24.1%"
     ],
+    "seed": 13,
     "conference": "Sun Belt"
   },
   "UCF": {
@@ -7384,6 +7440,7 @@
       142,
       "33.3%"
     ],
+    "seed": 10,
     "conference": "B12"
   },
   "UCLA": {
@@ -7467,6 +7524,7 @@
       168,
       "32.2%"
     ],
+    "seed": 7,
     "conference": "B1G"
   },
   "UC San Diego": {
@@ -7633,6 +7691,7 @@
       241,
       "29.6%"
     ],
+    "seed": 16,
     "conference": "Am East"
   },
   "UNC Wilmington": {
@@ -7882,6 +7941,7 @@
       77,
       "35.9%"
     ],
+    "seed": 9,
     "conference": "MWC"
   },
   "VCU": {
@@ -7965,6 +8025,7 @@
       70,
       "36.3%"
     ],
+    "seed": 11,
     "conference": "Atlantic 10"
   },
   "Vanderbilt": {
@@ -8048,6 +8109,7 @@
       203,
       "30.8%"
     ],
+    "seed": 5,
     "conference": "SEC"
   },
   "Villanova": {
@@ -8131,6 +8193,7 @@
       267,
       "28.4%"
     ],
+    "seed": 8,
     "conference": "BE"
   },
   "Virginia": {
@@ -8214,6 +8277,7 @@
       103,
       "34.9%"
     ],
+    "seed": 3,
     "conference": "ACC"
   },
   "Virginia Tech": {
@@ -8546,6 +8610,7 @@
       206,
       "30.8%"
     ],
+    "seed": 5,
     "conference": "B1G"
   },
   "Wofford": {
@@ -8712,6 +8777,7 @@
       72,
       "36.2%"
     ],
+    "seed": 14,
     "conference": "Horz"
   },
   "Xavier": {

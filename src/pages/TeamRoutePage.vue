@@ -52,7 +52,7 @@ const EMPTY_QUAD_BUCKET: QuadBucket = {
 };
 
 const kpGamesData = rawKpGames as { teams: Record<string, TeamGameRow[]> };
-const quadStatsData = rawQuadStats as Record<string, TeamQuadResults>;
+const quadStatsData = rawQuadStats as unknown as Record<string, TeamQuadResults>;
 const teamLogoUrls: Record<string, string> = teamLogoUrlsData;
 
 const normalizeTeamName = (name: string): string =>
