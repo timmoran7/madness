@@ -1,2 +1,0 @@
-<h3>Sorry, there was an error. Please try again!</h3>
-<h3>Return to <a href="/">Home Page</a></h3>

@@ -650,8 +650,8 @@ bids_2026 = ["North Dakota St.", "Tennessee St.", "LIU", "Northern Iowa",
 "Siena", "Wright St.", "Hofstra", "Queens", "VCU", "Idaho", "High Point", "Hawaii", 
 "Howard", "Utah St.", "Lehigh", "Furman", "Prairie View A&M", "Troy", "Cal Baptist", "UMBC", "Miami OH", "Kennesaw St.", "Penn"]
 
-
+rats = ["NC State"]
 #parseMiscStats(2026)
-fetchTopTeams(bids_2026, 2026, True, False)
-fetchTopTeams(bids_2026, 2026, True, True)
+#fetchTopTeams(bids_2026, 2026, True, False)
+fetchTopTeams(rats, 2026, True, True)
 # fetchWabRankingsPage(2026)
