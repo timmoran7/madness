@@ -9,7 +9,7 @@ import { normalizeTeamName } from "@/utils/teamName";
 import upsetData from "@/data/upsetData.json";
 import kpOvrStats from "@/data/kpOvrStats2026.json";
 import seedProbabilities from "@/data/seedProbabilities.json";
-import {
+import type {
   MatchupTableDataType,
   UpsetDataType,
   UpsetMatchupEntry,

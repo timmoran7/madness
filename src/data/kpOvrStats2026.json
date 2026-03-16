@@ -923,6 +923,90 @@
     "conference": "SC",
     "seed": 15
   },
+  "Georgia": {
+    "KenPom Ovr.": [
+      32,
+      "22-10"
+    ],
+    "Off Efficiency": [
+      16,
+      "124.7"
+    ],
+    "Def Efficiency": [
+      80,
+      "104.2"
+    ],
+    "Off TO%": [
+      32,
+      "14.3"
+    ],
+    "Def TO%": [
+      77,
+      "18.4"
+    ],
+    "Off OR%": [
+      48,
+      "35.2"
+    ],
+    "Def OR%": [
+      336,
+      "34.8"
+    ],
+    "Off FT%": [
+      67,
+      "75.4"
+    ],
+    "Off 3PA": [
+      89,
+      "43.9"
+    ],
+    "Off 3P%": [
+      170,
+      "34.1"
+    ],
+    "Tempo": [
+      16,
+      "71.4"
+    ],
+    "Average Height": [
+      172,
+      "77.4\""
+    ],
+    "A/FGM": [
+      279,
+      "48.4"
+    ],
+    "Off Avg. Poss. Length": [
+      9,
+      "15.4"
+    ],
+    "Def Avg. Poss. Length": [
+      205,
+      "17.5"
+    ],
+    "SOS Overall": [
+      61,
+      "+10.78"
+    ],
+    "SOS Non-conference": [
+      326,
+      "-6.45"
+    ],
+    "D-1 Experience": [
+      76,
+      "1.88 yrs"
+    ],
+    "Minutes Continuity": [
+      117,
+      "31.3%"
+    ],
+    "Bench Minutes": [
+      26,
+      "39.7%"
+    ],
+    "conference": "SEC",
+    "seed": 8
+  },
   "Gonzaga": {
     "KenPom Ovr.": [
       10,
@@ -2516,7 +2600,8 @@
       303,
       "26.4%"
     ],
-    "conference": "MAC"
+    "conference": "MAC",
+    "seed": 11
   },
   "Michigan": {
     "KenPom Ovr.": [
@@ -3774,7 +3859,8 @@
       336,
       "24.0%"
     ],
-    "conference": "ACC"
+    "conference": "ACC",
+    "seed": 11
   },
   "Saint Louis": {
     "KenPom Ovr.": [
@@ -5202,6 +5288,90 @@
     ],
     "conference": "Am East",
     "seed": 16
+  },
+    "Utah St": {
+    "KenPom Ovr.": [
+      30,
+      "28-6"
+    ],
+    "Off Efficiency": [
+      28,
+      "122.1"
+    ],
+    "Def Efficiency": [
+      45,
+      "101.4"
+    ],
+    "Off TO%": [
+      91,
+      "15.4"
+    ],
+    "Def TO%": [
+      16,
+      "20.6"
+    ],
+    "Off OR%": [
+      89,
+      "33.1"
+    ],
+    "Def OR%": [
+      267,
+      "32.2"
+    ],
+    "Off FT%": [
+      250,
+      "70.6"
+    ],
+    "Off 3PA": [
+      153,
+      "40.7"
+    ],
+    "Off 3P%": [
+      108,
+      "35.1"
+    ],
+    "Tempo": [
+      158,
+      "67.7"
+    ],
+    "Average Height": [
+      127,
+      "77.7\""
+    ],
+    "A/FGM": [
+      36,
+      "59.8"
+    ],
+    "Off Avg. Poss. Length": [
+      83,
+      "16.8"
+    ],
+    "Def Avg. Poss. Length": [
+      34,
+      "18.3"
+    ],
+    "SOS Overall": [
+      80,
+      "+7.13"
+    ],
+    "SOS Non-conference": [
+      125,
+      "+1.97"
+    ],
+    "D-1 Experience": [
+      19,
+      "2.43 yrs"
+    ],
+    "Minutes Continuity": [
+      59,
+      "40.1%"
+    ],
+    "Bench Minutes": [
+      72,
+      "36.0%"
+    ],
+    "conference": "MWC",
+    "seed": 9
   },
   "VCU": {
     "KenPom Ovr.": [

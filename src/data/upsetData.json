@@ -355,27 +355,27 @@
       ],
       "firstRound": "yes"
     },
-    "Tennessee_N.C. State": {
-      "upset": 0.3268,
-      "index": 6.53,
+    "Tennessee_Miami OH": {
+      "upset": 0.0749,
+      "index": 6.07,
       "factors": [
-        "2.13",
-        "7.19",
-        "4.26",
-        "9.75",
+        "1.79",
+        "6.74",
+        "4.44",
+        "9.42",
         "4.44"
       ],
       "firstRound": "yes"
     },
-    "Tennessee_Texas": {
-      "upset": 0.2983,
-      "index": 5.44,
+    "Tennessee_SMU": {
+      "upset": 0.2791,
+      "index": 5.89,
       "factors": [
-        "4.78",
-        "4.91",
-        "2.14",
-        "6.58",
-        "5.45"
+        "3.95",
+        "6.04",
+        "2.07",
+        "9.37",
+        "4.44"
       ],
       "firstRound": "yes"
     },
@@ -24198,6 +24198,54 @@
         "5.18"
       ],
       "firstRound": "no"
+    },
+    "Villanova_Utah St.": {
+      "upset": 0.5053,
+      "index": 7.01,
+      "factors": [
+        "4.90",
+        "4.84",
+        "7.21",
+        "7.29",
+        "7.18"
+      ],
+      "firstRound": "yes"
+    },
+    "Arizona_Utah St.": {
+      "upset": 0.0946,
+      "index": 5.63,
+      "factors": [
+        "3.25",
+        "5.95",
+        "2.97",
+        "7.07",
+        "4.53"
+      ],
+      "firstRound": "no"
+    },
+    "Georgia_Saint Louis": {
+      "upset": 0.4406,
+      "index": 6.75,
+      "factors": [
+        "5.14",
+        "2.66",
+        "7.93",
+        "9.97",
+        "1.90"
+      ],
+      "firstRound": "yes"
+    },
+    "Georgia_Michigan": {
+      "upset": 0.0952,
+      "index": 6.41,
+      "factors": [
+        "3.80",
+        "7.23",
+        "6.92",
+        "5.37",
+        "1.81"
+      ],
+      "firstRound": "no"
     }
   },
   "regions": {
@@ -24213,6 +24261,7 @@
     ],
     "West": [
       "Arizona_LIU",
+      "Villanova_Utah St.",
       "Wisconsin_High Point",
       "Arkansas_Hawaii",
       "BYU_Texas",
@@ -24235,10 +24284,11 @@
     "Midwest": [
       "Michigan_UMBC",
       "Michigan_Howard",
+      "Georgia_Saint Louis",
       "Texas Tech_Akron",
       "Alabama_Hofstra",
-      "Tennessee_N.C. State",
-      "Tennessee_Texas",
+      "Tennessee_Miami OH",
+      "Tennessee_SMU",
       "Virginia_Wright St.",
       "Kentucky_Santa Clara",
       "Iowa St._Tennessee St."

@@ -661,11 +661,11 @@ RANK_DIFF_MIN = 8
 RANK_DIFF_MAX = 24
 BIG_RANK_DIFF_MAX = 55
 #write_upset_data_from_matchups(upsetBoost=0.05, fullMode=True)
-TEAM_ONE = "Northern Iowa"
-TEAM_TWO = "St. John's"
+TEAM_ONE = "Tennessee"
+TEAM_TWO = "SMU"
 #'''
 # Sort by upset probability (descending) to see top upset picks
-baseResults = buildAndRunModel([RANK_DIFF_MIN, RANK_DIFF_MAX], BASE_COLS, 0)
+#baseResults = buildAndRunModel([RANK_DIFF_MIN, RANK_DIFF_MAX], BASE_COLS, 0)
 # baseResults.to_json("v2outputs/13to26lr_baseMax.json", orient="records", indent=2)
 # #print('BASED: ')
 # base_prob = predict_game_upset_prob(TEAM_ONE, TEAM_TWO, 2026, [RANK_DIFF_MIN, RANK_DIFF_MAX], BASE_COLS)

@@ -3004,23 +3004,60 @@
     }
   },
   "NC State": {
-    "net": null,
-    "record": null,
+    "net": "36",
+    "record": "20-13",
     "q1": {
-      "record": "0-0",
-      "games": []
+      "record": "5-8",
+      "games": [
+        "97-102 vs Texas (N)",
+        "73-83 @ Auburn",
+        "76-77* vs Kansas",
+        "61-76 vs Virginia",
+        "113-69 @ Florida St.",
+        "80-76* @ Clemson",
+        "96-78 @ Wake Forest",
+        "84-83 @ SMU",
+        "77-118 @ Louisville",
+        "82-58 vs North Carolina",
+        "61-90 @ Virginia",
+        "64-93 vs Duke",
+        "74-81 vs Virginia (N)"
+      ]
     },
     "q2": {
-      "record": "0-0",
-      "games": []
+      "record": "6-4",
+      "games": [
+        "85-79 vs VCU",
+        "74-85 vs Seton Hall (N)",
+        "81-70 vs Boise St. (N)",
+        "76-62 vs Ole Miss (N)",
+        "70-57 vs Wake Forest",
+        "81-72 @ Pittsburgh",
+        "82-73 vs Virginia Tech",
+        "76-77 vs Miami (FL)",
+        "90-96* @ Notre Dame",
+        "84-85 vs Stanford"
+      ]
     },
     "q3": {
-      "record": "0-0",
-      "games": []
+      "record": "5-0",
+      "games": [
+        "94-70 vs UAB",
+        "85-45 vs Liberty",
+        "79-71 @ Boston College",
+        "88-68 vs Syracuse",
+        "98-88 vs Pittsburgh (N)"
+      ]
     },
     "q4": {
-      "record": "0-0",
-      "games": []
+      "record": "4-1",
+      "games": [
+        "114-66 vs N.C. Central",
+        "110-64 vs UNC Greensboro",
+        "75-63 vs UNC Asheville",
+        "108-72 vs Texas Southern",
+        "74-78 vs Georgia Tech"
+      ]
     }
   },
   "Nebraska": {
