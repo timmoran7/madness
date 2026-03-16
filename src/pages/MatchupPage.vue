@@ -15,6 +15,7 @@ import type {
   UpsetMatchupEntry,
   UpsetTableDataType,
 } from "@/models";
+import { channel } from "diagnostics_channel";
 
 const router = useRouter();
 const route = useRoute();
@@ -534,6 +535,10 @@ const applyRouteStateFromQuery = () => {
   loadMatchupContent();
 };
 
+const boostUpsetChance = (chance: number): number => {
+  return (chance * 100) < 20 ? chance * 100 * 1.3 : chance * 100;
+};
+
 onMounted(() => {
   updateCountdownLabel();
   countdownIntervalId = window.setInterval(updateCountdownLabel, 1000);
@@ -592,7 +597,7 @@ watch([customTeamOne, customTeamTwo], () => {
             class="home-ranking-item"
           >
             <span class="home-ranking-matchup">{{ ranking.label }}</span>
-            <strong>{{ (ranking.upsetChance * 100).toFixed(2) }}%</strong>
+            <strong>{{ boostUpsetChance(ranking.upsetChance).toFixed(2) }}%</strong>
           </li>
         </ul>
       </section>
@@ -766,9 +771,7 @@ watch([customTeamOne, customTeamTwo], () => {
         <strong
           >Upset Chance:
           {{
-            upsetChance * 100 < 20
-              ? (upsetChance * 100 * 1.3).toFixed(2)
-              : (upsetChance * 100).toFixed(2)
+            boostUpsetChance(upsetChance).toFixed(2)
           }}%</strong
         >
         <span v-if="seedAvgLabel && !hasCustomPair" class="seed-avg-hint">
