@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+from itertools import combinations
 
 # need to update if more teams are added otherwise will fail 
 RANK_MIN = 1
@@ -74,7 +75,15 @@ def load_matchups_by_region(matchups_path=None, year=2026):
 		matchups_path = Path(matchups_path)
 
 	with open(matchups_path, "r", encoding="utf-8") as f:
-		return json.load(f)
+		matchup_data = json.load(f)
+
+	if not isinstance(matchup_data, dict):
+		raise ValueError("Matchups file must be a JSON object.")
+
+	if isinstance(matchup_data.get("regions"), dict):
+		return matchup_data["regions"], matchup_data.get("locations")
+
+	return matchup_data, None
 
 
 def calculate_upset_correlations(team_a, team_b, stats=None):
@@ -156,14 +165,14 @@ def calculate_madness_index(scores):
  
 	return round(madness_index, 2)
 
-
 def add_madness_data_to_upset_file(
 	year=2026,
+	fullMode=False,
 	matchups_path=None,
 	upset_data_path=None,
 	stats_path=None,
 ):
-	regions = load_matchups_by_region(matchups_path=matchups_path, year=year)
+	regions, file_locations = load_matchups_by_region(matchups_path=matchups_path, year=year)
 	stats = load_kp_ovr_stats(stats_path=stats_path, year=year)
 
 	if upset_data_path is None:
@@ -179,6 +188,10 @@ def add_madness_data_to_upset_file(
 
 	matchup_data = {}
 	current_matchups = upset_data.get("matchups", {})
+	locations = file_locations if isinstance(file_locations, dict) else upset_data.get("locations")
+	matchups_to_process = []
+	unique_teams = set()
+	seen_matchups = set()
 
 	for region_matchups in regions.values():
 		for matchup in region_matchups:
@@ -187,6 +200,33 @@ def add_madness_data_to_upset_file(
 				raise ValueError(f"Invalid matchup format: {matchup}")
 
 			team_a, team_b = teams
+			unique_teams.add(team_a)
+			unique_teams.add(team_b)
+
+			if matchup not in seen_matchups:
+				matchups_to_process.append((matchup, team_a, team_b))
+				seen_matchups.add(matchup)
+
+	if fullMode:
+		sorted_teams = sorted(unique_teams)
+		for team_a, team_b in combinations(sorted_teams, 2):
+			direct_key = f"{team_a}_{team_b}"
+			reverse_key = f"{team_b}_{team_a}"
+
+			if direct_key in current_matchups:
+				matchup_key = direct_key
+			elif reverse_key in current_matchups:
+				matchup_key = reverse_key
+			else:
+				matchup_key = direct_key
+
+			if matchup_key in seen_matchups:
+				continue
+
+			matchups_to_process.append((matchup_key, team_a, team_b))
+			seen_matchups.add(matchup_key)
+
+	for matchup, team_a, team_b in matchups_to_process:
 			result = calculate_upset_correlations(team_a, team_b, stats=stats)
 			scores = result["scores"]
 
@@ -201,6 +241,8 @@ def add_madness_data_to_upset_file(
 	upset_data["columns"] = FACTOR_COLUMNS
 	upset_data["regions"] = regions
 	upset_data["matchups"] = matchup_data
+	if isinstance(locations, dict):
+		upset_data["locations"] = locations
 
 	with open(upset_data_path, "w", encoding="utf-8") as f:
 		json.dump(upset_data, f, indent=2)
@@ -210,7 +252,7 @@ def add_madness_data_to_upset_file(
 if __name__ == "__main__":
 	# Example usage
 	try:
-		add_madness_data_to_upset_file(2026)
+		add_madness_data_to_upset_file(2026,True,upset_data_path="../upsetData.json")
 		# result = calculate_upset_correlations("Michigan", "UC San Diego")
 		# madness_index = calculate_madness_index(result["scores"])
 		# print(json.dumps(result, indent=2))

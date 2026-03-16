@@ -11,3 +11,5 @@
 7. run kpFetcher for fetchTopTeams with all teams, once for quads once for kp 
 8. run quadAndOvrExtractor methods
 9. run madness calculator.py
+10. run node scripts: logo one and seed generator one
+11. update locations in upsetData file

@@ -20,7 +20,7 @@ const router = useRouter();
 const route = useRoute();
 
 const CUSTOM_REGION_VALUE = "__any_two_teams__";
-const regions = ["South", "East", "Midwest", "West"];
+const regions = ["East", "West", "Midwest", "South"];
 const selectedRegion = ref<string>("");
 const matchups = ref<string[]>([]);
 const showMethodology = ref<boolean>(true);
@@ -95,6 +95,7 @@ const matchupRankings = computed(() =>
   Object.entries(typedUpsetData.matchups).map(
     ([matchup, entry]: [string, UpsetMatchupEntry]) => ({
       matchup,
+      first: entry.firstRound,
       label: matchup.replace("_", " vs. "),
       upsetChance: entry.upset,
       madnessIndex: entry.index,
@@ -117,7 +118,7 @@ const filteredMatchupRankings = computed(() =>
     return !(
       (lowerSeed === 7 && higherSeed === 10) ||
       (lowerSeed === 8 && higherSeed === 9)
-    );
+    ) && ranking.first === "yes";
   }),
 );
 
@@ -388,7 +389,7 @@ const openTeamPage = (teamName: string) => {
     return;
   }
 
-  router.push({
+  const teamRoute = router.resolve({
     name: "team",
     params: { teamName: normalizeTeamName(teamName) },
     query: {
@@ -400,6 +401,8 @@ const openTeamPage = (teamName: string) => {
           : undefined,
     },
   });
+
+  window.open(teamRoute.href, "_blank", "noopener,noreferrer");
 };
 
 const closeMatchupContent = () => {
@@ -497,7 +500,7 @@ watch([customTeamOne, customTeamTwo], () => {
     </div>
 
     <div v-if="!isCustomMode" class="d-flex justify-content-center">
-      <button v-if="false" class="btn btn-link any-two-trigger" @click="activateCustomMode">
+      <button class="btn btn-link any-two-trigger" @click="activateCustomMode">
         Or pick any two teams
       </button>
     </div>
@@ -711,7 +714,7 @@ watch([customTeamOne, customTeamTwo], () => {
       <p v-if="selectedMatchup && !hasUpsetEntry" class="missing-upset-text">
         No upset profile exists yet for this hypothetical matchup.
       </p>
-      <UpsetTable class="upset-table" v-if="currentUpsetData" :data="currentUpsetData" />
+      <UpsetTable class="upset-table" v-if="currentUpsetData && showFactors" :data="currentUpsetData" />
       <MatchupTable class="matchup-table" :data="currentMatchupData" />
     </div>
   </div>

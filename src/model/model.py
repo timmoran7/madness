@@ -1,6 +1,7 @@
 import json
 import glob
 from pathlib import Path
+from itertools import combinations
 import pandas as pd
 import numpy as np
 import math
@@ -284,11 +285,9 @@ def buildAndRunModel(
     
     return results
 
-
 def load_ratings_df(year):
     ratings = load_json(f"ratings/{year}.json")
     return pd.DataFrame(ratings).set_index("team")
-
 
 def get_matchup_rating_info(teamA, teamB, year, ratings_df=None):
     if ratings_df is None:
@@ -495,11 +494,11 @@ def _predict_game_upset_prob_from_artifacts(
     )
     return upset_prob
 
-
 def write_upset_data_from_matchups(
     year=2026,
     ratingSegment=None,
     upsetBoost=None,
+    fullMode=False,
     matchups_path=None,
     output_path=None,
     
@@ -519,28 +518,38 @@ def write_upset_data_from_matchups(
         output_path = Path(output_path)
 
     with open(matchups_path, "r", encoding="utf-8") as f:
-        regions = json.load(f)
+        matchup_data = json.load(f)
+
+    if not isinstance(matchup_data, dict):
+        raise ValueError("Matchups file must be a JSON object.")
+
+    if isinstance(matchup_data.get("regions"), dict):
+        regions = matchup_data["regions"]
+        file_locations = matchup_data.get("locations")
+    else:
+        regions = matchup_data
+        file_locations = None
 
     existing_matchups = {}
+    existing_locations = None
     if output_path.exists():
         with open(output_path, "r", encoding="utf-8") as f:
             try:
                 existing_data = json.load(f)
                 if isinstance(existing_data, dict) and isinstance(existing_data.get("matchups"), dict):
                     existing_matchups = existing_data["matchups"]
+                    if isinstance(existing_data.get("locations"), dict):
+                        existing_locations = existing_data["locations"]
             except json.JSONDecodeError:
                 existing_matchups = {}
+                existing_locations = None
+
+    locations = file_locations if isinstance(file_locations, dict) else existing_locations
 
     ratings_df = load_ratings_df(year)
     close_range = [0.0001, RANK_DIFF_MIN - 0.0001]
     wide_range = [RANK_DIFF_MIN, RANK_DIFF_MAX - 0.0001]
     large_range = [RANK_DIFF_MAX, BIG_RANK_DIFF_MAX]
-
-    buildAndRunModel(close_range, BASE_COLS, 0)
-    buildAndRunModel(wide_range, BASE_COLS, 0)
-    buildAndRunModel(wide_range, ADVANCED_COLS, 0)
-    buildAndRunModel(large_range, BASE_COLS, 0)
-    buildAndRunModel(large_range, ADVANCED_COLS, 0)
 
     close_artifacts = train_model_artifacts(close_range, BASE_COLS, numBuckets=0)
     base_artifacts = train_model_artifacts(wide_range, BASE_COLS, numBuckets=0)
@@ -549,6 +558,10 @@ def write_upset_data_from_matchups(
     big_advanced_artifacts = train_model_artifacts(large_range, ADVANCED_COLS, numBuckets=0)
 
     matchup_map = existing_matchups.copy()
+    matchups_to_process = []
+    unique_teams = set()
+    seen_matchups = set()
+
     for region_matchups in regions.values():
         for matchup in region_matchups:
             teams = matchup.split("_", 1)
@@ -556,6 +569,33 @@ def write_upset_data_from_matchups(
                 raise ValueError(f"Invalid matchup format: {matchup}")
 
             team_a, team_b = teams
+            unique_teams.add(team_a)
+            unique_teams.add(team_b)
+
+            if matchup not in seen_matchups:
+                matchups_to_process.append((matchup, team_a, team_b))
+                seen_matchups.add(matchup)
+
+    if fullMode:
+        sorted_teams = sorted(unique_teams)
+        for team_a, team_b in combinations(sorted_teams, 2):
+            direct_key = f"{team_a}_{team_b}"
+            reverse_key = f"{team_b}_{team_a}"
+
+            if direct_key in matchup_map:
+                matchup_key = direct_key
+            elif reverse_key in matchup_map:
+                matchup_key = reverse_key
+            else:
+                matchup_key = direct_key
+
+            if matchup_key in seen_matchups:
+                continue
+
+            matchups_to_process.append((matchup_key, team_a, team_b))
+            seen_matchups.add(matchup_key)
+
+    for matchup, team_a, team_b in matchups_to_process:
             matchup_info = get_matchup_rating_info(team_a, team_b, year, ratings_df=ratings_df)
 
             if matchup_info["ratingDiff"] < RANK_DIFF_MIN:
@@ -606,27 +646,31 @@ def write_upset_data_from_matchups(
         "regions": regions,
     }
 
+    if isinstance(locations, dict):
+        upset_data["locations"] = locations
+
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(upset_data, f, indent=2)
 
     return upset_data
+
 
 BASE_COLS = ["rating_diff"]#, "sum_3PA_pct", "3P_pct_lo", "TO_freq"]
 ADVANCED_COLS = ["higherRating", "lowerRating", "sum_3PA_pct", "3P_pct_lo", "TO_freq"]#, "vs_avg_adjTempo_hi", "vs_avg_adjTempo_lo"]
 RANK_DIFF_MIN = 8
 RANK_DIFF_MAX = 24
 BIG_RANK_DIFF_MAX = 55
-# write_upset_data_from_matchups(upsetBoost=0.025)
-TEAM_ONE = "Vanderbilt"
-TEAM_TWO = "McNeese"
+#write_upset_data_from_matchups(upsetBoost=0.05, fullMode=True)
+TEAM_ONE = "Northern Iowa"
+TEAM_TWO = "St. John's"
 #'''
 # Sort by upset probability (descending) to see top upset picks
-# baseResults = buildAndRunModel([RANK_DIFF_MIN, RANK_DIFF_MAX], BASE_COLS, 0)
+baseResults = buildAndRunModel([RANK_DIFF_MIN, RANK_DIFF_MAX], BASE_COLS, 0)
 # baseResults.to_json("v2outputs/13to26lr_baseMax.json", orient="records", indent=2)
 # #print('BASED: ')
 # base_prob = predict_game_upset_prob(TEAM_ONE, TEAM_TWO, 2026, [RANK_DIFF_MIN, RANK_DIFF_MAX], BASE_COLS)
 
-advancedResults = buildAndRunModel([RANK_DIFF_MIN,RANK_DIFF_MAX], ADVANCED_COLS, 0)
-#advancedResults.to_json("v2outputs/13to26lr_Rs3PLoThreeToo.json", orient="records", indent=2)
-print('ADVANCED: ')
+# advancedResults = buildAndRunModel([RANK_DIFF_MIN,RANK_DIFF_MAX], ADVANCED_COLS, 0)
+# #advancedResults.to_json("v2outputs/13to26lr_Rs3PLoThreeToo.json", orient="records", indent=2)
+# print('ADVANCED: ')
 advanced_prob = predict_game_upset_prob(TEAM_ONE, TEAM_TWO, 2026, [RANK_DIFF_MIN, RANK_DIFF_MAX], ADVANCED_COLS)

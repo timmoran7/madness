@@ -31,11 +31,27 @@ const resolveKpTeamKey = (teamName) => {
 
 const seedAssignments = new Map();
 const regions = upsetData.regions ?? {};
+const ROUND_OF_64_SEED_PAIRS = [
+  [1, 16],
+  [8, 9],
+  [5, 12],
+  [4, 13],
+  [6, 11],
+  [3, 14],
+  [7, 10],
+  [2, 15],
+];
 
 for (const [region, regionMatchups] of Object.entries(regions)) {
-  if (!Array.isArray(regionMatchups) || regionMatchups.length !== 8) {
-    throw new Error(`Region ${region} does not have exactly 8 first-round matchups.`);
+  if (regionMatchups.length < 8 || regionMatchups.length > 10) {
+    throw new Error(
+      `Expected 8, 9, or 10 matchups in region ${region}, received ${regionMatchups.length}.`,
+    );
   }
+
+  let nextSeedPairIndex = 0;
+  let previousFirstTeamRaw = null;
+  let previousWasDuplicate = false;
 
   regionMatchups.forEach((matchup, matchupIndex) => {
     const [highSeedTeamRaw, lowSeedTeamRaw] = matchup.split("_");
@@ -43,8 +59,34 @@ for (const [region, regionMatchups] of Object.entries(regions)) {
       throw new Error(`Invalid matchup format in region ${region}: ${matchup}`);
     }
 
-    const highSeed = matchupIndex + 1;
-    const lowSeed = 17 - highSeed;
+    const sameFirstTeamAsPrevious =
+      previousFirstTeamRaw !== null &&
+      normalizeTeamName(highSeedTeamRaw) === normalizeTeamName(previousFirstTeamRaw);
+
+    if (sameFirstTeamAsPrevious && previousWasDuplicate) {
+      throw new Error(
+        `Unexpected third consecutive matchup with first team ${highSeedTeamRaw} in region ${region}.`,
+      );
+    }
+
+    const seedPairIndex = sameFirstTeamAsPrevious
+      ? nextSeedPairIndex - 1
+      : nextSeedPairIndex;
+
+    if (seedPairIndex < 0 || seedPairIndex >= ROUND_OF_64_SEED_PAIRS.length) {
+      throw new Error(
+        `Could not map matchup ${matchup} at index ${matchupIndex} to a valid seed pair in region ${region}.`,
+      );
+    }
+
+    const [highSeed, lowSeed] = ROUND_OF_64_SEED_PAIRS[seedPairIndex];
+
+    if (!sameFirstTeamAsPrevious) {
+      nextSeedPairIndex += 1;
+    }
+
+    previousFirstTeamRaw = highSeedTeamRaw;
+    previousWasDuplicate = sameFirstTeamAsPrevious;
 
     const highSeedTeam = resolveKpTeamKey(highSeedTeamRaw);
     const lowSeedTeam = resolveKpTeamKey(lowSeedTeamRaw);
@@ -58,6 +100,12 @@ for (const [region, regionMatchups] of Object.entries(regions)) {
     seedAssignments.set(highSeedTeam, highSeed);
     seedAssignments.set(lowSeedTeam, lowSeed);
   });
+
+  if (nextSeedPairIndex !== ROUND_OF_64_SEED_PAIRS.length) {
+    throw new Error(
+      `Region ${region} did not resolve to all 8 round-of-64 seed slots. Resolved ${nextSeedPairIndex}.`,
+    );
+  }
 }
 
 for (const [teamName, seed] of seedAssignments.entries()) {
