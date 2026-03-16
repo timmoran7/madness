@@ -97,7 +97,7 @@ const goToTeamPage = async () => {
 };
 
 const goHome = () => {
-  router.replace({ name: "matchup" });
+  router.push({ name: "matchup" });
 };
 </script>
 

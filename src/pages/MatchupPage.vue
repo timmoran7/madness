@@ -9,7 +9,7 @@ import { normalizeTeamName } from "@/utils/teamName";
 import upsetData from "@/data/upsetData.json";
 import kpOvrStats from "@/data/kpOvrStats2026.json";
 import seedProbabilities from "@/data/seedProbabilities.json";
-import type {
+import {
   MatchupTableDataType,
   UpsetDataType,
   UpsetMatchupEntry,
@@ -65,7 +65,18 @@ const resolveUpsetMatchupKey = (matchupKey: string): string | null => {
   return null;
 };
 
-const allTeams = computed<string[]>(() => Object.keys(kpStats).sort());
+const allTeams = computed<string[]>(() => {
+  const teamSet = new Set<string>();
+  Object.keys(typedUpsetData.regions).forEach((regionKey: string) => {
+    const region = typedUpsetData.regions[regionKey];
+    region.forEach((matchup: string) => {
+      const [team1, team2] = matchup.split("_");
+      if (team1) teamSet.add(team1);
+      if (team2) teamSet.add(team2);
+    });
+  });
+  return Array.from(teamSet).sort();
+});
 const isCustomMode = computed<boolean>(
   () => selectedRegion.value === CUSTOM_REGION_VALUE,
 );
@@ -78,12 +89,19 @@ const hasUpsetEntry = computed<boolean>(() => {
   return Boolean(resolveUpsetMatchupKey(selectedMatchup.value));
 });
 const showFactors = computed<boolean>(() => {
-  const favoredSeed = teamInfo.value.fav?.seed;
+  const leftSeed = teamInfo.value.fav?.seed;
+  const rightSeed = teamInfo.value.dawg?.seed;
+  const favoredSeed =
+    leftSeed != null && rightSeed != null
+      ? Math.min(leftSeed, rightSeed)
+      : leftSeed ?? rightSeed;
+  const dawgSeed = favoredSeed === leftSeed ? rightSeed : leftSeed;
+  const seedDiff = dawgSeed != null && favoredSeed != null ? dawgSeed - favoredSeed : null;
   return Boolean(
     selectedMatchup.value &&
       hasUpsetEntry.value &&
-      favoredSeed != null &&
-      favoredSeed < 7,
+      seedDiff != null &&
+      seedDiff >= 4, // only show factors for upsets of 4+ seeds, where the MI is more meaningful
   );
 });
 
@@ -289,12 +307,19 @@ const updateCountdownLabel = () => {
   ).padStart(2, "0")}m ${String(seconds).padStart(2, "0")}s`;
 };
 
-const syncRouteQuery = (region: string, matchup: string) => {
+const syncRouteQuery = (
+  region: string,
+  matchup: string,
+  customTeam1 = "",
+  customTeam2 = "",
+) => {
   router.replace({
     name: "matchup",
     query: {
       region: region || undefined,
       matchup: matchup || undefined,
+      team1: customTeam1 || undefined,
+      team2: customTeam2 || undefined,
     },
   });
 };
@@ -312,7 +337,7 @@ const activateCustomMode = () => {
   selectedRegion.value = CUSTOM_REGION_VALUE;
   matchups.value = [];
   resetMatchupSelection();
-  syncRouteQuery("", "");
+  syncRouteQuery("", "", customTeamOne.value, customTeamTwo.value);
 };
 
 const clearCustomMode = () => {
@@ -329,13 +354,13 @@ const buildCustomMatchup = () => {
 
   if (!customTeamOne.value || !customTeamTwo.value) {
     resetMatchupSelection();
-    syncRouteQuery("", "");
+    syncRouteQuery("", "", customTeamOne.value, customTeamTwo.value);
     return;
   }
 
   if (customTeamOne.value === customTeamTwo.value) {
     resetMatchupSelection();
-    syncRouteQuery("", "");
+    syncRouteQuery("", "", customTeamOne.value, customTeamTwo.value);
     return;
   }
 
@@ -381,6 +406,8 @@ const loadMatchupContent = () => {
   syncRouteQuery(
     selectedRegion.value === CUSTOM_REGION_VALUE ? "" : selectedRegion.value,
     selectedMatchup.value,
+    selectedRegion.value === CUSTOM_REGION_VALUE ? customTeamOne.value : "",
+    selectedRegion.value === CUSTOM_REGION_VALUE ? customTeamTwo.value : "",
   );
 };
 
@@ -411,6 +438,8 @@ const closeMatchupContent = () => {
   syncRouteQuery(
     selectedRegion.value === CUSTOM_REGION_VALUE ? "" : selectedRegion.value,
     "",
+    selectedRegion.value === CUSTOM_REGION_VALUE ? customTeamOne.value : "",
+    selectedRegion.value === CUSTOM_REGION_VALUE ? customTeamTwo.value : "",
   );
 };
 
@@ -422,14 +451,48 @@ const resetState = () => {
   resetMatchupSelection();
 };
 
-onMounted(() => {
-  updateCountdownLabel();
-  countdownIntervalId = window.setInterval(updateCountdownLabel, 1000);
-
+const applyRouteStateFromQuery = () => {
   const regionQuery =
     typeof route.query.region === "string" ? route.query.region : "";
   const matchupQuery =
     typeof route.query.matchup === "string" ? route.query.matchup : "";
+  const teamOneQuery =
+    typeof route.query.team1 === "string" ? route.query.team1 : "";
+  const teamTwoQuery =
+    typeof route.query.team2 === "string" ? route.query.team2 : "";
+
+  if (!regionQuery && !matchupQuery && !teamOneQuery && !teamTwoQuery) {
+    resetState();
+    return;
+  }
+
+  const hasTeamOne = Boolean(
+    teamOneQuery && kpStats[normalizeTeamName(teamOneQuery)],
+  );
+  const hasTeamTwo = Boolean(
+    teamTwoQuery && kpStats[normalizeTeamName(teamTwoQuery)],
+  );
+
+  if (!regionQuery && (teamOneQuery || teamTwoQuery)) {
+    selectedRegion.value = CUSTOM_REGION_VALUE;
+    matchups.value = [];
+    customTeamOne.value = hasTeamOne ? teamOneQuery : "";
+    customTeamTwo.value = hasTeamTwo ? teamTwoQuery : "";
+
+    if (
+      matchupQuery &&
+      hasTeamOne &&
+      hasTeamTwo &&
+      matchupQuery === `${customTeamOne.value}_${customTeamTwo.value}`
+    ) {
+      selectedMatchup.value = matchupQuery;
+      loadMatchupContent();
+      return;
+    }
+
+    buildCustomMatchup();
+    return;
+  }
 
   if (!regionQuery && matchupQuery) {
     const [team1, team2] = matchupQuery.split("_");
@@ -440,6 +503,7 @@ onMounted(() => {
       kpStats[normalizeTeamName(team2)]
     ) {
       selectedRegion.value = CUSTOM_REGION_VALUE;
+      matchups.value = [];
       customTeamOne.value = team1;
       customTeamTwo.value = team2;
       selectedMatchup.value = matchupQuery;
@@ -449,19 +513,28 @@ onMounted(() => {
   }
 
   if (!regionQuery || !matchupFiles[regionQuery]) {
+    resetState();
     return;
   }
 
   selectedRegion.value = regionQuery;
+  customTeamOne.value = "";
+  customTeamTwo.value = "";
   matchups.value = matchupFiles[regionQuery] || [];
 
   if (!matchupQuery || !matchups.value.includes(matchupQuery)) {
-    syncRouteQuery(selectedRegion.value, "");
+    resetMatchupSelection();
     return;
   }
 
   selectedMatchup.value = matchupQuery;
   loadMatchupContent();
+};
+
+onMounted(() => {
+  updateCountdownLabel();
+  countdownIntervalId = window.setInterval(updateCountdownLabel, 1000);
+  applyRouteStateFromQuery();
 });
 
 onUnmounted(() => {
@@ -472,10 +545,8 @@ onUnmounted(() => {
 
 watch(
   () => route.query,
-  (query) => {
-    if (!query.region && !query.matchup && !isCustomMode.value) {
-      resetState();
-    }
+  () => {
+    applyRouteStateFromQuery();
   },
 );
 
@@ -686,7 +757,7 @@ watch([customTeamOne, customTeamTwo], () => {
       </h5>
       <h5 class="factor text-center">
         <strong>Upset Chance: {{ (upsetChance * 100).toFixed(2) }}%</strong>
-        <span v-if="seedAvgLabel" class="seed-avg-hint">
+        <span v-if="seedAvgLabel && !hasCustomPair" class="seed-avg-hint">
           ({{ seedAvgLabel }})</span
         >
       </h5>

@@ -13,6 +13,7 @@ export interface MatchupTableDataType {
 }
 
 export interface UpsetMatchupEntry {
+  firstRound: string;
   index: number;
   upset: number;
   factors: string[];
