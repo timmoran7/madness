@@ -10,7 +10,7 @@ teams_data = []
 
 def readKenPomHtml():
     # Read the HTML from the saved response file
-    with open('/home/tmoran/personal/madness/src/model/response.txt', 'r') as f:
+    with open('/home/tmoran/personal/itsmarch/src/model/response.txt', 'r') as f:
         html_content = f.read()
 
     soup = BeautifulSoup(html_content, 'html.parser')
@@ -67,7 +67,7 @@ def parseFourFactors(year):
         teams_data.append(team_dict)
         
     # Save to matchups folder
-        ff_dir = '/home/tmoran/personal/madness/src/model/fourFactors/'
+        ff_dir = '/home/tmoran/personal/itsmarch/src/model/fourFactors/'
         
         output_file = os.path.join(ff_dir, f'{year}.json')
         with open(output_file, 'w') as f:
@@ -112,7 +112,7 @@ def parseMiscStats(year):
         teams_data.append(team_dict)
 
     # Write teams_data to JSON file
-    output_file = f"/home/tmoran/personal/madness/src/model/misc/{year}.json"
+    output_file = f"/home/tmoran/personal/itsmarch/src/model/misc/{year}.json"
     with open(output_file, 'w') as f:
         json.dump(teams_data, f, indent=2)
 
@@ -123,7 +123,7 @@ def parseTeamNames():
     team_names = set()
     
     # Path to the fourFactors folder
-    four_factors_dir = '/home/tmoran/personal/madness/src/model/fourFactors/'
+    four_factors_dir = '/home/tmoran/personal/itsmarch/src/model/fourFactors/'
     
     # Get all JSON files in the fourFactors folder
     json_files = glob.glob(os.path.join(four_factors_dir, '*.json'))
@@ -142,7 +142,7 @@ def parseTeamNames():
     unique_teams = sorted(list(team_names))
     
     # Save to JSON file
-    output_file = '/home/tmoran/personal/madness/src/model/teamNames.json'
+    output_file = '/home/tmoran/personal/itsmarch/src/model/teamNames.json'
     with open(output_file, 'w') as f:
         json.dump(unique_teams, f, indent=2)
     
@@ -151,7 +151,7 @@ def parseTeamNames():
 
 def load_ratings(year):
     """Load team ratings for a given year."""
-    ratings_file = f'/home/tmoran/personal/madness/src/model/ratings/{year}.json'
+    ratings_file = f'/home/tmoran/personal/itsmarch/src/model/ratings/{year}.json'
     if not os.path.exists(ratings_file):
         print(f"Warning: Ratings file not found for {year}")
         return {}
@@ -172,13 +172,13 @@ def load_ratings(year):
 def parseTournamentMatchups(yearsToAvoid=[], appendMode=False):
     # Load mismatched team names for validation
     mismatched_names = {}
-    with open('/home/tmoran/personal/madness/src/model/util/mismatchedNames.json', 'r') as f:
+    with open('/home/tmoran/personal/itsmarch/src/model/util/mismatchedNames.json', 'r') as f:
         mismatched_names = json.load(f)
         
     team_ratings_by_year = {}
 
     # Read the CSV file
-    csv_file = '/home/tmoran/personal/madness/src/model/util/TournamentMatchups.csv'
+    csv_file = '/home/tmoran/personal/itsmarch/src/model/util/TournamentMatchups.csv'
     all_rows = []
     
     with open(csv_file, 'r') as f:
@@ -291,7 +291,7 @@ def parseTournamentMatchups(yearsToAvoid=[], appendMode=False):
         i += 2  # Move to next pair
     
     # Create output directory if it doesn't exist
-    matchups_dir = '/home/tmoran/personal/madness/src/model/matchups/'
+    matchups_dir = '/home/tmoran/personal/itsmarch/src/model/matchups/'
     os.makedirs(matchups_dir, exist_ok=True)
     
     # Save each year's matchups to a separate JSON file
@@ -313,7 +313,7 @@ def parseTournamentMatchups(yearsToAvoid=[], appendMode=False):
     
     # (outdated, first run code) save mismatched names to a JSON file
     '''
-    mismatched_output = '/home/tmoran/personal/madness/src/model/mismatchedNames.json'
+    mismatched_output = '/home/tmoran/personal/itsmarch/src/model/mismatchedNames.json'
     with open(mismatched_output, 'w') as f:
         json.dump(sorted(list(mismatched_names)), f, indent=2)
     
@@ -325,7 +325,7 @@ def parseTournamentMatchups(yearsToAvoid=[], appendMode=False):
 
 def extractUpsets():
     # Path to the matchups folder
-    matchups_dir = '/home/tmoran/personal/madness/src/model/matchups/'
+    matchups_dir = '/home/tmoran/personal/itsmarch/src/model/matchups/'
     
     # Get all JSON files in the matchups folder
     json_files = glob.glob(os.path.join(matchups_dir, '*.json'))
@@ -365,7 +365,7 @@ def extractUpsets():
         
         # Save upsets to JSON file if there are any
         if upsets:
-            output_dir = '/home/tmoran/personal/madness/src/model/upsets/'
+            output_dir = '/home/tmoran/personal/itsmarch/src/model/upsets/'
             os.makedirs(output_dir, exist_ok=True)
             output_file = os.path.join(output_dir, f'upsets{year}.json')
             with open(output_file, 'w') as f:
@@ -383,7 +383,7 @@ def extractOlderMatchups():
     import json
     
     # Path to bracketData folder
-    bracket_data_dir = '/home/tmoran/personal/madness/src/model/bracketData/'
+    bracket_data_dir = '/home/tmoran/personal/itsmarch/src/model/bracketData/'
     
     # Years to process (1997-2007)
     years = range(1997, 2008)
@@ -452,7 +452,7 @@ def extractOlderMatchups():
         # Skip final four rounds because we don't care about those upsets
         
         # Save to matchups folder
-        matchups_dir = '/home/tmoran/personal/madness/src/model/matchups/'
+        matchups_dir = '/home/tmoran/personal/itsmarch/src/model/matchups/'
         os.makedirs(matchups_dir, exist_ok=True)
         
         output_file = os.path.join(matchups_dir, f'{year}.json')
@@ -490,7 +490,7 @@ def fetchWabRankingsPage(year):
     response = requests.get(url, verify=False)
     response.raise_for_status()
 
-    output_file = f"/home/tmoran/personal/madness/src/model/util/wabRankings{year}.txt"
+    output_file = f"/home/tmoran/personal/itsmarch/src/model/util/wabRankings{year}.txt"
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(response.text)
 
@@ -523,7 +523,7 @@ def fetchTopTeams(given_top_teams, year, andRank=False, quads=False):
     """Fetch team pages for certain teams + year"""
     
     # Load ratings data
-    ratings_file = f'/home/tmoran/personal/madness/src/model/ratings/{year}.json'
+    ratings_file = f'/home/tmoran/personal/itsmarch/src/model/ratings/{year}.json'
     with open(ratings_file, 'r') as f:
         ratings_data = json.load(f)
     
@@ -535,7 +535,7 @@ def fetchTopTeams(given_top_teams, year, andRank=False, quads=False):
     
     # Create output directory
     pageType = 'TeamQuads' if quads else 'TeamPhps'
-    output_dir = f'/home/tmoran/personal/madness/src/model/util/temp{pageType}/{year}'
+    output_dir = f'/home/tmoran/personal/itsmarch/src/model/util/temp{pageType}/{year}'
     os.makedirs(output_dir, exist_ok=True)
     
     # Cookie value (same as in the example)
@@ -560,7 +560,7 @@ def fetchTopTeams(given_top_teams, year, andRank=False, quads=False):
                 print(f"Skipping {name}; file already exists")
                 continue
             
-            response = fetchTeamQuadPage(quadName, cookie_value, year) if quads else fetchTeamPage(phpName, kp_cookie_value, year)
+            response = fetchTeamQuadPage(quadName, cookie_value) if quads else fetchTeamPage(phpName, kp_cookie_value, year)
             # Save response to file
             # Replace spaces and special characters in filename
             
@@ -648,8 +648,10 @@ teams_2025 = [
 ]
 bids_2026 = ["North Dakota St.", "Tennessee St.", "LIU", "Northern Iowa", 
 "Siena", "Wright St.", "Hofstra", "Queens", "VCU", "Idaho", "High Point", "Hawaii", 
-"Howard", "Utah St.", "Lehigh", "Furman", "Prairie View A&M", "Troy", "Cal Baptist", "UMBC", "Miami OH"]
+"Howard", "Utah St.", "Lehigh", "Furman", "Prairie View A&M", "Troy", "Cal Baptist", "UMBC", "Miami OH", "Kennesaw St.", "Penn"]
 
+
+#parseMiscStats(2026)
 fetchTopTeams(bids_2026, 2026, True, False)
 fetchTopTeams(bids_2026, 2026, True, True)
-fetchWabRankingsPage(2026)
+# fetchWabRankingsPage(2026)

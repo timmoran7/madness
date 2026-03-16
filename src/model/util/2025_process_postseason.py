@@ -24,7 +24,7 @@ seeds = {
 }
 
 # Load ratings
-with open('/home/tmoran/personal/madness/src/model/ratings/2025.json', 'r') as f:
+with open('/home/tmoran/personal/itsmarch/src/model/ratings/2025.json', 'r') as f:
     ratings_data = json.load(f)
 
 ratings = {}
@@ -46,7 +46,7 @@ def get_team_name(name):
 
 # Parse postseason games
 games = []
-with open('/home/tmoran/personal/madness/src/model/util/2025posteason.txt', 'r') as f:
+with open('/home/tmoran/personal/itsmarch/src/model/util/2025posteason.txt', 'r') as f:
     for line in f:
         line = line.strip()
         if not line:

@@ -1,42 +1,46 @@
 {
     "East": [
-      "Duke_Mount St. Mary's",
-      "Alabama_Robert Morris",
-      "Wisconsin_Montana",
-      "Arizona_Akron",
-      "Oregon_Liberty",
-      "BYU_VCU",
-      "Saint Mary's_Vanderbilt",
-      "Mississippi St._Baylor"
+      "Duke_Siena",
+      "Ohio St._TCU",
+      "St. John's_Northern Iowa",
+      "Kansas_Cal Baptist",
+      "Louisville_South Florida",
+      "Michigan St._North Dakota St.",
+      "UCLA_UCF",
+      "Connecticut_Furman"
     ],
     "West": [
-      "Florida_Norfolk St.",
-      "St. John's_Nebraska Omaha",
-      "Texas Tech_UNC Wilmington",
-      "Maryland_Grand Canyon",
-      "Memphis_Colorado St.",
-      "Missouri_Drake",
-      "Kansas_Arkansas",
-      "Connecticut_Oklahoma"
+      "Arizona_LIU",
+      "Villanova_Utah St.",
+      "Wisconsin_High Point",
+      "Arkansas_Hawaii",
+      "BYU_Texas",
+      "BYU_N.C. State",
+      "Gonzaga_Kennesaw St.",
+      "Miami FL_Missouri",
+      "Purdue_Queens"
     ],
     "South": [
-      "Auburn_Alabama St.",
-      "Michigan St._Bryant",
-      "Iowa St._Lipscomb",
-      "Texas A&M_Yale",
-      "Michigan_UC San Diego",
-      "Mississippi_North Carolina",
-      "Marquette_New Mexico",
-      "Louisville_Creighton"
+      "Florida_Prairie View A&M",
+      "Florida_Lehigh",
+      "Clemson_Iowa",
+      "Vanderbilt_McNeese",
+      "Nebraska_Troy",
+      "North Carolina_VCU",
+      "Illinois_Penn",
+      "Saint Mary's_Texas A&M",
+      "Houston_Idaho"
     ],
     "Midwest": [
-      "Houston_SIUE",
-      "Tennessee_Wofford",
-      "Kentucky_Troy",
-      "Purdue_High Point",
-      "Clemson_McNeese",
-      "Illinois_Xavier",
-      "UCLA_Utah St.",
-      "Gonzaga_Georgia"
+      "Michigan_UMBC",
+      "Michigan_Howard",
+      "Georgia_Saint Louis",
+      "Texas Tech_Akron",
+      "Alabama_Hofstra",
+      "Tennessee_N.C. State",
+      "Tennessee_Texas",
+      "Virginia_Wright St.",
+      "Kentucky_Santa Clara",
+      "Iowa St._Tennessee St."
     ]
   }

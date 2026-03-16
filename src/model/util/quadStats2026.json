@@ -544,6 +544,62 @@
       ]
     }
   },
+  "Cal Baptist": {
+    "net": "98",
+    "record": "24-8",
+    "q1": {
+      "record": "0-1",
+      "games": [
+        "60-91 vs BYU (N)"
+      ]
+    },
+    "q2": {
+      "record": "1-4",
+      "games": [
+        "69-61 @ UC Irvine",
+        "70-78 @ Colorado",
+        "85-91 @ Utah",
+        "66-73 @ Utah Valley",
+        "46-65 @ Utah Valley"
+      ]
+    },
+    "q3": {
+      "record": "5-3",
+      "games": [
+        "75-69 @ Oregon St.",
+        "88-83 @ Eastern Wash.",
+        "51-63 @ UT Arlington",
+        "76-81* @ Tarleton St.",
+        "78-71* vs Utah Valley",
+        "87-77* @ UT Arlington",
+        "65-70 @ Utah Tech",
+        "86-72 vs Utah Tech (N)"
+      ]
+    },
+    "q4": {
+      "record": "18-0",
+      "games": [
+        "87-75 vs USC Upstate",
+        "69-59 vs Western Ill.",
+        "80-57 vs UC Riverside",
+        "72-59 vs Grambling",
+        "76-61 vs San Diego (N)",
+        "75-67 vs Southern U.",
+        "74-67 vs Sacramento St.",
+        "84-72 vs Utah Tech",
+        "58-55 vs Southern Utah",
+        "74-58 @ Abilene Christian",
+        "73-64 vs Utah Tech",
+        "56-55 vs Tarleton St.",
+        "65-63 vs Abilene Christian",
+        "83-66 @ Southern Utah",
+        "68-56 vs UT Arlington",
+        "82-67 vs Tarleton St.",
+        "87-48 vs Abilene Christian",
+        "82-75 @ Southern Utah"
+      ]
+    }
+  },
   "Cincinnati": {
     "net": "46",
     "record": "18-14",
@@ -985,6 +1041,61 @@
       ]
     }
   },
+  "Furman": {
+    "net": "186",
+    "record": "22-12",
+    "q1": {
+      "record": "0-1",
+      "games": [
+        "54-70 @ UNI"
+      ]
+    },
+    "q2": {
+      "record": "0-2",
+      "games": [
+        "71-97 vs High Point (N)",
+        "65-72 vs Illinois St. (N)"
+      ]
+    },
+    "q3": {
+      "record": "5-5",
+      "games": [
+        "61-64 vs Troy",
+        "73-72 vs Richmond (N)",
+        "97-88 @ Elon",
+        "79-69 vs Harvard",
+        "77-73 @ Samford",
+        "71-75* @ ETSU",
+        "64-69 @ Mercer",
+        "69-78 vs ETSU",
+        "67-86 @ Western Caro.",
+        "76-61 vs ETSU (N)"
+      ]
+    },
+    "q4": {
+      "record": "14-4",
+      "games": [
+        "90-79 vs Queens (NC)",
+        "75-68 @ Manhattan",
+        "84-76 vs Charleston So.",
+        "74-72 vs Mercer",
+        "77-80* vs Western Caro.",
+        "78-67 @ Chattanooga",
+        "69-48 vs VMI",
+        "70-74 vs Wofford",
+        "75-77* @ The Citadel",
+        "89-66 @ UNC Greensboro",
+        "78-73 vs Samford",
+        "75-70 vs Chattanooga",
+        "64-67 vs UNC Greensboro",
+        "90-72 @ VMI",
+        "76-67 @ Wofford",
+        "72-51 vs The Citadel",
+        "86-81 vs Samford (N)",
+        "81-75 vs UNC Greensboro (N)"
+      ]
+    }
+  },
   "Georgia": {
     "net": "31",
     "record": "22-9",
@@ -1152,6 +1263,59 @@
       ]
     }
   },
+  "Hawaii": {
+    "net": "101",
+    "record": "24-8",
+    "q1": {
+      "record": "0-0",
+      "games": []
+    },
+    "q2": {
+      "record": "0-4",
+      "games": [
+        "59-60 @ Oregon",
+        "76-83 vs Arizona St.",
+        "73-83 @ UC San Diego",
+        "76-87* @ UC Irvine"
+      ]
+    },
+    "q3": {
+      "record": "8-2",
+      "games": [
+        "67-66 vs UC Irvine",
+        "86-66 @ Cal Poly",
+        "62-77 @ UC Santa Barbara",
+        "72-67 vs UC San Diego",
+        "60-84 @ CSUN",
+        "78-75* vs UC Santa Barbara",
+        "77-73 @ UC Davis",
+        "87-85 @ Cal St. Fullerton",
+        "78-63 vs Cal St. Fullerton (N)",
+        "71-64 vs UC Irvine (N)"
+      ]
+    },
+    "q4": {
+      "record": "14-2",
+      "games": [
+        "100-74 vs East Texas A&M",
+        "88-56 vs Mississippi Val.",
+        "86-56 vs Manhattan",
+        "68-62 vs Utah Tech",
+        "92-55 vs North Dakota",
+        "75-69 vs UC Davis",
+        "69-59 vs Cal St. Fullerton",
+        "66-61 vs UTEP",
+        "88-45 @ UC Riverside",
+        "98-71 vs CSU Bakersfield",
+        "89-68 vs CSUN",
+        "89-82 @ Long Beach St.",
+        "89-74 @ CSU Bakersfield",
+        "75-86 vs Cal Poly",
+        "93-74 vs UC Riverside",
+        "75-84 vs Long Beach St."
+      ]
+    }
+  },
   "High Point": {
     "net": "74",
     "record": "30-4",
@@ -1314,6 +1478,114 @@
         "91-45 vs Rider",
         "80-38 vs Jackson St.",
         "99-57 vs New Orleans"
+      ]
+    }
+  },
+  "Howard": {
+    "net": "203",
+    "record": "23-10",
+    "q1": {
+      "record": "0-2",
+      "games": [
+        "56-93 @ Duke",
+        "60-80 @ Northwestern"
+      ]
+    },
+    "q2": {
+      "record": "1-2",
+      "games": [
+        "67-88 vs Missouri",
+        "67-66 @ UNCW",
+        "81-87* vs Yale"
+      ]
+    },
+    "q3": {
+      "record": "1-0",
+      "games": [
+        "74-66 @ Drexel"
+      ]
+    },
+    "q4": {
+      "record": "17-6",
+      "games": [
+        "70-73 vs Grambling",
+        "72-64 vs Alcorn",
+        "60-64 @ Stetson",
+        "80-70 vs Niagara (N)",
+        "75-79 @ Mount St. Mary's",
+        "73-69 vs N.C. A&T (N)",
+        "61-57 vs Hampton (N)",
+        "57-58 @ South Carolina St.",
+        "57-69 @ UMES",
+        "84-58 vs Delaware St.",
+        "83-69 @ N.C. Central",
+        "77-78 vs Morgan St.",
+        "88-60 vs Norfolk St.",
+        "72-53 @ Coppin St.",
+        "85-57 vs South Carolina St.",
+        "79-53 vs UMES",
+        "91-59 @ Delaware St.",
+        "100-67 vs N.C. Central",
+        "84-59 @ Morgan St.",
+        "90-70 vs Coppin St.",
+        "84-76 @ Norfolk St.",
+        "78-61 vs South Carolina St. (N)",
+        "70-63 vs N.C. Central (N)"
+      ]
+    }
+  },
+  "Idaho": {
+    "net": "144",
+    "record": "21-14",
+    "q1": {
+      "record": "0-0",
+      "games": []
+    },
+    "q2": {
+      "record": "0-3",
+      "games": [
+        "67-75 @ UC San Diego",
+        "65-80 @ Notre Dame",
+        "66-73 @ Montana St."
+      ]
+    },
+    "q3": {
+      "record": "9-8",
+      "games": [
+        "83-81 @ Washington St.",
+        "74-78 @ San Diego",
+        "78-64 vs CSUN (N)",
+        "68-94 vs Sam Houston (N)",
+        "84-81 @ South Dakota St.",
+        "83-80* @ Cal Poly",
+        "92-89 vs Montana St.",
+        "68-76 @ Idaho St.",
+        "75-67 @ Weber St.",
+        "66-69 vs Portland St.",
+        "83-91 @ Northern Colo.",
+        "68-73 @ Montana",
+        "67-77 @ Portland St.",
+        "67-76 vs Northern Colo.",
+        "85-81 @ Eastern Wash.",
+        "78-74 vs Montana St. (N)",
+        "77-66 vs Montana (N)"
+      ]
+    },
+    "q4": {
+      "record": "9-3",
+      "games": [
+        "90-58 vs North Dakota",
+        "63-64 @ CSU Bakersfield",
+        "84-81 vs Eastern Wash.",
+        "73-79 vs Montana",
+        "86-76 vs Sacramento St.",
+        "79-62 @ Northern Ariz.",
+        "72-83 vs Weber St.",
+        "99-69 vs Idaho St.",
+        "86-80 @ Sacramento St.",
+        "78-58 vs Northern Ariz.",
+        "68-45 vs Sacramento St. (N)",
+        "81-68 vs Eastern Wash. (N)"
       ]
     }
   },
@@ -1592,6 +1864,61 @@
       ]
     }
   },
+  "Kennesaw St": {
+    "net": "155",
+    "record": "21-13",
+    "q1": {
+      "record": "0-1",
+      "games": [
+        "81-92 vs Alabama (N)"
+      ]
+    },
+    "q2": {
+      "record": "0-3",
+      "games": [
+        "89-108 vs South Fla.",
+        "73-81 @ Liberty",
+        "87-93 @ Sam Houston"
+      ]
+    },
+    "q3": {
+      "record": "6-5",
+      "games": [
+        "67-68 @ Middle Tenn.",
+        "81-65 @ Western Ky.",
+        "76-82 @ Louisiana Tech",
+        "72-69 vs Western Ky.",
+        "58-77 @ Jacksonville St.",
+        "79-83 vs Sam Houston",
+        "91-87 @ Missouri St.",
+        "74-65 vs Liberty",
+        "76-79 @ New Mexico St.",
+        "96-87 vs Western Ky. (N)",
+        "79-73 vs Sam Houston (N)"
+      ]
+    },
+    "q4": {
+      "record": "12-4",
+      "games": [
+        "92-72 @ Florida A&M",
+        "89-84* vs Rice (N)",
+        "83-91 vs Oral Roberts (N)",
+        "102-100* @ FGCU",
+        "88-73 vs Jackson St.",
+        "92-69 vs Georgia St.",
+        "52-67 @ Delaware",
+        "90-80 vs Missouri St.",
+        "88-82 vs Jacksonville St.",
+        "89-86 vs FIU",
+        "76-53 vs New Mexico St.",
+        "87-90 vs Middle Tenn.",
+        "58-55 vs Louisiana Tech",
+        "90-82 vs Delaware",
+        "71-78 @ UTEP",
+        "71-60 vs Louisiana Tech (N)"
+      ]
+    }
+  },
   "Kentucky": {
     "net": "28",
     "record": "19-12",
@@ -1702,6 +2029,62 @@
         "79-75 vs Chicago St.",
         "64-56 vs Wagner",
         "79-70 vs Mercyhurst"
+      ]
+    }
+  },
+  "Lehigh": {
+    "net": "275",
+    "record": "18-16",
+    "q1": {
+      "record": "0-2",
+      "games": [
+        "57-75 @ Houston",
+        "47-69 @ West Virginia"
+      ]
+    },
+    "q2": {
+      "record": "0-1",
+      "games": [
+        "72-84 @ Rutgers"
+      ]
+    },
+    "q3": {
+      "record": "1-5",
+      "games": [
+        "55-78 @ Marist",
+        "70-72 vs UC Santa Barbara (N)",
+        "62-76 @ Monmouth",
+        "78-77 @ Colgate",
+        "79-82* vs Navy",
+        "49-72 @ Navy"
+      ]
+    },
+    "q4": {
+      "record": "15-8",
+      "games": [
+        "79-62 vs Saint Francis",
+        "67-82 vs Columbia",
+        "78-74* vs Texas St. (N)",
+        "71-80* @ Binghamton",
+        "82-87 vs LIU",
+        "78-85* vs Army West Point",
+        "65-72 @ Bucknell",
+        "66-58 vs Holy Cross",
+        "93-91* @ Boston U.",
+        "88-81 vs Loyola Maryland",
+        "64-59 vs Lafayette",
+        "64-67 @ Army West Point",
+        "77-76* vs Colgate",
+        "84-89* @ Loyola Maryland",
+        "67-76 @ Holy Cross",
+        "90-82 vs American",
+        "78-69 @ Lafayette",
+        "70-67 vs Boston U.",
+        "78-73 @ American",
+        "89-79 vs Bucknell",
+        "69-66 vs Holy Cross",
+        "76-69 vs Colgate",
+        "74-60 vs Boston U."
       ]
     }
   },
@@ -2137,6 +2520,58 @@
         "98-81 vs FIU",
         "105-67 vs North Florida",
         "91-81 vs Georgia Tech"
+      ]
+    }
+  },
+  "Miami OH": {
+    "net": "64",
+    "record": "31-1",
+    "q1": {
+      "record": "0-0",
+      "games": []
+    },
+    "q2": {
+      "record": "3-0",
+      "games": [
+        "83-76 @ Wright St.",
+        "76-73 vs Akron",
+        "87-73 @ Toledo"
+      ]
+    },
+    "q3": {
+      "record": "10-0",
+      "games": [
+        "90-87* @ UNC Asheville",
+        "93-83 @ Bowling Green",
+        "107-101* @ Kent St.",
+        "73-71 @ Buffalo",
+        "90-74 @ Marshall",
+        "86-77 @ Massachusetts",
+        "91-77 vs Bowling Green",
+        "74-64 @ Eastern Mich.",
+        "74-72 vs Toledo",
+        "110-108* @ Ohio"
+      ]
+    },
+    "q4": {
+      "record": "15-1",
+      "games": [
+        "87-72 vs Old Dominion",
+        "76-61 @ Air Force",
+        "76-71 vs Mercyhurst",
+        "111-84 vs Ark.-Pine Bluff",
+        "82-71 vs UNC Greensboro (N)",
+        "93-61 vs Maine",
+        "79-69 @ Eastern Ky.",
+        "86-77 @ Ball St.",
+        "87-76 vs Western Mich.",
+        "100-61 vs Central Mich.",
+        "105-102* vs Buffalo",
+        "86-84 vs Massachusetts",
+        "85-61 vs NIU",
+        "90-74 vs Ohio",
+        "69-67 @ Western Mich.",
+        "83-87 vs Massachusetts (N)"
       ]
     }
   },
@@ -3122,6 +3557,81 @@
       ]
     }
   },
+  "Penn": {
+    "net": null,
+    "record": null,
+    "q1": {
+      "record": "0-0",
+      "games": []
+    },
+    "q2": {
+      "record": "0-0",
+      "games": []
+    },
+    "q3": {
+      "record": "0-0",
+      "games": []
+    },
+    "q4": {
+      "record": "0-0",
+      "games": []
+    }
+  },
+  "Prairie View A&M": {
+    "net": "300",
+    "record": "18-17",
+    "q1": {
+      "record": "0-4",
+      "games": [
+        "62-105 @ Wichita St.",
+        "67-94 @ Oklahoma St.",
+        "73-91 @ Missouri",
+        "82-111 @ Texas A&M"
+      ]
+    },
+    "q2": {
+      "record": "0-1",
+      "games": [
+        "90-104 @ LSU"
+      ]
+    },
+    "q3": {
+      "record": "0-1",
+      "games": [
+        "69-72 @ North Texas"
+      ]
+    },
+    "q4": {
+      "record": "14-11",
+      "games": [
+        "68-69 vs UT Martin (N)",
+        "85-82 vs North Florida (N)",
+        "85-97 @ South Dakota",
+        "72-76 @ Grambling",
+        "89-85 @ Southern U.",
+        "70-69 vs Mississippi Val.",
+        "73-61 vs Ark.-Pine Bluff",
+        "78-82 @ Jackson St.",
+        "75-76 @ Alcorn",
+        "80-95 vs Alabama St.",
+        "60-80 vs Alabama A&M",
+        "85-78 vs Texas Southern",
+        "76-82 @ Bethune-Cookman",
+        "96-100 @ Florida A&M",
+        "82-87 vs Southern U.",
+        "68-63 vs Grambling",
+        "72-62 @ Mississippi Val.",
+        "82-84 @ Ark.-Pine Bluff",
+        "85-76* vs Jackson St.",
+        "72-51 vs Alcorn",
+        "70-59 @ Texas Southern",
+        "65-56 vs Alcorn (N)",
+        "71-67 vs Bethune-Cookman (N)",
+        "74-55 vs Alabama A&M (N)",
+        "72-66 vs Southern U. (N)"
+      ]
+    }
+  },
   "Purdue": {
     "net": "10",
     "record": "23-8",
@@ -3780,6 +4290,61 @@
       ]
     }
   },
+  "South Florida": {
+    "net": "45",
+    "record": "24-8",
+    "q1": {
+      "record": "3-3",
+      "games": [
+        "95-103 @ Oklahoma St.",
+        "66-78 vs VCU (N)",
+        "74-61 vs Utah St.",
+        "93-104 @ Alabama",
+        "93-78 @ Tulsa",
+        "66-58 @ Wichita St."
+      ]
+    },
+    "q2": {
+      "record": "4-3",
+      "games": [
+        "95-99 vs George Washington (N)",
+        "68-83 vs Colorado St. (N)",
+        "85-86* vs Wichita St.",
+        "82-69 @ UAB",
+        "80-74 vs Tulsa",
+        "83-81* @ Fla. Atlantic",
+        "96-89 @ Memphis"
+      ]
+    },
+    "q3": {
+      "record": "7-2",
+      "games": [
+        "108-89 @ Kennesaw St.",
+        "97-91* vs Western Ky. (N)",
+        "106-109* vs UAB",
+        "74-70 @ North Texas",
+        "89-75 vs Fla. Atlantic",
+        "97-83 @ Tulane",
+        "78-79 @ Temple",
+        "87-66 vs Memphis",
+        "86-64 vs Charlotte (N)"
+      ]
+    },
+    "q4": {
+      "record": "9-0",
+      "games": [
+        "102-67 vs Florida A&M",
+        "100-50 vs Coppin St.",
+        "81-75 vs Col. of Charleston",
+        "94-69 vs UMBC",
+        "82-71 vs East Carolina",
+        "109-88 vs UTSA",
+        "75-56 @ Rice",
+        "90-62 vs Tulane",
+        "83-60 vs Charlotte"
+      ]
+    }
+  },
   "St Johns": {
     "net": "21",
     "record": "25-6",
@@ -4380,6 +4945,60 @@
       ]
     }
   },
+  "UMBC": {
+    "net": "196",
+    "record": "24-8",
+    "q1": {
+      "record": "0-2",
+      "games": [
+        "71-77 @ Dayton",
+        "69-94 @ South Fla."
+      ]
+    },
+    "q2": {
+      "record": "0-2",
+      "games": [
+        "52-89 @ George Washington",
+        "81-90 @ Georgetown"
+      ]
+    },
+    "q3": {
+      "record": "0-1",
+      "games": [
+        "55-64 @ Vermont"
+      ]
+    },
+    "q4": {
+      "record": "22-3",
+      "games": [
+        "81-79 @ Morgan St.",
+        "71-70* vs Wagner",
+        "71-57 vs Delaware St.",
+        "73-66 @ Bucknell",
+        "79-83 vs Buffalo",
+        "60-63 vs Army West Point",
+        "93-59 @ Coppin St.",
+        "69-62 vs Maine",
+        "75-74 vs New Hampshire",
+        "74-79* @ Bryant",
+        "78-60 @ Binghamton",
+        "87-74 vs NJIT",
+        "79-56 vs UMass Lowell",
+        "68-65 @ UAlbany",
+        "79-62 vs Binghamton",
+        "78-62 @ Maine",
+        "85-63 @ New Hampshire",
+        "75-62 vs Vermont",
+        "66-62 vs UAlbany",
+        "70-58 vs Bryant",
+        "84-60 @ UMass Lowell",
+        "91-52 @ NJIT",
+        "84-69 vs New Hampshire",
+        "91-69 vs UMass Lowell",
+        "74-59 vs Vermont"
+      ]
+    }
+  },
   "UNC Wilmington": {
     "net": "96",
     "record": "26-6",
@@ -4758,6 +5377,62 @@
         "94-69 vs Queens (NC)",
         "84-60 vs UMES",
         "95-51 vs American"
+      ]
+    }
+  },
+  "Virginia Tech": {
+    "net": "55",
+    "record": "19-13",
+    "q1": {
+      "record": "2-10",
+      "games": [
+        "66-77 vs Saint Mary's (CA) (N)",
+        "68-86 vs VCU (N)",
+        "95-85* vs Virginia",
+        "78-81 @ Wake Forest",
+        "76-77 @ SMU",
+        "71-85 @ Louisville",
+        "58-72 vs Duke",
+        "73-82 @ NC State",
+        "76-66 @ Clemson",
+        "66-67 @ Miami (FL)",
+        "82-89 @ North Carolina",
+        "72-76 @ Virginia"
+      ]
+    },
+    "q2": {
+      "record": "6-3",
+      "games": [
+        "107-101* vs Providence (N)",
+        "66-64 vs Colorado St. (N)",
+        "86-83* @ South Carolina",
+        "68-69 vs Stanford",
+        "78-75 vs California",
+        "76-74 @ Syracuse",
+        "69-92 vs Florida St.",
+        "82-63 vs Wake Forest",
+        "89-95* vs Wake Forest (N)"
+      ]
+    },
+    "q3": {
+      "record": "4-0",
+      "games": [
+        "94-59 vs Saint Joseph's",
+        "73-62 vs George Mason",
+        "89-76 vs Notre Dame",
+        "72-63 vs Boston College"
+      ]
+    },
+    "q4": {
+      "record": "7-0",
+      "games": [
+        "98-67 vs Charleston So.",
+        "84-76 vs Charlotte",
+        "78-61 vs Bryant",
+        "96-74 vs Western Caro.",
+        "82-53 vs UMES",
+        "82-81* vs Elon",
+        "71-65 vs Georgia Tech"
       ]
     }
   },

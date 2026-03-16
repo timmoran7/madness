@@ -8,16 +8,41 @@ RANK_SPAN = RANK_MAX - RANK_MIN
 FACTOR_COLUMNS = ["Rebounding", "Turnovers", "3Pt Volume", "Dawg 3P%", "Dawg Pace"]
 FACTOR_KEY_ORDER = ["rebounding", "turnovers", "3pt_volume", "dawg_3p_pct", "dawg_pace"]
 
+
+def normalize_team_name(name):
+	return name.replace(".", "").replace("'", "")
+
+
+def extract_rank(stat_value):
+	if isinstance(stat_value, list):
+		if not stat_value:
+			raise ValueError("Encountered empty stat list")
+		stat_value = stat_value[0]
+
+	return float(stat_value)
+
+
+def resolve_team_stats(team_name, stats):
+	if team_name in stats:
+		return team_name, stats[team_name]
+
+	normalized_name = normalize_team_name(team_name)
+	for stats_team_name, team_stats in stats.items():
+		if normalize_team_name(stats_team_name) == normalized_name:
+			return stats_team_name, team_stats
+
+	raise ValueError(f"Missing team in stats: {team_name}")
+
 def advantage_delta_to_score(dawg_rank, fav_rank):
 	delta_norm = (fav_rank - dawg_rank) / RANK_SPAN
 	return 5.0 + 5.0 * delta_norm
 
 def ovr_rank_to_score(dawg_rank, fav_rank):
-	if dawg_rank >= fav_rank:
+	if fav_rank > dawg_rank:
 		return 10.0
 
 	rank_diff = (abs(dawg_rank - fav_rank)) / RANK_SPAN
-	return 10.0 * 1.0 - rank_diff
+	return 10.0 * (1.0 - rank_diff)
 
 def three_point_pct_rank_to_score(rank):
 	return ((RANK_MAX + 1 - rank) / RANK_MAX) * 10.0
@@ -34,12 +59,9 @@ def dawg_pace_rank_to_score(dawg_rank, fav_rank):
     return raw_factor
 
 def load_kp_ovr_stats(stats_path=None, year=2026):
-	if(year == 2026):
-		year = ''
-	
 	fileName = f"kpOvrStats{str(year)}.json"
 	if stats_path is None:
-		stats_path = Path(__file__).with_name(fileName)
+		stats_path = Path(__file__).resolve().with_name(fileName)
 
 	with open(stats_path, "r", encoding="utf-8") as f:
 		return json.load(f)
@@ -57,41 +79,51 @@ def load_matchups_by_region(matchups_path=None, year=2026):
 
 def calculate_upset_correlations(team_a, team_b, stats=None):
 	if stats is None:
-		stats = load_kp_ovr_stats(None, 2025)
+		stats = load_kp_ovr_stats(None, 2026)
 
-	if team_a not in stats or team_b not in stats:
-		missing = [team for team in (team_a, team_b) if team not in stats]
+	missing = []
+	try:
+		_, a = resolve_team_stats(team_a, stats)
+	except ValueError:
+		missing.append(team_a)
+
+	try:
+		_, b = resolve_team_stats(team_b, stats)
+	except ValueError:
+		missing.append(team_b)
+
+	if missing:
 		raise ValueError(f"Missing team(s) in stats: {', '.join(missing)}")
 
-	a = stats[team_a]
-	b = stats[team_b]
+	a_ovr = extract_rank(a["KenPom Ovr."])
+	b_ovr = extract_rank(b["KenPom Ovr."])
 
-	if a["KenPom Ovr."] == b["KenPom Ovr."]:
+	if a_ovr == b_ovr:
 		raise ValueError("Cannot determine underdog: teams have identical KenPom Ovr. rank")
 
-	if a["KenPom Ovr."] > b["KenPom Ovr."]:
+	if a_ovr > b_ovr:
 		dawg_name, dawg = team_a, a
 		fav_name, fav = team_b, b
 	else:
 		dawg_name, dawg = team_b, b
 		fav_name, fav = team_a, a
 
-	rebound_off = advantage_delta_to_score(dawg["Off OR%"], fav["Off OR%"])
-	rebound_def = advantage_delta_to_score(dawg["Def OR%"], fav["Def OR%"])
+	rebound_off = advantage_delta_to_score(extract_rank(dawg["Off OR%"]), extract_rank(fav["Off OR%"]))
+	rebound_def = advantage_delta_to_score(extract_rank(dawg["Def OR%"]), extract_rank(fav["Def OR%"]))
 	rebounding = (0.7 * rebound_off) + (0.3 * rebound_def)
 
-	to_off = advantage_delta_to_score(dawg["Off TO%"], fav["Off TO%"])
-	to_def = advantage_delta_to_score(dawg["Def TO%"], fav["Def TO%"])
+	to_off = advantage_delta_to_score(extract_rank(dawg["Off TO%"]), extract_rank(fav["Off TO%"]))
+	to_def = advantage_delta_to_score(extract_rank(dawg["Def TO%"]), extract_rank(fav["Def TO%"]))
 	turnovers = (0.5 * to_off) + (0.5 * to_def)
 
-	dawg_volatility = three_point_pct_rank_to_score(dawg["Off 3PA"])
-	fav_volatility = three_point_pct_rank_to_score(fav["Off 3PA"])
+	dawg_volatility = three_point_pct_rank_to_score(extract_rank(dawg["Off 3PA"]))
+	fav_volatility = three_point_pct_rank_to_score(extract_rank(fav["Off 3PA"]))
 	three_pt_volume = (dawg_volatility + fav_volatility) / 2.0
 
-	dawg_three_pct = three_point_pct_rank_to_score(dawg["Off 3P%"])
-	dawg_pace = dawg_pace_rank_to_score(dawg["Tempo"], fav["Tempo"])
+	dawg_three_pct = three_point_pct_rank_to_score(extract_rank(dawg["Off 3P%"]))
+	dawg_pace = dawg_pace_rank_to_score(extract_rank(dawg["Tempo"]), extract_rank(fav["Tempo"]))
 
-	ovr = ovr_rank_to_score(dawg["KenPom Ovr."], fav["KenPom Ovr."])
+	ovr = ovr_rank_to_score(extract_rank(dawg["KenPom Ovr."]), extract_rank(fav["KenPom Ovr."]))
 	scores = {
 		"rebounding": round(rebounding, 2),
 		"turnovers": round(turnovers, 2),
@@ -118,10 +150,9 @@ def calculate_madness_index(scores):
 	}
 
 	stats_mi = sum(scores[factor] * weight for factor, weight in weights.items())
-	madness_index = stats_mi * 0.67 + scores["ovr"] * 0.33
+	madness_index = stats_mi * 0.8 + scores["ovr"] * 0.2
  
 	# Hard for underdog to rank close/better to favorite in all these so attempt to account for the overall ranking gap
-	madness_index *= 1.1
  
 	return round(madness_index, 2)
 
@@ -136,7 +167,7 @@ def add_madness_data_to_upset_file(
 	stats = load_kp_ovr_stats(stats_path=stats_path, year=year)
 
 	if upset_data_path is None:
-		upset_data_path = Path(__file__).resolve().parents[2] / "data" / "upsetData.json"
+		upset_data_path = Path(__file__).resolve().with_name("upsetData.json")
 	else:
 		upset_data_path = Path(upset_data_path)
 
@@ -179,9 +210,10 @@ def add_madness_data_to_upset_file(
 if __name__ == "__main__":
 	# Example usage
 	try:
-		result = calculate_upset_correlations("Michigan", "UC San Diego")
-		madness_index = calculate_madness_index(result["scores"])
-		print(json.dumps(result, indent=2))
-		print(f"Madness Index: {madness_index}")
+		add_madness_data_to_upset_file(2026)
+		# result = calculate_upset_correlations("Michigan", "UC San Diego")
+		# madness_index = calculate_madness_index(result["scores"])
+		# print(json.dumps(result, indent=2))
+		# print(f"Madness Index: {madness_index}")
 	except ValueError as e:
 		print(f"Error: {e}")

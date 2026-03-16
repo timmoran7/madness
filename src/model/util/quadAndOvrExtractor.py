@@ -433,6 +433,6 @@ def extractKpGames(
 	return payload
 
 if __name__ == "__main__":
-	  extractKpOvrStats(2026)
-	# extractKpGames(2026)
-	# extractQuadStats(2026)
+	extractKpOvrStats(2026)
+	extractKpGames(2026)
+	extractQuadStats(2026)

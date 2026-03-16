@@ -103,7 +103,7 @@ const goHome = () => {
 
 <template>
   <div>
-    <div class="container mt-5">
+    <div class="container mt-3">
       <div class="position-relative text-center mb-4">
         <form class="team-search" @submit.prevent="goToTeamPage">
           <input

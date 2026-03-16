@@ -4,7 +4,7 @@ from datetime import datetime
 
 def load_mismatched_names():
     """Load the mismatched names mapping."""
-    with open('/home/tmoran/personal/madness/src/model/util/mismatchedNames.json', 'r') as f:
+    with open('/home/tmoran/personal/itsmarch/src/model/util/mismatchedNames.json', 'r') as f:
         return json.load(f)
 
 def normalize_team_name(team_name, mismatched_names):
@@ -13,7 +13,7 @@ def normalize_team_name(team_name, mismatched_names):
 
 def load_ratings(year):
     """Load team ratings for a given year."""
-    ratings_file = f'/home/tmoran/personal/madness/src/model/ratings/{year}.json'
+    ratings_file = f'/home/tmoran/personal/itsmarch/src/model/ratings/{year}.json'
     if not os.path.exists(ratings_file):
         print(f"Warning: Ratings file not found for {year}")
         return {}
@@ -45,7 +45,7 @@ def parse_game_line(line, year, ratings_dict, mismatched_names, gameCtr):
         day = game_date.day
         
         # After March 14 and before May 1
-        if (month == 3 and day > 14) or month == 4:
+        if (month == 3 and day > 15) or month == 4:
             return None
             
     except ValueError:
@@ -150,7 +150,7 @@ def parse_game_line(line, year, ratings_dict, mismatched_names, gameCtr):
 def process_year(reg_season_dir, year):
     """Process all regular season games for a given year."""
     reg_season_file = f'{reg_season_dir}/{year}.txt'
-    matchups_file = f'/home/tmoran/personal/madness/src/model/matchups/{year}.json'
+    matchups_file = f'/home/tmoran/personal/itsmarch/src/model/matchups/{year}.json'
     
     if not os.path.exists(reg_season_file):
         print(f"Skipping {year}: No regular season file found")
@@ -197,7 +197,7 @@ def process_year(reg_season_dir, year):
 
 def delete_regular_season_games():
     """Delete all regular season games (those with higherRating field) from matchups files."""
-    matchups_dir = '/home/tmoran/personal/madness/src/model/matchups'
+    matchups_dir = '/home/tmoran/personal/itsmarch/src/model/matchups'
     
     if not os.path.exists(matchups_dir):
         print(f"Directory not found: {matchups_dir}")
@@ -236,7 +236,7 @@ def delete_regular_season_games():
 
 def main():    
     """Process all years with regular season game files."""
-    reg_season_dir = '/home/tmoran/personal/madness/src/model/regSeasonGames'
+    reg_season_dir = '/home/tmoran/personal/itsmarch/src/model/regSeasonGames'
     
     if not os.path.exists(reg_season_dir):
         print(f"Directory not found: {reg_season_dir}")

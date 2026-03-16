@@ -55,7 +55,7 @@ def build_team_stats(misc, four_factors):
         "eFG_pct_off", "eFG_pct_def", "FTRate_off", "2P_Dist"]
     return df.set_index("team").drop(columns=colsToIgnore, errors="ignore")
 
-def build_matchup_rows(matchups, team_stats, averages, ratingSegment, numBuckets):
+def build_matchup_rows(matchups, team_stats, averages, ratingSegment, numBuckets, allowOutsideSegment=False):
     rows = []
     
     # higherSeedTeam, higherRating
@@ -65,8 +65,6 @@ def build_matchup_rows(matchups, team_stats, averages, ratingSegment, numBuckets
         adjustedHigherRating, adjustedLowerRating = m["higherRating"], m["lowerRating"]
         # account for no home crowds in covid
         if m["year"] == "2021" or "homeTeam" not in m or m["homeTeam"] == "null" or m["homeTeam"] == "" or m["homeTeam"] is None:
-            if(len(matchups) == 1):
-                print('yerRRr')
             pass
         elif(m["higherSeedTeam"] == m["homeTeam"]):
             adjustedHigherRating += HOME_COURT_ADVANTAGE
@@ -81,7 +79,7 @@ def build_matchup_rows(matchups, team_stats, averages, ratingSegment, numBuckets
         ratingDiff = adjustedHigherRating - adjustedLowerRating
         
         # skip if outside rating segment
-        if(ratingDiff < ratingSegment[0] or ratingDiff > ratingSegment[1]):
+        if not allowOutsideSegment and (ratingDiff < ratingSegment[0] or ratingDiff > ratingSegment[1]):
             continue
 
         # optionally create buckets (pass ratingSegment max of 29.99 instead of 30 to avoid one extra bucket for ratings of exactly 30)
@@ -207,8 +205,6 @@ def train_model_artifacts(ratingSegment, colsToKeep, numBuckets=0):
     y_train = y[train_mask]
     y_test = y[test_mask]
     
-    print(X_train.head(1))
-
     # Scale all numeric features
     scaler = StandardScaler()
     X_train_scaled = pd.DataFrame(
@@ -289,6 +285,126 @@ def buildAndRunModel(
     return results
 
 
+def load_ratings_df(year):
+    ratings = load_json(f"ratings/{year}.json")
+    return pd.DataFrame(ratings).set_index("team")
+
+
+def get_matchup_rating_info(teamA, teamB, year, ratings_df=None):
+    if ratings_df is None:
+        ratings_df = load_ratings_df(year)
+
+    if teamA not in ratings_df.index or teamB not in ratings_df.index:
+        raise ValueError(f"Ratings missing for one or both teams: {teamA}, {teamB}")
+
+    ratingA = float(ratings_df.loc[teamA, "netRating"])
+    ratingB = float(ratings_df.loc[teamB, "netRating"])
+
+    if ratingA >= ratingB:
+        higherSeedTeam, lowerSeedTeam = teamA, teamB
+        higherRating, lowerRating = ratingA, ratingB
+    else:
+        higherSeedTeam, lowerSeedTeam = teamB, teamA
+        higherRating, lowerRating = ratingB, ratingA
+
+    return {
+        "higherSeedTeam": higherSeedTeam,
+        "lowerSeedTeam": lowerSeedTeam,
+        "higherRating": higherRating,
+        "lowerRating": lowerRating,
+        "ratingDiff": higherRating - lowerRating,
+    }
+
+
+def choose_prob_from_range(
+    teamA,
+    teamB,
+    year,
+    ratingSegment,
+    base_artifacts,
+    advanced_artifacts=None,
+    homeTeam=None,
+    ratings_df=None,
+):
+    base_prob = _predict_game_upset_prob_from_artifacts(
+        teamA,
+        teamB,
+        year,
+        base_artifacts,
+        BASE_COLS,
+        ratingSegment,
+        homeTeam=homeTeam,
+        ratings_df=ratings_df,
+    )
+
+    if advanced_artifacts is None:
+        return base_prob
+
+    advanced_prob = _predict_game_upset_prob_from_artifacts(
+        teamA,
+        teamB,
+        year,
+        advanced_artifacts,
+        ADVANCED_COLS,
+        ratingSegment,
+        homeTeam=homeTeam,
+        ratings_df=ratings_df,
+    )
+
+    if advanced_prob > base_prob + 0.05:
+        return advanced_prob
+
+    return base_prob
+
+
+def choose_matchup_upset_prob(teamA, teamB, year, homeTeam=None):
+    ratings_df = load_ratings_df(year)
+    matchup_info = get_matchup_rating_info(teamA, teamB, year, ratings_df=ratings_df)
+    rating_diff = matchup_info["ratingDiff"]
+    close_range = [0, RANK_DIFF_MIN]
+    wide_range = [RANK_DIFF_MIN, RANK_DIFF_MAX]
+    large_range = [BIG_RANK_DIFF_MIN, BIG_RANK_DIFF_MAX]
+
+    if rating_diff < RANK_DIFF_MIN:
+        close_artifacts = train_model_artifacts(close_range, BASE_COLS, numBuckets=0)
+        return choose_prob_from_range(
+            teamA,
+            teamB,
+            year,
+            close_range,
+            close_artifacts,
+            homeTeam=homeTeam,
+            ratings_df=ratings_df,
+        )
+
+    if rating_diff > RANK_DIFF_MAX:
+        base_artifacts = train_model_artifacts(large_range, BASE_COLS, numBuckets=0)
+        advanced_artifacts = train_model_artifacts(large_range, ADVANCED_COLS, numBuckets=0)
+        return choose_prob_from_range(
+            teamA,
+            teamB,
+            year,
+            large_range,
+            base_artifacts,
+            advanced_artifacts,
+            homeTeam=homeTeam,
+            ratings_df=ratings_df,
+        )
+
+    base_artifacts = train_model_artifacts(wide_range, BASE_COLS, numBuckets=0)
+    advanced_artifacts = train_model_artifacts(wide_range, ADVANCED_COLS, numBuckets=0)
+    return choose_prob_from_range(
+        teamA,
+        teamB,
+        year,
+        wide_range,
+        base_artifacts,
+        advanced_artifacts,
+        homeTeam=homeTeam,
+        ratings_df=ratings_df,
+    )
+
+
 def predict_game_upset_prob(
     teamA,
     teamB,
@@ -322,6 +438,7 @@ def _predict_game_upset_prob_from_artifacts(
     colsToKeep,
     ratingSegment,
     homeTeam=None,
+    ratings_df=None,
 ):
     model = artifacts["model"]
     scaler = artifacts["scaler"]
@@ -329,26 +446,19 @@ def _predict_game_upset_prob_from_artifacts(
     misc = load_json(f"misc/{year}.json")
     ff = load_json(f"fourFactors/{year}.json")
     averages = load_json(f"averages/{year}.json")
-    ratings = load_json(f"ratings/{year}.json")
 
     team_stats = build_team_stats(misc, ff)
-    ratings_df = pd.DataFrame(ratings).set_index("team")
+    if ratings_df is None:
+        ratings_df = load_ratings_df(year)
 
     if teamA not in team_stats.index or teamB not in team_stats.index:
         raise ValueError(f"Team stats missing for one or both teams: {teamA}, {teamB}")
 
-    if teamA not in ratings_df.index or teamB not in ratings_df.index:
-        raise ValueError(f"Ratings missing for one or both teams: {teamA}, {teamB}")
-
-    ratingA = float(ratings_df.loc[teamA, "netRating"])
-    ratingB = float(ratings_df.loc[teamB, "netRating"])
-
-    if ratingA >= ratingB:
-        higherSeedTeam, lowerSeedTeam = teamA, teamB
-        higherRating, lowerRating = ratingA, ratingB
-    else:
-        higherSeedTeam, lowerSeedTeam = teamB, teamA
-        higherRating, lowerRating = ratingB, ratingA
+    matchup_info = get_matchup_rating_info(teamA, teamB, year, ratings_df=ratings_df)
+    higherSeedTeam = matchup_info["higherSeedTeam"]
+    lowerSeedTeam = matchup_info["lowerSeedTeam"]
+    higherRating = matchup_info["higherRating"]
+    lowerRating = matchup_info["lowerRating"]
 
     synthetic_matchup = {
         "year": str(year),
@@ -360,7 +470,14 @@ def _predict_game_upset_prob_from_artifacts(
         "homeTeam": homeTeam,
     }
 
-    game_rows = build_matchup_rows([synthetic_matchup], team_stats, averages, ratingSegment, numBuckets=0)
+    game_rows = build_matchup_rows(
+        [synthetic_matchup],
+        team_stats,
+        averages,
+        ratingSegment,
+        numBuckets=0,
+        allowOutsideSegment=True,
+    )
     if len(game_rows) == 0:
         raise ValueError("Game could not be featurized (likely outside rating segment or missing inputs).")
 
@@ -395,19 +512,29 @@ def write_upset_data_from_matchups(
         matchups_path = Path(matchups_path)
 
     if output_path is None:
-        output_path = model_dir.parent / "data" / "upsetData.json"
+            output_path = model_dir / "upsetData.json"
     else:
         output_path = Path(output_path)
 
     with open(matchups_path, "r", encoding="utf-8") as f:
         regions = json.load(f)
 
-    # Run both model variants for consistency with existing workflow.
-    buildAndRunModel(ratingSegment, BASE_COLS, 0)
-    buildAndRunModel(ratingSegment, ADVANCED_COLS, 0)
+    ratings_df = load_ratings_df(year)
+    close_range = [0, RANK_DIFF_MIN]
+    wide_range = [RANK_DIFF_MIN, RANK_DIFF_MAX]
+    large_range = [BIG_RANK_DIFF_MIN, BIG_RANK_DIFF_MAX]
 
-    base_artifacts = train_model_artifacts(ratingSegment, BASE_COLS, numBuckets=0)
-    advanced_artifacts = train_model_artifacts(ratingSegment, ADVANCED_COLS, numBuckets=0)
+    buildAndRunModel(close_range, BASE_COLS, 0)
+    buildAndRunModel(wide_range, BASE_COLS, 0)
+    buildAndRunModel(wide_range, ADVANCED_COLS, 0)
+    buildAndRunModel(large_range, BASE_COLS, 0)
+    buildAndRunModel(large_range, ADVANCED_COLS, 0)
+
+    close_artifacts = train_model_artifacts(close_range, BASE_COLS, numBuckets=0)
+    base_artifacts = train_model_artifacts(wide_range, BASE_COLS, numBuckets=0)
+    advanced_artifacts = train_model_artifacts(wide_range, ADVANCED_COLS, numBuckets=0)
+    big_base_artifacts = train_model_artifacts(large_range, BASE_COLS, numBuckets=0)
+    big_advanced_artifacts = train_model_artifacts(large_range, ADVANCED_COLS, numBuckets=0)
 
     matchup_map = {}
     for region_matchups in regions.values():
@@ -417,25 +544,40 @@ def write_upset_data_from_matchups(
                 raise ValueError(f"Invalid matchup format: {matchup}")
 
             team_a, team_b = teams
-            base_prob = _predict_game_upset_prob_from_artifacts(
-                team_a,
-                team_b,
-                year,
-                base_artifacts,
-                BASE_COLS,
-                ratingSegment,
-            )
-            advanced_prob = _predict_game_upset_prob_from_artifacts(
-                team_a,
-                team_b,
-                year,
-                advanced_artifacts,
-                ADVANCED_COLS,
-                ratingSegment,
-            )
+            matchup_info = get_matchup_rating_info(team_a, team_b, year, ratings_df=ratings_df)
+
+            if matchup_info["ratingDiff"] < RANK_DIFF_MIN:
+                selected_prob = choose_prob_from_range(
+                    team_a,
+                    team_b,
+                    year,
+                    close_range,
+                    close_artifacts,
+                    ratings_df=ratings_df,
+                )
+            elif matchup_info["ratingDiff"] > RANK_DIFF_MAX:
+                selected_prob = choose_prob_from_range(
+                    team_a,
+                    team_b,
+                    year,
+                    large_range,
+                    big_base_artifacts,
+                    big_advanced_artifacts,
+                    ratings_df=ratings_df,
+                )
+            else:
+                selected_prob = choose_prob_from_range(
+                    team_a,
+                    team_b,
+                    year,
+                    wide_range,
+                    base_artifacts,
+                    advanced_artifacts,
+                    ratings_df=ratings_df,
+                )
 
             matchup_map[matchup] = {
-                "upset": round((base_prob + advanced_prob) / 2.0, 2)
+                "upset": round(selected_prob, 4)
             }
 
     upset_data = {
@@ -450,11 +592,14 @@ def write_upset_data_from_matchups(
     return upset_data
 
 BASE_COLS = ["rating_diff"]#, "sum_3PA_pct", "3P_pct_lo", "TO_freq"]
-ADVANCED_COLS = ["rating_diff", "rating_sum", "sum_3PA_pct", "3P_pct_lo", "TO_freq"]#, "vs_avg_adjTempo_hi", "vs_avg_adjTempo_lo"]
+ADVANCED_COLS = ["rating_diff", "sum_3PA_pct", "3P_pct_lo", "TO_freq"]#, "vs_avg_adjTempo_hi", "vs_avg_adjTempo_lo"]
 RANK_DIFF_MIN = 8
 RANK_DIFF_MAX = 24
-TEAM_ONE = "Michigan"
-TEAM_TWO = "UC San Diego"
+BIG_RANK_DIFF_MIN = 25
+BIG_RANK_DIFF_MAX = 55
+write_upset_data_from_matchups()
+# TEAM_ONE = "Michigan"
+# TEAM_TWO = "UC San Diego"
 #'''
 # Sort by upset probability (descending) to see top upset picks
 #baseResults = buildAndRunModel([RANK_DIFF_MIN,RANK_DIFF_MAX], BASE_COLS, 0)
@@ -462,7 +607,7 @@ TEAM_TWO = "UC San Diego"
 #print('BASED: ')
 #base_prob = predict_game_upset_prob(TEAM_ONE, TEAM_TWO, 2025, [RANK_DIFF_MIN, RANK_DIFF_MAX], BASE_COLS)
 
-advancedResults = buildAndRunModel([RANK_DIFF_MIN,RANK_DIFF_MAX], ADVANCED_COLS, 0)
-advancedResults.to_json("v2outputs/13to26lr_Rs3PLoThreeTo.json", orient="records", indent=2)
+# advancedResults = buildAndRunModel([RANK_DIFF_MIN,RANK_DIFF_MAX], ADVANCED_COLS, 0)
+# advancedResults.to_json("v2outputs/13to26lr_Rs3PLoThreeTo.json", orient="records", indent=2)
 #print('ADVANCED: ')
 #advanced_prob = predict_game_upset_prob(TEAM_ONE, TEAM_TWO, 2025, [RANK_DIFF_MIN, RANK_DIFF_MAX], ADVANCED_COLS)

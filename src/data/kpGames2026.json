@@ -2864,6 +2864,305 @@
         "conferenceRecord": ""
       }
     ],
+    "Cal Baptist": [
+      {
+        "date": "Mon Nov 3",
+        "opponentRank": "302",
+        "opponent": "USC Upstate",
+        "result": "W , 87-75",
+        "location": "Home",
+        "record": "1-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 7",
+        "opponentRank": "104",
+        "opponent": "UC Irvine",
+        "result": "W , 69-61",
+        "location": "Away",
+        "record": "2-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 14",
+        "opponentRank": "364",
+        "opponent": "Western Illinois",
+        "result": "W , 69-59",
+        "location": "Home",
+        "record": "3-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Nov 18",
+        "opponentRank": "258",
+        "opponent": "UC Riverside",
+        "result": "W , 80-57",
+        "location": "Home",
+        "record": "4-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 21",
+        "opponentRank": "298",
+        "opponent": "Grambling St.",
+        "result": "W , 72-59",
+        "location": "Home",
+        "record": "5-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Nov 25",
+        "opponentRank": "224",
+        "opponent": "San Diego",
+        "result": "W , 76-61",
+        "location": "Neutral",
+        "record": "6-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 29",
+        "opponentRank": "177",
+        "opponent": "Oregon St.",
+        "result": "W , 75-69",
+        "location": "Away",
+        "record": "7-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Dec 1",
+        "opponentRank": "70",
+        "opponent": "Colorado",
+        "result": "L , 78-70",
+        "location": "Away",
+        "record": "7-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 3",
+        "opponentRank": "23",
+        "opponent": "BYU",
+        "result": "L , 91-60",
+        "location": "Semi-Away",
+        "record": "7-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 6",
+        "opponentRank": "126",
+        "opponent": "Utah",
+        "result": "L , 91-85",
+        "location": "Away",
+        "record": "7-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Dec 12",
+        "opponentRank": "171",
+        "opponent": "Eastern Washington",
+        "result": "W , 88-83",
+        "location": "Away",
+        "record": "8-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 16",
+        "opponentRank": "279",
+        "opponent": "Southern",
+        "result": "W , 75-67",
+        "location": "Home",
+        "record": "9-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 20",
+        "opponentRank": "265",
+        "opponent": "Sacramento St.",
+        "result": "W , 74-67",
+        "location": "Home",
+        "record": "10-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Dec 29",
+        "opponentRank": "90",
+        "opponent": "Utah Valley",
+        "result": "L , 73-66",
+        "location": "Away",
+        "record": "10-4",
+        "conferenceRecord": "0-1"
+      },
+      {
+        "date": "Thu Jan 1",
+        "opponentRank": "154",
+        "opponent": "UT Arlington",
+        "result": "L , 63-51",
+        "location": "Away",
+        "record": "10-5",
+        "conferenceRecord": "0-2"
+      },
+      {
+        "date": "Sat Jan 3",
+        "opponentRank": "221",
+        "opponent": "Tarleton St.",
+        "result": "L , 81-76",
+        "location": "Away",
+        "record": "10-6",
+        "conferenceRecord": "0-3"
+      },
+      {
+        "date": "Thu Jan 8",
+        "opponentRank": "188",
+        "opponent": "Utah Tech",
+        "result": "W , 84-72",
+        "location": "Home",
+        "record": "11-6",
+        "conferenceRecord": "1-3"
+      },
+      {
+        "date": "Sat Jan 10",
+        "opponentRank": "251",
+        "opponent": "Southern Utah",
+        "result": "W , 58-55",
+        "location": "Home",
+        "record": "12-6",
+        "conferenceRecord": "2-3"
+      },
+      {
+        "date": "Thu Jan 15",
+        "opponentRank": "242",
+        "opponent": "Abilene Christian",
+        "result": "W , 74-58",
+        "location": "Away",
+        "record": "13-6",
+        "conferenceRecord": "3-3"
+      },
+      {
+        "date": "Wed Jan 21",
+        "opponentRank": "188",
+        "opponent": "Utah Tech",
+        "result": "W , 73-64",
+        "location": "Home",
+        "record": "14-6",
+        "conferenceRecord": "4-3"
+      },
+      {
+        "date": "Sat Jan 24",
+        "opponentRank": "90",
+        "opponent": "Utah Valley",
+        "result": "W , 78-71",
+        "location": "Home",
+        "record": "15-6",
+        "conferenceRecord": "5-3"
+      },
+      {
+        "date": "Sat Jan 31",
+        "opponentRank": "154",
+        "opponent": "UT Arlington",
+        "result": "W , 87-77",
+        "location": "Away",
+        "record": "16-6",
+        "conferenceRecord": "6-3"
+      },
+      {
+        "date": "Thu Feb 5",
+        "opponentRank": "221",
+        "opponent": "Tarleton St.",
+        "result": "W , 56-55",
+        "location": "Home",
+        "record": "17-6",
+        "conferenceRecord": "7-3"
+      },
+      {
+        "date": "Sat Feb 7",
+        "opponentRank": "242",
+        "opponent": "Abilene Christian",
+        "result": "W , 65-63",
+        "location": "Home",
+        "record": "18-6",
+        "conferenceRecord": "8-3"
+      },
+      {
+        "date": "Thu Feb 12",
+        "opponentRank": "251",
+        "opponent": "Southern Utah",
+        "result": "W , 83-66",
+        "location": "Away",
+        "record": "19-6",
+        "conferenceRecord": "9-3"
+      },
+      {
+        "date": "Sat Feb 14",
+        "opponentRank": "188",
+        "opponent": "Utah Tech",
+        "result": "L , 70-65",
+        "location": "Away",
+        "record": "19-7",
+        "conferenceRecord": "9-4"
+      },
+      {
+        "date": "Thu Feb 19",
+        "opponentRank": "90",
+        "opponent": "Utah Valley",
+        "result": "L , 65-46",
+        "location": "Away",
+        "record": "19-8",
+        "conferenceRecord": "9-5"
+      },
+      {
+        "date": "Thu Feb 26",
+        "opponentRank": "154",
+        "opponent": "UT Arlington",
+        "result": "W , 68-56",
+        "location": "Home",
+        "record": "20-8",
+        "conferenceRecord": "10-5"
+      },
+      {
+        "date": "Sat Feb 28",
+        "opponentRank": "221",
+        "opponent": "Tarleton St.",
+        "result": "W , 82-67",
+        "location": "Home",
+        "record": "21-8",
+        "conferenceRecord": "11-5"
+      },
+      {
+        "date": "Thu Mar 5",
+        "opponentRank": "242",
+        "opponent": "Abilene Christian",
+        "result": "W , 87-48",
+        "location": "Home",
+        "record": "22-8",
+        "conferenceRecord": "12-5"
+      },
+      {
+        "date": "Sat Mar 7",
+        "opponentRank": "251",
+        "opponent": "Southern Utah",
+        "result": "W , 82-75",
+        "location": "Away",
+        "record": "23-8",
+        "conferenceRecord": "13-5"
+      },
+      {
+        "date": "Fri Mar 13",
+        "opponentRank": "188",
+        "opponent": "Utah Tech",
+        "result": "W , 86-72",
+        "location": "Neutral",
+        "record": "24-8",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Mar 14",
+        "opponentRank": "90",
+        "opponent": "Utah Valley",
+        "result": "W , 63-61",
+        "location": "Neutral",
+        "record": "25-8",
+        "conferenceRecord": ""
+      }
+    ],
     "Cincinnati": [
       {
         "date": "Mon Nov 3",
@@ -5148,6 +5447,314 @@
         "conferenceRecord": "16-2"
       }
     ],
+    "Furman": [
+      {
+        "date": "Mon Nov 3",
+        "opponentRank": "92",
+        "opponent": "High Point",
+        "result": "L , 97-71",
+        "location": "Neutral",
+        "record": "0-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 7",
+        "opponentRank": "143",
+        "opponent": "Troy",
+        "result": "L , 64-61",
+        "location": "Home",
+        "record": "0-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Nov 10",
+        "opponentRank": "NR",
+        "opponent": "Columbia International",
+        "result": "W , 89-59",
+        "location": "Home",
+        "record": "1-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 14",
+        "opponentRank": "72",
+        "opponent": "Northern Iowa",
+        "result": "L , 70-54",
+        "location": "Away",
+        "record": "1-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 19",
+        "opponentRank": "NR",
+        "opponent": "Ohio Christian",
+        "result": "W , 79-44",
+        "location": "Home",
+        "record": "2-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 23",
+        "opponentRank": "181",
+        "opponent": "Queens",
+        "result": "W , 90-79",
+        "location": "Home",
+        "record": "3-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Nov 27",
+        "opponentRank": "160",
+        "opponent": "Richmond",
+        "result": "W , 73-72",
+        "location": "Neutral",
+        "record": "4-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 28",
+        "opponentRank": "103",
+        "opponent": "Illinois St.",
+        "result": "L , 72-65",
+        "location": "Neutral",
+        "record": "4-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 3",
+        "opponentRank": "230",
+        "opponent": "Elon",
+        "result": "W , 97-88",
+        "location": "Away",
+        "record": "5-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 6",
+        "opponentRank": "152",
+        "opponent": "Harvard",
+        "result": "W , 79-69",
+        "location": "Home",
+        "record": "6-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 9",
+        "opponentRank": "NR",
+        "opponent": "Bob Jones",
+        "result": "W , 105-57",
+        "location": "Home",
+        "record": "7-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Dec 18",
+        "opponentRank": "330",
+        "opponent": "Manhattan",
+        "result": "W , 75-68",
+        "location": "Away",
+        "record": "8-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Dec 21",
+        "opponentRank": "241",
+        "opponent": "Charleston Southern",
+        "result": "W , 84-76",
+        "location": "Home",
+        "record": "9-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 31",
+        "opponentRank": "190",
+        "opponent": "Mercer",
+        "result": "W , 74-72",
+        "location": "Home",
+        "record": "10-4",
+        "conferenceRecord": "1-0"
+      },
+      {
+        "date": "Sat Jan 3",
+        "opponentRank": "229",
+        "opponent": "Western Carolina",
+        "result": "L , 80-77",
+        "location": "Home",
+        "record": "10-5",
+        "conferenceRecord": "1-1"
+      },
+      {
+        "date": "Wed Jan 7",
+        "opponentRank": "301",
+        "opponent": "Chattanooga",
+        "result": "W , 78-67",
+        "location": "Away",
+        "record": "11-5",
+        "conferenceRecord": "2-1"
+      },
+      {
+        "date": "Sat Jan 10",
+        "opponentRank": "360",
+        "opponent": "VMI",
+        "result": "W , 69-48",
+        "location": "Home",
+        "record": "12-5",
+        "conferenceRecord": "3-1"
+      },
+      {
+        "date": "Wed Jan 14",
+        "opponentRank": "215",
+        "opponent": "Samford",
+        "result": "W , 77-73",
+        "location": "Away",
+        "record": "13-5",
+        "conferenceRecord": "4-1"
+      },
+      {
+        "date": "Sat Jan 17",
+        "opponentRank": "253",
+        "opponent": "Wofford",
+        "result": "L , 74-70",
+        "location": "Home",
+        "record": "13-6",
+        "conferenceRecord": "4-2"
+      },
+      {
+        "date": "Wed Jan 21",
+        "opponentRank": "347",
+        "opponent": "The Citadel",
+        "result": "L , 77-75",
+        "location": "Away",
+        "record": "13-7",
+        "conferenceRecord": "4-3"
+      },
+      {
+        "date": "Fri Jan 23",
+        "opponentRank": "300",
+        "opponent": "UNC Greensboro",
+        "result": "W , 89-66",
+        "location": "Away",
+        "record": "14-7",
+        "conferenceRecord": "5-3"
+      },
+      {
+        "date": "Thu Jan 29",
+        "opponentRank": "215",
+        "opponent": "Samford",
+        "result": "W , 78-73",
+        "location": "Home",
+        "record": "15-7",
+        "conferenceRecord": "6-3"
+      },
+      {
+        "date": "Sun Feb 1",
+        "opponentRank": "301",
+        "opponent": "Chattanooga",
+        "result": "W , 75-70",
+        "location": "Home",
+        "record": "16-7",
+        "conferenceRecord": "7-3"
+      },
+      {
+        "date": "Wed Feb 4",
+        "opponentRank": "167",
+        "opponent": "East Tennessee St.",
+        "result": "L , 75-71",
+        "location": "Away",
+        "record": "16-8",
+        "conferenceRecord": "7-4"
+      },
+      {
+        "date": "Sun Feb 8",
+        "opponentRank": "300",
+        "opponent": "UNC Greensboro",
+        "result": "L , 67-64",
+        "location": "Home",
+        "record": "16-9",
+        "conferenceRecord": "7-5"
+      },
+      {
+        "date": "Wed Feb 11",
+        "opponentRank": "190",
+        "opponent": "Mercer",
+        "result": "L , 69-64",
+        "location": "Away",
+        "record": "16-10",
+        "conferenceRecord": "7-6"
+      },
+      {
+        "date": "Sat Feb 14",
+        "opponentRank": "360",
+        "opponent": "VMI",
+        "result": "W , 90-72",
+        "location": "Away",
+        "record": "17-10",
+        "conferenceRecord": "8-6"
+      },
+      {
+        "date": "Wed Feb 18",
+        "opponentRank": "167",
+        "opponent": "East Tennessee St.",
+        "result": "L , 78-69",
+        "location": "Home",
+        "record": "17-11",
+        "conferenceRecord": "8-7"
+      },
+      {
+        "date": "Sat Feb 21",
+        "opponentRank": "253",
+        "opponent": "Wofford",
+        "result": "W , 76-67",
+        "location": "Away",
+        "record": "18-11",
+        "conferenceRecord": "9-7"
+      },
+      {
+        "date": "Wed Feb 25",
+        "opponentRank": "347",
+        "opponent": "The Citadel",
+        "result": "W , 72-51",
+        "location": "Home",
+        "record": "19-11",
+        "conferenceRecord": "10-7"
+      },
+      {
+        "date": "Sat Feb 28",
+        "opponentRank": "229",
+        "opponent": "Western Carolina",
+        "result": "L , 86-67",
+        "location": "Away",
+        "record": "19-12",
+        "conferenceRecord": "10-8"
+      },
+      {
+        "date": "Sat Mar 7",
+        "opponentRank": "215",
+        "opponent": "Samford",
+        "result": "W , 86-81",
+        "location": "Neutral",
+        "record": "20-12",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Mar 8",
+        "opponentRank": "300",
+        "opponent": "UNC Greensboro",
+        "result": "W , 81-75",
+        "location": "Neutral",
+        "record": "21-12",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Mar 9",
+        "opponentRank": "167",
+        "opponent": "East Tennessee St.",
+        "result": "W , 76-61",
+        "location": "Neutral",
+        "record": "22-12",
+        "conferenceRecord": ""
+      }
+    ],
     "Georgia": [
       {
         "date": "Mon Nov 3",
@@ -6007,6 +6614,296 @@
         "location": "Home",
         "record": "20-11",
         "conferenceRecord": "13-7"
+      }
+    ],
+    "Hawaii": [
+      {
+        "date": "Tue Nov 4",
+        "opponentRank": "99",
+        "opponent": "Oregon",
+        "result": "L , 60-59",
+        "location": "Away",
+        "record": "0-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 9",
+        "opponentRank": "289",
+        "opponent": "East Texas A&M",
+        "result": "W , 100-74",
+        "location": "Home",
+        "record": "1-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 12",
+        "opponentRank": "365",
+        "opponent": "Mississippi Valley St.",
+        "result": "W , 88-56",
+        "location": "Home",
+        "record": "2-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 14",
+        "opponentRank": "330",
+        "opponent": "Manhattan",
+        "result": "W , 86-56",
+        "location": "Home",
+        "record": "3-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 15",
+        "opponentRank": "188",
+        "opponent": "Utah Tech",
+        "result": "W , 68-62",
+        "location": "Home",
+        "record": "4-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Nov 20",
+        "opponentRank": "67",
+        "opponent": "Arizona St.",
+        "result": "L , 83-76",
+        "location": "Home",
+        "record": "4-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Nov 24",
+        "opponentRank": "NR",
+        "opponent": "Hawaii Pacific",
+        "result": "W , 88-76",
+        "location": "Home",
+        "record": "5-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 28",
+        "opponentRank": "275",
+        "opponent": "North Dakota",
+        "result": "W , 92-55",
+        "location": "Home",
+        "record": "6-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Dec 4",
+        "opponentRank": "159",
+        "opponent": "UC Davis",
+        "result": "W , 75-69",
+        "location": "Home",
+        "record": "7-2",
+        "conferenceRecord": "1-0"
+      },
+      {
+        "date": "Sat Dec 6",
+        "opponentRank": "168",
+        "opponent": "Cal St. Fullerton",
+        "result": "W , 69-59",
+        "location": "Home",
+        "record": "8-2",
+        "conferenceRecord": "2-0"
+      },
+      {
+        "date": "Wed Dec 10",
+        "opponentRank": "NR",
+        "opponent": "Hawaii Hilo",
+        "result": "W , 98-46",
+        "location": "Home",
+        "record": "9-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 13",
+        "opponentRank": "276",
+        "opponent": "UTEP",
+        "result": "W , 66-61",
+        "location": "Home",
+        "record": "10-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Jan 1",
+        "opponentRank": "258",
+        "opponent": "UC Riverside",
+        "result": "W , 88-45",
+        "location": "Away",
+        "record": "11-2",
+        "conferenceRecord": "3-0"
+      },
+      {
+        "date": "Sat Jan 3",
+        "opponentRank": "118",
+        "opponent": "UC San Diego",
+        "result": "L , 83-73",
+        "location": "Away",
+        "record": "11-3",
+        "conferenceRecord": "3-1"
+      },
+      {
+        "date": "Sat Jan 10",
+        "opponentRank": "104",
+        "opponent": "UC Irvine",
+        "result": "W , 67-66",
+        "location": "Home",
+        "record": "12-3",
+        "conferenceRecord": "4-1"
+      },
+      {
+        "date": "Thu Jan 15",
+        "opponentRank": "212",
+        "opponent": "Cal Poly",
+        "result": "W , 86-66",
+        "location": "Away",
+        "record": "13-3",
+        "conferenceRecord": "5-1"
+      },
+      {
+        "date": "Sat Jan 17",
+        "opponentRank": "130",
+        "opponent": "UC Santa Barbara",
+        "result": "L , 77-62",
+        "location": "Away",
+        "record": "13-4",
+        "conferenceRecord": "5-2"
+      },
+      {
+        "date": "Thu Jan 22",
+        "opponentRank": "326",
+        "opponent": "Cal St. Bakersfield",
+        "result": "W , 98-71",
+        "location": "Home",
+        "record": "14-4",
+        "conferenceRecord": "6-2"
+      },
+      {
+        "date": "Sat Jan 24",
+        "opponentRank": "175",
+        "opponent": "CSUN",
+        "result": "W , 89-68",
+        "location": "Home",
+        "record": "15-4",
+        "conferenceRecord": "7-2"
+      },
+      {
+        "date": "Thu Jan 29",
+        "opponentRank": "104",
+        "opponent": "UC Irvine",
+        "result": "L , 87-76",
+        "location": "Away",
+        "record": "15-5",
+        "conferenceRecord": "7-3"
+      },
+      {
+        "date": "Sat Jan 31",
+        "opponentRank": "231",
+        "opponent": "Long Beach St.",
+        "result": "W , 89-82",
+        "location": "Away",
+        "record": "16-5",
+        "conferenceRecord": "8-3"
+      },
+      {
+        "date": "Sat Feb 7",
+        "opponentRank": "118",
+        "opponent": "UC San Diego",
+        "result": "W , 72-67",
+        "location": "Home",
+        "record": "17-5",
+        "conferenceRecord": "9-3"
+      },
+      {
+        "date": "Thu Feb 12",
+        "opponentRank": "326",
+        "opponent": "Cal St. Bakersfield",
+        "result": "W , 89-74",
+        "location": "Away",
+        "record": "18-5",
+        "conferenceRecord": "10-3"
+      },
+      {
+        "date": "Sat Feb 14",
+        "opponentRank": "175",
+        "opponent": "CSUN",
+        "result": "L , 84-60",
+        "location": "Away",
+        "record": "18-6",
+        "conferenceRecord": "10-4"
+      },
+      {
+        "date": "Thu Feb 19",
+        "opponentRank": "212",
+        "opponent": "Cal Poly",
+        "result": "L , 86-75",
+        "location": "Home",
+        "record": "18-7",
+        "conferenceRecord": "10-5"
+      },
+      {
+        "date": "Sat Feb 21",
+        "opponentRank": "130",
+        "opponent": "UC Santa Barbara",
+        "result": "W , 78-75",
+        "location": "Home",
+        "record": "19-7",
+        "conferenceRecord": "11-5"
+      },
+      {
+        "date": "Thu Feb 26",
+        "opponentRank": "159",
+        "opponent": "UC Davis",
+        "result": "W , 77-73",
+        "location": "Away",
+        "record": "20-7",
+        "conferenceRecord": "12-5"
+      },
+      {
+        "date": "Sat Feb 28",
+        "opponentRank": "168",
+        "opponent": "Cal St. Fullerton",
+        "result": "W , 87-85",
+        "location": "Away",
+        "record": "21-7",
+        "conferenceRecord": "13-5"
+      },
+      {
+        "date": "Thu Mar 5",
+        "opponentRank": "258",
+        "opponent": "UC Riverside",
+        "result": "W , 93-74",
+        "location": "Home",
+        "record": "22-7",
+        "conferenceRecord": "14-5"
+      },
+      {
+        "date": "Sat Mar 7",
+        "opponentRank": "231",
+        "opponent": "Long Beach St.",
+        "result": "L , 84-75",
+        "location": "Home",
+        "record": "22-8",
+        "conferenceRecord": "14-6"
+      },
+      {
+        "date": "Fri Mar 13",
+        "opponentRank": "168",
+        "opponent": "Cal St. Fullerton",
+        "result": "W , 78-63",
+        "location": "Neutral",
+        "record": "23-8",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Mar 14",
+        "opponentRank": "104",
+        "opponent": "UC Irvine",
+        "result": "W , 71-64",
+        "location": "Neutral",
+        "record": "24-8",
+        "conferenceRecord": ""
       }
     ],
     "High Point": [
@@ -6904,6 +7801,622 @@
         "location": "Away",
         "record": "26-5",
         "conferenceRecord": "14-4"
+      }
+    ],
+    "Howard": [
+      {
+        "date": "Mon Nov 3",
+        "opponentRank": "52",
+        "opponent": "Missouri",
+        "result": "L , 88-67",
+        "location": "Home",
+        "record": "0-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Nov 6",
+        "opponentRank": "NR",
+        "opponent": "UDC",
+        "result": "W , 103-71",
+        "location": "Home",
+        "record": "1-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 9",
+        "opponentRank": "298",
+        "opponent": "Grambling St.",
+        "result": "L , 73-70",
+        "location": "Home",
+        "record": "1-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Nov 13",
+        "opponentRank": "346",
+        "opponent": "Alcorn St.",
+        "result": "W , 72-64",
+        "location": "Home",
+        "record": "2-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 19",
+        "opponentRank": "303",
+        "opponent": "Stetson",
+        "result": "L , 64-60",
+        "location": "Away",
+        "record": "2-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 22",
+        "opponentRank": "338",
+        "opponent": "Niagara",
+        "result": "W , 80-70",
+        "location": "Neutral",
+        "record": "3-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 23",
+        "opponentRank": "1",
+        "opponent": "Duke",
+        "result": "L , 93-56",
+        "location": "Away",
+        "record": "3-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 26",
+        "opponentRank": "NR",
+        "opponent": "St. Mary's MD",
+        "result": "W , 115-61",
+        "location": "Home",
+        "record": "4-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 29",
+        "opponentRank": "277",
+        "opponent": "Mount St. Mary's",
+        "result": "L , 79-75",
+        "location": "Away",
+        "record": "4-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 6",
+        "opponentRank": "NR",
+        "opponent": "Bowie St.",
+        "result": "W , 85-69",
+        "location": "Home",
+        "record": "5-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 9",
+        "opponentRank": "291",
+        "opponent": "North Carolina A&T",
+        "result": "W , 73-69",
+        "location": "Away",
+        "record": "6-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 13",
+        "opponentRank": "272",
+        "opponent": "Hampton",
+        "result": "W , 61-57",
+        "location": "Semi-Home",
+        "record": "7-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 16",
+        "opponentRank": "222",
+        "opponent": "Drexel",
+        "result": "W , 74-66",
+        "location": "Away",
+        "record": "8-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 20",
+        "opponentRank": "110",
+        "opponent": "UNC Wilmington",
+        "result": "W , 67-66",
+        "location": "Away",
+        "record": "9-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 30",
+        "opponentRank": "57",
+        "opponent": "Northwestern",
+        "result": "L , 80-60",
+        "location": "Away",
+        "record": "9-6",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Jan 3",
+        "opponentRank": "356",
+        "opponent": "South Carolina St.",
+        "result": "L , 58-57",
+        "location": "Away",
+        "record": "9-7",
+        "conferenceRecord": "0-1"
+      },
+      {
+        "date": "Sat Jan 10",
+        "opponentRank": "350",
+        "opponent": "Maryland Eastern Shore",
+        "result": "L , 69-57",
+        "location": "Away",
+        "record": "9-8",
+        "conferenceRecord": "0-2"
+      },
+      {
+        "date": "Mon Jan 12",
+        "opponentRank": "362",
+        "opponent": "Delaware St.",
+        "result": "W , 84-58",
+        "location": "Home",
+        "record": "10-8",
+        "conferenceRecord": "1-2"
+      },
+      {
+        "date": "Sat Jan 17",
+        "opponentRank": "352",
+        "opponent": "North Carolina Central",
+        "result": "W , 83-69",
+        "location": "Away",
+        "record": "11-8",
+        "conferenceRecord": "2-2"
+      },
+      {
+        "date": "Mon Jan 19",
+        "opponentRank": "NR",
+        "opponent": "Morehouse",
+        "result": "W , 78-69",
+        "location": "Home",
+        "record": "12-8",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Jan 24",
+        "opponentRank": "353",
+        "opponent": "Morgan St.",
+        "result": "L , 78-77",
+        "location": "Home",
+        "record": "12-9",
+        "conferenceRecord": "2-3"
+      },
+      {
+        "date": "Sat Jan 31",
+        "opponentRank": "327",
+        "opponent": "Norfolk St.",
+        "result": "W , 88-60",
+        "location": "Home",
+        "record": "13-9",
+        "conferenceRecord": "3-3"
+      },
+      {
+        "date": "Mon Feb 2",
+        "opponentRank": "363",
+        "opponent": "Coppin St.",
+        "result": "W , 72-53",
+        "location": "Away",
+        "record": "14-9",
+        "conferenceRecord": "4-3"
+      },
+      {
+        "date": "Sat Feb 7",
+        "opponentRank": "356",
+        "opponent": "South Carolina St.",
+        "result": "W , 85-57",
+        "location": "Home",
+        "record": "15-9",
+        "conferenceRecord": "5-3"
+      },
+      {
+        "date": "Mon Feb 9",
+        "opponentRank": "81",
+        "opponent": "Yale",
+        "result": "L , 87-81",
+        "location": "Home",
+        "record": "15-10",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Feb 14",
+        "opponentRank": "350",
+        "opponent": "Maryland Eastern Shore",
+        "result": "W , 79-53",
+        "location": "Home",
+        "record": "16-10",
+        "conferenceRecord": "6-3"
+      },
+      {
+        "date": "Mon Feb 16",
+        "opponentRank": "362",
+        "opponent": "Delaware St.",
+        "result": "W , 91-59",
+        "location": "Away",
+        "record": "17-10",
+        "conferenceRecord": "7-3"
+      },
+      {
+        "date": "Sat Feb 21",
+        "opponentRank": "352",
+        "opponent": "North Carolina Central",
+        "result": "W , 100-67",
+        "location": "Home",
+        "record": "18-10",
+        "conferenceRecord": "8-3"
+      },
+      {
+        "date": "Sat Feb 28",
+        "opponentRank": "353",
+        "opponent": "Morgan St.",
+        "result": "W , 84-59",
+        "location": "Away",
+        "record": "19-10",
+        "conferenceRecord": "9-3"
+      },
+      {
+        "date": "Mon Mar 2",
+        "opponentRank": "363",
+        "opponent": "Coppin St.",
+        "result": "W , 90-70",
+        "location": "Home",
+        "record": "20-10",
+        "conferenceRecord": "10-3"
+      },
+      {
+        "date": "Thu Mar 5",
+        "opponentRank": "327",
+        "opponent": "Norfolk St.",
+        "result": "W , 84-76",
+        "location": "Away",
+        "record": "21-10",
+        "conferenceRecord": "11-3"
+      },
+      {
+        "date": "Fri Mar 13",
+        "opponentRank": "356",
+        "opponent": "South Carolina St.",
+        "result": "W , 78-61",
+        "location": "Neutral",
+        "record": "22-10",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Mar 14",
+        "opponentRank": "352",
+        "opponent": "North Carolina Central",
+        "result": "W , 70-63",
+        "location": "Neutral",
+        "record": "23-10",
+        "conferenceRecord": ""
+      }
+    ],
+    "Idaho": [
+      {
+        "date": "Mon Nov 3",
+        "opponentRank": "137",
+        "opponent": "Washington St.",
+        "result": "W , 83-81",
+        "location": "Away",
+        "record": "1-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 7",
+        "opponentRank": "NR",
+        "opponent": "Whitman",
+        "result": "W , 94-49",
+        "location": "Home",
+        "record": "2-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 12",
+        "opponentRank": "224",
+        "opponent": "San Diego",
+        "result": "L , 78-74",
+        "location": "Away",
+        "record": "2-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 15",
+        "opponentRank": "118",
+        "opponent": "UC San Diego",
+        "result": "L , 75-67",
+        "location": "Away",
+        "record": "2-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 22",
+        "opponentRank": "NR",
+        "opponent": "Eastern Oregon",
+        "result": "W , 97-68",
+        "location": "Home",
+        "record": "3-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 26",
+        "opponentRank": "175",
+        "opponent": "CSUN",
+        "result": "W , 78-64",
+        "location": "Semi-Home",
+        "record": "4-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 28",
+        "opponentRank": "111",
+        "opponent": "Sam Houston St.",
+        "result": "L , 94-68",
+        "location": "Semi-Home",
+        "record": "4-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 3",
+        "opponentRank": "275",
+        "opponent": "North Dakota",
+        "result": "W , 90-58",
+        "location": "Home",
+        "record": "5-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 6",
+        "opponentRank": "220",
+        "opponent": "South Dakota St.",
+        "result": "W , 84-81",
+        "location": "Away",
+        "record": "6-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 10",
+        "opponentRank": "89",
+        "opponent": "Notre Dame",
+        "result": "L , 80-65",
+        "location": "Away",
+        "record": "6-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Dec 14",
+        "opponentRank": "NR",
+        "opponent": "Evergreen St.",
+        "result": "W , 109-55",
+        "location": "Home",
+        "record": "7-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Dec 21",
+        "opponentRank": "212",
+        "opponent": "Cal Poly",
+        "result": "W , 83-80",
+        "location": "Away",
+        "record": "8-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 23",
+        "opponentRank": "326",
+        "opponent": "Cal St. Bakersfield",
+        "result": "L , 64-63",
+        "location": "Away",
+        "record": "8-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Jan 3",
+        "opponentRank": "171",
+        "opponent": "Eastern Washington",
+        "result": "W , 84-81",
+        "location": "Home",
+        "record": "9-5",
+        "conferenceRecord": "1-0"
+      },
+      {
+        "date": "Thu Jan 8",
+        "opponentRank": "186",
+        "opponent": "Montana",
+        "result": "L , 79-73",
+        "location": "Home",
+        "record": "9-6",
+        "conferenceRecord": "1-1"
+      },
+      {
+        "date": "Sat Jan 10",
+        "opponentRank": "133",
+        "opponent": "Montana St.",
+        "result": "W , 92-89",
+        "location": "Home",
+        "record": "10-6",
+        "conferenceRecord": "2-1"
+      },
+      {
+        "date": "Thu Jan 15",
+        "opponentRank": "250",
+        "opponent": "Idaho St.",
+        "result": "L , 76-68",
+        "location": "Away",
+        "record": "10-7",
+        "conferenceRecord": "2-2"
+      },
+      {
+        "date": "Sat Jan 17",
+        "opponentRank": "198",
+        "opponent": "Weber St.",
+        "result": "W , 75-67",
+        "location": "Away",
+        "record": "11-7",
+        "conferenceRecord": "3-2"
+      },
+      {
+        "date": "Thu Jan 22",
+        "opponentRank": "265",
+        "opponent": "Sacramento St.",
+        "result": "W , 86-76",
+        "location": "Home",
+        "record": "12-7",
+        "conferenceRecord": "4-2"
+      },
+      {
+        "date": "Sat Jan 24",
+        "opponentRank": "146",
+        "opponent": "Portland St.",
+        "result": "L , 69-66",
+        "location": "Home",
+        "record": "12-8",
+        "conferenceRecord": "4-3"
+      },
+      {
+        "date": "Thu Jan 29",
+        "opponentRank": "141",
+        "opponent": "Northern Colorado",
+        "result": "L , 91-83",
+        "location": "Away",
+        "record": "12-9",
+        "conferenceRecord": "4-4"
+      },
+      {
+        "date": "Sat Jan 31",
+        "opponentRank": "319",
+        "opponent": "Northern Arizona",
+        "result": "W , 79-62",
+        "location": "Away",
+        "record": "13-9",
+        "conferenceRecord": "5-4"
+      },
+      {
+        "date": "Thu Feb 5",
+        "opponentRank": "133",
+        "opponent": "Montana St.",
+        "result": "L , 73-66",
+        "location": "Away",
+        "record": "13-10",
+        "conferenceRecord": "5-5"
+      },
+      {
+        "date": "Sat Feb 7",
+        "opponentRank": "186",
+        "opponent": "Montana",
+        "result": "L , 73-68",
+        "location": "Away",
+        "record": "13-11",
+        "conferenceRecord": "5-6"
+      },
+      {
+        "date": "Thu Feb 12",
+        "opponentRank": "198",
+        "opponent": "Weber St.",
+        "result": "L , 83-72",
+        "location": "Home",
+        "record": "13-12",
+        "conferenceRecord": "5-7"
+      },
+      {
+        "date": "Sat Feb 14",
+        "opponentRank": "250",
+        "opponent": "Idaho St.",
+        "result": "W , 99-69",
+        "location": "Home",
+        "record": "14-12",
+        "conferenceRecord": "6-7"
+      },
+      {
+        "date": "Thu Feb 19",
+        "opponentRank": "146",
+        "opponent": "Portland St.",
+        "result": "L , 77-67",
+        "location": "Away",
+        "record": "14-13",
+        "conferenceRecord": "6-8"
+      },
+      {
+        "date": "Sat Feb 21",
+        "opponentRank": "265",
+        "opponent": "Sacramento St.",
+        "result": "W , 86-80",
+        "location": "Away",
+        "record": "15-13",
+        "conferenceRecord": "7-8"
+      },
+      {
+        "date": "Thu Feb 26",
+        "opponentRank": "319",
+        "opponent": "Northern Arizona",
+        "result": "W , 78-58",
+        "location": "Home",
+        "record": "16-13",
+        "conferenceRecord": "8-8"
+      },
+      {
+        "date": "Sat Feb 28",
+        "opponentRank": "141",
+        "opponent": "Northern Colorado",
+        "result": "L , 76-67",
+        "location": "Home",
+        "record": "16-14",
+        "conferenceRecord": "8-9"
+      },
+      {
+        "date": "Mon Mar 2",
+        "opponentRank": "171",
+        "opponent": "Eastern Washington",
+        "result": "W , 85-81",
+        "location": "Away",
+        "record": "17-14",
+        "conferenceRecord": "9-9"
+      },
+      {
+        "date": "Sat Mar 7",
+        "opponentRank": "265",
+        "opponent": "Sacramento St.",
+        "result": "W , 68-45",
+        "location": "Neutral",
+        "record": "18-14",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Mar 8",
+        "opponentRank": "133",
+        "opponent": "Montana St.",
+        "result": "W , 78-74",
+        "location": "Neutral",
+        "record": "19-14",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Mar 10",
+        "opponentRank": "171",
+        "opponent": "Eastern Washington",
+        "result": "W , 81-68",
+        "location": "Neutral",
+        "record": "20-14",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Mar 11",
+        "opponentRank": "186",
+        "opponent": "Montana",
+        "result": "W , 77-66",
+        "location": "Neutral",
+        "record": "21-14",
+        "conferenceRecord": ""
       }
     ],
     "Illinois": [
@@ -8329,6 +9842,314 @@
         "conferenceRecord": "12-6"
       }
     ],
+    "Kennesaw St": [
+      {
+        "date": "Mon Nov 3",
+        "opponentRank": "NR",
+        "opponent": "Paine",
+        "result": "W , 105-29",
+        "location": "Home",
+        "record": "1-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 8",
+        "opponentRank": "312",
+        "opponent": "Florida A&M",
+        "result": "W , 92-72",
+        "location": "Away",
+        "record": "2-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 12",
+        "opponentRank": "NR",
+        "opponent": "Point",
+        "result": "W , 111-60",
+        "location": "Home",
+        "record": "3-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 16",
+        "opponentRank": "47",
+        "opponent": "South Florida",
+        "result": "L , 108-89",
+        "location": "Home",
+        "record": "3-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Nov 24",
+        "opponentRank": "226",
+        "opponent": "Rice",
+        "result": "W , 89-84",
+        "location": "Neutral",
+        "record": "4-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Nov 25",
+        "opponentRank": "309",
+        "opponent": "Oral Roberts",
+        "result": "L , 91-83",
+        "location": "Neutral",
+        "record": "4-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 26",
+        "opponentRank": "244",
+        "opponent": "Florida Gulf Coast",
+        "result": "W , 102-100",
+        "location": "Away",
+        "record": "5-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 2",
+        "opponentRank": "341",
+        "opponent": "Jackson St.",
+        "result": "W , 88-73",
+        "location": "Home",
+        "record": "6-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 6",
+        "opponentRank": "310",
+        "opponent": "Georgia St.",
+        "result": "W , 92-69",
+        "location": "Home",
+        "record": "7-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Dec 8",
+        "opponentRank": "NR",
+        "opponent": "Southern Wesleyan",
+        "result": "W , 121-66",
+        "location": "Home",
+        "record": "8-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 17",
+        "opponentRank": "178",
+        "opponent": "Middle Tennessee",
+        "result": "L , 68-67",
+        "location": "Away",
+        "record": "8-3",
+        "conferenceRecord": "0-1"
+      },
+      {
+        "date": "Sun Dec 21",
+        "opponentRank": "18",
+        "opponent": "Alabama",
+        "result": "L , 92-81",
+        "location": "Semi-Away",
+        "record": "8-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Jan 2",
+        "opponentRank": "125",
+        "opponent": "Liberty",
+        "result": "L , 81-73",
+        "location": "Away",
+        "record": "8-5",
+        "conferenceRecord": "0-2"
+      },
+      {
+        "date": "Sun Jan 4",
+        "opponentRank": "293",
+        "opponent": "Delaware",
+        "result": "L , 67-52",
+        "location": "Away",
+        "record": "8-6",
+        "conferenceRecord": "0-3"
+      },
+      {
+        "date": "Wed Jan 7",
+        "opponentRank": "206",
+        "opponent": "Missouri St.",
+        "result": "W , 90-80",
+        "location": "Home",
+        "record": "9-6",
+        "conferenceRecord": "1-3"
+      },
+      {
+        "date": "Sat Jan 10",
+        "opponentRank": "209",
+        "opponent": "Jacksonville St.",
+        "result": "W , 88-82",
+        "location": "Home",
+        "record": "10-6",
+        "conferenceRecord": "2-3"
+      },
+      {
+        "date": "Wed Jan 14",
+        "opponentRank": "194",
+        "opponent": "FIU",
+        "result": "W , 89-86",
+        "location": "Home",
+        "record": "11-6",
+        "conferenceRecord": "3-3"
+      },
+      {
+        "date": "Sat Jan 17",
+        "opponentRank": "170",
+        "opponent": "Western Kentucky",
+        "result": "W , 81-65",
+        "location": "Away",
+        "record": "12-6",
+        "conferenceRecord": "4-3"
+      },
+      {
+        "date": "Wed Jan 21",
+        "opponentRank": "111",
+        "opponent": "Sam Houston St.",
+        "result": "L , 93-87",
+        "location": "Away",
+        "record": "12-7",
+        "conferenceRecord": "4-4"
+      },
+      {
+        "date": "Fri Jan 23",
+        "opponentRank": "203",
+        "opponent": "Louisiana Tech",
+        "result": "L , 82-76",
+        "location": "Away",
+        "record": "12-8",
+        "conferenceRecord": "4-5"
+      },
+      {
+        "date": "Wed Jan 28",
+        "opponentRank": "170",
+        "opponent": "Western Kentucky",
+        "result": "W , 72-69",
+        "location": "Home",
+        "record": "13-8",
+        "conferenceRecord": "5-5"
+      },
+      {
+        "date": "Sat Jan 31",
+        "opponentRank": "184",
+        "opponent": "New Mexico St.",
+        "result": "W , 76-53",
+        "location": "Home",
+        "record": "14-8",
+        "conferenceRecord": "6-5"
+      },
+      {
+        "date": "Sat Feb 7",
+        "opponentRank": "209",
+        "opponent": "Jacksonville St.",
+        "result": "L , 77-58",
+        "location": "Away",
+        "record": "14-9",
+        "conferenceRecord": "6-6"
+      },
+      {
+        "date": "Thu Feb 12",
+        "opponentRank": "178",
+        "opponent": "Middle Tennessee",
+        "result": "L , 90-87",
+        "location": "Home",
+        "record": "14-10",
+        "conferenceRecord": "6-7"
+      },
+      {
+        "date": "Sat Feb 14",
+        "opponentRank": "111",
+        "opponent": "Sam Houston St.",
+        "result": "L , 83-79",
+        "location": "Home",
+        "record": "14-11",
+        "conferenceRecord": "6-8"
+      },
+      {
+        "date": "Wed Feb 18",
+        "opponentRank": "206",
+        "opponent": "Missouri St.",
+        "result": "W , 91-87",
+        "location": "Away",
+        "record": "15-11",
+        "conferenceRecord": "7-8"
+      },
+      {
+        "date": "Sat Feb 21",
+        "opponentRank": "203",
+        "opponent": "Louisiana Tech",
+        "result": "W , 58-55",
+        "location": "Home",
+        "record": "16-11",
+        "conferenceRecord": "8-8"
+      },
+      {
+        "date": "Thu Feb 26",
+        "opponentRank": "125",
+        "opponent": "Liberty",
+        "result": "W , 74-65",
+        "location": "Home",
+        "record": "17-11",
+        "conferenceRecord": "9-8"
+      },
+      {
+        "date": "Sat Feb 28",
+        "opponentRank": "293",
+        "opponent": "Delaware",
+        "result": "W , 90-82",
+        "location": "Home",
+        "record": "18-11",
+        "conferenceRecord": "10-8"
+      },
+      {
+        "date": "Thu Mar 5",
+        "opponentRank": "276",
+        "opponent": "UTEP",
+        "result": "L , 78-71",
+        "location": "Away",
+        "record": "18-12",
+        "conferenceRecord": "10-9"
+      },
+      {
+        "date": "Sat Mar 7",
+        "opponentRank": "184",
+        "opponent": "New Mexico St.",
+        "result": "L , 79-76",
+        "location": "Away",
+        "record": "18-13",
+        "conferenceRecord": "10-10"
+      },
+      {
+        "date": "Thu Mar 12",
+        "opponentRank": "170",
+        "opponent": "Western Kentucky",
+        "result": "W , 96-87",
+        "location": "Neutral",
+        "record": "19-13",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Mar 13",
+        "opponentRank": "111",
+        "opponent": "Sam Houston St.",
+        "result": "W , 79-73",
+        "location": "Neutral",
+        "record": "20-13",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Mar 14",
+        "opponentRank": "203",
+        "opponent": "Louisiana Tech",
+        "result": "W , 71-60",
+        "location": "Neutral",
+        "record": "21-13",
+        "conferenceRecord": ""
+      }
+    ],
     "Kentucky": [
       {
         "date": "Tue Nov 4",
@@ -8924,6 +10745,314 @@
         "result": "W , 79-70",
         "location": "Home",
         "record": "24-10",
+        "conferenceRecord": ""
+      }
+    ],
+    "Lehigh": [
+      {
+        "date": "Mon Nov 3",
+        "opponentRank": "5",
+        "opponent": "Houston",
+        "result": "L , 75-57",
+        "location": "Away",
+        "record": "0-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Nov 6",
+        "opponentRank": "NR",
+        "opponent": "Valley Forge",
+        "result": "W , 91-52",
+        "location": "Home",
+        "record": "1-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 9",
+        "opponentRank": "59",
+        "opponent": "West Virginia",
+        "result": "L , 69-47",
+        "location": "Away",
+        "record": "1-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 14",
+        "opponentRank": "124",
+        "opponent": "Rutgers",
+        "result": "L , 84-72",
+        "location": "Away",
+        "record": "1-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Nov 18",
+        "opponentRank": "354",
+        "opponent": "Saint Francis",
+        "result": "W , 79-62",
+        "location": "Home",
+        "record": "2-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 21",
+        "opponentRank": "189",
+        "opponent": "Columbia",
+        "result": "L , 82-67",
+        "location": "Home",
+        "record": "2-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Nov 25",
+        "opponentRank": "204",
+        "opponent": "Marist",
+        "result": "L , 78-55",
+        "location": "Away",
+        "record": "2-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 28",
+        "opponentRank": "130",
+        "opponent": "UC Santa Barbara",
+        "result": "L , 72-70",
+        "location": "Neutral",
+        "record": "2-6",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 29",
+        "opponentRank": "245",
+        "opponent": "Texas St.",
+        "result": "W , 78-74",
+        "location": "Neutral",
+        "record": "3-6",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 2",
+        "opponentRank": "359",
+        "opponent": "Binghamton",
+        "result": "L , 80-71",
+        "location": "Away",
+        "record": "3-7",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 6",
+        "opponentRank": "216",
+        "opponent": "LIU",
+        "result": "L , 87-82",
+        "location": "Home",
+        "record": "3-8",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Dec 18",
+        "opponentRank": "NR",
+        "opponent": "Penn State Hazleton",
+        "result": "W , 83-74",
+        "location": "Home",
+        "record": "4-8",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Dec 21",
+        "opponentRank": "180",
+        "opponent": "Monmouth",
+        "result": "L , 76-62",
+        "location": "Away",
+        "record": "4-9",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 31",
+        "opponentRank": "337",
+        "opponent": "Army",
+        "result": "L , 85-78",
+        "location": "Home",
+        "record": "4-10",
+        "conferenceRecord": "0-1"
+      },
+      {
+        "date": "Sat Jan 3",
+        "opponentRank": "331",
+        "opponent": "Bucknell",
+        "result": "L , 72-65",
+        "location": "Away",
+        "record": "4-11",
+        "conferenceRecord": "0-2"
+      },
+      {
+        "date": "Wed Jan 7",
+        "opponentRank": "329",
+        "opponent": "Holy Cross",
+        "result": "W , 66-58",
+        "location": "Home",
+        "record": "5-11",
+        "conferenceRecord": "1-2"
+      },
+      {
+        "date": "Sat Jan 10",
+        "opponentRank": "249",
+        "opponent": "Colgate",
+        "result": "W , 78-77",
+        "location": "Away",
+        "record": "6-11",
+        "conferenceRecord": "2-2"
+      },
+      {
+        "date": "Wed Jan 14",
+        "opponentRank": "261",
+        "opponent": "Boston University",
+        "result": "W , 93-91",
+        "location": "Away",
+        "record": "7-11",
+        "conferenceRecord": "3-2"
+      },
+      {
+        "date": "Sat Jan 17",
+        "opponentRank": "142",
+        "opponent": "Navy",
+        "result": "L , 82-79",
+        "location": "Home",
+        "record": "7-12",
+        "conferenceRecord": "3-3"
+      },
+      {
+        "date": "Mon Jan 19",
+        "opponentRank": "322",
+        "opponent": "Loyola MD",
+        "result": "W , 88-81",
+        "location": "Home",
+        "record": "8-12",
+        "conferenceRecord": "4-3"
+      },
+      {
+        "date": "Sat Jan 24",
+        "opponentRank": "325",
+        "opponent": "Lafayette",
+        "result": "W , 64-59",
+        "location": "Home",
+        "record": "9-12",
+        "conferenceRecord": "5-3"
+      },
+      {
+        "date": "Wed Jan 28",
+        "opponentRank": "337",
+        "opponent": "Army",
+        "result": "L , 67-64",
+        "location": "Away",
+        "record": "9-13",
+        "conferenceRecord": "5-4"
+      },
+      {
+        "date": "Sat Jan 31",
+        "opponentRank": "249",
+        "opponent": "Colgate",
+        "result": "W , 77-76",
+        "location": "Home",
+        "record": "10-13",
+        "conferenceRecord": "6-4"
+      },
+      {
+        "date": "Wed Feb 4",
+        "opponentRank": "322",
+        "opponent": "Loyola MD",
+        "result": "L , 89-84",
+        "location": "Away",
+        "record": "10-14",
+        "conferenceRecord": "6-5"
+      },
+      {
+        "date": "Sat Feb 7",
+        "opponentRank": "329",
+        "opponent": "Holy Cross",
+        "result": "L , 76-67",
+        "location": "Away",
+        "record": "10-15",
+        "conferenceRecord": "6-6"
+      },
+      {
+        "date": "Wed Feb 11",
+        "opponentRank": "238",
+        "opponent": "American",
+        "result": "W , 90-82",
+        "location": "Home",
+        "record": "11-15",
+        "conferenceRecord": "7-6"
+      },
+      {
+        "date": "Sat Feb 14",
+        "opponentRank": "325",
+        "opponent": "Lafayette",
+        "result": "W , 78-69",
+        "location": "Away",
+        "record": "12-15",
+        "conferenceRecord": "8-6"
+      },
+      {
+        "date": "Wed Feb 18",
+        "opponentRank": "142",
+        "opponent": "Navy",
+        "result": "L , 72-49",
+        "location": "Away",
+        "record": "12-16",
+        "conferenceRecord": "8-7"
+      },
+      {
+        "date": "Sun Feb 22",
+        "opponentRank": "261",
+        "opponent": "Boston University",
+        "result": "W , 70-67",
+        "location": "Home",
+        "record": "13-16",
+        "conferenceRecord": "9-7"
+      },
+      {
+        "date": "Wed Feb 25",
+        "opponentRank": "238",
+        "opponent": "American",
+        "result": "W , 78-73",
+        "location": "Away",
+        "record": "14-16",
+        "conferenceRecord": "10-7"
+      },
+      {
+        "date": "Sat Feb 28",
+        "opponentRank": "331",
+        "opponent": "Bucknell",
+        "result": "W , 89-79",
+        "location": "Home",
+        "record": "15-16",
+        "conferenceRecord": "11-7"
+      },
+      {
+        "date": "Thu Mar 5",
+        "opponentRank": "329",
+        "opponent": "Holy Cross",
+        "result": "W , 69-66",
+        "location": "Home",
+        "record": "16-16",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Mar 8",
+        "opponentRank": "249",
+        "opponent": "Colgate",
+        "result": "W , 76-69",
+        "location": "Home",
+        "record": "17-16",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Mar 11",
+        "opponentRank": "261",
+        "opponent": "Boston University",
+        "result": "W , 74-60",
+        "location": "Home",
+        "record": "18-16",
         "conferenceRecord": ""
       }
     ],
@@ -11218,6 +13347,296 @@
         "location": "Home",
         "record": "24-7",
         "conferenceRecord": "13-5"
+      }
+    ],
+    "Miami OH": [
+      {
+        "date": "Mon Nov 3",
+        "opponentRank": "248",
+        "opponent": "Old Dominion",
+        "result": "W , 87-72",
+        "location": "Home",
+        "record": "1-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 7",
+        "opponentRank": "NR",
+        "opponent": "Trinity Christian",
+        "result": "W , 129-49",
+        "location": "Home",
+        "record": "2-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 15",
+        "opponentRank": "345",
+        "opponent": "Air Force",
+        "result": "W , 76-61",
+        "location": "Away",
+        "record": "3-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Nov 20",
+        "opponentRank": "287",
+        "opponent": "Mercyhurst",
+        "result": "W , 76-71",
+        "location": "Home",
+        "record": "4-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 23",
+        "opponentRank": "314",
+        "opponent": "Arkansas Pine Bluff",
+        "result": "W , 111-84",
+        "location": "Home",
+        "record": "5-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 26",
+        "opponentRank": "300",
+        "opponent": "UNC Greensboro",
+        "result": "W , 82-71",
+        "location": "Neutral",
+        "record": "6-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 2",
+        "opponentRank": "NR",
+        "opponent": "Indiana East",
+        "result": "W , 109-65",
+        "location": "Home",
+        "record": "7-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 6",
+        "opponentRank": "348",
+        "opponent": "Maine",
+        "result": "W , 93-61",
+        "location": "Home",
+        "record": "8-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 10",
+        "opponentRank": "246",
+        "opponent": "UNC Asheville",
+        "result": "W , 90-87",
+        "location": "Away",
+        "record": "9-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 13",
+        "opponentRank": "297",
+        "opponent": "Eastern Kentucky",
+        "result": "W , 79-69",
+        "location": "Away",
+        "record": "10-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 16",
+        "opponentRank": "140",
+        "opponent": "Wright St.",
+        "result": "W , 83-76",
+        "location": "Away",
+        "record": "11-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 20",
+        "opponentRank": "294",
+        "opponent": "Ball St.",
+        "result": "W , 86-77",
+        "location": "Away",
+        "record": "12-0",
+        "conferenceRecord": "1-0"
+      },
+      {
+        "date": "Mon Dec 22",
+        "opponentRank": "NR",
+        "opponent": "Milligan",
+        "result": "W , 135-81",
+        "location": "Home",
+        "record": "13-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 30",
+        "opponentRank": "147",
+        "opponent": "Bowling Green",
+        "result": "W , 93-83",
+        "location": "Away",
+        "record": "14-0",
+        "conferenceRecord": "2-0"
+      },
+      {
+        "date": "Sat Jan 3",
+        "opponentRank": "64",
+        "opponent": "Akron",
+        "result": "W , 76-73",
+        "location": "Home",
+        "record": "15-0",
+        "conferenceRecord": "3-0"
+      },
+      {
+        "date": "Tue Jan 6",
+        "opponentRank": "273",
+        "opponent": "Western Michigan",
+        "result": "W , 87-76",
+        "location": "Home",
+        "record": "16-0",
+        "conferenceRecord": "4-0"
+      },
+      {
+        "date": "Fri Jan 9",
+        "opponentRank": "131",
+        "opponent": "Toledo",
+        "result": "W , 87-73",
+        "location": "Away",
+        "record": "17-0",
+        "conferenceRecord": "5-0"
+      },
+      {
+        "date": "Tue Jan 13",
+        "opponentRank": "269",
+        "opponent": "Central Michigan",
+        "result": "W , 100-61",
+        "location": "Home",
+        "record": "18-0",
+        "conferenceRecord": "6-0"
+      },
+      {
+        "date": "Sat Jan 17",
+        "opponentRank": "199",
+        "opponent": "Buffalo",
+        "result": "W , 105-102",
+        "location": "Home",
+        "record": "19-0",
+        "conferenceRecord": "7-0"
+      },
+      {
+        "date": "Tue Jan 20",
+        "opponentRank": "148",
+        "opponent": "Kent St.",
+        "result": "W , 107-101",
+        "location": "Away",
+        "record": "20-0",
+        "conferenceRecord": "8-0"
+      },
+      {
+        "date": "Tue Jan 27",
+        "opponentRank": "196",
+        "opponent": "Massachusetts",
+        "result": "W , 86-84",
+        "location": "Home",
+        "record": "21-0",
+        "conferenceRecord": "9-0"
+      },
+      {
+        "date": "Sat Jan 31",
+        "opponentRank": "333",
+        "opponent": "Northern Illinois",
+        "result": "W , 85-61",
+        "location": "Home",
+        "record": "22-0",
+        "conferenceRecord": "10-0"
+      },
+      {
+        "date": "Tue Feb 3",
+        "opponentRank": "199",
+        "opponent": "Buffalo",
+        "result": "W , 73-71",
+        "location": "Away",
+        "record": "23-0",
+        "conferenceRecord": "11-0"
+      },
+      {
+        "date": "Sat Feb 7",
+        "opponentRank": "208",
+        "opponent": "Marshall",
+        "result": "W , 90-74",
+        "location": "Away",
+        "record": "24-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Feb 13",
+        "opponentRank": "228",
+        "opponent": "Ohio",
+        "result": "W , 90-74",
+        "location": "Home",
+        "record": "25-0",
+        "conferenceRecord": "12-0"
+      },
+      {
+        "date": "Tue Feb 17",
+        "opponentRank": "196",
+        "opponent": "Massachusetts",
+        "result": "W , 86-77",
+        "location": "Away",
+        "record": "26-0",
+        "conferenceRecord": "13-0"
+      },
+      {
+        "date": "Fri Feb 20",
+        "opponentRank": "147",
+        "opponent": "Bowling Green",
+        "result": "W , 91-77",
+        "location": "Home",
+        "record": "27-0",
+        "conferenceRecord": "14-0"
+      },
+      {
+        "date": "Tue Feb 24",
+        "opponentRank": "239",
+        "opponent": "Eastern Michigan",
+        "result": "W , 74-64",
+        "location": "Away",
+        "record": "28-0",
+        "conferenceRecord": "15-0"
+      },
+      {
+        "date": "Fri Feb 27",
+        "opponentRank": "273",
+        "opponent": "Western Michigan",
+        "result": "W , 69-67",
+        "location": "Away",
+        "record": "29-0",
+        "conferenceRecord": "16-0"
+      },
+      {
+        "date": "Tue Mar 3",
+        "opponentRank": "131",
+        "opponent": "Toledo",
+        "result": "W , 74-72",
+        "location": "Home",
+        "record": "30-0",
+        "conferenceRecord": "17-0"
+      },
+      {
+        "date": "Fri Mar 6",
+        "opponentRank": "228",
+        "opponent": "Ohio",
+        "result": "W , 110-108",
+        "location": "Away",
+        "record": "31-0",
+        "conferenceRecord": "18-0"
+      },
+      {
+        "date": "Thu Mar 12",
+        "opponentRank": "196",
+        "opponent": "Massachusetts",
+        "result": "L , 87-83",
+        "location": "Neutral",
+        "record": "31-1",
+        "conferenceRecord": ""
       }
     ],
     "Michigan": [
@@ -16413,6 +18832,586 @@
         "conferenceRecord": ""
       }
     ],
+    "Penn": [
+      {
+        "date": "Fri Nov 7",
+        "opponentRank": "NR",
+        "opponent": "Rowan",
+        "result": "W , 119-72",
+        "location": "Home",
+        "record": "1-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 9",
+        "opponentRank": "238",
+        "opponent": "American",
+        "result": "L , 84-78",
+        "location": "Away",
+        "record": "1-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Nov 11",
+        "opponentRank": "71",
+        "opponent": "Providence",
+        "result": "L , 106-81",
+        "location": "Away",
+        "record": "1-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Nov 17",
+        "opponentRank": "116",
+        "opponent": "Saint Joseph's",
+        "result": "W , 83-74",
+        "location": "Home",
+        "record": "2-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 21",
+        "opponentRank": "222",
+        "opponent": "Drexel",
+        "result": "W , 84-68",
+        "location": "Away",
+        "record": "3-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 28",
+        "opponentRank": "179",
+        "opponent": "Merrimack",
+        "result": "W , 77-65",
+        "location": "Home",
+        "record": "4-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 29",
+        "opponentRank": "233",
+        "opponent": "La Salle",
+        "result": "W , 73-71",
+        "location": "Home",
+        "record": "5-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 30",
+        "opponentRank": "87",
+        "opponent": "Hofstra",
+        "result": "L , 77-60",
+        "location": "Home",
+        "record": "5-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 6",
+        "opponentRank": "33",
+        "opponent": "Villanova",
+        "result": "L , 90-63",
+        "location": "Neutral",
+        "record": "5-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Dec 8",
+        "opponentRank": "325",
+        "opponent": "Lafayette",
+        "result": "W , 74-72",
+        "location": "Home",
+        "record": "6-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 20",
+        "opponentRank": "124",
+        "opponent": "Rutgers",
+        "result": "L , 70-69",
+        "location": "Away",
+        "record": "6-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Dec 28",
+        "opponentRank": "96",
+        "opponent": "George Mason",
+        "result": "L , 83-79",
+        "location": "Away",
+        "record": "6-6",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 31",
+        "opponentRank": "332",
+        "opponent": "NJIT",
+        "result": "W , 80-61",
+        "location": "Home",
+        "record": "7-6",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Jan 5",
+        "opponentRank": "252",
+        "opponent": "Princeton",
+        "result": "L , 78-76",
+        "location": "Away",
+        "record": "7-7",
+        "conferenceRecord": "0-1"
+      },
+      {
+        "date": "Sat Jan 10",
+        "opponentRank": "290",
+        "opponent": "Brown",
+        "result": "W , 81-73",
+        "location": "Home",
+        "record": "8-7",
+        "conferenceRecord": "1-1"
+      },
+      {
+        "date": "Sat Jan 17",
+        "opponentRank": "274",
+        "opponent": "Dartmouth",
+        "result": "W , 84-74",
+        "location": "Away",
+        "record": "9-7",
+        "conferenceRecord": "2-1"
+      },
+      {
+        "date": "Mon Jan 19",
+        "opponentRank": "152",
+        "opponent": "Harvard",
+        "result": "L , 64-63",
+        "location": "Away",
+        "record": "9-8",
+        "conferenceRecord": "2-2"
+      },
+      {
+        "date": "Sat Jan 24",
+        "opponentRank": "81",
+        "opponent": "Yale",
+        "result": "L , 77-60",
+        "location": "Home",
+        "record": "9-9",
+        "conferenceRecord": "2-3"
+      },
+      {
+        "date": "Fri Jan 30",
+        "opponentRank": "189",
+        "opponent": "Columbia",
+        "result": "L , 72-67",
+        "location": "Away",
+        "record": "9-10",
+        "conferenceRecord": "2-4"
+      },
+      {
+        "date": "Sat Jan 31",
+        "opponentRank": "164",
+        "opponent": "Cornell",
+        "result": "W , 91-81",
+        "location": "Away",
+        "record": "10-10",
+        "conferenceRecord": "3-4"
+      },
+      {
+        "date": "Sat Feb 7",
+        "opponentRank": "252",
+        "opponent": "Princeton",
+        "result": "W , 61-60",
+        "location": "Home",
+        "record": "11-10",
+        "conferenceRecord": "4-4"
+      },
+      {
+        "date": "Fri Feb 13",
+        "opponentRank": "189",
+        "opponent": "Columbia",
+        "result": "W , 76-67",
+        "location": "Home",
+        "record": "12-10",
+        "conferenceRecord": "5-4"
+      },
+      {
+        "date": "Sat Feb 14",
+        "opponentRank": "164",
+        "opponent": "Cornell",
+        "result": "W , 82-76",
+        "location": "Home",
+        "record": "13-10",
+        "conferenceRecord": "6-4"
+      },
+      {
+        "date": "Sat Feb 21",
+        "opponentRank": "81",
+        "opponent": "Yale",
+        "result": "L , 74-70",
+        "location": "Away",
+        "record": "13-11",
+        "conferenceRecord": "6-5"
+      },
+      {
+        "date": "Fri Feb 27",
+        "opponentRank": "274",
+        "opponent": "Dartmouth",
+        "result": "W , 80-71",
+        "location": "Home",
+        "record": "14-11",
+        "conferenceRecord": "7-5"
+      },
+      {
+        "date": "Sat Feb 28",
+        "opponentRank": "152",
+        "opponent": "Harvard",
+        "result": "W , 64-61",
+        "location": "Home",
+        "record": "15-11",
+        "conferenceRecord": "8-5"
+      },
+      {
+        "date": "Fri Mar 6",
+        "opponentRank": "290",
+        "opponent": "Brown",
+        "result": "W , 82-61",
+        "location": "Away",
+        "record": "16-11",
+        "conferenceRecord": "9-5"
+      },
+      {
+        "date": "Sat Mar 14",
+        "opponentRank": "152",
+        "opponent": "Harvard",
+        "result": "W , 62-60",
+        "location": "Neutral",
+        "record": "17-11",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Mar 15",
+        "opponentRank": "81",
+        "opponent": "Yale",
+        "result": "W , 88-84",
+        "location": "Neutral",
+        "record": "18-11",
+        "conferenceRecord": ""
+      }
+    ],
+    "Prairie View A&M": [
+      {
+        "date": "Mon Nov 3",
+        "opponentRank": "NR",
+        "opponent": "Biblical Studies",
+        "result": "W , 95-48",
+        "location": "Home",
+        "record": "1-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 5",
+        "opponentRank": "NR",
+        "opponent": "Dallas",
+        "result": "W , 94-53",
+        "location": "Home",
+        "record": "2-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 8",
+        "opponentRank": "82",
+        "opponent": "Wichita St.",
+        "result": "L , 105-62",
+        "location": "Away",
+        "record": "2-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 12",
+        "opponentRank": "66",
+        "opponent": "Oklahoma St.",
+        "result": "L , 94-67",
+        "location": "Away",
+        "record": "2-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Nov 17",
+        "opponentRank": "52",
+        "opponent": "Missouri",
+        "result": "L , 91-73",
+        "location": "Away",
+        "record": "2-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 22",
+        "opponentRank": "223",
+        "opponent": "Tennessee Martin",
+        "result": "L , 69-68",
+        "location": "Neutral",
+        "record": "2-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 23",
+        "opponentRank": "335",
+        "opponent": "North Florida",
+        "result": "W , 85-82",
+        "location": "Neutral",
+        "record": "3-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 30",
+        "opponentRank": "136",
+        "opponent": "North Texas",
+        "result": "L , 72-69",
+        "location": "Away",
+        "record": "3-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 6",
+        "opponentRank": "NR",
+        "opponent": "Champion Christian",
+        "result": "W , 124-62",
+        "location": "Home",
+        "record": "4-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 13",
+        "opponentRank": "282",
+        "opponent": "South Dakota",
+        "result": "L , 97-85",
+        "location": "Away",
+        "record": "4-6",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 20",
+        "opponentRank": "NR",
+        "opponent": "Paul Quinn",
+        "result": "W , 100-64",
+        "location": "Home",
+        "record": "5-6",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Dec 22",
+        "opponentRank": "60",
+        "opponent": "LSU",
+        "result": "L , 104-90",
+        "location": "Away",
+        "record": "5-7",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Dec 29",
+        "opponentRank": "39",
+        "opponent": "Texas A&M",
+        "result": "L , 111-82",
+        "location": "Away",
+        "record": "5-8",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Jan 3",
+        "opponentRank": "298",
+        "opponent": "Grambling St.",
+        "result": "L , 76-72",
+        "location": "Away",
+        "record": "5-9",
+        "conferenceRecord": "0-1"
+      },
+      {
+        "date": "Mon Jan 5",
+        "opponentRank": "279",
+        "opponent": "Southern",
+        "result": "W , 89-85",
+        "location": "Away",
+        "record": "6-9",
+        "conferenceRecord": "1-1"
+      },
+      {
+        "date": "Sat Jan 10",
+        "opponentRank": "365",
+        "opponent": "Mississippi Valley St.",
+        "result": "W , 70-69",
+        "location": "Home",
+        "record": "7-9",
+        "conferenceRecord": "2-1"
+      },
+      {
+        "date": "Mon Jan 12",
+        "opponentRank": "314",
+        "opponent": "Arkansas Pine Bluff",
+        "result": "W , 73-61",
+        "location": "Home",
+        "record": "8-9",
+        "conferenceRecord": "3-1"
+      },
+      {
+        "date": "Sat Jan 17",
+        "opponentRank": "341",
+        "opponent": "Jackson St.",
+        "result": "L , 82-78",
+        "location": "Away",
+        "record": "8-10",
+        "conferenceRecord": "3-2"
+      },
+      {
+        "date": "Mon Jan 19",
+        "opponentRank": "346",
+        "opponent": "Alcorn St.",
+        "result": "L , 76-75",
+        "location": "Away",
+        "record": "8-11",
+        "conferenceRecord": "3-3"
+      },
+      {
+        "date": "Sat Jan 24",
+        "opponentRank": "318",
+        "opponent": "Alabama St.",
+        "result": "L , 95-80",
+        "location": "Home",
+        "record": "8-12",
+        "conferenceRecord": "3-4"
+      },
+      {
+        "date": "Tue Jan 27",
+        "opponentRank": "307",
+        "opponent": "Alabama A&M",
+        "result": "L , 80-60",
+        "location": "Home",
+        "record": "8-13",
+        "conferenceRecord": "3-5"
+      },
+      {
+        "date": "Sat Jan 31",
+        "opponentRank": "316",
+        "opponent": "Texas Southern",
+        "result": "W , 85-78",
+        "location": "Home",
+        "record": "9-13",
+        "conferenceRecord": "4-5"
+      },
+      {
+        "date": "Sat Feb 7",
+        "opponentRank": "243",
+        "opponent": "Bethune Cookman",
+        "result": "L , 82-76",
+        "location": "Away",
+        "record": "9-14",
+        "conferenceRecord": "4-6"
+      },
+      {
+        "date": "Mon Feb 9",
+        "opponentRank": "312",
+        "opponent": "Florida A&M",
+        "result": "L , 100-96",
+        "location": "Away",
+        "record": "9-15",
+        "conferenceRecord": "4-7"
+      },
+      {
+        "date": "Sat Feb 14",
+        "opponentRank": "279",
+        "opponent": "Southern",
+        "result": "L , 87-82",
+        "location": "Home",
+        "record": "9-16",
+        "conferenceRecord": "4-8"
+      },
+      {
+        "date": "Mon Feb 16",
+        "opponentRank": "298",
+        "opponent": "Grambling St.",
+        "result": "W , 68-63",
+        "location": "Home",
+        "record": "10-16",
+        "conferenceRecord": "5-8"
+      },
+      {
+        "date": "Thu Feb 19",
+        "opponentRank": "365",
+        "opponent": "Mississippi Valley St.",
+        "result": "W , 72-62",
+        "location": "Away",
+        "record": "11-16",
+        "conferenceRecord": "6-8"
+      },
+      {
+        "date": "Sat Feb 21",
+        "opponentRank": "314",
+        "opponent": "Arkansas Pine Bluff",
+        "result": "L , 84-82",
+        "location": "Away",
+        "record": "11-17",
+        "conferenceRecord": "6-9"
+      },
+      {
+        "date": "Thu Feb 26",
+        "opponentRank": "341",
+        "opponent": "Jackson St.",
+        "result": "W , 85-76",
+        "location": "Home",
+        "record": "12-17",
+        "conferenceRecord": "7-9"
+      },
+      {
+        "date": "Sat Feb 28",
+        "opponentRank": "346",
+        "opponent": "Alcorn St.",
+        "result": "W , 72-51",
+        "location": "Home",
+        "record": "13-17",
+        "conferenceRecord": "8-9"
+      },
+      {
+        "date": "Thu Mar 5",
+        "opponentRank": "316",
+        "opponent": "Texas Southern",
+        "result": "W , 70-59",
+        "location": "Away",
+        "record": "14-17",
+        "conferenceRecord": "9-9"
+      },
+      {
+        "date": "Tue Mar 10",
+        "opponentRank": "346",
+        "opponent": "Alcorn St.",
+        "result": "W , 65-56",
+        "location": "Neutral",
+        "record": "15-17",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Mar 11",
+        "opponentRank": "243",
+        "opponent": "Bethune Cookman",
+        "result": "W , 71-67",
+        "location": "Neutral",
+        "record": "16-17",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Mar 13",
+        "opponentRank": "307",
+        "opponent": "Alabama A&M",
+        "result": "W , 74-55",
+        "location": "Neutral",
+        "record": "17-17",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Mar 14",
+        "opponentRank": "279",
+        "opponent": "Southern",
+        "result": "W , 72-66",
+        "location": "Neutral",
+        "record": "18-17",
+        "conferenceRecord": ""
+      }
+    ],
     "Purdue": [
       {
         "date": "Tue Nov 4",
@@ -19911,6 +22910,305 @@
         "conferenceRecord": ""
       }
     ],
+    "South Florida": [
+      {
+        "date": "Mon Nov 3",
+        "opponentRank": "312",
+        "opponent": "Florida A&M",
+        "result": "W , 102-67",
+        "location": "Home",
+        "record": "1-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 8",
+        "opponentRank": "85",
+        "opponent": "George Washington",
+        "result": "L , 99-95",
+        "location": "Neutral",
+        "record": "1-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 12",
+        "opponentRank": "363",
+        "opponent": "Coppin St.",
+        "result": "W , 100-50",
+        "location": "Home",
+        "record": "2-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 16",
+        "opponentRank": "163",
+        "opponent": "Kennesaw St.",
+        "result": "W , 108-89",
+        "location": "Away",
+        "record": "3-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 19",
+        "opponentRank": "66",
+        "opponent": "Oklahoma St.",
+        "result": "L , 103-95",
+        "location": "Away",
+        "record": "3-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 26",
+        "opponentRank": "45",
+        "opponent": "VCU",
+        "result": "L , 78-66",
+        "location": "Neutral",
+        "record": "3-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Nov 27",
+        "opponentRank": "170",
+        "opponent": "Western Kentucky",
+        "result": "W , 97-91",
+        "location": "Neutral",
+        "record": "4-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 28",
+        "opponentRank": "88",
+        "opponent": "Colorado St.",
+        "result": "L , 83-68",
+        "location": "Neutral",
+        "record": "4-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Dec 4",
+        "opponentRank": "30",
+        "opponent": "Utah St.",
+        "result": "W , 74-61",
+        "location": "Home",
+        "record": "5-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 10",
+        "opponentRank": "172",
+        "opponent": "Charleston",
+        "result": "W , 81-75",
+        "location": "Home",
+        "record": "6-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 17",
+        "opponentRank": "18",
+        "opponent": "Alabama",
+        "result": "L , 104-93",
+        "location": "Away",
+        "record": "6-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Dec 21",
+        "opponentRank": "185",
+        "opponent": "UMBC",
+        "result": "W , 94-69",
+        "location": "Home",
+        "record": "7-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Dec 29",
+        "opponentRank": "NR",
+        "opponent": "Georgia College",
+        "result": "W , 111-50",
+        "location": "Home",
+        "record": "8-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Jan 4",
+        "opponentRank": "127",
+        "opponent": "UAB",
+        "result": "L , 109-106",
+        "location": "Home",
+        "record": "8-6",
+        "conferenceRecord": "0-1"
+      },
+      {
+        "date": "Wed Jan 7",
+        "opponentRank": "136",
+        "opponent": "North Texas",
+        "result": "W , 74-70",
+        "location": "Away",
+        "record": "9-6",
+        "conferenceRecord": "1-1"
+      },
+      {
+        "date": "Sat Jan 10",
+        "opponentRank": "63",
+        "opponent": "Tulsa",
+        "result": "W , 93-78",
+        "location": "Away",
+        "record": "10-6",
+        "conferenceRecord": "2-1"
+      },
+      {
+        "date": "Wed Jan 14",
+        "opponentRank": "254",
+        "opponent": "East Carolina",
+        "result": "W , 82-71",
+        "location": "Home",
+        "record": "11-6",
+        "conferenceRecord": "3-1"
+      },
+      {
+        "date": "Sun Jan 18",
+        "opponentRank": "82",
+        "opponent": "Wichita St.",
+        "result": "L , 86-85",
+        "location": "Home",
+        "record": "11-7",
+        "conferenceRecord": "3-2"
+      },
+      {
+        "date": "Thu Jan 22",
+        "opponentRank": "127",
+        "opponent": "UAB",
+        "result": "W , 82-69",
+        "location": "Away",
+        "record": "12-7",
+        "conferenceRecord": "4-2"
+      },
+      {
+        "date": "Sun Jan 25",
+        "opponentRank": "129",
+        "opponent": "Florida Atlantic",
+        "result": "W , 89-75",
+        "location": "Home",
+        "record": "13-7",
+        "conferenceRecord": "5-2"
+      },
+      {
+        "date": "Wed Jan 28",
+        "opponentRank": "211",
+        "opponent": "Tulane",
+        "result": "W , 97-83",
+        "location": "Away",
+        "record": "14-7",
+        "conferenceRecord": "6-2"
+      },
+      {
+        "date": "Sat Jan 31",
+        "opponentRank": "165",
+        "opponent": "Temple",
+        "result": "L , 79-78",
+        "location": "Away",
+        "record": "14-8",
+        "conferenceRecord": "6-3"
+      },
+      {
+        "date": "Wed Feb 4",
+        "opponentRank": "340",
+        "opponent": "UTSA",
+        "result": "W , 109-88",
+        "location": "Home",
+        "record": "15-8",
+        "conferenceRecord": "7-3"
+      },
+      {
+        "date": "Sun Feb 8",
+        "opponentRank": "63",
+        "opponent": "Tulsa",
+        "result": "W , 80-74",
+        "location": "Home",
+        "record": "16-8",
+        "conferenceRecord": "8-3"
+      },
+      {
+        "date": "Wed Feb 11",
+        "opponentRank": "82",
+        "opponent": "Wichita St.",
+        "result": "W , 66-58",
+        "location": "Away",
+        "record": "17-8",
+        "conferenceRecord": "9-3"
+      },
+      {
+        "date": "Sun Feb 15",
+        "opponentRank": "129",
+        "opponent": "Florida Atlantic",
+        "result": "W , 83-81",
+        "location": "Away",
+        "record": "18-8",
+        "conferenceRecord": "10-3"
+      },
+      {
+        "date": "Thu Feb 19",
+        "opponentRank": "134",
+        "opponent": "Memphis",
+        "result": "W , 87-66",
+        "location": "Home",
+        "record": "19-8",
+        "conferenceRecord": "11-3"
+      },
+      {
+        "date": "Wed Feb 25",
+        "opponentRank": "226",
+        "opponent": "Rice",
+        "result": "W , 75-56",
+        "location": "Away",
+        "record": "20-8",
+        "conferenceRecord": "12-3"
+      },
+      {
+        "date": "Sun Mar 1",
+        "opponentRank": "211",
+        "opponent": "Tulane",
+        "result": "W , 90-62",
+        "location": "Home",
+        "record": "21-8",
+        "conferenceRecord": "13-3"
+      },
+      {
+        "date": "Thu Mar 5",
+        "opponentRank": "134",
+        "opponent": "Memphis",
+        "result": "W , 96-89",
+        "location": "Away",
+        "record": "22-8",
+        "conferenceRecord": "14-3"
+      },
+      {
+        "date": "Sun Mar 8",
+        "opponentRank": "183",
+        "opponent": "Charlotte",
+        "result": "W , 83-60",
+        "location": "Home",
+        "record": "23-8",
+        "conferenceRecord": "15-3"
+      },
+      {
+        "date": "Sat Mar 14",
+        "opponentRank": "183",
+        "opponent": "Charlotte",
+        "result": "W , 86-64",
+        "location": "Neutral",
+        "record": "24-8",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Mar 15",
+        "opponentRank": "82",
+        "opponent": "Wichita St.",
+        "result": "W , 70-55",
+        "location": "Neutral",
+        "record": "25-8",
+        "conferenceRecord": ""
+      }
+    ],
     "St Johns": [
       {
         "date": "Mon Nov 3",
@@ -23029,6 +26327,296 @@
         "conferenceRecord": "12-8"
       }
     ],
+    "UMBC": [
+      {
+        "date": "Tue Nov 4",
+        "opponentRank": "NR",
+        "opponent": "Penn St. York",
+        "result": "W , 74-53",
+        "location": "Home",
+        "record": "1-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 8",
+        "opponentRank": "78",
+        "opponent": "Dayton",
+        "result": "L , 77-71",
+        "location": "Away",
+        "record": "1-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Nov 11",
+        "opponentRank": "353",
+        "opponent": "Morgan St.",
+        "result": "W , 81-79",
+        "location": "Away",
+        "record": "2-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 16",
+        "opponentRank": "305",
+        "opponent": "Wagner",
+        "result": "W , 71-70",
+        "location": "Home",
+        "record": "3-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 19",
+        "opponentRank": "85",
+        "opponent": "George Washington",
+        "result": "L , 89-52",
+        "location": "Away",
+        "record": "3-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Nov 24",
+        "opponentRank": "NR",
+        "opponent": "Notre Dame MD",
+        "result": "W , 102-52",
+        "location": "Home",
+        "record": "4-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 29",
+        "opponentRank": "362",
+        "opponent": "Delaware St.",
+        "result": "W , 71-57",
+        "location": "Home",
+        "record": "5-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 3",
+        "opponentRank": "79",
+        "opponent": "Georgetown",
+        "result": "L , 90-81",
+        "location": "Away",
+        "record": "5-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 6",
+        "opponentRank": "331",
+        "opponent": "Bucknell",
+        "result": "W , 73-66",
+        "location": "Away",
+        "record": "6-3",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 9",
+        "opponentRank": "199",
+        "opponent": "Buffalo",
+        "result": "L , 83-79",
+        "location": "Home",
+        "record": "6-4",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Dec 12",
+        "opponentRank": "337",
+        "opponent": "Army",
+        "result": "L , 63-60",
+        "location": "Home",
+        "record": "6-5",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Dec 21",
+        "opponentRank": "47",
+        "opponent": "South Florida",
+        "result": "L , 94-69",
+        "location": "Away",
+        "record": "6-6",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Mon Dec 29",
+        "opponentRank": "363",
+        "opponent": "Coppin St.",
+        "result": "W , 93-59",
+        "location": "Away",
+        "record": "7-6",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Jan 8",
+        "opponentRank": "348",
+        "opponent": "Maine",
+        "result": "W , 69-62",
+        "location": "Home",
+        "record": "8-6",
+        "conferenceRecord": "1-0"
+      },
+      {
+        "date": "Sat Jan 10",
+        "opponentRank": "349",
+        "opponent": "New Hampshire",
+        "result": "W , 75-74",
+        "location": "Home",
+        "record": "9-6",
+        "conferenceRecord": "2-0"
+      },
+      {
+        "date": "Thu Jan 15",
+        "opponentRank": "355",
+        "opponent": "Bryant",
+        "result": "L , 79-74",
+        "location": "Away",
+        "record": "9-7",
+        "conferenceRecord": "2-1"
+      },
+      {
+        "date": "Mon Jan 19",
+        "opponentRank": "359",
+        "opponent": "Binghamton",
+        "result": "W , 78-60",
+        "location": "Away",
+        "record": "10-7",
+        "conferenceRecord": "3-1"
+      },
+      {
+        "date": "Thu Jan 22",
+        "opponentRank": "332",
+        "opponent": "NJIT",
+        "result": "W , 87-74",
+        "location": "Home",
+        "record": "11-7",
+        "conferenceRecord": "4-1"
+      },
+      {
+        "date": "Sat Jan 24",
+        "opponentRank": "321",
+        "opponent": "UMass Lowell",
+        "result": "W , 79-56",
+        "location": "Home",
+        "record": "12-7",
+        "conferenceRecord": "5-1"
+      },
+      {
+        "date": "Thu Jan 29",
+        "opponentRank": "240",
+        "opponent": "Vermont",
+        "result": "L , 64-55",
+        "location": "Away",
+        "record": "12-8",
+        "conferenceRecord": "5-2"
+      },
+      {
+        "date": "Sat Jan 31",
+        "opponentRank": "324",
+        "opponent": "Albany",
+        "result": "W , 68-65",
+        "location": "Away",
+        "record": "13-8",
+        "conferenceRecord": "6-2"
+      },
+      {
+        "date": "Thu Feb 5",
+        "opponentRank": "359",
+        "opponent": "Binghamton",
+        "result": "W , 79-62",
+        "location": "Home",
+        "record": "14-8",
+        "conferenceRecord": "7-2"
+      },
+      {
+        "date": "Thu Feb 12",
+        "opponentRank": "348",
+        "opponent": "Maine",
+        "result": "W , 78-62",
+        "location": "Away",
+        "record": "15-8",
+        "conferenceRecord": "8-2"
+      },
+      {
+        "date": "Sat Feb 14",
+        "opponentRank": "349",
+        "opponent": "New Hampshire",
+        "result": "W , 85-63",
+        "location": "Away",
+        "record": "16-8",
+        "conferenceRecord": "9-2"
+      },
+      {
+        "date": "Thu Feb 19",
+        "opponentRank": "240",
+        "opponent": "Vermont",
+        "result": "W , 75-62",
+        "location": "Home",
+        "record": "17-8",
+        "conferenceRecord": "10-2"
+      },
+      {
+        "date": "Sat Feb 21",
+        "opponentRank": "324",
+        "opponent": "Albany",
+        "result": "W , 66-62",
+        "location": "Home",
+        "record": "18-8",
+        "conferenceRecord": "11-2"
+      },
+      {
+        "date": "Thu Feb 26",
+        "opponentRank": "355",
+        "opponent": "Bryant",
+        "result": "W , 70-58",
+        "location": "Home",
+        "record": "19-8",
+        "conferenceRecord": "12-2"
+      },
+      {
+        "date": "Sat Feb 28",
+        "opponentRank": "321",
+        "opponent": "UMass Lowell",
+        "result": "W , 84-60",
+        "location": "Away",
+        "record": "20-8",
+        "conferenceRecord": "13-2"
+      },
+      {
+        "date": "Tue Mar 3",
+        "opponentRank": "332",
+        "opponent": "NJIT",
+        "result": "W , 91-52",
+        "location": "Away",
+        "record": "21-8",
+        "conferenceRecord": "14-2"
+      },
+      {
+        "date": "Sat Mar 7",
+        "opponentRank": "349",
+        "opponent": "New Hampshire",
+        "result": "W , 84-69",
+        "location": "Home",
+        "record": "22-8",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Mar 10",
+        "opponentRank": "321",
+        "opponent": "UMass Lowell",
+        "result": "W , 91-69",
+        "location": "Home",
+        "record": "23-8",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Mar 14",
+        "opponentRank": "240",
+        "opponent": "Vermont",
+        "result": "W , 74-59",
+        "location": "Home",
+        "record": "24-8",
+        "conferenceRecord": ""
+      }
+    ],
     "UNC Wilmington": [
       {
         "date": "Mon Nov 3",
@@ -25012,6 +28600,296 @@
         "location": "Home",
         "record": "27-4",
         "conferenceRecord": "15-3"
+      }
+    ],
+    "Virginia Tech": [
+      {
+        "date": "Mon Nov 3",
+        "opponentRank": "241",
+        "opponent": "Charleston Southern",
+        "result": "W , 98-67",
+        "location": "Home",
+        "record": "1-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Nov 8",
+        "opponentRank": "71",
+        "opponent": "Providence",
+        "result": "W , 107-101",
+        "location": "Neutral",
+        "record": "2-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 12",
+        "opponentRank": "116",
+        "opponent": "Saint Joseph's",
+        "result": "W , 94-59",
+        "location": "Home",
+        "record": "3-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Nov 16",
+        "opponentRank": "183",
+        "opponent": "Charlotte",
+        "result": "W , 84-76",
+        "location": "Home",
+        "record": "4-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 19",
+        "opponentRank": "355",
+        "opponent": "Bryant",
+        "result": "W , 78-61",
+        "location": "Home",
+        "record": "5-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Nov 26",
+        "opponentRank": "88",
+        "opponent": "Colorado St.",
+        "result": "W , 66-64",
+        "location": "Neutral",
+        "record": "6-0",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Nov 27",
+        "opponentRank": "24",
+        "opponent": "Saint Mary's",
+        "result": "L , 77-66",
+        "location": "Neutral",
+        "record": "6-1",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Fri Nov 28",
+        "opponentRank": "45",
+        "opponent": "VCU",
+        "result": "L , 86-68",
+        "location": "Neutral",
+        "record": "6-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Tue Dec 2",
+        "opponentRank": "95",
+        "opponent": "South Carolina",
+        "result": "W , 86-83",
+        "location": "Away",
+        "record": "7-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 6",
+        "opponentRank": "96",
+        "opponent": "George Mason",
+        "result": "W , 73-62",
+        "location": "Home",
+        "record": "8-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Thu Dec 11",
+        "opponentRank": "229",
+        "opponent": "Western Carolina",
+        "result": "W , 96-74",
+        "location": "Home",
+        "record": "9-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sun Dec 14",
+        "opponentRank": "350",
+        "opponent": "Maryland Eastern Shore",
+        "result": "W , 82-53",
+        "location": "Home",
+        "record": "10-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Sat Dec 20",
+        "opponentRank": "230",
+        "opponent": "Elon",
+        "result": "W , 82-81",
+        "location": "Home",
+        "record": "11-2",
+        "conferenceRecord": ""
+      },
+      {
+        "date": "Wed Dec 31",
+        "opponentRank": "13",
+        "opponent": "Virginia",
+        "result": "W , 95-85",
+        "location": "Home",
+        "record": "12-2",
+        "conferenceRecord": "1-0"
+      },
+      {
+        "date": "Sat Jan 3",
+        "opponentRank": "74",
+        "opponent": "Wake Forest",
+        "result": "L , 81-78",
+        "location": "Away",
+        "record": "12-3",
+        "conferenceRecord": "1-1"
+      },
+      {
+        "date": "Wed Jan 7",
+        "opponentRank": "58",
+        "opponent": "Stanford",
+        "result": "L , 69-68",
+        "location": "Home",
+        "record": "12-4",
+        "conferenceRecord": "1-2"
+      },
+      {
+        "date": "Sat Jan 10",
+        "opponentRank": "73",
+        "opponent": "California",
+        "result": "W , 78-75",
+        "location": "Home",
+        "record": "13-4",
+        "conferenceRecord": "2-2"
+      },
+      {
+        "date": "Wed Jan 14",
+        "opponentRank": "42",
+        "opponent": "SMU",
+        "result": "L , 77-76",
+        "location": "Away",
+        "record": "13-5",
+        "conferenceRecord": "2-3"
+      },
+      {
+        "date": "Sat Jan 17",
+        "opponentRank": "89",
+        "opponent": "Notre Dame",
+        "result": "W , 89-76",
+        "location": "Home",
+        "record": "14-5",
+        "conferenceRecord": "3-3"
+      },
+      {
+        "date": "Wed Jan 21",
+        "opponentRank": "83",
+        "opponent": "Syracuse",
+        "result": "W , 76-74",
+        "location": "Away",
+        "record": "15-5",
+        "conferenceRecord": "4-3"
+      },
+      {
+        "date": "Sat Jan 24",
+        "opponentRank": "19",
+        "opponent": "Louisville",
+        "result": "L , 85-71",
+        "location": "Away",
+        "record": "15-6",
+        "conferenceRecord": "4-4"
+      },
+      {
+        "date": "Tue Jan 27",
+        "opponentRank": "162",
+        "opponent": "Georgia Tech",
+        "result": "W , 71-65",
+        "location": "Home",
+        "record": "16-6",
+        "conferenceRecord": "5-4"
+      },
+      {
+        "date": "Sat Jan 31",
+        "opponentRank": "1",
+        "opponent": "Duke",
+        "result": "L , 72-58",
+        "location": "Home",
+        "record": "16-7",
+        "conferenceRecord": "5-5"
+      },
+      {
+        "date": "Sat Feb 7",
+        "opponentRank": "34",
+        "opponent": "N.C. State",
+        "result": "L , 82-73",
+        "location": "Away",
+        "record": "16-8",
+        "conferenceRecord": "5-6"
+      },
+      {
+        "date": "Wed Feb 11",
+        "opponentRank": "36",
+        "opponent": "Clemson",
+        "result": "W , 76-66",
+        "location": "Away",
+        "record": "17-8",
+        "conferenceRecord": "6-6"
+      },
+      {
+        "date": "Sat Feb 14",
+        "opponentRank": "56",
+        "opponent": "Florida St.",
+        "result": "L , 92-69",
+        "location": "Home",
+        "record": "17-9",
+        "conferenceRecord": "6-7"
+      },
+      {
+        "date": "Tue Feb 17",
+        "opponentRank": "31",
+        "opponent": "Miami FL",
+        "result": "L , 67-66",
+        "location": "Away",
+        "record": "17-10",
+        "conferenceRecord": "6-8"
+      },
+      {
+        "date": "Sat Feb 21",
+        "opponentRank": "74",
+        "opponent": "Wake Forest",
+        "result": "W , 82-63",
+        "location": "Home",
+        "record": "18-10",
+        "conferenceRecord": "7-8"
+      },
+      {
+        "date": "Sat Feb 28",
+        "opponentRank": "29",
+        "opponent": "North Carolina",
+        "result": "L , 89-82",
+        "location": "Away",
+        "record": "18-11",
+        "conferenceRecord": "7-9"
+      },
+      {
+        "date": "Tue Mar 3",
+        "opponentRank": "156",
+        "opponent": "Boston College",
+        "result": "W , 72-63",
+        "location": "Home",
+        "record": "19-11",
+        "conferenceRecord": "8-9"
+      },
+      {
+        "date": "Sat Mar 7",
+        "opponentRank": "13",
+        "opponent": "Virginia",
+        "result": "L , 76-72",
+        "location": "Away",
+        "record": "19-12",
+        "conferenceRecord": "8-10"
+      },
+      {
+        "date": "Tue Mar 10",
+        "opponentRank": "74",
+        "opponent": "Wake Forest",
+        "result": "L , 95-89",
+        "location": "Neutral",
+        "record": "19-13",
+        "conferenceRecord": ""
       }
     ],
     "Washington": [

@@ -113,7 +113,6 @@ def main():
     # add ratings
     # add_ratings_to_postseason_games()
     
-    
     #############################################
     """Process all four factors files in the fourFactors directory"""
     '''

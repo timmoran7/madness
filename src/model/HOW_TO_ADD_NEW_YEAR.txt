@@ -5,3 +5,9 @@
 5. run averageExtractor forced for said year
 5. visit https://kenpom.com/cbbga{year}.txt and download to regSeasonGames file
 6. run gameExtractor for said year
+
+7aa. add necessary name mapping w bball net replacements to the kpFetcher var
+7a. run model.py with rank diff params
+7. run kpFetcher for fetchTopTeams with all teams, once for quads once for kp 
+8. run quadAndOvrExtractor methods
+9. run madness calculator.py

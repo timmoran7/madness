@@ -18,12 +18,15 @@ import type {
 const router = useRouter();
 const route = useRoute();
 
+const CUSTOM_REGION_VALUE = "__any_two_teams__";
 const regions = ["South", "East", "Midwest", "West"];
 const selectedRegion = ref<string>("");
 const matchups = ref<string[]>([]);
 const showFactors = ref<boolean>(false);
 const showMethodology = ref<boolean>(true);
 const countdownLabel = ref<string>("");
+const customTeamOne = ref<string>("");
+const customTeamTwo = ref<string>("");
 
 const selectedMatchup = ref<string>("");
 const favLogo = ref<string>("");
@@ -31,7 +34,7 @@ const dawgLogo = ref<string>("");
 const miFactor = ref<number>(0);
 const upsetChance = ref<number>(0);
 const bracketReleaseAt = new Date("2026-03-15T17:30:00-05:00");
-let countdownIntervalId: ReturnType<typeof setInterval> | null = null;
+let countdownIntervalId: number | null = null;
 
 const teamLogoUrls: Record<string, string> = teamLogoUrlsData;
 const typedUpsetData = upsetData as UpsetDataType;
@@ -43,6 +46,37 @@ const kpStats = kpOvrStats as unknown as Record<
   Record<string, [number, string]> & { seed: number; conference: string }
 >;
 const seedProbs = seedProbabilities as Record<string, number>;
+
+const resolveUpsetMatchupKey = (matchupKey: string): string | null => {
+  if (typedUpsetData.matchups[matchupKey]) {
+    return matchupKey;
+  }
+
+  const [team1, team2] = matchupKey.split("_");
+  if (!team1 || !team2) {
+    return null;
+  }
+
+  const reversedMatchupKey = `${team2}_${team1}`;
+  if (typedUpsetData.matchups[reversedMatchupKey]) {
+    return reversedMatchupKey;
+  }
+
+  return null;
+};
+
+const allTeams = computed<string[]>(() => Object.keys(kpStats).sort());
+const isCustomMode = computed<boolean>(
+  () => selectedRegion.value === CUSTOM_REGION_VALUE,
+);
+const hasCustomPair = computed<boolean>(() =>
+  Boolean(customTeamOne.value && customTeamTwo.value),
+);
+const hideRegionSelect = computed<boolean>(() => isCustomMode.value);
+const hasUpsetEntry = computed<boolean>(() => {
+  if (!selectedMatchup.value) return false;
+  return Boolean(resolveUpsetMatchupKey(selectedMatchup.value));
+});
 
 const teamInfo = computed(() => {
   if (!selectedMatchup.value) return { fav: null, dawg: null };
@@ -130,7 +164,10 @@ const currentMatchupData = computed<MatchupTableDataType | null>(() => {
 const currentUpsetData = computed<UpsetTableDataType | null>(() => {
   if (!selectedMatchup.value) return null;
 
-  const entry = typedUpsetData.matchups[selectedMatchup.value];
+  const matchupKey = resolveUpsetMatchupKey(selectedMatchup.value);
+  if (!matchupKey) return null;
+
+  const entry = typedUpsetData.matchups[matchupKey];
   if (!entry) return null;
 
   return {
@@ -182,13 +219,61 @@ const syncRouteQuery = (region: string, matchup: string) => {
   });
 };
 
-const loadMatchups = () => {
-  matchups.value = matchupFiles[selectedRegion.value] || [];
-  showFactors.value = false;
-  showMethodology.value = true;
+const resetMatchupSelection = () => {
   selectedMatchup.value = "";
   favLogo.value = "";
   dawgLogo.value = "";
+  miFactor.value = 0;
+  upsetChance.value = 0;
+  showFactors.value = false;
+  showMethodology.value = true;
+};
+
+const activateCustomMode = () => {
+  selectedRegion.value = CUSTOM_REGION_VALUE;
+  matchups.value = [];
+  resetMatchupSelection();
+  syncRouteQuery("", "");
+};
+
+const clearCustomMode = () => {
+  selectedRegion.value = "";
+  customTeamOne.value = "";
+  customTeamTwo.value = "";
+  matchups.value = [];
+  resetMatchupSelection();
+  syncRouteQuery("", "");
+};
+
+const buildCustomMatchup = () => {
+  if (!isCustomMode.value) return;
+
+  if (!customTeamOne.value || !customTeamTwo.value) {
+    resetMatchupSelection();
+    syncRouteQuery("", "");
+    return;
+  }
+
+  if (customTeamOne.value === customTeamTwo.value) {
+    resetMatchupSelection();
+    syncRouteQuery("", "");
+    return;
+  }
+
+  selectedMatchup.value = `${customTeamOne.value}_${customTeamTwo.value}`;
+  loadMatchupContent();
+};
+
+const loadMatchups = () => {
+  if (selectedRegion.value === CUSTOM_REGION_VALUE) {
+    activateCustomMode();
+    return;
+  }
+
+  customTeamOne.value = "";
+  customTeamTwo.value = "";
+  matchups.value = matchupFiles[selectedRegion.value] || [];
+  resetMatchupSelection();
 
   syncRouteQuery(selectedRegion.value, "");
 };
@@ -201,18 +286,25 @@ const loadMatchupContent = () => {
   favLogo.value = teamLogoUrls[team1] ?? "";
   dawgLogo.value = teamLogoUrls[team2] ?? "";
 
-  const matchupEntry = typedUpsetData.matchups[selectedMatchup.value];
-  if (!matchupEntry) {
-    return;
+  const upsetMatchupKey = resolveUpsetMatchupKey(selectedMatchup.value);
+  const matchupEntry = upsetMatchupKey
+    ? typedUpsetData.matchups[upsetMatchupKey]
+    : undefined;
+  if (matchupEntry) {
+    miFactor.value = matchupEntry.index;
+    upsetChance.value = matchupEntry.upset;
+    showFactors.value = true;
+  } else {
+    miFactor.value = 0;
+    upsetChance.value = 0;
+    showFactors.value = false;
   }
-
-  miFactor.value = matchupEntry.index;
-  upsetChance.value = matchupEntry.upset;
-
-  showFactors.value = true;
   showMethodology.value = false;
 
-  syncRouteQuery(selectedRegion.value, selectedMatchup.value);
+  syncRouteQuery(
+    selectedRegion.value === CUSTOM_REGION_VALUE ? "" : selectedRegion.value,
+    selectedMatchup.value,
+  );
 };
 
 const openTeamPage = (teamName: string) => {
@@ -235,23 +327,20 @@ const openTeamPage = (teamName: string) => {
 };
 
 const closeMatchupContent = () => {
-  showMethodology.value = true;
-  showFactors.value = false;
-  selectedMatchup.value = "";
-  favLogo.value = "";
-  dawgLogo.value = "";
+  resetMatchupSelection();
 
-  syncRouteQuery(selectedRegion.value, "");
+  syncRouteQuery(
+    selectedRegion.value === CUSTOM_REGION_VALUE ? "" : selectedRegion.value,
+    "",
+  );
 };
 
 const resetState = () => {
   selectedRegion.value = "";
+  customTeamOne.value = "";
+  customTeamTwo.value = "";
   matchups.value = [];
-  selectedMatchup.value = "";
-  favLogo.value = "";
-  dawgLogo.value = "";
-  showFactors.value = false;
-  showMethodology.value = true;
+  resetMatchupSelection();
 };
 
 onMounted(() => {
@@ -262,6 +351,23 @@ onMounted(() => {
     typeof route.query.region === "string" ? route.query.region : "";
   const matchupQuery =
     typeof route.query.matchup === "string" ? route.query.matchup : "";
+
+  if (!regionQuery && matchupQuery) {
+    const [team1, team2] = matchupQuery.split("_");
+    if (
+      team1 &&
+      team2 &&
+      kpStats[normalizeTeamName(team1)] &&
+      kpStats[normalizeTeamName(team2)]
+    ) {
+      selectedRegion.value = CUSTOM_REGION_VALUE;
+      customTeamOne.value = team1;
+      customTeamTwo.value = team2;
+      selectedMatchup.value = matchupQuery;
+      loadMatchupContent();
+      return;
+    }
+  }
 
   if (!regionQuery || !matchupFiles[regionQuery]) {
     return;
@@ -288,16 +394,20 @@ onUnmounted(() => {
 watch(
   () => route.query,
   (query) => {
-    if (!query.region && !query.matchup) {
+    if (!query.region && !query.matchup && !isCustomMode.value) {
       resetState();
     }
   },
 );
+
+watch([customTeamOne, customTeamTwo], () => {
+  buildCustomMatchup();
+});
 </script>
 
 <template>
-  <div class="container mt-3">
-    <div class="d-flex justify-content-center">
+  <div class="container main-ctr">
+    <div v-if="!hideRegionSelect" class="d-flex justify-content-center">
       <select
         v-model="selectedRegion"
         @change="loadMatchups"
@@ -310,8 +420,103 @@ watch(
       </select>
     </div>
 
+    <div v-if="!isCustomMode" class="d-flex justify-content-center">
+      <button class="btn btn-link any-two-trigger" @click="activateCustomMode">
+        Or pick any two teams
+      </button>
+    </div>
+
+    <div v-if="isCustomMode" class="any-two-container">
+      <p class="any-two-title">Any Two Teams</p>
+      <div class="any-two-anchor">
+        <div class="team-box-abs team-box-left any-two-team-box">
+          <TeamBox
+            :logo="favLogo"
+            :team-name="customTeamOne"
+            :seed="teamInfo.fav?.seed ?? null"
+            :record="teamInfo.fav?.record ?? null"
+            :conference="teamInfo.fav?.conference ?? null"
+            @logo-click="openTeamPage"
+          />
+        </div>
+        <div class="any-two-selects">
+          <select v-model="customTeamOne" class="form-select">
+            <option value="" disabled>Select Team 1</option>
+            <option
+              v-for="team in allTeams"
+              :key="`team1-${team}`"
+              :value="team"
+            >
+              {{ team }}
+            </option>
+          </select>
+          <span class="any-two-vs">vs.</span>
+          <select v-model="customTeamTwo" class="form-select">
+            <option value="" disabled>Select Team 2</option>
+            <option
+              v-for="team in allTeams"
+              :key="`team2-${team}`"
+              :value="team"
+            >
+              {{ team }}
+            </option>
+          </select>
+        </div>
+        <div class="team-box-abs team-box-right any-two-team-box">
+          <TeamBox
+            :logo="dawgLogo"
+            :team-name="customTeamTwo"
+            :logo-first="true"
+            :seed="teamInfo.dawg?.seed ?? null"
+            :record="teamInfo.dawg?.record ?? null"
+            :conference="teamInfo.dawg?.conference ?? null"
+            @logo-click="openTeamPage"
+          />
+        </div>
+      </div>
+      <div v-if="customTeamOne || customTeamTwo" class="any-two-mobile-preview">
+        <TeamBox
+          :logo="favLogo"
+          :team-name="customTeamOne"
+          :seed="teamInfo.fav?.seed ?? null"
+          :record="teamInfo.fav?.record ?? null"
+          :conference="teamInfo.fav?.conference ?? null"
+          @logo-click="openTeamPage"
+        />
+        <button
+          class="btn btn-sm btn-outline-secondary any-two-mobile-switch"
+          @click="clearCustomMode"
+        >
+          Use region matchups
+        </button>
+        <TeamBox
+          :logo="dawgLogo"
+          :team-name="customTeamTwo"
+          :logo-first="true"
+          :seed="teamInfo.dawg?.seed ?? null"
+          :record="teamInfo.dawg?.record ?? null"
+          :conference="teamInfo.dawg?.conference ?? null"
+          @logo-click="openTeamPage"
+        />
+      </div>
+      <p
+        v-if="customTeamOne && customTeamOne === customTeamTwo"
+        class="same-team-hint"
+      >
+        Pick two different teams.
+      </p>
+      <div class="d-flex justify-content-center">
+        <button
+          class="btn btn-sm btn-outline-secondary any-two-desktop-switch"
+          @click="clearCustomMode"
+        >
+          Use region matchups
+        </button>
+      </div>
+    </div>
+
     <div
-      v-if="matchups.length > 0"
+      v-if="matchups.length > 0 && !isCustomMode"
       :class="['ovr-banner', { 'ovr-banner-selected': selectedMatchup }]"
     >
       <div
@@ -352,7 +557,7 @@ watch(
       </div>
     </div>
     <div
-      v-if="dawgLogo"
+      v-if="dawgLogo && !isCustomMode"
       class="d-flex justify-content-center mb-4 match-subheader"
     >
       <p class="click-hint"><em>click on logos for team breakdown</em></p>
@@ -361,7 +566,10 @@ watch(
 
     <div
       v-if="showFactors"
-      class="d-flex justify-content-center mb-4 upset-factors"
+      :class="[
+        'd-flex justify-content-center mb-4 upset-factors',
+        { 'any-two-upset-factors': isCustomMode },
+      ]"
     >
       <h5 class="mi text-center">
         <strong>MADNESS INDEX: {{ miFactor }} / 10</strong>
@@ -381,7 +589,11 @@ watch(
       <p v-html="preTourneyMethodologyExplanation"></p>
     </div>
     <div v-if="showMethodology" class="countdown-wrapper">
-      <p>Bracket releases:<br><span class="countdown-label">{{ countdownLabel }}</span></p>
+      <p>
+        Bracket releases:<br /><span class="countdown-label">{{
+          countdownLabel
+        }}</span>
+      </p>
     </div>
 
     <div
@@ -389,8 +601,11 @@ watch(
       class="mt-4 p-3 border border-secondary rounded bg-light position-relative"
     >
       <button @click="closeMatchupContent" class="btn-close"></button>
-      <UpsetTable v-if="currentUpsetData" :data="currentUpsetData" />
-      <MatchupTable :data="currentMatchupData" />
+      <p v-if="selectedMatchup && !hasUpsetEntry" class="missing-upset-text">
+        No upset profile exists yet for this hypothetical matchup.
+      </p>
+      <UpsetTable class="upset-table" v-if="currentUpsetData" :data="currentUpsetData" />
+      <MatchupTable class="matchup-table" :data="currentMatchupData" />
     </div>
   </div>
 </template>
@@ -460,6 +675,10 @@ watch(
   align-items: center;
 }
 
+.any-two-upset-factors {
+  margin-top: 12px;
+}
+
 .mi {
   color: crimson;
 }
@@ -490,10 +709,87 @@ watch(
   font-style: italic;
 }
 
+.any-two-trigger {
+  margin-top: -12px;
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+
+.any-two-container {
+  margin-top: 8px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.any-two-title {
+  margin: 0 0 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.any-two-anchor {
+  position: relative;
+  display: inline-block;
+}
+
+.any-two-selects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.any-two-team-box {
+  display: none;
+}
+
+.any-two-mobile-preview {
+  display: none;
+}
+
+.any-two-selects .form-select {
+  width: min(300px, 42vw);
+}
+
+.any-two-vs {
+  font-weight: 600;
+  color: #6c757d;
+}
+
+.same-team-hint {
+  margin: 2px 0 10px;
+  text-align: center;
+  color: #b02a37;
+  font-size: 0.9rem;
+}
+
+.missing-upset-text {
+  margin: 0 30px 10px 0;
+  color: #6c757d;
+  font-size: 0.95rem;
+}
+
+.main-ctr {
+  margin-top: -8px;
+}
+
+.matchup-table, .upset-table {
+  margin-top: 8px;
+}
+
+@media only screen and (min-width: 1201px) {
+  .any-two-team-box {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .ovr-banner {
-    margin-top: 4px;
     margin-bottom: 8px;
+  }
+
+  .mi, .factor {
+    font-size: 18px;
   }
 
   .form-select {
@@ -515,6 +811,53 @@ watch(
   .countdown-label {
     font-size: 0.95rem;
     text-align: center;
+  }
+
+  .any-two-selects {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .any-two-vs {
+    display: none;
+  }
+
+  .any-two-selects .form-select {
+    width: min(320px, 90vw);
+  }
+
+  .any-two-mobile-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 8px 0 2px;
+  }
+
+  .any-two-mobile-switch {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    min-height: 0;
+    padding: 5px 9px;
+    line-height: 1.22;
+  }
+
+  .any-two-mobile-preview :deep(.logo-stack) {
+    min-height: 60px;
+  }
+
+  .any-two-mobile-preview :deep(.banner-pic) {
+    height: 60px;
+  }
+
+  .any-two-desktop-switch {
+    display: none;
+  }
+
+  .main-ctr {
+    margin-top: -12px;
   }
 }
 </style>
