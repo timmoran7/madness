@@ -29,7 +29,7 @@
 <div id="container">
 <!-- <div id='login-container'> -->
 <div id="logged-in">
-<span class="mobileHide"> Logged in as: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3d49545049555850524f5c537d5a505c5451135e5250">[email&#160;protected]</a> (<a href="team.php?team=Illinois">Illinois</a>)</span> <span class="mobileHide">|</span> <a href="account.php">Manage Account</a> (<span style="background-color:yellow"><span style=color:red>expires 3/17/26 <a href="register-kenpom.php">Renew here!</a></span>)
+<span class="mobileHide"> Logged in as: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="99edf0f4edf1fcf4f6ebf8f7d9fef4f8f0f5b7faf6f4">[email&#160;protected]</a> (<a href="team.php?team=Illinois">Illinois</a> <i>next: Thu vs. <a href="team.php?team=Penn">Penn</a></i>)</span> <span class="mobileHide">|</span> <a href="account.php">Manage Account</a> (<span style="background-color:yellow"><span style=color:red>expires 3/17/26 <a href="register-kenpom.php">Renew here!</a></span>)
     <!-- new navigation bar -->
     <div id="logo-header">
         <div id="tagline-container">
@@ -92,7 +92,7 @@
 <!-- The content header -->
 <div id="content-header">
 <div id="title-container">
-<h5><span class="rank">12</span> Nebraska <span class="rank">(26-5)</span> </h5>
+<h5><span class="rank">14</span> Nebraska <span class="rank">(26-6)</span> </h5>
 <a href="roster.php?team=Nebraska">Cornhuskers</a> &middot; Lincoln, NE<br />
 <div class="coach">Head coach: <a href="history.php?c=Fred+Hoiberg">Fred Hoiberg</a></div>
 <span class="otherinfo"><a href="conf.php?c=B10">Big Ten Conference</a><br>
@@ -111,7 +111,7 @@
 
 <div id="report">
 <h3>Scouting Report <a href="blog/help-with-team-page/"><img src="assets/help.gif" style="vertical-align:top"/></a></h3>
-<span class='update'>Data through games of <a href='fanmatch.php?d=2026-03-11'>Wednesday, March 11</a></span>
+<span class='update'>Data through games of <a href='fanmatch.php?d=2026-03-15'>Sunday, March 15</a></span>
 <form name="confstats" id="confcheck" class='line-height15'><label>
 <input type="checkbox" name="confselect" /> Conference only
 </label></form>
@@ -123,7 +123,7 @@
 <tr><td id="effText"></td>
 <td id="OE"></td>
 <td id="DE"></td>
-<td>109.6</td></tr>
+<td>109.2</td></tr>
 <tr><td id="tempoText"></td>
 <td id="Tempo" colspan="2"></td>
 <td>67.3</td></tr>
@@ -138,18 +138,18 @@
 <tr><td>Turnover %:</td><td id="TOPct"></td><td id="DTOPct"></td>
 <td>16.8</td></tr>
 <tr><td>Off. Reb. %:</td><td id="ORPct"></td><td id="DORPct"></td>
-<td>30.5</td></tr>
+<td>30.6</td></tr>
 <tr><td>FTA/FGA:</td><td id="FTR"></td><td id="DFTR"></td>
 <td>35.1</td></tr>
 <tr><td colspan=4 class="label">Miscellaneous Components</td></tr>
 <tr><td>3P%:</td><td id="3Pct"></td><td id="D3Pct"></td>
-<td>34.0</td></tr>
+<td>33.9</td></tr>
 <tr><td>2P%:</td><td id="2Pct"></td><td id="D2Pct"></td>
-<td>51.8</td></tr>
+<td>51.7</td></tr>
 <tr><td>FT%:</td><td id="FTPct"></td><td id="DFTPct"></td>
 <td>72.5</td></tr>
 <tr><td>Block%:</td><td id="BlockPct"></td><td id="DBlockPct"></td>
-<td>9.4</td></tr>
+<td>9.5</td></tr>
 <tr><td>Steal%:</td><td id="StlRate"></td><td id="DStlRate"></td>
 <td>9.5</td></tr>
 <tr><td>Non-Stl TO%:</td><td id="NSTRate"></td><td id="DNSTRate"></td>
@@ -170,35 +170,35 @@
 <td>19.8</td></tr>
 <tr><td colspan=4 class="label">Strength of Schedule</td></tr>
 <tr><td>Components:</td>
-<td><a href="index.php?s=RankSOSO">116.2</a> <span class="seed">40</span></td>
-<td><a href="index.php?s=RankSOSD">105.2</a> <span class="seed">63</span></td>
-<td>109.6</td></tr>
+<td><a href="index.php?s=RankSOSO">116.4</a> <span class="seed">32</span></td>
+<td><a href="index.php?s=RankSOSD">104.8</a> <span class="seed">63</span></td>
+<td>109.2</td></tr>
 <tr><td>Overall:</td>
-<td colspan=2><a href="index.php?s=RankSOSPythag">+11.03</a> <span class="seed">54</span></td>
+<td colspan=2><a href="index.php?s=RankSOSPythag">+11.59</a> <span class="seed">42</span></td>
 <td>0.00</td></tr>
 <tr><td>Non-conference:</td>
-<td colspan=2><a href="index.php?s=RankNCSOS">-5.71</a> <span class="seed">318</span></td>
+<td colspan=2><a href="index.php?s=RankNCSOS">-6.03</a> <span class="seed">319</span></td>
 <td>0.00</td></tr>
 <tr><td colspan=4 class="label">Personnel</td></tr>
 <tr><td>Bench Minutes:</td>
-<td colspan=2><a href="height.php?s=BenchRank">25.5%</a> <span class="seed">325</span></td>
-<td>31.7%</td>
+<td colspan=2><a href="height.php?s=BenchRank">25.5%</a> <span class="seed">322</span></td>
+<td>31.5%</td>
 </tr>
 <tr><td><a href='blog/are-you-experienced/'>D-1 Experience</a>:</td>
-<td colspan=2><a href="height.php?s=ExpRank">2.35 yrs</a> <span class="seed">25</span></td>
+<td colspan=2><a href="height.php?s=ExpRank">2.36 yrs</a> <span class="seed">25</span></td>
 <td>1.45</td>
 </tr>
 <tr><td><a href="blog/measuring-continuity">Minutes Continuity</a>:</td>
-<td colspan=2><a href="height.php?s=ContRank">25.3%</a> <span class="seed">164</span></td>
+<td colspan=2><a href="height.php?s=ContRank">25.3%</a> <span class="seed">165</span></td>
 <td>24.9%</td>
 </tr>
 <tr><td>Average Height:</td>
-<td colspan=2><a href="height.php?s=SizeRank">77.8"</a> <span class="seed">117</span></td>
+<td colspan=2><a href="height.php?s=SizeRank">77.8"</a> <span class="seed">115</span></td>
 <td>77.4"</td>
 </tr>
 <tr><td><a href="blog/introducing-2-foul-participation/">2-Foul Participation:</a></td>
 <td colspan=2><a href="foul_trouble.php?s=RankPct2FP">6.1%</a> <span class='seed'>347</span></td>
-<td>24.7%</td>
+<td>24.8%</td>
 </tr>
 
 </tbody></table></div>
@@ -223,73 +223,73 @@
 <td class=c>&nbsp;</td><td style="border-left:1px dotted black"></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2025-11-08">Sat Nov 8</a></td>
-<td><span class="seed-gray">46</span></td><td style="text-align:right"><span class="seed">192</span></td><td style="text-align:left"><a href="team.php?team=FIU">FIU</a></td><td><a href="box.php?g=406"><b>W</b>, 96-66</td></a><td class="pace" style="color:red"><b>77</b></td><td>&nbsp</td></td>
+<td><span class="seed-gray">46</span></td><td style="text-align:right"><span class="seed">194</span></td><td style="text-align:left"><a href="team.php?team=FIU">FIU</a></td><td><a href="box.php?g=406"><b>W</b>, 96-66</td></a><td class="pace" style="color:red"><b>77</b></td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>2-0</td>
 <td class=c>&nbsp;</td><td style="border-left:1px dotted black"></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2025-11-11">Tue Nov 11</a></td>
-<td><span class="seed-gray">42</span></td><td style="text-align:right"><span class="seed">348</span></td><td style="text-align:left"><a href="team.php?team=Maryland+Eastern+Shore">Maryland Eastern Shore</a></td><td><a href="box.php?g=564"><b>W</b>, 69-50</td></a><td class="pace">67</td><td>&nbsp</td></td>
+<td><span class="seed-gray">42</span></td><td style="text-align:right"><span class="seed">350</span></td><td style="text-align:left"><a href="team.php?team=Maryland+Eastern+Shore">Maryland Eastern Shore</a></td><td><a href="box.php?g=564"><b>W</b>, 69-50</td></a><td class="pace">67</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>3-0</td>
 <td class=c>&nbsp;</td><td style="border-left:1px dotted black"></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2025-11-15">Sat Nov 15</a></td>
-<td><span class="seed-gray">46</span></td><td style="text-align:right"><span class="seed">45</span></td><td style="text-align:left"><a href="team.php?team=Oklahoma">Oklahoma</a></td><td><a href="box.php?g=773"><b>W</b>, 105-99</td></a><td class="pace" style="color:red">72</td><td>&nbsp</td></td>
+<td><span class="seed-gray">46</span></td><td style="text-align:right"><span class="seed">40</span></td><td style="text-align:left"><a href="team.php?team=Oklahoma">Oklahoma</a></td><td><a href="box.php?g=773"><b>W</b>, 105-99</td></a><td class="pace" style="color:red">72</td><td>&nbsp</td></td>
 <td><a title="Sioux Falls, SD" href="https://maps.google.com?q=Sanford+Pentagon,+Sioux Falls, SD&z=9&num=1&t=m"  target="_blank">Neutral</a></td>
 <td>4-0</td>
 <td class=c>&nbsp;</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2025-11-20">Thu Nov 20</a></td>
-<td><span class="seed-gray">42</span></td><td style="text-align:right"><span class="seed">49</span></td><td style="text-align:left"><a href="team.php?team=New+Mexico">New Mexico</a></td><td><a href="box.php?g=972"><b>W</b>, 84-72</td></a><td class="pace" style="color:red"><b>81</b></td><td>&nbsp</td></td>
+<td><span class="seed-gray">42</span></td><td style="text-align:right"><span class="seed">50</span></td><td style="text-align:left"><a href="team.php?team=New+Mexico">New Mexico</a></td><td><a href="box.php?g=972"><b>W</b>, 84-72</td></a><td class="pace" style="color:red"><b>81</b></td><td>&nbsp</td></td>
 <td><a title="Kansas City, MO" href="https://maps.google.com?q=T-Mobile+Center,+Kansas City, MO&z=9&num=1&t=m"  target="_blank">Neutral</a></td>
 <td>5-0</td>
 <td class=c>&nbsp;</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2025-11-21">Fri Nov 21</a></td>
-<td><span class="seed-gray">40</span></td><td style="text-align:right"><span class="seed">99</span></td><td style="text-align:left"><a href="team.php?team=Kansas+St.">Kansas St.</a></td><td><a href="box.php?g=5805"><b>W</b>, 86-85</td></a><td class="pace" style="color:red">75</td><td>&nbsp</td></td>
+<td><span class="seed-gray">40</span></td><td style="text-align:right"><span class="seed">101</span></td><td style="text-align:left"><a href="team.php?team=Kansas+St.">Kansas St.</a></td><td><a href="box.php?g=5805"><b>W</b>, 86-85</td></a><td class="pace" style="color:red">75</td><td>&nbsp</td></td>
 <td><a title="Kansas City, MO" href="https://maps.google.com?q=T-Mobile+Center,+Kansas City, MO&z=9&num=1&t=m"  target="_blank">Neutral</a></td>
 <td>6-0</td>
-<td class=c>&nbsp;</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/b.gif" height="12"/></a></td></tr>
+<td class=c>&nbsp;</td><td style="border-left:1px dotted black"></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2025-11-25">Tue Nov 25</a></td>
-<td><span class="seed-gray">40</span></td><td style="text-align:right"><span class="seed">151</span></td><td style="text-align:left"><a href="team.php?team=Winthrop">Winthrop</a></td><td><a href="box.php?g=1270"><b>W</b>, 80-73</td></a><td class="pace">69</td><td>&nbsp</td></td>
+<td><span class="seed-gray">40</span></td><td style="text-align:right"><span class="seed">155</span></td><td style="text-align:left"><a href="team.php?team=Winthrop">Winthrop</a></td><td><a href="box.php?g=1270"><b>W</b>, 80-73</td></a><td class="pace">69</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>7-0</td>
 <td class=c>&nbsp;</td><td style="border-left:1px dotted black"></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2025-11-29">Sat Nov 29</a></td>
-<td><span class="seed-gray">41</span></td><td style="text-align:right"><span class="seed">303</span></td><td style="text-align:left"><a href="team.php?team=USC+Upstate">USC Upstate</a></td><td><a href="box.php?g=1437"><b>W</b>, 72-63</td></a><td class="pace" style="color:red">72</td><td>&nbsp</td></td>
+<td><span class="seed-gray">41</span></td><td style="text-align:right"><span class="seed">302</span></td><td style="text-align:left"><a href="team.php?team=USC+Upstate">USC Upstate</a></td><td><a href="box.php?g=1437"><b>W</b>, 72-63</td></a><td class="pace" style="color:red">72</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>8-0</td>
 <td class=c>&nbsp;</td><td style="border-left:1px dotted black"></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2025-12-07">Sun Dec 7</a></td>
-<td><span class="seed-gray">47</span></td><td style="text-align:right"><span class="seed">75</span></td><td style="text-align:left"><a href="team.php?team=Creighton">Creighton</a></td><td><a href="box.php?g=1808"><b>W</b>, 71-50</td></a><td class="pace">64</td><td>&nbsp</td></td>
+<td><span class="seed-gray">47</span></td><td style="text-align:right"><span class="seed">76</span></td><td style="text-align:left"><a href="team.php?team=Creighton">Creighton</a></td><td><a href="box.php?g=1808"><b>W</b>, 71-50</td></a><td class="pace">64</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>9-0</td>
 <td class=c>&nbsp;</td><td style="border-left:1px dotted black"></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2025-12-10">Wed Dec 10</a></td>
-<td><span class="seed-gray">42</span></td><td style="text-align:right"><span class="seed">23</span></td><td style="text-align:left"><a href="team.php?team=Wisconsin">Wisconsin</a></td><td><a href="box.php?g=1891"><b>W</b>, 90-60</td></a><td class="pace">70</td><td>&nbsp</td></td>
+<td><span class="seed-gray">42</span></td><td style="text-align:right"><span class="seed">22</span></td><td style="text-align:left"><a href="team.php?team=Wisconsin">Wisconsin</a></td><td><a href="box.php?g=1891"><b>W</b>, 90-60</td></a><td class="pace">70</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>10-0</td>
 <td class=c>1-0</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2025-12-13">Sat Dec 13</a></td>
-<td><span class="seed-gray">27</span></td><td style="text-align:right"><span class="seed">5</span></td><td style="text-align:left"><a href="team.php?team=Illinois">Illinois</a></td><td><a href="box.php?g=1997"><b>W</b>, 83-80</td></a><td class="pace">63</td><td>&nbsp</td></td>
+<td><span class="seed-gray">27</span></td><td style="text-align:right"><span class="seed">7</span></td><td style="text-align:left"><a href="team.php?team=Illinois">Illinois</a></td><td><a href="box.php?g=1997"><b>W</b>, 83-80</td></a><td class="pace">63</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=State+Farm+Center,+Champaign, IL&z=9&num=1&t=m" target="_blank">Away</a></td>
 <td>11-0</td>
 <td class=c>2-0</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2025-12-21">Sun Dec 21</a></td>
-<td><span class="seed-gray">21</span></td><td style="text-align:right"><span class="seed">276</span></td><td style="text-align:left"><a href="team.php?team=North+Dakota">North Dakota</a></td><td><a href="box.php?g=2344"><b>W</b>, 78-55</td></a><td class="pace">67</td><td>&nbsp</td></td>
+<td><span class="seed-gray">21</span></td><td style="text-align:right"><span class="seed">275</span></td><td style="text-align:left"><a href="team.php?team=North+Dakota">North Dakota</a></td><td><a href="box.php?g=2344"><b>W</b>, 78-55</td></a><td class="pace">67</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>12-0</td>
 <td class=c>&nbsp;</td><td style="border-left:1px dotted black"></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2025-12-30">Tue Dec 30</a></td>
-<td><span class="seed-gray">23</span></td><td style="text-align:right"><span class="seed">350</span></td><td style="text-align:left"><a href="team.php?team=New+Hampshire">New Hampshire</a></td><td><a href="box.php?g=2556"><b>W</b>, 86-55</td></a><td class="pace">69</td><td>&nbsp</td></td>
+<td><span class="seed-gray">23</span></td><td style="text-align:right"><span class="seed">349</span></td><td style="text-align:left"><a href="team.php?team=New+Hampshire">New Hampshire</a></td><td><a href="box.php?g=2556"><b>W</b>, 86-55</td></a><td class="pace">69</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>13-0</td>
 <td class=c>&nbsp;</td><td style="border-left:1px dotted black"></td></tr>
@@ -307,49 +307,49 @@
 <td class=c>4-0</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2026-01-10">Sat Jan 10</a></td>
-<td><span class="seed-gray">21</span></td><td style="text-align:right"><span class="seed">42</span></td><td style="text-align:left"><a href="team.php?team=Indiana">Indiana</a></td><td><a href="box.php?g=3100"><b>W</b>, 83-77</td></a><td class="pace">67</td><td>&nbsp</td></td>
+<td><span class="seed-gray">21</span></td><td style="text-align:right"><span class="seed">46</span></td><td style="text-align:left"><a href="team.php?team=Indiana">Indiana</a></td><td><a href="box.php?g=3100"><b>W</b>, 83-77</td></a><td class="pace">67</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Assembly+Hall,+Bloomington, IN&z=9&num=1&t=m" target="_blank">Away</a></td>
 <td>16-0</td>
 <td class=c>5-0</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2026-01-13">Tue Jan 13</a></td>
-<td><span class="seed-gray">17</span></td><td style="text-align:right"><span class="seed">101</span></td><td style="text-align:left"><a href="team.php?team=Oregon">Oregon</a></td><td><a href="box.php?g=3242"><b>W</b>, 90-55</td></a><td class="pace">64</td><td>&nbsp</td></td>
+<td><span class="seed-gray">17</span></td><td style="text-align:right"><span class="seed">99</span></td><td style="text-align:left"><a href="team.php?team=Oregon">Oregon</a></td><td><a href="box.php?g=3242"><b>W</b>, 90-55</td></a><td class="pace">64</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>17-0</td>
 <td class=c>6-0</td><td style="border-left:1px dotted black"></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2026-01-17">Sat Jan 17</a></td>
-<td><span class="seed-gray">16</span></td><td style="text-align:right"><span class="seed">63</span></td><td style="text-align:left"><a href="team.php?team=Northwestern">Northwestern</a></td><td><a href="box.php?g=3475"><b>W</b>, 77-58</td></a><td class="pace" style="color:blue">60</td><td>&nbsp</td></td>
+<td><span class="seed-gray">16</span></td><td style="text-align:right"><span class="seed">57</span></td><td style="text-align:left"><a href="team.php?team=Northwestern">Northwestern</a></td><td><a href="box.php?g=3475"><b>W</b>, 77-58</td></a><td class="pace" style="color:blue">60</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Welsh-Ryan+Arena,+Evanston, IL&z=9&num=1&t=m" target="_blank">Away</a></td>
 <td>18-0</td>
 <td class=c>7-0</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2026-01-21">Wed Jan 21</a></td>
-<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">54</span></td><td style="text-align:left"><a href="team.php?team=Washington">Washington</a></td><td><a href="box.php?g=3637"><b>W</b>, 76-66</td></a><td class="pace">64</td><td>&nbsp</td></td>
+<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">53</span></td><td style="text-align:left"><a href="team.php?team=Washington">Washington</a></td><td><a href="box.php?g=3637"><b>W</b>, 76-66</td></a><td class="pace">64</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>19-0</td>
 <td class=c>8-0</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/b.gif" height="12"/></a></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2026-01-24">Sat Jan 24</a></td>
-<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">73</span></td><td style="text-align:left"><a href="team.php?team=Minnesota">Minnesota</a></td><td><a href="box.php?g=3826"><b>W</b>, 76-57</td></a><td class="pace">65</td><td>&nbsp</td></td>
+<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">77</span></td><td style="text-align:left"><a href="team.php?team=Minnesota">Minnesota</a></td><td><a href="box.php?g=3826"><b>W</b>, 76-57</td></a><td class="pace">65</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Williams+Arena,+Minneapolis, MN&z=9&num=1&t=m" target="_blank">Away</a></td>
 <td>20-0</td>
-<td class=c>9-0</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
+<td class=c>9-0</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/b.gif" height="12"/></a></td></tr>
 <tr class="l">
 <td><a href="fanmatch.php?d=2026-01-27">Tue Jan 27</a></td>
-<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">2</span></td><td style="text-align:left"><a href="team.php?team=Michigan">Michigan</a></td><td><a href="box.php?g=3909"><b>L</b>, 75-72</td></a><td class="pace" style="color:red">71</td><td>&nbsp</td></td>
+<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">3</span></td><td style="text-align:left"><a href="team.php?team=Michigan">Michigan</a></td><td><a href="box.php?g=3909"><b>L</b>, 75-72</td></a><td class="pace" style="color:red">71</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Crisler+Center,+Ann Arbor, MI&z=9&num=1&t=m" target="_blank">Away</a></td>
 <td>20-1</td>
 <td class=c>9-1</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
 <tr class="l">
 <td><a href="fanmatch.php?d=2026-02-01">Sun Feb 1</a></td>
-<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">5</span></td><td style="text-align:left"><a href="team.php?team=Illinois">Illinois</a></td><td><a href="box.php?g=4217"><b>L</b>, 78-69</td></a><td class="pace">63</td><td>&nbsp</td></td>
+<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">7</span></td><td style="text-align:left"><a href="team.php?team=Illinois">Illinois</a></td><td><a href="box.php?g=4217"><b>L</b>, 78-69</td></a><td class="pace">63</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>20-2</td>
 <td class=c>9-2</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2026-02-07">Sat Feb 7</a></td>
-<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">129</span></td><td style="text-align:left"><a href="team.php?team=Rutgers">Rutgers</a></td><td><a href="box.php?g=4473"><b>W</b>, 80-68</td></a><td class="pace">68</td><td>&nbsp</td></td>
+<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">124</span></td><td style="text-align:left"><a href="team.php?team=Rutgers">Rutgers</a></td><td><a href="box.php?g=4473"><b>W</b>, 80-68</td></a><td class="pace">68</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Jersey+Mike%27s+Arena,+Piscataway, NJ&z=9&num=1&t=m" target="_blank">Away</a></td>
 <td>21-2</td>
 <td class=c>10-2</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/b.gif" height="12"/></a></td></tr>
@@ -361,46 +361,59 @@
 <td class=c>10-3</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2026-02-14">Sat Feb 14</a></td>
-<td><span class="seed-gray">14</span></td><td style="text-align:right"><span class="seed">63</span></td><td style="text-align:left"><a href="team.php?team=Northwestern">Northwestern</a></td><td><a href="box.php?g=4818"><b>W</b>, 68-49</td></a><td class="pace">64</td><td>&nbsp</td></td>
+<td><span class="seed-gray">14</span></td><td style="text-align:right"><span class="seed">57</span></td><td style="text-align:left"><a href="team.php?team=Northwestern">Northwestern</a></td><td><a href="box.php?g=4818"><b>W</b>, 68-49</td></a><td class="pace">64</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>22-3</td>
 <td class=c>11-3</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/b.gif" height="12"/></a></td></tr>
 <tr class="l">
 <td><a href="fanmatch.php?d=2026-02-17">Tue Feb 17</a></td>
-<td><span class="seed-gray">11</span></td><td style="text-align:right"><span class="seed">24</span></td><td style="text-align:left"><a href="team.php?team=Iowa">Iowa</a></td><td><a href="box.php?g=4914"><b>L</b>, 57-52</td></a><td class="pace" style="color:blue">60</td><td>&nbsp</td></td>
+<td><span class="seed-gray">11</span></td><td style="text-align:right"><span class="seed">25</span></td><td style="text-align:left"><a href="team.php?team=Iowa">Iowa</a></td><td><a href="box.php?g=4914"><b>L</b>, 57-52</td></a><td class="pace" style="color:blue">60</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Carver-Hawkeye+Arena,+Iowa City, IA&z=9&num=1&t=m" target="_blank">Away</a></td>
 <td>22-4</td>
 <td class=c>11-4</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2026-02-21">Sat Feb 21</a></td>
-<td><span class="seed-gray">11</span></td><td style="text-align:right"><span class="seed">137</span></td><td style="text-align:left"><a href="team.php?team=Penn+St.">Penn St.</a></td><td><a href="box.php?g=5163"><b>W</b>, 87-64</td></a><td class="pace">69</td><td>&nbsp</td></td>
+<td><span class="seed-gray">11</span></td><td style="text-align:right"><span class="seed">138</span></td><td style="text-align:left"><a href="team.php?team=Penn+St.">Penn St.</a></td><td><a href="box.php?g=5163"><b>W</b>, 87-64</td></a><td class="pace">69</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>23-4</td>
 <td class=c>12-4</td><td style="border-left:1px dotted black"></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2026-02-25">Wed Feb 25</a></td>
-<td><span class="seed-gray">11</span></td><td style="text-align:right"><span class="seed">121</span></td><td style="text-align:left"><a href="team.php?team=Maryland">Maryland</a></td><td><a href="box.php?g=5298"><b>W</b>, 74-61</td></a><td class="pace">64</td><td>&nbsp</td></td>
+<td><span class="seed-gray">11</span></td><td style="text-align:right"><span class="seed">120</span></td><td style="text-align:left"><a href="team.php?team=Maryland">Maryland</a></td><td><a href="box.php?g=5298"><b>W</b>, 74-61</td></a><td class="pace">64</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>24-4</td>
 <td class=c>13-4</td><td style="border-left:1px dotted black"></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2026-02-28">Sat Feb 28</a></td>
-<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">77</span></td><td style="text-align:left"><a href="team.php?team=USC">USC</a></td><td><a href="box.php?g=5530"><b>W</b>, 82-67</td></a><td class="pace">69</td><td>&nbsp</td></td>
+<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">80</span></td><td style="text-align:left"><a href="team.php?team=USC">USC</a></td><td><a href="box.php?g=5530"><b>W</b>, 82-67</td></a><td class="pace">69</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Galen+Center,+Los Angeles, CA&z=9&num=1&t=m" target="_blank">Away</a></td>
 <td>25-4</td>
-<td class=c>14-4</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
+<td class=c>14-4</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/b.gif" height="12"/></a></td></tr>
 <tr class="l">
 <td><a href="fanmatch.php?d=2026-03-03">Tue Mar 3</a></td>
-<td><span class="seed-gray">11</span></td><td style="text-align:right"><span class="seed">28</span></td><td style="text-align:left"><a href="team.php?team=UCLA">UCLA</a></td><td><a href="box.php?g=5618"><b>L</b>, 72-52</td></a><td class="pace" style="color:blue">61</td><td>&nbsp</td></td>
+<td><span class="seed-gray">11</span></td><td style="text-align:right"><span class="seed">27</span></td><td style="text-align:left"><a href="team.php?team=UCLA">UCLA</a></td><td><a href="box.php?g=5618"><b>L</b>, 72-52</td></a><td class="pace" style="color:blue">61</td><td>&nbsp</td></td>
 <td><a href="https://maps.google.com?q=Pauley+Pavilion,+Los Angeles, CA&z=9&num=1&t=m" target="_blank">Away</a></td>
 <td>25-5</td>
 <td class=c>14-5</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
 <tr class="w">
 <td><a href="fanmatch.php?d=2026-03-08">Sun Mar 8</a></td>
-<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">24</span></td><td style="text-align:left"><a href="team.php?team=Iowa">Iowa</a></td><td><a href="box.php?g=5746"><b>W</b>, 84-75</td></a><td class="pace">74</td><td>OT</td></td>
+<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">25</span></td><td style="text-align:left"><a href="team.php?team=Iowa">Iowa</a></td><td><a href="box.php?g=5746"><b>W</b>, 84-75</td></a><td class="pace">74</td><td>OT</td></td>
 <td><a href="https://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln, NE&z=9&num=1&t=m" target="_blank">Home</a></td>
 <td>26-5</td>
 <td class=c>15-5</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
+<tr><td class="label" colspan=11>Big Ten Conference Tournament</td></tr>
+<tr class="l">
+<td><a href="fanmatch.php?d=2026-03-13">Fri Mar 13</a></td>
+<td><span class="seed-gray">12</span></td><td style="text-align:right"><span class="seed">8</span></td><td style="text-align:left"><a href="team.php?team=Purdue">Purdue</a></td><td><a href="box.php?g=6151"><b>L</b>, 74-58</td></a><td class="pace" style="color:blue">60</td><td>&nbsp</td></td>
+<td><a title="Chicago, IL" href="https://maps.google.com?q=United+Center,+Chicago, IL&z=9&num=1&t=m"  target="_blank">Neutral</a></td>
+<td>26-6</td>
+<td class=c>&nbsp;</td><td style="border-left:1px dotted black"><a href="blog/tiers-of-joy"><img src="assets/a.gif" height="12"/></a></td></tr>
+<tr><td class="label" colspan=11>NCAA Tournament - 4 seed</td></tr>
+<tr class="un">
+<td><a href="fanmatch.php?d=2026-03-19">Thu Mar 19</a></td>
+<td></td><td style="text-align:right"><span class="seed">143</span></td><td style="text-align:left"><a href="team.php?team=Troy">Troy</a></td><td><a href="gameprep.php?g=6208"><b>W</b>, 77-61</a></td><td class="pace">65</td><td>92%</td><td><a title="Oklahoma City, OK" href="https://maps.google.com?q=Paycom+Center,+Oklahoma City, OK&z=9&num=1&t=m"  target="_blank">Neutral</a></td>
+<td>&nbsp;</td>
+<td class=c>&nbsp;</td><td style="border-left:1px dotted black"></td></tr>
 <tr><td colspan="11" style="text-align:left">Home games played at <a href="http://maps.google.com?q=Pinnacle+Bank+Arena,+Lincoln,+NE&z=9&num=1&t=m" target="_blank">Pinnacle Bank Arena</a> (15,000, <a href='arenas.php'>27th largest</a> in D-I)</td></tr>
 <tr><td colspan="11" style="text-align:left"><a href='https://kenpom.com/hca.php'>Home court advantage</a>: 3.3 (66th in D-I)</td></tr>
 </tbody></table>
@@ -415,7 +428,7 @@
     <h3>Player Stats <a href="blog/help-with-team-page/"><img src="assets/help.gif" style="vertical-align:top"></a></h3>
 
 <a href="player-expanded.php?team=Nebraska">Expanded Player Page</a>
-<span class='player-update'>Stats include games against <b>D-I</b> teams through <strong>Wednesday, March 11</strong></span><span class='player-update'>2278 players eligible for national rank. (1280 in eFG%, TS%, and FTRate.)</span>    </div>
+<span class='player-update'>Stats include games against <b>D-I</b> teams through <strong>Sunday, March 15</strong></span><span class='player-update'>2274 players eligible for national rank. (1282 in eFG%, TS%, and FTRate.)</span>    </div>
     <div id="players-stats">
     <table id="player-table">
     <thead>
@@ -450,48 +463,48 @@
     <tr class="label"><td>&nbsp;</td><td class="extra-padding">Major Contributors (24-28% of possessions used)</td><td colspan=26></td></tr>
 <tr class="player"><td style='text-align: right'>51</td><td style="text-align:left"><a href="player.php?p=46882"><b>Rienk Mast</b></a>
        <span class="plrank">National Rank</span></td>
-<td>6-10</td><td>250</td><td>Sr</td><td class='G'>30</td><td class='S'>30</td>
-<td class="divide">69.2</td><td class="divide">112.4</td><td>25.9<span class="plrank">267</span></td><td>26.6<span class="plrank">293</span></td><td class="divide">51.5</td><td>54.9</td><td class="divide">9.3<span class="plrank">305</span></td><td>14.1</td><td class="divide">19.8<span class="plrank">441</span></td><td>13.7</td><td class="divide">1.3</td><td>0.9</td><td class="divide">2.4<span class="plrank">423</span></td><td>3.6</td><td>22.9</td><td class="divide">63-77</td><td>.818<span class="plrank">292</span></td><td class="divide">107-199</td><td>.538</td><td class="divide">44-137</td><td>.321</td></tr>
+<td>6-10</td><td>250</td><td>Sr</td><td class='G'>31</td><td class='S'>31</td>
+<td class="divide">69.5</td><td class="divide">112.7</td><td>25.7<span class="plrank">291</span></td><td>26.4<span class="plrank">304</span></td><td class="divide">51.7</td><td>55.0</td><td class="divide">9.3<span class="plrank">315</span></td><td>13.7</td><td class="divide">19.9<span class="plrank">435</span></td><td>13.7</td><td class="divide">1.2</td><td>0.9</td><td class="divide">2.4<span class="plrank">424</span></td><td>3.5</td><td>22.3</td><td class="divide">63-77</td><td>.818<span class="plrank">291</span></td><td class="divide">108-200</td><td>.540</td><td class="divide">47-145</td><td>.324</td></tr>
+<tr class="player"><td style='text-align: right'>15</td><td style="text-align:left"><a href="player.php?p=49675">Jared Garcia</a></td>
+<td>6-8</td><td>235</td><td>Sr</td><td class='G'>27</td><td class='S'></td>
+<td class="divide">17.7</td><td class="divide">85.8</td><td>24.6</td><td>23.4</td><td class="divide">39.7</td><td>45.7</td><td class="divide">5.3</td><td>24.4</td><td class="divide">7.0</td><td>20.2</td><td class="divide">8.4</td><td>1.3</td><td class="divide">3.5</td><td>4.2</td><td>34.6</td><td class="divide">21-27</td><td>.778</td><td class="divide">16-37</td><td>.432</td><td class="divide">10-41</td><td>.244</td></tr>
 <tr class="label"><td>&nbsp;</td><td class="extra-padding">Significant Contributors (20-24% of possessions used)</td><td colspan=26></td></tr>
 <tr class="player"><td style='text-align: right'>21</td><td style="text-align:left"><a href="player.php?p=54492"><b>Pryce Sandfort</b></a>
        <span class="plrank">National Rank</span></td>
-<td>6-7</td><td>210</td><td>Jr</td><td class='G'>31</td><td class='S'>31</td>
-<td class="divide">82.6<span class="plrank">171</span></td><td class="divide">126.8<span class="plrank">110</span></td><td>21.2</td><td>26.7<span class="plrank">274</span></td><td class="divide">60.9<span class="plrank">88</span></td><td>63.2<span class="plrank">102</span></td><td class="divide">2.5</td><td>14.0</td><td class="divide">12.2</td><td>6.0<span class="plrank">14</span></td><td class="divide">1.2</td><td>1.8</td><td class="divide">2.0<span class="plrank">196</span></td><td>3.0</td><td>18.6</td><td class="divide">64-75</td><td>.853<span class="plrank">147</span></td><td class="divide">81-130</td><td>.623<span class="plrank">194</span></td><td class="divide">110-274</td><td>.401<span class="plrank">223</span></td></tr>
+<td>6-7</td><td>210</td><td>Jr</td><td class='G'>32</td><td class='S'>32</td>
+<td class="divide">82.8<span class="plrank">173</span></td><td class="divide">126.5<span class="plrank">106</span></td><td>21.2</td><td>26.8<span class="plrank">263</span></td><td class="divide">60.6<span class="plrank">91</span></td><td>62.9<span class="plrank">106</span></td><td class="divide">2.4</td><td>14.0</td><td class="divide">12.3</td><td>5.8<span class="plrank">12</span></td><td class="divide">1.1</td><td>1.8</td><td class="divide">2.0<span class="plrank">175</span></td><td>3.0</td><td>17.9</td><td class="divide">64-75</td><td>.853<span class="plrank">138</span></td><td class="divide">84-136</td><td>.618<span class="plrank">204</span></td><td class="divide">113-282</td><td>.401<span class="plrank">216</span></td></tr>
 <tr class="player"><td style='text-align: right'>10</td><td style="text-align:left"><a href="player.php?p=52822"><b>Jamarques Lawrence</b></a>
        <span class="plrank">National Rank</span></td>
-<td>6-3</td><td>185</td><td>Sr</td><td class='G'>31</td><td class='S'>31</td>
-<td class="divide">70.2</td><td class="divide">105.7</td><td>21.2</td><td>19.1</td><td class="divide">51.8</td><td>54.9</td><td class="divide">1.5</td><td>8.7</td><td class="divide">25.3<span class="plrank">196</span></td><td>20.4</td><td class="divide">0.2</td><td>1.9</td><td class="divide">3.4</td><td>3.1</td><td>28.2</td><td class="divide">51-69</td><td>.739</td><td class="divide">52-106</td><td>.491</td><td class="divide">50-139</td><td>.360</td></tr>
+<td>6-3</td><td>185</td><td>Sr</td><td class='G'>32</td><td class='S'>32</td>
+<td class="divide">70.1</td><td class="divide">104.3</td><td>21.2</td><td>19.1</td><td class="divide">51.2</td><td>54.3</td><td class="divide">1.5</td><td>8.5</td><td class="divide">24.9<span class="plrank">208</span></td><td>20.7</td><td class="divide">0.1</td><td>1.9</td><td class="divide">3.4</td><td>3.2</td><td>28.6</td><td class="divide">53-72</td><td>.736</td><td class="divide">54-109</td><td>.495</td><td class="divide">50-143</td><td>.350</td></tr>
 <tr class="player"><td style='text-align: right'>5</td><td style="text-align:left"><a href="player.php?p=56186">Braden Frager</a>
        <span class="plrank">National Rank</span></td>
-<td>6-7</td><td>215</td><td>Fr</td><td class='G'>29</td><td class='S'>2</td>
-<td class="divide">54.6</td><td class="divide">117.8</td><td>21.6</td><td>23.6</td><td class="divide">59.1</td><td>62.7</td><td class="divide">5.3</td><td>13.7</td><td class="divide">7.7</td><td>12.5</td><td class="divide">0.4</td><td>1.8</td><td class="divide">2.2<span class="plrank">263</span></td><td>3.8</td><td>31.5</td><td class="divide">61-74</td><td>.824<span class="plrank">261</span></td><td class="divide">67-97</td><td>.691<span class="plrank">36</span></td><td class="divide">48-138</td><td>.348</td></tr>
-<tr class="player"><td style='text-align: right'>15</td><td style="text-align:left"><a href="player.php?p=49675">Jared Garcia</a></td>
-<td>6-8</td><td>235</td><td>Sr</td><td class='G'>26</td><td class='S'></td>
-<td class="divide">17.2</td><td class="divide">88.2</td><td>23.4</td><td>22.3</td><td class="divide">40.0</td><td>46.5</td><td class="divide">5.0</td><td>24.3</td><td class="divide">6.5</td><td>18.9</td><td class="divide">8.9</td><td>1.1</td><td class="divide">3.5</td><td>4.3</td><td>38.6</td><td class="divide">21-27</td><td>.778</td><td class="divide">16-34</td><td>.471</td><td class="divide">8-36</td><td>.222</td></tr>
+<td>6-7</td><td>215</td><td>Fr</td><td class='G'>30</td><td class='S'>2</td>
+<td class="divide">54.3</td><td class="divide">117.9</td><td>21.5</td><td>23.5</td><td class="divide">59.1</td><td>62.6</td><td class="divide">5.2</td><td>13.5</td><td class="divide">7.8</td><td>12.2<span class="plrank">464</span></td><td class="divide">0.4</td><td>1.8</td><td class="divide">2.1<span class="plrank">222</span></td><td>3.8</td><td>31.5</td><td class="divide">62-76</td><td>.816<span class="plrank">304</span></td><td class="divide">69-100</td><td>.690<span class="plrank">38</span></td><td class="divide">49-141</td><td>.348</td></tr>
 <tr class="label"><td>&nbsp;</td><td class="extra-padding">Role Players (16-20% of possessions used)</td><td colspan=26></td></tr>
 <tr class="player"><td style='text-align: right'>9</td><td style="text-align:left"><a href="player.php?p=55278"><b>Berke Buyuktuncel</b></a>
        <span class="plrank">National Rank</span></td>
-<td>6-10</td><td>244</td><td>Jr</td><td class='G'>29</td><td class='S'>29</td>
-<td class="divide">55.9</td><td class="divide">109.2</td><td>17.4</td><td>14.7</td><td class="divide">50.0</td><td>52.9</td><td class="divide">8.6<span class="plrank">379</span></td><td>17.5<span class="plrank">393</span></td><td class="divide">14.0</td><td>17.1</td><td class="divide">6.0<span class="plrank">122</span></td><td>2.2</td><td class="divide">3.0</td><td>3.2</td><td>41.3</td><td class="divide">40-62</td><td>.645</td><td class="divide">60-104</td><td>.577<span class="plrank">452</span></td><td class="divide">10-46</td><td>.217</td></tr>
+<td>6-10</td><td>244</td><td>Jr</td><td class='G'>30</td><td class='S'>30</td>
+<td class="divide">55.7</td><td class="divide">108.4</td><td>17.4</td><td>14.6</td><td class="divide">49.7</td><td>52.4</td><td class="divide">8.9<span class="plrank">351</span></td><td>17.1<span class="plrank">435</span></td><td class="divide">13.9</td><td>17.1</td><td class="divide">5.9<span class="plrank">129</span></td><td>2.1</td><td class="divide">3.0</td><td>3.3</td><td>43.1</td><td class="divide">41-66</td><td>.621</td><td class="divide">61-107</td><td>.570<span class="plrank">498</span></td><td class="divide">10-46</td><td>.217</td></tr>
 <tr class="label"><td>&nbsp;</td><td class="extra-padding">Limited roles (12-16% of possessions used)</td><td colspan=26></td></tr>
 <tr class="player"><td style='text-align: right'>1</td><td style="text-align:left"><a href="player.php?p=51082"><b>Sam Hoiberg</b></a>
        <span class="plrank">National Rank</span></td>
-<td>6-0</td><td>180</td><td>Sr</td><td class='G'>31</td><td class='S'>31</td>
-<td class="divide">79.3<span class="plrank">296</span></td><td class="divide">132.5<span class="plrank">36</span></td><td>15.2</td><td>14.2</td><td class="divide">62.9<span class="plrank">51</span></td><td>64.7<span class="plrank">58</span></td><td class="divide">3.4</td><td>14.8</td><td class="divide">23.6<span class="plrank">256</span></td><td>13.0</td><td class="divide">0.4</td><td>4.0<span class="plrank">45</span></td><td class="divide">3.2</td><td>2.4</td><td>28.2</td><td class="divide">43-58</td><td>.741</td><td class="divide">83-129</td><td>.643<span class="plrank">127</span></td><td class="divide">31-77</td><td>.403<span class="plrank">207</span></td></tr>
+<td>6-0</td><td>180</td><td>Sr</td><td class='G'>32</td><td class='S'>32</td>
+<td class="divide">79.4<span class="plrank">295</span></td><td class="divide">131.4<span class="plrank">41</span></td><td>15.2</td><td>14.2</td><td class="divide">62.3<span class="plrank">53</span></td><td>64.1<span class="plrank">67</span></td><td class="divide">3.5</td><td>15.0</td><td class="divide">23.6<span class="plrank">253</span></td><td>13.4</td><td class="divide">0.4</td><td>3.9<span class="plrank">47</span></td><td class="divide">3.2</td><td>2.4</td><td>27.4</td><td class="divide">43-58</td><td>.741</td><td class="divide">84-132</td><td>.636<span class="plrank">133</span></td><td class="divide">32-80</td><td>.400<span class="plrank">225</span></td></tr>
 <tr class="player"><td style='text-align: right'>31</td><td style="text-align:left"><a href="player.php?p=52823">Cale Jacobsen</a>
        <span class="plrank">National Rank</span></td>
-<td>6-4</td><td>195</td><td>Jr</td><td class='G'>31</td><td class='S'>1</td>
-<td class="divide">50.2</td><td class="divide">117.1</td><td>12.3</td><td>11.7</td><td class="divide">59.8</td><td>59.9</td><td class="divide">3.1</td><td>12.9</td><td class="divide">11.6</td><td>14.5</td><td class="divide">1.7</td><td>3.1<span class="plrank">182</span></td><td class="divide">3.4</td><td>2.4</td><td>37.4</td><td class="divide">23-40</td><td>.575</td><td class="divide">43-70</td><td>.614<span class="plrank">228</span></td><td class="divide">14-37</td><td>.378</td></tr>
+<td>6-4</td><td>195</td><td>Jr</td><td class='G'>32</td><td class='S'>1</td>
+<td class="divide">50.2</td><td class="divide">118.0</td><td>12.3</td><td>11.6</td><td class="divide">60.0</td><td>60.1</td><td class="divide">3.2</td><td>12.9</td><td class="divide">11.8</td><td>14.2</td><td class="divide">2.1</td><td>3.1<span class="plrank">168</span></td><td class="divide">3.5</td><td>2.4</td><td>36.4</td><td class="divide">23-40</td><td>.575</td><td class="divide">45-73</td><td>.616<span class="plrank">209</span></td><td class="divide">14-37</td><td>.378</td></tr>
 <tr class="label"><td>&nbsp;</td><td class="extra-padding">Benchwarmers (played in fewer than 10% of team's minutes)</td><td colspan=26>&nbsp;</td></tr>
 <tr class="benchwarmer"><td style='text-align: right'>0</td><td style="text-align:left"><a href="player.php?p=53276">Connor Essegian</a></td>
 <td>6-4</td><td>205</td><td>Sr</td><td class='G'>7</td><td class='S'></td>
-<td class="divide">7.8</td><td class="divide">84.7</td><td>25.4</td><td>31.0</td><td class="divide">40.9</td><td>41.4</td><td class="divide">2.5</td><td>8.0</td><td class="divide">11.5</td><td>12.0</td><td class="divide">0.0</td><td>1.2</td><td class="divide">2.5</td><td>2.5</td><td>9.1</td><td class="divide">2-4</td><td>.500</td><td class="divide">6-13</td><td>.462</td><td class="divide">8-31</td><td>.258</td></tr>
+<td class="divide">7.5</td><td class="divide">84.7</td><td>25.4</td><td>31.1</td><td class="divide">40.9</td><td>41.4</td><td class="divide">2.5</td><td>8.1</td><td class="divide">11.6</td><td>12.1</td><td class="divide">0.0</td><td>1.2</td><td class="divide">2.5</td><td>2.5</td><td>9.1</td><td class="divide">2-4</td><td>.500</td><td class="divide">6-13</td><td>.462</td><td class="divide">8-31</td><td>.258</td></tr>
+<tr class="benchwarmer"><td style='text-align: right'>2</td><td style="text-align:left"><a href="player.php?p=52999">Kendall Blue</a></td>
+<td>6-6</td><td>200</td><td>Sr</td><td class='G'>18</td><td class='S'></td>
+<td class="divide">4.8</td><td class="divide">75.2</td><td>16.3</td><td>12.2</td><td class="divide">50.0</td><td>54.4</td><td class="divide">0.0</td><td>9.0</td><td class="divide">10.5</td><td>41.1</td><td class="divide">0.0</td><td>0.0</td><td class="divide">3.9</td><td>1.9</td><td>18.2</td><td class="divide">2-2</td><td>.999</td><td class="divide">1-4</td><td>.250</td><td class="divide">3-7</td><td>.429</td></tr>
 <tr class="benchwarmer"><td style='text-align: right'>33</td><td style="text-align:left"><a href="player.php?p=57916">Leo Curtis</a></td>
 <td>7-2</td><td>245</td><td>Fr</td><td class='G'>15</td><td class='S'></td>
-<td class="divide">5.0</td><td class="divide">119.1</td><td>21.6</td><td>16.5</td><td class="divide">60.0</td><td>66.5</td><td class="divide">13.6</td><td>3.6</td><td class="divide">12.0</td><td>22.1</td><td class="divide">2.2</td><td>1.9</td><td class="divide">4.5</td><td>4.3</td><td>53.3</td><td class="divide">7-8</td><td>.875</td><td class="divide">9-13</td><td>.692</td><td class="divide">0-2</td><td>.000</td></tr>
-<tr class="benchwarmer"><td style='text-align: right'>2</td><td style="text-align:left"><a href="player.php?p=52999">Kendall Blue</a></td>
-<td>6-6</td><td>200</td><td>Sr</td><td class='G'>17</td><td class='S'></td>
-<td class="divide">4.9</td><td class="divide">75.2</td><td>16.6</td><td>12.3</td><td class="divide">50.0</td><td>54.4</td><td class="divide">0.0</td><td>9.1</td><td class="divide">10.6</td><td>41.1</td><td class="divide">0.0</td><td>0.0</td><td class="divide">3.9</td><td>1.9</td><td>18.2</td><td class="divide">2-2</td><td>.999</td><td class="divide">1-4</td><td>.250</td><td class="divide">3-7</td><td>.429</td></tr>
+<td class="divide">4.8</td><td class="divide">119.0</td><td>21.6</td><td>16.6</td><td class="divide">60.0</td><td>66.5</td><td class="divide">13.6</td><td>3.6</td><td class="divide">12.1</td><td>22.2</td><td class="divide">2.2</td><td>1.9</td><td class="divide">4.5</td><td>4.3</td><td>53.3</td><td class="divide">7-8</td><td>.875</td><td class="divide">9-13</td><td>.692</td><td class="divide">0-2</td><td>.000</td></tr>
 
 </tbody></table>
 
@@ -504,17 +517,18 @@
 <tr><td style="min-width:150px; border-right:1px solid" colspan="2">PG</td><td style="min-width:150px; border-right:1px solid" colspan="2">SG</td><td style="min-width:150px; border-right:1px solid" colspan="2">SF</td><td style="min-width:150px; border-right:1px solid" colspan="2">PF</td><td style="min-width:150px" colspan="2">C</td></tr>
 </thead><tbody>
 <tr>
-<td><div style="border:1px dotted #555; background-color:#a8fbaf; padding:1px 2px"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><br/><span class="seed-gray">6-0 &nbsp;180 &nbsp;Sr</div></td><td style="border-right:1px solid">81%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:2px solid #000; background-color:#81fc87; padding:1px 2px"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><br/><span class="seed-gray">6-3 &nbsp;185 &nbsp;Sr</div></td><td style="border-right:1px solid">59%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:2px solid #000; background-color:#65fd6a; padding:1px 2px"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><br/><span class="seed-gray">6-7 &nbsp;210 &nbsp;Jr</div></td><td style="border-right:1px solid">74%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:2px solid #000; background-color:#7ffc84; padding:1px 2px"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><br/><span class="seed-gray">6-7 &nbsp;215 &nbsp;Fr</div></td><td style="border-right:1px solid">50%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:3px solid #000; background-color:#9ffca6; padding:1px 2px"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><br/><span class="seed-gray">6-10 &nbsp;250 &nbsp;Sr</div></td><td>71%<span class="seed-gray display-block">&nbsp;</span></span></td></tr>
+<td><div style="border:1px dotted #555; background-color:#a7fbae; padding:1px 2px"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><br/><span class="seed-gray">6-0 &nbsp;180 &nbsp;Sr</div></td><td style="border-right:1px solid">80%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:2px solid #000; background-color:#81fc87; padding:1px 2px"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><br/><span class="seed-gray">6-3 &nbsp;185 &nbsp;Sr</div></td><td style="border-right:1px solid">58%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:2px solid #000; background-color:#66fd6a; padding:1px 2px"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><br/><span class="seed-gray">6-7 &nbsp;210 &nbsp;Jr</div></td><td style="border-right:1px solid">77%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:2px solid #000; background-color:#7ffc85; padding:1px 2px"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><br/><span class="seed-gray">6-7 &nbsp;215 &nbsp;Fr</div></td><td style="border-right:1px solid">48%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:3px solid #000; background-color:#9cfca3; padding:1px 2px"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><br/><span class="seed-gray">6-10 &nbsp;250 &nbsp;Sr</div></td><td>72%<span class="seed-gray display-block">&nbsp;</span></span></td></tr>
 <tr>
-<td><div style="border:2px solid #000; background-color:#81fc87; padding:1px 2px"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><br/><span class="seed-gray">6-3 &nbsp;185 &nbsp;Sr</div></td><td style="border-right:1px solid">17%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:1px dotted #555; background-color:#b0fbb8; padding:1px 2px"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><br/><span class="seed-gray">6-4 &nbsp;195 &nbsp;Jr</div></td><td style="border-right:1px solid">32%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:1px dotted #555; background-color:#b0fbb8; padding:1px 2px"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><br/><span class="seed-gray">6-4 &nbsp;195 &nbsp;Jr</div></td><td style="border-right:1px solid">13%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:1px solid #555; background-color:#b8fbc0; padding:1px 2px"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><br/><span class="seed-gray">6-10 &nbsp;244 &nbsp;Jr</div></td><td style="border-right:1px solid">22%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:1px solid #555; background-color:#b8fbc0; padding:1px 2px"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><br/><span class="seed-gray">6-10 &nbsp;244 &nbsp;Jr</div></td><td>22%<span class="seed-gray display-block">&nbsp;</span></span></td></tr>
-<tr>
-<td></td><td style="border-right:1px solid"></td>
-<td><div style="border:2px solid #000; background-color:#65fd6a; padding:1px 2px"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><br/><span class="seed-gray">6-7 &nbsp;210 &nbsp;Jr</div></td><td style="border-right:1px solid">7%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:2px solid #000; background-color:#7ffc84; padding:1px 2px"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><br/><span class="seed-gray">6-7 &nbsp;215 &nbsp;Fr</div></td><td style="border-right:1px solid">12%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:2px solid #000; background-color:#90fc96; padding:1px 2px"><span class="seed-gray">15</span> <a href="player.php?p=49675">Jared Garcia</a><br/><span class="seed-gray">6-8 &nbsp;235 &nbsp;Sr</div></td><td style="border-right:1px solid">20%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:2px solid #000; background-color:#dafae4; padding:1px 2px"><span class="seed-gray">33</span> <a href="player.php?p=57916">Leo Curtis</a><br/><span class="seed-gray">7-2 &nbsp;245 &nbsp;Fr</div></td><td>6%<span class="seed-gray display-block">&nbsp;</span></span></td></tr>
+<td><div style="border:2px solid #000; background-color:#81fc87; padding:1px 2px"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><br/><span class="seed-gray">6-3 &nbsp;185 &nbsp;Sr</div></td><td style="border-right:1px solid">18%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:1px dotted #555; background-color:#b1fbb9; padding:1px 2px"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><br/><span class="seed-gray">6-4 &nbsp;195 &nbsp;Jr</div></td><td style="border-right:1px solid">34%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:2px solid #000; background-color:#7ffc85; padding:1px 2px"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><br/><span class="seed-gray">6-7 &nbsp;215 &nbsp;Fr</div></td><td style="border-right:1px solid">12%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:1px solid #555; background-color:#bafbc2; padding:1px 2px"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><br/><span class="seed-gray">6-10 &nbsp;244 &nbsp;Jr</div></td><td style="border-right:1px solid">30%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:1px solid #555; background-color:#bafbc2; padding:1px 2px"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><br/><span class="seed-gray">6-10 &nbsp;244 &nbsp;Jr</div></td><td>26%<span class="seed-gray display-block">&nbsp;</span></span></td></tr>
 <tr>
 <td></td><td style="border-right:1px solid"></td>
+<td><div style="border:2px solid #000; background-color:#66fd6a; padding:1px 2px"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><br/><span class="seed-gray">6-7 &nbsp;210 &nbsp;Jr</div></td><td style="border-right:1px solid">6%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:1px dotted #555; background-color:#b1fbb9; padding:1px 2px"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><br/><span class="seed-gray">6-4 &nbsp;195 &nbsp;Jr</div></td><td style="border-right:1px solid">10%<span class="seed-gray display-block">&nbsp;</span></span></td><td><div style="border:3px solid #000; background-color:#8cfc92; padding:1px 2px"><span class="seed-gray">15</span> <a href="player.php?p=49675">Jared Garcia</a><br/><span class="seed-gray">6-8 &nbsp;235 &nbsp;Sr</div></td><td style="border-right:1px solid">16%<span class="seed-gray display-block">&nbsp;</span></span></td><td></td><td></td>
+</tr>
+<tr>
 <td></td><td style="border-right:1px solid"></td>
 <td></td><td style="border-right:1px solid"></td>
-<td><div style="border:2px solid #000; background-color:#65fd6a; padding:1px 2px"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><br/><span class="seed-gray">6-7 &nbsp;210 &nbsp;Jr</div></td><td style="border-right:1px solid">8%<span class="seed-gray display-block">&nbsp;</span></span></td><td></td><td></td>
+<td></td><td style="border-right:1px solid"></td>
+<td><div style="border:2px solid #000; background-color:#66fd6a; padding:1px 2px"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><br/><span class="seed-gray">6-7 &nbsp;210 &nbsp;Jr</div></td><td style="border-right:1px solid">6%<span class="seed-gray display-block">&nbsp;</span></span></td><td></td><td></td>
 </tr>
 
 </tbody></table>
@@ -524,16 +538,16 @@
 <table id="dc-table2">
 <tr><td></td><td style="min-width:150px">PG</td><td style="min-width:150px">SG</td><td style="min-width:150px">SF</td><td style="min-width:150px">PF</td><td style="min-width:150px">C</td><td>Pct</td></tr>
 
-<tr><td>1</td><td><div style="border:1px dotted #555; background-color:#a8fbaf"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#65fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#7ffc84"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><span class="seed-gray display-block">6-7 &nbsp;215 &nbsp;Fr</span></div></td><td><div style="border:3px solid #000; background-color:#9ffca6"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><span class="seed-gray display-block">6-10 &nbsp;250 &nbsp;Sr</span></div></td><td>21.2<br /><span class="seed-gray">&nbsp;</span></td></tr>
-<tr><td>2</td><td><div style="border:1px dotted #555; background-color:#a8fbaf"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#65fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:1px solid #555; background-color:#b8fbc0"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><span class="seed-gray display-block">6-10 &nbsp;244 &nbsp;Jr</span></div></td><td><div style="border:3px solid #000; background-color:#9ffca6"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><span class="seed-gray display-block">6-10 &nbsp;250 &nbsp;Sr</span></div></td><td>18.7<br /><span class="seed-gray">&nbsp;</span></td></tr>
-<tr><td>3</td><td><div style="border:1px dotted #555; background-color:#a8fbaf"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b0fbb8"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#65fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#7ffc84"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><span class="seed-gray display-block">6-7 &nbsp;215 &nbsp;Fr</span></div></td><td><div style="border:3px solid #000; background-color:#9ffca6"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><span class="seed-gray display-block">6-10 &nbsp;250 &nbsp;Sr</span></div></td><td>7.5<br /><span class="seed-gray">&nbsp;</span></td></tr>
-<tr><td>4</td><td><div style="border:1px dotted #555; background-color:#a8fbaf"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b0fbb8"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#65fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#7ffc84"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><span class="seed-gray display-block">6-7 &nbsp;215 &nbsp;Fr</span></div></td><td><div style="border:1px solid #555; background-color:#b8fbc0"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><span class="seed-gray display-block">6-10 &nbsp;244 &nbsp;Jr</span></div></td><td>5.8<br /><span class="seed-gray">&nbsp;</span></td></tr>
-<tr><td>5</td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b0fbb8"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#65fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#7ffc84"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><span class="seed-gray display-block">6-7 &nbsp;215 &nbsp;Fr</span></div></td><td><div style="border:3px solid #000; background-color:#9ffca6"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><span class="seed-gray display-block">6-10 &nbsp;250 &nbsp;Sr</span></div></td><td>4.8<br /><span class="seed-gray">&nbsp;</span></td></tr>
-<tr><td>6</td><td><div style="border:1px dotted #555; background-color:#a8fbaf"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b0fbb8"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#65fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:3px solid #000; background-color:#9ffca6"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><span class="seed-gray display-block">6-10 &nbsp;250 &nbsp;Sr</span></div></td><td>4.2<br /><span class="seed-gray">&nbsp;</span></td></tr>
-<tr><td>7</td><td><div style="border:1px dotted #555; background-color:#a8fbaf"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#65fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#7ffc84"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><span class="seed-gray display-block">6-7 &nbsp;215 &nbsp;Fr</span></div></td><td><div style="border:1px solid #555; background-color:#b8fbc0"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><span class="seed-gray display-block">6-10 &nbsp;244 &nbsp;Jr</span></div></td><td>3.4<br /><span class="seed-gray">&nbsp;</span></td></tr>
-<tr><td>8</td><td><div style="border:1px dotted #555; background-color:#a8fbaf"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b0fbb8"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#65fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:1px solid #555; background-color:#b8fbc0"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><span class="seed-gray display-block">6-10 &nbsp;244 &nbsp;Jr</span></div></td><td>3.2<br /><span class="seed-gray">&nbsp;</span></td></tr>
-<tr><td>9</td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b0fbb8"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#65fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#7ffc84"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><span class="seed-gray display-block">6-7 &nbsp;215 &nbsp;Fr</span></div></td><td><div style="border:1px solid #555; background-color:#b8fbc0"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><span class="seed-gray display-block">6-10 &nbsp;244 &nbsp;Jr</span></div></td><td>3.1<br /><span class="seed-gray">&nbsp;</span></td></tr>
-<tr><td>10</td><td><div style="border:1px dotted #555; background-color:#a8fbaf"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#65fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#90fc96"><span class="seed-gray">15</span> <a href="player.php?p=49675">Jared Garcia</a><span class="seed-gray display-block">6-8 &nbsp;235 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#dafae4"><span class="seed-gray">33</span> <a href="player.php?p=57916">Leo Curtis</a><span class="seed-gray display-block">7-2 &nbsp;245 &nbsp;Fr</span></div></td><td>2.2<br /><span class="seed-gray">&nbsp;</span></td></tr>
+<tr><td>1</td><td><div style="border:1px dotted #555; background-color:#a7fbae"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#66fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:1px solid #555; background-color:#bafbc2"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><span class="seed-gray display-block">6-10 &nbsp;244 &nbsp;Jr</span></div></td><td><div style="border:3px solid #000; background-color:#9cfca3"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><span class="seed-gray display-block">6-10 &nbsp;250 &nbsp;Sr</span></div></td><td>24.9<br /><span class="seed-gray">&nbsp;</span></td></tr>
+<tr><td>2</td><td><div style="border:1px dotted #555; background-color:#a7fbae"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#66fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#7ffc85"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><span class="seed-gray display-block">6-7 &nbsp;215 &nbsp;Fr</span></div></td><td><div style="border:3px solid #000; background-color:#9cfca3"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><span class="seed-gray display-block">6-10 &nbsp;250 &nbsp;Sr</span></div></td><td>16.2<br /><span class="seed-gray">&nbsp;</span></td></tr>
+<tr><td>3</td><td><div style="border:1px dotted #555; background-color:#a7fbae"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b1fbb9"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#66fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#7ffc85"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><span class="seed-gray display-block">6-7 &nbsp;215 &nbsp;Fr</span></div></td><td><div style="border:3px solid #000; background-color:#9cfca3"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><span class="seed-gray display-block">6-10 &nbsp;250 &nbsp;Sr</span></div></td><td>8.6<br /><span class="seed-gray">&nbsp;</span></td></tr>
+<tr><td>4</td><td><div style="border:1px dotted #555; background-color:#a7fbae"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b1fbb9"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#66fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#7ffc85"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><span class="seed-gray display-block">6-7 &nbsp;215 &nbsp;Fr</span></div></td><td><div style="border:1px solid #555; background-color:#bafbc2"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><span class="seed-gray display-block">6-10 &nbsp;244 &nbsp;Jr</span></div></td><td>5.9<br /><span class="seed-gray">&nbsp;</span></td></tr>
+<tr><td>5</td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b1fbb9"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#66fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#7ffc85"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><span class="seed-gray display-block">6-7 &nbsp;215 &nbsp;Fr</span></div></td><td><div style="border:3px solid #000; background-color:#9cfca3"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><span class="seed-gray display-block">6-10 &nbsp;250 &nbsp;Sr</span></div></td><td>5.0<br /><span class="seed-gray">&nbsp;</span></td></tr>
+<tr><td>6</td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b1fbb9"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#66fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#7ffc85"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><span class="seed-gray display-block">6-7 &nbsp;215 &nbsp;Fr</span></div></td><td><div style="border:1px solid #555; background-color:#bafbc2"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><span class="seed-gray display-block">6-10 &nbsp;244 &nbsp;Jr</span></div></td><td>3.9<br /><span class="seed-gray">&nbsp;</span></td></tr>
+<tr><td>7</td><td><div style="border:1px dotted #555; background-color:#a7fbae"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#66fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#7ffc85"><span class="seed-gray">5</span> <a href="player.php?p=56186">Braden Frager</a><span class="seed-gray display-block">6-7 &nbsp;215 &nbsp;Fr</span></div></td><td><div style="border:1px solid #555; background-color:#bafbc2"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><span class="seed-gray display-block">6-10 &nbsp;244 &nbsp;Jr</span></div></td><td>3.7<br /><span class="seed-gray">&nbsp;</span></td></tr>
+<tr><td>8</td><td><div style="border:1px dotted #555; background-color:#a7fbae"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b1fbb9"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#66fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:1px solid #555; background-color:#bafbc2"><span class="seed-gray">9</span> <a href="player.php?p=55278">Berke Buyuktuncel</a><span class="seed-gray display-block">6-10 &nbsp;244 &nbsp;Jr</span></div></td><td>3.2<br /><span class="seed-gray">&nbsp;</span></td></tr>
+<tr><td>9</td><td><div style="border:1px dotted #555; background-color:#a7fbae"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b1fbb9"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#66fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:3px solid #000; background-color:#8cfc92"><span class="seed-gray">15</span> <a href="player.php?p=49675">Jared Garcia</a><span class="seed-gray display-block">6-8 &nbsp;235 &nbsp;Sr</span></div></td><td><div style="border:3px solid #000; background-color:#9cfca3"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><span class="seed-gray display-block">6-10 &nbsp;250 &nbsp;Sr</span></div></td><td>2.9<br /><span class="seed-gray">&nbsp;</span></td></tr>
+<tr><td>10</td><td><div style="border:1px dotted #555; background-color:#a7fbae"><span class="seed-gray">1</span> <a href="player.php?p=51082">Sam Hoiberg</a><span class="seed-gray display-block">6-0 &nbsp;180 &nbsp;Sr</span></div></td><td><div style="border:2px solid #000; background-color:#81fc87"><span class="seed-gray">10</span> <a href="player.php?p=52822">Jamarques Lawrence</a><span class="seed-gray display-block">6-3 &nbsp;185 &nbsp;Sr</span></div></td><td><div style="border:1px dotted #555; background-color:#b1fbb9"><span class="seed-gray">31</span> <a href="player.php?p=52823">Cale Jacobsen</a><span class="seed-gray display-block">6-4 &nbsp;195 &nbsp;Jr</span></div></td><td><div style="border:2px solid #000; background-color:#66fd6a"><span class="seed-gray">21</span> <a href="player.php?p=54492">Pryce Sandfort</a><span class="seed-gray display-block">6-7 &nbsp;210 &nbsp;Jr</span></div></td><td><div style="border:3px solid #000; background-color:#9cfca3"><span class="seed-gray">51</span> <a href="player.php?p=46882">Rienk Mast</a><span class="seed-gray display-block">6-10 &nbsp;250 &nbsp;Sr</span></div></td><td>2.3<br /><span class="seed-gray">&nbsp;</span></td></tr>
 <tr><td colspan="5"></td><td>UNKNOWN</td><td>2.1</td></tr>
 <tr><td colspan="7" style="text-align:left">Border thickness proportional to player %Poss, green shading proportional to 3PA/(.475*FTA+FGA)</td></tr>
 <tr><td colspan="7" style="text-align:left">Position designation is estimated by an algorithm and may not reflect reality.</td></tr>
@@ -556,61 +570,61 @@ $("td#DE").html("<a href=\"summary.php?s=RankAdjDE\">99.8</a> <span class=\"seed
 $("td#DE").css("background-color",getColor(1,18,1));
 $("td#Tempo").html("<span style=\"background-color:#f3f7f1; padding:3px 8px\"><a href=\"summary.php?s=RankAdjTempo\">65.5</a> <span class=\"seed\">8</span></span>");
 $("td#APLO").html("<a href=\"summary.php?s=RankAPL_Off\">17.4</a> <span class=\"seed\">3</span>");
-$("td#APLO").css("background-color",getTempoColor(3,18,31));
+$("td#APLO").css("background-color",getTempoColor(3,18,32));
 $("td#APLD").html("<a href=\"summary.php?s=RankAPL_Def\">19.3</a> <span class=\"seed\">18</span>");
-$("td#APLD").css("background-color",getTempoColor(18,18,31));
+$("td#APLD").css("background-color",getTempoColor(18,18,32));
 $("td#eFG").html("<a href=\"stats.php?s=RankeFG_Pct\">55.8</a> <span class=\"seed\">5</span>");
-$("td#eFG").css("background-color",getColor(5,18,31));
+$("td#eFG").css("background-color",getColor(5,18,32));
 $("td#DeFG").html("<a href=\"stats.php?s=RankDeFG_Pct\">49.3</a> <span class=\"seed\">3</span>");
-$("td#DeFG").css("background-color",getColor(3,18,31));
+$("td#DeFG").css("background-color",getColor(3,18,32));
 $("td#TOPct").html("<a href=\"stats.php?s=RankTO_Pct\">14.6</a> <span class=\"seed\">8</span>");
-$("td#TOPct").css("background-color",getColor(8,18,31));
+$("td#TOPct").css("background-color",getColor(8,18,32));
 $("td#DTOPct").html("<a href=\"stats.php?s=RankDTO_Pct\">19.4</a> <span class=\"seed\">1</span>");
-$("td#DTOPct").css("background-color",getColor(1,18,31));
+$("td#DTOPct").css("background-color",getColor(1,18,32));
 $("td#ORPct").html("<a href=\"stats.php?s=RankOR_Pct\">24.7</a> <span class=\"seed\">15</span>");
-$("td#ORPct").css("background-color",getColor(15,18,31));
+$("td#ORPct").css("background-color",getColor(15,18,32));
 $("td#DORPct").html("<a href=\"stats.php?s=RankDOR_Pct\">27.6</a> <span class=\"seed\">5</span>");
-$("td#DORPct").css("background-color",getColor(5,18,31));
+$("td#DORPct").css("background-color",getColor(5,18,32));
 $("td#FTR").html("<a href=\"stats.php?s=RankFT_Rate\">24.0</a> <span class=\"seed\">18</span>");
-$("td#FTR").css("background-color",getColor(18,18,31));
+$("td#FTR").css("background-color",getColor(18,18,32));
 $("td#DFTR").html("<a href=\"stats.php?s=RankDFT_Rate\">27.0</a> <span class=\"seed\">4</span>");
-$("td#DFTR").css("background-color",getColor(4,18,31));
+$("td#DFTR").css("background-color",getColor(4,18,32));
 				$("td#3Pct").html("<a href=\"teamstats.php?s=RankFG3Pct\">36.7</a> <span class=\"seed\">6</span>");
-				$("td#3Pct").css("background-color",getColor(6,18,31));
+				$("td#3Pct").css("background-color",getColor(6,18,32));
 				$("td#D3Pct").html("<a href=\"teamstats.php?s=RankFG3Pct&od=d\">29.7</a> <span class=\"seed\">1</span>");
-				$("td#D3Pct").css("background-color",getColor(1,18,31));
+				$("td#D3Pct").css("background-color",getColor(1,18,32));
 				$("td#2Pct").html("<a href=\"teamstats.php?s=RankFG2Pct\">56.5</a> <span class=\"seed\">5</span>");
-				$("td#2Pct").css("background-color",getColor(5,18,31));
+				$("td#2Pct").css("background-color",getColor(5,18,32));
 				$("td#D2Pct").html("<a href=\"teamstats.php?s=RankFG2Pct&od=d\">53.7</a> <span class=\"seed\">7</span>");
-				$("td#D2Pct").css("background-color",getColor(7,18,31));
+				$("td#D2Pct").css("background-color",getColor(7,18,32));
 				$("td#FTPct").html("<a href=\"teamstats.php?s=RankFTPct\">77.3</a> <span class=\"seed\">7</span>");
-				$("td#FTPct").css("background-color",getColor(7,18,31));
+				$("td#FTPct").css("background-color",getColor(7,18,32));
 				$("td#DFTPct").html("<a href=\"teamstats.php?s=RankFTPct&od=d\">71.9</a> <span class=\"seed\">1</span>");
-				$("td#DFTPct").css("background-color",getColor(1,18,31));
+				$("td#DFTPct").css("background-color",getColor(1,18,32));
 	$("td#BlockPct").html("<a href=\"teamstats.php?s=RankBlockPct\">9.2</a> <span class=\"seed\">10</span>");
-$("td#BlockPct").css("background-color",getColor(10,18,31));
+$("td#BlockPct").css("background-color",getColor(10,18,32));
 	$("td#DBlockPct").html("<a href=\"teamstats.php?s=RankBlockPct&od=d\">9.0</a> <span class=\"seed\">9</span>");
-$("td#DBlockPct").css("background-color",getColor(9,18,31));
+$("td#DBlockPct").css("background-color",getColor(9,18,32));
 	$("td#StlRate").html("<a href=\"teamstats.php?s=RankStlRate\">6.8</a> <span class=\"seed\">3</span>");
-$("td#StlRate").css("background-color",getColor(3,18,31));
+$("td#StlRate").css("background-color",getColor(3,18,32));
 $("td#DStlRate").html("<a href=\"teamstats.php?s=RankStlRate&od=d\">11.2</a> <span class=\"seed\">1</span>");
-$("td#DStlRate").css("background-color",getColor(1,18,31));
+$("td#DStlRate").css("background-color",getColor(1,18,32));
 	$("td#NSTRate").html("<a href=\"teamstats.php?s=RankNSTRate\">7.8</a> <span class=\"seed\">15</span>");
-$("td#NSTRate").css("background-color",getColor(15,18,31));
+$("td#NSTRate").css("background-color",getColor(15,18,32));
 	$("td#DNSTRate").html("<a href=\"teamstats.php?s=RankNSTRate&od=d\">8.2</a> <span class=\"seed\">4</span>");
-$("td#DNSTRate").css("background-color",getColor(4,18,31));
+$("td#DNSTRate").css("background-color",getColor(4,18,32));
 	$("td#ShotDist").html("<a href=\"teamstats.php?s=RankShotDist&od=d\">5.5</a> <span class=\"seed\">4</span>");
-$("td#ShotDist").css("background-color",getColor(4,18,31));
+$("td#ShotDist").css("background-color",getColor(4,18,32));
 	$("td#DShotDist").html("<a href=\"teamstats.php?s=RankShotDist&od=d\">7.0</a> <span class=\"seed\">3</span>");
-$("td#DShotDist").css("background-color",getColor(3,18,31));
+$("td#DShotDist").css("background-color",getColor(3,18,32));
 	$("td#3PARate").html("<a href=\"teamstats.php?s=RankF3GRate\">51.0</a> <span class=\"seed\">4</span>");
-$("td#3PARate").css("background-color",getTempoColor(4,18,31));
+$("td#3PARate").css("background-color",getTempoColor(4,18,32));
 	$("td#D3PARate").html("<a href=\"teamstats.php?s=RankF3GRate&od=d\">47.5</a> <span class=\"seed\">18</span>");
-$("td#D3PARate").css("background-color",getTempoColor(18,18,31));
+$("td#D3PARate").css("background-color",getTempoColor(18,18,32));
 	$("td#ARate").html("<a href=\"teamstats.php?s=RankARate\">66.0</a> <span class=\"seed\">2</span>");
-$("td#ARate").css("background-color",getTempoColor(2,18,31));
+$("td#ARate").css("background-color",getTempoColor(2,18,32));
 	$("td#DARate").html("<a href=\"teamstats.php?s=RankARate&od=d\">62.0</a> <span class=\"seed\">15</span>");
-$("td#DARate").css("background-color",getTempoColor(15,18,31));
+$("td#DARate").css("background-color",getTempoColor(15,18,32));
 				$("td#PD3").html("<a href=\"pointdist.php?s=RankOff_3\">43.1</a> <span class=\"seed\">2</span>");
 				$("td#DPD3").html("<a href=\"pointdist.php?s=RankDef_3\">35.8</a> <span class=\"seed\">5</span>");
 				$("td#PD2").html("<a href=\"pointdist.php?s=RankOff_2\">42.6</a> <span class=\"seed\">16</span>");
@@ -625,73 +639,73 @@ $("td#DARate").css("background-color",getTempoColor(15,18,31));
 function tableStart() {
     $("td#effText").html("Adj. Efficiency");
     $("td#tempoText").html("Adj. Tempo");
-    $("td#OE").html("<a href=\"summary.php?s=RankAdjOE\">119.5</a> <span class=\"seed\">54</span>");
-$("td#OE").css("background-color",getColor(54,365,31));
-$("td#DE").html("<a href=\"summary.php?s=RankAdjDE\">92.5</a> <span class=\"seed\">6</span>");
-$("td#DE").css("background-color",getColor(6,365,31));
-$("td#Tempo").html("<span style=\"background-color:#ecf9fd; padding:3px 8px\"><a href=\"summary.php?s=RankAdjTempo\">66.8</a> <span class=\"seed\">209</span></span>");
-$("td#APLO").html("<a href=\"summary.php?s=RankAPL_Off\">16.9</a> <span class=\"seed\">93</span>");
-$("td#APLO").css("background-color",getTempoColor(93,365,31));
-$("td#APLD").html("<a href=\"summary.php?s=RankAPL_Def\">18.7</a> <span class=\"seed\">357</span>");
-$("td#APLD").css("background-color",getTempoColor(357,365,31));
-			$("td#eFG").html("<a href=\"stats.php?s=RankeFG_Pct\">55.7</a> <span class=\"seed\">30</span>");
-			$("td#eFG").css("background-color",getColor(30,365,31));
-			$("td#DeFG").html("<a href=\"stats.php?s=RankDeFG_Pct\">47.6</a> <span class=\"seed\">35</span>");
-			$("td#DeFG").css("background-color",getColor(35,365,31));
-			$("td#TOPct").html("<a href=\"stats.php?s=RankTO_Pct\">14.3</a> <span class=\"seed\">34</span>");
-			$("td#TOPct").css("background-color",getColor(34,365,31));
-			$("td#DTOPct").html("<a href=\"stats.php?s=RankDTO_Pct\">19.3</a> <span class=\"seed\">41</span>");
-			$("td#DTOPct").css("background-color",getColor(41,365,31));
-			$("td#ORPct").html("<a href=\"stats.php?s=RankOR_Pct\">26.2</a> <span class=\"seed\">319</span>");
-			$("td#ORPct").css("background-color",getColor(319,365,31));
-			$("td#DORPct").html("<a href=\"stats.php?s=RankDOR_Pct\">27.3</a> <span class=\"seed\">47</span>");
-			$("td#DORPct").css("background-color",getColor(47,365,31));
-			$("td#FTR").html("<a href=\"stats.php?s=RankFT_Rate\">27.5</a> <span class=\"seed\">345</span>");
-			$("td#FTR").css("background-color",getColor(345,365,31));
+    $("td#OE").html("<a href=\"summary.php?s=RankAdjOE\">118.5</a> <span class=\"seed\">55</span>");
+$("td#OE").css("background-color",getColor(55,365,32));
+$("td#DE").html("<a href=\"summary.php?s=RankAdjDE\">92.4</a> <span class=\"seed\">7</span>");
+$("td#DE").css("background-color",getColor(7,365,32));
+$("td#Tempo").html("<span style=\"background-color:#eaf7fd; padding:3px 8px\"><a href=\"summary.php?s=RankAdjTempo\">66.7</a> <span class=\"seed\">218</span></span>");
+$("td#APLO").html("<a href=\"summary.php?s=RankAPL_Off\">16.9</a> <span class=\"seed\">98</span>");
+$("td#APLO").css("background-color",getTempoColor(98,365,32));
+$("td#APLD").html("<a href=\"summary.php?s=RankAPL_Def\">18.8</a> <span class=\"seed\">358</span>");
+$("td#APLD").css("background-color",getTempoColor(358,365,32));
+			$("td#eFG").html("<a href=\"stats.php?s=RankeFG_Pct\">55.4</a> <span class=\"seed\">30</span>");
+			$("td#eFG").css("background-color",getColor(30,365,32));
+			$("td#DeFG").html("<a href=\"stats.php?s=RankDeFG_Pct\">47.8</a> <span class=\"seed\">38</span>");
+			$("td#DeFG").css("background-color",getColor(38,365,32));
+			$("td#TOPct").html("<a href=\"stats.php?s=RankTO_Pct\">14.4</a> <span class=\"seed\">36</span>");
+			$("td#TOPct").css("background-color",getColor(36,365,32));
+			$("td#DTOPct").html("<a href=\"stats.php?s=RankDTO_Pct\">19.2</a> <span class=\"seed\">44</span>");
+			$("td#DTOPct").css("background-color",getColor(44,365,32));
+			$("td#ORPct").html("<a href=\"stats.php?s=RankOR_Pct\">26.3</a> <span class=\"seed\">314</span>");
+			$("td#ORPct").css("background-color",getColor(314,365,32));
+			$("td#DORPct").html("<a href=\"stats.php?s=RankDOR_Pct\">27.7</a> <span class=\"seed\">56</span>");
+			$("td#DORPct").css("background-color",getColor(56,365,32));
+			$("td#FTR").html("<a href=\"stats.php?s=RankFT_Rate\">27.2</a> <span class=\"seed\">350</span>");
+			$("td#FTR").css("background-color",getColor(350,365,32));
 			$("td#DFTR").html("<a href=\"stats.php?s=RankDFT_Rate\">24.8</a> <span class=\"seed\">6</span>");
-			$("td#DFTR").css("background-color",getColor(6,365,31));
-			$("td#3Pct").html("<a href=\"teamstats.php?s=RankFG3Pct\">35.4</a> <span class=\"seed\">100</span>");
-			$("td#3Pct").css("background-color",getColor(100,365,31));
-			$("td#D3Pct").html("<a href=\"teamstats.php?s=RankFG3Pct&od=d\">29.8</a> <span class=\"seed\">10</span>");
-			$("td#D3Pct").css("background-color",getColor(10,365,31));
-			$("td#2Pct").html("<a href=\"teamstats.php?s=RankFG2Pct\">58.4</a> <span class=\"seed\">19</span>");
-			$("td#2Pct").css("background-color",getColor(19,365,31));
-	$("td#D2Pct").html("<a href=\"teamstats.php?s=RankFG2Pct&od=d\">50.4</a> <span class=\"seed\">116</span>");
-$("td#D2Pct").css("background-color",getColor(116,365,31));
-	$("td#FTPct").html("<a href=\"teamstats.php?s=RankFTPct\">75.5</a> <span class=\"seed\">69</span>");
-$("td#FTPct").css("background-color",getColor(69,365,31));
-	$("td#DFTPct").html("<a href=\"teamstats.php?s=RankFTPct&od=d\">72.2</a> <span class=\"seed\">170</span>");
-	$("td#DFTPct").css("background-color",getColor(170,365,31));
-	$("td#BlockPct").html("<a href=\"teamstats.php?s=RankBlockPct\">9.2</a> <span class=\"seed\">167</span>");
-	$("td#BlockPct").css("background-color",getColor(167,365,31));
-	$("td#DBlockPct").html("<a href=\"teamstats.php?s=RankBlockPct&od=d\">8.7</a> <span class=\"seed\">217</span>");
-$("td#DBlockPct").css("background-color",getColor(217,365,31));
-	$("td#StlRate").html("<a href=\"teamstats.php?s=RankStlRate\">7.3</a> <span class=\"seed\">14</span>");
-$("td#StlRate").css("background-color",getColor(14,365,31));
-	$("td#DStlRate").html("<a href=\"teamstats.php?s=RankStlRate&od=d\">10.8</a> <span class=\"seed\">86</span>");
-$("td#DStlRate").css("background-color",getColor(86,365,31));
-	$("td#NSTRate").html("<a href=\"teamstats.php?s=RankNSTRate\">7.0</a> <span class=\"seed\">158</span>");
-$("td#NSTRate").css("background-color",getColor(158,365,31));
-	$("td#DNSTRate").html("<a href=\"teamstats.php?s=RankNSTRate&od=d\">8.5</a> <span class=\"seed\">43</span>");
-$("td#DNSTRate").css("background-color",getColor(43,365,31));
-	$("td#ShotDist").html("<a href=\"teamstats.php?s=RankShotDist&od=o\">5.3</a> <span class=\"seed\">80</span>");
-$("td#ShotDist").css("background-color",getColor(80,365,31));
-	$("td#DShotDist").html("<a href=\"teamstats.php?s=RankShotDist&od=d\">7.2</a> <span class=\"seed\">8</span>");
-$("td#DShotDist").css("background-color",getColor(8,365,31));
-	$("td#3PARate").html("<a href=\"teamstats.php?s=RankF3GRate\">50.6</a> <span class=\"seed\">15</span>");
-$("td#3PARate").css("background-color",getTempoColor(15,365,31));
-	$("td#D3PARate").html("<a href=\"teamstats.php?s=RankF3GRate&od=d\">49.1</a> <span class=\"seed\">361</span>");
-$("td#D3PARate").css("background-color",getTempoColor(361,365,31));
-	$("td#ARate").html("<a href=\"teamstats.php?s=RankARate\">65.5</a> <span class=\"seed\">5</span>");
-$("td#ARate").css("background-color",getTempoColor(5,365,31));
-$("td#DARate").html("<a href=\"teamstats.php?s=RankARate&od=d\">59.9</a> <span class=\"seed\">336</span>");
-$("td#DARate").css("background-color",getTempoColor(336,365,31));
-			$("td#PD3").html("<a href=\"pointdist.php?s=RankOff_3\">40.6</a> <span class=\"seed\">13</span>");
-			$("td#DPD3").html("<a href=\"pointdist.php?s=RankDef_3\">38.9</a> <span class=\"seed\">8</span>");
-			$("td#PD2").html("<a href=\"pointdist.php?s=RankOff_2\">43.6</a> <span class=\"seed\">316</span>");
-			$("td#DPD2").html("<a href=\"pointdist.php?s=RankDef_2\">45.3</a> <span class=\"seed\">314</span>");
-			$("td#PD1").html("<a href=\"pointdist.php?s=RankOff_1\">15.7</a> <span class=\"seed\">353</span>");
-			$("td#DPD1").html("<a href=\"pointdist.php?s=RankDef_1\">15.8</a> <span class=\"seed\">348</span>");
+			$("td#DFTR").css("background-color",getColor(6,365,32));
+			$("td#3Pct").html("<a href=\"teamstats.php?s=RankFG3Pct\">35.3</a> <span class=\"seed\">103</span>");
+			$("td#3Pct").css("background-color",getColor(103,365,32));
+			$("td#D3Pct").html("<a href=\"teamstats.php?s=RankFG3Pct&od=d\">29.9</a> <span class=\"seed\">7</span>");
+			$("td#D3Pct").css("background-color",getColor(7,365,32));
+			$("td#2Pct").html("<a href=\"teamstats.php?s=RankFG2Pct\">58.1</a> <span class=\"seed\">21</span>");
+			$("td#2Pct").css("background-color",getColor(21,365,32));
+	$("td#D2Pct").html("<a href=\"teamstats.php?s=RankFG2Pct&od=d\">50.6</a> <span class=\"seed\">124</span>");
+$("td#D2Pct").css("background-color",getColor(124,365,32));
+	$("td#FTPct").html("<a href=\"teamstats.php?s=RankFTPct\">75.0</a> <span class=\"seed\">84</span>");
+$("td#FTPct").css("background-color",getColor(84,365,32));
+	$("td#DFTPct").html("<a href=\"teamstats.php?s=RankFTPct&od=d\">72.6</a> <span class=\"seed\">194</span>");
+	$("td#DFTPct").css("background-color",getColor(194,365,32));
+	$("td#BlockPct").html("<a href=\"teamstats.php?s=RankBlockPct\">9.2</a> <span class=\"seed\">158</span>");
+	$("td#BlockPct").css("background-color",getColor(158,365,32));
+	$("td#DBlockPct").html("<a href=\"teamstats.php?s=RankBlockPct&od=d\">8.7</a> <span class=\"seed\">216</span>");
+$("td#DBlockPct").css("background-color",getColor(216,365,32));
+	$("td#StlRate").html("<a href=\"teamstats.php?s=RankStlRate\">7.4</a> <span class=\"seed\">17</span>");
+$("td#StlRate").css("background-color",getColor(17,365,32));
+	$("td#DStlRate").html("<a href=\"teamstats.php?s=RankStlRate&od=d\">10.7</a> <span class=\"seed\">91</span>");
+$("td#DStlRate").css("background-color",getColor(91,365,32));
+	$("td#NSTRate").html("<a href=\"teamstats.php?s=RankNSTRate\">7.0</a> <span class=\"seed\">157</span>");
+$("td#NSTRate").css("background-color",getColor(157,365,32));
+	$("td#DNSTRate").html("<a href=\"teamstats.php?s=RankNSTRate&od=d\">8.5</a> <span class=\"seed\">39</span>");
+$("td#DNSTRate").css("background-color",getColor(39,365,32));
+	$("td#ShotDist").html("<a href=\"teamstats.php?s=RankShotDist&od=o\">5.4</a> <span class=\"seed\">83</span>");
+$("td#ShotDist").css("background-color",getColor(83,365,32));
+	$("td#DShotDist").html("<a href=\"teamstats.php?s=RankShotDist&od=d\">7.2</a> <span class=\"seed\">5</span>");
+$("td#DShotDist").css("background-color",getColor(5,365,32));
+	$("td#3PARate").html("<a href=\"teamstats.php?s=RankF3GRate\">50.7</a> <span class=\"seed\">11</span>");
+$("td#3PARate").css("background-color",getTempoColor(11,365,32));
+	$("td#D3PARate").html("<a href=\"teamstats.php?s=RankF3GRate&od=d\">49.3</a> <span class=\"seed\">361</span>");
+$("td#D3PARate").css("background-color",getTempoColor(361,365,32));
+	$("td#ARate").html("<a href=\"teamstats.php?s=RankARate\">65.5</a> <span class=\"seed\">6</span>");
+$("td#ARate").css("background-color",getTempoColor(6,365,32));
+$("td#DARate").html("<a href=\"teamstats.php?s=RankARate&od=d\">60.5</a> <span class=\"seed\">341</span>");
+$("td#DARate").css("background-color",getTempoColor(341,365,32));
+			$("td#PD3").html("<a href=\"pointdist.php?s=RankOff_3\">40.9</a> <span class=\"seed\">12</span>");
+			$("td#DPD3").html("<a href=\"pointdist.php?s=RankDef_3\">38.9</a> <span class=\"seed\">6</span>");
+			$("td#PD2").html("<a href=\"pointdist.php?s=RankOff_2\">43.6</a> <span class=\"seed\">317</span>");
+			$("td#DPD2").html("<a href=\"pointdist.php?s=RankDef_2\">45.2</a> <span class=\"seed\">315</span>");
+			$("td#PD1").html("<a href=\"pointdist.php?s=RankOff_1\">15.5</a> <span class=\"seed\">354</span>");
+			$("td#DPD1").html("<a href=\"pointdist.php?s=RankDef_1\">15.9</a> <span class=\"seed\">347</span>");
 
 }
 
@@ -768,7 +782,7 @@ function getTempoColor(rank,teams,games) {
 <span class="mobileHide">| <a href="terms.php">Terms of Use</a> | <a href="privacy.php">Privacy Policy</a> | Stats provided by <a href="https://stats.com">STATS Perform</a><br /></span>
 </footer>
 
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9dadbea0ac1be566',t:'MTc3MzI2NTUxMA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9dd0ed97c83bcc1a',t:'MTc3MzYzNDQzNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.min.css">
 <script type="text/javascript" src="https://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>

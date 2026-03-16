@@ -29,7 +29,7 @@
 <div id="container">
 <!-- <div id='login-container'> -->
 <div id="logged-in">
-<span class="mobileHide"> Logged in as: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e2968b8f968a878f8d90838ca2858f838b8ecc818d8f">[email&#160;protected]</a> (<a href="team.php?team=Illinois">Illinois</a> <i>next: Thu vs. <a href="team.php?team=Penn">Penn</a></i>)</span> <span class="mobileHide">|</span> <a href="account.php">Manage Account</a> (<span style="background-color:yellow"><span style=color:red>expires 3/17/26 <a href="register-kenpom.php">Renew here!</a></span>)
+<span class="mobileHide"> Logged in as: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d8acb1b5acb0bdb5b7aab9b698bfb5b9b1b4f6bbb7b5">[email&#160;protected]</a> (<a href="team.php?team=Illinois">Illinois</a> <i>next: Thu vs. <a href="team.php?team=Penn">Penn</a></i>)</span> <span class="mobileHide">|</span> <a href="account.php">Manage Account</a> (<span style="background-color:yellow"><span style=color:red>expires 3/17/26 <a href="register-kenpom.php">Renew here!</a></span>)
     <!-- new navigation bar -->
     <div id="logo-header">
         <div id="tagline-container">
@@ -793,7 +793,7 @@ function getTempoColor(rank,teams,games) {
 <span class="mobileHide">| <a href="terms.php">Terms of Use</a> | <a href="privacy.php">Privacy Policy</a> | Stats provided by <a href="https://stats.com">STATS Perform</a><br /></span>
 </footer>
 
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9dcf58377c6ae1f3',t:'MTc3MzYxNzgzMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9dd0ed06a8c3cc1a',t:'MTc3MzYzNDQxMg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.min.css">
 <script type="text/javascript" src="https://code.jquery.com/ui/1.11.0/jquery-ui.min.js"></script>

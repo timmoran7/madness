@@ -556,9 +556,9 @@ def fetchTopTeams(given_top_teams, year, andRank=False, quads=False):
             safe_filename = name.replace(' ', '_').replace('.', '').replace("'", '')
             output_file = os.path.join(output_dir, f'{safe_filename}.txt')
 
-            if os.path.exists(output_file):
-                print(f"Skipping {name}; file already exists")
-                continue
+            # if os.path.exists(output_file):
+            #     print(f"Skipping {name}; file already exists")
+            #     continue
             
             response = fetchTeamQuadPage(quadName, cookie_value) if quads else fetchTeamPage(phpName, kp_cookie_value, year)
             # Save response to file

@@ -42,17 +42,17 @@
 				<div style="margin-top:4px;margin-left:32px;">
 					NET: 50
 					
-						<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;text-indent: 0;"></i>
+						<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;text-indent: 0;"></i>
 					
 					<br/>
-					Previous: 48
+					Previous: 51
 					<br/>
 					Record: 16-16 (Conf: 6-12)
 				</div>
 			</div>
 		</div>
 		<div class="info">
-    NET Ranks through Mar 10 2026 and Game Results through Mar 10 2026
+    NET Ranks through Mar 14 2026 and Game Results through Mar 14 2026
     
 </div>
 		<div class="quads">
@@ -83,10 +83,10 @@
 								</td>
 								<td><div class="tooltipa">81-96 <span class="tooltiptext smalltooltip">11/25/2025</span></div></td>
 								<td>Neutral</td>
-								<td>(21)</td>
+								<td>(15)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
 									
 								</td>
 								<td>
@@ -110,7 +110,7 @@
 								<td>(47)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -141,10 +141,10 @@
 								</td>
 								<td><div class="tooltipa">63-69 <span class="tooltiptext smalltooltip">01/03/2026</span></div></td>
 								<td>Away</td>
-								<td>(41)</td>
+								<td>(39)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -165,7 +165,7 @@
 								</td>
 								<td><div class="tooltipa">60-70 <span class="tooltiptext smalltooltip">01/07/2026</span></div></td>
 								<td>Home</td>
-								<td>(8)</td>
+								<td>(7)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -189,7 +189,7 @@
 								</td>
 								<td><div class="tooltipa">55-77 <span class="tooltiptext smalltooltip">01/10/2026</span></div></td>
 								<td>Home</td>
-								<td>(7)</td>
+								<td>(5)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -213,10 +213,10 @@
 								</td>
 								<td><div class="tooltipa">94-79 <span class="tooltiptext smalltooltip">01/13/2026</span></div></td>
 								<td>Away</td>
-								<td>(72)</td>
+								<td>(75)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -237,7 +237,7 @@
 								</td>
 								<td><div class="tooltipa">62-80 <span class="tooltiptext smalltooltip">01/16/2026</span></div></td>
 								<td>Away</td>
-								<td>(19)</td>
+								<td>(21)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -261,10 +261,10 @@
 								</td>
 								<td><div class="tooltipa">73-92 <span class="tooltiptext smalltooltip">01/20/2026</span></div></td>
 								<td>Home</td>
-								<td>(15)</td>
+								<td>(19)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -287,10 +287,10 @@
 								</td>
 								<td><div class="tooltipa">57-67 <span class="tooltiptext smalltooltip">01/28/2026</span></div></td>
 								<td>Away</td>
-								<td>(46)</td>
+								<td>(49)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -311,7 +311,7 @@
 								</td>
 								<td><div class="tooltipa">63-53 <span class="tooltiptext smalltooltip">01/31/2026</span></div></td>
 								<td>Away</td>
-								<td>(58)</td>
+								<td>(59)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -337,7 +337,7 @@
 								</td>
 								<td><div class="tooltipa">69-72 <span class="tooltiptext smalltooltip">02/07/2026</span></div></td>
 								<td>Away</td>
-								<td>(8)</td>
+								<td>(7)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -361,7 +361,7 @@
 								</td>
 								<td><div class="tooltipa">94-99 <span class="tooltiptext smalltooltip">02/10/2026</span></div></td>
 								<td>Home</td>
-								<td>(24)</td>
+								<td>(23)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -385,10 +385,10 @@
 								</td>
 								<td><div class="tooltipa">71-82 <span class="tooltiptext smalltooltip">02/14/2026</span></div></td>
 								<td>Neutral</td>
-								<td>(13)</td>
+								<td>(16)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -440,7 +440,7 @@
 								<td>(51)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
 									
 								</td>
 								<td>
@@ -461,7 +461,7 @@
 								</td>
 								<td><div class="tooltipa">64-77 <span class="tooltiptext smalltooltip">03/04/2026</span></div></td>
 								<td>Away</td>
-								<td>(7)</td>
+								<td>(5)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -504,10 +504,10 @@
 								</td>
 								<td><div class="tooltipa">78-69 <span class="tooltiptext smalltooltip">11/09/2025</span></div></td>
 								<td>Home</td>
-								<td>(60)</td>
+								<td>(57)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
 									
 								</td>
 								<td>
@@ -530,10 +530,10 @@
 								</td>
 								<td><div class="tooltipa">81-74 <span class="tooltiptext smalltooltip">11/24/2025</span></div></td>
 								<td>Neutral</td>
-								<td>(81)</td>
+								<td>(83)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -560,10 +560,10 @@
 								</td>
 								<td><div class="tooltipa">71-78 <span class="tooltiptext smalltooltip">12/06/2025</span></div></td>
 								<td>Away</td>
-								<td>(125)</td>
+								<td>(134)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
 									
 								</td>
 								<td>
@@ -602,10 +602,10 @@
 								</td>
 								<td><div class="tooltipa">90-97 <span class="tooltiptext smalltooltip">01/24/2026</span></div></td>
 								<td>Home</td>
-								<td>(41)</td>
+								<td>(39)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -662,10 +662,10 @@
 								</td>
 								<td><div class="tooltipa">73-68 <span class="tooltiptext smalltooltip">02/21/2026</span></div></td>
 								<td>Home</td>
-								<td>(67)</td>
+								<td>(73)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -694,10 +694,10 @@
 								</td>
 								<td><div class="tooltipa">79-83 <span class="tooltiptext smalltooltip">03/10/2026</span></div></td>
 								<td>Neutral</td>
-								<td>(67)</td>
+								<td>(73)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -734,7 +734,7 @@
 								<td>(126)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
 									
 								</td>
 								<td>
@@ -876,7 +876,7 @@
 								</td>
 								<td><div class="tooltipa">94-81 <span class="tooltiptext smalltooltip">11/14/2025</span></div></td>
 								<td>Home</td>
-								<td>(225)</td>
+								<td>(230)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -906,7 +906,7 @@
 								</td>
 								<td><div class="tooltipa">110-88 <span class="tooltiptext smalltooltip">12/02/2025</span></div></td>
 								<td>Home</td>
-								<td>(270)</td>
+								<td>(269)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -932,7 +932,7 @@
 								</td>
 								<td><div class="tooltipa">97-67 <span class="tooltiptext smalltooltip">12/10/2025</span></div></td>
 								<td>Home</td>
-								<td>(313)</td>
+								<td>(318)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -956,10 +956,10 @@
 								</td>
 								<td><div class="tooltipa">113-56 <span class="tooltiptext smalltooltip">12/19/2025</span></div></td>
 								<td>Home</td>
-								<td>(351)</td>
+								<td>(349)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
 									
 								</td>
 								<td>
@@ -980,10 +980,10 @@
 								</td>
 								<td><div class="tooltipa">111-67 <span class="tooltiptext smalltooltip">12/21/2025</span></div></td>
 								<td>Home</td>
-								<td>(277)</td>
+								<td>(279)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>

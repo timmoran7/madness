@@ -40,19 +40,19 @@
 					PURDUE <span class="stats-conference"><a href="/conferences/Big%20Ten" title="BIG TEN">(BIG TEN)</a></span>
 				</div>
 				<div style="margin-top:4px;margin-left:32px;">
-					NET: 10
+					NET: 9
 					
 						<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;text-indent: 0;"></i>
 					
 					<br/>
-					Previous: 10
+					Previous: 9
 					<br/>
-					Record: 23-8 (Conf: 13-7)
+					Record: 26-8 (Conf: 13-7)
 				</div>
 			</div>
 		</div>
 		<div class="info">
-    NET Ranks through Mar 10 2026 and Game Results through Mar 10 2026
+    NET Ranks through Mar 14 2026 and Game Results through Mar 14 2026
     
 </div>
 		<div class="quads">
@@ -60,7 +60,7 @@
 				<div class="quad-header">
 					<div class="q-header">Quad 1 <div class="tooltipa"><i class="fa fa-info-circle" style="color:darkgray"></i><span class="tooltiptext">Home 1-30 | Neutral 1-50 | Away 1-75</span></div></div>
 					<div class="quad-record">
-						Record: 8-8
+						Record: 10-8
 					</div>
 				</div>
 				<div class="q-table-wrapper">
@@ -79,10 +79,10 @@
 								</td>
 								<td><div class="tooltipa">87-80 <span class="tooltiptext smalltooltip">11/13/2025</span></div></td>
 								<td>Away</td>
-								<td>(17)</td>
+								<td>(18)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -107,10 +107,10 @@
 								</td>
 								<td><div class="tooltipa">86-56 <span class="tooltiptext smalltooltip">11/21/2025</span></div></td>
 								<td>Neutral</td>
-								<td>(15)</td>
+								<td>(19)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -135,7 +135,7 @@
 								</td>
 								<td><div class="tooltipa">58-81 <span class="tooltiptext smalltooltip">12/06/2025</span></div></td>
 								<td>Home</td>
-								<td>(8)</td>
+								<td>(7)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -163,7 +163,7 @@
 								</td>
 								<td><div class="tooltipa">88-60 <span class="tooltiptext smalltooltip">12/20/2025</span></div></td>
 								<td>Neutral</td>
-								<td>(39)</td>
+								<td>(38)</td>
 								<td>
 									
 										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
@@ -189,7 +189,7 @@
 								</td>
 								<td><div class="tooltipa">89-73 <span class="tooltiptext smalltooltip">01/03/2026</span></div></td>
 								<td>Away</td>
-								<td>(26)</td>
+								<td>(25)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -217,10 +217,10 @@
 								</td>
 								<td><div class="tooltipa">79-72 <span class="tooltiptext smalltooltip">01/14/2026</span></div></td>
 								<td>Home</td>
-								<td>(25)</td>
+								<td>(27)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -243,7 +243,7 @@
 								</td>
 								<td><div class="tooltipa">67-69 <span class="tooltiptext smalltooltip">01/20/2026</span></div></td>
 								<td>Away</td>
-								<td>(34)</td>
+								<td>(31)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -267,7 +267,7 @@
 								</td>
 								<td><div class="tooltipa">82-88 <span class="tooltiptext smalltooltip">01/24/2026</span></div></td>
 								<td>Home</td>
-								<td>(5)</td>
+								<td>(8)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -291,10 +291,10 @@
 								</td>
 								<td><div class="tooltipa">67-72 <span class="tooltiptext smalltooltip">01/27/2026</span></div></td>
 								<td>Away</td>
-								<td>(38)</td>
+								<td>(41)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
 									
 								</td>
 								<td>
@@ -319,10 +319,10 @@
 								</td>
 								<td><div class="tooltipa">80-77* <span class="tooltiptext smalltooltip">02/10/2026</span></div></td>
 								<td>Away</td>
-								<td>(12)</td>
+								<td>(14)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -343,10 +343,10 @@
 								</td>
 								<td><div class="tooltipa">78-57 <span class="tooltiptext smalltooltip">02/14/2026</span></div></td>
 								<td>Away</td>
-								<td>(25)</td>
+								<td>(27)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -417,10 +417,10 @@
 								</td>
 								<td><div class="tooltipa">74-82 <span class="tooltiptext smalltooltip">03/01/2026</span></div></td>
 								<td>Away</td>
-								<td>(30)</td>
+								<td>(29)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
 									
 								</td>
 								<td>
@@ -441,10 +441,10 @@
 								</td>
 								<td><div class="tooltipa">70-66 <span class="tooltiptext smalltooltip">03/04/2026</span></div></td>
 								<td>Away</td>
-								<td>(68)</td>
+								<td>(66)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
@@ -465,7 +465,7 @@
 								</td>
 								<td><div class="tooltipa">93-97 <span class="tooltiptext smalltooltip">03/07/2026</span></div></td>
 								<td>Home</td>
-								<td>(26)</td>
+								<td>(25)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -480,6 +480,58 @@
 							</tr>
 							
 						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">74-58 <span class="tooltiptext smalltooltip">03/13/2026</span></div></td>
+								<td>Neutral</td>
+								<td>(14)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/nebraska" title="Nebraska">
+										<span class="ap_rank_small">11 </span>
+										Nebraska
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">73-66 <span class="tooltiptext smalltooltip">03/14/2026</span></div></td>
+								<td>Neutral</td>
+								<td>(31)</td>
+								<td>
+									
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/ucla" title="UCLA">
+										
+										UCLA
+									</a>
+								</td>
+							</tr>
+							
+						
+							
+						
 					</table>
 				</div>
 			</div>
@@ -487,7 +539,7 @@
 				<div class="quad-header">
 					<div class="q-header">Quad 2 <div class="tooltipa"><i class="fa fa-info-circle" style="color:darkgray"></i><span class="tooltiptext">Home 31-75 | Neutral 51-100 | Away 76-135</span></div></div>
 					<div class="quad-record">
-						Record: 5-0
+						Record: 6-0
 					</div>
 				</div>
 				<div class="q-table-wrapper">
@@ -508,7 +560,7 @@
 								</td>
 								<td><div class="tooltipa">97-79 <span class="tooltiptext smalltooltip">11/16/2025</span></div></td>
 								<td>Home</td>
-								<td>(53)</td>
+								<td>(54)</td>
 								<td>
 									
 										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
@@ -530,31 +582,31 @@
 							
 						
 							
-						
-							
-						
-							
 							<tr>
 								<td>
 									
 										<span style="color:green;">W</span>
 									
 								</td>
-								<td><div class="tooltipa">85-57 <span class="tooltiptext smalltooltip">12/10/2025</span></div></td>
-								<td>Home</td>
-								<td>(75)</td>
+								<td><div class="tooltipa">81-65 <span class="tooltiptext smalltooltip">12/02/2025</span></div></td>
+								<td>Away</td>
+								<td>(135)</td>
 								<td>
 									
 										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
-									<a href="/teams/minnesota" title="Minnesota">
+									<a href="/teams/rutgers" title="Rutgers">
 										
-										Minnesota
+										Rutgers
 									</a>
 								</td>
 							</tr>
+							
+						
+							
+						
 							
 						
 							
@@ -574,10 +626,10 @@
 								</td>
 								<td><div class="tooltipa">81-73 <span class="tooltiptext smalltooltip">01/07/2026</span></div></td>
 								<td>Home</td>
-								<td>(60)</td>
+								<td>(57)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
 									
 								</td>
 								<td>
@@ -642,10 +694,10 @@
 								</td>
 								<td><div class="tooltipa">93-64 <span class="tooltiptext smalltooltip">02/20/2026</span></div></td>
 								<td>Home</td>
-								<td>(38)</td>
+								<td>(41)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
 									
 								</td>
 								<td>
@@ -657,6 +709,36 @@
 							</tr>
 							
 						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+							<tr>
+								<td>
+									
+										<span style="color:green;">W</span>
+									
+								</td>
+								<td><div class="tooltipa">81-68 <span class="tooltiptext smalltooltip">03/12/2026</span></div></td>
+								<td>Neutral</td>
+								<td>(66)</td>
+								<td>
+									
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+									
+								</td>
+								<td>
+									<a href="/teams/northwestern" title="Northwestern">
+										
+										Northwestern
+									</a>
+								</td>
+							</tr>
 							
 						
 							
@@ -695,10 +777,10 @@
 								</td>
 								<td><div class="tooltipa">80-71 <span class="tooltiptext smalltooltip">11/20/2025</span></div></td>
 								<td>Neutral</td>
-								<td>(125)</td>
+								<td>(134)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
 									
 								</td>
 								<td>
@@ -715,31 +797,31 @@
 							
 						
 							
+						
+							
+						
+							
 							<tr>
 								<td>
 									
 										<span style="color:green;">W</span>
 									
 								</td>
-								<td><div class="tooltipa">81-65 <span class="tooltiptext smalltooltip">12/02/2025</span></div></td>
-								<td>Away</td>
-								<td>(141)</td>
+								<td><div class="tooltipa">85-57 <span class="tooltiptext smalltooltip">12/10/2025</span></div></td>
+								<td>Home</td>
+								<td>(80)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
 									
 								</td>
 								<td>
-									<a href="/teams/rutgers" title="Rutgers">
+									<a href="/teams/minnesota" title="Minnesota">
 										
-										Rutgers
+										Minnesota
 									</a>
 								</td>
 							</tr>
-							
-						
-							
-						
 							
 						
 							
@@ -751,10 +833,10 @@
 								</td>
 								<td><div class="tooltipa">79-59 <span class="tooltiptext smalltooltip">12/13/2025</span></div></td>
 								<td>Home</td>
-								<td>(91)</td>
+								<td>(93)</td>
 								<td>
 									
-										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
 									
 								</td>
 								<td>
@@ -777,10 +859,10 @@
 								</td>
 								<td><div class="tooltipa">101-60 <span class="tooltiptext smalltooltip">12/29/2025</span></div></td>
 								<td>Home</td>
-								<td>(146)</td>
+								<td>(140)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
 									
 								</td>
 								<td>
@@ -805,7 +887,7 @@
 								</td>
 								<td><div class="tooltipa">93-85 <span class="tooltiptext smalltooltip">01/10/2026</span></div></td>
 								<td>Home</td>
-								<td>(136)</td>
+								<td>(141)</td>
 								<td>
 									
 										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
@@ -839,10 +921,10 @@
 								</td>
 								<td><div class="tooltipa">93-63 <span class="tooltiptext smalltooltip">02/01/2026</span></div></td>
 								<td>Away</td>
-								<td>(137)</td>
+								<td>(138)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
 									
 								</td>
 								<td>
@@ -866,7 +948,7 @@
 								<td>(109)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-down" aria-hidden="true" style="color:red;"></i>
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
 									
 								</td>
 								<td>
@@ -876,6 +958,14 @@
 									</a>
 								</td>
 							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
 							
 						
 							
@@ -916,7 +1006,7 @@
 								</td>
 								<td><div class="tooltipa">82-51 <span class="tooltiptext smalltooltip">11/04/2025</span></div></td>
 								<td>Home</td>
-								<td>(305)</td>
+								<td>(306)</td>
 								<td>
 									
 										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
@@ -940,10 +1030,10 @@
 								</td>
 								<td><div class="tooltipa">87-77 <span class="tooltiptext smalltooltip">11/07/2025</span></div></td>
 								<td>Home</td>
-								<td>(176)</td>
+								<td>(175)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
 									
 								</td>
 								<td>
@@ -972,10 +1062,10 @@
 								</td>
 								<td><div class="tooltipa">109-62 <span class="tooltiptext smalltooltip">11/28/2025</span></div></td>
 								<td>Home</td>
-								<td>(321)</td>
+								<td>(320)</td>
 								<td>
 									
-										<i class="fa fa-chevron-circle-up" aria-hidden="true" style="color:green;"></i>
+										<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
 									
 								</td>
 								<td>
@@ -985,6 +1075,14 @@
 									</a>
 								</td>
 							</tr>
+							
+						
+							
+						
+							
+						
+							
+						
 							
 						
 							
@@ -1107,6 +1205,32 @@
 						
 							
 						
+							
+						
+							
+						
+							
+						
+							
+								<tr class="">
+									<td><span style="color:#505050;">Q1</span></td>
+									<td>Neutral</td>
+									<td>(2)</td>
+									<td>
+										
+											<i class="fa fa-minus-circle" aria-hidden="true" style="color:darkgray;"></i>
+										
+									</td>
+									<td>
+										<a href="/teams/michigan" title="Michigan">
+											<span class="ap_rank_small">3 </span>
+											Michigan
+										</a>
+									</td>
+									<td>03/15/2026</td>
+								</tr>
+							
+						
 					</table>
 				</div>
 			</div>
@@ -1166,8 +1290,8 @@
 					a red down arrow means that the team's NET rank is trending downwards. A gray neutral icon means that
 					the ranking has not changed. The previous rank can be seen by opening the team's page. An opponent's
 					current NET ranking is displayed in parentheses next to the trending icon</p>
-				<p>Purdue is in the Big Ten conference and has a 8-8
-					Quad I record, a 5-0 Quad II record, a 7-0 Quad III
+				<p>Purdue is in the Big Ten conference and has a 10-8
+					Quad I record, a 6-0 Quad II record, a 7-0 Quad III
 					record, and a 3-0 Quad IV record. The quadrant system is used to identify which
 					teams have more quality wins when it comes to Selection Sunday for the NCAA Tournament. Beating a
 					Top-30 Team at home is considered equally difficult as beating a Top-75 Team away:<br/>
