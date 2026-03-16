@@ -12,6 +12,7 @@ import seedProbabilities from "@/data/seedProbabilities.json";
 import type {
   MatchupTableDataType,
   UpsetDataType,
+  UpsetMatchupEntry,
   UpsetTableDataType,
 } from "@/models";
 
@@ -22,7 +23,6 @@ const CUSTOM_REGION_VALUE = "__any_two_teams__";
 const regions = ["South", "East", "Midwest", "West"];
 const selectedRegion = ref<string>("");
 const matchups = ref<string[]>([]);
-const showFactors = ref<boolean>(false);
 const showMethodology = ref<boolean>(true);
 const countdownLabel = ref<string>("");
 const customTeamOne = ref<string>("");
@@ -77,6 +77,69 @@ const hasUpsetEntry = computed<boolean>(() => {
   if (!selectedMatchup.value) return false;
   return Boolean(resolveUpsetMatchupKey(selectedMatchup.value));
 });
+const showFactors = computed<boolean>(() => {
+  const favoredSeed = teamInfo.value.fav?.seed;
+  return Boolean(
+    selectedMatchup.value &&
+      hasUpsetEntry.value &&
+      favoredSeed != null &&
+      favoredSeed < 7,
+  );
+});
+
+const showHomeRankings = computed<boolean>(
+  () => !selectedRegion.value && !selectedMatchup.value && !isCustomMode.value,
+);
+
+const matchupRankings = computed(() =>
+  Object.entries(typedUpsetData.matchups).map(
+    ([matchup, entry]: [string, UpsetMatchupEntry]) => ({
+      matchup,
+      label: matchup.replace("_", " vs. "),
+      upsetChance: entry.upset,
+      madnessIndex: entry.index,
+    }),
+  ),
+);
+
+const filteredMatchupRankings = computed(() =>
+  matchupRankings.value.filter((ranking) => {
+    const [team1Raw, team2Raw] = ranking.matchup.split("_");
+    const team1Seed = kpStats[normalizeTeamName(team1Raw)]?.seed;
+    const team2Seed = kpStats[normalizeTeamName(team2Raw)]?.seed;
+
+    if (team1Seed == null || team2Seed == null) {
+      return true;
+    }
+
+    const lowerSeed = Math.min(team1Seed, team2Seed);
+    const higherSeed = Math.max(team1Seed, team2Seed);
+    return !(
+      (lowerSeed === 7 && higherSeed === 10) ||
+      (lowerSeed === 8 && higherSeed === 9)
+    );
+  }),
+);
+
+const topUpsetRankings = computed(() =>
+  [...filteredMatchupRankings.value]
+    .sort(
+      (left, right) =>
+        right.upsetChance - left.upsetChance ||
+        right.madnessIndex - left.madnessIndex,
+    )
+    .slice(0, 5),
+);
+
+const topMadnessRankings = computed(() =>
+  [...filteredMatchupRankings.value]
+    .sort(
+      (left, right) =>
+        right.madnessIndex - left.madnessIndex ||
+        right.upsetChance - left.upsetChance,
+    )
+    .slice(0, 5),
+);
 
 const teamInfo = computed(() => {
   if (!selectedMatchup.value) return { fav: null, dawg: null };
@@ -181,14 +244,30 @@ const preTourneyMethodologyExplanation: string =
 Or, <b>explore last year's bracket</b> matchups with this year's stats. Come back when the bracket releases for updated matchups and statistics!";
 const methodologyExplanation: string =
   "Welcome to March! Search for tournament teams to view their advanced stats, NET results, and game logs. \
-The <strong>Madness Index (MI)</strong> is a metric that measures \
-the <strong>strength of common upset indicators</strong> present in a March Madness matchup. \
-The MI is calculated based on research from KenPom and the New York Times boiling down to rebounding, turnovers, three point profile, and pacing. \
-The MI is out of 10: an upset profile can be considered <strong>fair above 6, strong above 7, and extremely strong above 8</strong>. \
-Upset chance is a less fun but more practical metric which spits out probabilities \
-from a regression model trained on ten years' worth of data (regular + postseason). Enjoy!";
+<ul><li>The <strong>Madness Index (MI)</strong> is a metric that measures the <strong>strength of common upset indicators</strong> present, \
+it's calculated based on research from KenPom and the New York Times. \
+The MI is out of 10: an upset profile can be considered <strong>fair above 6, strong above 7, and extremely strong above 8</strong>.</li> \
+<li>Upset chance is a less fun but more practical metric which spits out probabilities \
+from a regression model trained on ten years' worth of data (regular + postseason). Enjoy!</li></ul>";
 
 const matchupFiles: { [key: string]: string[] } = typedUpsetData.regions ?? {};
+const matchupLocations: { [key: string]: string[] } =
+  typedUpsetData.locations ?? {};
+
+const currentLocation = computed<string | null>(() => {
+  if (!selectedMatchup.value || isCustomMode.value) {
+    return null;
+  }
+
+  const regionMatchups = matchupFiles[selectedRegion.value] ?? [];
+  const matchupIndex = regionMatchups.indexOf(selectedMatchup.value);
+  if (matchupIndex < 0) {
+    return null;
+  }
+
+  const regionLocations = matchupLocations[selectedRegion.value] ?? [];
+  return regionLocations[matchupIndex] ?? null;
+});
 
 const updateCountdownLabel = () => {
   const remainingMs = bracketReleaseAt.getTime() - Date.now();
@@ -225,7 +304,6 @@ const resetMatchupSelection = () => {
   dawgLogo.value = "";
   miFactor.value = 0;
   upsetChance.value = 0;
-  showFactors.value = false;
   showMethodology.value = true;
 };
 
@@ -293,11 +371,9 @@ const loadMatchupContent = () => {
   if (matchupEntry) {
     miFactor.value = matchupEntry.index;
     upsetChance.value = matchupEntry.upset;
-    showFactors.value = true;
   } else {
     miFactor.value = 0;
     upsetChance.value = 0;
-    showFactors.value = false;
   }
   showMethodology.value = false;
 
@@ -421,9 +497,40 @@ watch([customTeamOne, customTeamTwo], () => {
     </div>
 
     <div v-if="!isCustomMode" class="d-flex justify-content-center">
-      <button class="btn btn-link any-two-trigger" @click="activateCustomMode">
+      <button v-if="false" class="btn btn-link any-two-trigger" @click="activateCustomMode">
         Or pick any two teams
       </button>
+    </div>
+
+    <p class="text-center exclude-note" v-if="showHomeRankings"><em>Excludes 7/10 + 8/9 games</em></p>
+    <div v-if="showHomeRankings" class="home-rankings">
+      <section class="home-ranking-card">
+        <h3 class="home-ranking-title">Top Upset Chances</h3>
+        <ul class="home-ranking-list">
+          <li
+            v-for="ranking in topUpsetRankings"
+            :key="`upset-${ranking.matchup}`"
+            class="home-ranking-item"
+          >
+            <span class="home-ranking-matchup">{{ ranking.label }}</span>
+            <strong>{{ (ranking.upsetChance * 100).toFixed(2) }}%</strong>
+          </li>
+        </ul>
+      </section>
+
+      <section class="home-ranking-card">
+        <h3 class="home-ranking-title">Top Madness Indexes</h3>
+        <ul class="home-ranking-list">
+          <li
+            v-for="ranking in topMadnessRankings"
+            :key="`madness-${ranking.matchup}`"
+            class="home-ranking-item"
+          >
+            <span class="home-ranking-matchup">{{ ranking.label }}</span>
+            <strong>{{ ranking.madnessIndex.toFixed(2) }}</strong>
+          </li>
+        </ul>
+      </section>
     </div>
 
     <div v-if="isCustomMode" class="any-two-container">
@@ -561,7 +668,7 @@ watch([customTeamOne, customTeamTwo], () => {
       class="d-flex justify-content-center mb-4 match-subheader"
     >
       <p class="click-hint"><em>click on logos for team breakdown</em></p>
-      <p><strong>Shmindianapolis, IN</strong></p>
+      <p v-if="currentLocation"><strong>{{ currentLocation }}</strong></p>
     </div>
 
     <div
@@ -715,6 +822,51 @@ watch([customTeamOne, customTeamTwo], () => {
   font-size: 14px;
 }
 
+.home-rankings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 18px auto 8px;
+  max-width: 880px;
+}
+
+.home-ranking-card {
+  padding: 16px 18px;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  background: #f8f9fa;
+}
+
+.home-ranking-title {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.home-ranking-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.home-ranking-item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 0;
+  border-top: 1px solid rgba(108, 117, 125, 0.18);
+}
+
+.home-ranking-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.home-ranking-matchup {
+  color: #212529;
+}
+
 .any-two-container {
   margin-top: 8px;
   margin-bottom: 6px;
@@ -784,6 +936,12 @@ watch([customTeamOne, customTeamTwo], () => {
 }
 
 @media only screen and (max-width: 600px) {
+  .home-rankings {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 14px;
+  }
+
   .ovr-banner {
     margin-bottom: 8px;
   }
@@ -858,6 +1016,10 @@ watch([customTeamOne, customTeamTwo], () => {
 
   .main-ctr {
     margin-top: -12px;
+  }
+
+  .exclude-note {
+    margin-bottom: -4px;
   }
 }
 </style>

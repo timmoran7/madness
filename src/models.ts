@@ -21,6 +21,7 @@ export interface UpsetMatchupEntry {
 export interface UpsetDataType {
   columns: string[];
   regions: { [region: string]: string[] };
+  locations: { [region: string]: string[] };
   matchups: {
     [matchup: string]: UpsetMatchupEntry;
   };

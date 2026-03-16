@@ -8,7 +8,7 @@
   ],
   "matchups": {
     "Duke_Siena": {
-      "upset": 0.0,
+      "upset": 0.001,
       "index": 4.02,
       "factors": [
         "3.48",
@@ -19,7 +19,7 @@
       ]
     },
     "Ohio St._TCU": {
-      "upset": 0.3569,
+      "upset": 0.366,
       "index": 5.99,
       "factors": [
         "6.24",
@@ -30,7 +30,7 @@
       ]
     },
     "St. John's_Northern Iowa": {
-      "upset": 0.1329,
+      "upset": 0.136,
       "index": 5.51,
       "factors": [
         "2.44",
@@ -41,7 +41,7 @@
       ]
     },
     "Kansas_Cal Baptist": {
-      "upset": 0.0707,
+      "upset": 0.0724,
       "index": 5.26,
       "factors": [
         "7.54",
@@ -52,7 +52,7 @@
       ]
     },
     "Louisville_South Florida": {
-      "upset": 0.2275,
+      "upset": 0.2768,
       "index": 6.55,
       "factors": [
         "4.94",
@@ -63,7 +63,7 @@
       ]
     },
     "Michigan St._North Dakota St.": {
-      "upset": 0.029,
+      "upset": 0.0351,
       "index": 6.38,
       "factors": [
         "4.25",
@@ -74,7 +74,7 @@
       ]
     },
     "UCLA_UCF": {
-      "upset": 0.3112,
+      "upset": 0.3191,
       "index": 5.79,
       "factors": [
         "6.65",
@@ -85,7 +85,7 @@
       ]
     },
     "Connecticut_Furman": {
-      "upset": 0.0086,
+      "upset": 0.0145,
       "index": 4.93,
       "factors": [
         "4.02",
@@ -96,7 +96,7 @@
       ]
     },
     "Arizona_LIU": {
-      "upset": 0.0,
+      "upset": 0.001,
       "index": 3.83,
       "factors": [
         "3.36",
@@ -107,7 +107,7 @@
       ]
     },
     "Villanova_Utah St.": {
-      "upset": 0.4811,
+      "upset": 0.4933,
       "index": 6.94,
       "factors": [
         "4.91",
@@ -118,7 +118,7 @@
       ]
     },
     "Wisconsin_High Point": {
-      "upset": 0.1183,
+      "upset": 0.1334,
       "index": 6.76,
       "factors": [
         "5.08",
@@ -129,7 +129,7 @@
       ]
     },
     "Arkansas_Hawaii": {
-      "upset": 0.0505,
+      "upset": 0.0518,
       "index": 4.15,
       "factors": [
         "5.68",
@@ -140,7 +140,7 @@
       ]
     },
     "BYU_Texas": {
-      "upset": 0.3695,
+      "upset": 0.3789,
       "index": 6.01,
       "factors": [
         "5.64",
@@ -151,7 +151,7 @@
       ]
     },
     "BYU_N.C. State": {
-      "upset": 0.379,
+      "upset": 0.3882,
       "index": 6.95,
       "factors": [
         "2.84",
@@ -162,7 +162,7 @@
       ]
     },
     "Gonzaga_Kennesaw St.": {
-      "upset": 0.0175,
+      "upset": 0.0166,
       "index": 4.08,
       "factors": [
         "4.36",
@@ -173,7 +173,7 @@
       ]
     },
     "Miami FL_Missouri": {
-      "upset": 0.3347,
+      "upset": 0.343,
       "index": 5.16,
       "factors": [
         "3.88",
@@ -184,7 +184,7 @@
       ]
     },
     "Purdue_Queens": {
-      "upset": 0.0017,
+      "upset": 0.0025,
       "index": 5.65,
       "factors": [
         "2.37",
@@ -195,7 +195,7 @@
       ]
     },
     "Florida_Prairie View A&M": {
-      "upset": 0.01,
+      "upset": 0.001,
       "index": 3.16,
       "factors": [
         "0.88",
@@ -206,7 +206,7 @@
       ]
     },
     "Florida_Lehigh": {
-      "upset": 0.01,
+      "upset": 0.001,
       "index": 4.34,
       "factors": [
         "0.68",
@@ -217,7 +217,7 @@
       ]
     },
     "Clemson_Iowa": {
-      "upset": 0.4068,
+      "upset": 0.4172,
       "index": 6.41,
       "factors": [
         "4.72",
@@ -228,7 +228,7 @@
       ]
     },
     "Vanderbilt_McNeese": {
-      "upset": 0.1183,
+      "upset": 0.1213,
       "index": 5.37,
       "factors": [
         "5.29",
@@ -239,7 +239,7 @@
       ]
     },
     "Nebraska_Troy": {
-      "upset": 0.2316,
+      "upset": 0.0538,
       "index": 6.09,
       "factors": [
         "6.75",
@@ -250,7 +250,7 @@
       ]
     },
     "North Carolina_VCU": {
-      "upset": 0.379,
+      "upset": 0.3882,
       "index": 7.1,
       "factors": [
         "5.28",
@@ -261,7 +261,7 @@
       ]
     },
     "Illinois_Penn": {
-      "upset": 0.0058,
+      "upset": 0.0064,
       "index": 6.12,
       "factors": [
         "2.61",
@@ -272,7 +272,7 @@
       ]
     },
     "Saint Mary's_Texas A&M": {
-      "upset": 0.3626,
+      "upset": 0.3719,
       "index": 6.96,
       "factors": [
         "3.04",
@@ -283,7 +283,7 @@
       ]
     },
     "Houston_Idaho": {
-      "upset": 0.0017,
+      "upset": 0.0039,
       "index": 5.43,
       "factors": [
         "3.79",
@@ -294,7 +294,7 @@
       ]
     },
     "Michigan_UMBC": {
-      "upset": 0.01,
+      "upset": 0.001,
       "index": 5.56,
       "factors": [
         "2.19",
@@ -305,7 +305,7 @@
       ]
     },
     "Michigan_Howard": {
-      "upset": 0.01,
+      "upset": 0.001,
       "index": 4.77,
       "factors": [
         "4.28",
@@ -316,7 +316,7 @@
       ]
     },
     "Georgia_Saint Louis": {
-      "upset": 0.4202,
+      "upset": 0.4301,
       "index": 6.75,
       "factors": [
         "5.40",
@@ -327,7 +327,7 @@
       ]
     },
     "Texas Tech_Akron": {
-      "upset": 0.1698,
+      "upset": 0.1915,
       "index": 7.72,
       "factors": [
         "5.14",
@@ -338,7 +338,7 @@
       ]
     },
     "Alabama_Hofstra": {
-      "upset": 0.1029,
+      "upset": 0.1055,
       "index": 7.36,
       "factors": [
         "6.06",
@@ -349,7 +349,7 @@
       ]
     },
     "Tennessee_N.C. State": {
-      "upset": 0.3112,
+      "upset": 0.3191,
       "index": 6.53,
       "factors": [
         "2.02",
@@ -360,7 +360,7 @@
       ]
     },
     "Tennessee_Texas": {
-      "upset": 0.284,
+      "upset": 0.2912,
       "index": 5.5,
       "factors": [
         "4.82",
@@ -371,7 +371,7 @@
       ]
     },
     "Virginia_Wright St.": {
-      "upset": 0.2316,
+      "upset": 0.0293,
       "index": 5.97,
       "factors": [
         "4.11",
@@ -382,7 +382,7 @@
       ]
     },
     "Kentucky_Santa Clara": {
-      "upset": 0.4202,
+      "upset": 0.4301,
       "index": 6.64,
       "factors": [
         "4.84",
@@ -393,7 +393,7 @@
       ]
     },
     "Iowa St._Tennessee St.": {
-      "upset": 0.01,
+      "upset": 0.0012,
       "index": 4.06,
       "factors": [
         "4.57",
@@ -448,6 +448,52 @@
       "Virginia_Wright St.",
       "Kentucky_Santa Clara",
       "Iowa St._Tennessee St."
+    ]
+  },
+  "locations": {
+    "East": [
+      "Greenville, SC",
+      "Greenville, SC",
+      "San Diego, CA",
+      "San Diego, CA",
+      "Buffalo, NY",
+      "Buffalo, NY",
+      "Philadelphia, PA",
+      "Philadelphia, PA"
+    ],
+    "West": [
+      "San Diego, CA",
+      "San Diego, CA",
+      "Portland, OR",
+      "Portland, OR",
+      "Portland, OR",
+      "Portland, OR",
+      "Portland, OR",
+      "St. Louis, MO",
+      "St. Louis, MO"
+    ],
+    "South": [
+      "Tampa, FL",
+      "Tampa, FL",
+      "Tampa, FL",
+      "Oklahoma City, OK",
+      "Oklahoma City, OK",
+      "Greenville, SC",
+      "Greenville, SC",
+      "Oklahoma City, OK",
+      "Oklahoma City, OK"
+    ],
+    "Midwest": [
+      "Buffalo, NY",
+      "Buffalo, NY",
+      "Buffalo, NY",
+      "Tampa, FL",
+      "Tampa, FL",
+      "Philadelphia, PA",
+      "Philadelphia, PA",
+      "Philadelphia, PA",
+      "St. Louis, MO",
+      "St. Louis, MO"
     ]
   }
 }

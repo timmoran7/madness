@@ -351,7 +351,7 @@ def choose_prob_from_range(
         ratings_df=ratings_df,
     )
 
-    if advanced_prob > base_prob + 0.05:
+    if advanced_prob > base_prob * 1.05:
         return advanced_prob
 
     return base_prob
@@ -361,9 +361,9 @@ def choose_matchup_upset_prob(teamA, teamB, year, homeTeam=None):
     ratings_df = load_ratings_df(year)
     matchup_info = get_matchup_rating_info(teamA, teamB, year, ratings_df=ratings_df)
     rating_diff = matchup_info["ratingDiff"]
-    close_range = [0, RANK_DIFF_MIN]
-    wide_range = [RANK_DIFF_MIN, RANK_DIFF_MAX]
-    large_range = [BIG_RANK_DIFF_MIN, BIG_RANK_DIFF_MAX]
+    close_range = [0, RANK_DIFF_MIN - 0.0001]
+    wide_range = [RANK_DIFF_MIN, RANK_DIFF_MAX - 0.0001]
+    large_range = [RANK_DIFF_MAX, BIG_RANK_DIFF_MAX]
 
     if rating_diff < RANK_DIFF_MIN:
         close_artifacts = train_model_artifacts(close_range, BASE_COLS, numBuckets=0)
@@ -499,8 +499,10 @@ def _predict_game_upset_prob_from_artifacts(
 def write_upset_data_from_matchups(
     year=2026,
     ratingSegment=None,
+    upsetBoost=None,
     matchups_path=None,
     output_path=None,
+    
 ):
     if ratingSegment is None:
         ratingSegment = [RANK_DIFF_MIN, RANK_DIFF_MAX]
@@ -512,17 +514,27 @@ def write_upset_data_from_matchups(
         matchups_path = Path(matchups_path)
 
     if output_path is None:
-            output_path = model_dir / "upsetData.json"
+        output_path = model_dir / "upsetData.json"
     else:
         output_path = Path(output_path)
 
     with open(matchups_path, "r", encoding="utf-8") as f:
         regions = json.load(f)
 
+    existing_matchups = {}
+    if output_path.exists():
+        with open(output_path, "r", encoding="utf-8") as f:
+            try:
+                existing_data = json.load(f)
+                if isinstance(existing_data, dict) and isinstance(existing_data.get("matchups"), dict):
+                    existing_matchups = existing_data["matchups"]
+            except json.JSONDecodeError:
+                existing_matchups = {}
+
     ratings_df = load_ratings_df(year)
-    close_range = [0, RANK_DIFF_MIN]
-    wide_range = [RANK_DIFF_MIN, RANK_DIFF_MAX]
-    large_range = [BIG_RANK_DIFF_MIN, BIG_RANK_DIFF_MAX]
+    close_range = [0.0001, RANK_DIFF_MIN - 0.0001]
+    wide_range = [RANK_DIFF_MIN, RANK_DIFF_MAX - 0.0001]
+    large_range = [RANK_DIFF_MAX, BIG_RANK_DIFF_MAX]
 
     buildAndRunModel(close_range, BASE_COLS, 0)
     buildAndRunModel(wide_range, BASE_COLS, 0)
@@ -536,7 +548,7 @@ def write_upset_data_from_matchups(
     big_base_artifacts = train_model_artifacts(large_range, BASE_COLS, numBuckets=0)
     big_advanced_artifacts = train_model_artifacts(large_range, ADVANCED_COLS, numBuckets=0)
 
-    matchup_map = {}
+    matchup_map = existing_matchups.copy()
     for region_matchups in regions.values():
         for matchup in region_matchups:
             teams = matchup.split("_", 1)
@@ -576,9 +588,17 @@ def write_upset_data_from_matchups(
                     ratings_df=ratings_df,
                 )
 
-            matchup_map[matchup] = {
-                "upset": round(selected_prob, 4)
-            }
+            existing_entry = matchup_map.get(matchup)
+            if isinstance(existing_entry, dict):
+                updated_entry = existing_entry.copy()
+            else:
+                updated_entry = {}
+
+            if(upsetBoost is not None):
+                selected_prob = selected_prob * (1 + upsetBoost)
+            
+            updated_entry["upset"] = round(selected_prob, 4)
+            matchup_map[matchup] = updated_entry
 
     upset_data = {
         "columns": ["Rebounding", "Turnovers", "3Pt Volume", "Dawg 3P%", "Dawg Pace"],
@@ -592,22 +612,21 @@ def write_upset_data_from_matchups(
     return upset_data
 
 BASE_COLS = ["rating_diff"]#, "sum_3PA_pct", "3P_pct_lo", "TO_freq"]
-ADVANCED_COLS = ["rating_diff", "sum_3PA_pct", "3P_pct_lo", "TO_freq"]#, "vs_avg_adjTempo_hi", "vs_avg_adjTempo_lo"]
+ADVANCED_COLS = ["higherRating", "lowerRating", "sum_3PA_pct", "3P_pct_lo", "TO_freq"]#, "vs_avg_adjTempo_hi", "vs_avg_adjTempo_lo"]
 RANK_DIFF_MIN = 8
 RANK_DIFF_MAX = 24
-BIG_RANK_DIFF_MIN = 25
 BIG_RANK_DIFF_MAX = 55
-write_upset_data_from_matchups()
-# TEAM_ONE = "Michigan"
-# TEAM_TWO = "UC San Diego"
+# write_upset_data_from_matchups(upsetBoost=0.025)
+TEAM_ONE = "Vanderbilt"
+TEAM_TWO = "McNeese"
 #'''
 # Sort by upset probability (descending) to see top upset picks
-#baseResults = buildAndRunModel([RANK_DIFF_MIN,RANK_DIFF_MAX], BASE_COLS, 0)
-#baseResults.to_json("v2outputs/13to26lr_base.json", orient="records", indent=2)
-#print('BASED: ')
-#base_prob = predict_game_upset_prob(TEAM_ONE, TEAM_TWO, 2025, [RANK_DIFF_MIN, RANK_DIFF_MAX], BASE_COLS)
+# baseResults = buildAndRunModel([RANK_DIFF_MIN, RANK_DIFF_MAX], BASE_COLS, 0)
+# baseResults.to_json("v2outputs/13to26lr_baseMax.json", orient="records", indent=2)
+# #print('BASED: ')
+# base_prob = predict_game_upset_prob(TEAM_ONE, TEAM_TWO, 2026, [RANK_DIFF_MIN, RANK_DIFF_MAX], BASE_COLS)
 
-# advancedResults = buildAndRunModel([RANK_DIFF_MIN,RANK_DIFF_MAX], ADVANCED_COLS, 0)
-# advancedResults.to_json("v2outputs/13to26lr_Rs3PLoThreeTo.json", orient="records", indent=2)
-#print('ADVANCED: ')
-#advanced_prob = predict_game_upset_prob(TEAM_ONE, TEAM_TWO, 2025, [RANK_DIFF_MIN, RANK_DIFF_MAX], ADVANCED_COLS)
+advancedResults = buildAndRunModel([RANK_DIFF_MIN,RANK_DIFF_MAX], ADVANCED_COLS, 0)
+#advancedResults.to_json("v2outputs/13to26lr_Rs3PLoThreeToo.json", orient="records", indent=2)
+print('ADVANCED: ')
+advanced_prob = predict_game_upset_prob(TEAM_ONE, TEAM_TWO, 2026, [RANK_DIFF_MIN, RANK_DIFF_MAX], ADVANCED_COLS)
