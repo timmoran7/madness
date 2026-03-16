@@ -252,10 +252,10 @@ def add_madness_data_to_upset_file(
 if __name__ == "__main__":
 	# Example usage
 	try:
-		add_madness_data_to_upset_file(2026,True,upset_data_path="../upsetData.json")
-		# result = calculate_upset_correlations("Michigan", "UC San Diego")
-		# madness_index = calculate_madness_index(result["scores"])
-		# print(json.dumps(result, indent=2))
-		# print(f"Madness Index: {madness_index}")
+		#add_madness_data_to_upset_file(2026,True,upset_data_path="../upsetData.json")
+		result = calculate_upset_correlations("Tennessee", "SMU")
+		madness_index = calculate_madness_index(result["scores"])
+		print(json.dumps(result, indent=2))
+		print(f"Madness Index: {madness_index}")
 	except ValueError as e:
 		print(f"Error: {e}")
