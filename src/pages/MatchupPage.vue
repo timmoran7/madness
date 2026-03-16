@@ -94,9 +94,10 @@ const showFactors = computed<boolean>(() => {
   const favoredSeed =
     leftSeed != null && rightSeed != null
       ? Math.min(leftSeed, rightSeed)
-      : leftSeed ?? rightSeed;
+      : (leftSeed ?? rightSeed);
   const dawgSeed = favoredSeed === leftSeed ? rightSeed : leftSeed;
-  const seedDiff = dawgSeed != null && favoredSeed != null ? dawgSeed - favoredSeed : null;
+  const seedDiff =
+    dawgSeed != null && favoredSeed != null ? dawgSeed - favoredSeed : null;
   return Boolean(
     selectedMatchup.value &&
       hasUpsetEntry.value &&
@@ -133,10 +134,12 @@ const filteredMatchupRankings = computed(() =>
 
     const lowerSeed = Math.min(team1Seed, team2Seed);
     const higherSeed = Math.max(team1Seed, team2Seed);
-    return !(
-      (lowerSeed === 7 && higherSeed === 10) ||
-      (lowerSeed === 8 && higherSeed === 9)
-    ) && ranking.first === "yes";
+    return (
+      !(
+        (lowerSeed === 7 && higherSeed === 10) ||
+        (lowerSeed === 8 && higherSeed === 9)
+      ) && ranking.first === "yes"
+    );
   }),
 );
 
@@ -576,7 +579,9 @@ watch([customTeamOne, customTeamTwo], () => {
       </button>
     </div>
 
-    <p class="text-center exclude-note" v-if="showHomeRankings"><em>Excludes 7/10 + 8/9 games</em></p>
+    <p class="text-center exclude-note" v-if="showHomeRankings">
+      <em>Excludes 7/10 + 8/9 games</em>
+    </p>
     <div v-if="showHomeRankings" class="home-rankings">
       <section class="home-ranking-card">
         <h3 class="home-ranking-title">Top Upset Chances</h3>
@@ -742,7 +747,9 @@ watch([customTeamOne, customTeamTwo], () => {
       class="d-flex justify-content-center mb-4 match-subheader"
     >
       <p class="click-hint"><em>click on logos for team breakdown</em></p>
-      <p v-if="currentLocation"><strong>{{ currentLocation }}</strong></p>
+      <p v-if="currentLocation">
+        <strong>{{ currentLocation }}</strong>
+      </p>
     </div>
 
     <div
@@ -756,7 +763,14 @@ watch([customTeamOne, customTeamTwo], () => {
         <strong>MADNESS INDEX: {{ miFactor }} / 10</strong>
       </h5>
       <h5 class="factor text-center">
-        <strong>Upset Chance: {{ (upsetChance * 100).toFixed(2) }}%</strong>
+        <strong
+          >Upset Chance:
+          {{
+            upsetChance * 100 < 20
+              ? (upsetChance * 100 * 1.3).toFixed(2)
+              : (upsetChance * 100).toFixed(2)
+          }}%</strong
+        >
         <span v-if="seedAvgLabel && !hasCustomPair" class="seed-avg-hint">
           ({{ seedAvgLabel }})</span
         >
@@ -785,7 +799,11 @@ watch([customTeamOne, customTeamTwo], () => {
       <p v-if="selectedMatchup && !hasUpsetEntry" class="missing-upset-text">
         No upset profile exists yet for this hypothetical matchup.
       </p>
-      <UpsetTable class="upset-table" v-if="currentUpsetData && showFactors" :data="currentUpsetData" />
+      <UpsetTable
+        class="upset-table"
+        v-if="currentUpsetData && showFactors"
+        :data="currentUpsetData"
+      />
       <MatchupTable class="matchup-table" :data="currentMatchupData" />
     </div>
   </div>
@@ -999,7 +1017,8 @@ watch([customTeamOne, customTeamTwo], () => {
   margin-top: -8px;
 }
 
-.matchup-table, .upset-table {
+.matchup-table,
+.upset-table {
   margin-top: 8px;
 }
 
@@ -1020,7 +1039,8 @@ watch([customTeamOne, customTeamTwo], () => {
     margin-bottom: 8px;
   }
 
-  .mi, .factor {
+  .mi,
+  .factor {
     font-size: 18px;
   }
 
