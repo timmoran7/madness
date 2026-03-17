@@ -15,7 +15,6 @@ import type {
   UpsetMatchupEntry,
   UpsetTableDataType,
 } from "@/models";
-import { channel } from "diagnostics_channel";
 
 const router = useRouter();
 const route = useRoute();
